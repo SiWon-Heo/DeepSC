@@ -14,7 +14,6 @@ Put your source code to code-slicer/raw_code (*only supports C)
 Build **Joern**
 <pre lang="markdown"><code>cd code-slicer
 ../build.sh
-cd ..
 </code></pre>
 
 Parse codes in code-slicer/raw_code
