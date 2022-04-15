@@ -12,13 +12,13 @@ Put your source code to code-slicer/raw_code (*only supports C)
 3. Python >= 3.5
 
 Build **Joern**
-<pre lang="markdown"><code> cd code-slicer
+<pre lang="markdown"><code>cd code-slicer
 ../build.sh
 cd ..
 </code></pre>
 
 Parse codes in code-slicer/raw_code
-<pre lang="markdown"><code> ../multi-slicer.sh
+<pre lang="markdown"><code>../multi-slicer.sh
 </code></pre>
 
 each of your source code will then be parsed into node.csv & edge.csv, and automatically stored into data/parsed/[codeNo._Vul].c
