@@ -5,7 +5,7 @@ Vulnerability detection with GNN
 
 Put your source code to code-slicer/raw_code (*only supports C)
 
-'''
+'''js
    ../multi-slicer.sh
 '''
 
