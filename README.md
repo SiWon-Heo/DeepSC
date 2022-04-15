@@ -5,7 +5,7 @@ Vulnerability detection with GNN
 
 Put your source code to code-slicer/raw_code (*only supports C)
 
-<pre lang="javascript"><code> ../multi-slicer.sh
+<pre lang="markdown"><code> ../multi-slicer.sh
 </code></pre>
 
 each of your source code will then be parsed into node.csv & edge.csv, and automatically stored into data/parsed/[codeNo._Vul].c
