@@ -1,0 +1,101 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	436	File	tmp/11_1.c								
+ANR	437	Function	jbig2_find_changing_element	1:0:0:300							
+ANR	438	FunctionDef	"jbig2_find_changing_element (const byte * line , int x , int w)"		437	0					
+ANR	439	CompoundStatement		1:77:77:300	437	0					
+ANR	440	IdentifierDeclStatement	"int a , b ;"	2:1:80:90	437	0	True				
+ANR	441	IdentifierDecl	a		437	0					
+ANR	442	IdentifierDeclType	int		437	0					
+ANR	443	Identifier	a		437	1					
+ANR	444	IdentifierDecl	b		437	1					
+ANR	445	IdentifierDeclType	int		437	0					
+ANR	446	Identifier	b		437	1					
+ANR	447	IfStatement	if ( line == 0 )		437	1					
+ANR	448	Condition	line == 0	3:6:98:106	437	0	True				
+ANR	449	EqualityExpression	line == 0		437	0		==			
+ANR	450	Identifier	line		437	0					
+ANR	451	PrimaryExpression	0		437	1					
+ANR	452	ReturnStatement	return w ;	3:18:110:119	437	1	True				
+ANR	453	Identifier	w		437	0					
+ANR	454	IfStatement	if ( x == - 1 )		437	2					
+ANR	455	Condition	x == - 1	4:6:127:134	437	0	True				
+ANR	456	EqualityExpression	x == - 1		437	0		==			
+ANR	457	Identifier	x		437	0					
+ANR	458	UnaryOperationExpression	- 1		437	1					
+ANR	459	UnaryOperator	-		437	0					
+ANR	460	PrimaryExpression	1		437	1					
+ANR	461	CompoundStatement		4:17:60:60	437	1					
+ANR	462	ExpressionStatement	a = 0	5:1:141:147	437	0	True				
+ANR	463	AssignmentExpression	a = 0		437	0		=			
+ANR	464	Identifier	a		437	0					
+ANR	465	PrimaryExpression	0		437	1					
+ANR	466	ExpressionStatement	x = 0	6:1:150:156	437	1	True				
+ANR	467	AssignmentExpression	x = 0		437	0		=			
+ANR	468	Identifier	x		437	0					
+ANR	469	PrimaryExpression	0		437	1					
+ANR	470	ElseStatement	else		437	0					
+ANR	471	CompoundStatement		8:6:89:89	437	0					
+ANR	472	ExpressionStatement	"a = getbit ( line , x )"	9:1:170:194	437	0	True				
+ANR	473	AssignmentExpression	"a = getbit ( line , x )"		437	0		=			
+ANR	474	Identifier	a		437	0					
+ANR	475	CallExpression	"getbit ( line , x )"		437	1					
+ANR	476	Callee	getbit		437	0					
+ANR	477	Identifier	getbit		437	0					
+ANR	478	ArgumentList	line		437	1					
+ANR	479	Argument	line		437	0					
+ANR	480	Identifier	line		437	0					
+ANR	481	Argument	x		437	1					
+ANR	482	Identifier	x		437	0					
+ANR	483	ExpressionStatement	x ++	10:1:197:202	437	1	True				
+ANR	484	PostIncDecOperationExpression	x ++		437	0					
+ANR	485	Identifier	x		437	0					
+ANR	486	IncDec	++		437	1					
+ANR	487	WhileStatement	while ( x < w )		437	3					
+ANR	488	Condition	x < w	12:9:216:220	437	0	True				
+ANR	489	RelationalExpression	x < w		437	0		<			
+ANR	490	Identifier	x		437	0					
+ANR	491	Identifier	w		437	1					
+ANR	492	CompoundStatement		12:17:146:146	437	1					
+ANR	493	ExpressionStatement	"b = getbit ( line , x )"	13:1:227:251	437	0	True				
+ANR	494	AssignmentExpression	"b = getbit ( line , x )"		437	0		=			
+ANR	495	Identifier	b		437	0					
+ANR	496	CallExpression	"getbit ( line , x )"		437	1					
+ANR	497	Callee	getbit		437	0					
+ANR	498	Identifier	getbit		437	0					
+ANR	499	ArgumentList	line		437	1					
+ANR	500	Argument	line		437	0					
+ANR	501	Identifier	line		437	0					
+ANR	502	Argument	x		437	1					
+ANR	503	Identifier	x		437	0					
+ANR	504	IfStatement	if ( a != b )		437	1					
+ANR	505	Condition	a != b	14:6:259:264	437	0	True				
+ANR	506	EqualityExpression	a != b		437	0		!=			
+ANR	507	Identifier	a		437	0					
+ANR	508	Identifier	b		437	1					
+ANR	509	BreakStatement	break ;	14:15:268:274	437	1	True				
+ANR	510	ExpressionStatement	x ++	15:1:277:282	437	2	True				
+ANR	511	PostIncDecOperationExpression	x ++		437	0					
+ANR	512	Identifier	x		437	0					
+ANR	513	IncDec	++		437	1					
+ANR	514	ReturnStatement	return x ;	17:1:288:297	437	4	True				
+ANR	515	Identifier	x		437	0					
+ANR	516	ReturnType	static int		437	1					
+ANR	517	Identifier	jbig2_find_changing_element		437	2					
+ANR	518	ParameterList	"const byte * line , int x , int w"		437	3					
+ANR	519	Parameter	const byte * line	1:41:41:57	437	0	True				
+ANR	520	ParameterType	const byte *		437	0					
+ANR	521	Identifier	line		437	1					
+ANR	522	Parameter	int x	1:61:61:65	437	1	True				
+ANR	523	ParameterType	int		437	0					
+ANR	524	Identifier	x		437	1					
+ANR	525	Parameter	int w	1:69:69:73	437	2	True				
+ANR	526	ParameterType	int		437	0					
+ANR	527	Identifier	w		437	1					
+ANR	528	CFGEntryNode	ENTRY		437		True				
+ANR	529	CFGExitNode	EXIT		437		True				
+ANR	530	Symbol	a		437						
+ANR	531	Symbol	b		437						
+ANR	532	Symbol	line		437						
+ANR	533	Symbol	w		437						
+ANR	534	Symbol	x		437						
+ANR	535	Symbol	getbit		437						

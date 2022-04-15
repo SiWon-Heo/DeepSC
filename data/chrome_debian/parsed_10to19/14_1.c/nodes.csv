@@ -1,0 +1,123 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	938	File	tmp/14_1.c								
+ANR	939	Function	jbig2_decode_mmr_init	1:0:0:404							
+ANR	940	FunctionDef	"jbig2_decode_mmr_init (Jbig2MmrCtx * mmr , int width , int height , const byte * data , size_t size)"		939	0					
+ANR	941	CompoundStatement		1:115:115:404	939	0					
+ANR	942	IdentifierDeclStatement	int i ;	2:1:118:124	939	0	True				
+ANR	943	IdentifierDecl	i		939	0					
+ANR	944	IdentifierDeclType	int		939	0					
+ANR	945	Identifier	i		939	1					
+ANR	946	IdentifierDeclStatement	uint32_t word = 0 ;	3:1:127:145	939	1	True				
+ANR	947	IdentifierDecl	word = 0		939	0					
+ANR	948	IdentifierDeclType	uint32_t		939	0					
+ANR	949	Identifier	word		939	1					
+ANR	950	AssignmentExpression	word = 0		939	2		=			
+ANR	951	Identifier	word		939	0					
+ANR	952	PrimaryExpression	0		939	1					
+ANR	953	ExpressionStatement	mmr -> width = width	4:1:148:169	939	2	True				
+ANR	954	AssignmentExpression	mmr -> width = width		939	0		=			
+ANR	955	PtrMemberAccess	mmr -> width		939	0					
+ANR	956	Identifier	mmr		939	0					
+ANR	957	Identifier	width		939	1					
+ANR	958	Identifier	width		939	1					
+ANR	959	ExpressionStatement	mmr -> height = height	5:1:172:195	939	3	True				
+ANR	960	AssignmentExpression	mmr -> height = height		939	0		=			
+ANR	961	PtrMemberAccess	mmr -> height		939	0					
+ANR	962	Identifier	mmr		939	0					
+ANR	963	Identifier	height		939	1					
+ANR	964	Identifier	height		939	1					
+ANR	965	ExpressionStatement	mmr -> data = data	6:1:198:217	939	4	True				
+ANR	966	AssignmentExpression	mmr -> data = data		939	0		=			
+ANR	967	PtrMemberAccess	mmr -> data		939	0					
+ANR	968	Identifier	mmr		939	0					
+ANR	969	Identifier	data		939	1					
+ANR	970	Identifier	data		939	1					
+ANR	971	ExpressionStatement	mmr -> size = size	7:1:220:239	939	5	True				
+ANR	972	AssignmentExpression	mmr -> size = size		939	0		=			
+ANR	973	PtrMemberAccess	mmr -> size		939	0					
+ANR	974	Identifier	mmr		939	0					
+ANR	975	Identifier	size		939	1					
+ANR	976	Identifier	size		939	1					
+ANR	977	ExpressionStatement	mmr -> data_index = 0	8:1:242:264	939	6	True				
+ANR	978	AssignmentExpression	mmr -> data_index = 0		939	0		=			
+ANR	979	PtrMemberAccess	mmr -> data_index		939	0					
+ANR	980	Identifier	mmr		939	0					
+ANR	981	Identifier	data_index		939	1					
+ANR	982	PrimaryExpression	0		939	1					
+ANR	983	ExpressionStatement	mmr -> bit_index = 0	9:1:267:288	939	7	True				
+ANR	984	AssignmentExpression	mmr -> bit_index = 0		939	0		=			
+ANR	985	PtrMemberAccess	mmr -> bit_index		939	0					
+ANR	986	Identifier	mmr		939	0					
+ANR	987	Identifier	bit_index		939	1					
+ANR	988	PrimaryExpression	0		939	1					
+ANR	989	ForStatement	for ( i = 0 ; i < size && i < 4 ; i ++ )		939	8					
+ANR	990	ForInit	i = 0 ;	10:7:297:303	939	0	True				
+ANR	991	AssignmentExpression	i = 0		939	0		=			
+ANR	992	Identifier	i		939	0					
+ANR	993	PrimaryExpression	0		939	1					
+ANR	994	Condition	i < size && i < 4	11:1:306:322	939	1	True				
+ANR	995	AndExpression	i < size && i < 4		939	0		&&			
+ANR	996	RelationalExpression	i < size		939	0		<			
+ANR	997	Identifier	i		939	0					
+ANR	998	Identifier	size		939	1					
+ANR	999	RelationalExpression	i < 4		939	1		<			
+ANR	1000	Identifier	i		939	0					
+ANR	1001	PrimaryExpression	4		939	1					
+ANR	1002	PostIncDecOperationExpression	i ++	12:1:327:330	939	2	True				
+ANR	1003	Identifier	i		939	0					
+ANR	1004	IncDec	++		939	1					
+ANR	1005	ExpressionStatement	word |= ( data [ i ] << ( ( 3 - i ) << 3 ) )	12:8:334:379	939	3	True				
+ANR	1006	AssignmentExpression	word |= ( data [ i ] << ( ( 3 - i ) << 3 ) )		939	0		|=			
+ANR	1007	Identifier	word		939	0					
+ANR	1008	ShiftExpression	data [ i ] << ( ( 3 - i ) << 3 )		939	1		<<			
+ANR	1009	ArrayIndexing	data [ i ]		939	0					
+ANR	1010	Identifier	data		939	0					
+ANR	1011	Identifier	i		939	1					
+ANR	1012	ShiftExpression	( 3 - i ) << 3		939	1		<<			
+ANR	1013	AdditiveExpression	3 - i		939	0		-			
+ANR	1014	PrimaryExpression	3		939	0					
+ANR	1015	Identifier	i		939	1					
+ANR	1016	PrimaryExpression	3		939	1					
+ANR	1017	ExpressionStatement	mmr -> word = word	13:1:382:401	939	9	True				
+ANR	1018	AssignmentExpression	mmr -> word = word		939	0		=			
+ANR	1019	PtrMemberAccess	mmr -> word		939	0					
+ANR	1020	Identifier	mmr		939	0					
+ANR	1021	Identifier	word		939	1					
+ANR	1022	Identifier	word		939	1					
+ANR	1023	ReturnType	static void		939	1					
+ANR	1024	Identifier	jbig2_decode_mmr_init		939	2					
+ANR	1025	ParameterList	"Jbig2MmrCtx * mmr , int width , int height , const byte * data , size_t size"		939	3					
+ANR	1026	Parameter	Jbig2MmrCtx * mmr	1:36:36:52	939	0	True				
+ANR	1027	ParameterType	Jbig2MmrCtx *		939	0					
+ANR	1028	Identifier	mmr		939	1					
+ANR	1029	Parameter	int width	1:56:56:64	939	1	True				
+ANR	1030	ParameterType	int		939	0					
+ANR	1031	Identifier	width		939	1					
+ANR	1032	Parameter	int height	1:68:68:77	939	2	True				
+ANR	1033	ParameterType	int		939	0					
+ANR	1034	Identifier	height		939	1					
+ANR	1035	Parameter	const byte * data	1:81:81:97	939	3	True				
+ANR	1036	ParameterType	const byte *		939	0					
+ANR	1037	Identifier	data		939	1					
+ANR	1038	Parameter	size_t size	1:101:101:111	939	4	True				
+ANR	1039	ParameterType	size_t		939	0					
+ANR	1040	Identifier	size		939	1					
+ANR	1041	CFGEntryNode	ENTRY		939		True				
+ANR	1042	CFGExitNode	EXIT		939		True				
+ANR	1043	Symbol	mmr -> size		939						
+ANR	1044	Symbol	mmr -> data_index		939						
+ANR	1045	Symbol	data		939						
+ANR	1046	Symbol	mmr -> word		939						
+ANR	1047	Symbol	i		939						
+ANR	1048	Symbol	mmr -> height		939						
+ANR	1049	Symbol	mmr -> bit_index		939						
+ANR	1050	Symbol	mmr -> data		939						
+ANR	1051	Symbol	mmr		939						
+ANR	1052	Symbol	mmr -> width		939						
+ANR	1053	Symbol	* i		939						
+ANR	1054	Symbol	size		939						
+ANR	1055	Symbol	width		939						
+ANR	1056	Symbol	* mmr		939						
+ANR	1057	Symbol	word		939						
+ANR	1058	Symbol	* data		939						
+ANR	1059	Symbol	height		939						

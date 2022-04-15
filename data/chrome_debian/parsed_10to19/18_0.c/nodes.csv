@@ -1,0 +1,95 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4670	File	tmp/18_0.c								
+ANR	4671	Function	dprintf_IsQualifierNoDollar	1:0:0:568							
+ANR	4672	FunctionDef	dprintf_IsQualifierNoDollar (const char * fmt)		4671	0					
+ANR	4673	CompoundStatement		1:61:61:568	4671	0					
+ANR	4674	Statement	if	2:3:66:67	4671	0	True				
+ANR	4675	Statement	defined	2:6:69:75	4671	1	True				
+ANR	4676	Statement	(	2:14:77:77	4671	2	True				
+ANR	4677	Statement	MP_HAVE_INT_EXTENSIONS	2:16:79:100	4671	3	True				
+ANR	4678	Statement	)	2:39:102:102	4671	4	True				
+ANR	4679	IfStatement	"if ( ! strncmp ( fmt , ""I32"" , 3 ) || ! strncmp ( fmt , ""I64"" , 3 ) )"		4671	5					
+ANR	4680	Condition	"! strncmp ( fmt , ""I32"" , 3 ) || ! strncmp ( fmt , ""I64"" , 3 )"	2:46:109:170	4671	0	True				
+ANR	4681	OrExpression	"! strncmp ( fmt , ""I32"" , 3 ) || ! strncmp ( fmt , ""I64"" , 3 )"		4671	0		||			
+ANR	4682	UnaryOperationExpression	"! strncmp ( fmt , ""I32"" , 3 )"		4671	0					
+ANR	4683	UnaryOperator	!		4671	0					
+ANR	4684	CallExpression	"strncmp ( fmt , ""I32"" , 3 )"		4671	1					
+ANR	4685	Callee	strncmp		4671	0					
+ANR	4686	Identifier	strncmp		4671	0					
+ANR	4687	ArgumentList	fmt		4671	1					
+ANR	4688	Argument	fmt		4671	0					
+ANR	4689	Identifier	fmt		4671	0					
+ANR	4690	Argument	"""I32"""		4671	1					
+ANR	4691	PrimaryExpression	"""I32"""		4671	0					
+ANR	4692	Argument	3		4671	2					
+ANR	4693	PrimaryExpression	3		4671	0					
+ANR	4694	UnaryOperationExpression	"! strncmp ( fmt , ""I64"" , 3 )"		4671	1					
+ANR	4695	UnaryOperator	!		4671	0					
+ANR	4696	CallExpression	"strncmp ( fmt , ""I64"" , 3 )"		4671	1					
+ANR	4697	Callee	strncmp		4671	0					
+ANR	4698	Identifier	strncmp		4671	0					
+ANR	4699	ArgumentList	fmt		4671	1					
+ANR	4700	Argument	fmt		4671	0					
+ANR	4701	Identifier	fmt		4671	0					
+ANR	4702	Argument	"""I64"""		4671	1					
+ANR	4703	PrimaryExpression	"""I64"""		4671	0					
+ANR	4704	Argument	3		4671	2					
+ANR	4705	PrimaryExpression	3		4671	0					
+ANR	4706	CompoundStatement		2:111:112:112	4671	1					
+ANR	4707	ReturnStatement	return TRUE ;	3:1:177:189	4671	0	True				
+ANR	4708	Identifier	TRUE		4671	0					
+ANR	4709	Statement	endif	5:3:197:201	4671	6	True				
+ANR	4710	SwitchStatement	switch ( * fmt )		4671	7					
+ANR	4711	Condition	* fmt	5:18:212:216	4671	0	True				
+ANR	4712	UnaryOperationExpression	* fmt		4671	0					
+ANR	4713	UnaryOperator	*		4671	0					
+ANR	4714	Identifier	fmt		4671	1					
+ANR	4715	CompoundStatement		5:26:158:158	4671	1					
+ANR	4716	Label	case '-' :	6:1:223:232	4671	0	True				
+ANR	4717	Label	case '+' :	6:12:234:243	4671	1	True				
+ANR	4718	Label	case ' ' :	6:23:245:254	4671	2	True				
+ANR	4719	Label	case '#' :	6:34:256:265	4671	3	True				
+ANR	4720	Label	case '.' :	6:45:267:276	4671	4	True				
+ANR	4721	Label	case '0' :	6:56:278:287	4671	5	True				
+ANR	4722	Label	case '1' :	6:67:289:298	4671	6	True				
+ANR	4723	Label	case '2' :	6:78:300:309	4671	7	True				
+ANR	4724	Label	case '3' :	6:89:311:320	4671	8	True				
+ANR	4725	Label	case '4' :	6:100:322:331	4671	9	True				
+ANR	4726	Label	case '5' :	6:111:333:342	4671	10	True				
+ANR	4727	Label	case '6' :	6:122:344:353	4671	11	True				
+ANR	4728	Label	case '7' :	6:133:355:364	4671	12	True				
+ANR	4729	Label	case '8' :	6:144:366:375	4671	13	True				
+ANR	4730	Label	case '9' :	6:155:377:386	4671	14	True				
+ANR	4731	Label	case 'h' :	6:166:388:397	4671	15	True				
+ANR	4732	Label	case 'l' :	6:177:399:408	4671	16	True				
+ANR	4733	Label	case 'L' :	6:188:410:419	4671	17	True				
+ANR	4734	Label	case 'z' :	6:199:421:430	4671	18	True				
+ANR	4735	Label	case 'q' :	6:210:432:441	4671	19	True				
+ANR	4736	Label	case '*' :	6:221:443:452	4671	20	True				
+ANR	4737	Label	case 'O' :	6:232:454:463	4671	21	True				
+ANR	4738	Statement	if	6:245:467:468	4671	22	True				
+ANR	4739	Statement	defined	6:248:470:476	4671	23	True				
+ANR	4740	Statement	(	6:256:478:478	4671	24	True				
+ANR	4741	Statement	MP_HAVE_INT_EXTENSIONS	6:258:480:501	4671	25	True				
+ANR	4742	Statement	)	6:281:503:503	4671	26	True				
+ANR	4743	Label	case 'I' :	6:283:505:514	4671	27	True				
+ANR	4744	Statement	endif	6:296:518:522	4671	28	True				
+ANR	4745	ReturnStatement	return TRUE ;	6:302:524:536	4671	29	True				
+ANR	4746	Identifier	TRUE		4671	0					
+ANR	4747	Label	default :	7:1:539:547	4671	30	True				
+ANR	4748	Identifier	default		4671	0					
+ANR	4749	ReturnStatement	return FALSE ;	7:11:549:562	4671	31	True				
+ANR	4750	Identifier	FALSE		4671	0					
+ANR	4751	ReturnType	static bool		4671	1					
+ANR	4752	Identifier	dprintf_IsQualifierNoDollar		4671	2					
+ANR	4753	ParameterList	const char * fmt		4671	3					
+ANR	4754	Parameter	const char * fmt	1:42:42:57	4671	0	True				
+ANR	4755	ParameterType	const char *		4671	0					
+ANR	4756	Identifier	fmt		4671	1					
+ANR	4757	CFGEntryNode	ENTRY		4671		True				
+ANR	4758	CFGExitNode	EXIT		4671		True				
+ANR	4759	Symbol	strncmp		4671						
+ANR	4760	Symbol	* fmt		4671						
+ANR	4761	Symbol	TRUE		4671						
+ANR	4762	Symbol	FALSE		4671						
+ANR	4763	Symbol	fmt		4671						

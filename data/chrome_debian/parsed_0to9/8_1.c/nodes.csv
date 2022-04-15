@@ -1,0 +1,116 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	5796	File	tmp/8_1.c								
+ANR	5797	Function	jbig2_end_of_stripe	1:0:0:624							
+ANR	5798	FunctionDef	"jbig2_end_of_stripe (Jbig2Ctx * ctx , Jbig2Segment * segment , const uint8_t * segment_data)"		5797	0					
+ANR	5799	CompoundStatement		1:99:99:624	5797	0					
+ANR	5800	IdentifierDeclStatement	Jbig2Page page = ctx -> pages [ ctx -> current_page ] ;	2:1:102:156	5797	0	True				
+ANR	5801	IdentifierDecl	page = ctx -> pages [ ctx -> current_page ]		5797	0					
+ANR	5802	IdentifierDeclType	Jbig2Page		5797	0					
+ANR	5803	Identifier	page		5797	1					
+ANR	5804	AssignmentExpression	page = ctx -> pages [ ctx -> current_page ]		5797	2		=			
+ANR	5805	Identifier	page		5797	0					
+ANR	5806	ArrayIndexing	ctx -> pages [ ctx -> current_page ]		5797	1					
+ANR	5807	PtrMemberAccess	ctx -> pages		5797	0					
+ANR	5808	Identifier	ctx		5797	0					
+ANR	5809	Identifier	pages		5797	1					
+ANR	5810	PtrMemberAccess	ctx -> current_page		5797	1					
+ANR	5811	Identifier	ctx		5797	0					
+ANR	5812	Identifier	current_page		5797	1					
+ANR	5813	IdentifierDeclStatement	int end_row ;	3:1:159:171	5797	1	True				
+ANR	5814	IdentifierDecl	end_row		5797	0					
+ANR	5815	IdentifierDeclType	int		5797	0					
+ANR	5816	Identifier	end_row		5797	1					
+ANR	5817	ExpressionStatement	end_row = jbig2_get_int32 ( segment_data )	4:1:174:217	5797	2	True				
+ANR	5818	AssignmentExpression	end_row = jbig2_get_int32 ( segment_data )		5797	0		=			
+ANR	5819	Identifier	end_row		5797	0					
+ANR	5820	CallExpression	jbig2_get_int32 ( segment_data )		5797	1					
+ANR	5821	Callee	jbig2_get_int32		5797	0					
+ANR	5822	Identifier	jbig2_get_int32		5797	0					
+ANR	5823	ArgumentList	segment_data		5797	1					
+ANR	5824	Argument	segment_data		5797	0					
+ANR	5825	Identifier	segment_data		5797	0					
+ANR	5826	IfStatement	if ( end_row < page . end_row )		5797	3					
+ANR	5827	Condition	end_row < page . end_row	5:6:225:248	5797	0	True				
+ANR	5828	RelationalExpression	end_row < page . end_row		5797	0		<			
+ANR	5829	Identifier	end_row		5797	0					
+ANR	5830	MemberAccess	page . end_row		5797	1					
+ANR	5831	Identifier	page		5797	0					
+ANR	5832	Identifier	end_row		5797	1					
+ANR	5833	CompoundStatement		5:33:152:152	5797	1					
+ANR	5834	Statement	jbig2_error	6:1:255:265	5797	0	True				
+ANR	5835	Statement	(	6:13:267:267	5797	1	True				
+ANR	5836	Statement	ctx	6:15:269:271	5797	2	True				
+ANR	5837	Statement	","	6:19:273:273	5797	3	True				
+ANR	5838	Statement	JBIG2_SEVERITY_WARNING	6:21:275:296	5797	4	True				
+ANR	5839	Statement	","	6:44:298:298	5797	5	True				
+ANR	5840	Statement	segment	6:46:300:306	5797	6	True				
+ANR	5841	Statement	->	6:54:308:309	5797	7	True				
+ANR	5842	Statement	number	6:57:311:316	5797	8	True				
+ANR	5843	Statement	","	6:64:318:318	5797	9	True				
+ANR	5844	Statement	"""end of stripe segment with non-positive end row advance"""	6:66:320:376	5797	10	True				
+ANR	5845	Statement	""" (new end row %d vs current end row %d)"""	6:124:378:418	5797	11	True				
+ANR	5846	Statement	","	6:166:420:420	5797	12	True				
+ANR	5847	Statement	end_row	6:168:422:428	5797	13	True				
+ANR	5848	Statement	","	6:176:430:430	5797	14	True				
+ANR	5849	Statement	page	6:178:432:435	5797	15	True				
+ANR	5850	Statement	.	6:183:437:437	5797	16	True				
+ANR	5851	Statement	end_row	6:185:439:445	5797	17	True				
+ANR	5852	Statement	)	6:193:447:447	5797	18	True				
+ANR	5853	ExpressionStatement		6:195:449:449	5797	19	True				
+ANR	5854	ElseStatement	else		5797	0					
+ANR	5855	CompoundStatement		8:6:360:360	5797	0					
+ANR	5856	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""end of stripe: advancing end row to %d"" , end_row )"	9:1:463:578	5797	0	True				
+ANR	5857	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""end of stripe: advancing end row to %d"" , end_row )"		5797	0					
+ANR	5858	Callee	jbig2_error		5797	0					
+ANR	5859	Identifier	jbig2_error		5797	0					
+ANR	5860	ArgumentList	ctx		5797	1					
+ANR	5861	Argument	ctx		5797	0					
+ANR	5862	Identifier	ctx		5797	0					
+ANR	5863	Argument	JBIG2_SEVERITY_INFO		5797	1					
+ANR	5864	Identifier	JBIG2_SEVERITY_INFO		5797	0					
+ANR	5865	Argument	segment -> number		5797	2					
+ANR	5866	PtrMemberAccess	segment -> number		5797	0					
+ANR	5867	Identifier	segment		5797	0					
+ANR	5868	Identifier	number		5797	1					
+ANR	5869	Argument	"""end of stripe: advancing end row to %d"""		5797	3					
+ANR	5870	PrimaryExpression	"""end of stripe: advancing end row to %d"""		5797	0					
+ANR	5871	Argument	end_row		5797	4					
+ANR	5872	Identifier	end_row		5797	0					
+ANR	5873	ExpressionStatement	page . end_row = end_row	11:1:584:609	5797	4	True				
+ANR	5874	AssignmentExpression	page . end_row = end_row		5797	0		=			
+ANR	5875	MemberAccess	page . end_row		5797	0					
+ANR	5876	Identifier	page		5797	0					
+ANR	5877	Identifier	end_row		5797	1					
+ANR	5878	Identifier	end_row		5797	1					
+ANR	5879	ReturnStatement	return 0 ;	12:1:612:621	5797	5	True				
+ANR	5880	PrimaryExpression	0		5797	0					
+ANR	5881	ReturnType	int		5797	1					
+ANR	5882	Identifier	jbig2_end_of_stripe		5797	2					
+ANR	5883	ParameterList	"Jbig2Ctx * ctx , Jbig2Segment * segment , const uint8_t * segment_data"		5797	3					
+ANR	5884	Parameter	Jbig2Ctx * ctx	1:26:26:39	5797	0	True				
+ANR	5885	ParameterType	Jbig2Ctx *		5797	0					
+ANR	5886	Identifier	ctx		5797	1					
+ANR	5887	Parameter	Jbig2Segment * segment	1:43:43:64	5797	1	True				
+ANR	5888	ParameterType	Jbig2Segment *		5797	0					
+ANR	5889	Identifier	segment		5797	1					
+ANR	5890	Parameter	const uint8_t * segment_data	1:68:68:95	5797	2	True				
+ANR	5891	ParameterType	const uint8_t *		5797	0					
+ANR	5892	Identifier	segment_data		5797	1					
+ANR	5893	CFGEntryNode	ENTRY		5797		True				
+ANR	5894	CFGExitNode	EXIT		5797		True				
+ANR	5895	Symbol	segment_data		5797						
+ANR	5896	Symbol	JBIG2_SEVERITY_INFO		5797						
+ANR	5897	Symbol	ctx -> current_page		5797						
+ANR	5898	Symbol	ctx		5797						
+ANR	5899	Symbol	page . end_row		5797						
+ANR	5900	Symbol	jbig2_get_int32		5797						
+ANR	5901	Symbol	* ctx		5797						
+ANR	5902	Symbol	end_row		5797						
+ANR	5903	Symbol	segment -> number		5797						
+ANR	5904	Symbol	segment		5797						
+ANR	5905	Symbol	ctx -> pages		5797						
+ANR	5906	Symbol	* ctx -> current_page		5797						
+ANR	5907	Symbol	* ctx -> pages		5797						
+ANR	5908	Symbol	* segment		5797						
+ANR	5909	Symbol	* * ctx		5797						
+ANR	5910	Symbol	page		5797						

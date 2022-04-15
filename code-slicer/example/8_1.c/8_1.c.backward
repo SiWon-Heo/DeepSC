@@ -1,0 +1,1 @@
+int jbig2_end_of_stripe ( Jbig2Ctx * ctx , Jbig2Segment * segment , const uint8_t * segment_data ) {

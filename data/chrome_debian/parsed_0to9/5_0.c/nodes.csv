@@ -1,0 +1,16 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4000	File	tmp/5_0.c								
+ANR	4001	Function	__uint64_identity	1:0:0:81							
+ANR	4002	FunctionDef	__uint64_identity (__uint64_t __x)		4001	0					
+ANR	4003	CompoundStatement		1:64:64:81	4001	0					
+ANR	4004	ReturnStatement	return __x ;	2:1:67:78	4001	0	True				
+ANR	4005	Identifier	__x		4001	0					
+ANR	4006	ReturnType	static __inline __uint64_t		4001	1					
+ANR	4007	Identifier	__uint64_identity		4001	2					
+ANR	4008	ParameterList	__uint64_t __x		4001	3					
+ANR	4009	Parameter	__uint64_t __x	1:47:47:60	4001	0	True				
+ANR	4010	ParameterType	__uint64_t		4001	0					
+ANR	4011	Identifier	__x		4001	1					
+ANR	4012	CFGEntryNode	ENTRY		4001		True				
+ANR	4013	CFGExitNode	EXIT		4001		True				
+ANR	4014	Symbol	__x		4001						

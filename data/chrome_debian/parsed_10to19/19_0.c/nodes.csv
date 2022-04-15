@@ -1,0 +1,197 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4905	File	tmp/19_0.c								
+ANR	4906	Function	alloc_addbyter	1:0:0:726							
+ANR	4907	FunctionDef	"alloc_addbyter (int output , FILE * data)"		4906	0					
+ANR	4908	CompoundStatement		1:55:55:726	4906	0					
+ANR	4909	IdentifierDeclStatement	struct asprintf * infop = ( struct asprintf * ) data ;	2:1:58:111	4906	0	True				
+ANR	4910	IdentifierDecl	* infop = ( struct asprintf * ) data		4906	0					
+ANR	4911	IdentifierDeclType	struct asprintf *		4906	0					
+ANR	4912	Identifier	infop		4906	1					
+ANR	4913	AssignmentExpression	* infop = ( struct asprintf * ) data		4906	2		=			
+ANR	4914	Identifier	infop		4906	0					
+ANR	4915	CastExpression	( struct asprintf * ) data		4906	1					
+ANR	4916	CastTarget	struct asprintf *		4906	0					
+ANR	4917	Identifier	data		4906	1					
+ANR	4918	IdentifierDeclStatement	unsigned char outc = ( unsigned char ) output ;	3:1:114:160	4906	1	True				
+ANR	4919	IdentifierDecl	outc = ( unsigned char ) output		4906	0					
+ANR	4920	IdentifierDeclType	unsigned char		4906	0					
+ANR	4921	Identifier	outc		4906	1					
+ANR	4922	AssignmentExpression	outc = ( unsigned char ) output		4906	2		=			
+ANR	4923	Identifier	outc		4906	0					
+ANR	4924	CastExpression	( unsigned char ) output		4906	1					
+ANR	4925	CastTarget	unsigned char		4906	0					
+ANR	4926	Identifier	output		4906	1					
+ANR	4927	IfStatement	if ( ! infop -> buffer )		4906	2					
+ANR	4928	Condition	! infop -> buffer	4:6:168:184	4906	0	True				
+ANR	4929	UnaryOperationExpression	! infop -> buffer		4906	0					
+ANR	4930	UnaryOperator	!		4906	0					
+ANR	4931	PtrMemberAccess	infop -> buffer		4906	1					
+ANR	4932	Identifier	infop		4906	0					
+ANR	4933	Identifier	buffer		4906	1					
+ANR	4934	CompoundStatement		4:26:132:132	4906	1					
+ANR	4935	ExpressionStatement	infop -> buffer = malloc ( 32 )	5:1:191:223	4906	0	True				
+ANR	4936	AssignmentExpression	infop -> buffer = malloc ( 32 )		4906	0		=			
+ANR	4937	PtrMemberAccess	infop -> buffer		4906	0					
+ANR	4938	Identifier	infop		4906	0					
+ANR	4939	Identifier	buffer		4906	1					
+ANR	4940	CallExpression	malloc ( 32 )		4906	1					
+ANR	4941	Callee	malloc		4906	0					
+ANR	4942	Identifier	malloc		4906	0					
+ANR	4943	ArgumentList	32		4906	1					
+ANR	4944	Argument	32		4906	0					
+ANR	4945	PrimaryExpression	32		4906	0					
+ANR	4946	IfStatement	if ( ! infop -> buffer )		4906	1					
+ANR	4947	Condition	! infop -> buffer	6:6:231:247	4906	0	True				
+ANR	4948	UnaryOperationExpression	! infop -> buffer		4906	0					
+ANR	4949	UnaryOperator	!		4906	0					
+ANR	4950	PtrMemberAccess	infop -> buffer		4906	1					
+ANR	4951	Identifier	infop		4906	0					
+ANR	4952	Identifier	buffer		4906	1					
+ANR	4953	CompoundStatement		6:26:195:195	4906	1					
+ANR	4954	ExpressionStatement	infop -> fail = 1	7:1:254:272	4906	0	True				
+ANR	4955	AssignmentExpression	infop -> fail = 1		4906	0		=			
+ANR	4956	PtrMemberAccess	infop -> fail		4906	0					
+ANR	4957	Identifier	infop		4906	0					
+ANR	4958	Identifier	fail		4906	1					
+ANR	4959	PrimaryExpression	1		4906	1					
+ANR	4960	ReturnStatement	return - 1 ;	8:1:275:286	4906	1	True				
+ANR	4961	UnaryOperationExpression	- 1		4906	0					
+ANR	4962	UnaryOperator	-		4906	0					
+ANR	4963	PrimaryExpression	1		4906	1					
+ANR	4964	ExpressionStatement	infop -> alloc = 32	10:1:292:312	4906	2	True				
+ANR	4965	AssignmentExpression	infop -> alloc = 32		4906	0		=			
+ANR	4966	PtrMemberAccess	infop -> alloc		4906	0					
+ANR	4967	Identifier	infop		4906	0					
+ANR	4968	Identifier	alloc		4906	1					
+ANR	4969	PrimaryExpression	32		4906	1					
+ANR	4970	ExpressionStatement	infop -> len = 0	11:1:315:332	4906	3	True				
+ANR	4971	AssignmentExpression	infop -> len = 0		4906	0		=			
+ANR	4972	PtrMemberAccess	infop -> len		4906	0					
+ANR	4973	Identifier	infop		4906	0					
+ANR	4974	Identifier	len		4906	1					
+ANR	4975	PrimaryExpression	0		4906	1					
+ANR	4976	ElseStatement	else		4906	0					
+ANR	4977	IfStatement	if ( infop -> len + 1 >= infop -> alloc )		4906	0					
+ANR	4978	Condition	infop -> len + 1 >= infop -> alloc	13:11:348:381	4906	0	True				
+ANR	4979	RelationalExpression	infop -> len + 1 >= infop -> alloc		4906	0		>=			
+ANR	4980	AdditiveExpression	infop -> len + 1		4906	0		+			
+ANR	4981	PtrMemberAccess	infop -> len		4906	0					
+ANR	4982	Identifier	infop		4906	0					
+ANR	4983	Identifier	len		4906	1					
+ANR	4984	PrimaryExpression	1		4906	1					
+ANR	4985	PtrMemberAccess	infop -> alloc		4906	1					
+ANR	4986	Identifier	infop		4906	0					
+ANR	4987	Identifier	alloc		4906	1					
+ANR	4988	CompoundStatement		15:1:356:392	4906	1					
+ANR	4989	IdentifierDeclStatement	char * newptr = NULL ;	14:1:388:409	4906	0	True				
+ANR	4990	IdentifierDecl	* newptr = NULL		4906	0					
+ANR	4991	IdentifierDeclType	char *		4906	0					
+ANR	4992	Identifier	newptr		4906	1					
+ANR	4993	AssignmentExpression	* newptr = NULL		4906	2		=			
+ANR	4994	Identifier	NULL		4906	0					
+ANR	4995	Identifier	NULL		4906	1					
+ANR	4996	IdentifierDeclStatement	size_t newsize = infop -> alloc * 2 ;	15:1:412:448	4906	1	True				
+ANR	4997	IdentifierDecl	newsize = infop -> alloc * 2		4906	0					
+ANR	4998	IdentifierDeclType	size_t		4906	0					
+ANR	4999	Identifier	newsize		4906	1					
+ANR	5000	AssignmentExpression	newsize = infop -> alloc * 2		4906	2		=			
+ANR	5001	Identifier	newsize		4906	0					
+ANR	5002	MultiplicativeExpression	infop -> alloc * 2		4906	1		*			
+ANR	5003	PtrMemberAccess	infop -> alloc		4906	0					
+ANR	5004	Identifier	infop		4906	0					
+ANR	5005	Identifier	alloc		4906	1					
+ANR	5006	PrimaryExpression	2		4906	1					
+ANR	5007	IfStatement	if ( newsize > infop -> alloc )		4906	2					
+ANR	5008	Condition	newsize > infop -> alloc	16:6:456:479	4906	0	True				
+ANR	5009	RelationalExpression	newsize > infop -> alloc		4906	0		>			
+ANR	5010	Identifier	newsize		4906	0					
+ANR	5011	PtrMemberAccess	infop -> alloc		4906	1					
+ANR	5012	Identifier	infop		4906	0					
+ANR	5013	Identifier	alloc		4906	1					
+ANR	5014	ExpressionStatement	"newptr = realloc ( infop -> buffer , newsize )"	16:33:483:530	4906	1	True				
+ANR	5015	AssignmentExpression	"newptr = realloc ( infop -> buffer , newsize )"		4906	0		=			
+ANR	5016	Identifier	newptr		4906	0					
+ANR	5017	CallExpression	"realloc ( infop -> buffer , newsize )"		4906	1					
+ANR	5018	Callee	realloc		4906	0					
+ANR	5019	Identifier	realloc		4906	0					
+ANR	5020	ArgumentList	infop -> buffer		4906	1					
+ANR	5021	Argument	infop -> buffer		4906	0					
+ANR	5022	PtrMemberAccess	infop -> buffer		4906	0					
+ANR	5023	Identifier	infop		4906	0					
+ANR	5024	Identifier	buffer		4906	1					
+ANR	5025	Argument	newsize		4906	1					
+ANR	5026	Identifier	newsize		4906	0					
+ANR	5027	IfStatement	if ( ! newptr )		4906	3					
+ANR	5028	Condition	! newptr	17:6:538:545	4906	0	True				
+ANR	5029	UnaryOperationExpression	! newptr		4906	0					
+ANR	5030	UnaryOperator	!		4906	0					
+ANR	5031	Identifier	newptr		4906	1					
+ANR	5032	CompoundStatement		17:17:493:493	4906	1					
+ANR	5033	ExpressionStatement	infop -> fail = 1	18:1:552:570	4906	0	True				
+ANR	5034	AssignmentExpression	infop -> fail = 1		4906	0		=			
+ANR	5035	PtrMemberAccess	infop -> fail		4906	0					
+ANR	5036	Identifier	infop		4906	0					
+ANR	5037	Identifier	fail		4906	1					
+ANR	5038	PrimaryExpression	1		4906	1					
+ANR	5039	ReturnStatement	return - 1 ;	19:1:573:584	4906	1	True				
+ANR	5040	UnaryOperationExpression	- 1		4906	0					
+ANR	5041	UnaryOperator	-		4906	0					
+ANR	5042	PrimaryExpression	1		4906	1					
+ANR	5043	ExpressionStatement	infop -> buffer = newptr	21:1:590:615	4906	4	True				
+ANR	5044	AssignmentExpression	infop -> buffer = newptr		4906	0		=			
+ANR	5045	PtrMemberAccess	infop -> buffer		4906	0					
+ANR	5046	Identifier	infop		4906	0					
+ANR	5047	Identifier	buffer		4906	1					
+ANR	5048	Identifier	newptr		4906	1					
+ANR	5049	ExpressionStatement	infop -> alloc = newsize	22:1:618:643	4906	5	True				
+ANR	5050	AssignmentExpression	infop -> alloc = newsize		4906	0		=			
+ANR	5051	PtrMemberAccess	infop -> alloc		4906	0					
+ANR	5052	Identifier	infop		4906	0					
+ANR	5053	Identifier	alloc		4906	1					
+ANR	5054	Identifier	newsize		4906	1					
+ANR	5055	ExpressionStatement	infop -> buffer [ infop -> len ] = outc	24:1:649:689	4906	3	True				
+ANR	5056	AssignmentExpression	infop -> buffer [ infop -> len ] = outc		4906	0		=			
+ANR	5057	ArrayIndexing	infop -> buffer [ infop -> len ]		4906	0					
+ANR	5058	PtrMemberAccess	infop -> buffer		4906	0					
+ANR	5059	Identifier	infop		4906	0					
+ANR	5060	Identifier	buffer		4906	1					
+ANR	5061	PtrMemberAccess	infop -> len		4906	1					
+ANR	5062	Identifier	infop		4906	0					
+ANR	5063	Identifier	len		4906	1					
+ANR	5064	Identifier	outc		4906	1					
+ANR	5065	ExpressionStatement	infop -> len ++	25:1:692:708	4906	4	True				
+ANR	5066	PostIncDecOperationExpression	infop -> len ++		4906	0					
+ANR	5067	PtrMemberAccess	infop -> len		4906	0					
+ANR	5068	Identifier	infop		4906	0					
+ANR	5069	Identifier	len		4906	1					
+ANR	5070	IncDec	++		4906	1					
+ANR	5071	ReturnStatement	return outc ;	26:1:711:723	4906	5	True				
+ANR	5072	Identifier	outc		4906	0					
+ANR	5073	ReturnType	static int		4906	1					
+ANR	5074	Identifier	alloc_addbyter		4906	2					
+ANR	5075	ParameterList	"int output , FILE * data"		4906	3					
+ANR	5076	Parameter	int output	1:28:28:37	4906	0	True				
+ANR	5077	ParameterType	int		4906	0					
+ANR	5078	Identifier	output		4906	1					
+ANR	5079	Parameter	FILE * data	1:41:41:51	4906	1	True				
+ANR	5080	ParameterType	FILE *		4906	0					
+ANR	5081	Identifier	data		4906	1					
+ANR	5082	CFGEntryNode	ENTRY		4906		True				
+ANR	5083	CFGExitNode	EXIT		4906		True				
+ANR	5084	Symbol	outc		4906						
+ANR	5085	Symbol	malloc		4906						
+ANR	5086	Symbol	NULL		4906						
+ANR	5087	Symbol	data		4906						
+ANR	5088	Symbol	infop -> alloc		4906						
+ANR	5089	Symbol	infop -> buffer		4906						
+ANR	5090	Symbol	newsize		4906						
+ANR	5091	Symbol	realloc		4906						
+ANR	5092	Symbol	* infop -> buffer		4906						
+ANR	5093	Symbol	* * infop		4906						
+ANR	5094	Symbol	output		4906						
+ANR	5095	Symbol	newptr		4906						
+ANR	5096	Symbol	* infop		4906						
+ANR	5097	Symbol	infop -> fail		4906						
+ANR	5098	Symbol	infop		4906						
+ANR	5099	Symbol	* infop -> len		4906						
+ANR	5100	Symbol	infop -> len		4906						

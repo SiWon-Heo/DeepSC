@@ -1,0 +1,154 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1060	File	tmp/15_0.c								
+ANR	1061	Function	curl_maprintf	1:0:0:547							
+ANR	1062	FunctionDef	curl_maprintf (const char * format)		1061	0					
+ANR	1063	CompoundStatement		1:51:51:547	1061	0					
+ANR	1064	IdentifierDeclStatement	va_list ap_save ;	2:1:54:70	1061	0	True				
+ANR	1065	IdentifierDecl	ap_save		1061	0					
+ANR	1066	IdentifierDeclType	va_list		1061	0					
+ANR	1067	Identifier	ap_save		1061	1					
+ANR	1068	IdentifierDeclStatement	int retcode ;	3:1:73:85	1061	1	True				
+ANR	1069	IdentifierDecl	retcode		1061	0					
+ANR	1070	IdentifierDeclType	int		1061	0					
+ANR	1071	Identifier	retcode		1061	1					
+ANR	1072	IdentifierDeclStatement	struct asprintf info ;	4:1:88:109	1061	2	True				
+ANR	1073	IdentifierDecl	info		1061	0					
+ANR	1074	IdentifierDeclType	struct asprintf		1061	0					
+ANR	1075	Identifier	info		1061	1					
+ANR	1076	ExpressionStatement	info . buffer = NULL	5:1:112:133	1061	3	True				
+ANR	1077	AssignmentExpression	info . buffer = NULL		1061	0		=			
+ANR	1078	MemberAccess	info . buffer		1061	0					
+ANR	1079	Identifier	info		1061	0					
+ANR	1080	Identifier	buffer		1061	1					
+ANR	1081	Identifier	NULL		1061	1					
+ANR	1082	ExpressionStatement	info . len = 0	6:1:136:151	1061	4	True				
+ANR	1083	AssignmentExpression	info . len = 0		1061	0		=			
+ANR	1084	MemberAccess	info . len		1061	0					
+ANR	1085	Identifier	info		1061	0					
+ANR	1086	Identifier	len		1061	1					
+ANR	1087	PrimaryExpression	0		1061	1					
+ANR	1088	ExpressionStatement	info . alloc = 0	7:1:154:171	1061	5	True				
+ANR	1089	AssignmentExpression	info . alloc = 0		1061	0		=			
+ANR	1090	MemberAccess	info . alloc		1061	0					
+ANR	1091	Identifier	info		1061	0					
+ANR	1092	Identifier	alloc		1061	1					
+ANR	1093	PrimaryExpression	0		1061	1					
+ANR	1094	ExpressionStatement	info . fail = 0	8:1:174:190	1061	6	True				
+ANR	1095	AssignmentExpression	info . fail = 0		1061	0		=			
+ANR	1096	MemberAccess	info . fail		1061	0					
+ANR	1097	Identifier	info		1061	0					
+ANR	1098	Identifier	fail		1061	1					
+ANR	1099	PrimaryExpression	0		1061	1					
+ANR	1100	ExpressionStatement	"va_start ( ap_save , format )"	9:1:193:223	1061	7	True				
+ANR	1101	CallExpression	"va_start ( ap_save , format )"		1061	0					
+ANR	1102	Callee	va_start		1061	0					
+ANR	1103	Identifier	va_start		1061	0					
+ANR	1104	ArgumentList	ap_save		1061	1					
+ANR	1105	Argument	ap_save		1061	0					
+ANR	1106	Identifier	ap_save		1061	0					
+ANR	1107	Argument	format		1061	1					
+ANR	1108	Identifier	format		1061	0					
+ANR	1109	ExpressionStatement	"retcode = dprintf_formatf ( & info , alloc_addbyter , format , ap_save )"	10:1:226:299	1061	8	True				
+ANR	1110	AssignmentExpression	"retcode = dprintf_formatf ( & info , alloc_addbyter , format , ap_save )"		1061	0		=			
+ANR	1111	Identifier	retcode		1061	0					
+ANR	1112	CallExpression	"dprintf_formatf ( & info , alloc_addbyter , format , ap_save )"		1061	1					
+ANR	1113	Callee	dprintf_formatf		1061	0					
+ANR	1114	Identifier	dprintf_formatf		1061	0					
+ANR	1115	ArgumentList	& info		1061	1					
+ANR	1116	Argument	& info		1061	0					
+ANR	1117	UnaryOperationExpression	& info		1061	0					
+ANR	1118	UnaryOperator	&		1061	0					
+ANR	1119	Identifier	info		1061	1					
+ANR	1120	Argument	alloc_addbyter		1061	1					
+ANR	1121	Identifier	alloc_addbyter		1061	0					
+ANR	1122	Argument	format		1061	2					
+ANR	1123	Identifier	format		1061	0					
+ANR	1124	Argument	ap_save		1061	3					
+ANR	1125	Identifier	ap_save		1061	0					
+ANR	1126	ExpressionStatement	va_end ( ap_save )	11:1:302:321	1061	9	True				
+ANR	1127	CallExpression	va_end ( ap_save )		1061	0					
+ANR	1128	Callee	va_end		1061	0					
+ANR	1129	Identifier	va_end		1061	0					
+ANR	1130	ArgumentList	ap_save		1061	1					
+ANR	1131	Argument	ap_save		1061	0					
+ANR	1132	Identifier	ap_save		1061	0					
+ANR	1133	IfStatement	if ( ( - 1 == retcode ) || info . fail )		1061	10					
+ANR	1134	Condition	( - 1 == retcode ) || info . fail	12:6:329:361	1061	0	True				
+ANR	1135	OrExpression	( - 1 == retcode ) || info . fail		1061	0		||			
+ANR	1136	EqualityExpression	- 1 == retcode		1061	0		==			
+ANR	1137	UnaryOperationExpression	- 1		1061	0					
+ANR	1138	UnaryOperator	-		1061	0					
+ANR	1139	PrimaryExpression	1		1061	1					
+ANR	1140	Identifier	retcode		1061	1					
+ANR	1141	MemberAccess	info . fail		1061	1					
+ANR	1142	Identifier	info		1061	0					
+ANR	1143	Identifier	fail		1061	1					
+ANR	1144	CompoundStatement		12:42:313:313	1061	1					
+ANR	1145	IfStatement	if ( info . alloc )		1061	0					
+ANR	1146	Condition	info . alloc	13:6:373:384	1061	0	True				
+ANR	1147	MemberAccess	info . alloc		1061	0					
+ANR	1148	Identifier	info		1061	0					
+ANR	1149	Identifier	alloc		1061	1					
+ANR	1150	ExpressionStatement	free ( info . buffer )	13:21:388:411	1061	1	True				
+ANR	1151	CallExpression	free ( info . buffer )		1061	0					
+ANR	1152	Callee	free		1061	0					
+ANR	1153	Identifier	free		1061	0					
+ANR	1154	ArgumentList	info . buffer		1061	1					
+ANR	1155	Argument	info . buffer		1061	0					
+ANR	1156	MemberAccess	info . buffer		1061	0					
+ANR	1157	Identifier	info		1061	0					
+ANR	1158	Identifier	buffer		1061	1					
+ANR	1159	ReturnStatement	return NULL ;	14:1:414:426	1061	1	True				
+ANR	1160	Identifier	NULL		1061	0					
+ANR	1161	IfStatement	if ( info . alloc )		1061	11					
+ANR	1162	Condition	info . alloc	16:6:437:448	1061	0	True				
+ANR	1163	MemberAccess	info . alloc		1061	0					
+ANR	1164	Identifier	info		1061	0					
+ANR	1165	Identifier	alloc		1061	1					
+ANR	1166	CompoundStatement		16:21:400:400	1061	1					
+ANR	1167	ExpressionStatement	info . buffer [ info . len ] = 0	17:1:455:488	1061	0	True				
+ANR	1168	AssignmentExpression	info . buffer [ info . len ] = 0		1061	0		=			
+ANR	1169	ArrayIndexing	info . buffer [ info . len ]		1061	0					
+ANR	1170	MemberAccess	info . buffer		1061	0					
+ANR	1171	Identifier	info		1061	0					
+ANR	1172	Identifier	buffer		1061	1					
+ANR	1173	MemberAccess	info . len		1061	1					
+ANR	1174	Identifier	info		1061	0					
+ANR	1175	Identifier	len		1061	1					
+ANR	1176	PrimaryExpression	0		1061	1					
+ANR	1177	ReturnStatement	return info . buffer ;	18:1:491:512	1061	1	True				
+ANR	1178	MemberAccess	info . buffer		1061	0					
+ANR	1179	Identifier	info		1061	0					
+ANR	1180	Identifier	buffer		1061	1					
+ANR	1181	ElseStatement	else		1061	0					
+ANR	1182	ReturnStatement	"return strdup ( """" ) ;"	20:6:523:544	1061	0	True				
+ANR	1183	CallExpression	"strdup ( """" )"		1061	0					
+ANR	1184	Callee	strdup		1061	0					
+ANR	1185	Identifier	strdup		1061	0					
+ANR	1186	ArgumentList	""""""		1061	1					
+ANR	1187	Argument	""""""		1061	0					
+ANR	1188	PrimaryExpression	""""""		1061	0					
+ANR	1189	ReturnType	char *		1061	1					
+ANR	1190	Identifier	curl_maprintf		1061	2					
+ANR	1191	ParameterList	const char * format		1061	3					
+ANR	1192	Parameter	const char * format	1:23:23:41	1061	0	True				
+ANR	1193	ParameterType	const char *		1061	0					
+ANR	1194	Identifier	format		1061	1					
+ANR	1195	CFGEntryNode	ENTRY		1061		True				
+ANR	1196	CFGExitNode	EXIT		1061		True				
+ANR	1197	Symbol	NULL		1061						
+ANR	1198	Symbol	& info		1061						
+ANR	1199	Symbol	ap_save		1061						
+ANR	1200	Symbol	* info . len		1061						
+ANR	1201	Symbol	* info . buffer		1061						
+ANR	1202	Symbol	format		1061						
+ANR	1203	Symbol	info . alloc		1061						
+ANR	1204	Symbol	alloc_addbyter		1061						
+ANR	1205	Symbol	info . buffer		1061						
+ANR	1206	Symbol	info . len		1061						
+ANR	1207	Symbol	info . fail		1061						
+ANR	1208	Symbol	* info		1061						
+ANR	1209	Symbol	strdup		1061						
+ANR	1210	Symbol	retcode		1061						
+ANR	1211	Symbol	info		1061						
+ANR	1212	Symbol	dprintf_formatf		1061						

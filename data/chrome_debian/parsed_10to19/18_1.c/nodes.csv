@@ -1,0 +1,142 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4764	File	tmp/18_1.c								
+ANR	4765	DeclStmt									
+ANR	4766	Decl							endif void	"endif void ( BIGNUM * b , int n )"	BN_set_flags
+ANR	4767	DeclStmt									
+ANR	4768	Decl							int	"int ( const BIGNUM * b , int n )"	BN_get_flags
+ANR	4769	DeclStmt									
+ANR	4770	Decl							void	"void ( BIGNUM * dest , const BIGNUM * b , int flags )"	BN_with_flags
+ANR	4771	DeclStmt									
+ANR	4772	Decl							int	"int ( BN_GENCB * cb , int a , int b )"	BN_GENCB_call
+ANR	4773	DeclStmt									
+ANR	4774	Decl							BN_GENCB	BN_GENCB * ( void )	BN_GENCB_new
+ANR	4775	DeclStmt									
+ANR	4776	Decl							void	void ( BN_GENCB * cb )	BN_GENCB_free
+ANR	4777	DeclStmt									
+ANR	4778	Decl							void	"void ( BN_GENCB * gencb , void ( * callback ) ( int , int , void * ) , void * cb_arg )"	BN_GENCB_set_old
+ANR	4779	DeclStmt									
+ANR	4780	Decl							void	"void ( BN_GENCB * gencb , int ( * callback ) ( int , int , BN_GENCB * ) , void * cb_arg )"	BN_GENCB_set
+ANR	4781	DeclStmt									
+ANR	4782	Decl							void	void * ( BN_GENCB * cb )	BN_GENCB_get_arg
+ANR	4783	DeclStmt									
+ANR	4784	Decl							int	"int ( const BIGNUM * a , const BN_ULONG w )"	BN_abs_is_word
+ANR	4785	DeclStmt									
+ANR	4786	Decl							int	int ( const BIGNUM * a )	BN_is_zero
+ANR	4787	DeclStmt									
+ANR	4788	Decl							int	int ( const BIGNUM * a )	BN_is_one
+ANR	4789	DeclStmt									
+ANR	4790	Decl							int	"int ( const BIGNUM * a , const BN_ULONG w )"	BN_is_word
+ANR	4791	DeclStmt									
+ANR	4792	Decl							int	int ( const BIGNUM * a )	BN_is_odd
+ANR	4793	DeclStmt									
+ANR	4794	Decl							void	void ( BIGNUM * a )	BN_zero_ex
+ANR	4795	DeclStmt									
+ANR	4796	Decl							const BIGNUM	const BIGNUM * ( void )	BN_value_one
+ANR	4797	DeclStmt									
+ANR	4798	Decl							char	char * ( void )	BN_options
+ANR	4799	DeclStmt									
+ANR	4800	Decl							BN_CTX	BN_CTX * ( void )	BN_CTX_new
+ANR	4801	DeclStmt									
+ANR	4802	Decl							BN_CTX	BN_CTX * ( void )	BN_CTX_secure_new
+ANR	4803	DeclStmt									
+ANR	4804	Decl							void	void ( BN_CTX * c )	BN_CTX_free
+ANR	4805	DeclStmt									
+ANR	4806	Decl							void	void ( BN_CTX * ctx )	BN_CTX_start
+ANR	4807	DeclStmt									
+ANR	4808	Decl							BIGNUM	BIGNUM * ( BN_CTX * ctx )	BN_CTX_get
+ANR	4809	DeclStmt									
+ANR	4810	Decl							void	void ( BN_CTX * ctx )	BN_CTX_end
+ANR	4811	DeclStmt									
+ANR	4812	Decl							int	"int ( BIGNUM * rnd , int bits , int top , int bottom )"	BN_rand
+ANR	4813	DeclStmt									
+ANR	4814	Decl							int	"int ( BIGNUM * rnd , int bits , int top , int bottom )"	BN_priv_rand
+ANR	4815	DeclStmt									
+ANR	4816	Decl							int	"int ( BIGNUM * rnd , const BIGNUM * range )"	BN_rand_range
+ANR	4817	DeclStmt									
+ANR	4818	Decl							int	"int ( BIGNUM * rnd , const BIGNUM * range )"	BN_priv_rand_range
+ANR	4819	DeclStmt									
+ANR	4820	Decl							int	"int ( BIGNUM * rnd , int bits , int top , int bottom )"	BN_pseudo_rand
+ANR	4821	DeclStmt									
+ANR	4822	Decl							int	"int ( BIGNUM * rnd , const BIGNUM * range )"	BN_pseudo_rand_range
+ANR	4823	DeclStmt									
+ANR	4824	Decl							int	int ( const BIGNUM * a )	BN_num_bits
+ANR	4825	DeclStmt									
+ANR	4826	Decl							int	int ( BN_ULONG l )	BN_num_bits_word
+ANR	4827	DeclStmt									
+ANR	4828	Decl							int	"int ( int L , int N )"	BN_security_bits
+ANR	4829	DeclStmt									
+ANR	4830	Decl							BIGNUM	BIGNUM * ( void )	BN_new
+ANR	4831	DeclStmt									
+ANR	4832	Decl							BIGNUM	BIGNUM * ( void )	BN_secure_new
+ANR	4833	DeclStmt									
+ANR	4834	Decl							void	void ( BIGNUM * a )	BN_clear_free
+ANR	4835	DeclStmt									
+ANR	4836	Decl							BIGNUM	"BIGNUM * ( BIGNUM * a , const BIGNUM * b )"	BN_copy
+ANR	4837	DeclStmt									
+ANR	4838	Decl							void	"void ( BIGNUM * a , BIGNUM * b )"	BN_swap
+ANR	4839	DeclStmt									
+ANR	4840	Decl							BIGNUM	"BIGNUM * ( const unsigned char * s , int len , BIGNUM * ret )"	BN_bin2bn
+ANR	4841	DeclStmt									
+ANR	4842	Decl							int	"int ( const BIGNUM * a , unsigned char * to )"	BN_bn2bin
+ANR	4843	DeclStmt									
+ANR	4844	Decl							int	"int ( const BIGNUM * a , unsigned char * to , int tolen )"	BN_bn2binpad
+ANR	4845	DeclStmt									
+ANR	4846	Decl							BIGNUM	"BIGNUM * ( const unsigned char * s , int len , BIGNUM * ret )"	BN_lebin2bn
+ANR	4847	DeclStmt									
+ANR	4848	Decl							int	"int ( const BIGNUM * a , unsigned char * to , int tolen )"	BN_bn2lebinpad
+ANR	4849	DeclStmt									
+ANR	4850	Decl							BIGNUM	"BIGNUM * ( const unsigned char * s , int len , BIGNUM * ret )"	BN_mpi2bn
+ANR	4851	DeclStmt									
+ANR	4852	Decl							int	"int ( const BIGNUM * a , unsigned char * to )"	BN_bn2mpi
+ANR	4853	DeclStmt									
+ANR	4854	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b )"	BN_sub
+ANR	4855	DeclStmt									
+ANR	4856	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b )"	BN_usub
+ANR	4857	DeclStmt									
+ANR	4858	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b )"	BN_uadd
+ANR	4859	DeclStmt									
+ANR	4860	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b )"	BN_add
+ANR	4861	DeclStmt									
+ANR	4862	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b , BN_CTX * ctx )"	BN_mul
+ANR	4863	DeclStmt									
+ANR	4864	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , BN_CTX * ctx )"	BN_sqr
+ANR	4865	DeclStmt									
+ANR	4866	Decl							void	"void ( BIGNUM * b , int n )"	BN_set_negative
+ANR	4867	DeclStmt									
+ANR	4868	Decl							int	int ( const BIGNUM * b )	BN_is_negative
+ANR	4869	DeclStmt									
+ANR	4870	Decl							int	"int ( BIGNUM * dv , BIGNUM * rem , const BIGNUM * m , const BIGNUM * d , BN_CTX * ctx )"	BN_div
+ANR	4871	DeclStmt									
+ANR	4872	Decl							int	"int ( BIGNUM * r , const BIGNUM * m , const BIGNUM * d , BN_CTX * ctx )"	BN_nnmod
+ANR	4873	DeclStmt									
+ANR	4874	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b , const BIGNUM * m , BN_CTX * ctx )"	BN_mod_add
+ANR	4875	DeclStmt									
+ANR	4876	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b , const BIGNUM * m )"	BN_mod_add_quick
+ANR	4877	DeclStmt									
+ANR	4878	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b , const BIGNUM * m , BN_CTX * ctx )"	BN_mod_sub
+ANR	4879	DeclStmt									
+ANR	4880	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b , const BIGNUM * m )"	BN_mod_sub_quick
+ANR	4881	DeclStmt									
+ANR	4882	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * b , const BIGNUM * m , BN_CTX * ctx )"	BN_mod_mul
+ANR	4883	DeclStmt									
+ANR	4884	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * m , BN_CTX * ctx )"	BN_mod_sqr
+ANR	4885	DeclStmt									
+ANR	4886	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * m , BN_CTX * ctx )"	BN_mod_lshift1
+ANR	4887	DeclStmt									
+ANR	4888	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , const BIGNUM * m )"	BN_mod_lshift1_quick
+ANR	4889	DeclStmt									
+ANR	4890	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , int n , const BIGNUM * m , BN_CTX * ctx )"	BN_mod_lshift
+ANR	4891	DeclStmt									
+ANR	4892	Decl							int	"int ( BIGNUM * r , const BIGNUM * a , int n , const BIGNUM * m )"	BN_mod_lshift_quick
+ANR	4893	DeclStmt									
+ANR	4894	Decl							BN_ULONG	"BN_ULONG ( const BIGNUM * a , BN_ULONG w )"	BN_mod_word
+ANR	4895	DeclStmt									
+ANR	4896	Decl							BN_ULONG	"BN_ULONG ( BIGNUM * a , BN_ULONG w )"	BN_div_word
+ANR	4897	DeclStmt									
+ANR	4898	Decl							int	"int ( BIGNUM * a , BN_ULONG w )"	BN_mul_word
+ANR	4899	DeclStmt									
+ANR	4900	Decl							int	"int ( BIGNUM * a , BN_ULONG w )"	BN_add_word
+ANR	4901	DeclStmt									
+ANR	4902	Decl							int	"int ( BIGNUM * a , BN_ULONG w )"	BN_sub_word
+ANR	4903	DeclStmt									
+ANR	4904	Decl							int	"int ( BIGNUM * a , BN_ULONG w )"	BN_set_word

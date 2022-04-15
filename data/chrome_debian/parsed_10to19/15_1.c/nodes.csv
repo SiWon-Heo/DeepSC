@@ -1,0 +1,1037 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1213	File	tmp/15_1.c								
+ANR	1214	Function	jbig2_decode_mmr_line	1:0:0:3698							
+ANR	1215	FunctionDef	"jbig2_decode_mmr_line (Jbig2MmrCtx * mmr , const byte * ref , byte * dst)"		1214	0					
+ANR	1216	CompoundStatement		1:87:87:3698	1214	0					
+ANR	1217	IdentifierDeclStatement	int a0 = - 1 ;	2:1:90:103	1214	0	True				
+ANR	1218	IdentifierDecl	a0 = - 1		1214	0					
+ANR	1219	IdentifierDeclType	int		1214	0					
+ANR	1220	Identifier	a0		1214	1					
+ANR	1221	AssignmentExpression	a0 = - 1		1214	2		=			
+ANR	1222	Identifier	a0		1214	0					
+ANR	1223	UnaryOperationExpression	- 1		1214	1					
+ANR	1224	UnaryOperator	-		1214	0					
+ANR	1225	PrimaryExpression	1		1214	1					
+ANR	1226	IdentifierDeclStatement	"int a1 , a2 , b1 , b2 ;"	3:1:106:128	1214	1	True				
+ANR	1227	IdentifierDecl	a1		1214	0					
+ANR	1228	IdentifierDeclType	int		1214	0					
+ANR	1229	Identifier	a1		1214	1					
+ANR	1230	IdentifierDecl	a2		1214	1					
+ANR	1231	IdentifierDeclType	int		1214	0					
+ANR	1232	Identifier	a2		1214	1					
+ANR	1233	IdentifierDecl	b1		1214	2					
+ANR	1234	IdentifierDeclType	int		1214	0					
+ANR	1235	Identifier	b1		1214	1					
+ANR	1236	IdentifierDecl	b2		1214	3					
+ANR	1237	IdentifierDeclType	int		1214	0					
+ANR	1238	Identifier	b2		1214	1					
+ANR	1239	IdentifierDeclStatement	int c = 0 ;	4:1:131:141	1214	2	True				
+ANR	1240	IdentifierDecl	c = 0		1214	0					
+ANR	1241	IdentifierDeclType	int		1214	0					
+ANR	1242	Identifier	c		1214	1					
+ANR	1243	AssignmentExpression	c = 0		1214	2		=			
+ANR	1244	Identifier	c		1214	0					
+ANR	1245	PrimaryExpression	0		1214	1					
+ANR	1246	WhileStatement	while ( 1 )		1214	3					
+ANR	1247	Condition	1	5:9:152:152	1214	0	True				
+ANR	1248	PrimaryExpression	1		1214	0					
+ANR	1249	CompoundStatement		6:1:71:99	1214	1					
+ANR	1250	IdentifierDeclStatement	uint32_t word = mmr -> word ;	6:1:159:187	1214	0	True				
+ANR	1251	IdentifierDecl	word = mmr -> word		1214	0					
+ANR	1252	IdentifierDeclType	uint32_t		1214	0					
+ANR	1253	Identifier	word		1214	1					
+ANR	1254	AssignmentExpression	word = mmr -> word		1214	2		=			
+ANR	1255	Identifier	word		1214	0					
+ANR	1256	PtrMemberAccess	mmr -> word		1214	1					
+ANR	1257	Identifier	mmr		1214	0					
+ANR	1258	Identifier	word		1214	1					
+ANR	1259	IfStatement	if ( a0 >= mmr -> width )		1214	1					
+ANR	1260	Condition	a0 >= mmr -> width	7:6:195:212	1214	0	True				
+ANR	1261	RelationalExpression	a0 >= mmr -> width		1214	0		>=			
+ANR	1262	Identifier	a0		1214	0					
+ANR	1263	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1264	Identifier	mmr		1214	0					
+ANR	1265	Identifier	width		1214	1					
+ANR	1266	BreakStatement	break ;	7:27:216:222	1214	1	True				
+ANR	1267	IfStatement	if ( ( word >> ( 32 - 3 ) ) == 1 )		1214	2					
+ANR	1268	Condition	( word >> ( 32 - 3 ) ) == 1	8:6:230:256	1214	0	True				
+ANR	1269	EqualityExpression	( word >> ( 32 - 3 ) ) == 1		1214	0		==			
+ANR	1270	ShiftExpression	word >> ( 32 - 3 )		1214	0		>>			
+ANR	1271	Identifier	word		1214	0					
+ANR	1272	AdditiveExpression	32 - 3		1214	1		-			
+ANR	1273	PrimaryExpression	32		1214	0					
+ANR	1274	PrimaryExpression	3		1214	1					
+ANR	1275	PrimaryExpression	1		1214	1					
+ANR	1276	CompoundStatement		9:1:175:201	1214	1					
+ANR	1277	IdentifierDeclStatement	"int white_run , black_run ;"	9:1:263:289	1214	0	True				
+ANR	1278	IdentifierDecl	white_run		1214	0					
+ANR	1279	IdentifierDeclType	int		1214	0					
+ANR	1280	Identifier	white_run		1214	1					
+ANR	1281	IdentifierDecl	black_run		1214	1					
+ANR	1282	IdentifierDeclType	int		1214	0					
+ANR	1283	Identifier	black_run		1214	1					
+ANR	1284	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 3 )"	10:1:292:329	1214	1	True				
+ANR	1285	CallExpression	"jbig2_decode_mmr_consume ( mmr , 3 )"		1214	0					
+ANR	1286	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	1287	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	1288	ArgumentList	mmr		1214	1					
+ANR	1289	Argument	mmr		1214	0					
+ANR	1290	Identifier	mmr		1214	0					
+ANR	1291	Argument	3		1214	1					
+ANR	1292	PrimaryExpression	3		1214	0					
+ANR	1293	IfStatement	if ( a0 == - 1 )		1214	2					
+ANR	1294	Condition	a0 == - 1	11:6:337:345	1214	0	True				
+ANR	1295	EqualityExpression	a0 == - 1		1214	0		==			
+ANR	1296	Identifier	a0		1214	0					
+ANR	1297	UnaryOperationExpression	- 1		1214	1					
+ANR	1298	UnaryOperator	-		1214	0					
+ANR	1299	PrimaryExpression	1		1214	1					
+ANR	1300	ExpressionStatement	a0 = 0	11:18:349:356	1214	1	True				
+ANR	1301	AssignmentExpression	a0 = 0		1214	0		=			
+ANR	1302	Identifier	a0		1214	0					
+ANR	1303	PrimaryExpression	0		1214	1					
+ANR	1304	IfStatement	if ( c == 0 )		1214	3					
+ANR	1305	Condition	c == 0	12:6:364:369	1214	0	True				
+ANR	1306	EqualityExpression	c == 0		1214	0		==			
+ANR	1307	Identifier	c		1214	0					
+ANR	1308	PrimaryExpression	0		1214	1					
+ANR	1309	CompoundStatement		12:15:285:285	1214	1					
+ANR	1310	ExpressionStatement	"white_run = jbig2_decode_get_run ( mmr , jbig2_mmr_white_decode , 8 )"	13:1:376:446	1214	0	True				
+ANR	1311	AssignmentExpression	"white_run = jbig2_decode_get_run ( mmr , jbig2_mmr_white_decode , 8 )"		1214	0		=			
+ANR	1312	Identifier	white_run		1214	0					
+ANR	1313	CallExpression	"jbig2_decode_get_run ( mmr , jbig2_mmr_white_decode , 8 )"		1214	1					
+ANR	1314	Callee	jbig2_decode_get_run		1214	0					
+ANR	1315	Identifier	jbig2_decode_get_run		1214	0					
+ANR	1316	ArgumentList	mmr		1214	1					
+ANR	1317	Argument	mmr		1214	0					
+ANR	1318	Identifier	mmr		1214	0					
+ANR	1319	Argument	jbig2_mmr_white_decode		1214	1					
+ANR	1320	Identifier	jbig2_mmr_white_decode		1214	0					
+ANR	1321	Argument	8		1214	2					
+ANR	1322	PrimaryExpression	8		1214	0					
+ANR	1323	ExpressionStatement	"black_run = jbig2_decode_get_run ( mmr , jbig2_mmr_black_decode , 7 )"	14:1:449:519	1214	1	True				
+ANR	1324	AssignmentExpression	"black_run = jbig2_decode_get_run ( mmr , jbig2_mmr_black_decode , 7 )"		1214	0		=			
+ANR	1325	Identifier	black_run		1214	0					
+ANR	1326	CallExpression	"jbig2_decode_get_run ( mmr , jbig2_mmr_black_decode , 7 )"		1214	1					
+ANR	1327	Callee	jbig2_decode_get_run		1214	0					
+ANR	1328	Identifier	jbig2_decode_get_run		1214	0					
+ANR	1329	ArgumentList	mmr		1214	1					
+ANR	1330	Argument	mmr		1214	0					
+ANR	1331	Identifier	mmr		1214	0					
+ANR	1332	Argument	jbig2_mmr_black_decode		1214	1					
+ANR	1333	Identifier	jbig2_mmr_black_decode		1214	0					
+ANR	1334	Argument	7		1214	2					
+ANR	1335	PrimaryExpression	7		1214	0					
+ANR	1336	ExpressionStatement	a1 = a0 + white_run	15:1:522:542	1214	2	True				
+ANR	1337	AssignmentExpression	a1 = a0 + white_run		1214	0		=			
+ANR	1338	Identifier	a1		1214	0					
+ANR	1339	AdditiveExpression	a0 + white_run		1214	1		+			
+ANR	1340	Identifier	a0		1214	0					
+ANR	1341	Identifier	white_run		1214	1					
+ANR	1342	ExpressionStatement	a2 = a1 + black_run	16:1:545:565	1214	3	True				
+ANR	1343	AssignmentExpression	a2 = a1 + black_run		1214	0		=			
+ANR	1344	Identifier	a2		1214	0					
+ANR	1345	AdditiveExpression	a1 + black_run		1214	1		+			
+ANR	1346	Identifier	a1		1214	0					
+ANR	1347	Identifier	black_run		1214	1					
+ANR	1348	IfStatement	if ( a1 > mmr -> width )		1214	4					
+ANR	1349	Condition	a1 > mmr -> width	17:6:573:589	1214	0	True				
+ANR	1350	RelationalExpression	a1 > mmr -> width		1214	0		>			
+ANR	1351	Identifier	a1		1214	0					
+ANR	1352	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1353	Identifier	mmr		1214	0					
+ANR	1354	Identifier	width		1214	1					
+ANR	1355	ExpressionStatement	a1 = mmr -> width	17:26:593:611	1214	1	True				
+ANR	1356	AssignmentExpression	a1 = mmr -> width		1214	0		=			
+ANR	1357	Identifier	a1		1214	0					
+ANR	1358	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1359	Identifier	mmr		1214	0					
+ANR	1360	Identifier	width		1214	1					
+ANR	1361	IfStatement	if ( a2 > mmr -> width )		1214	5					
+ANR	1362	Condition	a2 > mmr -> width	18:6:619:635	1214	0	True				
+ANR	1363	RelationalExpression	a2 > mmr -> width		1214	0		>			
+ANR	1364	Identifier	a2		1214	0					
+ANR	1365	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1366	Identifier	mmr		1214	0					
+ANR	1367	Identifier	width		1214	1					
+ANR	1368	ExpressionStatement	a2 = mmr -> width	18:26:639:657	1214	1	True				
+ANR	1369	AssignmentExpression	a2 = mmr -> width		1214	0		=			
+ANR	1370	Identifier	a2		1214	0					
+ANR	1371	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1372	Identifier	mmr		1214	0					
+ANR	1373	Identifier	width		1214	1					
+ANR	1374	IfStatement	if ( a2 < a1 || a1 < 0 )		1214	6					
+ANR	1375	Condition	a2 < a1 || a1 < 0	19:6:665:681	1214	0	True				
+ANR	1376	OrExpression	a2 < a1 || a1 < 0		1214	0		||			
+ANR	1377	RelationalExpression	a2 < a1		1214	0		<			
+ANR	1378	Identifier	a2		1214	0					
+ANR	1379	Identifier	a1		1214	1					
+ANR	1380	RelationalExpression	a1 < 0		1214	1		<			
+ANR	1381	Identifier	a1		1214	0					
+ANR	1382	PrimaryExpression	0		1214	1					
+ANR	1383	ReturnStatement	return - 1 ;	19:26:685:696	1214	1	True				
+ANR	1384	UnaryOperationExpression	- 1		1214	0					
+ANR	1385	UnaryOperator	-		1214	0					
+ANR	1386	PrimaryExpression	1		1214	1					
+ANR	1387	ExpressionStatement	"jbig2_set_bits ( dst , a1 , a2 )"	20:1:699:732	1214	7	True				
+ANR	1388	CallExpression	"jbig2_set_bits ( dst , a1 , a2 )"		1214	0					
+ANR	1389	Callee	jbig2_set_bits		1214	0					
+ANR	1390	Identifier	jbig2_set_bits		1214	0					
+ANR	1391	ArgumentList	dst		1214	1					
+ANR	1392	Argument	dst		1214	0					
+ANR	1393	Identifier	dst		1214	0					
+ANR	1394	Argument	a1		1214	1					
+ANR	1395	Identifier	a1		1214	0					
+ANR	1396	Argument	a2		1214	2					
+ANR	1397	Identifier	a2		1214	0					
+ANR	1398	ExpressionStatement	a0 = a2	21:1:735:743	1214	8	True				
+ANR	1399	AssignmentExpression	a0 = a2		1214	0		=			
+ANR	1400	Identifier	a0		1214	0					
+ANR	1401	Identifier	a2		1214	1					
+ANR	1402	ElseStatement	else		1214	0					
+ANR	1403	CompoundStatement		23:6:666:666	1214	0					
+ANR	1404	ExpressionStatement	"black_run = jbig2_decode_get_run ( mmr , jbig2_mmr_black_decode , 7 )"	24:1:757:827	1214	0	True				
+ANR	1405	AssignmentExpression	"black_run = jbig2_decode_get_run ( mmr , jbig2_mmr_black_decode , 7 )"		1214	0		=			
+ANR	1406	Identifier	black_run		1214	0					
+ANR	1407	CallExpression	"jbig2_decode_get_run ( mmr , jbig2_mmr_black_decode , 7 )"		1214	1					
+ANR	1408	Callee	jbig2_decode_get_run		1214	0					
+ANR	1409	Identifier	jbig2_decode_get_run		1214	0					
+ANR	1410	ArgumentList	mmr		1214	1					
+ANR	1411	Argument	mmr		1214	0					
+ANR	1412	Identifier	mmr		1214	0					
+ANR	1413	Argument	jbig2_mmr_black_decode		1214	1					
+ANR	1414	Identifier	jbig2_mmr_black_decode		1214	0					
+ANR	1415	Argument	7		1214	2					
+ANR	1416	PrimaryExpression	7		1214	0					
+ANR	1417	ExpressionStatement	"white_run = jbig2_decode_get_run ( mmr , jbig2_mmr_white_decode , 8 )"	25:1:830:900	1214	1	True				
+ANR	1418	AssignmentExpression	"white_run = jbig2_decode_get_run ( mmr , jbig2_mmr_white_decode , 8 )"		1214	0		=			
+ANR	1419	Identifier	white_run		1214	0					
+ANR	1420	CallExpression	"jbig2_decode_get_run ( mmr , jbig2_mmr_white_decode , 8 )"		1214	1					
+ANR	1421	Callee	jbig2_decode_get_run		1214	0					
+ANR	1422	Identifier	jbig2_decode_get_run		1214	0					
+ANR	1423	ArgumentList	mmr		1214	1					
+ANR	1424	Argument	mmr		1214	0					
+ANR	1425	Identifier	mmr		1214	0					
+ANR	1426	Argument	jbig2_mmr_white_decode		1214	1					
+ANR	1427	Identifier	jbig2_mmr_white_decode		1214	0					
+ANR	1428	Argument	8		1214	2					
+ANR	1429	PrimaryExpression	8		1214	0					
+ANR	1430	ExpressionStatement	a1 = a0 + black_run	26:1:903:923	1214	2	True				
+ANR	1431	AssignmentExpression	a1 = a0 + black_run		1214	0		=			
+ANR	1432	Identifier	a1		1214	0					
+ANR	1433	AdditiveExpression	a0 + black_run		1214	1		+			
+ANR	1434	Identifier	a0		1214	0					
+ANR	1435	Identifier	black_run		1214	1					
+ANR	1436	ExpressionStatement	a2 = a1 + white_run	27:1:926:946	1214	3	True				
+ANR	1437	AssignmentExpression	a2 = a1 + white_run		1214	0		=			
+ANR	1438	Identifier	a2		1214	0					
+ANR	1439	AdditiveExpression	a1 + white_run		1214	1		+			
+ANR	1440	Identifier	a1		1214	0					
+ANR	1441	Identifier	white_run		1214	1					
+ANR	1442	IfStatement	if ( a1 > mmr -> width )		1214	4					
+ANR	1443	Condition	a1 > mmr -> width	28:6:954:970	1214	0	True				
+ANR	1444	RelationalExpression	a1 > mmr -> width		1214	0		>			
+ANR	1445	Identifier	a1		1214	0					
+ANR	1446	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1447	Identifier	mmr		1214	0					
+ANR	1448	Identifier	width		1214	1					
+ANR	1449	ExpressionStatement	a1 = mmr -> width	28:26:974:992	1214	1	True				
+ANR	1450	AssignmentExpression	a1 = mmr -> width		1214	0		=			
+ANR	1451	Identifier	a1		1214	0					
+ANR	1452	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1453	Identifier	mmr		1214	0					
+ANR	1454	Identifier	width		1214	1					
+ANR	1455	IfStatement	if ( a2 > mmr -> width )		1214	5					
+ANR	1456	Condition	a2 > mmr -> width	29:6:1000:1016	1214	0	True				
+ANR	1457	RelationalExpression	a2 > mmr -> width		1214	0		>			
+ANR	1458	Identifier	a2		1214	0					
+ANR	1459	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1460	Identifier	mmr		1214	0					
+ANR	1461	Identifier	width		1214	1					
+ANR	1462	ExpressionStatement	a2 = mmr -> width	29:26:1020:1038	1214	1	True				
+ANR	1463	AssignmentExpression	a2 = mmr -> width		1214	0		=			
+ANR	1464	Identifier	a2		1214	0					
+ANR	1465	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1466	Identifier	mmr		1214	0					
+ANR	1467	Identifier	width		1214	1					
+ANR	1468	IfStatement	if ( a1 < a0 || a0 < 0 )		1214	6					
+ANR	1469	Condition	a1 < a0 || a0 < 0	30:6:1046:1062	1214	0	True				
+ANR	1470	OrExpression	a1 < a0 || a0 < 0		1214	0		||			
+ANR	1471	RelationalExpression	a1 < a0		1214	0		<			
+ANR	1472	Identifier	a1		1214	0					
+ANR	1473	Identifier	a0		1214	1					
+ANR	1474	RelationalExpression	a0 < 0		1214	1		<			
+ANR	1475	Identifier	a0		1214	0					
+ANR	1476	PrimaryExpression	0		1214	1					
+ANR	1477	ReturnStatement	return - 1 ;	30:26:1066:1077	1214	1	True				
+ANR	1478	UnaryOperationExpression	- 1		1214	0					
+ANR	1479	UnaryOperator	-		1214	0					
+ANR	1480	PrimaryExpression	1		1214	1					
+ANR	1481	ExpressionStatement	"jbig2_set_bits ( dst , a0 , a1 )"	31:1:1080:1113	1214	7	True				
+ANR	1482	CallExpression	"jbig2_set_bits ( dst , a0 , a1 )"		1214	0					
+ANR	1483	Callee	jbig2_set_bits		1214	0					
+ANR	1484	Identifier	jbig2_set_bits		1214	0					
+ANR	1485	ArgumentList	dst		1214	1					
+ANR	1486	Argument	dst		1214	0					
+ANR	1487	Identifier	dst		1214	0					
+ANR	1488	Argument	a0		1214	1					
+ANR	1489	Identifier	a0		1214	0					
+ANR	1490	Argument	a1		1214	2					
+ANR	1491	Identifier	a1		1214	0					
+ANR	1492	ExpressionStatement	a0 = a2	32:1:1116:1124	1214	8	True				
+ANR	1493	AssignmentExpression	a0 = a2		1214	0		=			
+ANR	1494	Identifier	a0		1214	0					
+ANR	1495	Identifier	a2		1214	1					
+ANR	1496	ElseStatement	else		1214	0					
+ANR	1497	IfStatement	if ( ( word >> ( 32 - 4 ) ) == 1 )		1214	0					
+ANR	1498	Condition	( word >> ( 32 - 4 ) ) == 1	35:11:1143:1169	1214	0	True				
+ANR	1499	EqualityExpression	( word >> ( 32 - 4 ) ) == 1		1214	0		==			
+ANR	1500	ShiftExpression	word >> ( 32 - 4 )		1214	0		>>			
+ANR	1501	Identifier	word		1214	0					
+ANR	1502	AdditiveExpression	32 - 4		1214	1		-			
+ANR	1503	PrimaryExpression	32		1214	0					
+ANR	1504	PrimaryExpression	4		1214	1					
+ANR	1505	PrimaryExpression	1		1214	1					
+ANR	1506	CompoundStatement		35:41:1085:1085	1214	1					
+ANR	1507	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 4 )"	36:1:1176:1213	1214	0	True				
+ANR	1508	CallExpression	"jbig2_decode_mmr_consume ( mmr , 4 )"		1214	0					
+ANR	1509	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	1510	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	1511	ArgumentList	mmr		1214	1					
+ANR	1512	Argument	mmr		1214	0					
+ANR	1513	Identifier	mmr		1214	0					
+ANR	1514	Argument	4		1214	1					
+ANR	1515	PrimaryExpression	4		1214	0					
+ANR	1516	ExpressionStatement	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"	37:1:1216:1292	1214	1	True				
+ANR	1517	AssignmentExpression	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	0		=			
+ANR	1518	Identifier	b1		1214	0					
+ANR	1519	CallExpression	"jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	1					
+ANR	1520	Callee	jbig2_find_changing_element_of_color		1214	0					
+ANR	1521	Identifier	jbig2_find_changing_element_of_color		1214	0					
+ANR	1522	ArgumentList	ref		1214	1					
+ANR	1523	Argument	ref		1214	0					
+ANR	1524	Identifier	ref		1214	0					
+ANR	1525	Argument	a0		1214	1					
+ANR	1526	Identifier	a0		1214	0					
+ANR	1527	Argument	mmr -> width		1214	2					
+ANR	1528	PtrMemberAccess	mmr -> width		1214	0					
+ANR	1529	Identifier	mmr		1214	0					
+ANR	1530	Identifier	width		1214	1					
+ANR	1531	Argument	! c		1214	3					
+ANR	1532	UnaryOperationExpression	! c		1214	0					
+ANR	1533	UnaryOperator	!		1214	0					
+ANR	1534	Identifier	c		1214	1					
+ANR	1535	ExpressionStatement	"b2 = jbig2_find_changing_element ( ref , b1 , mmr -> width )"	38:1:1295:1356	1214	2	True				
+ANR	1536	AssignmentExpression	"b2 = jbig2_find_changing_element ( ref , b1 , mmr -> width )"		1214	0		=			
+ANR	1537	Identifier	b2		1214	0					
+ANR	1538	CallExpression	"jbig2_find_changing_element ( ref , b1 , mmr -> width )"		1214	1					
+ANR	1539	Callee	jbig2_find_changing_element		1214	0					
+ANR	1540	Identifier	jbig2_find_changing_element		1214	0					
+ANR	1541	ArgumentList	ref		1214	1					
+ANR	1542	Argument	ref		1214	0					
+ANR	1543	Identifier	ref		1214	0					
+ANR	1544	Argument	b1		1214	1					
+ANR	1545	Identifier	b1		1214	0					
+ANR	1546	Argument	mmr -> width		1214	2					
+ANR	1547	PtrMemberAccess	mmr -> width		1214	0					
+ANR	1548	Identifier	mmr		1214	0					
+ANR	1549	Identifier	width		1214	1					
+ANR	1550	IfStatement	if ( c )		1214	3					
+ANR	1551	Condition	c	39:6:1364:1364	1214	0	True				
+ANR	1552	Identifier	c		1214	0					
+ANR	1553	CompoundStatement		39:10:1280:1280	1214	1					
+ANR	1554	IfStatement	if ( b2 < a0 || a0 < 0 )		1214	0					
+ANR	1555	Condition	b2 < a0 || a0 < 0	40:6:1376:1392	1214	0	True				
+ANR	1556	OrExpression	b2 < a0 || a0 < 0		1214	0		||			
+ANR	1557	RelationalExpression	b2 < a0		1214	0		<			
+ANR	1558	Identifier	b2		1214	0					
+ANR	1559	Identifier	a0		1214	1					
+ANR	1560	RelationalExpression	a0 < 0		1214	1		<			
+ANR	1561	Identifier	a0		1214	0					
+ANR	1562	PrimaryExpression	0		1214	1					
+ANR	1563	ReturnStatement	return - 1 ;	40:26:1396:1407	1214	1	True				
+ANR	1564	UnaryOperationExpression	- 1		1214	0					
+ANR	1565	UnaryOperator	-		1214	0					
+ANR	1566	PrimaryExpression	1		1214	1					
+ANR	1567	ExpressionStatement	"jbig2_set_bits ( dst , a0 , b2 )"	41:1:1410:1443	1214	1	True				
+ANR	1568	CallExpression	"jbig2_set_bits ( dst , a0 , b2 )"		1214	0					
+ANR	1569	Callee	jbig2_set_bits		1214	0					
+ANR	1570	Identifier	jbig2_set_bits		1214	0					
+ANR	1571	ArgumentList	dst		1214	1					
+ANR	1572	Argument	dst		1214	0					
+ANR	1573	Identifier	dst		1214	0					
+ANR	1574	Argument	a0		1214	1					
+ANR	1575	Identifier	a0		1214	0					
+ANR	1576	Argument	b2		1214	2					
+ANR	1577	Identifier	b2		1214	0					
+ANR	1578	ExpressionStatement	a0 = b2	43:1:1449:1457	1214	4	True				
+ANR	1579	AssignmentExpression	a0 = b2		1214	0		=			
+ANR	1580	Identifier	a0		1214	0					
+ANR	1581	Identifier	b2		1214	1					
+ANR	1582	ElseStatement	else		1214	0					
+ANR	1583	IfStatement	if ( ( word >> ( 32 - 1 ) ) == 1 )		1214	0					
+ANR	1584	Condition	( word >> ( 32 - 1 ) ) == 1	45:11:1473:1499	1214	0	True				
+ANR	1585	EqualityExpression	( word >> ( 32 - 1 ) ) == 1		1214	0		==			
+ANR	1586	ShiftExpression	word >> ( 32 - 1 )		1214	0		>>			
+ANR	1587	Identifier	word		1214	0					
+ANR	1588	AdditiveExpression	32 - 1		1214	1		-			
+ANR	1589	PrimaryExpression	32		1214	0					
+ANR	1590	PrimaryExpression	1		1214	1					
+ANR	1591	PrimaryExpression	1		1214	1					
+ANR	1592	CompoundStatement		45:41:1415:1415	1214	1					
+ANR	1593	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 1 )"	46:1:1506:1543	1214	0	True				
+ANR	1594	CallExpression	"jbig2_decode_mmr_consume ( mmr , 1 )"		1214	0					
+ANR	1595	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	1596	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	1597	ArgumentList	mmr		1214	1					
+ANR	1598	Argument	mmr		1214	0					
+ANR	1599	Identifier	mmr		1214	0					
+ANR	1600	Argument	1		1214	1					
+ANR	1601	PrimaryExpression	1		1214	0					
+ANR	1602	ExpressionStatement	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"	47:1:1546:1622	1214	1	True				
+ANR	1603	AssignmentExpression	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	0		=			
+ANR	1604	Identifier	b1		1214	0					
+ANR	1605	CallExpression	"jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	1					
+ANR	1606	Callee	jbig2_find_changing_element_of_color		1214	0					
+ANR	1607	Identifier	jbig2_find_changing_element_of_color		1214	0					
+ANR	1608	ArgumentList	ref		1214	1					
+ANR	1609	Argument	ref		1214	0					
+ANR	1610	Identifier	ref		1214	0					
+ANR	1611	Argument	a0		1214	1					
+ANR	1612	Identifier	a0		1214	0					
+ANR	1613	Argument	mmr -> width		1214	2					
+ANR	1614	PtrMemberAccess	mmr -> width		1214	0					
+ANR	1615	Identifier	mmr		1214	0					
+ANR	1616	Identifier	width		1214	1					
+ANR	1617	Argument	! c		1214	3					
+ANR	1618	UnaryOperationExpression	! c		1214	0					
+ANR	1619	UnaryOperator	!		1214	0					
+ANR	1620	Identifier	c		1214	1					
+ANR	1621	IfStatement	if ( c )		1214	2					
+ANR	1622	Condition	c	48:6:1630:1630	1214	0	True				
+ANR	1623	Identifier	c		1214	0					
+ANR	1624	CompoundStatement		48:10:1546:1546	1214	1					
+ANR	1625	IfStatement	if ( b1 < a0 || a0 < 0 )		1214	0					
+ANR	1626	Condition	b1 < a0 || a0 < 0	49:6:1642:1658	1214	0	True				
+ANR	1627	OrExpression	b1 < a0 || a0 < 0		1214	0		||			
+ANR	1628	RelationalExpression	b1 < a0		1214	0		<			
+ANR	1629	Identifier	b1		1214	0					
+ANR	1630	Identifier	a0		1214	1					
+ANR	1631	RelationalExpression	a0 < 0		1214	1		<			
+ANR	1632	Identifier	a0		1214	0					
+ANR	1633	PrimaryExpression	0		1214	1					
+ANR	1634	ReturnStatement	return - 1 ;	49:26:1662:1673	1214	1	True				
+ANR	1635	UnaryOperationExpression	- 1		1214	0					
+ANR	1636	UnaryOperator	-		1214	0					
+ANR	1637	PrimaryExpression	1		1214	1					
+ANR	1638	ExpressionStatement	"jbig2_set_bits ( dst , a0 , b1 )"	50:1:1676:1709	1214	1	True				
+ANR	1639	CallExpression	"jbig2_set_bits ( dst , a0 , b1 )"		1214	0					
+ANR	1640	Callee	jbig2_set_bits		1214	0					
+ANR	1641	Identifier	jbig2_set_bits		1214	0					
+ANR	1642	ArgumentList	dst		1214	1					
+ANR	1643	Argument	dst		1214	0					
+ANR	1644	Identifier	dst		1214	0					
+ANR	1645	Argument	a0		1214	1					
+ANR	1646	Identifier	a0		1214	0					
+ANR	1647	Argument	b1		1214	2					
+ANR	1648	Identifier	b1		1214	0					
+ANR	1649	ExpressionStatement	a0 = b1	52:1:1715:1723	1214	3	True				
+ANR	1650	AssignmentExpression	a0 = b1		1214	0		=			
+ANR	1651	Identifier	a0		1214	0					
+ANR	1652	Identifier	b1		1214	1					
+ANR	1653	ExpressionStatement	c = ! c	53:1:1726:1734	1214	4	True				
+ANR	1654	AssignmentExpression	c = ! c		1214	0		=			
+ANR	1655	Identifier	c		1214	0					
+ANR	1656	UnaryOperationExpression	! c		1214	1					
+ANR	1657	UnaryOperator	!		1214	0					
+ANR	1658	Identifier	c		1214	1					
+ANR	1659	ElseStatement	else		1214	0					
+ANR	1660	IfStatement	if ( ( word >> ( 32 - 3 ) ) == 3 )		1214	0					
+ANR	1661	Condition	( word >> ( 32 - 3 ) ) == 3	55:11:1750:1776	1214	0	True				
+ANR	1662	EqualityExpression	( word >> ( 32 - 3 ) ) == 3		1214	0		==			
+ANR	1663	ShiftExpression	word >> ( 32 - 3 )		1214	0		>>			
+ANR	1664	Identifier	word		1214	0					
+ANR	1665	AdditiveExpression	32 - 3		1214	1		-			
+ANR	1666	PrimaryExpression	32		1214	0					
+ANR	1667	PrimaryExpression	3		1214	1					
+ANR	1668	PrimaryExpression	3		1214	1					
+ANR	1669	CompoundStatement		55:41:1692:1692	1214	1					
+ANR	1670	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 3 )"	56:1:1783:1820	1214	0	True				
+ANR	1671	CallExpression	"jbig2_decode_mmr_consume ( mmr , 3 )"		1214	0					
+ANR	1672	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	1673	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	1674	ArgumentList	mmr		1214	1					
+ANR	1675	Argument	mmr		1214	0					
+ANR	1676	Identifier	mmr		1214	0					
+ANR	1677	Argument	3		1214	1					
+ANR	1678	PrimaryExpression	3		1214	0					
+ANR	1679	ExpressionStatement	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"	57:1:1823:1899	1214	1	True				
+ANR	1680	AssignmentExpression	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	0		=			
+ANR	1681	Identifier	b1		1214	0					
+ANR	1682	CallExpression	"jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	1					
+ANR	1683	Callee	jbig2_find_changing_element_of_color		1214	0					
+ANR	1684	Identifier	jbig2_find_changing_element_of_color		1214	0					
+ANR	1685	ArgumentList	ref		1214	1					
+ANR	1686	Argument	ref		1214	0					
+ANR	1687	Identifier	ref		1214	0					
+ANR	1688	Argument	a0		1214	1					
+ANR	1689	Identifier	a0		1214	0					
+ANR	1690	Argument	mmr -> width		1214	2					
+ANR	1691	PtrMemberAccess	mmr -> width		1214	0					
+ANR	1692	Identifier	mmr		1214	0					
+ANR	1693	Identifier	width		1214	1					
+ANR	1694	Argument	! c		1214	3					
+ANR	1695	UnaryOperationExpression	! c		1214	0					
+ANR	1696	UnaryOperator	!		1214	0					
+ANR	1697	Identifier	c		1214	1					
+ANR	1698	IfStatement	if ( b1 + 1 > mmr -> width )		1214	2					
+ANR	1699	Condition	b1 + 1 > mmr -> width	58:6:1907:1927	1214	0	True				
+ANR	1700	RelationalExpression	b1 + 1 > mmr -> width		1214	0		>			
+ANR	1701	AdditiveExpression	b1 + 1		1214	0		+			
+ANR	1702	Identifier	b1		1214	0					
+ANR	1703	PrimaryExpression	1		1214	1					
+ANR	1704	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1705	Identifier	mmr		1214	0					
+ANR	1706	Identifier	width		1214	1					
+ANR	1707	BreakStatement	break ;	58:30:1931:1937	1214	1	True				
+ANR	1708	IfStatement	if ( c )		1214	3					
+ANR	1709	Condition	c	59:6:1945:1945	1214	0	True				
+ANR	1710	Identifier	c		1214	0					
+ANR	1711	CompoundStatement		59:10:1861:1861	1214	1					
+ANR	1712	IfStatement	if ( b1 + 1 < a0 || a0 < 0 )		1214	0					
+ANR	1713	Condition	b1 + 1 < a0 || a0 < 0	60:6:1957:1977	1214	0	True				
+ANR	1714	OrExpression	b1 + 1 < a0 || a0 < 0		1214	0		||			
+ANR	1715	RelationalExpression	b1 + 1 < a0		1214	0		<			
+ANR	1716	AdditiveExpression	b1 + 1		1214	0		+			
+ANR	1717	Identifier	b1		1214	0					
+ANR	1718	PrimaryExpression	1		1214	1					
+ANR	1719	Identifier	a0		1214	1					
+ANR	1720	RelationalExpression	a0 < 0		1214	1		<			
+ANR	1721	Identifier	a0		1214	0					
+ANR	1722	PrimaryExpression	0		1214	1					
+ANR	1723	ReturnStatement	return - 1 ;	60:30:1981:1992	1214	1	True				
+ANR	1724	UnaryOperationExpression	- 1		1214	0					
+ANR	1725	UnaryOperator	-		1214	0					
+ANR	1726	PrimaryExpression	1		1214	1					
+ANR	1727	ExpressionStatement	"jbig2_set_bits ( dst , a0 , b1 + 1 )"	61:1:1995:2032	1214	1	True				
+ANR	1728	CallExpression	"jbig2_set_bits ( dst , a0 , b1 + 1 )"		1214	0					
+ANR	1729	Callee	jbig2_set_bits		1214	0					
+ANR	1730	Identifier	jbig2_set_bits		1214	0					
+ANR	1731	ArgumentList	dst		1214	1					
+ANR	1732	Argument	dst		1214	0					
+ANR	1733	Identifier	dst		1214	0					
+ANR	1734	Argument	a0		1214	1					
+ANR	1735	Identifier	a0		1214	0					
+ANR	1736	Argument	b1 + 1		1214	2					
+ANR	1737	AdditiveExpression	b1 + 1		1214	0		+			
+ANR	1738	Identifier	b1		1214	0					
+ANR	1739	PrimaryExpression	1		1214	1					
+ANR	1740	ExpressionStatement	a0 = b1 + 1	63:1:2038:2050	1214	4	True				
+ANR	1741	AssignmentExpression	a0 = b1 + 1		1214	0		=			
+ANR	1742	Identifier	a0		1214	0					
+ANR	1743	AdditiveExpression	b1 + 1		1214	1		+			
+ANR	1744	Identifier	b1		1214	0					
+ANR	1745	PrimaryExpression	1		1214	1					
+ANR	1746	ExpressionStatement	c = ! c	64:1:2053:2061	1214	5	True				
+ANR	1747	AssignmentExpression	c = ! c		1214	0		=			
+ANR	1748	Identifier	c		1214	0					
+ANR	1749	UnaryOperationExpression	! c		1214	1					
+ANR	1750	UnaryOperator	!		1214	0					
+ANR	1751	Identifier	c		1214	1					
+ANR	1752	ElseStatement	else		1214	0					
+ANR	1753	IfStatement	if ( ( word >> ( 32 - 6 ) ) == 3 )		1214	0					
+ANR	1754	Condition	( word >> ( 32 - 6 ) ) == 3	66:11:2077:2103	1214	0	True				
+ANR	1755	EqualityExpression	( word >> ( 32 - 6 ) ) == 3		1214	0		==			
+ANR	1756	ShiftExpression	word >> ( 32 - 6 )		1214	0		>>			
+ANR	1757	Identifier	word		1214	0					
+ANR	1758	AdditiveExpression	32 - 6		1214	1		-			
+ANR	1759	PrimaryExpression	32		1214	0					
+ANR	1760	PrimaryExpression	6		1214	1					
+ANR	1761	PrimaryExpression	3		1214	1					
+ANR	1762	CompoundStatement		66:41:2019:2019	1214	1					
+ANR	1763	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 6 )"	67:1:2110:2147	1214	0	True				
+ANR	1764	CallExpression	"jbig2_decode_mmr_consume ( mmr , 6 )"		1214	0					
+ANR	1765	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	1766	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	1767	ArgumentList	mmr		1214	1					
+ANR	1768	Argument	mmr		1214	0					
+ANR	1769	Identifier	mmr		1214	0					
+ANR	1770	Argument	6		1214	1					
+ANR	1771	PrimaryExpression	6		1214	0					
+ANR	1772	ExpressionStatement	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"	68:1:2150:2226	1214	1	True				
+ANR	1773	AssignmentExpression	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	0		=			
+ANR	1774	Identifier	b1		1214	0					
+ANR	1775	CallExpression	"jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	1					
+ANR	1776	Callee	jbig2_find_changing_element_of_color		1214	0					
+ANR	1777	Identifier	jbig2_find_changing_element_of_color		1214	0					
+ANR	1778	ArgumentList	ref		1214	1					
+ANR	1779	Argument	ref		1214	0					
+ANR	1780	Identifier	ref		1214	0					
+ANR	1781	Argument	a0		1214	1					
+ANR	1782	Identifier	a0		1214	0					
+ANR	1783	Argument	mmr -> width		1214	2					
+ANR	1784	PtrMemberAccess	mmr -> width		1214	0					
+ANR	1785	Identifier	mmr		1214	0					
+ANR	1786	Identifier	width		1214	1					
+ANR	1787	Argument	! c		1214	3					
+ANR	1788	UnaryOperationExpression	! c		1214	0					
+ANR	1789	UnaryOperator	!		1214	0					
+ANR	1790	Identifier	c		1214	1					
+ANR	1791	IfStatement	if ( b1 + 2 > mmr -> width )		1214	2					
+ANR	1792	Condition	b1 + 2 > mmr -> width	69:6:2234:2254	1214	0	True				
+ANR	1793	RelationalExpression	b1 + 2 > mmr -> width		1214	0		>			
+ANR	1794	AdditiveExpression	b1 + 2		1214	0		+			
+ANR	1795	Identifier	b1		1214	0					
+ANR	1796	PrimaryExpression	2		1214	1					
+ANR	1797	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1798	Identifier	mmr		1214	0					
+ANR	1799	Identifier	width		1214	1					
+ANR	1800	BreakStatement	break ;	69:30:2258:2264	1214	1	True				
+ANR	1801	IfStatement	if ( c )		1214	3					
+ANR	1802	Condition	c	70:6:2272:2272	1214	0	True				
+ANR	1803	Identifier	c		1214	0					
+ANR	1804	CompoundStatement		70:10:2188:2188	1214	1					
+ANR	1805	IfStatement	if ( b1 + 2 < a0 || a0 < 0 )		1214	0					
+ANR	1806	Condition	b1 + 2 < a0 || a0 < 0	71:6:2284:2304	1214	0	True				
+ANR	1807	OrExpression	b1 + 2 < a0 || a0 < 0		1214	0		||			
+ANR	1808	RelationalExpression	b1 + 2 < a0		1214	0		<			
+ANR	1809	AdditiveExpression	b1 + 2		1214	0		+			
+ANR	1810	Identifier	b1		1214	0					
+ANR	1811	PrimaryExpression	2		1214	1					
+ANR	1812	Identifier	a0		1214	1					
+ANR	1813	RelationalExpression	a0 < 0		1214	1		<			
+ANR	1814	Identifier	a0		1214	0					
+ANR	1815	PrimaryExpression	0		1214	1					
+ANR	1816	ReturnStatement	return - 1 ;	71:30:2308:2319	1214	1	True				
+ANR	1817	UnaryOperationExpression	- 1		1214	0					
+ANR	1818	UnaryOperator	-		1214	0					
+ANR	1819	PrimaryExpression	1		1214	1					
+ANR	1820	ExpressionStatement	"jbig2_set_bits ( dst , a0 , b1 + 2 )"	72:1:2322:2359	1214	1	True				
+ANR	1821	CallExpression	"jbig2_set_bits ( dst , a0 , b1 + 2 )"		1214	0					
+ANR	1822	Callee	jbig2_set_bits		1214	0					
+ANR	1823	Identifier	jbig2_set_bits		1214	0					
+ANR	1824	ArgumentList	dst		1214	1					
+ANR	1825	Argument	dst		1214	0					
+ANR	1826	Identifier	dst		1214	0					
+ANR	1827	Argument	a0		1214	1					
+ANR	1828	Identifier	a0		1214	0					
+ANR	1829	Argument	b1 + 2		1214	2					
+ANR	1830	AdditiveExpression	b1 + 2		1214	0		+			
+ANR	1831	Identifier	b1		1214	0					
+ANR	1832	PrimaryExpression	2		1214	1					
+ANR	1833	ExpressionStatement	a0 = b1 + 2	74:1:2365:2377	1214	4	True				
+ANR	1834	AssignmentExpression	a0 = b1 + 2		1214	0		=			
+ANR	1835	Identifier	a0		1214	0					
+ANR	1836	AdditiveExpression	b1 + 2		1214	1		+			
+ANR	1837	Identifier	b1		1214	0					
+ANR	1838	PrimaryExpression	2		1214	1					
+ANR	1839	ExpressionStatement	c = ! c	75:1:2380:2388	1214	5	True				
+ANR	1840	AssignmentExpression	c = ! c		1214	0		=			
+ANR	1841	Identifier	c		1214	0					
+ANR	1842	UnaryOperationExpression	! c		1214	1					
+ANR	1843	UnaryOperator	!		1214	0					
+ANR	1844	Identifier	c		1214	1					
+ANR	1845	ElseStatement	else		1214	0					
+ANR	1846	IfStatement	if ( ( word >> ( 32 - 7 ) ) == 3 )		1214	0					
+ANR	1847	Condition	( word >> ( 32 - 7 ) ) == 3	77:11:2404:2430	1214	0	True				
+ANR	1848	EqualityExpression	( word >> ( 32 - 7 ) ) == 3		1214	0		==			
+ANR	1849	ShiftExpression	word >> ( 32 - 7 )		1214	0		>>			
+ANR	1850	Identifier	word		1214	0					
+ANR	1851	AdditiveExpression	32 - 7		1214	1		-			
+ANR	1852	PrimaryExpression	32		1214	0					
+ANR	1853	PrimaryExpression	7		1214	1					
+ANR	1854	PrimaryExpression	3		1214	1					
+ANR	1855	CompoundStatement		77:41:2346:2346	1214	1					
+ANR	1856	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 7 )"	78:1:2437:2474	1214	0	True				
+ANR	1857	CallExpression	"jbig2_decode_mmr_consume ( mmr , 7 )"		1214	0					
+ANR	1858	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	1859	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	1860	ArgumentList	mmr		1214	1					
+ANR	1861	Argument	mmr		1214	0					
+ANR	1862	Identifier	mmr		1214	0					
+ANR	1863	Argument	7		1214	1					
+ANR	1864	PrimaryExpression	7		1214	0					
+ANR	1865	ExpressionStatement	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"	79:1:2477:2553	1214	1	True				
+ANR	1866	AssignmentExpression	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	0		=			
+ANR	1867	Identifier	b1		1214	0					
+ANR	1868	CallExpression	"jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	1					
+ANR	1869	Callee	jbig2_find_changing_element_of_color		1214	0					
+ANR	1870	Identifier	jbig2_find_changing_element_of_color		1214	0					
+ANR	1871	ArgumentList	ref		1214	1					
+ANR	1872	Argument	ref		1214	0					
+ANR	1873	Identifier	ref		1214	0					
+ANR	1874	Argument	a0		1214	1					
+ANR	1875	Identifier	a0		1214	0					
+ANR	1876	Argument	mmr -> width		1214	2					
+ANR	1877	PtrMemberAccess	mmr -> width		1214	0					
+ANR	1878	Identifier	mmr		1214	0					
+ANR	1879	Identifier	width		1214	1					
+ANR	1880	Argument	! c		1214	3					
+ANR	1881	UnaryOperationExpression	! c		1214	0					
+ANR	1882	UnaryOperator	!		1214	0					
+ANR	1883	Identifier	c		1214	1					
+ANR	1884	IfStatement	if ( b1 + 3 > mmr -> width )		1214	2					
+ANR	1885	Condition	b1 + 3 > mmr -> width	80:6:2561:2581	1214	0	True				
+ANR	1886	RelationalExpression	b1 + 3 > mmr -> width		1214	0		>			
+ANR	1887	AdditiveExpression	b1 + 3		1214	0		+			
+ANR	1888	Identifier	b1		1214	0					
+ANR	1889	PrimaryExpression	3		1214	1					
+ANR	1890	PtrMemberAccess	mmr -> width		1214	1					
+ANR	1891	Identifier	mmr		1214	0					
+ANR	1892	Identifier	width		1214	1					
+ANR	1893	BreakStatement	break ;	80:30:2585:2591	1214	1	True				
+ANR	1894	IfStatement	if ( c )		1214	3					
+ANR	1895	Condition	c	81:6:2599:2599	1214	0	True				
+ANR	1896	Identifier	c		1214	0					
+ANR	1897	CompoundStatement		81:10:2515:2515	1214	1					
+ANR	1898	IfStatement	if ( b1 + 3 < a0 || a0 < 0 )		1214	0					
+ANR	1899	Condition	b1 + 3 < a0 || a0 < 0	82:6:2611:2631	1214	0	True				
+ANR	1900	OrExpression	b1 + 3 < a0 || a0 < 0		1214	0		||			
+ANR	1901	RelationalExpression	b1 + 3 < a0		1214	0		<			
+ANR	1902	AdditiveExpression	b1 + 3		1214	0		+			
+ANR	1903	Identifier	b1		1214	0					
+ANR	1904	PrimaryExpression	3		1214	1					
+ANR	1905	Identifier	a0		1214	1					
+ANR	1906	RelationalExpression	a0 < 0		1214	1		<			
+ANR	1907	Identifier	a0		1214	0					
+ANR	1908	PrimaryExpression	0		1214	1					
+ANR	1909	ReturnStatement	return - 1 ;	82:30:2635:2646	1214	1	True				
+ANR	1910	UnaryOperationExpression	- 1		1214	0					
+ANR	1911	UnaryOperator	-		1214	0					
+ANR	1912	PrimaryExpression	1		1214	1					
+ANR	1913	ExpressionStatement	"jbig2_set_bits ( dst , a0 , b1 + 3 )"	83:1:2649:2686	1214	1	True				
+ANR	1914	CallExpression	"jbig2_set_bits ( dst , a0 , b1 + 3 )"		1214	0					
+ANR	1915	Callee	jbig2_set_bits		1214	0					
+ANR	1916	Identifier	jbig2_set_bits		1214	0					
+ANR	1917	ArgumentList	dst		1214	1					
+ANR	1918	Argument	dst		1214	0					
+ANR	1919	Identifier	dst		1214	0					
+ANR	1920	Argument	a0		1214	1					
+ANR	1921	Identifier	a0		1214	0					
+ANR	1922	Argument	b1 + 3		1214	2					
+ANR	1923	AdditiveExpression	b1 + 3		1214	0		+			
+ANR	1924	Identifier	b1		1214	0					
+ANR	1925	PrimaryExpression	3		1214	1					
+ANR	1926	ExpressionStatement	a0 = b1 + 3	85:1:2692:2704	1214	4	True				
+ANR	1927	AssignmentExpression	a0 = b1 + 3		1214	0		=			
+ANR	1928	Identifier	a0		1214	0					
+ANR	1929	AdditiveExpression	b1 + 3		1214	1		+			
+ANR	1930	Identifier	b1		1214	0					
+ANR	1931	PrimaryExpression	3		1214	1					
+ANR	1932	ExpressionStatement	c = ! c	86:1:2707:2715	1214	5	True				
+ANR	1933	AssignmentExpression	c = ! c		1214	0		=			
+ANR	1934	Identifier	c		1214	0					
+ANR	1935	UnaryOperationExpression	! c		1214	1					
+ANR	1936	UnaryOperator	!		1214	0					
+ANR	1937	Identifier	c		1214	1					
+ANR	1938	ElseStatement	else		1214	0					
+ANR	1939	IfStatement	if ( ( word >> ( 32 - 3 ) ) == 2 )		1214	0					
+ANR	1940	Condition	( word >> ( 32 - 3 ) ) == 2	88:11:2731:2757	1214	0	True				
+ANR	1941	EqualityExpression	( word >> ( 32 - 3 ) ) == 2		1214	0		==			
+ANR	1942	ShiftExpression	word >> ( 32 - 3 )		1214	0		>>			
+ANR	1943	Identifier	word		1214	0					
+ANR	1944	AdditiveExpression	32 - 3		1214	1		-			
+ANR	1945	PrimaryExpression	32		1214	0					
+ANR	1946	PrimaryExpression	3		1214	1					
+ANR	1947	PrimaryExpression	2		1214	1					
+ANR	1948	CompoundStatement		88:41:2673:2673	1214	1					
+ANR	1949	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 3 )"	89:1:2764:2801	1214	0	True				
+ANR	1950	CallExpression	"jbig2_decode_mmr_consume ( mmr , 3 )"		1214	0					
+ANR	1951	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	1952	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	1953	ArgumentList	mmr		1214	1					
+ANR	1954	Argument	mmr		1214	0					
+ANR	1955	Identifier	mmr		1214	0					
+ANR	1956	Argument	3		1214	1					
+ANR	1957	PrimaryExpression	3		1214	0					
+ANR	1958	ExpressionStatement	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"	90:1:2804:2880	1214	1	True				
+ANR	1959	AssignmentExpression	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	0		=			
+ANR	1960	Identifier	b1		1214	0					
+ANR	1961	CallExpression	"jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	1					
+ANR	1962	Callee	jbig2_find_changing_element_of_color		1214	0					
+ANR	1963	Identifier	jbig2_find_changing_element_of_color		1214	0					
+ANR	1964	ArgumentList	ref		1214	1					
+ANR	1965	Argument	ref		1214	0					
+ANR	1966	Identifier	ref		1214	0					
+ANR	1967	Argument	a0		1214	1					
+ANR	1968	Identifier	a0		1214	0					
+ANR	1969	Argument	mmr -> width		1214	2					
+ANR	1970	PtrMemberAccess	mmr -> width		1214	0					
+ANR	1971	Identifier	mmr		1214	0					
+ANR	1972	Identifier	width		1214	1					
+ANR	1973	Argument	! c		1214	3					
+ANR	1974	UnaryOperationExpression	! c		1214	0					
+ANR	1975	UnaryOperator	!		1214	0					
+ANR	1976	Identifier	c		1214	1					
+ANR	1977	IfStatement	if ( b1 - 1 < 0 )		1214	2					
+ANR	1978	Condition	b1 - 1 < 0	91:6:2888:2897	1214	0	True				
+ANR	1979	RelationalExpression	b1 - 1 < 0		1214	0		<			
+ANR	1980	AdditiveExpression	b1 - 1		1214	0		-			
+ANR	1981	Identifier	b1		1214	0					
+ANR	1982	PrimaryExpression	1		1214	1					
+ANR	1983	PrimaryExpression	0		1214	1					
+ANR	1984	BreakStatement	break ;	91:19:2901:2907	1214	1	True				
+ANR	1985	IfStatement	if ( c )		1214	3					
+ANR	1986	Condition	c	92:6:2915:2915	1214	0	True				
+ANR	1987	Identifier	c		1214	0					
+ANR	1988	CompoundStatement		92:10:2831:2831	1214	1					
+ANR	1989	IfStatement	if ( b1 - 1 < a0 || a0 < 0 )		1214	0					
+ANR	1990	Condition	b1 - 1 < a0 || a0 < 0	93:6:2927:2947	1214	0	True				
+ANR	1991	OrExpression	b1 - 1 < a0 || a0 < 0		1214	0		||			
+ANR	1992	RelationalExpression	b1 - 1 < a0		1214	0		<			
+ANR	1993	AdditiveExpression	b1 - 1		1214	0		-			
+ANR	1994	Identifier	b1		1214	0					
+ANR	1995	PrimaryExpression	1		1214	1					
+ANR	1996	Identifier	a0		1214	1					
+ANR	1997	RelationalExpression	a0 < 0		1214	1		<			
+ANR	1998	Identifier	a0		1214	0					
+ANR	1999	PrimaryExpression	0		1214	1					
+ANR	2000	ReturnStatement	return - 1 ;	93:30:2951:2962	1214	1	True				
+ANR	2001	UnaryOperationExpression	- 1		1214	0					
+ANR	2002	UnaryOperator	-		1214	0					
+ANR	2003	PrimaryExpression	1		1214	1					
+ANR	2004	ExpressionStatement	"jbig2_set_bits ( dst , a0 , b1 - 1 )"	94:1:2965:3002	1214	1	True				
+ANR	2005	CallExpression	"jbig2_set_bits ( dst , a0 , b1 - 1 )"		1214	0					
+ANR	2006	Callee	jbig2_set_bits		1214	0					
+ANR	2007	Identifier	jbig2_set_bits		1214	0					
+ANR	2008	ArgumentList	dst		1214	1					
+ANR	2009	Argument	dst		1214	0					
+ANR	2010	Identifier	dst		1214	0					
+ANR	2011	Argument	a0		1214	1					
+ANR	2012	Identifier	a0		1214	0					
+ANR	2013	Argument	b1 - 1		1214	2					
+ANR	2014	AdditiveExpression	b1 - 1		1214	0		-			
+ANR	2015	Identifier	b1		1214	0					
+ANR	2016	PrimaryExpression	1		1214	1					
+ANR	2017	ExpressionStatement	a0 = b1 - 1	96:1:3008:3020	1214	4	True				
+ANR	2018	AssignmentExpression	a0 = b1 - 1		1214	0		=			
+ANR	2019	Identifier	a0		1214	0					
+ANR	2020	AdditiveExpression	b1 - 1		1214	1		-			
+ANR	2021	Identifier	b1		1214	0					
+ANR	2022	PrimaryExpression	1		1214	1					
+ANR	2023	ExpressionStatement	c = ! c	97:1:3023:3031	1214	5	True				
+ANR	2024	AssignmentExpression	c = ! c		1214	0		=			
+ANR	2025	Identifier	c		1214	0					
+ANR	2026	UnaryOperationExpression	! c		1214	1					
+ANR	2027	UnaryOperator	!		1214	0					
+ANR	2028	Identifier	c		1214	1					
+ANR	2029	ElseStatement	else		1214	0					
+ANR	2030	IfStatement	if ( ( word >> ( 32 - 6 ) ) == 2 )		1214	0					
+ANR	2031	Condition	( word >> ( 32 - 6 ) ) == 2	99:11:3047:3073	1214	0	True				
+ANR	2032	EqualityExpression	( word >> ( 32 - 6 ) ) == 2		1214	0		==			
+ANR	2033	ShiftExpression	word >> ( 32 - 6 )		1214	0		>>			
+ANR	2034	Identifier	word		1214	0					
+ANR	2035	AdditiveExpression	32 - 6		1214	1		-			
+ANR	2036	PrimaryExpression	32		1214	0					
+ANR	2037	PrimaryExpression	6		1214	1					
+ANR	2038	PrimaryExpression	2		1214	1					
+ANR	2039	CompoundStatement		99:41:2989:2989	1214	1					
+ANR	2040	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 6 )"	100:1:3080:3117	1214	0	True				
+ANR	2041	CallExpression	"jbig2_decode_mmr_consume ( mmr , 6 )"		1214	0					
+ANR	2042	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	2043	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	2044	ArgumentList	mmr		1214	1					
+ANR	2045	Argument	mmr		1214	0					
+ANR	2046	Identifier	mmr		1214	0					
+ANR	2047	Argument	6		1214	1					
+ANR	2048	PrimaryExpression	6		1214	0					
+ANR	2049	ExpressionStatement	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"	101:1:3120:3196	1214	1	True				
+ANR	2050	AssignmentExpression	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	0		=			
+ANR	2051	Identifier	b1		1214	0					
+ANR	2052	CallExpression	"jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	1					
+ANR	2053	Callee	jbig2_find_changing_element_of_color		1214	0					
+ANR	2054	Identifier	jbig2_find_changing_element_of_color		1214	0					
+ANR	2055	ArgumentList	ref		1214	1					
+ANR	2056	Argument	ref		1214	0					
+ANR	2057	Identifier	ref		1214	0					
+ANR	2058	Argument	a0		1214	1					
+ANR	2059	Identifier	a0		1214	0					
+ANR	2060	Argument	mmr -> width		1214	2					
+ANR	2061	PtrMemberAccess	mmr -> width		1214	0					
+ANR	2062	Identifier	mmr		1214	0					
+ANR	2063	Identifier	width		1214	1					
+ANR	2064	Argument	! c		1214	3					
+ANR	2065	UnaryOperationExpression	! c		1214	0					
+ANR	2066	UnaryOperator	!		1214	0					
+ANR	2067	Identifier	c		1214	1					
+ANR	2068	IfStatement	if ( b1 - 2 < 0 )		1214	2					
+ANR	2069	Condition	b1 - 2 < 0	102:6:3204:3213	1214	0	True				
+ANR	2070	RelationalExpression	b1 - 2 < 0		1214	0		<			
+ANR	2071	AdditiveExpression	b1 - 2		1214	0		-			
+ANR	2072	Identifier	b1		1214	0					
+ANR	2073	PrimaryExpression	2		1214	1					
+ANR	2074	PrimaryExpression	0		1214	1					
+ANR	2075	BreakStatement	break ;	102:19:3217:3223	1214	1	True				
+ANR	2076	IfStatement	if ( c )		1214	3					
+ANR	2077	Condition	c	103:6:3231:3231	1214	0	True				
+ANR	2078	Identifier	c		1214	0					
+ANR	2079	CompoundStatement		103:10:3147:3147	1214	1					
+ANR	2080	IfStatement	if ( b1 - 2 < a0 || a0 < 0 )		1214	0					
+ANR	2081	Condition	b1 - 2 < a0 || a0 < 0	104:6:3243:3263	1214	0	True				
+ANR	2082	OrExpression	b1 - 2 < a0 || a0 < 0		1214	0		||			
+ANR	2083	RelationalExpression	b1 - 2 < a0		1214	0		<			
+ANR	2084	AdditiveExpression	b1 - 2		1214	0		-			
+ANR	2085	Identifier	b1		1214	0					
+ANR	2086	PrimaryExpression	2		1214	1					
+ANR	2087	Identifier	a0		1214	1					
+ANR	2088	RelationalExpression	a0 < 0		1214	1		<			
+ANR	2089	Identifier	a0		1214	0					
+ANR	2090	PrimaryExpression	0		1214	1					
+ANR	2091	ReturnStatement	return - 1 ;	104:30:3267:3278	1214	1	True				
+ANR	2092	UnaryOperationExpression	- 1		1214	0					
+ANR	2093	UnaryOperator	-		1214	0					
+ANR	2094	PrimaryExpression	1		1214	1					
+ANR	2095	ExpressionStatement	"jbig2_set_bits ( dst , a0 , b1 - 2 )"	105:1:3281:3318	1214	1	True				
+ANR	2096	CallExpression	"jbig2_set_bits ( dst , a0 , b1 - 2 )"		1214	0					
+ANR	2097	Callee	jbig2_set_bits		1214	0					
+ANR	2098	Identifier	jbig2_set_bits		1214	0					
+ANR	2099	ArgumentList	dst		1214	1					
+ANR	2100	Argument	dst		1214	0					
+ANR	2101	Identifier	dst		1214	0					
+ANR	2102	Argument	a0		1214	1					
+ANR	2103	Identifier	a0		1214	0					
+ANR	2104	Argument	b1 - 2		1214	2					
+ANR	2105	AdditiveExpression	b1 - 2		1214	0		-			
+ANR	2106	Identifier	b1		1214	0					
+ANR	2107	PrimaryExpression	2		1214	1					
+ANR	2108	ExpressionStatement	a0 = b1 - 2	107:1:3324:3336	1214	4	True				
+ANR	2109	AssignmentExpression	a0 = b1 - 2		1214	0		=			
+ANR	2110	Identifier	a0		1214	0					
+ANR	2111	AdditiveExpression	b1 - 2		1214	1		-			
+ANR	2112	Identifier	b1		1214	0					
+ANR	2113	PrimaryExpression	2		1214	1					
+ANR	2114	ExpressionStatement	c = ! c	108:1:3339:3347	1214	5	True				
+ANR	2115	AssignmentExpression	c = ! c		1214	0		=			
+ANR	2116	Identifier	c		1214	0					
+ANR	2117	UnaryOperationExpression	! c		1214	1					
+ANR	2118	UnaryOperator	!		1214	0					
+ANR	2119	Identifier	c		1214	1					
+ANR	2120	ElseStatement	else		1214	0					
+ANR	2121	IfStatement	if ( ( word >> ( 32 - 7 ) ) == 2 )		1214	0					
+ANR	2122	Condition	( word >> ( 32 - 7 ) ) == 2	110:11:3363:3389	1214	0	True				
+ANR	2123	EqualityExpression	( word >> ( 32 - 7 ) ) == 2		1214	0		==			
+ANR	2124	ShiftExpression	word >> ( 32 - 7 )		1214	0		>>			
+ANR	2125	Identifier	word		1214	0					
+ANR	2126	AdditiveExpression	32 - 7		1214	1		-			
+ANR	2127	PrimaryExpression	32		1214	0					
+ANR	2128	PrimaryExpression	7		1214	1					
+ANR	2129	PrimaryExpression	2		1214	1					
+ANR	2130	CompoundStatement		110:41:3305:3305	1214	1					
+ANR	2131	ExpressionStatement	"jbig2_decode_mmr_consume ( mmr , 7 )"	111:1:3396:3433	1214	0	True				
+ANR	2132	CallExpression	"jbig2_decode_mmr_consume ( mmr , 7 )"		1214	0					
+ANR	2133	Callee	jbig2_decode_mmr_consume		1214	0					
+ANR	2134	Identifier	jbig2_decode_mmr_consume		1214	0					
+ANR	2135	ArgumentList	mmr		1214	1					
+ANR	2136	Argument	mmr		1214	0					
+ANR	2137	Identifier	mmr		1214	0					
+ANR	2138	Argument	7		1214	1					
+ANR	2139	PrimaryExpression	7		1214	0					
+ANR	2140	ExpressionStatement	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"	112:1:3436:3512	1214	1	True				
+ANR	2141	AssignmentExpression	"b1 = jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	0		=			
+ANR	2142	Identifier	b1		1214	0					
+ANR	2143	CallExpression	"jbig2_find_changing_element_of_color ( ref , a0 , mmr -> width , ! c )"		1214	1					
+ANR	2144	Callee	jbig2_find_changing_element_of_color		1214	0					
+ANR	2145	Identifier	jbig2_find_changing_element_of_color		1214	0					
+ANR	2146	ArgumentList	ref		1214	1					
+ANR	2147	Argument	ref		1214	0					
+ANR	2148	Identifier	ref		1214	0					
+ANR	2149	Argument	a0		1214	1					
+ANR	2150	Identifier	a0		1214	0					
+ANR	2151	Argument	mmr -> width		1214	2					
+ANR	2152	PtrMemberAccess	mmr -> width		1214	0					
+ANR	2153	Identifier	mmr		1214	0					
+ANR	2154	Identifier	width		1214	1					
+ANR	2155	Argument	! c		1214	3					
+ANR	2156	UnaryOperationExpression	! c		1214	0					
+ANR	2157	UnaryOperator	!		1214	0					
+ANR	2158	Identifier	c		1214	1					
+ANR	2159	IfStatement	if ( b1 - 3 < 0 )		1214	2					
+ANR	2160	Condition	b1 - 3 < 0	113:6:3520:3529	1214	0	True				
+ANR	2161	RelationalExpression	b1 - 3 < 0		1214	0		<			
+ANR	2162	AdditiveExpression	b1 - 3		1214	0		-			
+ANR	2163	Identifier	b1		1214	0					
+ANR	2164	PrimaryExpression	3		1214	1					
+ANR	2165	PrimaryExpression	0		1214	1					
+ANR	2166	BreakStatement	break ;	113:19:3533:3539	1214	1	True				
+ANR	2167	IfStatement	if ( c )		1214	3					
+ANR	2168	Condition	c	114:6:3547:3547	1214	0	True				
+ANR	2169	Identifier	c		1214	0					
+ANR	2170	CompoundStatement		114:10:3463:3463	1214	1					
+ANR	2171	IfStatement	if ( b1 - 3 < a0 || a0 < 0 )		1214	0					
+ANR	2172	Condition	b1 - 3 < a0 || a0 < 0	115:6:3559:3579	1214	0	True				
+ANR	2173	OrExpression	b1 - 3 < a0 || a0 < 0		1214	0		||			
+ANR	2174	RelationalExpression	b1 - 3 < a0		1214	0		<			
+ANR	2175	AdditiveExpression	b1 - 3		1214	0		-			
+ANR	2176	Identifier	b1		1214	0					
+ANR	2177	PrimaryExpression	3		1214	1					
+ANR	2178	Identifier	a0		1214	1					
+ANR	2179	RelationalExpression	a0 < 0		1214	1		<			
+ANR	2180	Identifier	a0		1214	0					
+ANR	2181	PrimaryExpression	0		1214	1					
+ANR	2182	ReturnStatement	return - 1 ;	115:30:3583:3594	1214	1	True				
+ANR	2183	UnaryOperationExpression	- 1		1214	0					
+ANR	2184	UnaryOperator	-		1214	0					
+ANR	2185	PrimaryExpression	1		1214	1					
+ANR	2186	ExpressionStatement	"jbig2_set_bits ( dst , a0 , b1 - 3 )"	116:1:3597:3634	1214	1	True				
+ANR	2187	CallExpression	"jbig2_set_bits ( dst , a0 , b1 - 3 )"		1214	0					
+ANR	2188	Callee	jbig2_set_bits		1214	0					
+ANR	2189	Identifier	jbig2_set_bits		1214	0					
+ANR	2190	ArgumentList	dst		1214	1					
+ANR	2191	Argument	dst		1214	0					
+ANR	2192	Identifier	dst		1214	0					
+ANR	2193	Argument	a0		1214	1					
+ANR	2194	Identifier	a0		1214	0					
+ANR	2195	Argument	b1 - 3		1214	2					
+ANR	2196	AdditiveExpression	b1 - 3		1214	0		-			
+ANR	2197	Identifier	b1		1214	0					
+ANR	2198	PrimaryExpression	3		1214	1					
+ANR	2199	ExpressionStatement	a0 = b1 - 3	118:1:3640:3652	1214	4	True				
+ANR	2200	AssignmentExpression	a0 = b1 - 3		1214	0		=			
+ANR	2201	Identifier	a0		1214	0					
+ANR	2202	AdditiveExpression	b1 - 3		1214	1		-			
+ANR	2203	Identifier	b1		1214	0					
+ANR	2204	PrimaryExpression	3		1214	1					
+ANR	2205	ExpressionStatement	c = ! c	119:1:3655:3663	1214	5	True				
+ANR	2206	AssignmentExpression	c = ! c		1214	0		=			
+ANR	2207	Identifier	c		1214	0					
+ANR	2208	UnaryOperationExpression	! c		1214	1					
+ANR	2209	UnaryOperator	!		1214	0					
+ANR	2210	Identifier	c		1214	1					
+ANR	2211	ElseStatement	else		1214	0					
+ANR	2212	BreakStatement	break ;	121:6:3674:3680	1214	0	True				
+ANR	2213	ReturnStatement	return 0 ;	123:1:3686:3695	1214	4	True				
+ANR	2214	PrimaryExpression	0		1214	0					
+ANR	2215	ReturnType	static int		1214	1					
+ANR	2216	Identifier	jbig2_decode_mmr_line		1214	2					
+ANR	2217	ParameterList	"Jbig2MmrCtx * mmr , const byte * ref , byte * dst"		1214	3					
+ANR	2218	Parameter	Jbig2MmrCtx * mmr	1:35:35:51	1214	0	True				
+ANR	2219	ParameterType	Jbig2MmrCtx *		1214	0					
+ANR	2220	Identifier	mmr		1214	1					
+ANR	2221	Parameter	const byte * ref	1:55:55:70	1214	1	True				
+ANR	2222	ParameterType	const byte *		1214	0					
+ANR	2223	Identifier	ref		1214	1					
+ANR	2224	Parameter	byte * dst	1:74:74:83	1214	2	True				
+ANR	2225	ParameterType	byte *		1214	0					
+ANR	2226	Identifier	dst		1214	1					
+ANR	2227	CFGEntryNode	ENTRY		1214		True				
+ANR	2228	CFGExitNode	EXIT		1214		True				
+ANR	2229	Symbol	jbig2_mmr_white_decode		1214						
+ANR	2230	Symbol	c		1214						
+ANR	2231	Symbol	dst		1214						
+ANR	2232	Symbol	black_run		1214						
+ANR	2233	Symbol	mmr -> word		1214						
+ANR	2234	Symbol	jbig2_find_changing_element		1214						
+ANR	2235	Symbol	a0		1214						
+ANR	2236	Symbol	b1		1214						
+ANR	2237	Symbol	b2		1214						
+ANR	2238	Symbol	a1		1214						
+ANR	2239	Symbol	a2		1214						
+ANR	2240	Symbol	ref		1214						
+ANR	2241	Symbol	mmr		1214						
+ANR	2242	Symbol	mmr -> width		1214						
+ANR	2243	Symbol	white_run		1214						
+ANR	2244	Symbol	jbig2_find_changing_element_of_color		1214						
+ANR	2245	Symbol	jbig2_decode_get_run		1214						
+ANR	2246	Symbol	jbig2_mmr_black_decode		1214						
+ANR	2247	Symbol	* mmr		1214						
+ANR	2248	Symbol	word		1214						

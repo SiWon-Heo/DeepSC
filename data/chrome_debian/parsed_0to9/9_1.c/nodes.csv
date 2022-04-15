@@ -1,0 +1,167 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	7240	File	tmp/9_1.c								
+ANR	7241	Function	jbig2_decode_generic_mmr	1:0:0:611							
+ANR	7242	FunctionDef	"jbig2_decode_generic_mmr (Jbig2Ctx * ctx , Jbig2Segment * segment , const Jbig2GenericRegionParams * params , const byte * data , size_t size , Jbig2Image * image)"		7241	0					
+ANR	7243	CompoundStatement		1:170:170:611	7241	0					
+ANR	7244	IdentifierDeclStatement	Jbig2MmrCtx mmr ;	2:1:173:189	7241	0	True				
+ANR	7245	IdentifierDecl	mmr		7241	0					
+ANR	7246	IdentifierDeclType	Jbig2MmrCtx		7241	0					
+ANR	7247	Identifier	mmr		7241	1					
+ANR	7248	IdentifierDeclStatement	const int rowstride = image -> stride ;	3:1:192:230	7241	1	True				
+ANR	7249	IdentifierDecl	rowstride = image -> stride		7241	0					
+ANR	7250	IdentifierDeclType	const int		7241	0					
+ANR	7251	Identifier	rowstride		7241	1					
+ANR	7252	AssignmentExpression	rowstride = image -> stride		7241	2		=			
+ANR	7253	Identifier	rowstride		7241	0					
+ANR	7254	PtrMemberAccess	image -> stride		7241	1					
+ANR	7255	Identifier	image		7241	0					
+ANR	7256	Identifier	stride		7241	1					
+ANR	7257	IdentifierDeclStatement	byte * dst = image -> data ;	4:1:233:260	7241	2	True				
+ANR	7258	IdentifierDecl	* dst = image -> data		7241	0					
+ANR	7259	IdentifierDeclType	byte *		7241	0					
+ANR	7260	Identifier	dst		7241	1					
+ANR	7261	AssignmentExpression	* dst = image -> data		7241	2		=			
+ANR	7262	Identifier	dst		7241	0					
+ANR	7263	PtrMemberAccess	image -> data		7241	1					
+ANR	7264	Identifier	image		7241	0					
+ANR	7265	Identifier	data		7241	1					
+ANR	7266	IdentifierDeclStatement	byte * ref = NULL ;	5:1:263:281	7241	3	True				
+ANR	7267	IdentifierDecl	* ref = NULL		7241	0					
+ANR	7268	IdentifierDeclType	byte *		7241	0					
+ANR	7269	Identifier	ref		7241	1					
+ANR	7270	AssignmentExpression	* ref = NULL		7241	2		=			
+ANR	7271	Identifier	NULL		7241	0					
+ANR	7272	Identifier	NULL		7241	1					
+ANR	7273	IdentifierDeclStatement	int y ;	6:1:284:290	7241	4	True				
+ANR	7274	IdentifierDecl	y		7241	0					
+ANR	7275	IdentifierDeclType	int		7241	0					
+ANR	7276	Identifier	y		7241	1					
+ANR	7277	IdentifierDeclStatement	int code = 0 ;	7:1:293:306	7241	5	True				
+ANR	7278	IdentifierDecl	code = 0		7241	0					
+ANR	7279	IdentifierDeclType	int		7241	0					
+ANR	7280	Identifier	code		7241	1					
+ANR	7281	AssignmentExpression	code = 0		7241	2		=			
+ANR	7282	Identifier	code		7241	0					
+ANR	7283	PrimaryExpression	0		7241	1					
+ANR	7284	ExpressionStatement	"jbig2_decode_mmr_init ( & mmr , image -> width , image -> height , data , size )"	8:1:309:390	7241	6	True				
+ANR	7285	CallExpression	"jbig2_decode_mmr_init ( & mmr , image -> width , image -> height , data , size )"		7241	0					
+ANR	7286	Callee	jbig2_decode_mmr_init		7241	0					
+ANR	7287	Identifier	jbig2_decode_mmr_init		7241	0					
+ANR	7288	ArgumentList	& mmr		7241	1					
+ANR	7289	Argument	& mmr		7241	0					
+ANR	7290	UnaryOperationExpression	& mmr		7241	0					
+ANR	7291	UnaryOperator	&		7241	0					
+ANR	7292	Identifier	mmr		7241	1					
+ANR	7293	Argument	image -> width		7241	1					
+ANR	7294	PtrMemberAccess	image -> width		7241	0					
+ANR	7295	Identifier	image		7241	0					
+ANR	7296	Identifier	width		7241	1					
+ANR	7297	Argument	image -> height		7241	2					
+ANR	7298	PtrMemberAccess	image -> height		7241	0					
+ANR	7299	Identifier	image		7241	0					
+ANR	7300	Identifier	height		7241	1					
+ANR	7301	Argument	data		7241	3					
+ANR	7302	Identifier	data		7241	0					
+ANR	7303	Argument	size		7241	4					
+ANR	7304	Identifier	size		7241	0					
+ANR	7305	ForStatement	for ( y = 0 ; y < image -> height ; y ++ )		7241	7					
+ANR	7306	ForInit	y = 0 ;	9:7:399:405	7241	0	True				
+ANR	7307	AssignmentExpression	y = 0		7241	0		=			
+ANR	7308	Identifier	y		7241	0					
+ANR	7309	PrimaryExpression	0		7241	1					
+ANR	7310	Condition	y < image -> height	10:1:408:426	7241	1	True				
+ANR	7311	RelationalExpression	y < image -> height		7241	0		<			
+ANR	7312	Identifier	y		7241	0					
+ANR	7313	PtrMemberAccess	image -> height		7241	1					
+ANR	7314	Identifier	image		7241	0					
+ANR	7315	Identifier	height		7241	1					
+ANR	7316	PostIncDecOperationExpression	y ++	11:1:431:434	7241	2	True				
+ANR	7317	Identifier	y		7241	0					
+ANR	7318	IncDec	++		7241	1					
+ANR	7319	CompoundStatement		11:8:267:267	7241	3					
+ANR	7320	ExpressionStatement	"memset ( dst , 0 , rowstride )"	12:1:441:472	7241	0	True				
+ANR	7321	CallExpression	"memset ( dst , 0 , rowstride )"		7241	0					
+ANR	7322	Callee	memset		7241	0					
+ANR	7323	Identifier	memset		7241	0					
+ANR	7324	ArgumentList	dst		7241	1					
+ANR	7325	Argument	dst		7241	0					
+ANR	7326	Identifier	dst		7241	0					
+ANR	7327	Argument	0		7241	1					
+ANR	7328	PrimaryExpression	0		7241	0					
+ANR	7329	Argument	rowstride		7241	2					
+ANR	7330	Identifier	rowstride		7241	0					
+ANR	7331	ExpressionStatement	"code = jbig2_decode_mmr_line ( & mmr , ref , dst )"	13:1:475:526	7241	1	True				
+ANR	7332	AssignmentExpression	"code = jbig2_decode_mmr_line ( & mmr , ref , dst )"		7241	0		=			
+ANR	7333	Identifier	code		7241	0					
+ANR	7334	CallExpression	"jbig2_decode_mmr_line ( & mmr , ref , dst )"		7241	1					
+ANR	7335	Callee	jbig2_decode_mmr_line		7241	0					
+ANR	7336	Identifier	jbig2_decode_mmr_line		7241	0					
+ANR	7337	ArgumentList	& mmr		7241	1					
+ANR	7338	Argument	& mmr		7241	0					
+ANR	7339	UnaryOperationExpression	& mmr		7241	0					
+ANR	7340	UnaryOperator	&		7241	0					
+ANR	7341	Identifier	mmr		7241	1					
+ANR	7342	Argument	ref		7241	1					
+ANR	7343	Identifier	ref		7241	0					
+ANR	7344	Argument	dst		7241	2					
+ANR	7345	Identifier	dst		7241	0					
+ANR	7346	IfStatement	if ( code < 0 )		7241	2					
+ANR	7347	Condition	code < 0	14:6:534:541	7241	0	True				
+ANR	7348	RelationalExpression	code < 0		7241	0		<			
+ANR	7349	Identifier	code		7241	0					
+ANR	7350	PrimaryExpression	0		7241	1					
+ANR	7351	ReturnStatement	return code ;	14:17:545:557	7241	1	True				
+ANR	7352	Identifier	code		7241	0					
+ANR	7353	ExpressionStatement	ref = dst	15:1:560:570	7241	3	True				
+ANR	7354	AssignmentExpression	ref = dst		7241	0		=			
+ANR	7355	Identifier	ref		7241	0					
+ANR	7356	Identifier	dst		7241	1					
+ANR	7357	ExpressionStatement	dst += rowstride	16:1:573:590	7241	4	True				
+ANR	7358	AssignmentExpression	dst += rowstride		7241	0		+=			
+ANR	7359	Identifier	dst		7241	0					
+ANR	7360	Identifier	rowstride		7241	1					
+ANR	7361	ReturnStatement	return code ;	18:1:596:608	7241	8	True				
+ANR	7362	Identifier	code		7241	0					
+ANR	7363	ReturnType	int		7241	1					
+ANR	7364	Identifier	jbig2_decode_generic_mmr		7241	2					
+ANR	7365	ParameterList	"Jbig2Ctx * ctx , Jbig2Segment * segment , const Jbig2GenericRegionParams * params , const byte * data , size_t size , Jbig2Image * image"		7241	3					
+ANR	7366	Parameter	Jbig2Ctx * ctx	1:31:31:44	7241	0	True				
+ANR	7367	ParameterType	Jbig2Ctx *		7241	0					
+ANR	7368	Identifier	ctx		7241	1					
+ANR	7369	Parameter	Jbig2Segment * segment	1:48:48:69	7241	1	True				
+ANR	7370	ParameterType	Jbig2Segment *		7241	0					
+ANR	7371	Identifier	segment		7241	1					
+ANR	7372	Parameter	const Jbig2GenericRegionParams * params	1:73:73:111	7241	2	True				
+ANR	7373	ParameterType	const Jbig2GenericRegionParams *		7241	0					
+ANR	7374	Identifier	params		7241	1					
+ANR	7375	Parameter	const byte * data	1:115:115:131	7241	3	True				
+ANR	7376	ParameterType	const byte *		7241	0					
+ANR	7377	Identifier	data		7241	1					
+ANR	7378	Parameter	size_t size	1:135:135:145	7241	4	True				
+ANR	7379	ParameterType	size_t		7241	0					
+ANR	7380	Identifier	size		7241	1					
+ANR	7381	Parameter	Jbig2Image * image	1:149:149:166	7241	5	True				
+ANR	7382	ParameterType	Jbig2Image *		7241	0					
+ANR	7383	Identifier	image		7241	1					
+ANR	7384	CFGEntryNode	ENTRY		7241		True				
+ANR	7385	CFGExitNode	EXIT		7241		True				
+ANR	7386	Symbol	image		7241						
+ANR	7387	Symbol	image -> stride		7241						
+ANR	7388	Symbol	NULL		7241						
+ANR	7389	Symbol	code		7241						
+ANR	7390	Symbol	data		7241						
+ANR	7391	Symbol	dst		7241						
+ANR	7392	Symbol	rowstride		7241						
+ANR	7393	Symbol	image -> data		7241						
+ANR	7394	Symbol	ctx		7241						
+ANR	7395	Symbol	jbig2_decode_mmr_line		7241						
+ANR	7396	Symbol	params		7241						
+ANR	7397	Symbol	image -> width		7241						
+ANR	7398	Symbol	ref		7241						
+ANR	7399	Symbol	mmr		7241						
+ANR	7400	Symbol	size		7241						
+ANR	7401	Symbol	image -> height		7241						
+ANR	7402	Symbol	segment		7241						
+ANR	7403	Symbol	y		7241						
+ANR	7404	Symbol	* image		7241						
+ANR	7405	Symbol	& mmr		7241						

@@ -1,0 +1,467 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4015	File	tmp/5_1.c								
+ANR	4016	Function	jbig2_decode_halftone_region	1:0:0:2007							
+ANR	4017	FunctionDef	"jbig2_decode_halftone_region (Jbig2Ctx * ctx , Jbig2Segment * segment , Jbig2HalftoneRegionParams * params , const byte * data , const size_t size , Jbig2Image * image , Jbig2ArithCx * GB_stats)"		4016	0					
+ANR	4018	CompoundStatement		1:201:201:2007	4016	0					
+ANR	4019	IdentifierDeclStatement	uint32_t HBPP ;	2:1:204:218	4016	0	True				
+ANR	4020	IdentifierDecl	HBPP		4016	0					
+ANR	4021	IdentifierDeclType	uint32_t		4016	0					
+ANR	4022	Identifier	HBPP		4016	1					
+ANR	4023	IdentifierDeclStatement	uint32_t HNUMPATS ;	3:1:221:239	4016	1	True				
+ANR	4024	IdentifierDecl	HNUMPATS		4016	0					
+ANR	4025	IdentifierDeclType	uint32_t		4016	0					
+ANR	4026	Identifier	HNUMPATS		4016	1					
+ANR	4027	IdentifierDeclStatement	uint8_t * * GI ;	4:1:242:257	4016	2	True				
+ANR	4028	IdentifierDecl	* * GI		4016	0					
+ANR	4029	IdentifierDeclType	uint8_t * *		4016	0					
+ANR	4030	Identifier	GI		4016	1					
+ANR	4031	IdentifierDeclStatement	Jbig2Image * HSKIP = NULL ;	5:1:260:286	4016	3	True				
+ANR	4032	IdentifierDecl	* HSKIP = NULL		4016	0					
+ANR	4033	IdentifierDeclType	Jbig2Image *		4016	0					
+ANR	4034	Identifier	HSKIP		4016	1					
+ANR	4035	AssignmentExpression	* HSKIP = NULL		4016	2		=			
+ANR	4036	Identifier	NULL		4016	0					
+ANR	4037	Identifier	NULL		4016	1					
+ANR	4038	IdentifierDeclStatement	Jbig2PatternDict * HPATS ;	6:1:289:314	4016	4	True				
+ANR	4039	IdentifierDecl	* HPATS		4016	0					
+ANR	4040	IdentifierDeclType	Jbig2PatternDict *		4016	0					
+ANR	4041	Identifier	HPATS		4016	1					
+ANR	4042	IdentifierDeclStatement	int i ;	7:1:317:323	4016	5	True				
+ANR	4043	IdentifierDecl	i		4016	0					
+ANR	4044	IdentifierDeclType	int		4016	0					
+ANR	4045	Identifier	i		4016	1					
+ANR	4046	IdentifierDeclStatement	"uint32_t mg , ng ;"	8:1:326:343	4016	6	True				
+ANR	4047	IdentifierDecl	mg		4016	0					
+ANR	4048	IdentifierDeclType	uint32_t		4016	0					
+ANR	4049	Identifier	mg		4016	1					
+ANR	4050	IdentifierDecl	ng		4016	1					
+ANR	4051	IdentifierDeclType	uint32_t		4016	0					
+ANR	4052	Identifier	ng		4016	1					
+ANR	4053	IdentifierDeclStatement	"int32_t x , y ;"	9:1:346:360	4016	7	True				
+ANR	4054	IdentifierDecl	x		4016	0					
+ANR	4055	IdentifierDeclType	int32_t		4016	0					
+ANR	4056	Identifier	x		4016	1					
+ANR	4057	IdentifierDecl	y		4016	1					
+ANR	4058	IdentifierDeclType	int32_t		4016	0					
+ANR	4059	Identifier	y		4016	1					
+ANR	4060	IdentifierDeclStatement	uint8_t gray_val ;	10:1:363:380	4016	8	True				
+ANR	4061	IdentifierDecl	gray_val		4016	0					
+ANR	4062	IdentifierDeclType	uint8_t		4016	0					
+ANR	4063	Identifier	gray_val		4016	1					
+ANR	4064	ExpressionStatement	"memset ( image -> data , params -> HDEFPIXEL , image -> stride * image -> height )"	11:1:383:466	4016	9	True				
+ANR	4065	CallExpression	"memset ( image -> data , params -> HDEFPIXEL , image -> stride * image -> height )"		4016	0					
+ANR	4066	Callee	memset		4016	0					
+ANR	4067	Identifier	memset		4016	0					
+ANR	4068	ArgumentList	image -> data		4016	1					
+ANR	4069	Argument	image -> data		4016	0					
+ANR	4070	PtrMemberAccess	image -> data		4016	0					
+ANR	4071	Identifier	image		4016	0					
+ANR	4072	Identifier	data		4016	1					
+ANR	4073	Argument	params -> HDEFPIXEL		4016	1					
+ANR	4074	PtrMemberAccess	params -> HDEFPIXEL		4016	0					
+ANR	4075	Identifier	params		4016	0					
+ANR	4076	Identifier	HDEFPIXEL		4016	1					
+ANR	4077	Argument	image -> stride * image -> height		4016	2					
+ANR	4078	MultiplicativeExpression	image -> stride * image -> height		4016	0		*			
+ANR	4079	PtrMemberAccess	image -> stride		4016	0					
+ANR	4080	Identifier	image		4016	0					
+ANR	4081	Identifier	stride		4016	1					
+ANR	4082	PtrMemberAccess	image -> height		4016	1					
+ANR	4083	Identifier	image		4016	0					
+ANR	4084	Identifier	height		4016	1					
+ANR	4085	IfStatement	if ( params -> HENABLESKIP == 1 )		4016	10					
+ANR	4086	Condition	params -> HENABLESKIP == 1	12:6:474:499	4016	0	True				
+ANR	4087	EqualityExpression	params -> HENABLESKIP == 1		4016	0		==			
+ANR	4088	PtrMemberAccess	params -> HENABLESKIP		4016	0					
+ANR	4089	Identifier	params		4016	0					
+ANR	4090	Identifier	HENABLESKIP		4016	1					
+ANR	4091	PrimaryExpression	1		4016	1					
+ANR	4092	CompoundStatement		12:35:301:301	4016	1					
+ANR	4093	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unhandled option HENABLESKIP"" )"	13:1:506:604	4016	0	True				
+ANR	4094	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unhandled option HENABLESKIP"" )"		4016	0					
+ANR	4095	Callee	jbig2_error		4016	0					
+ANR	4096	Identifier	jbig2_error		4016	0					
+ANR	4097	ArgumentList	ctx		4016	1					
+ANR	4098	Argument	ctx		4016	0					
+ANR	4099	Identifier	ctx		4016	0					
+ANR	4100	Argument	JBIG2_SEVERITY_WARNING		4016	1					
+ANR	4101	Identifier	JBIG2_SEVERITY_WARNING		4016	0					
+ANR	4102	Argument	segment -> number		4016	2					
+ANR	4103	PtrMemberAccess	segment -> number		4016	0					
+ANR	4104	Identifier	segment		4016	0					
+ANR	4105	Identifier	number		4016	1					
+ANR	4106	Argument	"""unhandled option HENABLESKIP"""		4016	3					
+ANR	4107	PrimaryExpression	"""unhandled option HENABLESKIP"""		4016	0					
+ANR	4108	ExpressionStatement	"HPATS = jbig2_decode_ht_region_get_hpats ( ctx , segment )"	15:1:610:669	4016	11	True				
+ANR	4109	AssignmentExpression	"HPATS = jbig2_decode_ht_region_get_hpats ( ctx , segment )"		4016	0		=			
+ANR	4110	Identifier	HPATS		4016	0					
+ANR	4111	CallExpression	"jbig2_decode_ht_region_get_hpats ( ctx , segment )"		4016	1					
+ANR	4112	Callee	jbig2_decode_ht_region_get_hpats		4016	0					
+ANR	4113	Identifier	jbig2_decode_ht_region_get_hpats		4016	0					
+ANR	4114	ArgumentList	ctx		4016	1					
+ANR	4115	Argument	ctx		4016	0					
+ANR	4116	Identifier	ctx		4016	0					
+ANR	4117	Argument	segment		4016	1					
+ANR	4118	Identifier	segment		4016	0					
+ANR	4119	IfStatement	if ( ! HPATS )		4016	12					
+ANR	4120	Condition	! HPATS	16:6:677:683	4016	0	True				
+ANR	4121	UnaryOperationExpression	! HPATS		4016	0					
+ANR	4122	UnaryOperator	!		4016	0					
+ANR	4123	Identifier	HPATS		4016	1					
+ANR	4124	CompoundStatement		16:16:485:485	4016	1					
+ANR	4125	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""no pattern dictionary found, skipping halftone image"" )"	17:1:690:812	4016	0	True				
+ANR	4126	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""no pattern dictionary found, skipping halftone image"" )"		4016	0					
+ANR	4127	Callee	jbig2_error		4016	0					
+ANR	4128	Identifier	jbig2_error		4016	0					
+ANR	4129	ArgumentList	ctx		4016	1					
+ANR	4130	Argument	ctx		4016	0					
+ANR	4131	Identifier	ctx		4016	0					
+ANR	4132	Argument	JBIG2_SEVERITY_WARNING		4016	1					
+ANR	4133	Identifier	JBIG2_SEVERITY_WARNING		4016	0					
+ANR	4134	Argument	segment -> number		4016	2					
+ANR	4135	PtrMemberAccess	segment -> number		4016	0					
+ANR	4136	Identifier	segment		4016	0					
+ANR	4137	Identifier	number		4016	1					
+ANR	4138	Argument	"""no pattern dictionary found, skipping halftone image"""		4016	3					
+ANR	4139	PrimaryExpression	"""no pattern dictionary found, skipping halftone image"""		4016	0					
+ANR	4140	ReturnStatement	return - 1 ;	18:1:815:826	4016	1	True				
+ANR	4141	UnaryOperationExpression	- 1		4016	0					
+ANR	4142	UnaryOperator	-		4016	0					
+ANR	4143	PrimaryExpression	1		4016	1					
+ANR	4144	ExpressionStatement	HNUMPATS = HPATS -> n_patterns	20:1:832:863	4016	13	True				
+ANR	4145	AssignmentExpression	HNUMPATS = HPATS -> n_patterns		4016	0		=			
+ANR	4146	Identifier	HNUMPATS		4016	0					
+ANR	4147	PtrMemberAccess	HPATS -> n_patterns		4016	1					
+ANR	4148	Identifier	HPATS		4016	0					
+ANR	4149	Identifier	n_patterns		4016	1					
+ANR	4150	ExpressionStatement	HBPP = 0	21:1:866:875	4016	14	True				
+ANR	4151	AssignmentExpression	HBPP = 0		4016	0		=			
+ANR	4152	Identifier	HBPP		4016	0					
+ANR	4153	PrimaryExpression	0		4016	1					
+ANR	4154	WhileStatement	while ( HNUMPATS > ( 1 << ++ HBPP ) )		4016	15					
+ANR	4155	Condition	HNUMPATS > ( 1 << ++ HBPP )	22:9:886:912	4016	0	True				
+ANR	4156	RelationalExpression	HNUMPATS > ( 1 << ++ HBPP )		4016	0		>			
+ANR	4157	Identifier	HNUMPATS		4016	0					
+ANR	4158	ShiftExpression	1 << ++ HBPP		4016	1		<<			
+ANR	4159	PrimaryExpression	1		4016	0					
+ANR	4160	UnaryExpression	++ HBPP		4016	1					
+ANR	4161	IncDec	++		4016	0					
+ANR	4162	Identifier	HBPP		4016	1					
+ANR	4163	ExpressionStatement		22:39:916:916	4016	1	True				
+ANR	4164	ExpressionStatement	"GI = jbig2_decode_gray_scale_image ( ctx , segment , data , size , params -> HMMR , params -> HGW , params -> HGH , HBPP , params -> HENABLESKIP , HSKIP , params -> HTEMPLATE , GB_stats )"	23:1:919:1107	4016	16	True				
+ANR	4165	AssignmentExpression	"GI = jbig2_decode_gray_scale_image ( ctx , segment , data , size , params -> HMMR , params -> HGW , params -> HGH , HBPP , params -> HENABLESKIP , HSKIP , params -> HTEMPLATE , GB_stats )"		4016	0		=			
+ANR	4166	Identifier	GI		4016	0					
+ANR	4167	CallExpression	"jbig2_decode_gray_scale_image ( ctx , segment , data , size , params -> HMMR , params -> HGW , params -> HGH , HBPP , params -> HENABLESKIP , HSKIP , params -> HTEMPLATE , GB_stats )"		4016	1					
+ANR	4168	Callee	jbig2_decode_gray_scale_image		4016	0					
+ANR	4169	Identifier	jbig2_decode_gray_scale_image		4016	0					
+ANR	4170	ArgumentList	ctx		4016	1					
+ANR	4171	Argument	ctx		4016	0					
+ANR	4172	Identifier	ctx		4016	0					
+ANR	4173	Argument	segment		4016	1					
+ANR	4174	Identifier	segment		4016	0					
+ANR	4175	Argument	data		4016	2					
+ANR	4176	Identifier	data		4016	0					
+ANR	4177	Argument	size		4016	3					
+ANR	4178	Identifier	size		4016	0					
+ANR	4179	Argument	params -> HMMR		4016	4					
+ANR	4180	PtrMemberAccess	params -> HMMR		4016	0					
+ANR	4181	Identifier	params		4016	0					
+ANR	4182	Identifier	HMMR		4016	1					
+ANR	4183	Argument	params -> HGW		4016	5					
+ANR	4184	PtrMemberAccess	params -> HGW		4016	0					
+ANR	4185	Identifier	params		4016	0					
+ANR	4186	Identifier	HGW		4016	1					
+ANR	4187	Argument	params -> HGH		4016	6					
+ANR	4188	PtrMemberAccess	params -> HGH		4016	0					
+ANR	4189	Identifier	params		4016	0					
+ANR	4190	Identifier	HGH		4016	1					
+ANR	4191	Argument	HBPP		4016	7					
+ANR	4192	Identifier	HBPP		4016	0					
+ANR	4193	Argument	params -> HENABLESKIP		4016	8					
+ANR	4194	PtrMemberAccess	params -> HENABLESKIP		4016	0					
+ANR	4195	Identifier	params		4016	0					
+ANR	4196	Identifier	HENABLESKIP		4016	1					
+ANR	4197	Argument	HSKIP		4016	9					
+ANR	4198	Identifier	HSKIP		4016	0					
+ANR	4199	Argument	params -> HTEMPLATE		4016	10					
+ANR	4200	PtrMemberAccess	params -> HTEMPLATE		4016	0					
+ANR	4201	Identifier	params		4016	0					
+ANR	4202	Identifier	HTEMPLATE		4016	1					
+ANR	4203	Argument	GB_stats		4016	11					
+ANR	4204	Identifier	GB_stats		4016	0					
+ANR	4205	IfStatement	if ( ! GI )		4016	17					
+ANR	4206	Condition	! GI	24:6:1115:1118	4016	0	True				
+ANR	4207	UnaryOperationExpression	! GI		4016	0					
+ANR	4208	UnaryOperator	!		4016	0					
+ANR	4209	Identifier	GI		4016	1					
+ANR	4210	CompoundStatement		24:13:920:920	4016	1					
+ANR	4211	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unable to acquire gray-scale image, skipping halftone image"" )"	25:1:1125:1254	4016	0	True				
+ANR	4212	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unable to acquire gray-scale image, skipping halftone image"" )"		4016	0					
+ANR	4213	Callee	jbig2_error		4016	0					
+ANR	4214	Identifier	jbig2_error		4016	0					
+ANR	4215	ArgumentList	ctx		4016	1					
+ANR	4216	Argument	ctx		4016	0					
+ANR	4217	Identifier	ctx		4016	0					
+ANR	4218	Argument	JBIG2_SEVERITY_WARNING		4016	1					
+ANR	4219	Identifier	JBIG2_SEVERITY_WARNING		4016	0					
+ANR	4220	Argument	segment -> number		4016	2					
+ANR	4221	PtrMemberAccess	segment -> number		4016	0					
+ANR	4222	Identifier	segment		4016	0					
+ANR	4223	Identifier	number		4016	1					
+ANR	4224	Argument	"""unable to acquire gray-scale image, skipping halftone image"""		4016	3					
+ANR	4225	PrimaryExpression	"""unable to acquire gray-scale image, skipping halftone image"""		4016	0					
+ANR	4226	ReturnStatement	return - 1 ;	26:1:1257:1268	4016	1	True				
+ANR	4227	UnaryOperationExpression	- 1		4016	0					
+ANR	4228	UnaryOperator	-		4016	0					
+ANR	4229	PrimaryExpression	1		4016	1					
+ANR	4230	ForStatement	for ( mg = 0 ; mg < params -> HGH ; ++ mg )		4016	18					
+ANR	4231	ForInit	mg = 0 ;	28:7:1280:1287	4016	0	True				
+ANR	4232	AssignmentExpression	mg = 0		4016	0		=			
+ANR	4233	Identifier	mg		4016	0					
+ANR	4234	PrimaryExpression	0		4016	1					
+ANR	4235	Condition	mg < params -> HGH	29:1:1290:1307	4016	1	True				
+ANR	4236	RelationalExpression	mg < params -> HGH		4016	0		<			
+ANR	4237	Identifier	mg		4016	0					
+ANR	4238	PtrMemberAccess	params -> HGH		4016	1					
+ANR	4239	Identifier	params		4016	0					
+ANR	4240	Identifier	HGH		4016	1					
+ANR	4241	UnaryExpression	++ mg	30:1:1312:1316	4016	2	True				
+ANR	4242	IncDec	++		4016	0					
+ANR	4243	Identifier	mg		4016	1					
+ANR	4244	CompoundStatement		30:9:1118:1118	4016	3					
+ANR	4245	ForStatement	for ( ng = 0 ; ng < params -> HGW ; ++ ng )		4016	0					
+ANR	4246	ForInit	ng = 0 ;	31:7:1329:1336	4016	0	True				
+ANR	4247	AssignmentExpression	ng = 0		4016	0		=			
+ANR	4248	Identifier	ng		4016	0					
+ANR	4249	PrimaryExpression	0		4016	1					
+ANR	4250	Condition	ng < params -> HGW	32:1:1339:1356	4016	1	True				
+ANR	4251	RelationalExpression	ng < params -> HGW		4016	0		<			
+ANR	4252	Identifier	ng		4016	0					
+ANR	4253	PtrMemberAccess	params -> HGW		4016	1					
+ANR	4254	Identifier	params		4016	0					
+ANR	4255	Identifier	HGW		4016	1					
+ANR	4256	UnaryExpression	++ ng	33:1:1361:1365	4016	2	True				
+ANR	4257	IncDec	++		4016	0					
+ANR	4258	Identifier	ng		4016	1					
+ANR	4259	CompoundStatement		33:9:1167:1167	4016	3					
+ANR	4260	ExpressionStatement	x = ( params -> HGX + mg * params -> HRY + ng * params -> HRX ) >> 8	34:1:1372:1441	4016	0	True				
+ANR	4261	AssignmentExpression	x = ( params -> HGX + mg * params -> HRY + ng * params -> HRX ) >> 8		4016	0		=			
+ANR	4262	Identifier	x		4016	0					
+ANR	4263	ShiftExpression	( params -> HGX + mg * params -> HRY + ng * params -> HRX ) >> 8		4016	1		>>			
+ANR	4264	AdditiveExpression	params -> HGX + mg * params -> HRY + ng * params -> HRX		4016	0		+			
+ANR	4265	PtrMemberAccess	params -> HGX		4016	0					
+ANR	4266	Identifier	params		4016	0					
+ANR	4267	Identifier	HGX		4016	1					
+ANR	4268	AdditiveExpression	mg * params -> HRY + ng * params -> HRX		4016	1		+			
+ANR	4269	MultiplicativeExpression	mg * params -> HRY		4016	0		*			
+ANR	4270	Identifier	mg		4016	0					
+ANR	4271	PtrMemberAccess	params -> HRY		4016	1					
+ANR	4272	Identifier	params		4016	0					
+ANR	4273	Identifier	HRY		4016	1					
+ANR	4274	MultiplicativeExpression	ng * params -> HRX		4016	1		*			
+ANR	4275	Identifier	ng		4016	0					
+ANR	4276	PtrMemberAccess	params -> HRX		4016	1					
+ANR	4277	Identifier	params		4016	0					
+ANR	4278	Identifier	HRX		4016	1					
+ANR	4279	PrimaryExpression	8		4016	1					
+ANR	4280	ExpressionStatement	y = ( params -> HGY + mg * params -> HRX - ng * params -> HRY ) >> 8	35:1:1444:1513	4016	1	True				
+ANR	4281	AssignmentExpression	y = ( params -> HGY + mg * params -> HRX - ng * params -> HRY ) >> 8		4016	0		=			
+ANR	4282	Identifier	y		4016	0					
+ANR	4283	ShiftExpression	( params -> HGY + mg * params -> HRX - ng * params -> HRY ) >> 8		4016	1		>>			
+ANR	4284	AdditiveExpression	params -> HGY + mg * params -> HRX - ng * params -> HRY		4016	0		+			
+ANR	4285	PtrMemberAccess	params -> HGY		4016	0					
+ANR	4286	Identifier	params		4016	0					
+ANR	4287	Identifier	HGY		4016	1					
+ANR	4288	AdditiveExpression	mg * params -> HRX - ng * params -> HRY		4016	1		-			
+ANR	4289	MultiplicativeExpression	mg * params -> HRX		4016	0		*			
+ANR	4290	Identifier	mg		4016	0					
+ANR	4291	PtrMemberAccess	params -> HRX		4016	1					
+ANR	4292	Identifier	params		4016	0					
+ANR	4293	Identifier	HRX		4016	1					
+ANR	4294	MultiplicativeExpression	ng * params -> HRY		4016	1		*			
+ANR	4295	Identifier	ng		4016	0					
+ANR	4296	PtrMemberAccess	params -> HRY		4016	1					
+ANR	4297	Identifier	params		4016	0					
+ANR	4298	Identifier	HRY		4016	1					
+ANR	4299	PrimaryExpression	8		4016	1					
+ANR	4300	ExpressionStatement	gray_val = GI [ ng ] [ mg ]	36:1:1516:1544	4016	2	True				
+ANR	4301	AssignmentExpression	gray_val = GI [ ng ] [ mg ]		4016	0		=			
+ANR	4302	Identifier	gray_val		4016	0					
+ANR	4303	ArrayIndexing	GI [ ng ] [ mg ]		4016	1					
+ANR	4304	ArrayIndexing	GI [ ng ]		4016	0					
+ANR	4305	Identifier	GI		4016	0					
+ANR	4306	Identifier	ng		4016	1					
+ANR	4307	Identifier	mg		4016	1					
+ANR	4308	IfStatement	if ( gray_val >= HNUMPATS )		4016	3					
+ANR	4309	Condition	gray_val >= HNUMPATS	37:6:1552:1571	4016	0	True				
+ANR	4310	RelationalExpression	gray_val >= HNUMPATS		4016	0		>=			
+ANR	4311	Identifier	gray_val		4016	0					
+ANR	4312	Identifier	HNUMPATS		4016	1					
+ANR	4313	CompoundStatement		37:29:1373:1373	4016	1					
+ANR	4314	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""gray-scale image uses value %d which larger than pattern dictionary"" , gray_val )"	38:1:1578:1726	4016	0	True				
+ANR	4315	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""gray-scale image uses value %d which larger than pattern dictionary"" , gray_val )"		4016	0					
+ANR	4316	Callee	jbig2_error		4016	0					
+ANR	4317	Identifier	jbig2_error		4016	0					
+ANR	4318	ArgumentList	ctx		4016	1					
+ANR	4319	Argument	ctx		4016	0					
+ANR	4320	Identifier	ctx		4016	0					
+ANR	4321	Argument	JBIG2_SEVERITY_WARNING		4016	1					
+ANR	4322	Identifier	JBIG2_SEVERITY_WARNING		4016	0					
+ANR	4323	Argument	segment -> number		4016	2					
+ANR	4324	PtrMemberAccess	segment -> number		4016	0					
+ANR	4325	Identifier	segment		4016	0					
+ANR	4326	Identifier	number		4016	1					
+ANR	4327	Argument	"""gray-scale image uses value %d which larger than pattern dictionary"""		4016	3					
+ANR	4328	PrimaryExpression	"""gray-scale image uses value %d which larger than pattern dictionary"""		4016	0					
+ANR	4329	Argument	gray_val		4016	4					
+ANR	4330	Identifier	gray_val		4016	0					
+ANR	4331	ExpressionStatement	gray_val = HNUMPATS - 1	39:1:1729:1753	4016	1	True				
+ANR	4332	AssignmentExpression	gray_val = HNUMPATS - 1		4016	0		=			
+ANR	4333	Identifier	gray_val		4016	0					
+ANR	4334	AdditiveExpression	HNUMPATS - 1		4016	1		-			
+ANR	4335	Identifier	HNUMPATS		4016	0					
+ANR	4336	PrimaryExpression	1		4016	1					
+ANR	4337	ExpressionStatement	"jbig2_image_compose ( ctx , image , HPATS -> patterns [ gray_val ] , x , y , params -> op )"	41:1:1759:1851	4016	4	True				
+ANR	4338	CallExpression	"jbig2_image_compose ( ctx , image , HPATS -> patterns [ gray_val ] , x , y , params -> op )"		4016	0					
+ANR	4339	Callee	jbig2_image_compose		4016	0					
+ANR	4340	Identifier	jbig2_image_compose		4016	0					
+ANR	4341	ArgumentList	ctx		4016	1					
+ANR	4342	Argument	ctx		4016	0					
+ANR	4343	Identifier	ctx		4016	0					
+ANR	4344	Argument	image		4016	1					
+ANR	4345	Identifier	image		4016	0					
+ANR	4346	Argument	HPATS -> patterns [ gray_val ]		4016	2					
+ANR	4347	ArrayIndexing	HPATS -> patterns [ gray_val ]		4016	0					
+ANR	4348	PtrMemberAccess	HPATS -> patterns		4016	0					
+ANR	4349	Identifier	HPATS		4016	0					
+ANR	4350	Identifier	patterns		4016	1					
+ANR	4351	Identifier	gray_val		4016	1					
+ANR	4352	Argument	x		4016	3					
+ANR	4353	Identifier	x		4016	0					
+ANR	4354	Argument	y		4016	4					
+ANR	4355	Identifier	y		4016	0					
+ANR	4356	Argument	params -> op		4016	5					
+ANR	4357	PtrMemberAccess	params -> op		4016	0					
+ANR	4358	Identifier	params		4016	0					
+ANR	4359	Identifier	op		4016	1					
+ANR	4360	ForStatement	for ( i = 0 ; i < params -> HGW ; ++ i )		4016	19					
+ANR	4361	ForInit	i = 0 ;	44:7:1866:1872	4016	0	True				
+ANR	4362	AssignmentExpression	i = 0		4016	0		=			
+ANR	4363	Identifier	i		4016	0					
+ANR	4364	PrimaryExpression	0		4016	1					
+ANR	4365	Condition	i < params -> HGW	45:1:1875:1891	4016	1	True				
+ANR	4366	RelationalExpression	i < params -> HGW		4016	0		<			
+ANR	4367	Identifier	i		4016	0					
+ANR	4368	PtrMemberAccess	params -> HGW		4016	1					
+ANR	4369	Identifier	params		4016	0					
+ANR	4370	Identifier	HGW		4016	1					
+ANR	4371	UnaryExpression	++ i	46:1:1896:1899	4016	2	True				
+ANR	4372	IncDec	++		4016	0					
+ANR	4373	Identifier	i		4016	1					
+ANR	4374	CompoundStatement		46:8:1701:1701	4016	3					
+ANR	4375	ExpressionStatement	"jbig2_free ( ctx -> allocator , GI [ i ] )"	47:1:1906:1949	4016	0	True				
+ANR	4376	CallExpression	"jbig2_free ( ctx -> allocator , GI [ i ] )"		4016	0					
+ANR	4377	Callee	jbig2_free		4016	0					
+ANR	4378	Identifier	jbig2_free		4016	0					
+ANR	4379	ArgumentList	ctx -> allocator		4016	1					
+ANR	4380	Argument	ctx -> allocator		4016	0					
+ANR	4381	PtrMemberAccess	ctx -> allocator		4016	0					
+ANR	4382	Identifier	ctx		4016	0					
+ANR	4383	Identifier	allocator		4016	1					
+ANR	4384	Argument	GI [ i ]		4016	1					
+ANR	4385	ArrayIndexing	GI [ i ]		4016	0					
+ANR	4386	Identifier	GI		4016	0					
+ANR	4387	Identifier	i		4016	1					
+ANR	4388	ExpressionStatement	"jbig2_free ( ctx -> allocator , GI )"	49:1:1955:1992	4016	20	True				
+ANR	4389	CallExpression	"jbig2_free ( ctx -> allocator , GI )"		4016	0					
+ANR	4390	Callee	jbig2_free		4016	0					
+ANR	4391	Identifier	jbig2_free		4016	0					
+ANR	4392	ArgumentList	ctx -> allocator		4016	1					
+ANR	4393	Argument	ctx -> allocator		4016	0					
+ANR	4394	PtrMemberAccess	ctx -> allocator		4016	0					
+ANR	4395	Identifier	ctx		4016	0					
+ANR	4396	Identifier	allocator		4016	1					
+ANR	4397	Argument	GI		4016	1					
+ANR	4398	Identifier	GI		4016	0					
+ANR	4399	ReturnStatement	return 0 ;	50:1:1995:2004	4016	21	True				
+ANR	4400	PrimaryExpression	0		4016	0					
+ANR	4401	ReturnType	int		4016	1					
+ANR	4402	Identifier	jbig2_decode_halftone_region		4016	2					
+ANR	4403	ParameterList	"Jbig2Ctx * ctx , Jbig2Segment * segment , Jbig2HalftoneRegionParams * params , const byte * data , const size_t size , Jbig2Image * image , Jbig2ArithCx * GB_stats"		4016	3					
+ANR	4404	Parameter	Jbig2Ctx * ctx	1:35:35:48	4016	0	True				
+ANR	4405	ParameterType	Jbig2Ctx *		4016	0					
+ANR	4406	Identifier	ctx		4016	1					
+ANR	4407	Parameter	Jbig2Segment * segment	1:52:52:73	4016	1	True				
+ANR	4408	ParameterType	Jbig2Segment *		4016	0					
+ANR	4409	Identifier	segment		4016	1					
+ANR	4410	Parameter	Jbig2HalftoneRegionParams * params	1:77:77:110	4016	2	True				
+ANR	4411	ParameterType	Jbig2HalftoneRegionParams *		4016	0					
+ANR	4412	Identifier	params		4016	1					
+ANR	4413	Parameter	const byte * data	1:114:114:130	4016	3	True				
+ANR	4414	ParameterType	const byte *		4016	0					
+ANR	4415	Identifier	data		4016	1					
+ANR	4416	Parameter	const size_t size	1:134:134:150	4016	4	True				
+ANR	4417	ParameterType	const size_t		4016	0					
+ANR	4418	Identifier	size		4016	1					
+ANR	4419	Parameter	Jbig2Image * image	1:154:154:171	4016	5	True				
+ANR	4420	ParameterType	Jbig2Image *		4016	0					
+ANR	4421	Identifier	image		4016	1					
+ANR	4422	Parameter	Jbig2ArithCx * GB_stats	1:175:175:197	4016	6	True				
+ANR	4423	ParameterType	Jbig2ArithCx *		4016	0					
+ANR	4424	Identifier	GB_stats		4016	1					
+ANR	4425	CFGEntryNode	ENTRY		4016		True				
+ANR	4426	CFGExitNode	EXIT		4016		True				
+ANR	4427	Symbol	params -> HGW		4016						
+ANR	4428	Symbol	image -> stride		4016						
+ANR	4429	Symbol	HPATS -> n_patterns		4016						
+ANR	4430	Symbol	data		4016						
+ANR	4431	Symbol	image -> data		4016						
+ANR	4432	Symbol	params -> HGY		4016						
+ANR	4433	Symbol	params -> HGX		4016						
+ANR	4434	Symbol	* GI		4016						
+ANR	4435	Symbol	params -> HENABLESKIP		4016						
+ANR	4436	Symbol	segment		4016						
+ANR	4437	Symbol	params -> op		4016						
+ANR	4438	Symbol	mg		4016						
+ANR	4439	Symbol	params -> HDEFPIXEL		4016						
+ANR	4440	Symbol	params -> HMMR		4016						
+ANR	4441	Symbol	HPATS -> patterns		4016						
+ANR	4442	Symbol	image		4016						
+ANR	4443	Symbol	NULL		4016						
+ANR	4444	Symbol	ctx -> allocator		4016						
+ANR	4445	Symbol	ctx		4016						
+ANR	4446	Symbol	HNUMPATS		4016						
+ANR	4447	Symbol	jbig2_decode_ht_region_get_hpats		4016						
+ANR	4448	Symbol	* * ng		4016						
+ANR	4449	Symbol	params		4016						
+ANR	4450	Symbol	size		4016						
+ANR	4451	Symbol	params -> HGH		4016						
+ANR	4452	Symbol	ng		4016						
+ANR	4453	Symbol	* segment		4016						
+ANR	4454	Symbol	gray_val		4016						
+ANR	4455	Symbol	* image		4016						
+ANR	4456	Symbol	* mg		4016						
+ANR	4457	Symbol	* * GI		4016						
+ANR	4458	Symbol	GB_stats		4016						
+ANR	4459	Symbol	* * HPATS		4016						
+ANR	4460	Symbol	* HPATS -> patterns		4016						
+ANR	4461	Symbol	JBIG2_SEVERITY_WARNING		4016						
+ANR	4462	Symbol	params -> HRY		4016						
+ANR	4463	Symbol	HSKIP		4016						
+ANR	4464	Symbol	params -> HRX		4016						
+ANR	4465	Symbol	HBPP		4016						
+ANR	4466	Symbol	* params		4016						
+ANR	4467	Symbol	GI		4016						
+ANR	4468	Symbol	HPATS		4016						
+ANR	4469	Symbol	i		4016						
+ANR	4470	Symbol	* gray_val		4016						
+ANR	4471	Symbol	* ctx		4016						
+ANR	4472	Symbol	segment -> number		4016						
+ANR	4473	Symbol	* i		4016						
+ANR	4474	Symbol	image -> height		4016						
+ANR	4475	Symbol	jbig2_decode_gray_scale_image		4016						
+ANR	4476	Symbol	x		4016						
+ANR	4477	Symbol	params -> HTEMPLATE		4016						
+ANR	4478	Symbol	y		4016						
+ANR	4479	Symbol	* ng		4016						
+ANR	4480	Symbol	* HPATS		4016						

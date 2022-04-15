@@ -1,0 +1,6 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4665	File	tmp/17_1.c								
+ANR	4666	DeclStmt									
+ANR	4667	Decl							char	char *	OPENSSL_STRING
+ANR	4668	DeclStmt									
+ANR	4669	Decl							const char	const char *	OPENSSL_CSTRING

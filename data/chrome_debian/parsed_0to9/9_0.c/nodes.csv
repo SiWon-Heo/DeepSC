@@ -1,0 +1,1330 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	5911	File	tmp/9_0.c								
+ANR	5912	Function	dprintf_Pass1	1:0:0:6077							
+ANR	5913	FunctionDef	"dprintf_Pass1 (const char * format , va_stack_t * vto , char * * endpos , va_list arglist)"		5912	0					
+ANR	5914	CompoundStatement		1:104:104:6077	5912	0					
+ANR	5915	IdentifierDeclStatement	char * fmt = ( char * ) format ;	2:1:107:138	5912	0	True				
+ANR	5916	IdentifierDecl	* fmt = ( char * ) format		5912	0					
+ANR	5917	IdentifierDeclType	char *		5912	0					
+ANR	5918	Identifier	fmt		5912	1					
+ANR	5919	AssignmentExpression	* fmt = ( char * ) format		5912	2		=			
+ANR	5920	Identifier	fmt		5912	0					
+ANR	5921	CastExpression	( char * ) format		5912	1					
+ANR	5922	CastTarget	char *		5912	0					
+ANR	5923	Identifier	format		5912	1					
+ANR	5924	IdentifierDeclStatement	int param_num = 0 ;	3:1:141:159	5912	1	True				
+ANR	5925	IdentifierDecl	param_num = 0		5912	0					
+ANR	5926	IdentifierDeclType	int		5912	0					
+ANR	5927	Identifier	param_num		5912	1					
+ANR	5928	AssignmentExpression	param_num = 0		5912	2		=			
+ANR	5929	Identifier	param_num		5912	0					
+ANR	5930	PrimaryExpression	0		5912	1					
+ANR	5931	IdentifierDeclStatement	long this_param ;	4:1:162:178	5912	2	True				
+ANR	5932	IdentifierDecl	this_param		5912	0					
+ANR	5933	IdentifierDeclType	long		5912	0					
+ANR	5934	Identifier	this_param		5912	1					
+ANR	5935	IdentifierDeclStatement	long width ;	5:1:181:192	5912	3	True				
+ANR	5936	IdentifierDecl	width		5912	0					
+ANR	5937	IdentifierDeclType	long		5912	0					
+ANR	5938	Identifier	width		5912	1					
+ANR	5939	IdentifierDeclStatement	long precision ;	6:1:195:210	5912	4	True				
+ANR	5940	IdentifierDecl	precision		5912	0					
+ANR	5941	IdentifierDeclType	long		5912	0					
+ANR	5942	Identifier	precision		5912	1					
+ANR	5943	IdentifierDeclStatement	int flags ;	7:1:213:223	5912	5	True				
+ANR	5944	IdentifierDecl	flags		5912	0					
+ANR	5945	IdentifierDeclType	int		5912	0					
+ANR	5946	Identifier	flags		5912	1					
+ANR	5947	IdentifierDeclStatement	long max_param = 0 ;	8:1:226:245	5912	6	True				
+ANR	5948	IdentifierDecl	max_param = 0		5912	0					
+ANR	5949	IdentifierDeclType	long		5912	0					
+ANR	5950	Identifier	max_param		5912	1					
+ANR	5951	AssignmentExpression	max_param = 0		5912	2		=			
+ANR	5952	Identifier	max_param		5912	0					
+ANR	5953	PrimaryExpression	0		5912	1					
+ANR	5954	IdentifierDeclStatement	long i ;	9:1:248:255	5912	7	True				
+ANR	5955	IdentifierDecl	i		5912	0					
+ANR	5956	IdentifierDeclType	long		5912	0					
+ANR	5957	Identifier	i		5912	1					
+ANR	5958	WhileStatement	while ( * fmt )		5912	8					
+ANR	5959	Condition	* fmt	10:9:266:270	5912	0	True				
+ANR	5960	UnaryOperationExpression	* fmt		5912	0					
+ANR	5961	UnaryOperator	*		5912	0					
+ANR	5962	Identifier	fmt		5912	1					
+ANR	5963	CompoundStatement		10:17:169:169	5912	1					
+ANR	5964	IfStatement	if ( * fmt ++ == '%' )		5912	0					
+ANR	5965	Condition	* fmt ++ == '%'	11:6:282:296	5912	0	True				
+ANR	5966	EqualityExpression	* fmt ++ == '%'		5912	0		==			
+ANR	5967	UnaryOperationExpression	* fmt ++		5912	0					
+ANR	5968	UnaryOperator	*		5912	0					
+ANR	5969	PostIncDecOperationExpression	fmt ++		5912	1					
+ANR	5970	Identifier	fmt		5912	0					
+ANR	5971	IncDec	++		5912	1					
+ANR	5972	PrimaryExpression	'%'		5912	1					
+ANR	5973	CompoundStatement		11:24:195:195	5912	1					
+ANR	5974	IfStatement	if ( * fmt == '%' )		5912	0					
+ANR	5975	Condition	* fmt == '%'	12:6:308:319	5912	0	True				
+ANR	5976	EqualityExpression	* fmt == '%'		5912	0		==			
+ANR	5977	UnaryOperationExpression	* fmt		5912	0					
+ANR	5978	UnaryOperator	*		5912	0					
+ANR	5979	Identifier	fmt		5912	1					
+ANR	5980	PrimaryExpression	'%'		5912	1					
+ANR	5981	CompoundStatement		12:21:218:218	5912	1					
+ANR	5982	ExpressionStatement	fmt ++	13:1:326:333	5912	0	True				
+ANR	5983	PostIncDecOperationExpression	fmt ++		5912	0					
+ANR	5984	Identifier	fmt		5912	0					
+ANR	5985	IncDec	++		5912	1					
+ANR	5986	ContinueStatement	continue ;	14:1:336:345	5912	1	True				
+ANR	5987	ExpressionStatement	flags = FLAGS_NEW	16:1:351:369	5912	1	True				
+ANR	5988	AssignmentExpression	flags = FLAGS_NEW		5912	0		=			
+ANR	5989	Identifier	flags		5912	0					
+ANR	5990	Identifier	FLAGS_NEW		5912	1					
+ANR	5991	ExpressionStatement	param_num ++	17:1:372:385	5912	2	True				
+ANR	5992	PostIncDecOperationExpression	param_num ++		5912	0					
+ANR	5993	Identifier	param_num		5912	0					
+ANR	5994	IncDec	++		5912	1					
+ANR	5995	ExpressionStatement	"this_param = dprintf_DollarString ( fmt , & fmt )"	18:1:388:438	5912	3	True				
+ANR	5996	AssignmentExpression	"this_param = dprintf_DollarString ( fmt , & fmt )"		5912	0		=			
+ANR	5997	Identifier	this_param		5912	0					
+ANR	5998	CallExpression	"dprintf_DollarString ( fmt , & fmt )"		5912	1					
+ANR	5999	Callee	dprintf_DollarString		5912	0					
+ANR	6000	Identifier	dprintf_DollarString		5912	0					
+ANR	6001	ArgumentList	fmt		5912	1					
+ANR	6002	Argument	fmt		5912	0					
+ANR	6003	Identifier	fmt		5912	0					
+ANR	6004	Argument	& fmt		5912	1					
+ANR	6005	UnaryOperationExpression	& fmt		5912	0					
+ANR	6006	UnaryOperator	&		5912	0					
+ANR	6007	Identifier	fmt		5912	1					
+ANR	6008	IfStatement	if ( 0 == this_param )		5912	4					
+ANR	6009	Condition	0 == this_param	19:6:446:460	5912	0	True				
+ANR	6010	EqualityExpression	0 == this_param		5912	0		==			
+ANR	6011	PrimaryExpression	0		5912	0					
+ANR	6012	Identifier	this_param		5912	1					
+ANR	6013	ExpressionStatement	this_param = param_num	19:24:464:487	5912	1	True				
+ANR	6014	AssignmentExpression	this_param = param_num		5912	0		=			
+ANR	6015	Identifier	this_param		5912	0					
+ANR	6016	Identifier	param_num		5912	1					
+ANR	6017	IfStatement	if ( this_param > max_param )		5912	5					
+ANR	6018	Condition	this_param > max_param	20:6:495:516	5912	0	True				
+ANR	6019	RelationalExpression	this_param > max_param		5912	0		>			
+ANR	6020	Identifier	this_param		5912	0					
+ANR	6021	Identifier	max_param		5912	1					
+ANR	6022	ExpressionStatement	max_param = this_param	20:31:520:543	5912	1	True				
+ANR	6023	AssignmentExpression	max_param = this_param		5912	0		=			
+ANR	6024	Identifier	max_param		5912	0					
+ANR	6025	Identifier	this_param		5912	1					
+ANR	6026	ExpressionStatement	width = 0	21:1:546:556	5912	6	True				
+ANR	6027	AssignmentExpression	width = 0		5912	0		=			
+ANR	6028	Identifier	width		5912	0					
+ANR	6029	PrimaryExpression	0		5912	1					
+ANR	6030	ExpressionStatement	precision = 0	22:1:559:573	5912	7	True				
+ANR	6031	AssignmentExpression	precision = 0		5912	0		=			
+ANR	6032	Identifier	precision		5912	0					
+ANR	6033	PrimaryExpression	0		5912	1					
+ANR	6034	WhileStatement	while ( dprintf_IsQualifierNoDollar ( fmt ) )		5912	8					
+ANR	6035	Condition	dprintf_IsQualifierNoDollar ( fmt )	23:9:584:618	5912	0	True				
+ANR	6036	CallExpression	dprintf_IsQualifierNoDollar ( fmt )		5912	0					
+ANR	6037	Callee	dprintf_IsQualifierNoDollar		5912	0					
+ANR	6038	Identifier	dprintf_IsQualifierNoDollar		5912	0					
+ANR	6039	ArgumentList	fmt		5912	1					
+ANR	6040	Argument	fmt		5912	0					
+ANR	6041	Identifier	fmt		5912	0					
+ANR	6042	CompoundStatement		23:47:517:517	5912	1					
+ANR	6043	Statement	if	24:3:627:628	5912	0	True				
+ANR	6044	Statement	defined	24:6:630:636	5912	1	True				
+ANR	6045	Statement	(	24:14:638:638	5912	2	True				
+ANR	6046	Statement	MP_HAVE_INT_EXTENSIONS	24:16:640:661	5912	3	True				
+ANR	6047	Statement	)	24:39:663:663	5912	4	True				
+ANR	6048	IfStatement	"if ( ! strncmp ( fmt , ""I32"" , 3 ) )"		5912	5					
+ANR	6049	Condition	"! strncmp ( fmt , ""I32"" , 3 )"	24:46:670:698	5912	0	True				
+ANR	6050	UnaryOperationExpression	"! strncmp ( fmt , ""I32"" , 3 )"		5912	0					
+ANR	6051	UnaryOperator	!		5912	0					
+ANR	6052	CallExpression	"strncmp ( fmt , ""I32"" , 3 )"		5912	1					
+ANR	6053	Callee	strncmp		5912	0					
+ANR	6054	Identifier	strncmp		5912	0					
+ANR	6055	ArgumentList	fmt		5912	1					
+ANR	6056	Argument	fmt		5912	0					
+ANR	6057	Identifier	fmt		5912	0					
+ANR	6058	Argument	"""I32"""		5912	1					
+ANR	6059	PrimaryExpression	"""I32"""		5912	0					
+ANR	6060	Argument	3		5912	2					
+ANR	6061	PrimaryExpression	3		5912	0					
+ANR	6062	CompoundStatement		24:78:597:597	5912	1					
+ANR	6063	ExpressionStatement	flags |= FLAGS_LONG	25:1:705:725	5912	0	True				
+ANR	6064	AssignmentExpression	flags |= FLAGS_LONG		5912	0		|=			
+ANR	6065	Identifier	flags		5912	0					
+ANR	6066	Identifier	FLAGS_LONG		5912	1					
+ANR	6067	ExpressionStatement	fmt += 3	26:1:728:737	5912	1	True				
+ANR	6068	AssignmentExpression	fmt += 3		5912	0		+=			
+ANR	6069	Identifier	fmt		5912	0					
+ANR	6070	PrimaryExpression	3		5912	1					
+ANR	6071	ElseStatement	else		5912	0					
+ANR	6072	IfStatement	"if ( ! strncmp ( fmt , ""I64"" , 3 ) )"		5912	0					
+ANR	6073	Condition	"! strncmp ( fmt , ""I64"" , 3 )"	28:11:753:781	5912	0	True				
+ANR	6074	UnaryOperationExpression	"! strncmp ( fmt , ""I64"" , 3 )"		5912	0					
+ANR	6075	UnaryOperator	!		5912	0					
+ANR	6076	CallExpression	"strncmp ( fmt , ""I64"" , 3 )"		5912	1					
+ANR	6077	Callee	strncmp		5912	0					
+ANR	6078	Identifier	strncmp		5912	0					
+ANR	6079	ArgumentList	fmt		5912	1					
+ANR	6080	Argument	fmt		5912	0					
+ANR	6081	Identifier	fmt		5912	0					
+ANR	6082	Argument	"""I64"""		5912	1					
+ANR	6083	PrimaryExpression	"""I64"""		5912	0					
+ANR	6084	Argument	3		5912	2					
+ANR	6085	PrimaryExpression	3		5912	0					
+ANR	6086	CompoundStatement		28:43:680:680	5912	1					
+ANR	6087	ExpressionStatement	flags |= FLAGS_LONGLONG	29:1:788:812	5912	0	True				
+ANR	6088	AssignmentExpression	flags |= FLAGS_LONGLONG		5912	0		|=			
+ANR	6089	Identifier	flags		5912	0					
+ANR	6090	Identifier	FLAGS_LONGLONG		5912	1					
+ANR	6091	ExpressionStatement	fmt += 3	30:1:815:824	5912	1	True				
+ANR	6092	AssignmentExpression	fmt += 3		5912	0		+=			
+ANR	6093	Identifier	fmt		5912	0					
+ANR	6094	PrimaryExpression	3		5912	1					
+ANR	6095	ElseStatement	else		5912	0					
+ANR	6096	Statement	endif	32:8:837:841	5912	0	True				
+ANR	6097	SwitchStatement	switch ( * fmt ++ )		5912	6					
+ANR	6098	Condition	* fmt ++	32:23:852:859	5912	0	True				
+ANR	6099	UnaryOperationExpression	* fmt ++		5912	0					
+ANR	6100	UnaryOperator	*		5912	0					
+ANR	6101	PostIncDecOperationExpression	fmt ++		5912	1					
+ANR	6102	Identifier	fmt		5912	0					
+ANR	6103	IncDec	++		5912	1					
+ANR	6104	CompoundStatement		32:34:758:758	5912	1					
+ANR	6105	Label	case ' ' :	33:1:866:875	5912	0	True				
+ANR	6106	ExpressionStatement	flags |= FLAGS_SPACE	33:12:877:898	5912	1	True				
+ANR	6107	AssignmentExpression	flags |= FLAGS_SPACE		5912	0		|=			
+ANR	6108	Identifier	flags		5912	0					
+ANR	6109	Identifier	FLAGS_SPACE		5912	1					
+ANR	6110	BreakStatement	break ;	34:1:901:907	5912	2	True				
+ANR	6111	Label	case '+' :	35:1:910:919	5912	3	True				
+ANR	6112	ExpressionStatement	flags |= FLAGS_SHOWSIGN	35:12:921:945	5912	4	True				
+ANR	6113	AssignmentExpression	flags |= FLAGS_SHOWSIGN		5912	0		|=			
+ANR	6114	Identifier	flags		5912	0					
+ANR	6115	Identifier	FLAGS_SHOWSIGN		5912	1					
+ANR	6116	BreakStatement	break ;	36:1:948:954	5912	5	True				
+ANR	6117	Label	case '-' :	37:1:957:966	5912	6	True				
+ANR	6118	ExpressionStatement	flags |= FLAGS_LEFT	37:12:968:988	5912	7	True				
+ANR	6119	AssignmentExpression	flags |= FLAGS_LEFT		5912	0		|=			
+ANR	6120	Identifier	flags		5912	0					
+ANR	6121	Identifier	FLAGS_LEFT		5912	1					
+ANR	6122	ExpressionStatement	flags &= ~ FLAGS_PAD_NIL	38:1:991:1016	5912	8	True				
+ANR	6123	AssignmentExpression	flags &= ~ FLAGS_PAD_NIL		5912	0		&=			
+ANR	6124	Identifier	flags		5912	0					
+ANR	6125	UnaryOperationExpression	~ FLAGS_PAD_NIL		5912	1					
+ANR	6126	UnaryOperator	~		5912	0					
+ANR	6127	Identifier	FLAGS_PAD_NIL		5912	1					
+ANR	6128	BreakStatement	break ;	39:1:1019:1025	5912	9	True				
+ANR	6129	Label	case '#' :	40:1:1028:1037	5912	10	True				
+ANR	6130	ExpressionStatement	flags |= FLAGS_ALT	40:12:1039:1058	5912	11	True				
+ANR	6131	AssignmentExpression	flags |= FLAGS_ALT		5912	0		|=			
+ANR	6132	Identifier	flags		5912	0					
+ANR	6133	Identifier	FLAGS_ALT		5912	1					
+ANR	6134	BreakStatement	break ;	41:1:1061:1067	5912	12	True				
+ANR	6135	Label	case '.' :	42:1:1070:1079	5912	13	True				
+ANR	6136	ExpressionStatement	flags |= FLAGS_PREC	42:12:1081:1101	5912	14	True				
+ANR	6137	AssignmentExpression	flags |= FLAGS_PREC		5912	0		|=			
+ANR	6138	Identifier	flags		5912	0					
+ANR	6139	Identifier	FLAGS_PREC		5912	1					
+ANR	6140	IfStatement	if ( '*' == * fmt )		5912	15					
+ANR	6141	Condition	'*' == * fmt	43:6:1109:1120	5912	0	True				
+ANR	6142	EqualityExpression	'*' == * fmt		5912	0		==			
+ANR	6143	PrimaryExpression	'*'		5912	0					
+ANR	6144	UnaryOperationExpression	* fmt		5912	1					
+ANR	6145	UnaryOperator	*		5912	0					
+ANR	6146	Identifier	fmt		5912	1					
+ANR	6147	CompoundStatement		43:21:1019:1019	5912	1					
+ANR	6148	ExpressionStatement	flags |= FLAGS_PRECPARAM	44:1:1127:1152	5912	0	True				
+ANR	6149	AssignmentExpression	flags |= FLAGS_PRECPARAM		5912	0		|=			
+ANR	6150	Identifier	flags		5912	0					
+ANR	6151	Identifier	FLAGS_PRECPARAM		5912	1					
+ANR	6152	ExpressionStatement	fmt ++	45:1:1155:1162	5912	1	True				
+ANR	6153	PostIncDecOperationExpression	fmt ++		5912	0					
+ANR	6154	Identifier	fmt		5912	0					
+ANR	6155	IncDec	++		5912	1					
+ANR	6156	ExpressionStatement	param_num ++	46:1:1165:1178	5912	2	True				
+ANR	6157	PostIncDecOperationExpression	param_num ++		5912	0					
+ANR	6158	Identifier	param_num		5912	0					
+ANR	6159	IncDec	++		5912	1					
+ANR	6160	ExpressionStatement	"i = dprintf_DollarString ( fmt , & fmt )"	47:1:1181:1222	5912	3	True				
+ANR	6161	AssignmentExpression	"i = dprintf_DollarString ( fmt , & fmt )"		5912	0		=			
+ANR	6162	Identifier	i		5912	0					
+ANR	6163	CallExpression	"dprintf_DollarString ( fmt , & fmt )"		5912	1					
+ANR	6164	Callee	dprintf_DollarString		5912	0					
+ANR	6165	Identifier	dprintf_DollarString		5912	0					
+ANR	6166	ArgumentList	fmt		5912	1					
+ANR	6167	Argument	fmt		5912	0					
+ANR	6168	Identifier	fmt		5912	0					
+ANR	6169	Argument	& fmt		5912	1					
+ANR	6170	UnaryOperationExpression	& fmt		5912	0					
+ANR	6171	UnaryOperator	&		5912	0					
+ANR	6172	Identifier	fmt		5912	1					
+ANR	6173	IfStatement	if ( i )		5912	4					
+ANR	6174	Condition	i	48:6:1230:1230	5912	0	True				
+ANR	6175	Identifier	i		5912	0					
+ANR	6176	ExpressionStatement	precision = i	48:10:1234:1248	5912	1	True				
+ANR	6177	AssignmentExpression	precision = i		5912	0		=			
+ANR	6178	Identifier	precision		5912	0					
+ANR	6179	Identifier	i		5912	1					
+ANR	6180	ElseStatement	else		5912	0					
+ANR	6181	ExpressionStatement	precision = param_num	49:6:1256:1278	5912	0	True				
+ANR	6182	AssignmentExpression	precision = param_num		5912	0		=			
+ANR	6183	Identifier	precision		5912	0					
+ANR	6184	Identifier	param_num		5912	1					
+ANR	6185	IfStatement	if ( precision > max_param )		5912	5					
+ANR	6186	Condition	precision > max_param	50:6:1286:1306	5912	0	True				
+ANR	6187	RelationalExpression	precision > max_param		5912	0		>			
+ANR	6188	Identifier	precision		5912	0					
+ANR	6189	Identifier	max_param		5912	1					
+ANR	6190	ExpressionStatement	max_param = precision	50:30:1310:1332	5912	1	True				
+ANR	6191	AssignmentExpression	max_param = precision		5912	0		=			
+ANR	6192	Identifier	max_param		5912	0					
+ANR	6193	Identifier	precision		5912	1					
+ANR	6194	ElseStatement	else		5912	0					
+ANR	6195	CompoundStatement		52:6:1238:1238	5912	0					
+ANR	6196	ExpressionStatement	flags |= FLAGS_PREC	53:1:1346:1366	5912	0	True				
+ANR	6197	AssignmentExpression	flags |= FLAGS_PREC		5912	0		|=			
+ANR	6198	Identifier	flags		5912	0					
+ANR	6199	Identifier	FLAGS_PREC		5912	1					
+ANR	6200	ExpressionStatement	"precision = strtol ( fmt , & fmt , 10 )"	54:1:1369:1409	5912	1	True				
+ANR	6201	AssignmentExpression	"precision = strtol ( fmt , & fmt , 10 )"		5912	0		=			
+ANR	6202	Identifier	precision		5912	0					
+ANR	6203	CallExpression	"strtol ( fmt , & fmt , 10 )"		5912	1					
+ANR	6204	Callee	strtol		5912	0					
+ANR	6205	Identifier	strtol		5912	0					
+ANR	6206	ArgumentList	fmt		5912	1					
+ANR	6207	Argument	fmt		5912	0					
+ANR	6208	Identifier	fmt		5912	0					
+ANR	6209	Argument	& fmt		5912	1					
+ANR	6210	UnaryOperationExpression	& fmt		5912	0					
+ANR	6211	UnaryOperator	&		5912	0					
+ANR	6212	Identifier	fmt		5912	1					
+ANR	6213	Argument	10		5912	2					
+ANR	6214	PrimaryExpression	10		5912	0					
+ANR	6215	BreakStatement	break ;	56:1:1415:1421	5912	16	True				
+ANR	6216	Label	case 'h' :	57:1:1424:1433	5912	17	True				
+ANR	6217	ExpressionStatement	flags |= FLAGS_SHORT	57:12:1435:1456	5912	18	True				
+ANR	6218	AssignmentExpression	flags |= FLAGS_SHORT		5912	0		|=			
+ANR	6219	Identifier	flags		5912	0					
+ANR	6220	Identifier	FLAGS_SHORT		5912	1					
+ANR	6221	BreakStatement	break ;	58:1:1459:1465	5912	19	True				
+ANR	6222	Statement	if	59:3:1470:1471	5912	20	True				
+ANR	6223	Statement	defined	59:6:1473:1479	5912	21	True				
+ANR	6224	Statement	(	59:14:1481:1481	5912	22	True				
+ANR	6225	Statement	MP_HAVE_INT_EXTENSIONS	59:16:1483:1504	5912	23	True				
+ANR	6226	Statement	)	59:39:1506:1506	5912	24	True				
+ANR	6227	Label	case 'I' :	59:41:1508:1517	5912	25	True				
+ANR	6228	IfStatement	if ( CURL_SIZEOF_CURL_OFF_T > CURL_SIZEOF_LONG )		5912	26					
+ANR	6229	Condition	CURL_SIZEOF_CURL_OFF_T > CURL_SIZEOF_LONG	59:59:1526:1566	5912	0	True				
+ANR	6230	RelationalExpression	CURL_SIZEOF_CURL_OFF_T > CURL_SIZEOF_LONG		5912	0		>			
+ANR	6231	Identifier	CURL_SIZEOF_CURL_OFF_T		5912	0					
+ANR	6232	Identifier	CURL_SIZEOF_LONG		5912	1					
+ANR	6233	ExpressionStatement	flags |= FLAGS_LONGLONG	59:103:1570:1594	5912	1	True				
+ANR	6234	AssignmentExpression	flags |= FLAGS_LONGLONG		5912	0		|=			
+ANR	6235	Identifier	flags		5912	0					
+ANR	6236	Identifier	FLAGS_LONGLONG		5912	1					
+ANR	6237	ElseStatement	else		5912	0					
+ANR	6238	ExpressionStatement	flags |= FLAGS_LONG	60:8:1604:1624	5912	0	True				
+ANR	6239	AssignmentExpression	flags |= FLAGS_LONG		5912	0		|=			
+ANR	6240	Identifier	flags		5912	0					
+ANR	6241	Identifier	FLAGS_LONG		5912	1					
+ANR	6242	Statement	endif	61:3:1629:1633	5912	27	True				
+ANR	6243	BreakStatement	break ;	61:9:1635:1641	5912	28	True				
+ANR	6244	Statement	endif	62:3:1646:1650	5912	29	True				
+ANR	6245	Label	case 'l' :	62:9:1652:1661	5912	30	True				
+ANR	6246	IfStatement	if ( flags & FLAGS_LONG )		5912	31					
+ANR	6247	Condition	flags & FLAGS_LONG	62:25:1668:1685	5912	0	True				
+ANR	6248	BitAndExpression	flags & FLAGS_LONG		5912	0		&			
+ANR	6249	Identifier	flags		5912	0					
+ANR	6250	Identifier	FLAGS_LONG		5912	1					
+ANR	6251	ExpressionStatement	flags |= FLAGS_LONGLONG	62:46:1689:1713	5912	1	True				
+ANR	6252	AssignmentExpression	flags |= FLAGS_LONGLONG		5912	0		|=			
+ANR	6253	Identifier	flags		5912	0					
+ANR	6254	Identifier	FLAGS_LONGLONG		5912	1					
+ANR	6255	ElseStatement	else		5912	0					
+ANR	6256	ExpressionStatement	flags |= FLAGS_LONG	63:6:1721:1741	5912	0	True				
+ANR	6257	AssignmentExpression	flags |= FLAGS_LONG		5912	0		|=			
+ANR	6258	Identifier	flags		5912	0					
+ANR	6259	Identifier	FLAGS_LONG		5912	1					
+ANR	6260	BreakStatement	break ;	64:1:1744:1750	5912	32	True				
+ANR	6261	Label	case 'L' :	65:1:1753:1762	5912	33	True				
+ANR	6262	ExpressionStatement	flags |= FLAGS_LONGDOUBLE	65:12:1764:1790	5912	34	True				
+ANR	6263	AssignmentExpression	flags |= FLAGS_LONGDOUBLE		5912	0		|=			
+ANR	6264	Identifier	flags		5912	0					
+ANR	6265	Identifier	FLAGS_LONGDOUBLE		5912	1					
+ANR	6266	BreakStatement	break ;	66:1:1793:1799	5912	35	True				
+ANR	6267	Label	case 'q' :	67:1:1802:1811	5912	36	True				
+ANR	6268	ExpressionStatement	flags |= FLAGS_LONGLONG	67:12:1813:1837	5912	37	True				
+ANR	6269	AssignmentExpression	flags |= FLAGS_LONGLONG		5912	0		|=			
+ANR	6270	Identifier	flags		5912	0					
+ANR	6271	Identifier	FLAGS_LONGLONG		5912	1					
+ANR	6272	BreakStatement	break ;	68:1:1840:1846	5912	38	True				
+ANR	6273	Label	case 'z' :	69:1:1849:1858	5912	39	True				
+ANR	6274	IfStatement	if ( SIZEOF_SIZE_T > CURL_SIZEOF_LONG )		5912	40					
+ANR	6275	Condition	SIZEOF_SIZE_T > CURL_SIZEOF_LONG	69:19:1867:1898	5912	0	True				
+ANR	6276	RelationalExpression	SIZEOF_SIZE_T > CURL_SIZEOF_LONG		5912	0		>			
+ANR	6277	Identifier	SIZEOF_SIZE_T		5912	0					
+ANR	6278	Identifier	CURL_SIZEOF_LONG		5912	1					
+ANR	6279	ExpressionStatement	flags |= FLAGS_LONGLONG	69:54:1902:1926	5912	1	True				
+ANR	6280	AssignmentExpression	flags |= FLAGS_LONGLONG		5912	0		|=			
+ANR	6281	Identifier	flags		5912	0					
+ANR	6282	Identifier	FLAGS_LONGLONG		5912	1					
+ANR	6283	ElseStatement	else		5912	0					
+ANR	6284	ExpressionStatement	flags |= FLAGS_LONG	70:8:1936:1956	5912	0	True				
+ANR	6285	AssignmentExpression	flags |= FLAGS_LONG		5912	0		|=			
+ANR	6286	Identifier	flags		5912	0					
+ANR	6287	Identifier	FLAGS_LONG		5912	1					
+ANR	6288	Statement	endif	71:3:1961:1965	5912	41	True				
+ANR	6289	BreakStatement	break ;	71:9:1967:1973	5912	42	True				
+ANR	6290	Label	case 'O' :	72:1:1976:1985	5912	43	True				
+ANR	6291	IfStatement	if ( CURL_SIZEOF_CURL_OFF_T > CURL_SIZEOF_LONG )		5912	44					
+ANR	6292	Condition	CURL_SIZEOF_CURL_OFF_T > CURL_SIZEOF_LONG	72:19:1994:2034	5912	0	True				
+ANR	6293	RelationalExpression	CURL_SIZEOF_CURL_OFF_T > CURL_SIZEOF_LONG		5912	0		>			
+ANR	6294	Identifier	CURL_SIZEOF_CURL_OFF_T		5912	0					
+ANR	6295	Identifier	CURL_SIZEOF_LONG		5912	1					
+ANR	6296	ExpressionStatement	flags |= FLAGS_LONGLONG	72:63:2038:2062	5912	1	True				
+ANR	6297	AssignmentExpression	flags |= FLAGS_LONGLONG		5912	0		|=			
+ANR	6298	Identifier	flags		5912	0					
+ANR	6299	Identifier	FLAGS_LONGLONG		5912	1					
+ANR	6300	ElseStatement	else		5912	0					
+ANR	6301	ExpressionStatement	flags |= FLAGS_LONG	73:8:2072:2092	5912	0	True				
+ANR	6302	AssignmentExpression	flags |= FLAGS_LONG		5912	0		|=			
+ANR	6303	Identifier	flags		5912	0					
+ANR	6304	Identifier	FLAGS_LONG		5912	1					
+ANR	6305	Statement	endif	74:3:2097:2101	5912	45	True				
+ANR	6306	BreakStatement	break ;	74:9:2103:2109	5912	46	True				
+ANR	6307	Label	case '0' :	75:1:2112:2121	5912	47	True				
+ANR	6308	IfStatement	if ( ! ( flags & FLAGS_LEFT ) )		5912	48					
+ANR	6309	Condition	! ( flags & FLAGS_LEFT )	75:17:2128:2151	5912	0	True				
+ANR	6310	UnaryOperationExpression	! ( flags & FLAGS_LEFT )		5912	0					
+ANR	6311	UnaryOperator	!		5912	0					
+ANR	6312	BitAndExpression	flags & FLAGS_LEFT		5912	1		&			
+ANR	6313	Identifier	flags		5912	0					
+ANR	6314	Identifier	FLAGS_LEFT		5912	1					
+ANR	6315	ExpressionStatement	flags |= FLAGS_PAD_NIL	75:44:2155:2178	5912	1	True				
+ANR	6316	AssignmentExpression	flags |= FLAGS_PAD_NIL		5912	0		|=			
+ANR	6317	Identifier	flags		5912	0					
+ANR	6318	Identifier	FLAGS_PAD_NIL		5912	1					
+ANR	6319	Label	case '1' :	76:1:2181:2190	5912	49	True				
+ANR	6320	Label	case '2' :	76:12:2192:2201	5912	50	True				
+ANR	6321	Label	case '3' :	76:23:2203:2212	5912	51	True				
+ANR	6322	Label	case '4' :	76:34:2214:2223	5912	52	True				
+ANR	6323	Label	case '5' :	76:45:2225:2234	5912	53	True				
+ANR	6324	Label	case '6' :	76:56:2236:2245	5912	54	True				
+ANR	6325	Label	case '7' :	76:67:2247:2256	5912	55	True				
+ANR	6326	Label	case '8' :	76:78:2258:2267	5912	56	True				
+ANR	6327	Label	case '9' :	76:89:2269:2278	5912	57	True				
+ANR	6328	ExpressionStatement	flags |= FLAGS_WIDTH	76:100:2280:2301	5912	58	True				
+ANR	6329	AssignmentExpression	flags |= FLAGS_WIDTH		5912	0		|=			
+ANR	6330	Identifier	flags		5912	0					
+ANR	6331	Identifier	FLAGS_WIDTH		5912	1					
+ANR	6332	ExpressionStatement	"width = strtol ( fmt - 1 , & fmt , 10 )"	77:1:2304:2344	5912	59	True				
+ANR	6333	AssignmentExpression	"width = strtol ( fmt - 1 , & fmt , 10 )"		5912	0		=			
+ANR	6334	Identifier	width		5912	0					
+ANR	6335	CallExpression	"strtol ( fmt - 1 , & fmt , 10 )"		5912	1					
+ANR	6336	Callee	strtol		5912	0					
+ANR	6337	Identifier	strtol		5912	0					
+ANR	6338	ArgumentList	fmt - 1		5912	1					
+ANR	6339	Argument	fmt - 1		5912	0					
+ANR	6340	AdditiveExpression	fmt - 1		5912	0		-			
+ANR	6341	Identifier	fmt		5912	0					
+ANR	6342	PrimaryExpression	1		5912	1					
+ANR	6343	Argument	& fmt		5912	1					
+ANR	6344	UnaryOperationExpression	& fmt		5912	0					
+ANR	6345	UnaryOperator	&		5912	0					
+ANR	6346	Identifier	fmt		5912	1					
+ANR	6347	Argument	10		5912	2					
+ANR	6348	PrimaryExpression	10		5912	0					
+ANR	6349	BreakStatement	break ;	78:1:2347:2353	5912	60	True				
+ANR	6350	Label	case '*' :	79:1:2356:2365	5912	61	True				
+ANR	6351	ExpressionStatement	flags |= FLAGS_WIDTHPARAM	79:12:2367:2393	5912	62	True				
+ANR	6352	AssignmentExpression	flags |= FLAGS_WIDTHPARAM		5912	0		|=			
+ANR	6353	Identifier	flags		5912	0					
+ANR	6354	Identifier	FLAGS_WIDTHPARAM		5912	1					
+ANR	6355	ExpressionStatement	param_num ++	80:1:2396:2409	5912	63	True				
+ANR	6356	PostIncDecOperationExpression	param_num ++		5912	0					
+ANR	6357	Identifier	param_num		5912	0					
+ANR	6358	IncDec	++		5912	1					
+ANR	6359	ExpressionStatement	"i = dprintf_DollarString ( fmt , & fmt )"	81:1:2412:2453	5912	64	True				
+ANR	6360	AssignmentExpression	"i = dprintf_DollarString ( fmt , & fmt )"		5912	0		=			
+ANR	6361	Identifier	i		5912	0					
+ANR	6362	CallExpression	"dprintf_DollarString ( fmt , & fmt )"		5912	1					
+ANR	6363	Callee	dprintf_DollarString		5912	0					
+ANR	6364	Identifier	dprintf_DollarString		5912	0					
+ANR	6365	ArgumentList	fmt		5912	1					
+ANR	6366	Argument	fmt		5912	0					
+ANR	6367	Identifier	fmt		5912	0					
+ANR	6368	Argument	& fmt		5912	1					
+ANR	6369	UnaryOperationExpression	& fmt		5912	0					
+ANR	6370	UnaryOperator	&		5912	0					
+ANR	6371	Identifier	fmt		5912	1					
+ANR	6372	IfStatement	if ( i )		5912	65					
+ANR	6373	Condition	i	82:6:2461:2461	5912	0	True				
+ANR	6374	Identifier	i		5912	0					
+ANR	6375	ExpressionStatement	width = i	82:10:2465:2475	5912	1	True				
+ANR	6376	AssignmentExpression	width = i		5912	0		=			
+ANR	6377	Identifier	width		5912	0					
+ANR	6378	Identifier	i		5912	1					
+ANR	6379	ElseStatement	else		5912	0					
+ANR	6380	ExpressionStatement	width = param_num	83:6:2483:2501	5912	0	True				
+ANR	6381	AssignmentExpression	width = param_num		5912	0		=			
+ANR	6382	Identifier	width		5912	0					
+ANR	6383	Identifier	param_num		5912	1					
+ANR	6384	IfStatement	if ( width > max_param )		5912	66					
+ANR	6385	Condition	width > max_param	84:6:2509:2525	5912	0	True				
+ANR	6386	RelationalExpression	width > max_param		5912	0		>			
+ANR	6387	Identifier	width		5912	0					
+ANR	6388	Identifier	max_param		5912	1					
+ANR	6389	ExpressionStatement	max_param = width	84:26:2529:2547	5912	1	True				
+ANR	6390	AssignmentExpression	max_param = width		5912	0		=			
+ANR	6391	Identifier	max_param		5912	0					
+ANR	6392	Identifier	width		5912	1					
+ANR	6393	BreakStatement	break ;	85:1:2550:2556	5912	67	True				
+ANR	6394	Label	default :	86:1:2559:2567	5912	68	True				
+ANR	6395	Identifier	default		5912	0					
+ANR	6396	BreakStatement	break ;	86:11:2569:2575	5912	69	True				
+ANR	6397	ExpressionStatement	i = this_param - 1	89:1:2584:2603	5912	9	True				
+ANR	6398	AssignmentExpression	i = this_param - 1		5912	0		=			
+ANR	6399	Identifier	i		5912	0					
+ANR	6400	AdditiveExpression	this_param - 1		5912	1		-			
+ANR	6401	Identifier	this_param		5912	0					
+ANR	6402	PrimaryExpression	1		5912	1					
+ANR	6403	IfStatement	if ( ( i < 0 ) || ( i >= MAX_PARAMETERS ) )		5912	10					
+ANR	6404	Condition	( i < 0 ) || ( i >= MAX_PARAMETERS )	90:6:2611:2646	5912	0	True				
+ANR	6405	OrExpression	( i < 0 ) || ( i >= MAX_PARAMETERS )		5912	0		||			
+ANR	6406	RelationalExpression	i < 0		5912	0		<			
+ANR	6407	Identifier	i		5912	0					
+ANR	6408	PrimaryExpression	0		5912	1					
+ANR	6409	RelationalExpression	i >= MAX_PARAMETERS		5912	1		>=			
+ANR	6410	Identifier	i		5912	0					
+ANR	6411	Identifier	MAX_PARAMETERS		5912	1					
+ANR	6412	ReturnStatement	return 1 ;	90:45:2650:2659	5912	1	True				
+ANR	6413	PrimaryExpression	1		5912	0					
+ANR	6414	SwitchStatement	switch ( * fmt )		5912	11					
+ANR	6415	Condition	* fmt	91:10:2671:2675	5912	0	True				
+ANR	6416	UnaryOperationExpression	* fmt		5912	0					
+ANR	6417	UnaryOperator	*		5912	0					
+ANR	6418	Identifier	fmt		5912	1					
+ANR	6419	CompoundStatement		91:18:2574:2574	5912	1					
+ANR	6420	Label	case 'S' :	92:1:2682:2691	5912	0	True				
+ANR	6421	ExpressionStatement	flags |= FLAGS_ALT	92:12:2693:2712	5912	1	True				
+ANR	6422	AssignmentExpression	flags |= FLAGS_ALT		5912	0		|=			
+ANR	6423	Identifier	flags		5912	0					
+ANR	6424	Identifier	FLAGS_ALT		5912	1					
+ANR	6425	Label	case 's' :	93:1:2715:2724	5912	2	True				
+ANR	6426	ExpressionStatement	vto [ i ] . type = FORMAT_STRING	93:12:2726:2759	5912	3	True				
+ANR	6427	AssignmentExpression	vto [ i ] . type = FORMAT_STRING		5912	0		=			
+ANR	6428	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6429	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6430	Identifier	vto		5912	0					
+ANR	6431	Identifier	i		5912	1					
+ANR	6432	Identifier	type		5912	1					
+ANR	6433	Identifier	FORMAT_STRING		5912	1					
+ANR	6434	BreakStatement	break ;	94:1:2762:2768	5912	4	True				
+ANR	6435	Label	case 'n' :	95:1:2771:2780	5912	5	True				
+ANR	6436	ExpressionStatement	vto [ i ] . type = FORMAT_INTPTR	95:12:2782:2815	5912	6	True				
+ANR	6437	AssignmentExpression	vto [ i ] . type = FORMAT_INTPTR		5912	0		=			
+ANR	6438	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6439	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6440	Identifier	vto		5912	0					
+ANR	6441	Identifier	i		5912	1					
+ANR	6442	Identifier	type		5912	1					
+ANR	6443	Identifier	FORMAT_INTPTR		5912	1					
+ANR	6444	BreakStatement	break ;	96:1:2818:2824	5912	7	True				
+ANR	6445	Label	case 'p' :	97:1:2827:2836	5912	8	True				
+ANR	6446	ExpressionStatement	vto [ i ] . type = FORMAT_PTR	97:12:2838:2868	5912	9	True				
+ANR	6447	AssignmentExpression	vto [ i ] . type = FORMAT_PTR		5912	0		=			
+ANR	6448	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6449	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6450	Identifier	vto		5912	0					
+ANR	6451	Identifier	i		5912	1					
+ANR	6452	Identifier	type		5912	1					
+ANR	6453	Identifier	FORMAT_PTR		5912	1					
+ANR	6454	BreakStatement	break ;	98:1:2871:2877	5912	10	True				
+ANR	6455	Label	case 'd' :	99:1:2880:2889	5912	11	True				
+ANR	6456	Label	case 'i' :	99:12:2891:2900	5912	12	True				
+ANR	6457	ExpressionStatement	vto [ i ] . type = FORMAT_INT	99:23:2902:2932	5912	13	True				
+ANR	6458	AssignmentExpression	vto [ i ] . type = FORMAT_INT		5912	0		=			
+ANR	6459	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6460	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6461	Identifier	vto		5912	0					
+ANR	6462	Identifier	i		5912	1					
+ANR	6463	Identifier	type		5912	1					
+ANR	6464	Identifier	FORMAT_INT		5912	1					
+ANR	6465	BreakStatement	break ;	100:1:2935:2941	5912	14	True				
+ANR	6466	Label	case 'u' :	101:1:2944:2953	5912	15	True				
+ANR	6467	ExpressionStatement	vto [ i ] . type = FORMAT_INT	101:12:2955:2985	5912	16	True				
+ANR	6468	AssignmentExpression	vto [ i ] . type = FORMAT_INT		5912	0		=			
+ANR	6469	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6470	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6471	Identifier	vto		5912	0					
+ANR	6472	Identifier	i		5912	1					
+ANR	6473	Identifier	type		5912	1					
+ANR	6474	Identifier	FORMAT_INT		5912	1					
+ANR	6475	ExpressionStatement	flags |= FLAGS_UNSIGNED	102:1:2988:3012	5912	17	True				
+ANR	6476	AssignmentExpression	flags |= FLAGS_UNSIGNED		5912	0		|=			
+ANR	6477	Identifier	flags		5912	0					
+ANR	6478	Identifier	FLAGS_UNSIGNED		5912	1					
+ANR	6479	BreakStatement	break ;	103:1:3015:3021	5912	18	True				
+ANR	6480	Label	case 'o' :	104:1:3024:3033	5912	19	True				
+ANR	6481	ExpressionStatement	vto [ i ] . type = FORMAT_INT	104:12:3035:3065	5912	20	True				
+ANR	6482	AssignmentExpression	vto [ i ] . type = FORMAT_INT		5912	0		=			
+ANR	6483	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6484	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6485	Identifier	vto		5912	0					
+ANR	6486	Identifier	i		5912	1					
+ANR	6487	Identifier	type		5912	1					
+ANR	6488	Identifier	FORMAT_INT		5912	1					
+ANR	6489	ExpressionStatement	flags |= FLAGS_OCTAL	105:1:3068:3089	5912	21	True				
+ANR	6490	AssignmentExpression	flags |= FLAGS_OCTAL		5912	0		|=			
+ANR	6491	Identifier	flags		5912	0					
+ANR	6492	Identifier	FLAGS_OCTAL		5912	1					
+ANR	6493	BreakStatement	break ;	106:1:3092:3098	5912	22	True				
+ANR	6494	Label	case 'x' :	107:1:3101:3110	5912	23	True				
+ANR	6495	ExpressionStatement	vto [ i ] . type = FORMAT_INT	107:12:3112:3142	5912	24	True				
+ANR	6496	AssignmentExpression	vto [ i ] . type = FORMAT_INT		5912	0		=			
+ANR	6497	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6498	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6499	Identifier	vto		5912	0					
+ANR	6500	Identifier	i		5912	1					
+ANR	6501	Identifier	type		5912	1					
+ANR	6502	Identifier	FORMAT_INT		5912	1					
+ANR	6503	ExpressionStatement	flags |= FLAGS_HEX | FLAGS_UNSIGNED	108:1:3145:3181	5912	25	True				
+ANR	6504	AssignmentExpression	flags |= FLAGS_HEX | FLAGS_UNSIGNED		5912	0		|=			
+ANR	6505	Identifier	flags		5912	0					
+ANR	6506	InclusiveOrExpression	FLAGS_HEX | FLAGS_UNSIGNED		5912	1		|			
+ANR	6507	Identifier	FLAGS_HEX		5912	0					
+ANR	6508	Identifier	FLAGS_UNSIGNED		5912	1					
+ANR	6509	BreakStatement	break ;	109:1:3184:3190	5912	26	True				
+ANR	6510	Label	case 'X' :	110:1:3193:3202	5912	27	True				
+ANR	6511	ExpressionStatement	vto [ i ] . type = FORMAT_INT	110:12:3204:3234	5912	28	True				
+ANR	6512	AssignmentExpression	vto [ i ] . type = FORMAT_INT		5912	0		=			
+ANR	6513	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6514	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6515	Identifier	vto		5912	0					
+ANR	6516	Identifier	i		5912	1					
+ANR	6517	Identifier	type		5912	1					
+ANR	6518	Identifier	FORMAT_INT		5912	1					
+ANR	6519	ExpressionStatement	flags |= FLAGS_HEX | FLAGS_UPPER | FLAGS_UNSIGNED	111:1:3237:3287	5912	29	True				
+ANR	6520	AssignmentExpression	flags |= FLAGS_HEX | FLAGS_UPPER | FLAGS_UNSIGNED		5912	0		|=			
+ANR	6521	Identifier	flags		5912	0					
+ANR	6522	InclusiveOrExpression	FLAGS_HEX | FLAGS_UPPER | FLAGS_UNSIGNED		5912	1		|			
+ANR	6523	Identifier	FLAGS_HEX		5912	0					
+ANR	6524	InclusiveOrExpression	FLAGS_UPPER | FLAGS_UNSIGNED		5912	1		|			
+ANR	6525	Identifier	FLAGS_UPPER		5912	0					
+ANR	6526	Identifier	FLAGS_UNSIGNED		5912	1					
+ANR	6527	BreakStatement	break ;	112:1:3290:3296	5912	30	True				
+ANR	6528	Label	case 'c' :	113:1:3299:3308	5912	31	True				
+ANR	6529	ExpressionStatement	vto [ i ] . type = FORMAT_INT	113:12:3310:3340	5912	32	True				
+ANR	6530	AssignmentExpression	vto [ i ] . type = FORMAT_INT		5912	0		=			
+ANR	6531	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6532	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6533	Identifier	vto		5912	0					
+ANR	6534	Identifier	i		5912	1					
+ANR	6535	Identifier	type		5912	1					
+ANR	6536	Identifier	FORMAT_INT		5912	1					
+ANR	6537	ExpressionStatement	flags |= FLAGS_CHAR	114:1:3343:3363	5912	33	True				
+ANR	6538	AssignmentExpression	flags |= FLAGS_CHAR		5912	0		|=			
+ANR	6539	Identifier	flags		5912	0					
+ANR	6540	Identifier	FLAGS_CHAR		5912	1					
+ANR	6541	BreakStatement	break ;	115:1:3366:3372	5912	34	True				
+ANR	6542	Label	case 'f' :	116:1:3375:3384	5912	35	True				
+ANR	6543	ExpressionStatement	vto [ i ] . type = FORMAT_DOUBLE	116:12:3386:3419	5912	36	True				
+ANR	6544	AssignmentExpression	vto [ i ] . type = FORMAT_DOUBLE		5912	0		=			
+ANR	6545	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6546	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6547	Identifier	vto		5912	0					
+ANR	6548	Identifier	i		5912	1					
+ANR	6549	Identifier	type		5912	1					
+ANR	6550	Identifier	FORMAT_DOUBLE		5912	1					
+ANR	6551	BreakStatement	break ;	117:1:3422:3428	5912	37	True				
+ANR	6552	Label	case 'e' :	118:1:3431:3440	5912	38	True				
+ANR	6553	ExpressionStatement	vto [ i ] . type = FORMAT_DOUBLE	118:12:3442:3475	5912	39	True				
+ANR	6554	AssignmentExpression	vto [ i ] . type = FORMAT_DOUBLE		5912	0		=			
+ANR	6555	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6556	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6557	Identifier	vto		5912	0					
+ANR	6558	Identifier	i		5912	1					
+ANR	6559	Identifier	type		5912	1					
+ANR	6560	Identifier	FORMAT_DOUBLE		5912	1					
+ANR	6561	ExpressionStatement	flags |= FLAGS_FLOATE	119:1:3478:3500	5912	40	True				
+ANR	6562	AssignmentExpression	flags |= FLAGS_FLOATE		5912	0		|=			
+ANR	6563	Identifier	flags		5912	0					
+ANR	6564	Identifier	FLAGS_FLOATE		5912	1					
+ANR	6565	BreakStatement	break ;	120:1:3503:3509	5912	41	True				
+ANR	6566	Label	case 'E' :	121:1:3512:3521	5912	42	True				
+ANR	6567	ExpressionStatement	vto [ i ] . type = FORMAT_DOUBLE	121:12:3523:3556	5912	43	True				
+ANR	6568	AssignmentExpression	vto [ i ] . type = FORMAT_DOUBLE		5912	0		=			
+ANR	6569	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6570	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6571	Identifier	vto		5912	0					
+ANR	6572	Identifier	i		5912	1					
+ANR	6573	Identifier	type		5912	1					
+ANR	6574	Identifier	FORMAT_DOUBLE		5912	1					
+ANR	6575	ExpressionStatement	flags |= FLAGS_FLOATE | FLAGS_UPPER	122:1:3559:3595	5912	44	True				
+ANR	6576	AssignmentExpression	flags |= FLAGS_FLOATE | FLAGS_UPPER		5912	0		|=			
+ANR	6577	Identifier	flags		5912	0					
+ANR	6578	InclusiveOrExpression	FLAGS_FLOATE | FLAGS_UPPER		5912	1		|			
+ANR	6579	Identifier	FLAGS_FLOATE		5912	0					
+ANR	6580	Identifier	FLAGS_UPPER		5912	1					
+ANR	6581	BreakStatement	break ;	123:1:3598:3604	5912	45	True				
+ANR	6582	Label	case 'g' :	124:1:3607:3616	5912	46	True				
+ANR	6583	ExpressionStatement	vto [ i ] . type = FORMAT_DOUBLE	124:12:3618:3651	5912	47	True				
+ANR	6584	AssignmentExpression	vto [ i ] . type = FORMAT_DOUBLE		5912	0		=			
+ANR	6585	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6586	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6587	Identifier	vto		5912	0					
+ANR	6588	Identifier	i		5912	1					
+ANR	6589	Identifier	type		5912	1					
+ANR	6590	Identifier	FORMAT_DOUBLE		5912	1					
+ANR	6591	ExpressionStatement	flags |= FLAGS_FLOATG	125:1:3654:3676	5912	48	True				
+ANR	6592	AssignmentExpression	flags |= FLAGS_FLOATG		5912	0		|=			
+ANR	6593	Identifier	flags		5912	0					
+ANR	6594	Identifier	FLAGS_FLOATG		5912	1					
+ANR	6595	BreakStatement	break ;	126:1:3679:3685	5912	49	True				
+ANR	6596	Label	case 'G' :	127:1:3688:3697	5912	50	True				
+ANR	6597	ExpressionStatement	vto [ i ] . type = FORMAT_DOUBLE	127:12:3699:3732	5912	51	True				
+ANR	6598	AssignmentExpression	vto [ i ] . type = FORMAT_DOUBLE		5912	0		=			
+ANR	6599	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6600	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6601	Identifier	vto		5912	0					
+ANR	6602	Identifier	i		5912	1					
+ANR	6603	Identifier	type		5912	1					
+ANR	6604	Identifier	FORMAT_DOUBLE		5912	1					
+ANR	6605	ExpressionStatement	flags |= FLAGS_FLOATG | FLAGS_UPPER	128:1:3735:3771	5912	52	True				
+ANR	6606	AssignmentExpression	flags |= FLAGS_FLOATG | FLAGS_UPPER		5912	0		|=			
+ANR	6607	Identifier	flags		5912	0					
+ANR	6608	InclusiveOrExpression	FLAGS_FLOATG | FLAGS_UPPER		5912	1		|			
+ANR	6609	Identifier	FLAGS_FLOATG		5912	0					
+ANR	6610	Identifier	FLAGS_UPPER		5912	1					
+ANR	6611	BreakStatement	break ;	129:1:3774:3780	5912	53	True				
+ANR	6612	Label	default :	130:1:3783:3791	5912	54	True				
+ANR	6613	Identifier	default		5912	0					
+ANR	6614	ExpressionStatement	vto [ i ] . type = FORMAT_UNKNOWN	130:11:3793:3827	5912	55	True				
+ANR	6615	AssignmentExpression	vto [ i ] . type = FORMAT_UNKNOWN		5912	0		=			
+ANR	6616	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6617	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6618	Identifier	vto		5912	0					
+ANR	6619	Identifier	i		5912	1					
+ANR	6620	Identifier	type		5912	1					
+ANR	6621	Identifier	FORMAT_UNKNOWN		5912	1					
+ANR	6622	BreakStatement	break ;	131:1:3830:3836	5912	56	True				
+ANR	6623	ExpressionStatement	vto [ i ] . flags = flags	133:1:3842:3868	5912	12	True				
+ANR	6624	AssignmentExpression	vto [ i ] . flags = flags		5912	0		=			
+ANR	6625	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	6626	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6627	Identifier	vto		5912	0					
+ANR	6628	Identifier	i		5912	1					
+ANR	6629	Identifier	flags		5912	1					
+ANR	6630	Identifier	flags		5912	1					
+ANR	6631	ExpressionStatement	vto [ i ] . width = width	134:1:3871:3897	5912	13	True				
+ANR	6632	AssignmentExpression	vto [ i ] . width = width		5912	0		=			
+ANR	6633	MemberAccess	vto [ i ] . width		5912	0					
+ANR	6634	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6635	Identifier	vto		5912	0					
+ANR	6636	Identifier	i		5912	1					
+ANR	6637	Identifier	width		5912	1					
+ANR	6638	Identifier	width		5912	1					
+ANR	6639	ExpressionStatement	vto [ i ] . precision = precision	135:1:3900:3934	5912	14	True				
+ANR	6640	AssignmentExpression	vto [ i ] . precision = precision		5912	0		=			
+ANR	6641	MemberAccess	vto [ i ] . precision		5912	0					
+ANR	6642	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6643	Identifier	vto		5912	0					
+ANR	6644	Identifier	i		5912	1					
+ANR	6645	Identifier	precision		5912	1					
+ANR	6646	Identifier	precision		5912	1					
+ANR	6647	IfStatement	if ( flags & FLAGS_WIDTHPARAM )		5912	15					
+ANR	6648	Condition	flags & FLAGS_WIDTHPARAM	136:6:3942:3965	5912	0	True				
+ANR	6649	BitAndExpression	flags & FLAGS_WIDTHPARAM		5912	0		&			
+ANR	6650	Identifier	flags		5912	0					
+ANR	6651	Identifier	FLAGS_WIDTHPARAM		5912	1					
+ANR	6652	CompoundStatement		137:1:3867:3886	5912	1					
+ANR	6653	IdentifierDeclStatement	long k = width - 1 ;	137:1:3972:3991	5912	0	True				
+ANR	6654	IdentifierDecl	k = width - 1		5912	0					
+ANR	6655	IdentifierDeclType	long		5912	0					
+ANR	6656	Identifier	k		5912	1					
+ANR	6657	AssignmentExpression	k = width - 1		5912	2		=			
+ANR	6658	Identifier	k		5912	0					
+ANR	6659	AdditiveExpression	width - 1		5912	1		-			
+ANR	6660	Identifier	width		5912	0					
+ANR	6661	PrimaryExpression	1		5912	1					
+ANR	6662	ExpressionStatement	vto [ i ] . width = k	138:1:3994:4016	5912	1	True				
+ANR	6663	AssignmentExpression	vto [ i ] . width = k		5912	0		=			
+ANR	6664	MemberAccess	vto [ i ] . width		5912	0					
+ANR	6665	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6666	Identifier	vto		5912	0					
+ANR	6667	Identifier	i		5912	1					
+ANR	6668	Identifier	width		5912	1					
+ANR	6669	Identifier	k		5912	1					
+ANR	6670	ExpressionStatement	vto [ k ] . type = FORMAT_WIDTH	139:1:4019:4051	5912	2	True				
+ANR	6671	AssignmentExpression	vto [ k ] . type = FORMAT_WIDTH		5912	0		=			
+ANR	6672	MemberAccess	vto [ k ] . type		5912	0					
+ANR	6673	ArrayIndexing	vto [ k ]		5912	0					
+ANR	6674	Identifier	vto		5912	0					
+ANR	6675	Identifier	k		5912	1					
+ANR	6676	Identifier	type		5912	1					
+ANR	6677	Identifier	FORMAT_WIDTH		5912	1					
+ANR	6678	ExpressionStatement	vto [ k ] . flags = FLAGS_NEW	140:1:4054:4084	5912	3	True				
+ANR	6679	AssignmentExpression	vto [ k ] . flags = FLAGS_NEW		5912	0		=			
+ANR	6680	MemberAccess	vto [ k ] . flags		5912	0					
+ANR	6681	ArrayIndexing	vto [ k ]		5912	0					
+ANR	6682	Identifier	vto		5912	0					
+ANR	6683	Identifier	k		5912	1					
+ANR	6684	Identifier	flags		5912	1					
+ANR	6685	Identifier	FLAGS_NEW		5912	1					
+ANR	6686	ExpressionStatement	vto [ k ] . width = 0	141:1:4087:4109	5912	4	True				
+ANR	6687	AssignmentExpression	vto [ k ] . width = 0		5912	0		=			
+ANR	6688	MemberAccess	vto [ k ] . width		5912	0					
+ANR	6689	ArrayIndexing	vto [ k ]		5912	0					
+ANR	6690	Identifier	vto		5912	0					
+ANR	6691	Identifier	k		5912	1					
+ANR	6692	Identifier	width		5912	1					
+ANR	6693	PrimaryExpression	0		5912	1					
+ANR	6694	ExpressionStatement	vto [ k ] . precision = 0	142:1:4112:4138	5912	5	True				
+ANR	6695	AssignmentExpression	vto [ k ] . precision = 0		5912	0		=			
+ANR	6696	MemberAccess	vto [ k ] . precision		5912	0					
+ANR	6697	ArrayIndexing	vto [ k ]		5912	0					
+ANR	6698	Identifier	vto		5912	0					
+ANR	6699	Identifier	k		5912	1					
+ANR	6700	Identifier	precision		5912	1					
+ANR	6701	PrimaryExpression	0		5912	1					
+ANR	6702	IfStatement	if ( flags & FLAGS_PRECPARAM )		5912	16					
+ANR	6703	Condition	flags & FLAGS_PRECPARAM	144:6:4149:4171	5912	0	True				
+ANR	6704	BitAndExpression	flags & FLAGS_PRECPARAM		5912	0		&			
+ANR	6705	Identifier	flags		5912	0					
+ANR	6706	Identifier	FLAGS_PRECPARAM		5912	1					
+ANR	6707	CompoundStatement		145:1:4073:4096	5912	1					
+ANR	6708	IdentifierDeclStatement	long k = precision - 1 ;	145:1:4178:4201	5912	0	True				
+ANR	6709	IdentifierDecl	k = precision - 1		5912	0					
+ANR	6710	IdentifierDeclType	long		5912	0					
+ANR	6711	Identifier	k		5912	1					
+ANR	6712	AssignmentExpression	k = precision - 1		5912	2		=			
+ANR	6713	Identifier	k		5912	0					
+ANR	6714	AdditiveExpression	precision - 1		5912	1		-			
+ANR	6715	Identifier	precision		5912	0					
+ANR	6716	PrimaryExpression	1		5912	1					
+ANR	6717	ExpressionStatement	vto [ i ] . precision = k	146:1:4204:4230	5912	1	True				
+ANR	6718	AssignmentExpression	vto [ i ] . precision = k		5912	0		=			
+ANR	6719	MemberAccess	vto [ i ] . precision		5912	0					
+ANR	6720	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6721	Identifier	vto		5912	0					
+ANR	6722	Identifier	i		5912	1					
+ANR	6723	Identifier	precision		5912	1					
+ANR	6724	Identifier	k		5912	1					
+ANR	6725	ExpressionStatement	vto [ k ] . type = FORMAT_WIDTH	147:1:4233:4265	5912	2	True				
+ANR	6726	AssignmentExpression	vto [ k ] . type = FORMAT_WIDTH		5912	0		=			
+ANR	6727	MemberAccess	vto [ k ] . type		5912	0					
+ANR	6728	ArrayIndexing	vto [ k ]		5912	0					
+ANR	6729	Identifier	vto		5912	0					
+ANR	6730	Identifier	k		5912	1					
+ANR	6731	Identifier	type		5912	1					
+ANR	6732	Identifier	FORMAT_WIDTH		5912	1					
+ANR	6733	ExpressionStatement	vto [ k ] . flags = FLAGS_NEW	148:1:4268:4298	5912	3	True				
+ANR	6734	AssignmentExpression	vto [ k ] . flags = FLAGS_NEW		5912	0		=			
+ANR	6735	MemberAccess	vto [ k ] . flags		5912	0					
+ANR	6736	ArrayIndexing	vto [ k ]		5912	0					
+ANR	6737	Identifier	vto		5912	0					
+ANR	6738	Identifier	k		5912	1					
+ANR	6739	Identifier	flags		5912	1					
+ANR	6740	Identifier	FLAGS_NEW		5912	1					
+ANR	6741	ExpressionStatement	vto [ k ] . width = 0	149:1:4301:4323	5912	4	True				
+ANR	6742	AssignmentExpression	vto [ k ] . width = 0		5912	0		=			
+ANR	6743	MemberAccess	vto [ k ] . width		5912	0					
+ANR	6744	ArrayIndexing	vto [ k ]		5912	0					
+ANR	6745	Identifier	vto		5912	0					
+ANR	6746	Identifier	k		5912	1					
+ANR	6747	Identifier	width		5912	1					
+ANR	6748	PrimaryExpression	0		5912	1					
+ANR	6749	ExpressionStatement	vto [ k ] . precision = 0	150:1:4326:4352	5912	5	True				
+ANR	6750	AssignmentExpression	vto [ k ] . precision = 0		5912	0		=			
+ANR	6751	MemberAccess	vto [ k ] . precision		5912	0					
+ANR	6752	ArrayIndexing	vto [ k ]		5912	0					
+ANR	6753	Identifier	vto		5912	0					
+ANR	6754	Identifier	k		5912	1					
+ANR	6755	Identifier	precision		5912	1					
+ANR	6756	PrimaryExpression	0		5912	1					
+ANR	6757	ExpressionStatement	* endpos ++ = fmt + 1	152:1:4358:4380	5912	17	True				
+ANR	6758	AssignmentExpression	* endpos ++ = fmt + 1		5912	0		=			
+ANR	6759	UnaryOperationExpression	* endpos ++		5912	0					
+ANR	6760	UnaryOperator	*		5912	0					
+ANR	6761	PostIncDecOperationExpression	endpos ++		5912	1					
+ANR	6762	Identifier	endpos		5912	0					
+ANR	6763	IncDec	++		5912	1					
+ANR	6764	AdditiveExpression	fmt + 1		5912	1		+			
+ANR	6765	Identifier	fmt		5912	0					
+ANR	6766	PrimaryExpression	1		5912	1					
+ANR	6767	ForStatement	for ( i = 0 ; i < max_param ; i ++ )		5912	9					
+ANR	6768	ForInit	i = 0 ;	155:7:4395:4401	5912	0	True				
+ANR	6769	AssignmentExpression	i = 0		5912	0		=			
+ANR	6770	Identifier	i		5912	0					
+ANR	6771	PrimaryExpression	0		5912	1					
+ANR	6772	Condition	i < max_param	156:1:4404:4416	5912	1	True				
+ANR	6773	RelationalExpression	i < max_param		5912	0		<			
+ANR	6774	Identifier	i		5912	0					
+ANR	6775	Identifier	max_param		5912	1					
+ANR	6776	PostIncDecOperationExpression	i ++	157:1:4421:4424	5912	2	True				
+ANR	6777	Identifier	i		5912	0					
+ANR	6778	IncDec	++		5912	1					
+ANR	6779	CompoundStatement		157:8:4323:4323	5912	3					
+ANR	6780	IfStatement	if ( vto [ i ] . flags & FLAGS_WIDTHPARAM )		5912	0					
+ANR	6781	Condition	vto [ i ] . flags & FLAGS_WIDTHPARAM	158:6:4436:4471	5912	0	True				
+ANR	6782	BitAndExpression	vto [ i ] . flags & FLAGS_WIDTHPARAM		5912	0		&			
+ANR	6783	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	6784	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6785	Identifier	vto		5912	0					
+ANR	6786	Identifier	i		5912	1					
+ANR	6787	Identifier	flags		5912	1					
+ANR	6788	Identifier	FLAGS_WIDTHPARAM		5912	1					
+ANR	6789	CompoundStatement		158:45:4370:4370	5912	1					
+ANR	6790	ExpressionStatement	"vto [ vto [ i ] . width ] . data . num . as_signed = ( mp_intmax_t ) va_arg ( arglist , int )"	159:1:4478:4572	5912	0	True				
+ANR	6791	AssignmentExpression	"vto [ vto [ i ] . width ] . data . num . as_signed = ( mp_intmax_t ) va_arg ( arglist , int )"		5912	0		=			
+ANR	6792	MemberAccess	vto [ vto [ i ] . width ] . data . num . as_signed		5912	0					
+ANR	6793	MemberAccess	vto [ vto [ i ] . width ] . data . num		5912	0					
+ANR	6794	MemberAccess	vto [ vto [ i ] . width ] . data		5912	0					
+ANR	6795	ArrayIndexing	vto [ vto [ i ] . width ]		5912	0					
+ANR	6796	Identifier	vto		5912	0					
+ANR	6797	MemberAccess	vto [ i ] . width		5912	1					
+ANR	6798	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6799	Identifier	vto		5912	0					
+ANR	6800	Identifier	i		5912	1					
+ANR	6801	Identifier	width		5912	1					
+ANR	6802	Identifier	data		5912	1					
+ANR	6803	Identifier	num		5912	1					
+ANR	6804	Identifier	as_signed		5912	1					
+ANR	6805	CastExpression	"( mp_intmax_t ) va_arg ( arglist , int )"		5912	1					
+ANR	6806	CastTarget	mp_intmax_t		5912	0					
+ANR	6807	CallExpression	"va_arg ( arglist , int )"		5912	1					
+ANR	6808	Callee	va_arg		5912	0					
+ANR	6809	Identifier	va_arg		5912	0					
+ANR	6810	ArgumentList	arglist		5912	1					
+ANR	6811	Argument	arglist		5912	0					
+ANR	6812	Identifier	arglist		5912	0					
+ANR	6813	Argument	int		5912	1					
+ANR	6814	Identifier	int		5912	0					
+ANR	6815	IfStatement	if ( vto [ i ] . flags & FLAGS_PRECPARAM )		5912	1					
+ANR	6816	Condition	vto [ i ] . flags & FLAGS_PRECPARAM	161:6:4583:4617	5912	0	True				
+ANR	6817	BitAndExpression	vto [ i ] . flags & FLAGS_PRECPARAM		5912	0		&			
+ANR	6818	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	6819	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6820	Identifier	vto		5912	0					
+ANR	6821	Identifier	i		5912	1					
+ANR	6822	Identifier	flags		5912	1					
+ANR	6823	Identifier	FLAGS_PRECPARAM		5912	1					
+ANR	6824	CompoundStatement		161:44:4516:4516	5912	1					
+ANR	6825	ExpressionStatement	"vto [ vto [ i ] . precision ] . data . num . as_signed = ( mp_intmax_t ) va_arg ( arglist , int )"	162:1:4624:4722	5912	0	True				
+ANR	6826	AssignmentExpression	"vto [ vto [ i ] . precision ] . data . num . as_signed = ( mp_intmax_t ) va_arg ( arglist , int )"		5912	0		=			
+ANR	6827	MemberAccess	vto [ vto [ i ] . precision ] . data . num . as_signed		5912	0					
+ANR	6828	MemberAccess	vto [ vto [ i ] . precision ] . data . num		5912	0					
+ANR	6829	MemberAccess	vto [ vto [ i ] . precision ] . data		5912	0					
+ANR	6830	ArrayIndexing	vto [ vto [ i ] . precision ]		5912	0					
+ANR	6831	Identifier	vto		5912	0					
+ANR	6832	MemberAccess	vto [ i ] . precision		5912	1					
+ANR	6833	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6834	Identifier	vto		5912	0					
+ANR	6835	Identifier	i		5912	1					
+ANR	6836	Identifier	precision		5912	1					
+ANR	6837	Identifier	data		5912	1					
+ANR	6838	Identifier	num		5912	1					
+ANR	6839	Identifier	as_signed		5912	1					
+ANR	6840	CastExpression	"( mp_intmax_t ) va_arg ( arglist , int )"		5912	1					
+ANR	6841	CastTarget	mp_intmax_t		5912	0					
+ANR	6842	CallExpression	"va_arg ( arglist , int )"		5912	1					
+ANR	6843	Callee	va_arg		5912	0					
+ANR	6844	Identifier	va_arg		5912	0					
+ANR	6845	ArgumentList	arglist		5912	1					
+ANR	6846	Argument	arglist		5912	0					
+ANR	6847	Identifier	arglist		5912	0					
+ANR	6848	Argument	int		5912	1					
+ANR	6849	Identifier	int		5912	0					
+ANR	6850	SwitchStatement	switch ( vto [ i ] . type )		5912	2					
+ANR	6851	Condition	vto [ i ] . type	164:10:4737:4752	5912	0	True				
+ANR	6852	MemberAccess	vto [ i ] . type		5912	0					
+ANR	6853	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6854	Identifier	vto		5912	0					
+ANR	6855	Identifier	i		5912	1					
+ANR	6856	Identifier	type		5912	1					
+ANR	6857	CompoundStatement		164:29:4651:4651	5912	1					
+ANR	6858	Label	case FORMAT_STRING :	165:1:4759:4778	5912	0	True				
+ANR	6859	Identifier	FORMAT_STRING		5912	0					
+ANR	6860	Statement	vto	165:22:4780:4782	5912	1	True				
+ANR	6861	Statement	[	165:26:4784:4784	5912	2	True				
+ANR	6862	Statement	i	165:28:4786:4786	5912	3	True				
+ANR	6863	Statement	]	165:30:4788:4788	5912	4	True				
+ANR	6864	Statement	.	165:32:4790:4790	5912	5	True				
+ANR	6865	Statement	data	165:34:4792:4795	5912	6	True				
+ANR	6866	Statement	.	165:39:4797:4797	5912	7	True				
+ANR	6867	Statement	str	165:41:4799:4801	5912	8	True				
+ANR	6868	Statement	=	165:45:4803:4803	5912	9	True				
+ANR	6869	Statement	va_arg	165:47:4805:4810	5912	10	True				
+ANR	6870	Statement	(	165:54:4812:4812	5912	11	True				
+ANR	6871	Statement	arglist	165:56:4814:4820	5912	12	True				
+ANR	6872	Statement	","	165:64:4822:4822	5912	13	True				
+ANR	6873	Statement	char	165:66:4824:4827	5912	14	True				
+ANR	6874	Statement	*	165:71:4829:4829	5912	15	True				
+ANR	6875	Statement	)	165:73:4831:4831	5912	16	True				
+ANR	6876	ExpressionStatement		165:75:4833:4833	5912	17	True				
+ANR	6877	BreakStatement	break ;	166:1:4836:4842	5912	18	True				
+ANR	6878	Label	case FORMAT_INTPTR :	167:1:4845:4864	5912	19	True				
+ANR	6879	Identifier	FORMAT_INTPTR		5912	0					
+ANR	6880	Label	case FORMAT_UNKNOWN :	167:22:4866:4886	5912	20	True				
+ANR	6881	Identifier	FORMAT_UNKNOWN		5912	0					
+ANR	6882	Label	case FORMAT_PTR :	167:44:4888:4904	5912	21	True				
+ANR	6883	Identifier	FORMAT_PTR		5912	0					
+ANR	6884	Statement	vto	167:62:4906:4908	5912	22	True				
+ANR	6885	Statement	[	167:66:4910:4910	5912	23	True				
+ANR	6886	Statement	i	167:68:4912:4912	5912	24	True				
+ANR	6887	Statement	]	167:70:4914:4914	5912	25	True				
+ANR	6888	Statement	.	167:72:4916:4916	5912	26	True				
+ANR	6889	Statement	data	167:74:4918:4921	5912	27	True				
+ANR	6890	Statement	.	167:79:4923:4923	5912	28	True				
+ANR	6891	Statement	ptr	167:81:4925:4927	5912	29	True				
+ANR	6892	Statement	=	167:85:4929:4929	5912	30	True				
+ANR	6893	Statement	va_arg	167:87:4931:4936	5912	31	True				
+ANR	6894	Statement	(	167:94:4938:4938	5912	32	True				
+ANR	6895	Statement	arglist	167:96:4940:4946	5912	33	True				
+ANR	6896	Statement	","	167:104:4948:4948	5912	34	True				
+ANR	6897	Statement	void	167:106:4950:4953	5912	35	True				
+ANR	6898	Statement	*	167:111:4955:4955	5912	36	True				
+ANR	6899	Statement	)	167:113:4957:4957	5912	37	True				
+ANR	6900	ExpressionStatement		167:115:4959:4959	5912	38	True				
+ANR	6901	BreakStatement	break ;	168:1:4962:4968	5912	39	True				
+ANR	6902	Label	case FORMAT_INT :	169:1:4971:4987	5912	40	True				
+ANR	6903	Identifier	FORMAT_INT		5912	0					
+ANR	6904	Statement	ifdef	169:21:4991:4995	5912	41	True				
+ANR	6905	Statement	HAVE_LONG_LONG_TYPE	169:27:4997:5015	5912	42	True				
+ANR	6906	IfStatement	if ( ( vto [ i ] . flags & FLAGS_LONGLONG ) && ( vto [ i ] . flags & FLAGS_UNSIGNED ) )		5912	43					
+ANR	6907	Condition	( vto [ i ] . flags & FLAGS_LONGLONG ) && ( vto [ i ] . flags & FLAGS_UNSIGNED )	169:52:5022:5101	5912	0	True				
+ANR	6908	AndExpression	( vto [ i ] . flags & FLAGS_LONGLONG ) && ( vto [ i ] . flags & FLAGS_UNSIGNED )		5912	0		&&			
+ANR	6909	BitAndExpression	vto [ i ] . flags & FLAGS_LONGLONG		5912	0		&			
+ANR	6910	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	6911	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6912	Identifier	vto		5912	0					
+ANR	6913	Identifier	i		5912	1					
+ANR	6914	Identifier	flags		5912	1					
+ANR	6915	Identifier	FLAGS_LONGLONG		5912	1					
+ANR	6916	BitAndExpression	vto [ i ] . flags & FLAGS_UNSIGNED		5912	1		&			
+ANR	6917	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	6918	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6919	Identifier	vto		5912	0					
+ANR	6920	Identifier	i		5912	1					
+ANR	6921	Identifier	flags		5912	1					
+ANR	6922	Identifier	FLAGS_UNSIGNED		5912	1					
+ANR	6923	ExpressionStatement	"vto [ i ] . data . num . as_unsigned = ( mp_uintmax_t ) va_arg ( arglist , mp_uintmax_t )"	169:135:5105:5195	5912	1	True				
+ANR	6924	AssignmentExpression	"vto [ i ] . data . num . as_unsigned = ( mp_uintmax_t ) va_arg ( arglist , mp_uintmax_t )"		5912	0		=			
+ANR	6925	MemberAccess	vto [ i ] . data . num . as_unsigned		5912	0					
+ANR	6926	MemberAccess	vto [ i ] . data . num		5912	0					
+ANR	6927	MemberAccess	vto [ i ] . data		5912	0					
+ANR	6928	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6929	Identifier	vto		5912	0					
+ANR	6930	Identifier	i		5912	1					
+ANR	6931	Identifier	data		5912	1					
+ANR	6932	Identifier	num		5912	1					
+ANR	6933	Identifier	as_unsigned		5912	1					
+ANR	6934	CastExpression	"( mp_uintmax_t ) va_arg ( arglist , mp_uintmax_t )"		5912	1					
+ANR	6935	CastTarget	mp_uintmax_t		5912	0					
+ANR	6936	CallExpression	"va_arg ( arglist , mp_uintmax_t )"		5912	1					
+ANR	6937	Callee	va_arg		5912	0					
+ANR	6938	Identifier	va_arg		5912	0					
+ANR	6939	ArgumentList	arglist		5912	1					
+ANR	6940	Argument	arglist		5912	0					
+ANR	6941	Identifier	arglist		5912	0					
+ANR	6942	Argument	mp_uintmax_t		5912	1					
+ANR	6943	Identifier	mp_uintmax_t		5912	0					
+ANR	6944	ElseStatement	else		5912	0					
+ANR	6945	IfStatement	if ( vto [ i ] . flags & FLAGS_LONGLONG )		5912	0					
+ANR	6946	Condition	vto [ i ] . flags & FLAGS_LONGLONG	170:11:5208:5241	5912	0	True				
+ANR	6947	BitAndExpression	vto [ i ] . flags & FLAGS_LONGLONG		5912	0		&			
+ANR	6948	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	6949	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6950	Identifier	vto		5912	0					
+ANR	6951	Identifier	i		5912	1					
+ANR	6952	Identifier	flags		5912	1					
+ANR	6953	Identifier	FLAGS_LONGLONG		5912	1					
+ANR	6954	ExpressionStatement	"vto [ i ] . data . num . as_signed = ( mp_intmax_t ) va_arg ( arglist , mp_intmax_t )"	170:48:5245:5331	5912	1	True				
+ANR	6955	AssignmentExpression	"vto [ i ] . data . num . as_signed = ( mp_intmax_t ) va_arg ( arglist , mp_intmax_t )"		5912	0		=			
+ANR	6956	MemberAccess	vto [ i ] . data . num . as_signed		5912	0					
+ANR	6957	MemberAccess	vto [ i ] . data . num		5912	0					
+ANR	6958	MemberAccess	vto [ i ] . data		5912	0					
+ANR	6959	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6960	Identifier	vto		5912	0					
+ANR	6961	Identifier	i		5912	1					
+ANR	6962	Identifier	data		5912	1					
+ANR	6963	Identifier	num		5912	1					
+ANR	6964	Identifier	as_signed		5912	1					
+ANR	6965	CastExpression	"( mp_intmax_t ) va_arg ( arglist , mp_intmax_t )"		5912	1					
+ANR	6966	CastTarget	mp_intmax_t		5912	0					
+ANR	6967	CallExpression	"va_arg ( arglist , mp_intmax_t )"		5912	1					
+ANR	6968	Callee	va_arg		5912	0					
+ANR	6969	Identifier	va_arg		5912	0					
+ANR	6970	ArgumentList	arglist		5912	1					
+ANR	6971	Argument	arglist		5912	0					
+ANR	6972	Identifier	arglist		5912	0					
+ANR	6973	Argument	mp_intmax_t		5912	1					
+ANR	6974	Identifier	mp_intmax_t		5912	0					
+ANR	6975	ElseStatement	else		5912	0					
+ANR	6976	Statement	endif	171:8:5341:5345	5912	0	True				
+ANR	6977	CompoundStatement		171:14:5242:5242	5912	44					
+ANR	6978	IfStatement	if ( ( vto [ i ] . flags & FLAGS_LONG ) && ( vto [ i ] . flags & FLAGS_UNSIGNED ) )		5912	0					
+ANR	6979	Condition	( vto [ i ] . flags & FLAGS_LONG ) && ( vto [ i ] . flags & FLAGS_UNSIGNED )	172:6:5355:5430	5912	0	True				
+ANR	6980	AndExpression	( vto [ i ] . flags & FLAGS_LONG ) && ( vto [ i ] . flags & FLAGS_UNSIGNED )		5912	0		&&			
+ANR	6981	BitAndExpression	vto [ i ] . flags & FLAGS_LONG		5912	0		&			
+ANR	6982	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	6983	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6984	Identifier	vto		5912	0					
+ANR	6985	Identifier	i		5912	1					
+ANR	6986	Identifier	flags		5912	1					
+ANR	6987	Identifier	FLAGS_LONG		5912	1					
+ANR	6988	BitAndExpression	vto [ i ] . flags & FLAGS_UNSIGNED		5912	1		&			
+ANR	6989	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	6990	ArrayIndexing	vto [ i ]		5912	0					
+ANR	6991	Identifier	vto		5912	0					
+ANR	6992	Identifier	i		5912	1					
+ANR	6993	Identifier	flags		5912	1					
+ANR	6994	Identifier	FLAGS_UNSIGNED		5912	1					
+ANR	6995	Statement	vto	172:85:5434:5436	5912	1	True				
+ANR	6996	ElseStatement	else		5912	0					
+ANR	6997	IfStatement	if ( vto [ i ] . flags & FLAGS_LONG )		5912	0					
+ANR	6998	Condition	vto [ i ] . flags & FLAGS_LONG	173:11:5538:5567	5912	0	True				
+ANR	6999	BitAndExpression	vto [ i ] . flags & FLAGS_LONG		5912	0		&			
+ANR	7000	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	7001	ArrayIndexing	vto [ i ]		5912	0					
+ANR	7002	Identifier	vto		5912	0					
+ANR	7003	Identifier	i		5912	1					
+ANR	7004	Identifier	flags		5912	1					
+ANR	7005	Identifier	FLAGS_LONG		5912	1					
+ANR	7006	Statement	vto	173:44:5571:5573	5912	1	True				
+ANR	7007	ElseStatement	else		5912	0					
+ANR	7008	IfStatement	if ( vto [ i ] . flags & FLAGS_UNSIGNED )		5912	0					
+ANR	7009	Condition	vto [ i ] . flags & FLAGS_UNSIGNED	174:11:5663:5696	5912	0	True				
+ANR	7010	BitAndExpression	vto [ i ] . flags & FLAGS_UNSIGNED		5912	0		&			
+ANR	7011	MemberAccess	vto [ i ] . flags		5912	0					
+ANR	7012	ArrayIndexing	vto [ i ]		5912	0					
+ANR	7013	Identifier	vto		5912	0					
+ANR	7014	Identifier	i		5912	1					
+ANR	7015	Identifier	flags		5912	1					
+ANR	7016	Identifier	FLAGS_UNSIGNED		5912	1					
+ANR	7017	Statement	vto	174:48:5700:5702	5912	1	True				
+ANR	7018	ElseStatement	else		5912	0					
+ANR	7019	ExpressionStatement	"vto [ i ] . data . num . as_signed = ( mp_intmax_t ) va_arg ( arglist , int )"	175:6:5798:5876	5912	0	True				
+ANR	7020	AssignmentExpression	"vto [ i ] . data . num . as_signed = ( mp_intmax_t ) va_arg ( arglist , int )"		5912	0		=			
+ANR	7021	MemberAccess	vto [ i ] . data . num . as_signed		5912	0					
+ANR	7022	MemberAccess	vto [ i ] . data . num		5912	0					
+ANR	7023	MemberAccess	vto [ i ] . data		5912	0					
+ANR	7024	ArrayIndexing	vto [ i ]		5912	0					
+ANR	7025	Identifier	vto		5912	0					
+ANR	7026	Identifier	i		5912	1					
+ANR	7027	Identifier	data		5912	1					
+ANR	7028	Identifier	num		5912	1					
+ANR	7029	Identifier	as_signed		5912	1					
+ANR	7030	CastExpression	"( mp_intmax_t ) va_arg ( arglist , int )"		5912	1					
+ANR	7031	CastTarget	mp_intmax_t		5912	0					
+ANR	7032	CallExpression	"va_arg ( arglist , int )"		5912	1					
+ANR	7033	Callee	va_arg		5912	0					
+ANR	7034	Identifier	va_arg		5912	0					
+ANR	7035	ArgumentList	arglist		5912	1					
+ANR	7036	Argument	arglist		5912	0					
+ANR	7037	Identifier	arglist		5912	0					
+ANR	7038	Argument	int		5912	1					
+ANR	7039	Identifier	int		5912	0					
+ANR	7040	Statement	[	172:89:5438:5438	5912	1	True				
+ANR	7041	Statement	i	172:91:5440:5440	5912	2	True				
+ANR	7042	Statement	]	172:93:5442:5442	5912	3	True				
+ANR	7043	Statement	.	172:95:5444:5444	5912	4	True				
+ANR	7044	Statement	data	172:97:5446:5449	5912	5	True				
+ANR	7045	Statement	.	172:102:5451:5451	5912	6	True				
+ANR	7046	Statement	num	172:104:5453:5455	5912	7	True				
+ANR	7047	Statement	.	172:108:5457:5457	5912	8	True				
+ANR	7048	Statement	as_unsigned	172:110:5459:5469	5912	9	True				
+ANR	7049	Statement	=	172:122:5471:5471	5912	10	True				
+ANR	7050	Statement	(	172:124:5473:5473	5912	11	True				
+ANR	7051	Statement	mp_uintmax_t	172:126:5475:5486	5912	12	True				
+ANR	7052	Statement	)	172:139:5488:5488	5912	13	True				
+ANR	7053	Statement	va_arg	172:141:5490:5495	5912	14	True				
+ANR	7054	Statement	(	172:148:5497:5497	5912	15	True				
+ANR	7055	Statement	arglist	172:150:5499:5505	5912	16	True				
+ANR	7056	Statement	","	172:158:5507:5507	5912	17	True				
+ANR	7057	Statement	unsigned	172:160:5509:5516	5912	18	True				
+ANR	7058	Statement	long	172:169:5518:5521	5912	19	True				
+ANR	7059	Statement	)	172:174:5523:5523	5912	20	True				
+ANR	7060	ExpressionStatement		172:176:5525:5525	5912	21	True				
+ANR	7061	Statement	[	173:48:5575:5575	5912	22	True				
+ANR	7062	Statement	i	173:50:5577:5577	5912	23	True				
+ANR	7063	Statement	]	173:52:5579:5579	5912	24	True				
+ANR	7064	Statement	.	173:54:5581:5581	5912	25	True				
+ANR	7065	Statement	data	173:56:5583:5586	5912	26	True				
+ANR	7066	Statement	.	173:61:5588:5588	5912	27	True				
+ANR	7067	Statement	num	173:63:5590:5592	5912	28	True				
+ANR	7068	Statement	.	173:67:5594:5594	5912	29	True				
+ANR	7069	Statement	as_signed	173:69:5596:5604	5912	30	True				
+ANR	7070	Statement	=	173:79:5606:5606	5912	31	True				
+ANR	7071	Statement	(	173:81:5608:5608	5912	32	True				
+ANR	7072	Statement	mp_intmax_t	173:83:5610:5620	5912	33	True				
+ANR	7073	Statement	)	173:95:5622:5622	5912	34	True				
+ANR	7074	Statement	va_arg	173:97:5624:5629	5912	35	True				
+ANR	7075	Statement	(	173:104:5631:5631	5912	36	True				
+ANR	7076	Statement	arglist	173:106:5633:5639	5912	37	True				
+ANR	7077	Statement	","	173:114:5641:5641	5912	38	True				
+ANR	7078	Statement	long	173:116:5643:5646	5912	39	True				
+ANR	7079	Statement	)	173:121:5648:5648	5912	40	True				
+ANR	7080	ExpressionStatement		173:123:5650:5650	5912	41	True				
+ANR	7081	Statement	[	174:52:5704:5704	5912	42	True				
+ANR	7082	Statement	i	174:54:5706:5706	5912	43	True				
+ANR	7083	Statement	]	174:56:5708:5708	5912	44	True				
+ANR	7084	Statement	.	174:58:5710:5710	5912	45	True				
+ANR	7085	Statement	data	174:60:5712:5715	5912	46	True				
+ANR	7086	Statement	.	174:65:5717:5717	5912	47	True				
+ANR	7087	Statement	num	174:67:5719:5721	5912	48	True				
+ANR	7088	Statement	.	174:71:5723:5723	5912	49	True				
+ANR	7089	Statement	as_unsigned	174:73:5725:5735	5912	50	True				
+ANR	7090	Statement	=	174:85:5737:5737	5912	51	True				
+ANR	7091	Statement	(	174:87:5739:5739	5912	52	True				
+ANR	7092	Statement	mp_uintmax_t	174:89:5741:5752	5912	53	True				
+ANR	7093	Statement	)	174:102:5754:5754	5912	54	True				
+ANR	7094	Statement	va_arg	174:104:5756:5761	5912	55	True				
+ANR	7095	Statement	(	174:111:5763:5763	5912	56	True				
+ANR	7096	Statement	arglist	174:113:5765:5771	5912	57	True				
+ANR	7097	Statement	","	174:121:5773:5773	5912	58	True				
+ANR	7098	Statement	unsigned	174:123:5775:5782	5912	59	True				
+ANR	7099	Statement	int	174:132:5784:5786	5912	60	True				
+ANR	7100	Statement	)	174:136:5788:5788	5912	61	True				
+ANR	7101	ExpressionStatement		174:138:5790:5790	5912	62	True				
+ANR	7102	BreakStatement	break ;	177:1:5882:5888	5912	45	True				
+ANR	7103	Label	case FORMAT_DOUBLE :	178:1:5891:5910	5912	46	True				
+ANR	7104	Identifier	FORMAT_DOUBLE		5912	0					
+ANR	7105	ExpressionStatement	"vto [ i ] . data . dnum = va_arg ( arglist , double )"	178:22:5912:5966	5912	47	True				
+ANR	7106	AssignmentExpression	"vto [ i ] . data . dnum = va_arg ( arglist , double )"		5912	0		=			
+ANR	7107	MemberAccess	vto [ i ] . data . dnum		5912	0					
+ANR	7108	MemberAccess	vto [ i ] . data		5912	0					
+ANR	7109	ArrayIndexing	vto [ i ]		5912	0					
+ANR	7110	Identifier	vto		5912	0					
+ANR	7111	Identifier	i		5912	1					
+ANR	7112	Identifier	data		5912	1					
+ANR	7113	Identifier	dnum		5912	1					
+ANR	7114	CallExpression	"va_arg ( arglist , double )"		5912	1					
+ANR	7115	Callee	va_arg		5912	0					
+ANR	7116	Identifier	va_arg		5912	0					
+ANR	7117	ArgumentList	arglist		5912	1					
+ANR	7118	Argument	arglist		5912	0					
+ANR	7119	Identifier	arglist		5912	0					
+ANR	7120	Argument	double		5912	1					
+ANR	7121	Identifier	double		5912	0					
+ANR	7122	BreakStatement	break ;	179:1:5969:5975	5912	48	True				
+ANR	7123	Label	case FORMAT_WIDTH :	180:1:5978:5996	5912	49	True				
+ANR	7124	Identifier	FORMAT_WIDTH		5912	0					
+ANR	7125	ExpressionStatement	vto [ i ] . type = FORMAT_INT	180:21:5998:6028	5912	50	True				
+ANR	7126	AssignmentExpression	vto [ i ] . type = FORMAT_INT		5912	0		=			
+ANR	7127	MemberAccess	vto [ i ] . type		5912	0					
+ANR	7128	ArrayIndexing	vto [ i ]		5912	0					
+ANR	7129	Identifier	vto		5912	0					
+ANR	7130	Identifier	i		5912	1					
+ANR	7131	Identifier	type		5912	1					
+ANR	7132	Identifier	FORMAT_INT		5912	1					
+ANR	7133	BreakStatement	break ;	181:1:6031:6037	5912	51	True				
+ANR	7134	Label	default :	182:1:6040:6048	5912	52	True				
+ANR	7135	Identifier	default		5912	0					
+ANR	7136	BreakStatement	break ;	182:11:6050:6056	5912	53	True				
+ANR	7137	ReturnStatement	return 0 ;	185:1:6065:6074	5912	10	True				
+ANR	7138	PrimaryExpression	0		5912	0					
+ANR	7139	ReturnType	static int		5912	1					
+ANR	7140	Identifier	dprintf_Pass1		5912	2					
+ANR	7141	ParameterList	"const char * format , va_stack_t * vto , char * * endpos , va_list arglist"		5912	3					
+ANR	7142	Parameter	const char * format	1:27:27:45	5912	0	True				
+ANR	7143	ParameterType	const char *		5912	0					
+ANR	7144	Identifier	format		5912	1					
+ANR	7145	Parameter	va_stack_t * vto	1:49:49:64	5912	1	True				
+ANR	7146	ParameterType	va_stack_t *		5912	0					
+ANR	7147	Identifier	vto		5912	1					
+ANR	7148	Parameter	char * * endpos	1:68:68:82	5912	2	True				
+ANR	7149	ParameterType	char * *		5912	0					
+ANR	7150	Identifier	endpos		5912	1					
+ANR	7151	Parameter	va_list arglist	1:86:86:100	5912	3	True				
+ANR	7152	ParameterType	va_list		5912	0					
+ANR	7153	Identifier	arglist		5912	1					
+ANR	7154	CFGEntryNode	ENTRY		5912		True				
+ANR	7155	CFGExitNode	EXIT		5912		True				
+ANR	7156	Symbol	mp_uintmax_t		5912						
+ANR	7157	Symbol	* endpos ++		5912						
+ANR	7158	Symbol	vto [ vto [ i ] . precision ] . data		5912						
+ANR	7159	Symbol	FLAGS_LONGLONG		5912						
+ANR	7160	Symbol	FLAGS_WIDTHPARAM		5912						
+ANR	7161	Symbol	precision		5912						
+ANR	7162	Symbol	fmt		5912						
+ANR	7163	Symbol	dprintf_DollarString		5912						
+ANR	7164	Symbol	vto [ vto [ i ] . precision ] . data . num . as_signed		5912						
+ANR	7165	Symbol	endpos		5912						
+ANR	7166	Symbol	strncmp		5912						
+ANR	7167	Symbol	vto [ vto [ i ] . precision ] . data . num		5912						
+ANR	7168	Symbol	CURL_SIZEOF_CURL_OFF_T		5912						
+ANR	7169	Symbol	FLAGS_UPPER		5912						
+ANR	7170	Symbol	FLAGS_PREC		5912						
+ANR	7171	Symbol	* vto [ i ] . precision		5912						
+ANR	7172	Symbol	FLAGS_WIDTH		5912						
+ANR	7173	Symbol	FLAGS_SHORT		5912						
+ANR	7174	Symbol	* vto		5912						
+ANR	7175	Symbol	va_arg		5912						
+ANR	7176	Symbol	* vto [ i ] . width		5912						
+ANR	7177	Symbol	FORMAT_DOUBLE		5912						
+ANR	7178	Symbol	* * i		5912						
+ANR	7179	Symbol	double		5912						
+ANR	7180	Symbol	max_param		5912						
+ANR	7181	Symbol	format		5912						
+ANR	7182	Symbol	vto [ i ] . data		5912						
+ANR	7183	Symbol	CURL_SIZEOF_LONG		5912						
+ANR	7184	Symbol	mp_intmax_t		5912						
+ANR	7185	Symbol	vto [ vto [ i ] . width ] . data . num		5912						
+ANR	7186	Symbol	FLAGS_SPACE		5912						
+ANR	7187	Symbol	vto [ k ] . precision		5912						
+ANR	7188	Symbol	param_num		5912						
+ANR	7189	Symbol	vto [ i ] . type		5912						
+ANR	7190	Symbol	FLAGS_FLOATE		5912						
+ANR	7191	Symbol	vto [ k ] . flags		5912						
+ANR	7192	Symbol	vto [ i ] . data . num		5912						
+ANR	7193	Symbol	FLAGS_LEFT		5912						
+ANR	7194	Symbol	FLAGS_FLOATG		5912						
+ANR	7195	Symbol	vto [ i ] . data . num . as_unsigned		5912						
+ANR	7196	Symbol	& fmt		5912						
+ANR	7197	Symbol	FLAGS_LONGDOUBLE		5912						
+ANR	7198	Symbol	vto [ i ] . data . dnum		5912						
+ANR	7199	Symbol	FLAGS_UNSIGNED		5912						
+ANR	7200	Symbol	FLAGS_OCTAL		5912						
+ANR	7201	Symbol	FLAGS_LONG		5912						
+ANR	7202	Symbol	FORMAT_STRING		5912						
+ANR	7203	Symbol	FLAGS_NEW		5912						
+ANR	7204	Symbol	FLAGS_PAD_NIL		5912						
+ANR	7205	Symbol	* * vto		5912						
+ANR	7206	Symbol	FLAGS_PRECPARAM		5912						
+ANR	7207	Symbol	FLAGS_CHAR		5912						
+ANR	7208	Symbol	vto [ vto [ i ] . width ] . data		5912						
+ANR	7209	Symbol	flags		5912						
+ANR	7210	Symbol	* fmt		5912						
+ANR	7211	Symbol	FLAGS_HEX		5912						
+ANR	7212	Symbol	vto [ i ] . precision		5912						
+ANR	7213	Symbol	FORMAT_PTR		5912						
+ANR	7214	Symbol	FORMAT_INT		5912						
+ANR	7215	Symbol	FORMAT_INTPTR		5912						
+ANR	7216	Symbol	strtol		5912						
+ANR	7217	Symbol	arglist		5912						
+ANR	7218	Symbol	FLAGS_SHOWSIGN		5912						
+ANR	7219	Symbol	vto [ i ] . width		5912						
+ANR	7220	Symbol	SIZEOF_SIZE_T		5912						
+ANR	7221	Symbol	FLAGS_ALT		5912						
+ANR	7222	Symbol	FORMAT_WIDTH		5912						
+ANR	7223	Symbol	FORMAT_UNKNOWN		5912						
+ANR	7224	Symbol	vto [ i ] . data . num . as_signed		5912						
+ANR	7225	Symbol	vto [ k ] . type		5912						
+ANR	7226	Symbol	i		5912						
+ANR	7227	Symbol	vto [ vto [ i ] . width ] . data . num . as_signed		5912						
+ANR	7228	Symbol	k		5912						
+ANR	7229	Symbol	dprintf_IsQualifierNoDollar		5912						
+ANR	7230	Symbol	MAX_PARAMETERS		5912						
+ANR	7231	Symbol	int		5912						
+ANR	7232	Symbol	vto [ k ] . width		5912						
+ANR	7233	Symbol	vto		5912						
+ANR	7234	Symbol	* i		5912						
+ANR	7235	Symbol	* fmt ++		5912						
+ANR	7236	Symbol	* k		5912						
+ANR	7237	Symbol	vto [ i ] . flags		5912						
+ANR	7238	Symbol	width		5912						
+ANR	7239	Symbol	this_param		5912						

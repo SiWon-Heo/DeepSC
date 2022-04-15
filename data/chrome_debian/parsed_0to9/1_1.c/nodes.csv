@@ -1,0 +1,154 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	137	File	tmp/1_1.c								
+ANR	138	Function	jbig2_word_stream_buf_get_next_word	1:0:0:584							
+ANR	139	FunctionDef	"jbig2_word_stream_buf_get_next_word (Jbig2WordStream * self , int offset , uint32_t * word)"		138	0					
+ANR	140	CompoundStatement		1:105:105:584	138	0					
+ANR	141	IdentifierDeclStatement	Jbig2WordStreamBuf * z = ( Jbig2WordStreamBuf * ) self ;	2:1:108:163	138	0	True				
+ANR	142	IdentifierDecl	* z = ( Jbig2WordStreamBuf * ) self		138	0					
+ANR	143	IdentifierDeclType	Jbig2WordStreamBuf *		138	0					
+ANR	144	Identifier	z		138	1					
+ANR	145	AssignmentExpression	* z = ( Jbig2WordStreamBuf * ) self		138	2		=			
+ANR	146	Identifier	z		138	0					
+ANR	147	CastExpression	( Jbig2WordStreamBuf * ) self		138	1					
+ANR	148	CastTarget	Jbig2WordStreamBuf *		138	0					
+ANR	149	Identifier	self		138	1					
+ANR	150	IdentifierDeclStatement	const byte * data = z -> data ;	3:1:166:196	138	1	True				
+ANR	151	IdentifierDecl	* data = z -> data		138	0					
+ANR	152	IdentifierDeclType	const byte *		138	0					
+ANR	153	Identifier	data		138	1					
+ANR	154	AssignmentExpression	* data = z -> data		138	2		=			
+ANR	155	Identifier	data		138	0					
+ANR	156	PtrMemberAccess	z -> data		138	1					
+ANR	157	Identifier	z		138	0					
+ANR	158	Identifier	data		138	1					
+ANR	159	IdentifierDeclStatement	uint32_t result ;	4:1:199:215	138	2	True				
+ANR	160	IdentifierDecl	result		138	0					
+ANR	161	IdentifierDeclType	uint32_t		138	0					
+ANR	162	Identifier	result		138	1					
+ANR	163	IfStatement	if ( offset + 4 < z -> size )		138	3					
+ANR	164	Condition	offset + 4 < z -> size	5:6:223:244	138	0	True				
+ANR	165	RelationalExpression	offset + 4 < z -> size		138	0		<			
+ANR	166	AdditiveExpression	offset + 4		138	0		+			
+ANR	167	Identifier	offset		138	0					
+ANR	168	PrimaryExpression	4		138	1					
+ANR	169	PtrMemberAccess	z -> size		138	1					
+ANR	170	Identifier	z		138	0					
+ANR	171	Identifier	size		138	1					
+ANR	172	ExpressionStatement	result = ( data [ offset ] << 24 ) | ( data [ offset + 1 ] << 16 ) | ( data [ offset + 2 ] << 8 ) | data [ offset + 3 ]	5:31:248:368	138	1	True				
+ANR	173	AssignmentExpression	result = ( data [ offset ] << 24 ) | ( data [ offset + 1 ] << 16 ) | ( data [ offset + 2 ] << 8 ) | data [ offset + 3 ]		138	0		=			
+ANR	174	Identifier	result		138	0					
+ANR	175	InclusiveOrExpression	( data [ offset ] << 24 ) | ( data [ offset + 1 ] << 16 ) | ( data [ offset + 2 ] << 8 ) | data [ offset + 3 ]		138	1		|			
+ANR	176	ShiftExpression	data [ offset ] << 24		138	0		<<			
+ANR	177	ArrayIndexing	data [ offset ]		138	0					
+ANR	178	Identifier	data		138	0					
+ANR	179	Identifier	offset		138	1					
+ANR	180	PrimaryExpression	24		138	1					
+ANR	181	InclusiveOrExpression	( data [ offset + 1 ] << 16 ) | ( data [ offset + 2 ] << 8 ) | data [ offset + 3 ]		138	1		|			
+ANR	182	ShiftExpression	data [ offset + 1 ] << 16		138	0		<<			
+ANR	183	ArrayIndexing	data [ offset + 1 ]		138	0					
+ANR	184	Identifier	data		138	0					
+ANR	185	AdditiveExpression	offset + 1		138	1		+			
+ANR	186	Identifier	offset		138	0					
+ANR	187	PrimaryExpression	1		138	1					
+ANR	188	PrimaryExpression	16		138	1					
+ANR	189	InclusiveOrExpression	( data [ offset + 2 ] << 8 ) | data [ offset + 3 ]		138	1		|			
+ANR	190	ShiftExpression	data [ offset + 2 ] << 8		138	0		<<			
+ANR	191	ArrayIndexing	data [ offset + 2 ]		138	0					
+ANR	192	Identifier	data		138	0					
+ANR	193	AdditiveExpression	offset + 2		138	1		+			
+ANR	194	Identifier	offset		138	0					
+ANR	195	PrimaryExpression	2		138	1					
+ANR	196	PrimaryExpression	8		138	1					
+ANR	197	ArrayIndexing	data [ offset + 3 ]		138	1					
+ANR	198	Identifier	data		138	0					
+ANR	199	AdditiveExpression	offset + 3		138	1		+			
+ANR	200	Identifier	offset		138	0					
+ANR	201	PrimaryExpression	3		138	1					
+ANR	202	ElseStatement	else		138	0					
+ANR	203	IfStatement	if ( offset > z -> size )		138	0					
+ANR	204	Condition	offset > z -> size	6:11:381:398	138	0	True				
+ANR	205	RelationalExpression	offset > z -> size		138	0		>			
+ANR	206	Identifier	offset		138	0					
+ANR	207	PtrMemberAccess	z -> size		138	1					
+ANR	208	Identifier	z		138	0					
+ANR	209	Identifier	size		138	1					
+ANR	210	ReturnStatement	return - 1 ;	6:32:402:413	138	1	True				
+ANR	211	UnaryOperationExpression	- 1		138	0					
+ANR	212	UnaryOperator	-		138	0					
+ANR	213	PrimaryExpression	1		138	1					
+ANR	214	ElseStatement	else		138	0					
+ANR	215	CompoundStatement		8:1:318:324	138	0					
+ANR	216	IdentifierDeclStatement	int i ;	8:1:424:430	138	0	True				
+ANR	217	IdentifierDecl	i		138	0					
+ANR	218	IdentifierDeclType	int		138	0					
+ANR	219	Identifier	i		138	1					
+ANR	220	ExpressionStatement	result = 0	9:1:433:444	138	1	True				
+ANR	221	AssignmentExpression	result = 0		138	0		=			
+ANR	222	Identifier	result		138	0					
+ANR	223	PrimaryExpression	0		138	1					
+ANR	224	ForStatement	for ( i = 0 ; i < z -> size - offset ; i ++ )		138	2					
+ANR	225	ForInit	i = 0 ;	10:7:453:459	138	0	True				
+ANR	226	AssignmentExpression	i = 0		138	0		=			
+ANR	227	Identifier	i		138	0					
+ANR	228	PrimaryExpression	0		138	1					
+ANR	229	Condition	i < z -> size - offset	11:1:462:483	138	1	True				
+ANR	230	RelationalExpression	i < z -> size - offset		138	0		<			
+ANR	231	Identifier	i		138	0					
+ANR	232	AdditiveExpression	z -> size - offset		138	1		-			
+ANR	233	PtrMemberAccess	z -> size		138	0					
+ANR	234	Identifier	z		138	0					
+ANR	235	Identifier	size		138	1					
+ANR	236	Identifier	offset		138	1					
+ANR	237	PostIncDecOperationExpression	i ++	12:1:488:491	138	2	True				
+ANR	238	Identifier	i		138	0					
+ANR	239	IncDec	++		138	1					
+ANR	240	ExpressionStatement	result |= data [ offset + i ] << ( ( 3 - i ) << 3 )	12:8:495:547	138	3	True				
+ANR	241	AssignmentExpression	result |= data [ offset + i ] << ( ( 3 - i ) << 3 )		138	0		|=			
+ANR	242	Identifier	result		138	0					
+ANR	243	ShiftExpression	data [ offset + i ] << ( ( 3 - i ) << 3 )		138	1		<<			
+ANR	244	ArrayIndexing	data [ offset + i ]		138	0					
+ANR	245	Identifier	data		138	0					
+ANR	246	AdditiveExpression	offset + i		138	1		+			
+ANR	247	Identifier	offset		138	0					
+ANR	248	Identifier	i		138	1					
+ANR	249	ShiftExpression	( 3 - i ) << 3		138	1		<<			
+ANR	250	AdditiveExpression	3 - i		138	0		-			
+ANR	251	PrimaryExpression	3		138	0					
+ANR	252	Identifier	i		138	1					
+ANR	253	PrimaryExpression	3		138	1					
+ANR	254	ExpressionStatement	* word = result	14:1:553:569	138	4	True				
+ANR	255	AssignmentExpression	* word = result		138	0		=			
+ANR	256	UnaryOperationExpression	* word		138	0					
+ANR	257	UnaryOperator	*		138	0					
+ANR	258	Identifier	word		138	1					
+ANR	259	Identifier	result		138	1					
+ANR	260	ReturnStatement	return 0 ;	15:1:572:581	138	5	True				
+ANR	261	PrimaryExpression	0		138	0					
+ANR	262	ReturnType	static int		138	1					
+ANR	263	Identifier	jbig2_word_stream_buf_get_next_word		138	2					
+ANR	264	ParameterList	"Jbig2WordStream * self , int offset , uint32_t * word"		138	3					
+ANR	265	Parameter	Jbig2WordStream * self	1:49:49:70	138	0	True				
+ANR	266	ParameterType	Jbig2WordStream *		138	0					
+ANR	267	Identifier	self		138	1					
+ANR	268	Parameter	int offset	1:74:74:83	138	1	True				
+ANR	269	ParameterType	int		138	0					
+ANR	270	Identifier	offset		138	1					
+ANR	271	Parameter	uint32_t * word	1:87:87:101	138	2	True				
+ANR	272	ParameterType	uint32_t *		138	0					
+ANR	273	Identifier	word		138	1					
+ANR	274	CFGEntryNode	ENTRY		138		True				
+ANR	275	CFGExitNode	EXIT		138		True				
+ANR	276	Symbol	offset		138						
+ANR	277	Symbol	data		138						
+ANR	278	Symbol	* z		138						
+ANR	279	Symbol	* word		138						
+ANR	280	Symbol	i		138						
+ANR	281	Symbol	z -> data		138						
+ANR	282	Symbol	z -> size		138						
+ANR	283	Symbol	result		138						
+ANR	284	Symbol	* i		138						
+ANR	285	Symbol	self		138						
+ANR	286	Symbol	* offset		138						
+ANR	287	Symbol	z		138						
+ANR	288	Symbol	word		138						
+ANR	289	Symbol	* data		138						

@@ -1,0 +1,66 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	371	File	tmp/11_0.c								
+ANR	372	Function	curl_msnprintf	1:0:0:265							
+ANR	373	FunctionDef	"curl_msnprintf (char * buffer , size_t maxlength , const char * format)"		372	0					
+ANR	374	CompoundStatement		1:84:84:265	372	0					
+ANR	375	IdentifierDeclStatement	int retcode ;	2:1:87:99	372	0	True				
+ANR	376	IdentifierDecl	retcode		372	0					
+ANR	377	IdentifierDeclType	int		372	0					
+ANR	378	Identifier	retcode		372	1					
+ANR	379	IdentifierDeclStatement	va_list ap_save ;	3:1:102:118	372	1	True				
+ANR	380	IdentifierDecl	ap_save		372	0					
+ANR	381	IdentifierDeclType	va_list		372	0					
+ANR	382	Identifier	ap_save		372	1					
+ANR	383	ExpressionStatement	"va_start ( ap_save , format )"	4:1:121:151	372	2	True				
+ANR	384	CallExpression	"va_start ( ap_save , format )"		372	0					
+ANR	385	Callee	va_start		372	0					
+ANR	386	Identifier	va_start		372	0					
+ANR	387	ArgumentList	ap_save		372	1					
+ANR	388	Argument	ap_save		372	0					
+ANR	389	Identifier	ap_save		372	0					
+ANR	390	Argument	format		372	1					
+ANR	391	Identifier	format		372	0					
+ANR	392	ExpressionStatement	"retcode = curl_mvsnprintf ( buffer , maxlength , format , ap_save )"	5:1:154:222	372	3	True				
+ANR	393	AssignmentExpression	"retcode = curl_mvsnprintf ( buffer , maxlength , format , ap_save )"		372	0		=			
+ANR	394	Identifier	retcode		372	0					
+ANR	395	CallExpression	"curl_mvsnprintf ( buffer , maxlength , format , ap_save )"		372	1					
+ANR	396	Callee	curl_mvsnprintf		372	0					
+ANR	397	Identifier	curl_mvsnprintf		372	0					
+ANR	398	ArgumentList	buffer		372	1					
+ANR	399	Argument	buffer		372	0					
+ANR	400	Identifier	buffer		372	0					
+ANR	401	Argument	maxlength		372	1					
+ANR	402	Identifier	maxlength		372	0					
+ANR	403	Argument	format		372	2					
+ANR	404	Identifier	format		372	0					
+ANR	405	Argument	ap_save		372	3					
+ANR	406	Identifier	ap_save		372	0					
+ANR	407	ExpressionStatement	va_end ( ap_save )	6:1:225:244	372	4	True				
+ANR	408	CallExpression	va_end ( ap_save )		372	0					
+ANR	409	Callee	va_end		372	0					
+ANR	410	Identifier	va_end		372	0					
+ANR	411	ArgumentList	ap_save		372	1					
+ANR	412	Argument	ap_save		372	0					
+ANR	413	Identifier	ap_save		372	0					
+ANR	414	ReturnStatement	return retcode ;	7:1:247:262	372	5	True				
+ANR	415	Identifier	retcode		372	0					
+ANR	416	ReturnType	int		372	1					
+ANR	417	Identifier	curl_msnprintf		372	2					
+ANR	418	ParameterList	"char * buffer , size_t maxlength , const char * format"		372	3					
+ANR	419	Parameter	char * buffer	1:21:21:33	372	0	True				
+ANR	420	ParameterType	char *		372	0					
+ANR	421	Identifier	buffer		372	1					
+ANR	422	Parameter	size_t maxlength	1:37:37:52	372	1	True				
+ANR	423	ParameterType	size_t		372	0					
+ANR	424	Identifier	maxlength		372	1					
+ANR	425	Parameter	const char * format	1:56:56:74	372	2	True				
+ANR	426	ParameterType	const char *		372	0					
+ANR	427	Identifier	format		372	1					
+ANR	428	CFGEntryNode	ENTRY		372		True				
+ANR	429	CFGExitNode	EXIT		372		True				
+ANR	430	Symbol	maxlength		372						
+ANR	431	Symbol	ap_save		372						
+ANR	432	Symbol	format		372						
+ANR	433	Symbol	buffer		372						
+ANR	434	Symbol	curl_mvsnprintf		372						
+ANR	435	Symbol	retcode		372						

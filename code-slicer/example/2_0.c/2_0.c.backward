@@ -1,0 +1,1 @@
+int curl_mprintf ( const char * format , ... ) {

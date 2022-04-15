@@ -1,0 +1,736 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	3265	File	tmp/4_1.c								
+ANR	3266	Function	jbig2_immediate_generic_region	1:0:0:3547							
+ANR	3267	FunctionDef	"jbig2_immediate_generic_region (Jbig2Ctx * ctx , Jbig2Segment * segment , const byte * segment_data)"		3266	0					
+ANR	3268	CompoundStatement		1:107:107:3547	3266	0					
+ANR	3269	IdentifierDeclStatement	Jbig2RegionSegmentInfo rsi ;	2:1:110:137	3266	0	True				
+ANR	3270	IdentifierDecl	rsi		3266	0					
+ANR	3271	IdentifierDeclType	Jbig2RegionSegmentInfo		3266	0					
+ANR	3272	Identifier	rsi		3266	1					
+ANR	3273	IdentifierDeclStatement	byte seg_flags ;	3:1:140:155	3266	1	True				
+ANR	3274	IdentifierDecl	seg_flags		3266	0					
+ANR	3275	IdentifierDeclType	byte		3266	0					
+ANR	3276	Identifier	seg_flags		3266	1					
+ANR	3277	IdentifierDeclStatement	int8_t gbat [ 8 ] ;	4:1:158:176	3266	2	True				
+ANR	3278	IdentifierDecl	gbat [ 8 ]		3266	0					
+ANR	3279	IdentifierDeclType	int8_t [ 8 ]		3266	0					
+ANR	3280	Identifier	gbat		3266	1					
+ANR	3281	PrimaryExpression	8		3266	2					
+ANR	3282	IdentifierDeclStatement	int offset ;	5:1:179:190	3266	3	True				
+ANR	3283	IdentifierDecl	offset		3266	0					
+ANR	3284	IdentifierDeclType	int		3266	0					
+ANR	3285	Identifier	offset		3266	1					
+ANR	3286	IdentifierDeclStatement	int gbat_bytes = 0 ;	6:1:193:212	3266	4	True				
+ANR	3287	IdentifierDecl	gbat_bytes = 0		3266	0					
+ANR	3288	IdentifierDeclType	int		3266	0					
+ANR	3289	Identifier	gbat_bytes		3266	1					
+ANR	3290	AssignmentExpression	gbat_bytes = 0		3266	2		=			
+ANR	3291	Identifier	gbat_bytes		3266	0					
+ANR	3292	PrimaryExpression	0		3266	1					
+ANR	3293	IdentifierDeclStatement	Jbig2GenericRegionParams params ;	7:1:215:247	3266	5	True				
+ANR	3294	IdentifierDecl	params		3266	0					
+ANR	3295	IdentifierDeclType	Jbig2GenericRegionParams		3266	0					
+ANR	3296	Identifier	params		3266	1					
+ANR	3297	IdentifierDeclStatement	int code = 0 ;	8:1:250:263	3266	6	True				
+ANR	3298	IdentifierDecl	code = 0		3266	0					
+ANR	3299	IdentifierDeclType	int		3266	0					
+ANR	3300	Identifier	code		3266	1					
+ANR	3301	AssignmentExpression	code = 0		3266	2		=			
+ANR	3302	Identifier	code		3266	0					
+ANR	3303	PrimaryExpression	0		3266	1					
+ANR	3304	IdentifierDeclStatement	Jbig2Image * image = NULL ;	9:1:266:292	3266	7	True				
+ANR	3305	IdentifierDecl	* image = NULL		3266	0					
+ANR	3306	IdentifierDeclType	Jbig2Image *		3266	0					
+ANR	3307	Identifier	image		3266	1					
+ANR	3308	AssignmentExpression	* image = NULL		3266	2		=			
+ANR	3309	Identifier	NULL		3266	0					
+ANR	3310	Identifier	NULL		3266	1					
+ANR	3311	IdentifierDeclStatement	Jbig2WordStream * ws = NULL ;	10:1:295:323	3266	8	True				
+ANR	3312	IdentifierDecl	* ws = NULL		3266	0					
+ANR	3313	IdentifierDeclType	Jbig2WordStream *		3266	0					
+ANR	3314	Identifier	ws		3266	1					
+ANR	3315	AssignmentExpression	* ws = NULL		3266	2		=			
+ANR	3316	Identifier	NULL		3266	0					
+ANR	3317	Identifier	NULL		3266	1					
+ANR	3318	IdentifierDeclStatement	Jbig2ArithState * as = NULL ;	11:1:326:354	3266	9	True				
+ANR	3319	IdentifierDecl	* as = NULL		3266	0					
+ANR	3320	IdentifierDeclType	Jbig2ArithState *		3266	0					
+ANR	3321	Identifier	as		3266	1					
+ANR	3322	AssignmentExpression	* as = NULL		3266	2		=			
+ANR	3323	Identifier	NULL		3266	0					
+ANR	3324	Identifier	NULL		3266	1					
+ANR	3325	IdentifierDeclStatement	Jbig2ArithCx * GB_stats = NULL ;	12:1:357:388	3266	10	True				
+ANR	3326	IdentifierDecl	* GB_stats = NULL		3266	0					
+ANR	3327	IdentifierDeclType	Jbig2ArithCx *		3266	0					
+ANR	3328	Identifier	GB_stats		3266	1					
+ANR	3329	AssignmentExpression	* GB_stats = NULL		3266	2		=			
+ANR	3330	Identifier	NULL		3266	0					
+ANR	3331	Identifier	NULL		3266	1					
+ANR	3332	IfStatement	if ( segment -> data_length < 18 )		3266	11					
+ANR	3333	Condition	segment -> data_length < 18	13:6:396:422	3266	0	True				
+ANR	3334	RelationalExpression	segment -> data_length < 18		3266	0		<			
+ANR	3335	PtrMemberAccess	segment -> data_length		3266	0					
+ANR	3336	Identifier	segment		3266	0					
+ANR	3337	Identifier	data_length		3266	1					
+ANR	3338	PrimaryExpression	18		3266	1					
+ANR	3339	ReturnStatement	"return jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Segment too short"" ) ;"	13:36:426:518	3266	1	True				
+ANR	3340	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Segment too short"" )"		3266	0					
+ANR	3341	Callee	jbig2_error		3266	0					
+ANR	3342	Identifier	jbig2_error		3266	0					
+ANR	3343	ArgumentList	ctx		3266	1					
+ANR	3344	Argument	ctx		3266	0					
+ANR	3345	Identifier	ctx		3266	0					
+ANR	3346	Argument	JBIG2_SEVERITY_FATAL		3266	1					
+ANR	3347	Identifier	JBIG2_SEVERITY_FATAL		3266	0					
+ANR	3348	Argument	segment -> number		3266	2					
+ANR	3349	PtrMemberAccess	segment -> number		3266	0					
+ANR	3350	Identifier	segment		3266	0					
+ANR	3351	Identifier	number		3266	1					
+ANR	3352	Argument	"""Segment too short"""		3266	3					
+ANR	3353	PrimaryExpression	"""Segment too short"""		3266	0					
+ANR	3354	ExpressionStatement	"jbig2_get_region_segment_info ( & rsi , segment_data )"	14:1:521:576	3266	12	True				
+ANR	3355	CallExpression	"jbig2_get_region_segment_info ( & rsi , segment_data )"		3266	0					
+ANR	3356	Callee	jbig2_get_region_segment_info		3266	0					
+ANR	3357	Identifier	jbig2_get_region_segment_info		3266	0					
+ANR	3358	ArgumentList	& rsi		3266	1					
+ANR	3359	Argument	& rsi		3266	0					
+ANR	3360	UnaryOperationExpression	& rsi		3266	0					
+ANR	3361	UnaryOperator	&		3266	0					
+ANR	3362	Identifier	rsi		3266	1					
+ANR	3363	Argument	segment_data		3266	1					
+ANR	3364	Identifier	segment_data		3266	0					
+ANR	3365	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""generic region: %d x %d @ (%d, %d), flags = %02x"" , rsi . width , rsi . height , rsi . x , rsi . y , rsi . flags )"	15:1:579:757	3266	13	True				
+ANR	3366	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""generic region: %d x %d @ (%d, %d), flags = %02x"" , rsi . width , rsi . height , rsi . x , rsi . y , rsi . flags )"		3266	0					
+ANR	3367	Callee	jbig2_error		3266	0					
+ANR	3368	Identifier	jbig2_error		3266	0					
+ANR	3369	ArgumentList	ctx		3266	1					
+ANR	3370	Argument	ctx		3266	0					
+ANR	3371	Identifier	ctx		3266	0					
+ANR	3372	Argument	JBIG2_SEVERITY_INFO		3266	1					
+ANR	3373	Identifier	JBIG2_SEVERITY_INFO		3266	0					
+ANR	3374	Argument	segment -> number		3266	2					
+ANR	3375	PtrMemberAccess	segment -> number		3266	0					
+ANR	3376	Identifier	segment		3266	0					
+ANR	3377	Identifier	number		3266	1					
+ANR	3378	Argument	"""generic region: %d x %d @ (%d, %d), flags = %02x"""		3266	3					
+ANR	3379	PrimaryExpression	"""generic region: %d x %d @ (%d, %d), flags = %02x"""		3266	0					
+ANR	3380	Argument	rsi . width		3266	4					
+ANR	3381	MemberAccess	rsi . width		3266	0					
+ANR	3382	Identifier	rsi		3266	0					
+ANR	3383	Identifier	width		3266	1					
+ANR	3384	Argument	rsi . height		3266	5					
+ANR	3385	MemberAccess	rsi . height		3266	0					
+ANR	3386	Identifier	rsi		3266	0					
+ANR	3387	Identifier	height		3266	1					
+ANR	3388	Argument	rsi . x		3266	6					
+ANR	3389	MemberAccess	rsi . x		3266	0					
+ANR	3390	Identifier	rsi		3266	0					
+ANR	3391	Identifier	x		3266	1					
+ANR	3392	Argument	rsi . y		3266	7					
+ANR	3393	MemberAccess	rsi . y		3266	0					
+ANR	3394	Identifier	rsi		3266	0					
+ANR	3395	Identifier	y		3266	1					
+ANR	3396	Argument	rsi . flags		3266	8					
+ANR	3397	MemberAccess	rsi . flags		3266	0					
+ANR	3398	Identifier	rsi		3266	0					
+ANR	3399	Identifier	flags		3266	1					
+ANR	3400	ExpressionStatement	seg_flags = segment_data [ 17 ]	16:1:760:792	3266	14	True				
+ANR	3401	AssignmentExpression	seg_flags = segment_data [ 17 ]		3266	0		=			
+ANR	3402	Identifier	seg_flags		3266	0					
+ANR	3403	ArrayIndexing	segment_data [ 17 ]		3266	1					
+ANR	3404	Identifier	segment_data		3266	0					
+ANR	3405	PrimaryExpression	17		3266	1					
+ANR	3406	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""segment flags = %02x"" , seg_flags )"	17:1:795:894	3266	15	True				
+ANR	3407	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""segment flags = %02x"" , seg_flags )"		3266	0					
+ANR	3408	Callee	jbig2_error		3266	0					
+ANR	3409	Identifier	jbig2_error		3266	0					
+ANR	3410	ArgumentList	ctx		3266	1					
+ANR	3411	Argument	ctx		3266	0					
+ANR	3412	Identifier	ctx		3266	0					
+ANR	3413	Argument	JBIG2_SEVERITY_INFO		3266	1					
+ANR	3414	Identifier	JBIG2_SEVERITY_INFO		3266	0					
+ANR	3415	Argument	segment -> number		3266	2					
+ANR	3416	PtrMemberAccess	segment -> number		3266	0					
+ANR	3417	Identifier	segment		3266	0					
+ANR	3418	Identifier	number		3266	1					
+ANR	3419	Argument	"""segment flags = %02x"""		3266	3					
+ANR	3420	PrimaryExpression	"""segment flags = %02x"""		3266	0					
+ANR	3421	Argument	seg_flags		3266	4					
+ANR	3422	Identifier	seg_flags		3266	0					
+ANR	3423	IfStatement	if ( ( seg_flags & 1 ) && ( seg_flags & 6 ) )		3266	16					
+ANR	3424	Condition	( seg_flags & 1 ) && ( seg_flags & 6 )	18:6:902:939	3266	0	True				
+ANR	3425	AndExpression	( seg_flags & 1 ) && ( seg_flags & 6 )		3266	0		&&			
+ANR	3426	BitAndExpression	seg_flags & 1		3266	0		&			
+ANR	3427	Identifier	seg_flags		3266	0					
+ANR	3428	PrimaryExpression	1		3266	1					
+ANR	3429	BitAndExpression	seg_flags & 6		3266	1		&			
+ANR	3430	Identifier	seg_flags		3266	0					
+ANR	3431	PrimaryExpression	6		3266	1					
+ANR	3432	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""MMR is 1, but GBTEMPLATE is not 0"" )"	18:47:943:1046	3266	1	True				
+ANR	3433	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""MMR is 1, but GBTEMPLATE is not 0"" )"		3266	0					
+ANR	3434	Callee	jbig2_error		3266	0					
+ANR	3435	Identifier	jbig2_error		3266	0					
+ANR	3436	ArgumentList	ctx		3266	1					
+ANR	3437	Argument	ctx		3266	0					
+ANR	3438	Identifier	ctx		3266	0					
+ANR	3439	Argument	JBIG2_SEVERITY_WARNING		3266	1					
+ANR	3440	Identifier	JBIG2_SEVERITY_WARNING		3266	0					
+ANR	3441	Argument	segment -> number		3266	2					
+ANR	3442	PtrMemberAccess	segment -> number		3266	0					
+ANR	3443	Identifier	segment		3266	0					
+ANR	3444	Identifier	number		3266	1					
+ANR	3445	Argument	"""MMR is 1, but GBTEMPLATE is not 0"""		3266	3					
+ANR	3446	PrimaryExpression	"""MMR is 1, but GBTEMPLATE is not 0"""		3266	0					
+ANR	3447	IfStatement	if ( ! ( seg_flags & 1 ) )		3266	17					
+ANR	3448	Condition	! ( seg_flags & 1 )	19:6:1054:1072	3266	0	True				
+ANR	3449	UnaryOperationExpression	! ( seg_flags & 1 )		3266	0					
+ANR	3450	UnaryOperator	!		3266	0					
+ANR	3451	BitAndExpression	seg_flags & 1		3266	1		&			
+ANR	3452	Identifier	seg_flags		3266	0					
+ANR	3453	PrimaryExpression	1		3266	1					
+ANR	3454	CompoundStatement		19:28:968:968	3266	1					
+ANR	3455	ExpressionStatement	gbat_bytes = ( seg_flags & 6 ) ? 2 : 8	20:1:1079:1118	3266	0	True				
+ANR	3456	AssignmentExpression	gbat_bytes = ( seg_flags & 6 ) ? 2 : 8		3266	0		=			
+ANR	3457	Identifier	gbat_bytes		3266	0					
+ANR	3458	ConditionalExpression	( seg_flags & 6 ) ? 2 : 8		3266	1					
+ANR	3459	Condition	seg_flags & 6		3266	0					
+ANR	3460	BitAndExpression	seg_flags & 6		3266	0		&			
+ANR	3461	Identifier	seg_flags		3266	0					
+ANR	3462	PrimaryExpression	6		3266	1					
+ANR	3463	PrimaryExpression	2		3266	1					
+ANR	3464	PrimaryExpression	8		3266	2					
+ANR	3465	IfStatement	if ( 18 + gbat_bytes > segment -> data_length )		3266	1					
+ANR	3466	Condition	18 + gbat_bytes > segment -> data_length	21:6:1126:1165	3266	0	True				
+ANR	3467	RelationalExpression	18 + gbat_bytes > segment -> data_length		3266	0		>			
+ANR	3468	AdditiveExpression	18 + gbat_bytes		3266	0		+			
+ANR	3469	PrimaryExpression	18		3266	0					
+ANR	3470	Identifier	gbat_bytes		3266	1					
+ANR	3471	PtrMemberAccess	segment -> data_length		3266	1					
+ANR	3472	Identifier	segment		3266	0					
+ANR	3473	Identifier	data_length		3266	1					
+ANR	3474	ReturnStatement	"return jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Segment too short"" ) ;"	21:49:1169:1261	3266	1	True				
+ANR	3475	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Segment too short"" )"		3266	0					
+ANR	3476	Callee	jbig2_error		3266	0					
+ANR	3477	Identifier	jbig2_error		3266	0					
+ANR	3478	ArgumentList	ctx		3266	1					
+ANR	3479	Argument	ctx		3266	0					
+ANR	3480	Identifier	ctx		3266	0					
+ANR	3481	Argument	JBIG2_SEVERITY_FATAL		3266	1					
+ANR	3482	Identifier	JBIG2_SEVERITY_FATAL		3266	0					
+ANR	3483	Argument	segment -> number		3266	2					
+ANR	3484	PtrMemberAccess	segment -> number		3266	0					
+ANR	3485	Identifier	segment		3266	0					
+ANR	3486	Identifier	number		3266	1					
+ANR	3487	Argument	"""Segment too short"""		3266	3					
+ANR	3488	PrimaryExpression	"""Segment too short"""		3266	0					
+ANR	3489	ExpressionStatement	"memcpy ( gbat , segment_data + 18 , gbat_bytes )"	22:1:1264:1313	3266	2	True				
+ANR	3490	CallExpression	"memcpy ( gbat , segment_data + 18 , gbat_bytes )"		3266	0					
+ANR	3491	Callee	memcpy		3266	0					
+ANR	3492	Identifier	memcpy		3266	0					
+ANR	3493	ArgumentList	gbat		3266	1					
+ANR	3494	Argument	gbat		3266	0					
+ANR	3495	Identifier	gbat		3266	0					
+ANR	3496	Argument	segment_data + 18		3266	1					
+ANR	3497	AdditiveExpression	segment_data + 18		3266	0		+			
+ANR	3498	Identifier	segment_data		3266	0					
+ANR	3499	PrimaryExpression	18		3266	1					
+ANR	3500	Argument	gbat_bytes		3266	2					
+ANR	3501	Identifier	gbat_bytes		3266	0					
+ANR	3502	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""gbat: %d, %d"" , gbat [ 0 ] , gbat [ 1 ] )"	23:1:1316:1421	3266	3	True				
+ANR	3503	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""gbat: %d, %d"" , gbat [ 0 ] , gbat [ 1 ] )"		3266	0					
+ANR	3504	Callee	jbig2_error		3266	0					
+ANR	3505	Identifier	jbig2_error		3266	0					
+ANR	3506	ArgumentList	ctx		3266	1					
+ANR	3507	Argument	ctx		3266	0					
+ANR	3508	Identifier	ctx		3266	0					
+ANR	3509	Argument	JBIG2_SEVERITY_INFO		3266	1					
+ANR	3510	Identifier	JBIG2_SEVERITY_INFO		3266	0					
+ANR	3511	Argument	segment -> number		3266	2					
+ANR	3512	PtrMemberAccess	segment -> number		3266	0					
+ANR	3513	Identifier	segment		3266	0					
+ANR	3514	Identifier	number		3266	1					
+ANR	3515	Argument	"""gbat: %d, %d"""		3266	3					
+ANR	3516	PrimaryExpression	"""gbat: %d, %d"""		3266	0					
+ANR	3517	Argument	gbat [ 0 ]		3266	4					
+ANR	3518	ArrayIndexing	gbat [ 0 ]		3266	0					
+ANR	3519	Identifier	gbat		3266	0					
+ANR	3520	PrimaryExpression	0		3266	1					
+ANR	3521	Argument	gbat [ 1 ]		3266	5					
+ANR	3522	ArrayIndexing	gbat [ 1 ]		3266	0					
+ANR	3523	Identifier	gbat		3266	0					
+ANR	3524	PrimaryExpression	1		3266	1					
+ANR	3525	ExpressionStatement	offset = 18 + gbat_bytes	25:1:1427:1452	3266	18	True				
+ANR	3526	AssignmentExpression	offset = 18 + gbat_bytes		3266	0		=			
+ANR	3527	Identifier	offset		3266	0					
+ANR	3528	AdditiveExpression	18 + gbat_bytes		3266	1		+			
+ANR	3529	PrimaryExpression	18		3266	0					
+ANR	3530	Identifier	gbat_bytes		3266	1					
+ANR	3531	ExpressionStatement	params . MMR = seg_flags & 1	26:1:1455:1484	3266	19	True				
+ANR	3532	AssignmentExpression	params . MMR = seg_flags & 1		3266	0		=			
+ANR	3533	MemberAccess	params . MMR		3266	0					
+ANR	3534	Identifier	params		3266	0					
+ANR	3535	Identifier	MMR		3266	1					
+ANR	3536	BitAndExpression	seg_flags & 1		3266	1		&			
+ANR	3537	Identifier	seg_flags		3266	0					
+ANR	3538	PrimaryExpression	1		3266	1					
+ANR	3539	ExpressionStatement	params . GBTEMPLATE = ( seg_flags & 6 ) >> 1	27:1:1487:1532	3266	20	True				
+ANR	3540	AssignmentExpression	params . GBTEMPLATE = ( seg_flags & 6 ) >> 1		3266	0		=			
+ANR	3541	MemberAccess	params . GBTEMPLATE		3266	0					
+ANR	3542	Identifier	params		3266	0					
+ANR	3543	Identifier	GBTEMPLATE		3266	1					
+ANR	3544	ShiftExpression	( seg_flags & 6 ) >> 1		3266	1		>>			
+ANR	3545	BitAndExpression	seg_flags & 6		3266	0		&			
+ANR	3546	Identifier	seg_flags		3266	0					
+ANR	3547	PrimaryExpression	6		3266	1					
+ANR	3548	PrimaryExpression	1		3266	1					
+ANR	3549	ExpressionStatement	params . TPGDON = ( seg_flags & 8 ) >> 3	28:1:1535:1576	3266	21	True				
+ANR	3550	AssignmentExpression	params . TPGDON = ( seg_flags & 8 ) >> 3		3266	0		=			
+ANR	3551	MemberAccess	params . TPGDON		3266	0					
+ANR	3552	Identifier	params		3266	0					
+ANR	3553	Identifier	TPGDON		3266	1					
+ANR	3554	ShiftExpression	( seg_flags & 8 ) >> 3		3266	1		>>			
+ANR	3555	BitAndExpression	seg_flags & 8		3266	0		&			
+ANR	3556	Identifier	seg_flags		3266	0					
+ANR	3557	PrimaryExpression	8		3266	1					
+ANR	3558	PrimaryExpression	3		3266	1					
+ANR	3559	ExpressionStatement	params . USESKIP = 0	29:1:1579:1600	3266	22	True				
+ANR	3560	AssignmentExpression	params . USESKIP = 0		3266	0		=			
+ANR	3561	MemberAccess	params . USESKIP		3266	0					
+ANR	3562	Identifier	params		3266	0					
+ANR	3563	Identifier	USESKIP		3266	1					
+ANR	3564	PrimaryExpression	0		3266	1					
+ANR	3565	ExpressionStatement	"memcpy ( params . gbat , gbat , gbat_bytes )"	30:1:1603:1648	3266	23	True				
+ANR	3566	CallExpression	"memcpy ( params . gbat , gbat , gbat_bytes )"		3266	0					
+ANR	3567	Callee	memcpy		3266	0					
+ANR	3568	Identifier	memcpy		3266	0					
+ANR	3569	ArgumentList	params . gbat		3266	1					
+ANR	3570	Argument	params . gbat		3266	0					
+ANR	3571	MemberAccess	params . gbat		3266	0					
+ANR	3572	Identifier	params		3266	0					
+ANR	3573	Identifier	gbat		3266	1					
+ANR	3574	Argument	gbat		3266	1					
+ANR	3575	Identifier	gbat		3266	0					
+ANR	3576	Argument	gbat_bytes		3266	2					
+ANR	3577	Identifier	gbat_bytes		3266	0					
+ANR	3578	ExpressionStatement	"image = jbig2_image_new ( ctx , rsi . width , rsi . height )"	31:1:1651:1712	3266	24	True				
+ANR	3579	AssignmentExpression	"image = jbig2_image_new ( ctx , rsi . width , rsi . height )"		3266	0		=			
+ANR	3580	Identifier	image		3266	0					
+ANR	3581	CallExpression	"jbig2_image_new ( ctx , rsi . width , rsi . height )"		3266	1					
+ANR	3582	Callee	jbig2_image_new		3266	0					
+ANR	3583	Identifier	jbig2_image_new		3266	0					
+ANR	3584	ArgumentList	ctx		3266	1					
+ANR	3585	Argument	ctx		3266	0					
+ANR	3586	Identifier	ctx		3266	0					
+ANR	3587	Argument	rsi . width		3266	1					
+ANR	3588	MemberAccess	rsi . width		3266	0					
+ANR	3589	Identifier	rsi		3266	0					
+ANR	3590	Identifier	width		3266	1					
+ANR	3591	Argument	rsi . height		3266	2					
+ANR	3592	MemberAccess	rsi . height		3266	0					
+ANR	3593	Identifier	rsi		3266	0					
+ANR	3594	Identifier	height		3266	1					
+ANR	3595	IfStatement	if ( image == NULL )		3266	25					
+ANR	3596	Condition	image == NULL	32:6:1720:1732	3266	0	True				
+ANR	3597	EqualityExpression	image == NULL		3266	0		==			
+ANR	3598	Identifier	image		3266	0					
+ANR	3599	Identifier	NULL		3266	1					
+ANR	3600	ReturnStatement	"return jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate generic image"" ) ;"	32:22:1736:1843	3266	1	True				
+ANR	3601	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate generic image"" )"		3266	0					
+ANR	3602	Callee	jbig2_error		3266	0					
+ANR	3603	Identifier	jbig2_error		3266	0					
+ANR	3604	ArgumentList	ctx		3266	1					
+ANR	3605	Argument	ctx		3266	0					
+ANR	3606	Identifier	ctx		3266	0					
+ANR	3607	Argument	JBIG2_SEVERITY_FATAL		3266	1					
+ANR	3608	Identifier	JBIG2_SEVERITY_FATAL		3266	0					
+ANR	3609	Argument	segment -> number		3266	2					
+ANR	3610	PtrMemberAccess	segment -> number		3266	0					
+ANR	3611	Identifier	segment		3266	0					
+ANR	3612	Identifier	number		3266	1					
+ANR	3613	Argument	"""unable to allocate generic image"""		3266	3					
+ANR	3614	PrimaryExpression	"""unable to allocate generic image"""		3266	0					
+ANR	3615	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , segment -> number , ""allocated %d x %d image buffer for region decode results"" , rsi . width , rsi . height )"	33:1:1846:1999	3266	26	True				
+ANR	3616	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , segment -> number , ""allocated %d x %d image buffer for region decode results"" , rsi . width , rsi . height )"		3266	0					
+ANR	3617	Callee	jbig2_error		3266	0					
+ANR	3618	Identifier	jbig2_error		3266	0					
+ANR	3619	ArgumentList	ctx		3266	1					
+ANR	3620	Argument	ctx		3266	0					
+ANR	3621	Identifier	ctx		3266	0					
+ANR	3622	Argument	JBIG2_SEVERITY_DEBUG		3266	1					
+ANR	3623	Identifier	JBIG2_SEVERITY_DEBUG		3266	0					
+ANR	3624	Argument	segment -> number		3266	2					
+ANR	3625	PtrMemberAccess	segment -> number		3266	0					
+ANR	3626	Identifier	segment		3266	0					
+ANR	3627	Identifier	number		3266	1					
+ANR	3628	Argument	"""allocated %d x %d image buffer for region decode results"""		3266	3					
+ANR	3629	PrimaryExpression	"""allocated %d x %d image buffer for region decode results"""		3266	0					
+ANR	3630	Argument	rsi . width		3266	4					
+ANR	3631	MemberAccess	rsi . width		3266	0					
+ANR	3632	Identifier	rsi		3266	0					
+ANR	3633	Identifier	width		3266	1					
+ANR	3634	Argument	rsi . height		3266	5					
+ANR	3635	MemberAccess	rsi . height		3266	0					
+ANR	3636	Identifier	rsi		3266	0					
+ANR	3637	Identifier	height		3266	1					
+ANR	3638	IfStatement	if ( params . MMR )		3266	27					
+ANR	3639	Condition	params . MMR	34:6:2007:2018	3266	0	True				
+ANR	3640	MemberAccess	params . MMR		3266	0					
+ANR	3641	Identifier	params		3266	0					
+ANR	3642	Identifier	MMR		3266	1					
+ANR	3643	CompoundStatement		34:21:1914:1914	3266	1					
+ANR	3644	ExpressionStatement	"code = jbig2_decode_generic_mmr ( ctx , segment , & params , segment_data + offset , segment -> data_length - offset , image )"	35:1:2025:2152	3266	0	True				
+ANR	3645	AssignmentExpression	"code = jbig2_decode_generic_mmr ( ctx , segment , & params , segment_data + offset , segment -> data_length - offset , image )"		3266	0		=			
+ANR	3646	Identifier	code		3266	0					
+ANR	3647	CallExpression	"jbig2_decode_generic_mmr ( ctx , segment , & params , segment_data + offset , segment -> data_length - offset , image )"		3266	1					
+ANR	3648	Callee	jbig2_decode_generic_mmr		3266	0					
+ANR	3649	Identifier	jbig2_decode_generic_mmr		3266	0					
+ANR	3650	ArgumentList	ctx		3266	1					
+ANR	3651	Argument	ctx		3266	0					
+ANR	3652	Identifier	ctx		3266	0					
+ANR	3653	Argument	segment		3266	1					
+ANR	3654	Identifier	segment		3266	0					
+ANR	3655	Argument	& params		3266	2					
+ANR	3656	UnaryOperationExpression	& params		3266	0					
+ANR	3657	UnaryOperator	&		3266	0					
+ANR	3658	Identifier	params		3266	1					
+ANR	3659	Argument	segment_data + offset		3266	3					
+ANR	3660	AdditiveExpression	segment_data + offset		3266	0		+			
+ANR	3661	Identifier	segment_data		3266	0					
+ANR	3662	Identifier	offset		3266	1					
+ANR	3663	Argument	segment -> data_length - offset		3266	4					
+ANR	3664	AdditiveExpression	segment -> data_length - offset		3266	0		-			
+ANR	3665	PtrMemberAccess	segment -> data_length		3266	0					
+ANR	3666	Identifier	segment		3266	0					
+ANR	3667	Identifier	data_length		3266	1					
+ANR	3668	Identifier	offset		3266	1					
+ANR	3669	Argument	image		3266	5					
+ANR	3670	Identifier	image		3266	0					
+ANR	3671	ElseStatement	else		3266	0					
+ANR	3672	CompoundStatement		38:1:2058:2130	3266	0					
+ANR	3673	IdentifierDeclStatement	"int stats_size = jbig2_generic_stats_size ( ctx , params . GBTEMPLATE ) ;"	38:1:2166:2238	3266	0	True				
+ANR	3674	IdentifierDecl	"stats_size = jbig2_generic_stats_size ( ctx , params . GBTEMPLATE )"		3266	0					
+ANR	3675	IdentifierDeclType	int		3266	0					
+ANR	3676	Identifier	stats_size		3266	1					
+ANR	3677	AssignmentExpression	"stats_size = jbig2_generic_stats_size ( ctx , params . GBTEMPLATE )"		3266	2		=			
+ANR	3678	Identifier	stats_size		3266	0					
+ANR	3679	CallExpression	"jbig2_generic_stats_size ( ctx , params . GBTEMPLATE )"		3266	1					
+ANR	3680	Callee	jbig2_generic_stats_size		3266	0					
+ANR	3681	Identifier	jbig2_generic_stats_size		3266	0					
+ANR	3682	ArgumentList	ctx		3266	1					
+ANR	3683	Argument	ctx		3266	0					
+ANR	3684	Identifier	ctx		3266	0					
+ANR	3685	Argument	params . GBTEMPLATE		3266	1					
+ANR	3686	MemberAccess	params . GBTEMPLATE		3266	0					
+ANR	3687	Identifier	params		3266	0					
+ANR	3688	Identifier	GBTEMPLATE		3266	1					
+ANR	3689	ExpressionStatement	"GB_stats = jbig2_new ( ctx , Jbig2ArithCx , stats_size )"	39:1:2241:2298	3266	1	True				
+ANR	3690	AssignmentExpression	"GB_stats = jbig2_new ( ctx , Jbig2ArithCx , stats_size )"		3266	0		=			
+ANR	3691	Identifier	GB_stats		3266	0					
+ANR	3692	CallExpression	"jbig2_new ( ctx , Jbig2ArithCx , stats_size )"		3266	1					
+ANR	3693	Callee	jbig2_new		3266	0					
+ANR	3694	Identifier	jbig2_new		3266	0					
+ANR	3695	ArgumentList	ctx		3266	1					
+ANR	3696	Argument	ctx		3266	0					
+ANR	3697	Identifier	ctx		3266	0					
+ANR	3698	Argument	Jbig2ArithCx		3266	1					
+ANR	3699	Identifier	Jbig2ArithCx		3266	0					
+ANR	3700	Argument	stats_size		3266	2					
+ANR	3701	Identifier	stats_size		3266	0					
+ANR	3702	IfStatement	if ( GB_stats == NULL )		3266	2					
+ANR	3703	Condition	GB_stats == NULL	40:6:2306:2321	3266	0	True				
+ANR	3704	EqualityExpression	GB_stats == NULL		3266	0		==			
+ANR	3705	Identifier	GB_stats		3266	0					
+ANR	3706	Identifier	NULL		3266	1					
+ANR	3707	CompoundStatement		40:25:2217:2217	3266	1					
+ANR	3708	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate GB_stats in jbig2_immediate_generic_region"" )"	41:1:2328:2464	3266	0	True				
+ANR	3709	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate GB_stats in jbig2_immediate_generic_region"" )"		3266	0		=			
+ANR	3710	Identifier	code		3266	0					
+ANR	3711	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate GB_stats in jbig2_immediate_generic_region"" )"		3266	1					
+ANR	3712	Callee	jbig2_error		3266	0					
+ANR	3713	Identifier	jbig2_error		3266	0					
+ANR	3714	ArgumentList	ctx		3266	1					
+ANR	3715	Argument	ctx		3266	0					
+ANR	3716	Identifier	ctx		3266	0					
+ANR	3717	Argument	JBIG2_SEVERITY_FATAL		3266	1					
+ANR	3718	Identifier	JBIG2_SEVERITY_FATAL		3266	0					
+ANR	3719	Argument	segment -> number		3266	2					
+ANR	3720	PtrMemberAccess	segment -> number		3266	0					
+ANR	3721	Identifier	segment		3266	0					
+ANR	3722	Identifier	number		3266	1					
+ANR	3723	Argument	"""unable to allocate GB_stats in jbig2_immediate_generic_region"""		3266	3					
+ANR	3724	PrimaryExpression	"""unable to allocate GB_stats in jbig2_immediate_generic_region"""		3266	0					
+ANR	3725	GotoStatement	goto cleanup ;	42:1:2467:2480	3266	1	True				
+ANR	3726	Identifier	cleanup		3266	0					
+ANR	3727	ExpressionStatement	"memset ( GB_stats , 0 , stats_size )"	44:1:2486:2523	3266	3	True				
+ANR	3728	CallExpression	"memset ( GB_stats , 0 , stats_size )"		3266	0					
+ANR	3729	Callee	memset		3266	0					
+ANR	3730	Identifier	memset		3266	0					
+ANR	3731	ArgumentList	GB_stats		3266	1					
+ANR	3732	Argument	GB_stats		3266	0					
+ANR	3733	Identifier	GB_stats		3266	0					
+ANR	3734	Argument	0		3266	1					
+ANR	3735	PrimaryExpression	0		3266	0					
+ANR	3736	Argument	stats_size		3266	2					
+ANR	3737	Identifier	stats_size		3266	0					
+ANR	3738	ExpressionStatement	"ws = jbig2_word_stream_buf_new ( ctx , segment_data + offset , segment -> data_length - offset )"	45:1:2526:2623	3266	4	True				
+ANR	3739	AssignmentExpression	"ws = jbig2_word_stream_buf_new ( ctx , segment_data + offset , segment -> data_length - offset )"		3266	0		=			
+ANR	3740	Identifier	ws		3266	0					
+ANR	3741	CallExpression	"jbig2_word_stream_buf_new ( ctx , segment_data + offset , segment -> data_length - offset )"		3266	1					
+ANR	3742	Callee	jbig2_word_stream_buf_new		3266	0					
+ANR	3743	Identifier	jbig2_word_stream_buf_new		3266	0					
+ANR	3744	ArgumentList	ctx		3266	1					
+ANR	3745	Argument	ctx		3266	0					
+ANR	3746	Identifier	ctx		3266	0					
+ANR	3747	Argument	segment_data + offset		3266	1					
+ANR	3748	AdditiveExpression	segment_data + offset		3266	0		+			
+ANR	3749	Identifier	segment_data		3266	0					
+ANR	3750	Identifier	offset		3266	1					
+ANR	3751	Argument	segment -> data_length - offset		3266	2					
+ANR	3752	AdditiveExpression	segment -> data_length - offset		3266	0		-			
+ANR	3753	PtrMemberAccess	segment -> data_length		3266	0					
+ANR	3754	Identifier	segment		3266	0					
+ANR	3755	Identifier	data_length		3266	1					
+ANR	3756	Identifier	offset		3266	1					
+ANR	3757	IfStatement	if ( ws == NULL )		3266	5					
+ANR	3758	Condition	ws == NULL	46:6:2631:2640	3266	0	True				
+ANR	3759	EqualityExpression	ws == NULL		3266	0		==			
+ANR	3760	Identifier	ws		3266	0					
+ANR	3761	Identifier	NULL		3266	1					
+ANR	3762	CompoundStatement		46:19:2536:2536	3266	1					
+ANR	3763	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate ws in jbig2_immediate_generic_region"" )"	47:1:2647:2777	3266	0	True				
+ANR	3764	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate ws in jbig2_immediate_generic_region"" )"		3266	0		=			
+ANR	3765	Identifier	code		3266	0					
+ANR	3766	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate ws in jbig2_immediate_generic_region"" )"		3266	1					
+ANR	3767	Callee	jbig2_error		3266	0					
+ANR	3768	Identifier	jbig2_error		3266	0					
+ANR	3769	ArgumentList	ctx		3266	1					
+ANR	3770	Argument	ctx		3266	0					
+ANR	3771	Identifier	ctx		3266	0					
+ANR	3772	Argument	JBIG2_SEVERITY_FATAL		3266	1					
+ANR	3773	Identifier	JBIG2_SEVERITY_FATAL		3266	0					
+ANR	3774	Argument	segment -> number		3266	2					
+ANR	3775	PtrMemberAccess	segment -> number		3266	0					
+ANR	3776	Identifier	segment		3266	0					
+ANR	3777	Identifier	number		3266	1					
+ANR	3778	Argument	"""unable to allocate ws in jbig2_immediate_generic_region"""		3266	3					
+ANR	3779	PrimaryExpression	"""unable to allocate ws in jbig2_immediate_generic_region"""		3266	0					
+ANR	3780	GotoStatement	goto cleanup ;	48:1:2780:2793	3266	1	True				
+ANR	3781	Identifier	cleanup		3266	0					
+ANR	3782	ExpressionStatement	"as = jbig2_arith_new ( ctx , ws )"	50:1:2799:2833	3266	6	True				
+ANR	3783	AssignmentExpression	"as = jbig2_arith_new ( ctx , ws )"		3266	0		=			
+ANR	3784	Identifier	as		3266	0					
+ANR	3785	CallExpression	"jbig2_arith_new ( ctx , ws )"		3266	1					
+ANR	3786	Callee	jbig2_arith_new		3266	0					
+ANR	3787	Identifier	jbig2_arith_new		3266	0					
+ANR	3788	ArgumentList	ctx		3266	1					
+ANR	3789	Argument	ctx		3266	0					
+ANR	3790	Identifier	ctx		3266	0					
+ANR	3791	Argument	ws		3266	1					
+ANR	3792	Identifier	ws		3266	0					
+ANR	3793	IfStatement	if ( as == NULL )		3266	7					
+ANR	3794	Condition	as == NULL	51:6:2841:2850	3266	0	True				
+ANR	3795	EqualityExpression	as == NULL		3266	0		==			
+ANR	3796	Identifier	as		3266	0					
+ANR	3797	Identifier	NULL		3266	1					
+ANR	3798	CompoundStatement		51:19:2746:2746	3266	1					
+ANR	3799	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate as in jbig2_immediate_generic_region"" )"	52:1:2857:2987	3266	0	True				
+ANR	3800	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate as in jbig2_immediate_generic_region"" )"		3266	0		=			
+ANR	3801	Identifier	code		3266	0					
+ANR	3802	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to allocate as in jbig2_immediate_generic_region"" )"		3266	1					
+ANR	3803	Callee	jbig2_error		3266	0					
+ANR	3804	Identifier	jbig2_error		3266	0					
+ANR	3805	ArgumentList	ctx		3266	1					
+ANR	3806	Argument	ctx		3266	0					
+ANR	3807	Identifier	ctx		3266	0					
+ANR	3808	Argument	JBIG2_SEVERITY_FATAL		3266	1					
+ANR	3809	Identifier	JBIG2_SEVERITY_FATAL		3266	0					
+ANR	3810	Argument	segment -> number		3266	2					
+ANR	3811	PtrMemberAccess	segment -> number		3266	0					
+ANR	3812	Identifier	segment		3266	0					
+ANR	3813	Identifier	number		3266	1					
+ANR	3814	Argument	"""unable to allocate as in jbig2_immediate_generic_region"""		3266	3					
+ANR	3815	PrimaryExpression	"""unable to allocate as in jbig2_immediate_generic_region"""		3266	0					
+ANR	3816	GotoStatement	goto cleanup ;	53:1:2990:3003	3266	1	True				
+ANR	3817	Identifier	cleanup		3266	0					
+ANR	3818	ExpressionStatement	"code = jbig2_decode_generic_region ( ctx , segment , & params , as , image , GB_stats )"	55:1:3009:3097	3266	8	True				
+ANR	3819	AssignmentExpression	"code = jbig2_decode_generic_region ( ctx , segment , & params , as , image , GB_stats )"		3266	0		=			
+ANR	3820	Identifier	code		3266	0					
+ANR	3821	CallExpression	"jbig2_decode_generic_region ( ctx , segment , & params , as , image , GB_stats )"		3266	1					
+ANR	3822	Callee	jbig2_decode_generic_region		3266	0					
+ANR	3823	Identifier	jbig2_decode_generic_region		3266	0					
+ANR	3824	ArgumentList	ctx		3266	1					
+ANR	3825	Argument	ctx		3266	0					
+ANR	3826	Identifier	ctx		3266	0					
+ANR	3827	Argument	segment		3266	1					
+ANR	3828	Identifier	segment		3266	0					
+ANR	3829	Argument	& params		3266	2					
+ANR	3830	UnaryOperationExpression	& params		3266	0					
+ANR	3831	UnaryOperator	&		3266	0					
+ANR	3832	Identifier	params		3266	1					
+ANR	3833	Argument	as		3266	3					
+ANR	3834	Identifier	as		3266	0					
+ANR	3835	Argument	image		3266	4					
+ANR	3836	Identifier	image		3266	0					
+ANR	3837	Argument	GB_stats		3266	5					
+ANR	3838	Identifier	GB_stats		3266	0					
+ANR	3839	IfStatement	if ( code >= 0 )		3266	28					
+ANR	3840	Condition	code >= 0	57:6:3108:3116	3266	0	True				
+ANR	3841	RelationalExpression	code >= 0		3266	0		>=			
+ANR	3842	Identifier	code		3266	0					
+ANR	3843	PrimaryExpression	0		3266	1					
+ANR	3844	ExpressionStatement	"jbig2_page_add_result ( ctx , & ctx -> pages [ ctx -> current_page ] , image , rsi . x , rsi . y , rsi . op )"	57:18:3120:3230	3266	1	True				
+ANR	3845	CallExpression	"jbig2_page_add_result ( ctx , & ctx -> pages [ ctx -> current_page ] , image , rsi . x , rsi . y , rsi . op )"		3266	0					
+ANR	3846	Callee	jbig2_page_add_result		3266	0					
+ANR	3847	Identifier	jbig2_page_add_result		3266	0					
+ANR	3848	ArgumentList	ctx		3266	1					
+ANR	3849	Argument	ctx		3266	0					
+ANR	3850	Identifier	ctx		3266	0					
+ANR	3851	Argument	& ctx -> pages [ ctx -> current_page ]		3266	1					
+ANR	3852	UnaryOperationExpression	& ctx -> pages [ ctx -> current_page ]		3266	0					
+ANR	3853	UnaryOperator	&		3266	0					
+ANR	3854	ArrayIndexing	ctx -> pages [ ctx -> current_page ]		3266	1					
+ANR	3855	PtrMemberAccess	ctx -> pages		3266	0					
+ANR	3856	Identifier	ctx		3266	0					
+ANR	3857	Identifier	pages		3266	1					
+ANR	3858	PtrMemberAccess	ctx -> current_page		3266	1					
+ANR	3859	Identifier	ctx		3266	0					
+ANR	3860	Identifier	current_page		3266	1					
+ANR	3861	Argument	image		3266	2					
+ANR	3862	Identifier	image		3266	0					
+ANR	3863	Argument	rsi . x		3266	3					
+ANR	3864	MemberAccess	rsi . x		3266	0					
+ANR	3865	Identifier	rsi		3266	0					
+ANR	3866	Identifier	x		3266	1					
+ANR	3867	Argument	rsi . y		3266	4					
+ANR	3868	MemberAccess	rsi . y		3266	0					
+ANR	3869	Identifier	rsi		3266	0					
+ANR	3870	Identifier	y		3266	1					
+ANR	3871	Argument	rsi . op		3266	5					
+ANR	3872	MemberAccess	rsi . op		3266	0					
+ANR	3873	Identifier	rsi		3266	0					
+ANR	3874	Identifier	op		3266	1					
+ANR	3875	ElseStatement	else		3266	0					
+ANR	3876	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""error while decoding immediate_generic_region"" )"	58:6:3238:3351	3266	0	True				
+ANR	3877	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""error while decoding immediate_generic_region"" )"		3266	0					
+ANR	3878	Callee	jbig2_error		3266	0					
+ANR	3879	Identifier	jbig2_error		3266	0					
+ANR	3880	ArgumentList	ctx		3266	1					
+ANR	3881	Argument	ctx		3266	0					
+ANR	3882	Identifier	ctx		3266	0					
+ANR	3883	Argument	JBIG2_SEVERITY_FATAL		3266	1					
+ANR	3884	Identifier	JBIG2_SEVERITY_FATAL		3266	0					
+ANR	3885	Argument	segment -> number		3266	2					
+ANR	3886	PtrMemberAccess	segment -> number		3266	0					
+ANR	3887	Identifier	segment		3266	0					
+ANR	3888	Identifier	number		3266	1					
+ANR	3889	Argument	"""error while decoding immediate_generic_region"""		3266	3					
+ANR	3890	PrimaryExpression	"""error while decoding immediate_generic_region"""		3266	0					
+ANR	3891	Label	cleanup :	59:1:3354:3362	3266	29	True				
+ANR	3892	Identifier	cleanup		3266	0					
+ANR	3893	ExpressionStatement	"jbig2_free ( ctx -> allocator , as )"	59:11:3364:3401	3266	30	True				
+ANR	3894	CallExpression	"jbig2_free ( ctx -> allocator , as )"		3266	0					
+ANR	3895	Callee	jbig2_free		3266	0					
+ANR	3896	Identifier	jbig2_free		3266	0					
+ANR	3897	ArgumentList	ctx -> allocator		3266	1					
+ANR	3898	Argument	ctx -> allocator		3266	0					
+ANR	3899	PtrMemberAccess	ctx -> allocator		3266	0					
+ANR	3900	Identifier	ctx		3266	0					
+ANR	3901	Identifier	allocator		3266	1					
+ANR	3902	Argument	as		3266	1					
+ANR	3903	Identifier	as		3266	0					
+ANR	3904	ExpressionStatement	"jbig2_word_stream_buf_free ( ctx , ws )"	60:1:3404:3444	3266	31	True				
+ANR	3905	CallExpression	"jbig2_word_stream_buf_free ( ctx , ws )"		3266	0					
+ANR	3906	Callee	jbig2_word_stream_buf_free		3266	0					
+ANR	3907	Identifier	jbig2_word_stream_buf_free		3266	0					
+ANR	3908	ArgumentList	ctx		3266	1					
+ANR	3909	Argument	ctx		3266	0					
+ANR	3910	Identifier	ctx		3266	0					
+ANR	3911	Argument	ws		3266	1					
+ANR	3912	Identifier	ws		3266	0					
+ANR	3913	ExpressionStatement	"jbig2_free ( ctx -> allocator , GB_stats )"	61:1:3447:3490	3266	32	True				
+ANR	3914	CallExpression	"jbig2_free ( ctx -> allocator , GB_stats )"		3266	0					
+ANR	3915	Callee	jbig2_free		3266	0					
+ANR	3916	Identifier	jbig2_free		3266	0					
+ANR	3917	ArgumentList	ctx -> allocator		3266	1					
+ANR	3918	Argument	ctx -> allocator		3266	0					
+ANR	3919	PtrMemberAccess	ctx -> allocator		3266	0					
+ANR	3920	Identifier	ctx		3266	0					
+ANR	3921	Identifier	allocator		3266	1					
+ANR	3922	Argument	GB_stats		3266	1					
+ANR	3923	Identifier	GB_stats		3266	0					
+ANR	3924	ExpressionStatement	"jbig2_image_release ( ctx , image )"	62:1:3493:3529	3266	33	True				
+ANR	3925	CallExpression	"jbig2_image_release ( ctx , image )"		3266	0					
+ANR	3926	Callee	jbig2_image_release		3266	0					
+ANR	3927	Identifier	jbig2_image_release		3266	0					
+ANR	3928	ArgumentList	ctx		3266	1					
+ANR	3929	Argument	ctx		3266	0					
+ANR	3930	Identifier	ctx		3266	0					
+ANR	3931	Argument	image		3266	1					
+ANR	3932	Identifier	image		3266	0					
+ANR	3933	ReturnStatement	return code ;	63:1:3532:3544	3266	34	True				
+ANR	3934	Identifier	code		3266	0					
+ANR	3935	ReturnType	int		3266	1					
+ANR	3936	Identifier	jbig2_immediate_generic_region		3266	2					
+ANR	3937	ParameterList	"Jbig2Ctx * ctx , Jbig2Segment * segment , const byte * segment_data"		3266	3					
+ANR	3938	Parameter	Jbig2Ctx * ctx	1:37:37:50	3266	0	True				
+ANR	3939	ParameterType	Jbig2Ctx *		3266	0					
+ANR	3940	Identifier	ctx		3266	1					
+ANR	3941	Parameter	Jbig2Segment * segment	1:54:54:75	3266	1	True				
+ANR	3942	ParameterType	Jbig2Segment *		3266	0					
+ANR	3943	Identifier	segment		3266	1					
+ANR	3944	Parameter	const byte * segment_data	1:79:79:103	3266	2	True				
+ANR	3945	ParameterType	const byte *		3266	0					
+ANR	3946	Identifier	segment_data		3266	1					
+ANR	3947	CFGEntryNode	ENTRY		3266		True				
+ANR	3948	CFGExitNode	EXIT		3266		True				
+ANR	3949	Symbol	JBIG2_SEVERITY_INFO		3266						
+ANR	3950	Symbol	params . gbat		3266						
+ANR	3951	Symbol	jbig2_arith_new		3266						
+ANR	3952	Symbol	segment		3266						
+ANR	3953	Symbol	* gbat		3266						
+ANR	3954	Symbol	& params		3266						
+ANR	3955	Symbol	image		3266						
+ANR	3956	Symbol	NULL		3266						
+ANR	3957	Symbol	offset		3266						
+ANR	3958	Symbol	params . MMR		3266						
+ANR	3959	Symbol	jbig2_decode_generic_mmr		3266						
+ANR	3960	Symbol	ctx -> current_page		3266						
+ANR	3961	Symbol	ctx -> allocator		3266						
+ANR	3962	Symbol	ctx		3266						
+ANR	3963	Symbol	JBIG2_SEVERITY_DEBUG		3266						
+ANR	3964	Symbol	gbat_bytes		3266						
+ANR	3965	Symbol	params		3266						
+ANR	3966	Symbol	as		3266						
+ANR	3967	Symbol	rsi . x		3266						
+ANR	3968	Symbol	rsi . y		3266						
+ANR	3969	Symbol	segment -> data_length		3266						
+ANR	3970	Symbol	rsi . width		3266						
+ANR	3971	Symbol	* segment		3266						
+ANR	3972	Symbol	jbig2_generic_stats_size		3266						
+ANR	3973	Symbol	params . TPGDON		3266						
+ANR	3974	Symbol	params . USESKIP		3266						
+ANR	3975	Symbol	seg_flags		3266						
+ANR	3976	Symbol	Jbig2ArithCx		3266						
+ANR	3977	Symbol	code		3266						
+ANR	3978	Symbol	jbig2_image_new		3266						
+ANR	3979	Symbol	rsi		3266						
+ANR	3980	Symbol	JBIG2_SEVERITY_FATAL		3266						
+ANR	3981	Symbol	rsi . height		3266						
+ANR	3982	Symbol	GB_stats		3266						
+ANR	3983	Symbol	jbig2_decode_generic_region		3266						
+ANR	3984	Symbol	JBIG2_SEVERITY_WARNING		3266						
+ANR	3985	Symbol	jbig2_new		3266						
+ANR	3986	Symbol	jbig2_word_stream_buf_new		3266						
+ANR	3987	Symbol	ws		3266						
+ANR	3988	Symbol	rsi . op		3266						
+ANR	3989	Symbol	segment_data		3266						
+ANR	3990	Symbol	& rsi		3266						
+ANR	3991	Symbol	rsi . flags		3266						
+ANR	3992	Symbol	params . GBTEMPLATE		3266						
+ANR	3993	Symbol	* ctx		3266						
+ANR	3994	Symbol	segment -> number		3266						
+ANR	3995	Symbol	stats_size		3266						
+ANR	3996	Symbol	jbig2_error		3266						
+ANR	3997	Symbol	* segment_data		3266						
+ANR	3998	Symbol	ctx -> pages		3266						
+ANR	3999	Symbol	gbat		3266						

@@ -1,0 +1,1 @@
+int jbig2_page_add_result ( Jbig2Ctx * ctx , Jbig2Page * page , Jbig2Image * image , int x , int y , Jbig2ComposeOp op ) {

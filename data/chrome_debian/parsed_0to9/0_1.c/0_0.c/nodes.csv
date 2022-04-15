@@ -1,0 +1,56 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/0_0.c								
+ANR	2	Function	curl_mvsprintf	1:0:0:204							
+ANR	3	FunctionDef	"curl_mvsprintf (char * buffer , const char * format , va_list ap_save)"		2	0					
+ANR	4	CompoundStatement		1:77:77:204	2	0					
+ANR	5	IdentifierDeclStatement	int retcode ;	2:1:80:92	2	0	True				
+ANR	6	IdentifierDecl	retcode		2	0					
+ANR	7	IdentifierDeclType	int		2	0					
+ANR	8	Identifier	retcode		2	1					
+ANR	9	ExpressionStatement	"retcode = dprintf_formatf ( & buffer , storebuffer , format , ap_save )"	3:1:95:167	2	1	True				
+ANR	10	AssignmentExpression	"retcode = dprintf_formatf ( & buffer , storebuffer , format , ap_save )"		2	0		=			
+ANR	11	Identifier	retcode		2	0					
+ANR	12	CallExpression	"dprintf_formatf ( & buffer , storebuffer , format , ap_save )"		2	1					
+ANR	13	Callee	dprintf_formatf		2	0					
+ANR	14	Identifier	dprintf_formatf		2	0					
+ANR	15	ArgumentList	& buffer		2	1					
+ANR	16	Argument	& buffer		2	0					
+ANR	17	UnaryOperationExpression	& buffer		2	0					
+ANR	18	UnaryOperator	&		2	0					
+ANR	19	Identifier	buffer		2	1					
+ANR	20	Argument	storebuffer		2	1					
+ANR	21	Identifier	storebuffer		2	0					
+ANR	22	Argument	format		2	2					
+ANR	23	Identifier	format		2	0					
+ANR	24	Argument	ap_save		2	3					
+ANR	25	Identifier	ap_save		2	0					
+ANR	26	ExpressionStatement	* buffer = 0	4:1:170:183	2	2	True				
+ANR	27	AssignmentExpression	* buffer = 0		2	0		=			
+ANR	28	UnaryOperationExpression	* buffer		2	0					
+ANR	29	UnaryOperator	*		2	0					
+ANR	30	Identifier	buffer		2	1					
+ANR	31	PrimaryExpression	0		2	1					
+ANR	32	ReturnStatement	return retcode ;	5:1:186:201	2	3	True				
+ANR	33	Identifier	retcode		2	0					
+ANR	34	ReturnType	int		2	1					
+ANR	35	Identifier	curl_mvsprintf		2	2					
+ANR	36	ParameterList	"char * buffer , const char * format , va_list ap_save"		2	3					
+ANR	37	Parameter	char * buffer	1:21:21:33	2	0	True				
+ANR	38	ParameterType	char *		2	0					
+ANR	39	Identifier	buffer		2	1					
+ANR	40	Parameter	const char * format	1:37:37:55	2	1	True				
+ANR	41	ParameterType	const char *		2	0					
+ANR	42	Identifier	format		2	1					
+ANR	43	Parameter	va_list ap_save	1:59:59:73	2	2	True				
+ANR	44	ParameterType	va_list		2	0					
+ANR	45	Identifier	ap_save		2	1					
+ANR	46	CFGEntryNode	ENTRY		2		True				
+ANR	47	CFGExitNode	EXIT		2		True				
+ANR	48	Symbol	* buffer		2						
+ANR	49	Symbol	& buffer		2						
+ANR	50	Symbol	ap_save		2						
+ANR	51	Symbol	storebuffer		2						
+ANR	52	Symbol	format		2						
+ANR	53	Symbol	buffer		2						
+ANR	54	Symbol	retcode		2						
+ANR	55	Symbol	dprintf_formatf		2						

@@ -1,0 +1,2815 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	349	File	tmp/2_1.c								
+ANR	350	Function	jbig2_text_region	1:0:0:15667							
+ANR	351	FunctionDef	"jbig2_text_region (Jbig2Ctx * ctx , Jbig2Segment * segment , const byte * segment_data)"		350	0					
+ANR	352	CompoundStatement		1:94:94:15667	350	0					
+ANR	353	IdentifierDeclStatement	int offset = 0 ;	2:1:97:112	350	0	True				
+ANR	354	IdentifierDecl	offset = 0		350	0					
+ANR	355	IdentifierDeclType	int		350	0					
+ANR	356	Identifier	offset		350	1					
+ANR	357	AssignmentExpression	offset = 0		350	2		=			
+ANR	358	Identifier	offset		350	0					
+ANR	359	PrimaryExpression	0		350	1					
+ANR	360	IdentifierDeclStatement	Jbig2RegionSegmentInfo region_info ;	3:1:115:150	350	1	True				
+ANR	361	IdentifierDecl	region_info		350	0					
+ANR	362	IdentifierDeclType	Jbig2RegionSegmentInfo		350	0					
+ANR	363	Identifier	region_info		350	1					
+ANR	364	IdentifierDeclStatement	Jbig2TextRegionParams params ;	4:1:153:182	350	2	True				
+ANR	365	IdentifierDecl	params		350	0					
+ANR	366	IdentifierDeclType	Jbig2TextRegionParams		350	0					
+ANR	367	Identifier	params		350	1					
+ANR	368	IdentifierDeclStatement	Jbig2Image * image = NULL ;	5:1:185:211	350	3	True				
+ANR	369	IdentifierDecl	* image = NULL		350	0					
+ANR	370	IdentifierDeclType	Jbig2Image *		350	0					
+ANR	371	Identifier	image		350	1					
+ANR	372	AssignmentExpression	* image = NULL		350	2		=			
+ANR	373	Identifier	NULL		350	0					
+ANR	374	Identifier	NULL		350	1					
+ANR	375	IdentifierDeclStatement	Jbig2SymbolDict * * dicts = NULL ;	6:1:214:247	350	4	True				
+ANR	376	IdentifierDecl	* * dicts = NULL		350	0					
+ANR	377	IdentifierDeclType	Jbig2SymbolDict * *		350	0					
+ANR	378	Identifier	dicts		350	1					
+ANR	379	AssignmentExpression	* * dicts = NULL		350	2		=			
+ANR	380	Identifier	NULL		350	0					
+ANR	381	Identifier	NULL		350	1					
+ANR	382	IdentifierDeclStatement	int n_dicts = 0 ;	7:1:250:266	350	5	True				
+ANR	383	IdentifierDecl	n_dicts = 0		350	0					
+ANR	384	IdentifierDeclType	int		350	0					
+ANR	385	Identifier	n_dicts		350	1					
+ANR	386	AssignmentExpression	n_dicts = 0		350	2		=			
+ANR	387	Identifier	n_dicts		350	0					
+ANR	388	PrimaryExpression	0		350	1					
+ANR	389	IdentifierDeclStatement	uint16_t flags = 0 ;	8:1:269:288	350	6	True				
+ANR	390	IdentifierDecl	flags = 0		350	0					
+ANR	391	IdentifierDeclType	uint16_t		350	0					
+ANR	392	Identifier	flags		350	1					
+ANR	393	AssignmentExpression	flags = 0		350	2		=			
+ANR	394	Identifier	flags		350	0					
+ANR	395	PrimaryExpression	0		350	1					
+ANR	396	IdentifierDeclStatement	uint16_t huffman_flags = 0 ;	9:1:291:318	350	7	True				
+ANR	397	IdentifierDecl	huffman_flags = 0		350	0					
+ANR	398	IdentifierDeclType	uint16_t		350	0					
+ANR	399	Identifier	huffman_flags		350	1					
+ANR	400	AssignmentExpression	huffman_flags = 0		350	2		=			
+ANR	401	Identifier	huffman_flags		350	0					
+ANR	402	PrimaryExpression	0		350	1					
+ANR	403	IdentifierDeclStatement	Jbig2ArithCx * GR_stats = NULL ;	10:1:321:352	350	8	True				
+ANR	404	IdentifierDecl	* GR_stats = NULL		350	0					
+ANR	405	IdentifierDeclType	Jbig2ArithCx *		350	0					
+ANR	406	Identifier	GR_stats		350	1					
+ANR	407	AssignmentExpression	* GR_stats = NULL		350	2		=			
+ANR	408	Identifier	NULL		350	0					
+ANR	409	Identifier	NULL		350	1					
+ANR	410	IdentifierDeclStatement	int code = 0 ;	11:1:355:368	350	9	True				
+ANR	411	IdentifierDecl	code = 0		350	0					
+ANR	412	IdentifierDeclType	int		350	0					
+ANR	413	Identifier	code		350	1					
+ANR	414	AssignmentExpression	code = 0		350	2		=			
+ANR	415	Identifier	code		350	0					
+ANR	416	PrimaryExpression	0		350	1					
+ANR	417	IdentifierDeclStatement	Jbig2WordStream * ws = NULL ;	12:1:371:399	350	10	True				
+ANR	418	IdentifierDecl	* ws = NULL		350	0					
+ANR	419	IdentifierDeclType	Jbig2WordStream *		350	0					
+ANR	420	Identifier	ws		350	1					
+ANR	421	AssignmentExpression	* ws = NULL		350	2		=			
+ANR	422	Identifier	NULL		350	0					
+ANR	423	Identifier	NULL		350	1					
+ANR	424	IdentifierDeclStatement	Jbig2ArithState * as = NULL ;	13:1:402:430	350	11	True				
+ANR	425	IdentifierDecl	* as = NULL		350	0					
+ANR	426	IdentifierDeclType	Jbig2ArithState *		350	0					
+ANR	427	Identifier	as		350	1					
+ANR	428	AssignmentExpression	* as = NULL		350	2		=			
+ANR	429	Identifier	NULL		350	0					
+ANR	430	Identifier	NULL		350	1					
+ANR	431	IdentifierDeclStatement	int table_index = 0 ;	14:1:433:453	350	12	True				
+ANR	432	IdentifierDecl	table_index = 0		350	0					
+ANR	433	IdentifierDeclType	int		350	0					
+ANR	434	Identifier	table_index		350	1					
+ANR	435	AssignmentExpression	table_index = 0		350	2		=			
+ANR	436	Identifier	table_index		350	0					
+ANR	437	PrimaryExpression	0		350	1					
+ANR	438	IdentifierDeclStatement	const Jbig2HuffmanParams * huffman_params = NULL ;	15:1:456:505	350	13	True				
+ANR	439	IdentifierDecl	* huffman_params = NULL		350	0					
+ANR	440	IdentifierDeclType	const Jbig2HuffmanParams *		350	0					
+ANR	441	Identifier	huffman_params		350	1					
+ANR	442	AssignmentExpression	* huffman_params = NULL		350	2		=			
+ANR	443	Identifier	NULL		350	0					
+ANR	444	Identifier	NULL		350	1					
+ANR	445	IfStatement	if ( segment -> data_length < 17 )		350	14					
+ANR	446	Condition	segment -> data_length < 17	16:6:513:539	350	0	True				
+ANR	447	RelationalExpression	segment -> data_length < 17		350	0		<			
+ANR	448	PtrMemberAccess	segment -> data_length		350	0					
+ANR	449	Identifier	segment		350	0					
+ANR	450	Identifier	data_length		350	1					
+ANR	451	PrimaryExpression	17		350	1					
+ANR	452	GotoStatement	goto too_short ;	16:36:543:558	350	1	True				
+ANR	453	Identifier	too_short		350	0					
+ANR	454	ExpressionStatement	"jbig2_get_region_segment_info ( & region_info , segment_data )"	17:1:561:624	350	15	True				
+ANR	455	CallExpression	"jbig2_get_region_segment_info ( & region_info , segment_data )"		350	0					
+ANR	456	Callee	jbig2_get_region_segment_info		350	0					
+ANR	457	Identifier	jbig2_get_region_segment_info		350	0					
+ANR	458	ArgumentList	& region_info		350	1					
+ANR	459	Argument	& region_info		350	0					
+ANR	460	UnaryOperationExpression	& region_info		350	0					
+ANR	461	UnaryOperator	&		350	0					
+ANR	462	Identifier	region_info		350	1					
+ANR	463	Argument	segment_data		350	1					
+ANR	464	Identifier	segment_data		350	0					
+ANR	465	ExpressionStatement	offset += 17	18:1:627:640	350	16	True				
+ANR	466	AssignmentExpression	offset += 17		350	0		+=			
+ANR	467	Identifier	offset		350	0					
+ANR	468	PrimaryExpression	17		350	1					
+ANR	469	ExpressionStatement	flags = jbig2_get_uint16 ( segment_data + offset )	19:1:643:694	350	17	True				
+ANR	470	AssignmentExpression	flags = jbig2_get_uint16 ( segment_data + offset )		350	0		=			
+ANR	471	Identifier	flags		350	0					
+ANR	472	CallExpression	jbig2_get_uint16 ( segment_data + offset )		350	1					
+ANR	473	Callee	jbig2_get_uint16		350	0					
+ANR	474	Identifier	jbig2_get_uint16		350	0					
+ANR	475	ArgumentList	segment_data + offset		350	1					
+ANR	476	Argument	segment_data + offset		350	0					
+ANR	477	AdditiveExpression	segment_data + offset		350	0		+			
+ANR	478	Identifier	segment_data		350	0					
+ANR	479	Identifier	offset		350	1					
+ANR	480	ExpressionStatement	offset += 2	20:1:697:709	350	18	True				
+ANR	481	AssignmentExpression	offset += 2		350	0		+=			
+ANR	482	Identifier	offset		350	0					
+ANR	483	PrimaryExpression	2		350	1					
+ANR	484	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , segment -> number , ""text region header flags 0x%04x"" , flags )"	21:1:712:819	350	19	True				
+ANR	485	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , segment -> number , ""text region header flags 0x%04x"" , flags )"		350	0					
+ANR	486	Callee	jbig2_error		350	0					
+ANR	487	Identifier	jbig2_error		350	0					
+ANR	488	ArgumentList	ctx		350	1					
+ANR	489	Argument	ctx		350	0					
+ANR	490	Identifier	ctx		350	0					
+ANR	491	Argument	JBIG2_SEVERITY_DEBUG		350	1					
+ANR	492	Identifier	JBIG2_SEVERITY_DEBUG		350	0					
+ANR	493	Argument	segment -> number		350	2					
+ANR	494	PtrMemberAccess	segment -> number		350	0					
+ANR	495	Identifier	segment		350	0					
+ANR	496	Identifier	number		350	1					
+ANR	497	Argument	"""text region header flags 0x%04x"""		350	3					
+ANR	498	PrimaryExpression	"""text region header flags 0x%04x"""		350	0					
+ANR	499	Argument	flags		350	4					
+ANR	500	Identifier	flags		350	0					
+ANR	501	ExpressionStatement	"memset ( & params , 0 , sizeof ( Jbig2TextRegionParams ) )"	22:1:822:881	350	20	True				
+ANR	502	CallExpression	"memset ( & params , 0 , sizeof ( Jbig2TextRegionParams ) )"		350	0					
+ANR	503	Callee	memset		350	0					
+ANR	504	Identifier	memset		350	0					
+ANR	505	ArgumentList	& params		350	1					
+ANR	506	Argument	& params		350	0					
+ANR	507	UnaryOperationExpression	& params		350	0					
+ANR	508	UnaryOperator	&		350	0					
+ANR	509	Identifier	params		350	1					
+ANR	510	Argument	0		350	1					
+ANR	511	PrimaryExpression	0		350	0					
+ANR	512	Argument	sizeof ( Jbig2TextRegionParams )		350	2					
+ANR	513	SizeofExpression	sizeof ( Jbig2TextRegionParams )		350	0					
+ANR	514	Sizeof	sizeof		350	0					
+ANR	515	SizeofOperand	Jbig2TextRegionParams		350	1					
+ANR	516	ExpressionStatement	params . SBHUFF = flags & 0x0001	23:1:884:917	350	21	True				
+ANR	517	AssignmentExpression	params . SBHUFF = flags & 0x0001		350	0		=			
+ANR	518	MemberAccess	params . SBHUFF		350	0					
+ANR	519	Identifier	params		350	0					
+ANR	520	Identifier	SBHUFF		350	1					
+ANR	521	BitAndExpression	flags & 0x0001		350	1		&			
+ANR	522	Identifier	flags		350	0					
+ANR	523	PrimaryExpression	0x0001		350	1					
+ANR	524	ExpressionStatement	params . SBREFINE = flags & 0x0002	24:1:920:955	350	22	True				
+ANR	525	AssignmentExpression	params . SBREFINE = flags & 0x0002		350	0		=			
+ANR	526	MemberAccess	params . SBREFINE		350	0					
+ANR	527	Identifier	params		350	0					
+ANR	528	Identifier	SBREFINE		350	1					
+ANR	529	BitAndExpression	flags & 0x0002		350	1		&			
+ANR	530	Identifier	flags		350	0					
+ANR	531	PrimaryExpression	0x0002		350	1					
+ANR	532	ExpressionStatement	params . LOGSBSTRIPS = ( flags & 0x000c ) >> 2	25:1:958:1005	350	23	True				
+ANR	533	AssignmentExpression	params . LOGSBSTRIPS = ( flags & 0x000c ) >> 2		350	0		=			
+ANR	534	MemberAccess	params . LOGSBSTRIPS		350	0					
+ANR	535	Identifier	params		350	0					
+ANR	536	Identifier	LOGSBSTRIPS		350	1					
+ANR	537	ShiftExpression	( flags & 0x000c ) >> 2		350	1		>>			
+ANR	538	BitAndExpression	flags & 0x000c		350	0		&			
+ANR	539	Identifier	flags		350	0					
+ANR	540	PrimaryExpression	0x000c		350	1					
+ANR	541	PrimaryExpression	2		350	1					
+ANR	542	ExpressionStatement	params . SBSTRIPS = 1 << params . LOGSBSTRIPS	26:1:1008:1054	350	24	True				
+ANR	543	AssignmentExpression	params . SBSTRIPS = 1 << params . LOGSBSTRIPS		350	0		=			
+ANR	544	MemberAccess	params . SBSTRIPS		350	0					
+ANR	545	Identifier	params		350	0					
+ANR	546	Identifier	SBSTRIPS		350	1					
+ANR	547	ShiftExpression	1 << params . LOGSBSTRIPS		350	1		<<			
+ANR	548	PrimaryExpression	1		350	0					
+ANR	549	MemberAccess	params . LOGSBSTRIPS		350	1					
+ANR	550	Identifier	params		350	0					
+ANR	551	Identifier	LOGSBSTRIPS		350	1					
+ANR	552	ExpressionStatement	params . REFCORNER = ( Jbig2RefCorner ) ( ( flags & 0x0030 ) >> 4 )	27:1:1057:1125	350	25	True				
+ANR	553	AssignmentExpression	params . REFCORNER = ( Jbig2RefCorner ) ( ( flags & 0x0030 ) >> 4 )		350	0		=			
+ANR	554	MemberAccess	params . REFCORNER		350	0					
+ANR	555	Identifier	params		350	0					
+ANR	556	Identifier	REFCORNER		350	1					
+ANR	557	CastExpression	( Jbig2RefCorner ) ( ( flags & 0x0030 ) >> 4 )		350	1					
+ANR	558	CastTarget	Jbig2RefCorner		350	0					
+ANR	559	ShiftExpression	( flags & 0x0030 ) >> 4		350	1		>>			
+ANR	560	BitAndExpression	flags & 0x0030		350	0		&			
+ANR	561	Identifier	flags		350	0					
+ANR	562	PrimaryExpression	0x0030		350	1					
+ANR	563	PrimaryExpression	4		350	1					
+ANR	564	ExpressionStatement	params . TRANSPOSED = flags & 0x0040	28:1:1128:1165	350	26	True				
+ANR	565	AssignmentExpression	params . TRANSPOSED = flags & 0x0040		350	0		=			
+ANR	566	MemberAccess	params . TRANSPOSED		350	0					
+ANR	567	Identifier	params		350	0					
+ANR	568	Identifier	TRANSPOSED		350	1					
+ANR	569	BitAndExpression	flags & 0x0040		350	1		&			
+ANR	570	Identifier	flags		350	0					
+ANR	571	PrimaryExpression	0x0040		350	1					
+ANR	572	ExpressionStatement	params . SBCOMBOP = ( Jbig2ComposeOp ) ( ( flags & 0x0180 ) >> 7 )	29:1:1168:1235	350	27	True				
+ANR	573	AssignmentExpression	params . SBCOMBOP = ( Jbig2ComposeOp ) ( ( flags & 0x0180 ) >> 7 )		350	0		=			
+ANR	574	MemberAccess	params . SBCOMBOP		350	0					
+ANR	575	Identifier	params		350	0					
+ANR	576	Identifier	SBCOMBOP		350	1					
+ANR	577	CastExpression	( Jbig2ComposeOp ) ( ( flags & 0x0180 ) >> 7 )		350	1					
+ANR	578	CastTarget	Jbig2ComposeOp		350	0					
+ANR	579	ShiftExpression	( flags & 0x0180 ) >> 7		350	1		>>			
+ANR	580	BitAndExpression	flags & 0x0180		350	0		&			
+ANR	581	Identifier	flags		350	0					
+ANR	582	PrimaryExpression	0x0180		350	1					
+ANR	583	PrimaryExpression	7		350	1					
+ANR	584	ExpressionStatement	params . SBDEFPIXEL = flags & 0x0200	30:1:1238:1275	350	28	True				
+ANR	585	AssignmentExpression	params . SBDEFPIXEL = flags & 0x0200		350	0		=			
+ANR	586	MemberAccess	params . SBDEFPIXEL		350	0					
+ANR	587	Identifier	params		350	0					
+ANR	588	Identifier	SBDEFPIXEL		350	1					
+ANR	589	BitAndExpression	flags & 0x0200		350	1		&			
+ANR	590	Identifier	flags		350	0					
+ANR	591	PrimaryExpression	0x0200		350	1					
+ANR	592	ExpressionStatement	params . SBDSOFFSET = ( flags & 0x7C00 ) >> 10	31:1:1278:1325	350	29	True				
+ANR	593	AssignmentExpression	params . SBDSOFFSET = ( flags & 0x7C00 ) >> 10		350	0		=			
+ANR	594	MemberAccess	params . SBDSOFFSET		350	0					
+ANR	595	Identifier	params		350	0					
+ANR	596	Identifier	SBDSOFFSET		350	1					
+ANR	597	ShiftExpression	( flags & 0x7C00 ) >> 10		350	1		>>			
+ANR	598	BitAndExpression	flags & 0x7C00		350	0		&			
+ANR	599	Identifier	flags		350	0					
+ANR	600	PrimaryExpression	0x7C00		350	1					
+ANR	601	PrimaryExpression	10		350	1					
+ANR	602	IfStatement	if ( params . SBDSOFFSET > 0x0f )		350	30					
+ANR	603	Condition	params . SBDSOFFSET > 0x0f	32:6:1333:1358	350	0	True				
+ANR	604	RelationalExpression	params . SBDSOFFSET > 0x0f		350	0		>			
+ANR	605	MemberAccess	params . SBDSOFFSET		350	0					
+ANR	606	Identifier	params		350	0					
+ANR	607	Identifier	SBDSOFFSET		350	1					
+ANR	608	PrimaryExpression	0x0f		350	1					
+ANR	609	ExpressionStatement	params . SBDSOFFSET -= 0x20	32:35:1362:1390	350	1	True				
+ANR	610	AssignmentExpression	params . SBDSOFFSET -= 0x20		350	0		-=			
+ANR	611	MemberAccess	params . SBDSOFFSET		350	0					
+ANR	612	Identifier	params		350	0					
+ANR	613	Identifier	SBDSOFFSET		350	1					
+ANR	614	PrimaryExpression	0x20		350	1					
+ANR	615	ExpressionStatement	params . SBRTEMPLATE = flags & 0x8000	33:1:1393:1431	350	31	True				
+ANR	616	AssignmentExpression	params . SBRTEMPLATE = flags & 0x8000		350	0		=			
+ANR	617	MemberAccess	params . SBRTEMPLATE		350	0					
+ANR	618	Identifier	params		350	0					
+ANR	619	Identifier	SBRTEMPLATE		350	1					
+ANR	620	BitAndExpression	flags & 0x8000		350	1		&			
+ANR	621	Identifier	flags		350	0					
+ANR	622	PrimaryExpression	0x8000		350	1					
+ANR	623	IfStatement	if ( params . SBDSOFFSET )		350	32					
+ANR	624	Condition	params . SBDSOFFSET	34:6:1439:1457	350	0	True				
+ANR	625	MemberAccess	params . SBDSOFFSET		350	0					
+ANR	626	Identifier	params		350	0					
+ANR	627	Identifier	SBDSOFFSET		350	1					
+ANR	628	CompoundStatement		34:28:1366:1366	350	1					
+ANR	629	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , segment -> number , ""text region has SBDSOFFSET %d"" , params . SBDSOFFSET )"	35:1:1464:1583	350	0	True				
+ANR	630	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , segment -> number , ""text region has SBDSOFFSET %d"" , params . SBDSOFFSET )"		350	0					
+ANR	631	Callee	jbig2_error		350	0					
+ANR	632	Identifier	jbig2_error		350	0					
+ANR	633	ArgumentList	ctx		350	1					
+ANR	634	Argument	ctx		350	0					
+ANR	635	Identifier	ctx		350	0					
+ANR	636	Argument	JBIG2_SEVERITY_DEBUG		350	1					
+ANR	637	Identifier	JBIG2_SEVERITY_DEBUG		350	0					
+ANR	638	Argument	segment -> number		350	2					
+ANR	639	PtrMemberAccess	segment -> number		350	0					
+ANR	640	Identifier	segment		350	0					
+ANR	641	Identifier	number		350	1					
+ANR	642	Argument	"""text region has SBDSOFFSET %d"""		350	3					
+ANR	643	PrimaryExpression	"""text region has SBDSOFFSET %d"""		350	0					
+ANR	644	Argument	params . SBDSOFFSET		350	4					
+ANR	645	MemberAccess	params . SBDSOFFSET		350	0					
+ANR	646	Identifier	params		350	0					
+ANR	647	Identifier	SBDSOFFSET		350	1					
+ANR	648	IfStatement	if ( params . SBHUFF )		350	33					
+ANR	649	Condition	params . SBHUFF	37:6:1594:1608	350	0	True				
+ANR	650	MemberAccess	params . SBHUFF		350	0					
+ANR	651	Identifier	params		350	0					
+ANR	652	Identifier	SBHUFF		350	1					
+ANR	653	CompoundStatement		37:24:1517:1517	350	1					
+ANR	654	ExpressionStatement	huffman_flags = jbig2_get_uint16 ( segment_data + offset )	38:1:1615:1674	350	0	True				
+ANR	655	AssignmentExpression	huffman_flags = jbig2_get_uint16 ( segment_data + offset )		350	0		=			
+ANR	656	Identifier	huffman_flags		350	0					
+ANR	657	CallExpression	jbig2_get_uint16 ( segment_data + offset )		350	1					
+ANR	658	Callee	jbig2_get_uint16		350	0					
+ANR	659	Identifier	jbig2_get_uint16		350	0					
+ANR	660	ArgumentList	segment_data + offset		350	1					
+ANR	661	Argument	segment_data + offset		350	0					
+ANR	662	AdditiveExpression	segment_data + offset		350	0		+			
+ANR	663	Identifier	segment_data		350	0					
+ANR	664	Identifier	offset		350	1					
+ANR	665	ExpressionStatement	offset += 2	39:1:1677:1689	350	1	True				
+ANR	666	AssignmentExpression	offset += 2		350	0		+=			
+ANR	667	Identifier	offset		350	0					
+ANR	668	PrimaryExpression	2		350	1					
+ANR	669	IfStatement	if ( huffman_flags & 0x8000 )		350	2					
+ANR	670	Condition	huffman_flags & 0x8000	40:6:1697:1718	350	0	True				
+ANR	671	BitAndExpression	huffman_flags & 0x8000		350	0		&			
+ANR	672	Identifier	huffman_flags		350	0					
+ANR	673	PrimaryExpression	0x8000		350	1					
+ANR	674	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""reserved bit 15 of text region huffman flags is not zero"" )"	40:31:1722:1848	350	1	True				
+ANR	675	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""reserved bit 15 of text region huffman flags is not zero"" )"		350	0					
+ANR	676	Callee	jbig2_error		350	0					
+ANR	677	Identifier	jbig2_error		350	0					
+ANR	678	ArgumentList	ctx		350	1					
+ANR	679	Argument	ctx		350	0					
+ANR	680	Identifier	ctx		350	0					
+ANR	681	Argument	JBIG2_SEVERITY_WARNING		350	1					
+ANR	682	Identifier	JBIG2_SEVERITY_WARNING		350	0					
+ANR	683	Argument	segment -> number		350	2					
+ANR	684	PtrMemberAccess	segment -> number		350	0					
+ANR	685	Identifier	segment		350	0					
+ANR	686	Identifier	number		350	1					
+ANR	687	Argument	"""reserved bit 15 of text region huffman flags is not zero"""		350	3					
+ANR	688	PrimaryExpression	"""reserved bit 15 of text region huffman flags is not zero"""		350	0					
+ANR	689	ElseStatement	else		350	0					
+ANR	690	CompoundStatement		42:6:1764:1764	350	0					
+ANR	691	IfStatement	if ( ( params . SBREFINE ) && ! ( params . SBRTEMPLATE ) )		350	0					
+ANR	692	Condition	( params . SBREFINE ) && ! ( params . SBRTEMPLATE )	43:6:1867:1917	350	0	True				
+ANR	693	AndExpression	( params . SBREFINE ) && ! ( params . SBRTEMPLATE )		350	0		&&			
+ANR	694	MemberAccess	params . SBREFINE		350	0					
+ANR	695	Identifier	params		350	0					
+ANR	696	Identifier	SBREFINE		350	1					
+ANR	697	UnaryOperationExpression	! ( params . SBRTEMPLATE )		350	1					
+ANR	698	UnaryOperator	!		350	0					
+ANR	699	MemberAccess	params . SBRTEMPLATE		350	1					
+ANR	700	Identifier	params		350	0					
+ANR	701	Identifier	SBRTEMPLATE		350	1					
+ANR	702	CompoundStatement		43:60:1826:1826	350	1					
+ANR	703	ExpressionStatement	params . sbrat [ 0 ] = segment_data [ offset ]	44:1:1924:1971	350	0	True				
+ANR	704	AssignmentExpression	params . sbrat [ 0 ] = segment_data [ offset ]		350	0		=			
+ANR	705	ArrayIndexing	params . sbrat [ 0 ]		350	0					
+ANR	706	MemberAccess	params . sbrat		350	0					
+ANR	707	Identifier	params		350	0					
+ANR	708	Identifier	sbrat		350	1					
+ANR	709	PrimaryExpression	0		350	1					
+ANR	710	ArrayIndexing	segment_data [ offset ]		350	1					
+ANR	711	Identifier	segment_data		350	0					
+ANR	712	Identifier	offset		350	1					
+ANR	713	ExpressionStatement	params . sbrat [ 1 ] = segment_data [ offset + 1 ]	45:1:1974:2025	350	1	True				
+ANR	714	AssignmentExpression	params . sbrat [ 1 ] = segment_data [ offset + 1 ]		350	0		=			
+ANR	715	ArrayIndexing	params . sbrat [ 1 ]		350	0					
+ANR	716	MemberAccess	params . sbrat		350	0					
+ANR	717	Identifier	params		350	0					
+ANR	718	Identifier	sbrat		350	1					
+ANR	719	PrimaryExpression	1		350	1					
+ANR	720	ArrayIndexing	segment_data [ offset + 1 ]		350	1					
+ANR	721	Identifier	segment_data		350	0					
+ANR	722	AdditiveExpression	offset + 1		350	1		+			
+ANR	723	Identifier	offset		350	0					
+ANR	724	PrimaryExpression	1		350	1					
+ANR	725	ExpressionStatement	params . sbrat [ 2 ] = segment_data [ offset + 2 ]	46:1:2028:2079	350	2	True				
+ANR	726	AssignmentExpression	params . sbrat [ 2 ] = segment_data [ offset + 2 ]		350	0		=			
+ANR	727	ArrayIndexing	params . sbrat [ 2 ]		350	0					
+ANR	728	MemberAccess	params . sbrat		350	0					
+ANR	729	Identifier	params		350	0					
+ANR	730	Identifier	sbrat		350	1					
+ANR	731	PrimaryExpression	2		350	1					
+ANR	732	ArrayIndexing	segment_data [ offset + 2 ]		350	1					
+ANR	733	Identifier	segment_data		350	0					
+ANR	734	AdditiveExpression	offset + 2		350	1		+			
+ANR	735	Identifier	offset		350	0					
+ANR	736	PrimaryExpression	2		350	1					
+ANR	737	ExpressionStatement	params . sbrat [ 3 ] = segment_data [ offset + 3 ]	47:1:2082:2133	350	3	True				
+ANR	738	AssignmentExpression	params . sbrat [ 3 ] = segment_data [ offset + 3 ]		350	0		=			
+ANR	739	ArrayIndexing	params . sbrat [ 3 ]		350	0					
+ANR	740	MemberAccess	params . sbrat		350	0					
+ANR	741	Identifier	params		350	0					
+ANR	742	Identifier	sbrat		350	1					
+ANR	743	PrimaryExpression	3		350	1					
+ANR	744	ArrayIndexing	segment_data [ offset + 3 ]		350	1					
+ANR	745	Identifier	segment_data		350	0					
+ANR	746	AdditiveExpression	offset + 3		350	1		+			
+ANR	747	Identifier	offset		350	0					
+ANR	748	PrimaryExpression	3		350	1					
+ANR	749	ExpressionStatement	offset += 4	48:1:2136:2148	350	4	True				
+ANR	750	AssignmentExpression	offset += 4		350	0		+=			
+ANR	751	Identifier	offset		350	0					
+ANR	752	PrimaryExpression	4		350	1					
+ANR	753	ExpressionStatement	params . SBNUMINSTANCES = jbig2_get_uint32 ( segment_data + offset )	51:1:2157:2226	350	34	True				
+ANR	754	AssignmentExpression	params . SBNUMINSTANCES = jbig2_get_uint32 ( segment_data + offset )		350	0		=			
+ANR	755	MemberAccess	params . SBNUMINSTANCES		350	0					
+ANR	756	Identifier	params		350	0					
+ANR	757	Identifier	SBNUMINSTANCES		350	1					
+ANR	758	CallExpression	jbig2_get_uint32 ( segment_data + offset )		350	1					
+ANR	759	Callee	jbig2_get_uint32		350	0					
+ANR	760	Identifier	jbig2_get_uint32		350	0					
+ANR	761	ArgumentList	segment_data + offset		350	1					
+ANR	762	Argument	segment_data + offset		350	0					
+ANR	763	AdditiveExpression	segment_data + offset		350	0		+			
+ANR	764	Identifier	segment_data		350	0					
+ANR	765	Identifier	offset		350	1					
+ANR	766	ExpressionStatement	offset += 4	52:1:2229:2241	350	35	True				
+ANR	767	AssignmentExpression	offset += 4		350	0		+=			
+ANR	768	Identifier	offset		350	0					
+ANR	769	PrimaryExpression	4		350	1					
+ANR	770	IfStatement	if ( params . SBHUFF )		350	36					
+ANR	771	Condition	params . SBHUFF	53:6:2249:2263	350	0	True				
+ANR	772	MemberAccess	params . SBHUFF		350	0					
+ANR	773	Identifier	params		350	0					
+ANR	774	Identifier	SBHUFF		350	1					
+ANR	775	CompoundStatement		53:24:2172:2172	350	1					
+ANR	776	SwitchStatement	switch ( huffman_flags & 0x0003 )		350	0					
+ANR	777	Condition	huffman_flags & 0x0003	54:10:2279:2300	350	0	True				
+ANR	778	BitAndExpression	huffman_flags & 0x0003		350	0		&			
+ANR	779	Identifier	huffman_flags		350	0					
+ANR	780	PrimaryExpression	0x0003		350	1					
+ANR	781	CompoundStatement		54:35:2209:2209	350	1					
+ANR	782	Label	case 0 :	55:1:2307:2314	350	0	True				
+ANR	783	ExpressionStatement	"params . SBHUFFFS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_F )"	55:10:2316:2397	350	1	True				
+ANR	784	AssignmentExpression	"params . SBHUFFFS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_F )"		350	0		=			
+ANR	785	MemberAccess	params . SBHUFFFS		350	0					
+ANR	786	Identifier	params		350	0					
+ANR	787	Identifier	SBHUFFFS		350	1					
+ANR	788	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_F )"		350	1					
+ANR	789	Callee	jbig2_build_huffman_table		350	0					
+ANR	790	Identifier	jbig2_build_huffman_table		350	0					
+ANR	791	ArgumentList	ctx		350	1					
+ANR	792	Argument	ctx		350	0					
+ANR	793	Identifier	ctx		350	0					
+ANR	794	Argument	& jbig2_huffman_params_F		350	1					
+ANR	795	UnaryOperationExpression	& jbig2_huffman_params_F		350	0					
+ANR	796	UnaryOperator	&		350	0					
+ANR	797	Identifier	jbig2_huffman_params_F		350	1					
+ANR	798	BreakStatement	break ;	56:1:2400:2406	350	2	True				
+ANR	799	Label	case 1 :	57:1:2409:2416	350	3	True				
+ANR	800	ExpressionStatement	"params . SBHUFFFS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_G )"	57:10:2418:2499	350	4	True				
+ANR	801	AssignmentExpression	"params . SBHUFFFS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_G )"		350	0		=			
+ANR	802	MemberAccess	params . SBHUFFFS		350	0					
+ANR	803	Identifier	params		350	0					
+ANR	804	Identifier	SBHUFFFS		350	1					
+ANR	805	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_G )"		350	1					
+ANR	806	Callee	jbig2_build_huffman_table		350	0					
+ANR	807	Identifier	jbig2_build_huffman_table		350	0					
+ANR	808	ArgumentList	ctx		350	1					
+ANR	809	Argument	ctx		350	0					
+ANR	810	Identifier	ctx		350	0					
+ANR	811	Argument	& jbig2_huffman_params_G		350	1					
+ANR	812	UnaryOperationExpression	& jbig2_huffman_params_G		350	0					
+ANR	813	UnaryOperator	&		350	0					
+ANR	814	Identifier	jbig2_huffman_params_G		350	1					
+ANR	815	BreakStatement	break ;	58:1:2502:2508	350	5	True				
+ANR	816	Label	case 3 :	59:1:2511:2518	350	6	True				
+ANR	817	ExpressionStatement	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"	59:10:2520:2586	350	7	True				
+ANR	818	AssignmentExpression	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"		350	0		=			
+ANR	819	Identifier	huffman_params		350	0					
+ANR	820	CallExpression	"jbig2_find_table ( ctx , segment , table_index )"		350	1					
+ANR	821	Callee	jbig2_find_table		350	0					
+ANR	822	Identifier	jbig2_find_table		350	0					
+ANR	823	ArgumentList	ctx		350	1					
+ANR	824	Argument	ctx		350	0					
+ANR	825	Identifier	ctx		350	0					
+ANR	826	Argument	segment		350	1					
+ANR	827	Identifier	segment		350	0					
+ANR	828	Argument	table_index		350	2					
+ANR	829	Identifier	table_index		350	0					
+ANR	830	IfStatement	if ( huffman_params == NULL )		350	8					
+ANR	831	Condition	huffman_params == NULL	60:6:2594:2615	350	0	True				
+ANR	832	EqualityExpression	huffman_params == NULL		350	0		==			
+ANR	833	Identifier	huffman_params		350	0					
+ANR	834	Identifier	NULL		350	1					
+ANR	835	CompoundStatement		60:31:2524:2524	350	1					
+ANR	836	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom FS huffman table not found (%d)"" , table_index )"	61:1:2622:2749	350	0	True				
+ANR	837	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom FS huffman table not found (%d)"" , table_index )"		350	0		=			
+ANR	838	Identifier	code		350	0					
+ANR	839	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom FS huffman table not found (%d)"" , table_index )"		350	1					
+ANR	840	Callee	jbig2_error		350	0					
+ANR	841	Identifier	jbig2_error		350	0					
+ANR	842	ArgumentList	ctx		350	1					
+ANR	843	Argument	ctx		350	0					
+ANR	844	Identifier	ctx		350	0					
+ANR	845	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	846	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	847	Argument	segment -> number		350	2					
+ANR	848	PtrMemberAccess	segment -> number		350	0					
+ANR	849	Identifier	segment		350	0					
+ANR	850	Identifier	number		350	1					
+ANR	851	Argument	"""Custom FS huffman table not found (%d)"""		350	3					
+ANR	852	PrimaryExpression	"""Custom FS huffman table not found (%d)"""		350	0					
+ANR	853	Argument	table_index		350	4					
+ANR	854	Identifier	table_index		350	0					
+ANR	855	GotoStatement	goto cleanup1 ;	62:1:2752:2766	350	1	True				
+ANR	856	Identifier	cleanup1		350	0					
+ANR	857	ExpressionStatement	"params . SBHUFFFS = jbig2_build_huffman_table ( ctx , huffman_params )"	64:1:2772:2843	350	9	True				
+ANR	858	AssignmentExpression	"params . SBHUFFFS = jbig2_build_huffman_table ( ctx , huffman_params )"		350	0		=			
+ANR	859	MemberAccess	params . SBHUFFFS		350	0					
+ANR	860	Identifier	params		350	0					
+ANR	861	Identifier	SBHUFFFS		350	1					
+ANR	862	CallExpression	"jbig2_build_huffman_table ( ctx , huffman_params )"		350	1					
+ANR	863	Callee	jbig2_build_huffman_table		350	0					
+ANR	864	Identifier	jbig2_build_huffman_table		350	0					
+ANR	865	ArgumentList	ctx		350	1					
+ANR	866	Argument	ctx		350	0					
+ANR	867	Identifier	ctx		350	0					
+ANR	868	Argument	huffman_params		350	1					
+ANR	869	Identifier	huffman_params		350	0					
+ANR	870	ExpressionStatement	++ table_index	65:1:2846:2861	350	10	True				
+ANR	871	UnaryExpression	++ table_index		350	0					
+ANR	872	IncDec	++		350	0					
+ANR	873	Identifier	table_index		350	1					
+ANR	874	BreakStatement	break ;	66:1:2864:2870	350	11	True				
+ANR	875	Label	case 2 :	67:1:2873:2880	350	12	True				
+ANR	876	Label	default :	67:10:2882:2890	350	13	True				
+ANR	877	Identifier	default		350	0					
+ANR	878	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid FS huffman table"" )"	67:20:2892:3013	350	14	True				
+ANR	879	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid FS huffman table"" )"		350	0		=			
+ANR	880	Identifier	code		350	0					
+ANR	881	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid FS huffman table"" )"		350	1					
+ANR	882	Callee	jbig2_error		350	0					
+ANR	883	Identifier	jbig2_error		350	0					
+ANR	884	ArgumentList	ctx		350	1					
+ANR	885	Argument	ctx		350	0					
+ANR	886	Identifier	ctx		350	0					
+ANR	887	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	888	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	889	Argument	segment -> number		350	2					
+ANR	890	PtrMemberAccess	segment -> number		350	0					
+ANR	891	Identifier	segment		350	0					
+ANR	892	Identifier	number		350	1					
+ANR	893	Argument	"""text region specified invalid FS huffman table"""		350	3					
+ANR	894	PrimaryExpression	"""text region specified invalid FS huffman table"""		350	0					
+ANR	895	GotoStatement	goto cleanup1 ;	68:1:3016:3030	350	15	True				
+ANR	896	Identifier	cleanup1		350	0					
+ANR	897	BreakStatement	break ;	69:1:3033:3039	350	16	True				
+ANR	898	IfStatement	if ( params . SBHUFFFS == NULL )		350	1					
+ANR	899	Condition	params . SBHUFFFS == NULL	71:6:3050:3074	350	0	True				
+ANR	900	EqualityExpression	params . SBHUFFFS == NULL		350	0		==			
+ANR	901	MemberAccess	params . SBHUFFFS		350	0					
+ANR	902	Identifier	params		350	0					
+ANR	903	Identifier	SBHUFFFS		350	1					
+ANR	904	Identifier	NULL		350	1					
+ANR	905	CompoundStatement		71:34:2983:2983	350	1					
+ANR	906	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified FS huffman table"" )"	72:1:3081:3213	350	0	True				
+ANR	907	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified FS huffman table"" )"		350	0		=			
+ANR	908	Identifier	code		350	0					
+ANR	909	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified FS huffman table"" )"		350	1					
+ANR	910	Callee	jbig2_error		350	0					
+ANR	911	Identifier	jbig2_error		350	0					
+ANR	912	ArgumentList	ctx		350	1					
+ANR	913	Argument	ctx		350	0					
+ANR	914	Identifier	ctx		350	0					
+ANR	915	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	916	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	917	Argument	segment -> number		350	2					
+ANR	918	PtrMemberAccess	segment -> number		350	0					
+ANR	919	Identifier	segment		350	0					
+ANR	920	Identifier	number		350	1					
+ANR	921	Argument	"""failed to allocate text region specified FS huffman table"""		350	3					
+ANR	922	PrimaryExpression	"""failed to allocate text region specified FS huffman table"""		350	0					
+ANR	923	GotoStatement	goto cleanup1 ;	73:1:3216:3230	350	1	True				
+ANR	924	Identifier	cleanup1		350	0					
+ANR	925	SwitchStatement	switch ( ( huffman_flags & 0x000c ) >> 2 )		350	2					
+ANR	926	Condition	( huffman_flags & 0x000c ) >> 2	75:10:3245:3275	350	0	True				
+ANR	927	ShiftExpression	( huffman_flags & 0x000c ) >> 2		350	0		>>			
+ANR	928	BitAndExpression	huffman_flags & 0x000c		350	0		&			
+ANR	929	Identifier	huffman_flags		350	0					
+ANR	930	PrimaryExpression	0x000c		350	1					
+ANR	931	PrimaryExpression	2		350	1					
+ANR	932	CompoundStatement		75:44:3184:3184	350	1					
+ANR	933	Label	case 0 :	76:1:3282:3289	350	0	True				
+ANR	934	ExpressionStatement	"params . SBHUFFDS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_H )"	76:10:3291:3372	350	1	True				
+ANR	935	AssignmentExpression	"params . SBHUFFDS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_H )"		350	0		=			
+ANR	936	MemberAccess	params . SBHUFFDS		350	0					
+ANR	937	Identifier	params		350	0					
+ANR	938	Identifier	SBHUFFDS		350	1					
+ANR	939	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_H )"		350	1					
+ANR	940	Callee	jbig2_build_huffman_table		350	0					
+ANR	941	Identifier	jbig2_build_huffman_table		350	0					
+ANR	942	ArgumentList	ctx		350	1					
+ANR	943	Argument	ctx		350	0					
+ANR	944	Identifier	ctx		350	0					
+ANR	945	Argument	& jbig2_huffman_params_H		350	1					
+ANR	946	UnaryOperationExpression	& jbig2_huffman_params_H		350	0					
+ANR	947	UnaryOperator	&		350	0					
+ANR	948	Identifier	jbig2_huffman_params_H		350	1					
+ANR	949	BreakStatement	break ;	77:1:3375:3381	350	2	True				
+ANR	950	Label	case 1 :	78:1:3384:3391	350	3	True				
+ANR	951	ExpressionStatement	"params . SBHUFFDS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_I )"	78:10:3393:3474	350	4	True				
+ANR	952	AssignmentExpression	"params . SBHUFFDS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_I )"		350	0		=			
+ANR	953	MemberAccess	params . SBHUFFDS		350	0					
+ANR	954	Identifier	params		350	0					
+ANR	955	Identifier	SBHUFFDS		350	1					
+ANR	956	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_I )"		350	1					
+ANR	957	Callee	jbig2_build_huffman_table		350	0					
+ANR	958	Identifier	jbig2_build_huffman_table		350	0					
+ANR	959	ArgumentList	ctx		350	1					
+ANR	960	Argument	ctx		350	0					
+ANR	961	Identifier	ctx		350	0					
+ANR	962	Argument	& jbig2_huffman_params_I		350	1					
+ANR	963	UnaryOperationExpression	& jbig2_huffman_params_I		350	0					
+ANR	964	UnaryOperator	&		350	0					
+ANR	965	Identifier	jbig2_huffman_params_I		350	1					
+ANR	966	BreakStatement	break ;	79:1:3477:3483	350	5	True				
+ANR	967	Label	case 2 :	80:1:3486:3493	350	6	True				
+ANR	968	ExpressionStatement	"params . SBHUFFDS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_J )"	80:10:3495:3576	350	7	True				
+ANR	969	AssignmentExpression	"params . SBHUFFDS = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_J )"		350	0		=			
+ANR	970	MemberAccess	params . SBHUFFDS		350	0					
+ANR	971	Identifier	params		350	0					
+ANR	972	Identifier	SBHUFFDS		350	1					
+ANR	973	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_J )"		350	1					
+ANR	974	Callee	jbig2_build_huffman_table		350	0					
+ANR	975	Identifier	jbig2_build_huffman_table		350	0					
+ANR	976	ArgumentList	ctx		350	1					
+ANR	977	Argument	ctx		350	0					
+ANR	978	Identifier	ctx		350	0					
+ANR	979	Argument	& jbig2_huffman_params_J		350	1					
+ANR	980	UnaryOperationExpression	& jbig2_huffman_params_J		350	0					
+ANR	981	UnaryOperator	&		350	0					
+ANR	982	Identifier	jbig2_huffman_params_J		350	1					
+ANR	983	BreakStatement	break ;	81:1:3579:3585	350	8	True				
+ANR	984	Label	case 3 :	82:1:3588:3595	350	9	True				
+ANR	985	ExpressionStatement	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"	82:10:3597:3663	350	10	True				
+ANR	986	AssignmentExpression	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"		350	0		=			
+ANR	987	Identifier	huffman_params		350	0					
+ANR	988	CallExpression	"jbig2_find_table ( ctx , segment , table_index )"		350	1					
+ANR	989	Callee	jbig2_find_table		350	0					
+ANR	990	Identifier	jbig2_find_table		350	0					
+ANR	991	ArgumentList	ctx		350	1					
+ANR	992	Argument	ctx		350	0					
+ANR	993	Identifier	ctx		350	0					
+ANR	994	Argument	segment		350	1					
+ANR	995	Identifier	segment		350	0					
+ANR	996	Argument	table_index		350	2					
+ANR	997	Identifier	table_index		350	0					
+ANR	998	IfStatement	if ( huffman_params == NULL )		350	11					
+ANR	999	Condition	huffman_params == NULL	83:6:3671:3692	350	0	True				
+ANR	1000	EqualityExpression	huffman_params == NULL		350	0		==			
+ANR	1001	Identifier	huffman_params		350	0					
+ANR	1002	Identifier	NULL		350	1					
+ANR	1003	CompoundStatement		83:31:3601:3601	350	1					
+ANR	1004	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom DS huffman table not found (%d)"" , table_index )"	84:1:3699:3826	350	0	True				
+ANR	1005	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom DS huffman table not found (%d)"" , table_index )"		350	0		=			
+ANR	1006	Identifier	code		350	0					
+ANR	1007	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom DS huffman table not found (%d)"" , table_index )"		350	1					
+ANR	1008	Callee	jbig2_error		350	0					
+ANR	1009	Identifier	jbig2_error		350	0					
+ANR	1010	ArgumentList	ctx		350	1					
+ANR	1011	Argument	ctx		350	0					
+ANR	1012	Identifier	ctx		350	0					
+ANR	1013	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1014	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1015	Argument	segment -> number		350	2					
+ANR	1016	PtrMemberAccess	segment -> number		350	0					
+ANR	1017	Identifier	segment		350	0					
+ANR	1018	Identifier	number		350	1					
+ANR	1019	Argument	"""Custom DS huffman table not found (%d)"""		350	3					
+ANR	1020	PrimaryExpression	"""Custom DS huffman table not found (%d)"""		350	0					
+ANR	1021	Argument	table_index		350	4					
+ANR	1022	Identifier	table_index		350	0					
+ANR	1023	GotoStatement	goto cleanup1 ;	85:1:3829:3843	350	1	True				
+ANR	1024	Identifier	cleanup1		350	0					
+ANR	1025	ExpressionStatement	"params . SBHUFFDS = jbig2_build_huffman_table ( ctx , huffman_params )"	87:1:3849:3920	350	12	True				
+ANR	1026	AssignmentExpression	"params . SBHUFFDS = jbig2_build_huffman_table ( ctx , huffman_params )"		350	0		=			
+ANR	1027	MemberAccess	params . SBHUFFDS		350	0					
+ANR	1028	Identifier	params		350	0					
+ANR	1029	Identifier	SBHUFFDS		350	1					
+ANR	1030	CallExpression	"jbig2_build_huffman_table ( ctx , huffman_params )"		350	1					
+ANR	1031	Callee	jbig2_build_huffman_table		350	0					
+ANR	1032	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1033	ArgumentList	ctx		350	1					
+ANR	1034	Argument	ctx		350	0					
+ANR	1035	Identifier	ctx		350	0					
+ANR	1036	Argument	huffman_params		350	1					
+ANR	1037	Identifier	huffman_params		350	0					
+ANR	1038	ExpressionStatement	++ table_index	88:1:3923:3938	350	13	True				
+ANR	1039	UnaryExpression	++ table_index		350	0					
+ANR	1040	IncDec	++		350	0					
+ANR	1041	Identifier	table_index		350	1					
+ANR	1042	BreakStatement	break ;	89:1:3941:3947	350	14	True				
+ANR	1043	IfStatement	if ( params . SBHUFFDS == NULL )		350	3					
+ANR	1044	Condition	params . SBHUFFDS == NULL	91:6:3958:3982	350	0	True				
+ANR	1045	EqualityExpression	params . SBHUFFDS == NULL		350	0		==			
+ANR	1046	MemberAccess	params . SBHUFFDS		350	0					
+ANR	1047	Identifier	params		350	0					
+ANR	1048	Identifier	SBHUFFDS		350	1					
+ANR	1049	Identifier	NULL		350	1					
+ANR	1050	CompoundStatement		91:34:3891:3891	350	1					
+ANR	1051	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified DS huffman table"" )"	92:1:3989:4121	350	0	True				
+ANR	1052	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified DS huffman table"" )"		350	0		=			
+ANR	1053	Identifier	code		350	0					
+ANR	1054	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified DS huffman table"" )"		350	1					
+ANR	1055	Callee	jbig2_error		350	0					
+ANR	1056	Identifier	jbig2_error		350	0					
+ANR	1057	ArgumentList	ctx		350	1					
+ANR	1058	Argument	ctx		350	0					
+ANR	1059	Identifier	ctx		350	0					
+ANR	1060	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1061	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1062	Argument	segment -> number		350	2					
+ANR	1063	PtrMemberAccess	segment -> number		350	0					
+ANR	1064	Identifier	segment		350	0					
+ANR	1065	Identifier	number		350	1					
+ANR	1066	Argument	"""failed to allocate text region specified DS huffman table"""		350	3					
+ANR	1067	PrimaryExpression	"""failed to allocate text region specified DS huffman table"""		350	0					
+ANR	1068	GotoStatement	goto cleanup1 ;	93:1:4124:4138	350	1	True				
+ANR	1069	Identifier	cleanup1		350	0					
+ANR	1070	SwitchStatement	switch ( ( huffman_flags & 0x0030 ) >> 4 )		350	4					
+ANR	1071	Condition	( huffman_flags & 0x0030 ) >> 4	95:10:4153:4183	350	0	True				
+ANR	1072	ShiftExpression	( huffman_flags & 0x0030 ) >> 4		350	0		>>			
+ANR	1073	BitAndExpression	huffman_flags & 0x0030		350	0		&			
+ANR	1074	Identifier	huffman_flags		350	0					
+ANR	1075	PrimaryExpression	0x0030		350	1					
+ANR	1076	PrimaryExpression	4		350	1					
+ANR	1077	CompoundStatement		95:44:4092:4092	350	1					
+ANR	1078	Label	case 0 :	96:1:4190:4197	350	0	True				
+ANR	1079	ExpressionStatement	"params . SBHUFFDT = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_K )"	96:10:4199:4280	350	1	True				
+ANR	1080	AssignmentExpression	"params . SBHUFFDT = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_K )"		350	0		=			
+ANR	1081	MemberAccess	params . SBHUFFDT		350	0					
+ANR	1082	Identifier	params		350	0					
+ANR	1083	Identifier	SBHUFFDT		350	1					
+ANR	1084	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_K )"		350	1					
+ANR	1085	Callee	jbig2_build_huffman_table		350	0					
+ANR	1086	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1087	ArgumentList	ctx		350	1					
+ANR	1088	Argument	ctx		350	0					
+ANR	1089	Identifier	ctx		350	0					
+ANR	1090	Argument	& jbig2_huffman_params_K		350	1					
+ANR	1091	UnaryOperationExpression	& jbig2_huffman_params_K		350	0					
+ANR	1092	UnaryOperator	&		350	0					
+ANR	1093	Identifier	jbig2_huffman_params_K		350	1					
+ANR	1094	BreakStatement	break ;	97:1:4283:4289	350	2	True				
+ANR	1095	Label	case 1 :	98:1:4292:4299	350	3	True				
+ANR	1096	ExpressionStatement	"params . SBHUFFDT = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_L )"	98:10:4301:4382	350	4	True				
+ANR	1097	AssignmentExpression	"params . SBHUFFDT = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_L )"		350	0		=			
+ANR	1098	MemberAccess	params . SBHUFFDT		350	0					
+ANR	1099	Identifier	params		350	0					
+ANR	1100	Identifier	SBHUFFDT		350	1					
+ANR	1101	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_L )"		350	1					
+ANR	1102	Callee	jbig2_build_huffman_table		350	0					
+ANR	1103	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1104	ArgumentList	ctx		350	1					
+ANR	1105	Argument	ctx		350	0					
+ANR	1106	Identifier	ctx		350	0					
+ANR	1107	Argument	& jbig2_huffman_params_L		350	1					
+ANR	1108	UnaryOperationExpression	& jbig2_huffman_params_L		350	0					
+ANR	1109	UnaryOperator	&		350	0					
+ANR	1110	Identifier	jbig2_huffman_params_L		350	1					
+ANR	1111	BreakStatement	break ;	99:1:4385:4391	350	5	True				
+ANR	1112	Label	case 2 :	100:1:4394:4401	350	6	True				
+ANR	1113	ExpressionStatement	"params . SBHUFFDT = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_M )"	100:10:4403:4484	350	7	True				
+ANR	1114	AssignmentExpression	"params . SBHUFFDT = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_M )"		350	0		=			
+ANR	1115	MemberAccess	params . SBHUFFDT		350	0					
+ANR	1116	Identifier	params		350	0					
+ANR	1117	Identifier	SBHUFFDT		350	1					
+ANR	1118	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_M )"		350	1					
+ANR	1119	Callee	jbig2_build_huffman_table		350	0					
+ANR	1120	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1121	ArgumentList	ctx		350	1					
+ANR	1122	Argument	ctx		350	0					
+ANR	1123	Identifier	ctx		350	0					
+ANR	1124	Argument	& jbig2_huffman_params_M		350	1					
+ANR	1125	UnaryOperationExpression	& jbig2_huffman_params_M		350	0					
+ANR	1126	UnaryOperator	&		350	0					
+ANR	1127	Identifier	jbig2_huffman_params_M		350	1					
+ANR	1128	BreakStatement	break ;	101:1:4487:4493	350	8	True				
+ANR	1129	Label	case 3 :	102:1:4496:4503	350	9	True				
+ANR	1130	ExpressionStatement	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"	102:10:4505:4571	350	10	True				
+ANR	1131	AssignmentExpression	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"		350	0		=			
+ANR	1132	Identifier	huffman_params		350	0					
+ANR	1133	CallExpression	"jbig2_find_table ( ctx , segment , table_index )"		350	1					
+ANR	1134	Callee	jbig2_find_table		350	0					
+ANR	1135	Identifier	jbig2_find_table		350	0					
+ANR	1136	ArgumentList	ctx		350	1					
+ANR	1137	Argument	ctx		350	0					
+ANR	1138	Identifier	ctx		350	0					
+ANR	1139	Argument	segment		350	1					
+ANR	1140	Identifier	segment		350	0					
+ANR	1141	Argument	table_index		350	2					
+ANR	1142	Identifier	table_index		350	0					
+ANR	1143	IfStatement	if ( huffman_params == NULL )		350	11					
+ANR	1144	Condition	huffman_params == NULL	103:6:4579:4600	350	0	True				
+ANR	1145	EqualityExpression	huffman_params == NULL		350	0		==			
+ANR	1146	Identifier	huffman_params		350	0					
+ANR	1147	Identifier	NULL		350	1					
+ANR	1148	CompoundStatement		103:31:4509:4509	350	1					
+ANR	1149	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom DT huffman table not found (%d)"" , table_index )"	104:1:4607:4734	350	0	True				
+ANR	1150	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom DT huffman table not found (%d)"" , table_index )"		350	0		=			
+ANR	1151	Identifier	code		350	0					
+ANR	1152	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom DT huffman table not found (%d)"" , table_index )"		350	1					
+ANR	1153	Callee	jbig2_error		350	0					
+ANR	1154	Identifier	jbig2_error		350	0					
+ANR	1155	ArgumentList	ctx		350	1					
+ANR	1156	Argument	ctx		350	0					
+ANR	1157	Identifier	ctx		350	0					
+ANR	1158	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1159	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1160	Argument	segment -> number		350	2					
+ANR	1161	PtrMemberAccess	segment -> number		350	0					
+ANR	1162	Identifier	segment		350	0					
+ANR	1163	Identifier	number		350	1					
+ANR	1164	Argument	"""Custom DT huffman table not found (%d)"""		350	3					
+ANR	1165	PrimaryExpression	"""Custom DT huffman table not found (%d)"""		350	0					
+ANR	1166	Argument	table_index		350	4					
+ANR	1167	Identifier	table_index		350	0					
+ANR	1168	GotoStatement	goto cleanup1 ;	105:1:4737:4751	350	1	True				
+ANR	1169	Identifier	cleanup1		350	0					
+ANR	1170	ExpressionStatement	"params . SBHUFFDT = jbig2_build_huffman_table ( ctx , huffman_params )"	107:1:4757:4828	350	12	True				
+ANR	1171	AssignmentExpression	"params . SBHUFFDT = jbig2_build_huffman_table ( ctx , huffman_params )"		350	0		=			
+ANR	1172	MemberAccess	params . SBHUFFDT		350	0					
+ANR	1173	Identifier	params		350	0					
+ANR	1174	Identifier	SBHUFFDT		350	1					
+ANR	1175	CallExpression	"jbig2_build_huffman_table ( ctx , huffman_params )"		350	1					
+ANR	1176	Callee	jbig2_build_huffman_table		350	0					
+ANR	1177	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1178	ArgumentList	ctx		350	1					
+ANR	1179	Argument	ctx		350	0					
+ANR	1180	Identifier	ctx		350	0					
+ANR	1181	Argument	huffman_params		350	1					
+ANR	1182	Identifier	huffman_params		350	0					
+ANR	1183	ExpressionStatement	++ table_index	108:1:4831:4846	350	13	True				
+ANR	1184	UnaryExpression	++ table_index		350	0					
+ANR	1185	IncDec	++		350	0					
+ANR	1186	Identifier	table_index		350	1					
+ANR	1187	BreakStatement	break ;	109:1:4849:4855	350	14	True				
+ANR	1188	IfStatement	if ( params . SBHUFFDT == NULL )		350	5					
+ANR	1189	Condition	params . SBHUFFDT == NULL	111:6:4866:4890	350	0	True				
+ANR	1190	EqualityExpression	params . SBHUFFDT == NULL		350	0		==			
+ANR	1191	MemberAccess	params . SBHUFFDT		350	0					
+ANR	1192	Identifier	params		350	0					
+ANR	1193	Identifier	SBHUFFDT		350	1					
+ANR	1194	Identifier	NULL		350	1					
+ANR	1195	CompoundStatement		111:34:4799:4799	350	1					
+ANR	1196	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified DT huffman table"" )"	112:1:4897:5029	350	0	True				
+ANR	1197	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified DT huffman table"" )"		350	0		=			
+ANR	1198	Identifier	code		350	0					
+ANR	1199	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified DT huffman table"" )"		350	1					
+ANR	1200	Callee	jbig2_error		350	0					
+ANR	1201	Identifier	jbig2_error		350	0					
+ANR	1202	ArgumentList	ctx		350	1					
+ANR	1203	Argument	ctx		350	0					
+ANR	1204	Identifier	ctx		350	0					
+ANR	1205	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1206	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1207	Argument	segment -> number		350	2					
+ANR	1208	PtrMemberAccess	segment -> number		350	0					
+ANR	1209	Identifier	segment		350	0					
+ANR	1210	Identifier	number		350	1					
+ANR	1211	Argument	"""failed to allocate text region specified DT huffman table"""		350	3					
+ANR	1212	PrimaryExpression	"""failed to allocate text region specified DT huffman table"""		350	0					
+ANR	1213	GotoStatement	goto cleanup1 ;	113:1:5032:5046	350	1	True				
+ANR	1214	Identifier	cleanup1		350	0					
+ANR	1215	SwitchStatement	switch ( ( huffman_flags & 0x00c0 ) >> 6 )		350	6					
+ANR	1216	Condition	( huffman_flags & 0x00c0 ) >> 6	115:10:5061:5091	350	0	True				
+ANR	1217	ShiftExpression	( huffman_flags & 0x00c0 ) >> 6		350	0		>>			
+ANR	1218	BitAndExpression	huffman_flags & 0x00c0		350	0		&			
+ANR	1219	Identifier	huffman_flags		350	0					
+ANR	1220	PrimaryExpression	0x00c0		350	1					
+ANR	1221	PrimaryExpression	6		350	1					
+ANR	1222	CompoundStatement		115:44:5000:5000	350	1					
+ANR	1223	Label	case 0 :	116:1:5098:5105	350	0	True				
+ANR	1224	ExpressionStatement	"params . SBHUFFRDW = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"	116:10:5107:5189	350	1	True				
+ANR	1225	AssignmentExpression	"params . SBHUFFRDW = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"		350	0		=			
+ANR	1226	MemberAccess	params . SBHUFFRDW		350	0					
+ANR	1227	Identifier	params		350	0					
+ANR	1228	Identifier	SBHUFFRDW		350	1					
+ANR	1229	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"		350	1					
+ANR	1230	Callee	jbig2_build_huffman_table		350	0					
+ANR	1231	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1232	ArgumentList	ctx		350	1					
+ANR	1233	Argument	ctx		350	0					
+ANR	1234	Identifier	ctx		350	0					
+ANR	1235	Argument	& jbig2_huffman_params_N		350	1					
+ANR	1236	UnaryOperationExpression	& jbig2_huffman_params_N		350	0					
+ANR	1237	UnaryOperator	&		350	0					
+ANR	1238	Identifier	jbig2_huffman_params_N		350	1					
+ANR	1239	BreakStatement	break ;	117:1:5192:5198	350	2	True				
+ANR	1240	Label	case 1 :	118:1:5201:5208	350	3	True				
+ANR	1241	ExpressionStatement	"params . SBHUFFRDW = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"	118:10:5210:5292	350	4	True				
+ANR	1242	AssignmentExpression	"params . SBHUFFRDW = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"		350	0		=			
+ANR	1243	MemberAccess	params . SBHUFFRDW		350	0					
+ANR	1244	Identifier	params		350	0					
+ANR	1245	Identifier	SBHUFFRDW		350	1					
+ANR	1246	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"		350	1					
+ANR	1247	Callee	jbig2_build_huffman_table		350	0					
+ANR	1248	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1249	ArgumentList	ctx		350	1					
+ANR	1250	Argument	ctx		350	0					
+ANR	1251	Identifier	ctx		350	0					
+ANR	1252	Argument	& jbig2_huffman_params_O		350	1					
+ANR	1253	UnaryOperationExpression	& jbig2_huffman_params_O		350	0					
+ANR	1254	UnaryOperator	&		350	0					
+ANR	1255	Identifier	jbig2_huffman_params_O		350	1					
+ANR	1256	BreakStatement	break ;	119:1:5295:5301	350	5	True				
+ANR	1257	Label	case 3 :	120:1:5304:5311	350	6	True				
+ANR	1258	ExpressionStatement	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"	120:10:5313:5379	350	7	True				
+ANR	1259	AssignmentExpression	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"		350	0		=			
+ANR	1260	Identifier	huffman_params		350	0					
+ANR	1261	CallExpression	"jbig2_find_table ( ctx , segment , table_index )"		350	1					
+ANR	1262	Callee	jbig2_find_table		350	0					
+ANR	1263	Identifier	jbig2_find_table		350	0					
+ANR	1264	ArgumentList	ctx		350	1					
+ANR	1265	Argument	ctx		350	0					
+ANR	1266	Identifier	ctx		350	0					
+ANR	1267	Argument	segment		350	1					
+ANR	1268	Identifier	segment		350	0					
+ANR	1269	Argument	table_index		350	2					
+ANR	1270	Identifier	table_index		350	0					
+ANR	1271	IfStatement	if ( huffman_params == NULL )		350	8					
+ANR	1272	Condition	huffman_params == NULL	121:6:5387:5408	350	0	True				
+ANR	1273	EqualityExpression	huffman_params == NULL		350	0		==			
+ANR	1274	Identifier	huffman_params		350	0					
+ANR	1275	Identifier	NULL		350	1					
+ANR	1276	CompoundStatement		121:31:5317:5317	350	1					
+ANR	1277	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDW huffman table not found (%d)"" , table_index )"	122:1:5415:5543	350	0	True				
+ANR	1278	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDW huffman table not found (%d)"" , table_index )"		350	0		=			
+ANR	1279	Identifier	code		350	0					
+ANR	1280	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDW huffman table not found (%d)"" , table_index )"		350	1					
+ANR	1281	Callee	jbig2_error		350	0					
+ANR	1282	Identifier	jbig2_error		350	0					
+ANR	1283	ArgumentList	ctx		350	1					
+ANR	1284	Argument	ctx		350	0					
+ANR	1285	Identifier	ctx		350	0					
+ANR	1286	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1287	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1288	Argument	segment -> number		350	2					
+ANR	1289	PtrMemberAccess	segment -> number		350	0					
+ANR	1290	Identifier	segment		350	0					
+ANR	1291	Identifier	number		350	1					
+ANR	1292	Argument	"""Custom RDW huffman table not found (%d)"""		350	3					
+ANR	1293	PrimaryExpression	"""Custom RDW huffman table not found (%d)"""		350	0					
+ANR	1294	Argument	table_index		350	4					
+ANR	1295	Identifier	table_index		350	0					
+ANR	1296	GotoStatement	goto cleanup1 ;	123:1:5546:5560	350	1	True				
+ANR	1297	Identifier	cleanup1		350	0					
+ANR	1298	ExpressionStatement	"params . SBHUFFRDW = jbig2_build_huffman_table ( ctx , huffman_params )"	125:1:5566:5638	350	9	True				
+ANR	1299	AssignmentExpression	"params . SBHUFFRDW = jbig2_build_huffman_table ( ctx , huffman_params )"		350	0		=			
+ANR	1300	MemberAccess	params . SBHUFFRDW		350	0					
+ANR	1301	Identifier	params		350	0					
+ANR	1302	Identifier	SBHUFFRDW		350	1					
+ANR	1303	CallExpression	"jbig2_build_huffman_table ( ctx , huffman_params )"		350	1					
+ANR	1304	Callee	jbig2_build_huffman_table		350	0					
+ANR	1305	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1306	ArgumentList	ctx		350	1					
+ANR	1307	Argument	ctx		350	0					
+ANR	1308	Identifier	ctx		350	0					
+ANR	1309	Argument	huffman_params		350	1					
+ANR	1310	Identifier	huffman_params		350	0					
+ANR	1311	ExpressionStatement	++ table_index	126:1:5641:5656	350	10	True				
+ANR	1312	UnaryExpression	++ table_index		350	0					
+ANR	1313	IncDec	++		350	0					
+ANR	1314	Identifier	table_index		350	1					
+ANR	1315	BreakStatement	break ;	127:1:5659:5665	350	11	True				
+ANR	1316	Label	case 2 :	128:1:5668:5675	350	12	True				
+ANR	1317	Label	default :	128:10:5677:5685	350	13	True				
+ANR	1318	Identifier	default		350	0					
+ANR	1319	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDW huffman table"" )"	128:20:5687:5809	350	14	True				
+ANR	1320	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDW huffman table"" )"		350	0		=			
+ANR	1321	Identifier	code		350	0					
+ANR	1322	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDW huffman table"" )"		350	1					
+ANR	1323	Callee	jbig2_error		350	0					
+ANR	1324	Identifier	jbig2_error		350	0					
+ANR	1325	ArgumentList	ctx		350	1					
+ANR	1326	Argument	ctx		350	0					
+ANR	1327	Identifier	ctx		350	0					
+ANR	1328	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1329	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1330	Argument	segment -> number		350	2					
+ANR	1331	PtrMemberAccess	segment -> number		350	0					
+ANR	1332	Identifier	segment		350	0					
+ANR	1333	Identifier	number		350	1					
+ANR	1334	Argument	"""text region specified invalid RDW huffman table"""		350	3					
+ANR	1335	PrimaryExpression	"""text region specified invalid RDW huffman table"""		350	0					
+ANR	1336	GotoStatement	goto cleanup1 ;	129:1:5812:5826	350	15	True				
+ANR	1337	Identifier	cleanup1		350	0					
+ANR	1338	BreakStatement	break ;	130:1:5829:5835	350	16	True				
+ANR	1339	IfStatement	if ( params . SBHUFFRDW == NULL )		350	7					
+ANR	1340	Condition	params . SBHUFFRDW == NULL	132:6:5846:5871	350	0	True				
+ANR	1341	EqualityExpression	params . SBHUFFRDW == NULL		350	0		==			
+ANR	1342	MemberAccess	params . SBHUFFRDW		350	0					
+ANR	1343	Identifier	params		350	0					
+ANR	1344	Identifier	SBHUFFRDW		350	1					
+ANR	1345	Identifier	NULL		350	1					
+ANR	1346	CompoundStatement		132:35:5780:5780	350	1					
+ANR	1347	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDW huffman table"" )"	133:1:5878:6011	350	0	True				
+ANR	1348	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDW huffman table"" )"		350	0		=			
+ANR	1349	Identifier	code		350	0					
+ANR	1350	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDW huffman table"" )"		350	1					
+ANR	1351	Callee	jbig2_error		350	0					
+ANR	1352	Identifier	jbig2_error		350	0					
+ANR	1353	ArgumentList	ctx		350	1					
+ANR	1354	Argument	ctx		350	0					
+ANR	1355	Identifier	ctx		350	0					
+ANR	1356	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1357	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1358	Argument	segment -> number		350	2					
+ANR	1359	PtrMemberAccess	segment -> number		350	0					
+ANR	1360	Identifier	segment		350	0					
+ANR	1361	Identifier	number		350	1					
+ANR	1362	Argument	"""failed to allocate text region specified RDW huffman table"""		350	3					
+ANR	1363	PrimaryExpression	"""failed to allocate text region specified RDW huffman table"""		350	0					
+ANR	1364	GotoStatement	goto cleanup1 ;	134:1:6014:6028	350	1	True				
+ANR	1365	Identifier	cleanup1		350	0					
+ANR	1366	SwitchStatement	switch ( ( huffman_flags & 0x0300 ) >> 8 )		350	8					
+ANR	1367	Condition	( huffman_flags & 0x0300 ) >> 8	136:10:6043:6073	350	0	True				
+ANR	1368	ShiftExpression	( huffman_flags & 0x0300 ) >> 8		350	0		>>			
+ANR	1369	BitAndExpression	huffman_flags & 0x0300		350	0		&			
+ANR	1370	Identifier	huffman_flags		350	0					
+ANR	1371	PrimaryExpression	0x0300		350	1					
+ANR	1372	PrimaryExpression	8		350	1					
+ANR	1373	CompoundStatement		136:44:5982:5982	350	1					
+ANR	1374	Label	case 0 :	137:1:6080:6087	350	0	True				
+ANR	1375	ExpressionStatement	"params . SBHUFFRDH = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"	137:10:6089:6171	350	1	True				
+ANR	1376	AssignmentExpression	"params . SBHUFFRDH = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"		350	0		=			
+ANR	1377	MemberAccess	params . SBHUFFRDH		350	0					
+ANR	1378	Identifier	params		350	0					
+ANR	1379	Identifier	SBHUFFRDH		350	1					
+ANR	1380	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"		350	1					
+ANR	1381	Callee	jbig2_build_huffman_table		350	0					
+ANR	1382	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1383	ArgumentList	ctx		350	1					
+ANR	1384	Argument	ctx		350	0					
+ANR	1385	Identifier	ctx		350	0					
+ANR	1386	Argument	& jbig2_huffman_params_N		350	1					
+ANR	1387	UnaryOperationExpression	& jbig2_huffman_params_N		350	0					
+ANR	1388	UnaryOperator	&		350	0					
+ANR	1389	Identifier	jbig2_huffman_params_N		350	1					
+ANR	1390	BreakStatement	break ;	138:1:6174:6180	350	2	True				
+ANR	1391	Label	case 1 :	139:1:6183:6190	350	3	True				
+ANR	1392	ExpressionStatement	"params . SBHUFFRDH = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"	139:10:6192:6274	350	4	True				
+ANR	1393	AssignmentExpression	"params . SBHUFFRDH = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"		350	0		=			
+ANR	1394	MemberAccess	params . SBHUFFRDH		350	0					
+ANR	1395	Identifier	params		350	0					
+ANR	1396	Identifier	SBHUFFRDH		350	1					
+ANR	1397	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"		350	1					
+ANR	1398	Callee	jbig2_build_huffman_table		350	0					
+ANR	1399	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1400	ArgumentList	ctx		350	1					
+ANR	1401	Argument	ctx		350	0					
+ANR	1402	Identifier	ctx		350	0					
+ANR	1403	Argument	& jbig2_huffman_params_O		350	1					
+ANR	1404	UnaryOperationExpression	& jbig2_huffman_params_O		350	0					
+ANR	1405	UnaryOperator	&		350	0					
+ANR	1406	Identifier	jbig2_huffman_params_O		350	1					
+ANR	1407	BreakStatement	break ;	140:1:6277:6283	350	5	True				
+ANR	1408	Label	case 3 :	141:1:6286:6293	350	6	True				
+ANR	1409	ExpressionStatement	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"	141:10:6295:6361	350	7	True				
+ANR	1410	AssignmentExpression	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"		350	0		=			
+ANR	1411	Identifier	huffman_params		350	0					
+ANR	1412	CallExpression	"jbig2_find_table ( ctx , segment , table_index )"		350	1					
+ANR	1413	Callee	jbig2_find_table		350	0					
+ANR	1414	Identifier	jbig2_find_table		350	0					
+ANR	1415	ArgumentList	ctx		350	1					
+ANR	1416	Argument	ctx		350	0					
+ANR	1417	Identifier	ctx		350	0					
+ANR	1418	Argument	segment		350	1					
+ANR	1419	Identifier	segment		350	0					
+ANR	1420	Argument	table_index		350	2					
+ANR	1421	Identifier	table_index		350	0					
+ANR	1422	IfStatement	if ( huffman_params == NULL )		350	8					
+ANR	1423	Condition	huffman_params == NULL	142:6:6369:6390	350	0	True				
+ANR	1424	EqualityExpression	huffman_params == NULL		350	0		==			
+ANR	1425	Identifier	huffman_params		350	0					
+ANR	1426	Identifier	NULL		350	1					
+ANR	1427	CompoundStatement		142:31:6299:6299	350	1					
+ANR	1428	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDH huffman table not found (%d)"" , table_index )"	143:1:6397:6525	350	0	True				
+ANR	1429	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDH huffman table not found (%d)"" , table_index )"		350	0		=			
+ANR	1430	Identifier	code		350	0					
+ANR	1431	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDH huffman table not found (%d)"" , table_index )"		350	1					
+ANR	1432	Callee	jbig2_error		350	0					
+ANR	1433	Identifier	jbig2_error		350	0					
+ANR	1434	ArgumentList	ctx		350	1					
+ANR	1435	Argument	ctx		350	0					
+ANR	1436	Identifier	ctx		350	0					
+ANR	1437	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1438	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1439	Argument	segment -> number		350	2					
+ANR	1440	PtrMemberAccess	segment -> number		350	0					
+ANR	1441	Identifier	segment		350	0					
+ANR	1442	Identifier	number		350	1					
+ANR	1443	Argument	"""Custom RDH huffman table not found (%d)"""		350	3					
+ANR	1444	PrimaryExpression	"""Custom RDH huffman table not found (%d)"""		350	0					
+ANR	1445	Argument	table_index		350	4					
+ANR	1446	Identifier	table_index		350	0					
+ANR	1447	GotoStatement	goto cleanup1 ;	144:1:6528:6542	350	1	True				
+ANR	1448	Identifier	cleanup1		350	0					
+ANR	1449	ExpressionStatement	"params . SBHUFFRDH = jbig2_build_huffman_table ( ctx , huffman_params )"	146:1:6548:6620	350	9	True				
+ANR	1450	AssignmentExpression	"params . SBHUFFRDH = jbig2_build_huffman_table ( ctx , huffman_params )"		350	0		=			
+ANR	1451	MemberAccess	params . SBHUFFRDH		350	0					
+ANR	1452	Identifier	params		350	0					
+ANR	1453	Identifier	SBHUFFRDH		350	1					
+ANR	1454	CallExpression	"jbig2_build_huffman_table ( ctx , huffman_params )"		350	1					
+ANR	1455	Callee	jbig2_build_huffman_table		350	0					
+ANR	1456	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1457	ArgumentList	ctx		350	1					
+ANR	1458	Argument	ctx		350	0					
+ANR	1459	Identifier	ctx		350	0					
+ANR	1460	Argument	huffman_params		350	1					
+ANR	1461	Identifier	huffman_params		350	0					
+ANR	1462	ExpressionStatement	++ table_index	147:1:6623:6638	350	10	True				
+ANR	1463	UnaryExpression	++ table_index		350	0					
+ANR	1464	IncDec	++		350	0					
+ANR	1465	Identifier	table_index		350	1					
+ANR	1466	BreakStatement	break ;	148:1:6641:6647	350	11	True				
+ANR	1467	Label	case 2 :	149:1:6650:6657	350	12	True				
+ANR	1468	Label	default :	149:10:6659:6667	350	13	True				
+ANR	1469	Identifier	default		350	0					
+ANR	1470	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDH huffman table"" )"	149:20:6669:6791	350	14	True				
+ANR	1471	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDH huffman table"" )"		350	0		=			
+ANR	1472	Identifier	code		350	0					
+ANR	1473	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDH huffman table"" )"		350	1					
+ANR	1474	Callee	jbig2_error		350	0					
+ANR	1475	Identifier	jbig2_error		350	0					
+ANR	1476	ArgumentList	ctx		350	1					
+ANR	1477	Argument	ctx		350	0					
+ANR	1478	Identifier	ctx		350	0					
+ANR	1479	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1480	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1481	Argument	segment -> number		350	2					
+ANR	1482	PtrMemberAccess	segment -> number		350	0					
+ANR	1483	Identifier	segment		350	0					
+ANR	1484	Identifier	number		350	1					
+ANR	1485	Argument	"""text region specified invalid RDH huffman table"""		350	3					
+ANR	1486	PrimaryExpression	"""text region specified invalid RDH huffman table"""		350	0					
+ANR	1487	GotoStatement	goto cleanup1 ;	150:1:6794:6808	350	15	True				
+ANR	1488	Identifier	cleanup1		350	0					
+ANR	1489	BreakStatement	break ;	151:1:6811:6817	350	16	True				
+ANR	1490	IfStatement	if ( params . SBHUFFRDH == NULL )		350	9					
+ANR	1491	Condition	params . SBHUFFRDH == NULL	153:6:6828:6853	350	0	True				
+ANR	1492	EqualityExpression	params . SBHUFFRDH == NULL		350	0		==			
+ANR	1493	MemberAccess	params . SBHUFFRDH		350	0					
+ANR	1494	Identifier	params		350	0					
+ANR	1495	Identifier	SBHUFFRDH		350	1					
+ANR	1496	Identifier	NULL		350	1					
+ANR	1497	CompoundStatement		153:35:6762:6762	350	1					
+ANR	1498	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDH huffman table"" )"	154:1:6860:6993	350	0	True				
+ANR	1499	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDH huffman table"" )"		350	0		=			
+ANR	1500	Identifier	code		350	0					
+ANR	1501	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDH huffman table"" )"		350	1					
+ANR	1502	Callee	jbig2_error		350	0					
+ANR	1503	Identifier	jbig2_error		350	0					
+ANR	1504	ArgumentList	ctx		350	1					
+ANR	1505	Argument	ctx		350	0					
+ANR	1506	Identifier	ctx		350	0					
+ANR	1507	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1508	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1509	Argument	segment -> number		350	2					
+ANR	1510	PtrMemberAccess	segment -> number		350	0					
+ANR	1511	Identifier	segment		350	0					
+ANR	1512	Identifier	number		350	1					
+ANR	1513	Argument	"""failed to allocate text region specified RDH huffman table"""		350	3					
+ANR	1514	PrimaryExpression	"""failed to allocate text region specified RDH huffman table"""		350	0					
+ANR	1515	GotoStatement	goto cleanup1 ;	155:1:6996:7010	350	1	True				
+ANR	1516	Identifier	cleanup1		350	0					
+ANR	1517	SwitchStatement	switch ( ( huffman_flags & 0x0c00 ) >> 10 )		350	10					
+ANR	1518	Condition	( huffman_flags & 0x0c00 ) >> 10	157:10:7025:7056	350	0	True				
+ANR	1519	ShiftExpression	( huffman_flags & 0x0c00 ) >> 10		350	0		>>			
+ANR	1520	BitAndExpression	huffman_flags & 0x0c00		350	0		&			
+ANR	1521	Identifier	huffman_flags		350	0					
+ANR	1522	PrimaryExpression	0x0c00		350	1					
+ANR	1523	PrimaryExpression	10		350	1					
+ANR	1524	CompoundStatement		157:45:6965:6965	350	1					
+ANR	1525	Label	case 0 :	158:1:7063:7070	350	0	True				
+ANR	1526	ExpressionStatement	"params . SBHUFFRDX = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"	158:10:7072:7154	350	1	True				
+ANR	1527	AssignmentExpression	"params . SBHUFFRDX = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"		350	0		=			
+ANR	1528	MemberAccess	params . SBHUFFRDX		350	0					
+ANR	1529	Identifier	params		350	0					
+ANR	1530	Identifier	SBHUFFRDX		350	1					
+ANR	1531	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"		350	1					
+ANR	1532	Callee	jbig2_build_huffman_table		350	0					
+ANR	1533	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1534	ArgumentList	ctx		350	1					
+ANR	1535	Argument	ctx		350	0					
+ANR	1536	Identifier	ctx		350	0					
+ANR	1537	Argument	& jbig2_huffman_params_N		350	1					
+ANR	1538	UnaryOperationExpression	& jbig2_huffman_params_N		350	0					
+ANR	1539	UnaryOperator	&		350	0					
+ANR	1540	Identifier	jbig2_huffman_params_N		350	1					
+ANR	1541	BreakStatement	break ;	159:1:7157:7163	350	2	True				
+ANR	1542	Label	case 1 :	160:1:7166:7173	350	3	True				
+ANR	1543	ExpressionStatement	"params . SBHUFFRDX = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"	160:10:7175:7257	350	4	True				
+ANR	1544	AssignmentExpression	"params . SBHUFFRDX = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"		350	0		=			
+ANR	1545	MemberAccess	params . SBHUFFRDX		350	0					
+ANR	1546	Identifier	params		350	0					
+ANR	1547	Identifier	SBHUFFRDX		350	1					
+ANR	1548	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"		350	1					
+ANR	1549	Callee	jbig2_build_huffman_table		350	0					
+ANR	1550	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1551	ArgumentList	ctx		350	1					
+ANR	1552	Argument	ctx		350	0					
+ANR	1553	Identifier	ctx		350	0					
+ANR	1554	Argument	& jbig2_huffman_params_O		350	1					
+ANR	1555	UnaryOperationExpression	& jbig2_huffman_params_O		350	0					
+ANR	1556	UnaryOperator	&		350	0					
+ANR	1557	Identifier	jbig2_huffman_params_O		350	1					
+ANR	1558	BreakStatement	break ;	161:1:7260:7266	350	5	True				
+ANR	1559	Label	case 3 :	162:1:7269:7276	350	6	True				
+ANR	1560	ExpressionStatement	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"	162:10:7278:7344	350	7	True				
+ANR	1561	AssignmentExpression	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"		350	0		=			
+ANR	1562	Identifier	huffman_params		350	0					
+ANR	1563	CallExpression	"jbig2_find_table ( ctx , segment , table_index )"		350	1					
+ANR	1564	Callee	jbig2_find_table		350	0					
+ANR	1565	Identifier	jbig2_find_table		350	0					
+ANR	1566	ArgumentList	ctx		350	1					
+ANR	1567	Argument	ctx		350	0					
+ANR	1568	Identifier	ctx		350	0					
+ANR	1569	Argument	segment		350	1					
+ANR	1570	Identifier	segment		350	0					
+ANR	1571	Argument	table_index		350	2					
+ANR	1572	Identifier	table_index		350	0					
+ANR	1573	IfStatement	if ( huffman_params == NULL )		350	8					
+ANR	1574	Condition	huffman_params == NULL	163:6:7352:7373	350	0	True				
+ANR	1575	EqualityExpression	huffman_params == NULL		350	0		==			
+ANR	1576	Identifier	huffman_params		350	0					
+ANR	1577	Identifier	NULL		350	1					
+ANR	1578	CompoundStatement		163:31:7282:7282	350	1					
+ANR	1579	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDX huffman table not found (%d)"" , table_index )"	164:1:7380:7508	350	0	True				
+ANR	1580	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDX huffman table not found (%d)"" , table_index )"		350	0		=			
+ANR	1581	Identifier	code		350	0					
+ANR	1582	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDX huffman table not found (%d)"" , table_index )"		350	1					
+ANR	1583	Callee	jbig2_error		350	0					
+ANR	1584	Identifier	jbig2_error		350	0					
+ANR	1585	ArgumentList	ctx		350	1					
+ANR	1586	Argument	ctx		350	0					
+ANR	1587	Identifier	ctx		350	0					
+ANR	1588	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1589	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1590	Argument	segment -> number		350	2					
+ANR	1591	PtrMemberAccess	segment -> number		350	0					
+ANR	1592	Identifier	segment		350	0					
+ANR	1593	Identifier	number		350	1					
+ANR	1594	Argument	"""Custom RDX huffman table not found (%d)"""		350	3					
+ANR	1595	PrimaryExpression	"""Custom RDX huffman table not found (%d)"""		350	0					
+ANR	1596	Argument	table_index		350	4					
+ANR	1597	Identifier	table_index		350	0					
+ANR	1598	GotoStatement	goto cleanup1 ;	165:1:7511:7525	350	1	True				
+ANR	1599	Identifier	cleanup1		350	0					
+ANR	1600	ExpressionStatement	"params . SBHUFFRDX = jbig2_build_huffman_table ( ctx , huffman_params )"	167:1:7531:7603	350	9	True				
+ANR	1601	AssignmentExpression	"params . SBHUFFRDX = jbig2_build_huffman_table ( ctx , huffman_params )"		350	0		=			
+ANR	1602	MemberAccess	params . SBHUFFRDX		350	0					
+ANR	1603	Identifier	params		350	0					
+ANR	1604	Identifier	SBHUFFRDX		350	1					
+ANR	1605	CallExpression	"jbig2_build_huffman_table ( ctx , huffman_params )"		350	1					
+ANR	1606	Callee	jbig2_build_huffman_table		350	0					
+ANR	1607	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1608	ArgumentList	ctx		350	1					
+ANR	1609	Argument	ctx		350	0					
+ANR	1610	Identifier	ctx		350	0					
+ANR	1611	Argument	huffman_params		350	1					
+ANR	1612	Identifier	huffman_params		350	0					
+ANR	1613	ExpressionStatement	++ table_index	168:1:7606:7621	350	10	True				
+ANR	1614	UnaryExpression	++ table_index		350	0					
+ANR	1615	IncDec	++		350	0					
+ANR	1616	Identifier	table_index		350	1					
+ANR	1617	BreakStatement	break ;	169:1:7624:7630	350	11	True				
+ANR	1618	Label	case 2 :	170:1:7633:7640	350	12	True				
+ANR	1619	Label	default :	170:10:7642:7650	350	13	True				
+ANR	1620	Identifier	default		350	0					
+ANR	1621	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDX huffman table"" )"	170:20:7652:7774	350	14	True				
+ANR	1622	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDX huffman table"" )"		350	0		=			
+ANR	1623	Identifier	code		350	0					
+ANR	1624	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDX huffman table"" )"		350	1					
+ANR	1625	Callee	jbig2_error		350	0					
+ANR	1626	Identifier	jbig2_error		350	0					
+ANR	1627	ArgumentList	ctx		350	1					
+ANR	1628	Argument	ctx		350	0					
+ANR	1629	Identifier	ctx		350	0					
+ANR	1630	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1631	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1632	Argument	segment -> number		350	2					
+ANR	1633	PtrMemberAccess	segment -> number		350	0					
+ANR	1634	Identifier	segment		350	0					
+ANR	1635	Identifier	number		350	1					
+ANR	1636	Argument	"""text region specified invalid RDX huffman table"""		350	3					
+ANR	1637	PrimaryExpression	"""text region specified invalid RDX huffman table"""		350	0					
+ANR	1638	GotoStatement	goto cleanup1 ;	171:1:7777:7791	350	15	True				
+ANR	1639	Identifier	cleanup1		350	0					
+ANR	1640	BreakStatement	break ;	172:1:7794:7800	350	16	True				
+ANR	1641	IfStatement	if ( params . SBHUFFRDX == NULL )		350	11					
+ANR	1642	Condition	params . SBHUFFRDX == NULL	174:6:7811:7836	350	0	True				
+ANR	1643	EqualityExpression	params . SBHUFFRDX == NULL		350	0		==			
+ANR	1644	MemberAccess	params . SBHUFFRDX		350	0					
+ANR	1645	Identifier	params		350	0					
+ANR	1646	Identifier	SBHUFFRDX		350	1					
+ANR	1647	Identifier	NULL		350	1					
+ANR	1648	CompoundStatement		174:35:7745:7745	350	1					
+ANR	1649	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDX huffman table"" )"	175:1:7843:7976	350	0	True				
+ANR	1650	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDX huffman table"" )"		350	0		=			
+ANR	1651	Identifier	code		350	0					
+ANR	1652	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDX huffman table"" )"		350	1					
+ANR	1653	Callee	jbig2_error		350	0					
+ANR	1654	Identifier	jbig2_error		350	0					
+ANR	1655	ArgumentList	ctx		350	1					
+ANR	1656	Argument	ctx		350	0					
+ANR	1657	Identifier	ctx		350	0					
+ANR	1658	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1659	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1660	Argument	segment -> number		350	2					
+ANR	1661	PtrMemberAccess	segment -> number		350	0					
+ANR	1662	Identifier	segment		350	0					
+ANR	1663	Identifier	number		350	1					
+ANR	1664	Argument	"""failed to allocate text region specified RDX huffman table"""		350	3					
+ANR	1665	PrimaryExpression	"""failed to allocate text region specified RDX huffman table"""		350	0					
+ANR	1666	GotoStatement	goto cleanup1 ;	176:1:7979:7993	350	1	True				
+ANR	1667	Identifier	cleanup1		350	0					
+ANR	1668	SwitchStatement	switch ( ( huffman_flags & 0x3000 ) >> 12 )		350	12					
+ANR	1669	Condition	( huffman_flags & 0x3000 ) >> 12	178:10:8008:8039	350	0	True				
+ANR	1670	ShiftExpression	( huffman_flags & 0x3000 ) >> 12		350	0		>>			
+ANR	1671	BitAndExpression	huffman_flags & 0x3000		350	0		&			
+ANR	1672	Identifier	huffman_flags		350	0					
+ANR	1673	PrimaryExpression	0x3000		350	1					
+ANR	1674	PrimaryExpression	12		350	1					
+ANR	1675	CompoundStatement		178:45:7948:7948	350	1					
+ANR	1676	Label	case 0 :	179:1:8046:8053	350	0	True				
+ANR	1677	ExpressionStatement	"params . SBHUFFRDY = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"	179:10:8055:8137	350	1	True				
+ANR	1678	AssignmentExpression	"params . SBHUFFRDY = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"		350	0		=			
+ANR	1679	MemberAccess	params . SBHUFFRDY		350	0					
+ANR	1680	Identifier	params		350	0					
+ANR	1681	Identifier	SBHUFFRDY		350	1					
+ANR	1682	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_N )"		350	1					
+ANR	1683	Callee	jbig2_build_huffman_table		350	0					
+ANR	1684	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1685	ArgumentList	ctx		350	1					
+ANR	1686	Argument	ctx		350	0					
+ANR	1687	Identifier	ctx		350	0					
+ANR	1688	Argument	& jbig2_huffman_params_N		350	1					
+ANR	1689	UnaryOperationExpression	& jbig2_huffman_params_N		350	0					
+ANR	1690	UnaryOperator	&		350	0					
+ANR	1691	Identifier	jbig2_huffman_params_N		350	1					
+ANR	1692	BreakStatement	break ;	180:1:8140:8146	350	2	True				
+ANR	1693	Label	case 1 :	181:1:8149:8156	350	3	True				
+ANR	1694	ExpressionStatement	"params . SBHUFFRDY = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"	181:10:8158:8240	350	4	True				
+ANR	1695	AssignmentExpression	"params . SBHUFFRDY = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"		350	0		=			
+ANR	1696	MemberAccess	params . SBHUFFRDY		350	0					
+ANR	1697	Identifier	params		350	0					
+ANR	1698	Identifier	SBHUFFRDY		350	1					
+ANR	1699	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_O )"		350	1					
+ANR	1700	Callee	jbig2_build_huffman_table		350	0					
+ANR	1701	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1702	ArgumentList	ctx		350	1					
+ANR	1703	Argument	ctx		350	0					
+ANR	1704	Identifier	ctx		350	0					
+ANR	1705	Argument	& jbig2_huffman_params_O		350	1					
+ANR	1706	UnaryOperationExpression	& jbig2_huffman_params_O		350	0					
+ANR	1707	UnaryOperator	&		350	0					
+ANR	1708	Identifier	jbig2_huffman_params_O		350	1					
+ANR	1709	BreakStatement	break ;	182:1:8243:8249	350	5	True				
+ANR	1710	Label	case 3 :	183:1:8252:8259	350	6	True				
+ANR	1711	ExpressionStatement	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"	183:10:8261:8327	350	7	True				
+ANR	1712	AssignmentExpression	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"		350	0		=			
+ANR	1713	Identifier	huffman_params		350	0					
+ANR	1714	CallExpression	"jbig2_find_table ( ctx , segment , table_index )"		350	1					
+ANR	1715	Callee	jbig2_find_table		350	0					
+ANR	1716	Identifier	jbig2_find_table		350	0					
+ANR	1717	ArgumentList	ctx		350	1					
+ANR	1718	Argument	ctx		350	0					
+ANR	1719	Identifier	ctx		350	0					
+ANR	1720	Argument	segment		350	1					
+ANR	1721	Identifier	segment		350	0					
+ANR	1722	Argument	table_index		350	2					
+ANR	1723	Identifier	table_index		350	0					
+ANR	1724	IfStatement	if ( huffman_params == NULL )		350	8					
+ANR	1725	Condition	huffman_params == NULL	184:6:8335:8356	350	0	True				
+ANR	1726	EqualityExpression	huffman_params == NULL		350	0		==			
+ANR	1727	Identifier	huffman_params		350	0					
+ANR	1728	Identifier	NULL		350	1					
+ANR	1729	CompoundStatement		184:31:8265:8265	350	1					
+ANR	1730	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDY huffman table not found (%d)"" , table_index )"	185:1:8363:8491	350	0	True				
+ANR	1731	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDY huffman table not found (%d)"" , table_index )"		350	0		=			
+ANR	1732	Identifier	code		350	0					
+ANR	1733	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RDY huffman table not found (%d)"" , table_index )"		350	1					
+ANR	1734	Callee	jbig2_error		350	0					
+ANR	1735	Identifier	jbig2_error		350	0					
+ANR	1736	ArgumentList	ctx		350	1					
+ANR	1737	Argument	ctx		350	0					
+ANR	1738	Identifier	ctx		350	0					
+ANR	1739	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1740	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1741	Argument	segment -> number		350	2					
+ANR	1742	PtrMemberAccess	segment -> number		350	0					
+ANR	1743	Identifier	segment		350	0					
+ANR	1744	Identifier	number		350	1					
+ANR	1745	Argument	"""Custom RDY huffman table not found (%d)"""		350	3					
+ANR	1746	PrimaryExpression	"""Custom RDY huffman table not found (%d)"""		350	0					
+ANR	1747	Argument	table_index		350	4					
+ANR	1748	Identifier	table_index		350	0					
+ANR	1749	GotoStatement	goto cleanup1 ;	186:1:8494:8508	350	1	True				
+ANR	1750	Identifier	cleanup1		350	0					
+ANR	1751	ExpressionStatement	"params . SBHUFFRDY = jbig2_build_huffman_table ( ctx , huffman_params )"	188:1:8514:8586	350	9	True				
+ANR	1752	AssignmentExpression	"params . SBHUFFRDY = jbig2_build_huffman_table ( ctx , huffman_params )"		350	0		=			
+ANR	1753	MemberAccess	params . SBHUFFRDY		350	0					
+ANR	1754	Identifier	params		350	0					
+ANR	1755	Identifier	SBHUFFRDY		350	1					
+ANR	1756	CallExpression	"jbig2_build_huffman_table ( ctx , huffman_params )"		350	1					
+ANR	1757	Callee	jbig2_build_huffman_table		350	0					
+ANR	1758	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1759	ArgumentList	ctx		350	1					
+ANR	1760	Argument	ctx		350	0					
+ANR	1761	Identifier	ctx		350	0					
+ANR	1762	Argument	huffman_params		350	1					
+ANR	1763	Identifier	huffman_params		350	0					
+ANR	1764	ExpressionStatement	++ table_index	189:1:8589:8604	350	10	True				
+ANR	1765	UnaryExpression	++ table_index		350	0					
+ANR	1766	IncDec	++		350	0					
+ANR	1767	Identifier	table_index		350	1					
+ANR	1768	BreakStatement	break ;	190:1:8607:8613	350	11	True				
+ANR	1769	Label	case 2 :	191:1:8616:8623	350	12	True				
+ANR	1770	Label	default :	191:10:8625:8633	350	13	True				
+ANR	1771	Identifier	default		350	0					
+ANR	1772	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDY huffman table"" )"	191:20:8635:8757	350	14	True				
+ANR	1773	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDY huffman table"" )"		350	0		=			
+ANR	1774	Identifier	code		350	0					
+ANR	1775	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region specified invalid RDY huffman table"" )"		350	1					
+ANR	1776	Callee	jbig2_error		350	0					
+ANR	1777	Identifier	jbig2_error		350	0					
+ANR	1778	ArgumentList	ctx		350	1					
+ANR	1779	Argument	ctx		350	0					
+ANR	1780	Identifier	ctx		350	0					
+ANR	1781	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1782	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1783	Argument	segment -> number		350	2					
+ANR	1784	PtrMemberAccess	segment -> number		350	0					
+ANR	1785	Identifier	segment		350	0					
+ANR	1786	Identifier	number		350	1					
+ANR	1787	Argument	"""text region specified invalid RDY huffman table"""		350	3					
+ANR	1788	PrimaryExpression	"""text region specified invalid RDY huffman table"""		350	0					
+ANR	1789	GotoStatement	goto cleanup1 ;	192:1:8760:8774	350	15	True				
+ANR	1790	Identifier	cleanup1		350	0					
+ANR	1791	BreakStatement	break ;	193:1:8777:8783	350	16	True				
+ANR	1792	IfStatement	if ( params . SBHUFFRDY == NULL )		350	13					
+ANR	1793	Condition	params . SBHUFFRDY == NULL	195:6:8794:8819	350	0	True				
+ANR	1794	EqualityExpression	params . SBHUFFRDY == NULL		350	0		==			
+ANR	1795	MemberAccess	params . SBHUFFRDY		350	0					
+ANR	1796	Identifier	params		350	0					
+ANR	1797	Identifier	SBHUFFRDY		350	1					
+ANR	1798	Identifier	NULL		350	1					
+ANR	1799	CompoundStatement		195:35:8728:8728	350	1					
+ANR	1800	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDY huffman table"" )"	196:1:8826:8959	350	0	True				
+ANR	1801	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDY huffman table"" )"		350	0		=			
+ANR	1802	Identifier	code		350	0					
+ANR	1803	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RDY huffman table"" )"		350	1					
+ANR	1804	Callee	jbig2_error		350	0					
+ANR	1805	Identifier	jbig2_error		350	0					
+ANR	1806	ArgumentList	ctx		350	1					
+ANR	1807	Argument	ctx		350	0					
+ANR	1808	Identifier	ctx		350	0					
+ANR	1809	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1810	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1811	Argument	segment -> number		350	2					
+ANR	1812	PtrMemberAccess	segment -> number		350	0					
+ANR	1813	Identifier	segment		350	0					
+ANR	1814	Identifier	number		350	1					
+ANR	1815	Argument	"""failed to allocate text region specified RDY huffman table"""		350	3					
+ANR	1816	PrimaryExpression	"""failed to allocate text region specified RDY huffman table"""		350	0					
+ANR	1817	GotoStatement	goto cleanup1 ;	197:1:8962:8976	350	1	True				
+ANR	1818	Identifier	cleanup1		350	0					
+ANR	1819	SwitchStatement	switch ( ( huffman_flags & 0x4000 ) >> 14 )		350	14					
+ANR	1820	Condition	( huffman_flags & 0x4000 ) >> 14	199:10:8991:9022	350	0	True				
+ANR	1821	ShiftExpression	( huffman_flags & 0x4000 ) >> 14		350	0		>>			
+ANR	1822	BitAndExpression	huffman_flags & 0x4000		350	0		&			
+ANR	1823	Identifier	huffman_flags		350	0					
+ANR	1824	PrimaryExpression	0x4000		350	1					
+ANR	1825	PrimaryExpression	14		350	1					
+ANR	1826	CompoundStatement		199:45:8931:8931	350	1					
+ANR	1827	Label	case 0 :	200:1:9029:9036	350	0	True				
+ANR	1828	ExpressionStatement	"params . SBHUFFRSIZE = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_A )"	200:10:9038:9122	350	1	True				
+ANR	1829	AssignmentExpression	"params . SBHUFFRSIZE = jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_A )"		350	0		=			
+ANR	1830	MemberAccess	params . SBHUFFRSIZE		350	0					
+ANR	1831	Identifier	params		350	0					
+ANR	1832	Identifier	SBHUFFRSIZE		350	1					
+ANR	1833	CallExpression	"jbig2_build_huffman_table ( ctx , & jbig2_huffman_params_A )"		350	1					
+ANR	1834	Callee	jbig2_build_huffman_table		350	0					
+ANR	1835	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1836	ArgumentList	ctx		350	1					
+ANR	1837	Argument	ctx		350	0					
+ANR	1838	Identifier	ctx		350	0					
+ANR	1839	Argument	& jbig2_huffman_params_A		350	1					
+ANR	1840	UnaryOperationExpression	& jbig2_huffman_params_A		350	0					
+ANR	1841	UnaryOperator	&		350	0					
+ANR	1842	Identifier	jbig2_huffman_params_A		350	1					
+ANR	1843	BreakStatement	break ;	201:1:9125:9131	350	2	True				
+ANR	1844	Label	case 1 :	202:1:9134:9141	350	3	True				
+ANR	1845	ExpressionStatement	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"	202:10:9143:9209	350	4	True				
+ANR	1846	AssignmentExpression	"huffman_params = jbig2_find_table ( ctx , segment , table_index )"		350	0		=			
+ANR	1847	Identifier	huffman_params		350	0					
+ANR	1848	CallExpression	"jbig2_find_table ( ctx , segment , table_index )"		350	1					
+ANR	1849	Callee	jbig2_find_table		350	0					
+ANR	1850	Identifier	jbig2_find_table		350	0					
+ANR	1851	ArgumentList	ctx		350	1					
+ANR	1852	Argument	ctx		350	0					
+ANR	1853	Identifier	ctx		350	0					
+ANR	1854	Argument	segment		350	1					
+ANR	1855	Identifier	segment		350	0					
+ANR	1856	Argument	table_index		350	2					
+ANR	1857	Identifier	table_index		350	0					
+ANR	1858	IfStatement	if ( huffman_params == NULL )		350	5					
+ANR	1859	Condition	huffman_params == NULL	203:6:9217:9238	350	0	True				
+ANR	1860	EqualityExpression	huffman_params == NULL		350	0		==			
+ANR	1861	Identifier	huffman_params		350	0					
+ANR	1862	Identifier	NULL		350	1					
+ANR	1863	CompoundStatement		203:31:9147:9147	350	1					
+ANR	1864	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RSIZE huffman table not found (%d)"" , table_index )"	204:1:9245:9375	350	0	True				
+ANR	1865	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RSIZE huffman table not found (%d)"" , table_index )"		350	0		=			
+ANR	1866	Identifier	code		350	0					
+ANR	1867	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Custom RSIZE huffman table not found (%d)"" , table_index )"		350	1					
+ANR	1868	Callee	jbig2_error		350	0					
+ANR	1869	Identifier	jbig2_error		350	0					
+ANR	1870	ArgumentList	ctx		350	1					
+ANR	1871	Argument	ctx		350	0					
+ANR	1872	Identifier	ctx		350	0					
+ANR	1873	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1874	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1875	Argument	segment -> number		350	2					
+ANR	1876	PtrMemberAccess	segment -> number		350	0					
+ANR	1877	Identifier	segment		350	0					
+ANR	1878	Identifier	number		350	1					
+ANR	1879	Argument	"""Custom RSIZE huffman table not found (%d)"""		350	3					
+ANR	1880	PrimaryExpression	"""Custom RSIZE huffman table not found (%d)"""		350	0					
+ANR	1881	Argument	table_index		350	4					
+ANR	1882	Identifier	table_index		350	0					
+ANR	1883	GotoStatement	goto cleanup1 ;	205:1:9378:9392	350	1	True				
+ANR	1884	Identifier	cleanup1		350	0					
+ANR	1885	ExpressionStatement	"params . SBHUFFRSIZE = jbig2_build_huffman_table ( ctx , huffman_params )"	207:1:9398:9472	350	6	True				
+ANR	1886	AssignmentExpression	"params . SBHUFFRSIZE = jbig2_build_huffman_table ( ctx , huffman_params )"		350	0		=			
+ANR	1887	MemberAccess	params . SBHUFFRSIZE		350	0					
+ANR	1888	Identifier	params		350	0					
+ANR	1889	Identifier	SBHUFFRSIZE		350	1					
+ANR	1890	CallExpression	"jbig2_build_huffman_table ( ctx , huffman_params )"		350	1					
+ANR	1891	Callee	jbig2_build_huffman_table		350	0					
+ANR	1892	Identifier	jbig2_build_huffman_table		350	0					
+ANR	1893	ArgumentList	ctx		350	1					
+ANR	1894	Argument	ctx		350	0					
+ANR	1895	Identifier	ctx		350	0					
+ANR	1896	Argument	huffman_params		350	1					
+ANR	1897	Identifier	huffman_params		350	0					
+ANR	1898	ExpressionStatement	++ table_index	208:1:9475:9490	350	7	True				
+ANR	1899	UnaryExpression	++ table_index		350	0					
+ANR	1900	IncDec	++		350	0					
+ANR	1901	Identifier	table_index		350	1					
+ANR	1902	BreakStatement	break ;	209:1:9493:9499	350	8	True				
+ANR	1903	IfStatement	if ( params . SBHUFFRSIZE == NULL )		350	15					
+ANR	1904	Condition	params . SBHUFFRSIZE == NULL	211:6:9510:9537	350	0	True				
+ANR	1905	EqualityExpression	params . SBHUFFRSIZE == NULL		350	0		==			
+ANR	1906	MemberAccess	params . SBHUFFRSIZE		350	0					
+ANR	1907	Identifier	params		350	0					
+ANR	1908	Identifier	SBHUFFRSIZE		350	1					
+ANR	1909	Identifier	NULL		350	1					
+ANR	1910	CompoundStatement		211:37:9446:9446	350	1					
+ANR	1911	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RSIZE huffman table"" )"	212:1:9544:9679	350	0	True				
+ANR	1912	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RSIZE huffman table"" )"		350	0		=			
+ANR	1913	Identifier	code		350	0					
+ANR	1914	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate text region specified RSIZE huffman table"" )"		350	1					
+ANR	1915	Callee	jbig2_error		350	0					
+ANR	1916	Identifier	jbig2_error		350	0					
+ANR	1917	ArgumentList	ctx		350	1					
+ANR	1918	Argument	ctx		350	0					
+ANR	1919	Identifier	ctx		350	0					
+ANR	1920	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	1921	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	1922	Argument	segment -> number		350	2					
+ANR	1923	PtrMemberAccess	segment -> number		350	0					
+ANR	1924	Identifier	segment		350	0					
+ANR	1925	Identifier	number		350	1					
+ANR	1926	Argument	"""failed to allocate text region specified RSIZE huffman table"""		350	3					
+ANR	1927	PrimaryExpression	"""failed to allocate text region specified RSIZE huffman table"""		350	0					
+ANR	1928	GotoStatement	goto cleanup1 ;	213:1:9682:9696	350	1	True				
+ANR	1929	Identifier	cleanup1		350	0					
+ANR	1930	IfStatement	if ( huffman_flags & 0x8000 )		350	16					
+ANR	1931	Condition	huffman_flags & 0x8000	215:6:9707:9728	350	0	True				
+ANR	1932	BitAndExpression	huffman_flags & 0x8000		350	0		&			
+ANR	1933	Identifier	huffman_flags		350	0					
+ANR	1934	PrimaryExpression	0x8000		350	1					
+ANR	1935	CompoundStatement		215:31:9637:9637	350	1					
+ANR	1936	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""text region huffman flags bit 15 is set, contrary to spec"" )"	216:1:9735:9862	350	0	True				
+ANR	1937	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""text region huffman flags bit 15 is set, contrary to spec"" )"		350	0					
+ANR	1938	Callee	jbig2_error		350	0					
+ANR	1939	Identifier	jbig2_error		350	0					
+ANR	1940	ArgumentList	ctx		350	1					
+ANR	1941	Argument	ctx		350	0					
+ANR	1942	Identifier	ctx		350	0					
+ANR	1943	Argument	JBIG2_SEVERITY_WARNING		350	1					
+ANR	1944	Identifier	JBIG2_SEVERITY_WARNING		350	0					
+ANR	1945	Argument	segment -> number		350	2					
+ANR	1946	PtrMemberAccess	segment -> number		350	0					
+ANR	1947	Identifier	segment		350	0					
+ANR	1948	Identifier	number		350	1					
+ANR	1949	Argument	"""text region huffman flags bit 15 is set, contrary to spec"""		350	3					
+ANR	1950	PrimaryExpression	"""text region huffman flags bit 15 is set, contrary to spec"""		350	0					
+ANR	1951	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""text region: %d x %d @ (%d,%d) %d symbols"" , region_info . width , region_info . height , region_info . x , region_info . y , params . SBNUMINSTANCES )"	219:1:9871:10086	350	37	True				
+ANR	1952	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_INFO , segment -> number , ""text region: %d x %d @ (%d,%d) %d symbols"" , region_info . width , region_info . height , region_info . x , region_info . y , params . SBNUMINSTANCES )"		350	0					
+ANR	1953	Callee	jbig2_error		350	0					
+ANR	1954	Identifier	jbig2_error		350	0					
+ANR	1955	ArgumentList	ctx		350	1					
+ANR	1956	Argument	ctx		350	0					
+ANR	1957	Identifier	ctx		350	0					
+ANR	1958	Argument	JBIG2_SEVERITY_INFO		350	1					
+ANR	1959	Identifier	JBIG2_SEVERITY_INFO		350	0					
+ANR	1960	Argument	segment -> number		350	2					
+ANR	1961	PtrMemberAccess	segment -> number		350	0					
+ANR	1962	Identifier	segment		350	0					
+ANR	1963	Identifier	number		350	1					
+ANR	1964	Argument	"""text region: %d x %d @ (%d,%d) %d symbols"""		350	3					
+ANR	1965	PrimaryExpression	"""text region: %d x %d @ (%d,%d) %d symbols"""		350	0					
+ANR	1966	Argument	region_info . width		350	4					
+ANR	1967	MemberAccess	region_info . width		350	0					
+ANR	1968	Identifier	region_info		350	0					
+ANR	1969	Identifier	width		350	1					
+ANR	1970	Argument	region_info . height		350	5					
+ANR	1971	MemberAccess	region_info . height		350	0					
+ANR	1972	Identifier	region_info		350	0					
+ANR	1973	Identifier	height		350	1					
+ANR	1974	Argument	region_info . x		350	6					
+ANR	1975	MemberAccess	region_info . x		350	0					
+ANR	1976	Identifier	region_info		350	0					
+ANR	1977	Identifier	x		350	1					
+ANR	1978	Argument	region_info . y		350	7					
+ANR	1979	MemberAccess	region_info . y		350	0					
+ANR	1980	Identifier	region_info		350	0					
+ANR	1981	Identifier	y		350	1					
+ANR	1982	Argument	params . SBNUMINSTANCES		350	8					
+ANR	1983	MemberAccess	params . SBNUMINSTANCES		350	0					
+ANR	1984	Identifier	params		350	0					
+ANR	1985	Identifier	SBNUMINSTANCES		350	1					
+ANR	1986	ExpressionStatement	"n_dicts = jbig2_sd_count_referred ( ctx , segment )"	220:1:10089:10141	350	38	True				
+ANR	1987	AssignmentExpression	"n_dicts = jbig2_sd_count_referred ( ctx , segment )"		350	0		=			
+ANR	1988	Identifier	n_dicts		350	0					
+ANR	1989	CallExpression	"jbig2_sd_count_referred ( ctx , segment )"		350	1					
+ANR	1990	Callee	jbig2_sd_count_referred		350	0					
+ANR	1991	Identifier	jbig2_sd_count_referred		350	0					
+ANR	1992	ArgumentList	ctx		350	1					
+ANR	1993	Argument	ctx		350	0					
+ANR	1994	Identifier	ctx		350	0					
+ANR	1995	Argument	segment		350	1					
+ANR	1996	Identifier	segment		350	0					
+ANR	1997	IfStatement	if ( n_dicts != 0 )		350	39					
+ANR	1998	Condition	n_dicts != 0	221:6:10149:10160	350	0	True				
+ANR	1999	EqualityExpression	n_dicts != 0		350	0		!=			
+ANR	2000	Identifier	n_dicts		350	0					
+ANR	2001	PrimaryExpression	0		350	1					
+ANR	2002	CompoundStatement		221:21:10069:10069	350	1					
+ANR	2003	ExpressionStatement	"dicts = jbig2_sd_list_referred ( ctx , segment )"	222:1:10167:10216	350	0	True				
+ANR	2004	AssignmentExpression	"dicts = jbig2_sd_list_referred ( ctx , segment )"		350	0		=			
+ANR	2005	Identifier	dicts		350	0					
+ANR	2006	CallExpression	"jbig2_sd_list_referred ( ctx , segment )"		350	1					
+ANR	2007	Callee	jbig2_sd_list_referred		350	0					
+ANR	2008	Identifier	jbig2_sd_list_referred		350	0					
+ANR	2009	ArgumentList	ctx		350	1					
+ANR	2010	Argument	ctx		350	0					
+ANR	2011	Identifier	ctx		350	0					
+ANR	2012	Argument	segment		350	1					
+ANR	2013	Identifier	segment		350	0					
+ANR	2014	ElseStatement	else		350	0					
+ANR	2015	CompoundStatement		224:6:10132:10132	350	0					
+ANR	2016	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region refers to no symbol dictionaries!"" )"	225:1:10230:10350	350	0	True				
+ANR	2017	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region refers to no symbol dictionaries!"" )"		350	0		=			
+ANR	2018	Identifier	code		350	0					
+ANR	2019	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""text region refers to no symbol dictionaries!"" )"		350	1					
+ANR	2020	Callee	jbig2_error		350	0					
+ANR	2021	Identifier	jbig2_error		350	0					
+ANR	2022	ArgumentList	ctx		350	1					
+ANR	2023	Argument	ctx		350	0					
+ANR	2024	Identifier	ctx		350	0					
+ANR	2025	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2026	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2027	Argument	segment -> number		350	2					
+ANR	2028	PtrMemberAccess	segment -> number		350	0					
+ANR	2029	Identifier	segment		350	0					
+ANR	2030	Identifier	number		350	1					
+ANR	2031	Argument	"""text region refers to no symbol dictionaries!"""		350	3					
+ANR	2032	PrimaryExpression	"""text region refers to no symbol dictionaries!"""		350	0					
+ANR	2033	GotoStatement	goto cleanup1 ;	226:1:10353:10367	350	1	True				
+ANR	2034	Identifier	cleanup1		350	0					
+ANR	2035	IfStatement	if ( dicts == NULL )		350	40					
+ANR	2036	Condition	dicts == NULL	228:6:10378:10390	350	0	True				
+ANR	2037	EqualityExpression	dicts == NULL		350	0		==			
+ANR	2038	Identifier	dicts		350	0					
+ANR	2039	Identifier	NULL		350	1					
+ANR	2040	CompoundStatement		228:22:10299:10299	350	1					
+ANR	2041	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to retrive symbol dictionaries! previous parsing error?"" )"	229:1:10397:10534	350	0	True				
+ANR	2042	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to retrive symbol dictionaries! previous parsing error?"" )"		350	0		=			
+ANR	2043	Identifier	code		350	0					
+ANR	2044	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""unable to retrive symbol dictionaries! previous parsing error?"" )"		350	1					
+ANR	2045	Callee	jbig2_error		350	0					
+ANR	2046	Identifier	jbig2_error		350	0					
+ANR	2047	ArgumentList	ctx		350	1					
+ANR	2048	Argument	ctx		350	0					
+ANR	2049	Identifier	ctx		350	0					
+ANR	2050	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2051	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2052	Argument	segment -> number		350	2					
+ANR	2053	PtrMemberAccess	segment -> number		350	0					
+ANR	2054	Identifier	segment		350	0					
+ANR	2055	Identifier	number		350	1					
+ANR	2056	Argument	"""unable to retrive symbol dictionaries! previous parsing error?"""		350	3					
+ANR	2057	PrimaryExpression	"""unable to retrive symbol dictionaries! previous parsing error?"""		350	0					
+ANR	2058	GotoStatement	goto cleanup1 ;	230:1:10537:10551	350	1	True				
+ANR	2059	Identifier	cleanup1		350	0					
+ANR	2060	ElseStatement	else		350	0					
+ANR	2061	CompoundStatement		233:1:10470:10480	350	0					
+ANR	2062	IdentifierDeclStatement	int index ;	233:1:10565:10575	350	0	True				
+ANR	2063	IdentifierDecl	index		350	0					
+ANR	2064	IdentifierDeclType	int		350	0					
+ANR	2065	Identifier	index		350	1					
+ANR	2066	IfStatement	if ( dicts [ 0 ] == NULL )		350	1					
+ANR	2067	Condition	dicts [ 0 ] == NULL	234:6:10583:10601	350	0	True				
+ANR	2068	EqualityExpression	dicts [ 0 ] == NULL		350	0		==			
+ANR	2069	ArrayIndexing	dicts [ 0 ]		350	0					
+ANR	2070	Identifier	dicts		350	0					
+ANR	2071	PrimaryExpression	0		350	1					
+ANR	2072	Identifier	NULL		350	1					
+ANR	2073	CompoundStatement		234:28:10510:10510	350	1					
+ANR	2074	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unable to find first referenced symbol dictionary!"" )"	235:1:10608:10735	350	0	True				
+ANR	2075	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unable to find first referenced symbol dictionary!"" )"		350	0		=			
+ANR	2076	Identifier	code		350	0					
+ANR	2077	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unable to find first referenced symbol dictionary!"" )"		350	1					
+ANR	2078	Callee	jbig2_error		350	0					
+ANR	2079	Identifier	jbig2_error		350	0					
+ANR	2080	ArgumentList	ctx		350	1					
+ANR	2081	Argument	ctx		350	0					
+ANR	2082	Identifier	ctx		350	0					
+ANR	2083	Argument	JBIG2_SEVERITY_WARNING		350	1					
+ANR	2084	Identifier	JBIG2_SEVERITY_WARNING		350	0					
+ANR	2085	Argument	segment -> number		350	2					
+ANR	2086	PtrMemberAccess	segment -> number		350	0					
+ANR	2087	Identifier	segment		350	0					
+ANR	2088	Identifier	number		350	1					
+ANR	2089	Argument	"""unable to find first referenced symbol dictionary!"""		350	3					
+ANR	2090	PrimaryExpression	"""unable to find first referenced symbol dictionary!"""		350	0					
+ANR	2091	GotoStatement	goto cleanup1 ;	236:1:10738:10752	350	1	True				
+ANR	2092	Identifier	cleanup1		350	0					
+ANR	2093	ForStatement	for ( index = 1 ; index < n_dicts ; index ++ )		350	2					
+ANR	2094	ForInit	index = 1 ;	238:7:10764:10774	350	0	True				
+ANR	2095	AssignmentExpression	index = 1		350	0		=			
+ANR	2096	Identifier	index		350	0					
+ANR	2097	PrimaryExpression	1		350	1					
+ANR	2098	Condition	index < n_dicts	239:1:10777:10791	350	1	True				
+ANR	2099	RelationalExpression	index < n_dicts		350	0		<			
+ANR	2100	Identifier	index		350	0					
+ANR	2101	Identifier	n_dicts		350	1					
+ANR	2102	PostIncDecOperationExpression	index ++	240:1:10796:10803	350	2	True				
+ANR	2103	Identifier	index		350	0					
+ANR	2104	IncDec	++		350	1					
+ANR	2105	IfStatement	if ( dicts [ index ] == NULL )		350	3					
+ANR	2106	Condition	dicts [ index ] == NULL	240:17:10812:10834	350	0	True				
+ANR	2107	EqualityExpression	dicts [ index ] == NULL		350	0		==			
+ANR	2108	ArrayIndexing	dicts [ index ]		350	0					
+ANR	2109	Identifier	dicts		350	0					
+ANR	2110	Identifier	index		350	1					
+ANR	2111	Identifier	NULL		350	1					
+ANR	2112	CompoundStatement		240:43:10743:10743	350	1					
+ANR	2113	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unable to find all referenced symbol dictionaries!"" )"	241:1:10841:10961	350	0	True				
+ANR	2114	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , segment -> number , ""unable to find all referenced symbol dictionaries!"" )"		350	0					
+ANR	2115	Callee	jbig2_error		350	0					
+ANR	2116	Identifier	jbig2_error		350	0					
+ANR	2117	ArgumentList	ctx		350	1					
+ANR	2118	Argument	ctx		350	0					
+ANR	2119	Identifier	ctx		350	0					
+ANR	2120	Argument	JBIG2_SEVERITY_WARNING		350	1					
+ANR	2121	Identifier	JBIG2_SEVERITY_WARNING		350	0					
+ANR	2122	Argument	segment -> number		350	2					
+ANR	2123	PtrMemberAccess	segment -> number		350	0					
+ANR	2124	Identifier	segment		350	0					
+ANR	2125	Identifier	number		350	1					
+ANR	2126	Argument	"""unable to find all referenced symbol dictionaries!"""		350	3					
+ANR	2127	PrimaryExpression	"""unable to find all referenced symbol dictionaries!"""		350	0					
+ANR	2128	ExpressionStatement	n_dicts = index	242:1:10964:10980	350	1	True				
+ANR	2129	AssignmentExpression	n_dicts = index		350	0		=			
+ANR	2130	Identifier	n_dicts		350	0					
+ANR	2131	Identifier	index		350	1					
+ANR	2132	CompoundStatement		246:1:10897:10955	350	41					
+ANR	2133	IdentifierDeclStatement	int stats_size = params . SBRTEMPLATE ? 1 << 10 : 1 << 13 ;	246:1:10992:11050	350	0	True				
+ANR	2134	IdentifierDecl	stats_size = params . SBRTEMPLATE ? 1 << 10 : 1 << 13		350	0					
+ANR	2135	IdentifierDeclType	int		350	0					
+ANR	2136	Identifier	stats_size		350	1					
+ANR	2137	AssignmentExpression	stats_size = params . SBRTEMPLATE ? 1 << 10 : 1 << 13		350	2		=			
+ANR	2138	Identifier	stats_size		350	0					
+ANR	2139	ConditionalExpression	params . SBRTEMPLATE ? 1 << 10 : 1 << 13		350	1					
+ANR	2140	Condition	params . SBRTEMPLATE		350	0					
+ANR	2141	MemberAccess	params . SBRTEMPLATE		350	0					
+ANR	2142	Identifier	params		350	0					
+ANR	2143	Identifier	SBRTEMPLATE		350	1					
+ANR	2144	ShiftExpression	1 << 10		350	1		<<			
+ANR	2145	PrimaryExpression	1		350	0					
+ANR	2146	PrimaryExpression	10		350	1					
+ANR	2147	ShiftExpression	1 << 13		350	2		<<			
+ANR	2148	PrimaryExpression	1		350	0					
+ANR	2149	PrimaryExpression	13		350	1					
+ANR	2150	ExpressionStatement	"GR_stats = jbig2_new ( ctx , Jbig2ArithCx , stats_size )"	247:1:11053:11110	350	1	True				
+ANR	2151	AssignmentExpression	"GR_stats = jbig2_new ( ctx , Jbig2ArithCx , stats_size )"		350	0		=			
+ANR	2152	Identifier	GR_stats		350	0					
+ANR	2153	CallExpression	"jbig2_new ( ctx , Jbig2ArithCx , stats_size )"		350	1					
+ANR	2154	Callee	jbig2_new		350	0					
+ANR	2155	Identifier	jbig2_new		350	0					
+ANR	2156	ArgumentList	ctx		350	1					
+ANR	2157	Argument	ctx		350	0					
+ANR	2158	Identifier	ctx		350	0					
+ANR	2159	Argument	Jbig2ArithCx		350	1					
+ANR	2160	Identifier	Jbig2ArithCx		350	0					
+ANR	2161	Argument	stats_size		350	2					
+ANR	2162	Identifier	stats_size		350	0					
+ANR	2163	IfStatement	if ( GR_stats == NULL )		350	2					
+ANR	2164	Condition	GR_stats == NULL	248:6:11118:11133	350	0	True				
+ANR	2165	EqualityExpression	GR_stats == NULL		350	0		==			
+ANR	2166	Identifier	GR_stats		350	0					
+ANR	2167	Identifier	NULL		350	1					
+ANR	2168	CompoundStatement		248:25:11042:11042	350	1					
+ANR	2169	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""could not allocate GR_stats"" )"	249:1:11140:11242	350	0	True				
+ANR	2170	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""could not allocate GR_stats"" )"		350	0		=			
+ANR	2171	Identifier	code		350	0					
+ANR	2172	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""could not allocate GR_stats"" )"		350	1					
+ANR	2173	Callee	jbig2_error		350	0					
+ANR	2174	Identifier	jbig2_error		350	0					
+ANR	2175	ArgumentList	ctx		350	1					
+ANR	2176	Argument	ctx		350	0					
+ANR	2177	Identifier	ctx		350	0					
+ANR	2178	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2179	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2180	Argument	segment -> number		350	2					
+ANR	2181	PtrMemberAccess	segment -> number		350	0					
+ANR	2182	Identifier	segment		350	0					
+ANR	2183	Identifier	number		350	1					
+ANR	2184	Argument	"""could not allocate GR_stats"""		350	3					
+ANR	2185	PrimaryExpression	"""could not allocate GR_stats"""		350	0					
+ANR	2186	GotoStatement	goto cleanup1 ;	250:1:11245:11259	350	1	True				
+ANR	2187	Identifier	cleanup1		350	0					
+ANR	2188	ExpressionStatement	"memset ( GR_stats , 0 , stats_size )"	252:1:11265:11302	350	3	True				
+ANR	2189	CallExpression	"memset ( GR_stats , 0 , stats_size )"		350	0					
+ANR	2190	Callee	memset		350	0					
+ANR	2191	Identifier	memset		350	0					
+ANR	2192	ArgumentList	GR_stats		350	1					
+ANR	2193	Argument	GR_stats		350	0					
+ANR	2194	Identifier	GR_stats		350	0					
+ANR	2195	Argument	0		350	1					
+ANR	2196	PrimaryExpression	0		350	0					
+ANR	2197	Argument	stats_size		350	2					
+ANR	2198	Identifier	stats_size		350	0					
+ANR	2199	ExpressionStatement	"image = jbig2_image_new ( ctx , region_info . width , region_info . height )"	254:1:11308:11385	350	42	True				
+ANR	2200	AssignmentExpression	"image = jbig2_image_new ( ctx , region_info . width , region_info . height )"		350	0		=			
+ANR	2201	Identifier	image		350	0					
+ANR	2202	CallExpression	"jbig2_image_new ( ctx , region_info . width , region_info . height )"		350	1					
+ANR	2203	Callee	jbig2_image_new		350	0					
+ANR	2204	Identifier	jbig2_image_new		350	0					
+ANR	2205	ArgumentList	ctx		350	1					
+ANR	2206	Argument	ctx		350	0					
+ANR	2207	Identifier	ctx		350	0					
+ANR	2208	Argument	region_info . width		350	1					
+ANR	2209	MemberAccess	region_info . width		350	0					
+ANR	2210	Identifier	region_info		350	0					
+ANR	2211	Identifier	width		350	1					
+ANR	2212	Argument	region_info . height		350	2					
+ANR	2213	MemberAccess	region_info . height		350	0					
+ANR	2214	Identifier	region_info		350	0					
+ANR	2215	Identifier	height		350	1					
+ANR	2216	IfStatement	if ( image == NULL )		350	43					
+ANR	2217	Condition	image == NULL	255:6:11393:11405	350	0	True				
+ANR	2218	EqualityExpression	image == NULL		350	0		==			
+ANR	2219	Identifier	image		350	0					
+ANR	2220	Identifier	NULL		350	1					
+ANR	2221	CompoundStatement		255:22:11314:11314	350	1					
+ANR	2222	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image"" )"	256:1:11412:11522	350	0	True				
+ANR	2223	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image"" )"		350	0		=			
+ANR	2224	Identifier	code		350	0					
+ANR	2225	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image"" )"		350	1					
+ANR	2226	Callee	jbig2_error		350	0					
+ANR	2227	Identifier	jbig2_error		350	0					
+ANR	2228	ArgumentList	ctx		350	1					
+ANR	2229	Argument	ctx		350	0					
+ANR	2230	Identifier	ctx		350	0					
+ANR	2231	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2232	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2233	Argument	segment -> number		350	2					
+ANR	2234	PtrMemberAccess	segment -> number		350	0					
+ANR	2235	Identifier	segment		350	0					
+ANR	2236	Identifier	number		350	1					
+ANR	2237	Argument	"""couldn't allocate text region image"""		350	3					
+ANR	2238	PrimaryExpression	"""couldn't allocate text region image"""		350	0					
+ANR	2239	GotoStatement	goto cleanup2 ;	257:1:11525:11539	350	1	True				
+ANR	2240	Identifier	cleanup2		350	0					
+ANR	2241	ExpressionStatement	"ws = jbig2_word_stream_buf_new ( ctx , segment_data + offset , segment -> data_length - offset )"	259:1:11545:11642	350	44	True				
+ANR	2242	AssignmentExpression	"ws = jbig2_word_stream_buf_new ( ctx , segment_data + offset , segment -> data_length - offset )"		350	0		=			
+ANR	2243	Identifier	ws		350	0					
+ANR	2244	CallExpression	"jbig2_word_stream_buf_new ( ctx , segment_data + offset , segment -> data_length - offset )"		350	1					
+ANR	2245	Callee	jbig2_word_stream_buf_new		350	0					
+ANR	2246	Identifier	jbig2_word_stream_buf_new		350	0					
+ANR	2247	ArgumentList	ctx		350	1					
+ANR	2248	Argument	ctx		350	0					
+ANR	2249	Identifier	ctx		350	0					
+ANR	2250	Argument	segment_data + offset		350	1					
+ANR	2251	AdditiveExpression	segment_data + offset		350	0		+			
+ANR	2252	Identifier	segment_data		350	0					
+ANR	2253	Identifier	offset		350	1					
+ANR	2254	Argument	segment -> data_length - offset		350	2					
+ANR	2255	AdditiveExpression	segment -> data_length - offset		350	0		-			
+ANR	2256	PtrMemberAccess	segment -> data_length		350	0					
+ANR	2257	Identifier	segment		350	0					
+ANR	2258	Identifier	data_length		350	1					
+ANR	2259	Identifier	offset		350	1					
+ANR	2260	IfStatement	if ( ws == NULL )		350	45					
+ANR	2261	Condition	ws == NULL	260:6:11650:11659	350	0	True				
+ANR	2262	EqualityExpression	ws == NULL		350	0		==			
+ANR	2263	Identifier	ws		350	0					
+ANR	2264	Identifier	NULL		350	1					
+ANR	2265	CompoundStatement		260:19:11568:11568	350	1					
+ANR	2266	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate ws in text region image"" )"	261:1:11666:11782	350	0	True				
+ANR	2267	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate ws in text region image"" )"		350	0		=			
+ANR	2268	Identifier	code		350	0					
+ANR	2269	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate ws in text region image"" )"		350	1					
+ANR	2270	Callee	jbig2_error		350	0					
+ANR	2271	Identifier	jbig2_error		350	0					
+ANR	2272	ArgumentList	ctx		350	1					
+ANR	2273	Argument	ctx		350	0					
+ANR	2274	Identifier	ctx		350	0					
+ANR	2275	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2276	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2277	Argument	segment -> number		350	2					
+ANR	2278	PtrMemberAccess	segment -> number		350	0					
+ANR	2279	Identifier	segment		350	0					
+ANR	2280	Identifier	number		350	1					
+ANR	2281	Argument	"""couldn't allocate ws in text region image"""		350	3					
+ANR	2282	PrimaryExpression	"""couldn't allocate ws in text region image"""		350	0					
+ANR	2283	GotoStatement	goto cleanup2 ;	262:1:11785:11799	350	1	True				
+ANR	2284	Identifier	cleanup2		350	0					
+ANR	2285	ExpressionStatement	"as = jbig2_arith_new ( ctx , ws )"	264:1:11805:11839	350	46	True				
+ANR	2286	AssignmentExpression	"as = jbig2_arith_new ( ctx , ws )"		350	0		=			
+ANR	2287	Identifier	as		350	0					
+ANR	2288	CallExpression	"jbig2_arith_new ( ctx , ws )"		350	1					
+ANR	2289	Callee	jbig2_arith_new		350	0					
+ANR	2290	Identifier	jbig2_arith_new		350	0					
+ANR	2291	ArgumentList	ctx		350	1					
+ANR	2292	Argument	ctx		350	0					
+ANR	2293	Identifier	ctx		350	0					
+ANR	2294	Argument	ws		350	1					
+ANR	2295	Identifier	ws		350	0					
+ANR	2296	IfStatement	if ( as == NULL )		350	47					
+ANR	2297	Condition	as == NULL	265:6:11847:11856	350	0	True				
+ANR	2298	EqualityExpression	as == NULL		350	0		==			
+ANR	2299	Identifier	as		350	0					
+ANR	2300	Identifier	NULL		350	1					
+ANR	2301	CompoundStatement		265:19:11765:11765	350	1					
+ANR	2302	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate as in text region image"" )"	266:1:11863:11979	350	0	True				
+ANR	2303	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate as in text region image"" )"		350	0		=			
+ANR	2304	Identifier	code		350	0					
+ANR	2305	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate as in text region image"" )"		350	1					
+ANR	2306	Callee	jbig2_error		350	0					
+ANR	2307	Identifier	jbig2_error		350	0					
+ANR	2308	ArgumentList	ctx		350	1					
+ANR	2309	Argument	ctx		350	0					
+ANR	2310	Identifier	ctx		350	0					
+ANR	2311	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2312	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2313	Argument	segment -> number		350	2					
+ANR	2314	PtrMemberAccess	segment -> number		350	0					
+ANR	2315	Identifier	segment		350	0					
+ANR	2316	Identifier	number		350	1					
+ANR	2317	Argument	"""couldn't allocate as in text region image"""		350	3					
+ANR	2318	PrimaryExpression	"""couldn't allocate as in text region image"""		350	0					
+ANR	2319	GotoStatement	goto cleanup2 ;	267:1:11982:11996	350	1	True				
+ANR	2320	Identifier	cleanup2		350	0					
+ANR	2321	IfStatement	if ( ! params . SBHUFF )		350	48					
+ANR	2322	Condition	! params . SBHUFF	269:6:12007:12023	350	0	True				
+ANR	2323	UnaryOperationExpression	! params . SBHUFF		350	0					
+ANR	2324	UnaryOperator	!		350	0					
+ANR	2325	MemberAccess	params . SBHUFF		350	1					
+ANR	2326	Identifier	params		350	0					
+ANR	2327	Identifier	SBHUFF		350	1					
+ANR	2328	CompoundStatement		271:1:11963:11981	350	1					
+ANR	2329	IdentifierDeclStatement	"int SBSYMCODELEN , index ;"	270:1:12030:12055	350	0	True				
+ANR	2330	IdentifierDecl	SBSYMCODELEN		350	0					
+ANR	2331	IdentifierDeclType	int		350	0					
+ANR	2332	Identifier	SBSYMCODELEN		350	1					
+ANR	2333	IdentifierDecl	index		350	1					
+ANR	2334	IdentifierDeclType	int		350	0					
+ANR	2335	Identifier	index		350	1					
+ANR	2336	IdentifierDeclStatement	int SBNUMSYMS = 0 ;	271:1:12058:12076	350	1	True				
+ANR	2337	IdentifierDecl	SBNUMSYMS = 0		350	0					
+ANR	2338	IdentifierDeclType	int		350	0					
+ANR	2339	Identifier	SBNUMSYMS		350	1					
+ANR	2340	AssignmentExpression	SBNUMSYMS = 0		350	2		=			
+ANR	2341	Identifier	SBNUMSYMS		350	0					
+ANR	2342	PrimaryExpression	0		350	1					
+ANR	2343	ForStatement	for ( index = 0 ; index < n_dicts ; index ++ )		350	2					
+ANR	2344	ForInit	index = 0 ;	272:7:12085:12095	350	0	True				
+ANR	2345	AssignmentExpression	index = 0		350	0		=			
+ANR	2346	Identifier	index		350	0					
+ANR	2347	PrimaryExpression	0		350	1					
+ANR	2348	Condition	index < n_dicts	273:1:12098:12112	350	1	True				
+ANR	2349	RelationalExpression	index < n_dicts		350	0		<			
+ANR	2350	Identifier	index		350	0					
+ANR	2351	Identifier	n_dicts		350	1					
+ANR	2352	PostIncDecOperationExpression	index ++	274:1:12117:12124	350	2	True				
+ANR	2353	Identifier	index		350	0					
+ANR	2354	IncDec	++		350	1					
+ANR	2355	CompoundStatement		274:12:12033:12033	350	3					
+ANR	2356	ExpressionStatement	SBNUMSYMS += dicts [ index ] -> n_symbols	275:1:12131:12173	350	0	True				
+ANR	2357	AssignmentExpression	SBNUMSYMS += dicts [ index ] -> n_symbols		350	0		+=			
+ANR	2358	Identifier	SBNUMSYMS		350	0					
+ANR	2359	PtrMemberAccess	dicts [ index ] -> n_symbols		350	1					
+ANR	2360	ArrayIndexing	dicts [ index ]		350	0					
+ANR	2361	Identifier	dicts		350	0					
+ANR	2362	Identifier	index		350	1					
+ANR	2363	Identifier	n_symbols		350	1					
+ANR	2364	ExpressionStatement	params . IADT = jbig2_arith_int_ctx_new ( ctx )	277:1:12179:12227	350	3	True				
+ANR	2365	AssignmentExpression	params . IADT = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2366	MemberAccess	params . IADT		350	0					
+ANR	2367	Identifier	params		350	0					
+ANR	2368	Identifier	IADT		350	1					
+ANR	2369	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2370	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2371	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2372	ArgumentList	ctx		350	1					
+ANR	2373	Argument	ctx		350	0					
+ANR	2374	Identifier	ctx		350	0					
+ANR	2375	ExpressionStatement	params . IAFS = jbig2_arith_int_ctx_new ( ctx )	278:1:12230:12278	350	4	True				
+ANR	2376	AssignmentExpression	params . IAFS = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2377	MemberAccess	params . IAFS		350	0					
+ANR	2378	Identifier	params		350	0					
+ANR	2379	Identifier	IAFS		350	1					
+ANR	2380	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2381	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2382	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2383	ArgumentList	ctx		350	1					
+ANR	2384	Argument	ctx		350	0					
+ANR	2385	Identifier	ctx		350	0					
+ANR	2386	ExpressionStatement	params . IADS = jbig2_arith_int_ctx_new ( ctx )	279:1:12281:12329	350	5	True				
+ANR	2387	AssignmentExpression	params . IADS = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2388	MemberAccess	params . IADS		350	0					
+ANR	2389	Identifier	params		350	0					
+ANR	2390	Identifier	IADS		350	1					
+ANR	2391	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2392	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2393	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2394	ArgumentList	ctx		350	1					
+ANR	2395	Argument	ctx		350	0					
+ANR	2396	Identifier	ctx		350	0					
+ANR	2397	ExpressionStatement	params . IAIT = jbig2_arith_int_ctx_new ( ctx )	280:1:12332:12380	350	6	True				
+ANR	2398	AssignmentExpression	params . IAIT = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2399	MemberAccess	params . IAIT		350	0					
+ANR	2400	Identifier	params		350	0					
+ANR	2401	Identifier	IAIT		350	1					
+ANR	2402	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2403	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2404	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2405	ArgumentList	ctx		350	1					
+ANR	2406	Argument	ctx		350	0					
+ANR	2407	Identifier	ctx		350	0					
+ANR	2408	IfStatement	if ( ( params . IADT == NULL ) || ( params . IAFS == NULL ) || ( params . IADS == NULL ) || ( params . IAIT == NULL ) )		350	7					
+ANR	2409	Condition	( params . IADT == NULL ) || ( params . IAFS == NULL ) || ( params . IADS == NULL ) || ( params . IAIT == NULL )	281:6:12388:12499	350	0	True				
+ANR	2410	OrExpression	( params . IADT == NULL ) || ( params . IAFS == NULL ) || ( params . IADS == NULL ) || ( params . IAIT == NULL )		350	0		||			
+ANR	2411	EqualityExpression	params . IADT == NULL		350	0		==			
+ANR	2412	MemberAccess	params . IADT		350	0					
+ANR	2413	Identifier	params		350	0					
+ANR	2414	Identifier	IADT		350	1					
+ANR	2415	Identifier	NULL		350	1					
+ANR	2416	OrExpression	( params . IAFS == NULL ) || ( params . IADS == NULL ) || ( params . IAIT == NULL )		350	1		||			
+ANR	2417	EqualityExpression	params . IAFS == NULL		350	0		==			
+ANR	2418	MemberAccess	params . IAFS		350	0					
+ANR	2419	Identifier	params		350	0					
+ANR	2420	Identifier	IAFS		350	1					
+ANR	2421	Identifier	NULL		350	1					
+ANR	2422	OrExpression	( params . IADS == NULL ) || ( params . IAIT == NULL )		350	1		||			
+ANR	2423	EqualityExpression	params . IADS == NULL		350	0		==			
+ANR	2424	MemberAccess	params . IADS		350	0					
+ANR	2425	Identifier	params		350	0					
+ANR	2426	Identifier	IADS		350	1					
+ANR	2427	Identifier	NULL		350	1					
+ANR	2428	EqualityExpression	params . IAIT == NULL		350	1		==			
+ANR	2429	MemberAccess	params . IAIT		350	0					
+ANR	2430	Identifier	params		350	0					
+ANR	2431	Identifier	IAIT		350	1					
+ANR	2432	Identifier	NULL		350	1					
+ANR	2433	CompoundStatement		281:121:12408:12408	350	1					
+ANR	2434	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image data"" )"	282:1:12506:12621	350	0	True				
+ANR	2435	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image data"" )"		350	0		=			
+ANR	2436	Identifier	code		350	0					
+ANR	2437	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image data"" )"		350	1					
+ANR	2438	Callee	jbig2_error		350	0					
+ANR	2439	Identifier	jbig2_error		350	0					
+ANR	2440	ArgumentList	ctx		350	1					
+ANR	2441	Argument	ctx		350	0					
+ANR	2442	Identifier	ctx		350	0					
+ANR	2443	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2444	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2445	Argument	segment -> number		350	2					
+ANR	2446	PtrMemberAccess	segment -> number		350	0					
+ANR	2447	Identifier	segment		350	0					
+ANR	2448	Identifier	number		350	1					
+ANR	2449	Argument	"""couldn't allocate text region image data"""		350	3					
+ANR	2450	PrimaryExpression	"""couldn't allocate text region image data"""		350	0					
+ANR	2451	GotoStatement	goto cleanup3 ;	283:1:12624:12638	350	1	True				
+ANR	2452	Identifier	cleanup3		350	0					
+ANR	2453	ForStatement	for ( SBSYMCODELEN = 0 ; ( 1 << SBSYMCODELEN ) < SBNUMSYMS ; SBSYMCODELEN ++ )		350	8					
+ANR	2454	ForInit	SBSYMCODELEN = 0 ;	285:7:12650:12667	350	0	True				
+ANR	2455	AssignmentExpression	SBSYMCODELEN = 0		350	0		=			
+ANR	2456	Identifier	SBSYMCODELEN		350	0					
+ANR	2457	PrimaryExpression	0		350	1					
+ANR	2458	Condition	( 1 << SBSYMCODELEN ) < SBNUMSYMS	286:1:12670:12702	350	1	True				
+ANR	2459	RelationalExpression	( 1 << SBSYMCODELEN ) < SBNUMSYMS		350	0		<			
+ANR	2460	ShiftExpression	1 << SBSYMCODELEN		350	0		<<			
+ANR	2461	PrimaryExpression	1		350	0					
+ANR	2462	Identifier	SBSYMCODELEN		350	1					
+ANR	2463	Identifier	SBNUMSYMS		350	1					
+ANR	2464	PostIncDecOperationExpression	SBSYMCODELEN ++	287:1:12707:12721	350	2	True				
+ANR	2465	Identifier	SBSYMCODELEN		350	0					
+ANR	2466	IncDec	++		350	1					
+ANR	2467	CompoundStatement		287:19:12630:12630	350	3					
+ANR	2468	ExpressionStatement	"params . IAID = jbig2_arith_iaid_ctx_new ( ctx , SBSYMCODELEN )"	289:1:12731:12795	350	9	True				
+ANR	2469	AssignmentExpression	"params . IAID = jbig2_arith_iaid_ctx_new ( ctx , SBSYMCODELEN )"		350	0		=			
+ANR	2470	MemberAccess	params . IAID		350	0					
+ANR	2471	Identifier	params		350	0					
+ANR	2472	Identifier	IAID		350	1					
+ANR	2473	CallExpression	"jbig2_arith_iaid_ctx_new ( ctx , SBSYMCODELEN )"		350	1					
+ANR	2474	Callee	jbig2_arith_iaid_ctx_new		350	0					
+ANR	2475	Identifier	jbig2_arith_iaid_ctx_new		350	0					
+ANR	2476	ArgumentList	ctx		350	1					
+ANR	2477	Argument	ctx		350	0					
+ANR	2478	Identifier	ctx		350	0					
+ANR	2479	Argument	SBSYMCODELEN		350	1					
+ANR	2480	Identifier	SBSYMCODELEN		350	0					
+ANR	2481	ExpressionStatement	params . IARI = jbig2_arith_int_ctx_new ( ctx )	290:1:12798:12846	350	10	True				
+ANR	2482	AssignmentExpression	params . IARI = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2483	MemberAccess	params . IARI		350	0					
+ANR	2484	Identifier	params		350	0					
+ANR	2485	Identifier	IARI		350	1					
+ANR	2486	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2487	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2488	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2489	ArgumentList	ctx		350	1					
+ANR	2490	Argument	ctx		350	0					
+ANR	2491	Identifier	ctx		350	0					
+ANR	2492	ExpressionStatement	params . IARDW = jbig2_arith_int_ctx_new ( ctx )	291:1:12849:12898	350	11	True				
+ANR	2493	AssignmentExpression	params . IARDW = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2494	MemberAccess	params . IARDW		350	0					
+ANR	2495	Identifier	params		350	0					
+ANR	2496	Identifier	IARDW		350	1					
+ANR	2497	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2498	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2499	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2500	ArgumentList	ctx		350	1					
+ANR	2501	Argument	ctx		350	0					
+ANR	2502	Identifier	ctx		350	0					
+ANR	2503	ExpressionStatement	params . IARDH = jbig2_arith_int_ctx_new ( ctx )	292:1:12901:12950	350	12	True				
+ANR	2504	AssignmentExpression	params . IARDH = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2505	MemberAccess	params . IARDH		350	0					
+ANR	2506	Identifier	params		350	0					
+ANR	2507	Identifier	IARDH		350	1					
+ANR	2508	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2509	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2510	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2511	ArgumentList	ctx		350	1					
+ANR	2512	Argument	ctx		350	0					
+ANR	2513	Identifier	ctx		350	0					
+ANR	2514	ExpressionStatement	params . IARDX = jbig2_arith_int_ctx_new ( ctx )	293:1:12953:13002	350	13	True				
+ANR	2515	AssignmentExpression	params . IARDX = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2516	MemberAccess	params . IARDX		350	0					
+ANR	2517	Identifier	params		350	0					
+ANR	2518	Identifier	IARDX		350	1					
+ANR	2519	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2520	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2521	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2522	ArgumentList	ctx		350	1					
+ANR	2523	Argument	ctx		350	0					
+ANR	2524	Identifier	ctx		350	0					
+ANR	2525	ExpressionStatement	params . IARDY = jbig2_arith_int_ctx_new ( ctx )	294:1:13005:13054	350	14	True				
+ANR	2526	AssignmentExpression	params . IARDY = jbig2_arith_int_ctx_new ( ctx )		350	0		=			
+ANR	2527	MemberAccess	params . IARDY		350	0					
+ANR	2528	Identifier	params		350	0					
+ANR	2529	Identifier	IARDY		350	1					
+ANR	2530	CallExpression	jbig2_arith_int_ctx_new ( ctx )		350	1					
+ANR	2531	Callee	jbig2_arith_int_ctx_new		350	0					
+ANR	2532	Identifier	jbig2_arith_int_ctx_new		350	0					
+ANR	2533	ArgumentList	ctx		350	1					
+ANR	2534	Argument	ctx		350	0					
+ANR	2535	Identifier	ctx		350	0					
+ANR	2536	IfStatement	if ( ( params . IAID == NULL ) || ( params . IARI == NULL ) || ( params . IARDW == NULL ) || ( params . IARDH == NULL ) || ( params . IARDX == NULL ) || ( params . IARDY == NULL ) )		350	15					
+ANR	2537	Condition	( params . IAID == NULL ) || ( params . IARI == NULL ) || ( params . IARDW == NULL ) || ( params . IARDH == NULL ) || ( params . IARDX == NULL ) || ( params . IARDY == NULL )	295:6:13062:13235	350	0	True				
+ANR	2538	OrExpression	( params . IAID == NULL ) || ( params . IARI == NULL ) || ( params . IARDW == NULL ) || ( params . IARDH == NULL ) || ( params . IARDX == NULL ) || ( params . IARDY == NULL )		350	0		||			
+ANR	2539	EqualityExpression	params . IAID == NULL		350	0		==			
+ANR	2540	MemberAccess	params . IAID		350	0					
+ANR	2541	Identifier	params		350	0					
+ANR	2542	Identifier	IAID		350	1					
+ANR	2543	Identifier	NULL		350	1					
+ANR	2544	OrExpression	( params . IARI == NULL ) || ( params . IARDW == NULL ) || ( params . IARDH == NULL ) || ( params . IARDX == NULL ) || ( params . IARDY == NULL )		350	1		||			
+ANR	2545	EqualityExpression	params . IARI == NULL		350	0		==			
+ANR	2546	MemberAccess	params . IARI		350	0					
+ANR	2547	Identifier	params		350	0					
+ANR	2548	Identifier	IARI		350	1					
+ANR	2549	Identifier	NULL		350	1					
+ANR	2550	OrExpression	( params . IARDW == NULL ) || ( params . IARDH == NULL ) || ( params . IARDX == NULL ) || ( params . IARDY == NULL )		350	1		||			
+ANR	2551	EqualityExpression	params . IARDW == NULL		350	0		==			
+ANR	2552	MemberAccess	params . IARDW		350	0					
+ANR	2553	Identifier	params		350	0					
+ANR	2554	Identifier	IARDW		350	1					
+ANR	2555	Identifier	NULL		350	1					
+ANR	2556	OrExpression	( params . IARDH == NULL ) || ( params . IARDX == NULL ) || ( params . IARDY == NULL )		350	1		||			
+ANR	2557	EqualityExpression	params . IARDH == NULL		350	0		==			
+ANR	2558	MemberAccess	params . IARDH		350	0					
+ANR	2559	Identifier	params		350	0					
+ANR	2560	Identifier	IARDH		350	1					
+ANR	2561	Identifier	NULL		350	1					
+ANR	2562	OrExpression	( params . IARDX == NULL ) || ( params . IARDY == NULL )		350	1		||			
+ANR	2563	EqualityExpression	params . IARDX == NULL		350	0		==			
+ANR	2564	MemberAccess	params . IARDX		350	0					
+ANR	2565	Identifier	params		350	0					
+ANR	2566	Identifier	IARDX		350	1					
+ANR	2567	Identifier	NULL		350	1					
+ANR	2568	EqualityExpression	params . IARDY == NULL		350	1		==			
+ANR	2569	MemberAccess	params . IARDY		350	0					
+ANR	2570	Identifier	params		350	0					
+ANR	2571	Identifier	IARDY		350	1					
+ANR	2572	Identifier	NULL		350	1					
+ANR	2573	CompoundStatement		295:183:13144:13144	350	1					
+ANR	2574	ExpressionStatement	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image data"" )"	296:1:13242:13357	350	0	True				
+ANR	2575	AssignmentExpression	"code = jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image data"" )"		350	0		=			
+ANR	2576	Identifier	code		350	0					
+ANR	2577	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""couldn't allocate text region image data"" )"		350	1					
+ANR	2578	Callee	jbig2_error		350	0					
+ANR	2579	Identifier	jbig2_error		350	0					
+ANR	2580	ArgumentList	ctx		350	1					
+ANR	2581	Argument	ctx		350	0					
+ANR	2582	Identifier	ctx		350	0					
+ANR	2583	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2584	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2585	Argument	segment -> number		350	2					
+ANR	2586	PtrMemberAccess	segment -> number		350	0					
+ANR	2587	Identifier	segment		350	0					
+ANR	2588	Identifier	number		350	1					
+ANR	2589	Argument	"""couldn't allocate text region image data"""		350	3					
+ANR	2590	PrimaryExpression	"""couldn't allocate text region image data"""		350	0					
+ANR	2591	GotoStatement	goto cleanup4 ;	297:1:13360:13374	350	1	True				
+ANR	2592	Identifier	cleanup4		350	0					
+ANR	2593	Statement	code	300:1:13383:13386	350	49	True				
+ANR	2594	Statement	=	300:6:13388:13388	350	50	True				
+ANR	2595	Statement	jbig2_decode_text_region	300:8:13390:13413	350	51	True				
+ANR	2596	Statement	(	300:33:13415:13415	350	52	True				
+ANR	2597	Statement	ctx	300:35:13417:13419	350	53	True				
+ANR	2598	Statement	","	300:39:13421:13421	350	54	True				
+ANR	2599	Statement	segment	300:41:13423:13429	350	55	True				
+ANR	2600	Statement	","	300:49:13431:13431	350	56	True				
+ANR	2601	Statement	&	300:51:13433:13433	350	57	True				
+ANR	2602	Statement	params	300:53:13435:13440	350	58	True				
+ANR	2603	Statement	","	300:60:13442:13442	350	59	True				
+ANR	2604	Statement	(	300:62:13444:13444	350	60	True				
+ANR	2605	Statement	const	300:64:13446:13450	350	61	True				
+ANR	2606	Statement	Jbig2SymbolDict	300:70:13452:13466	350	62	True				
+ANR	2607	Statement	*	300:86:13468:13468	350	63	True				
+ANR	2608	Statement	const	300:88:13470:13474	350	64	True				
+ANR	2609	Statement	*	300:94:13476:13476	350	65	True				
+ANR	2610	Statement	)	300:96:13478:13478	350	66	True				
+ANR	2611	Statement	dicts	300:98:13480:13484	350	67	True				
+ANR	2612	Statement	","	300:104:13486:13486	350	68	True				
+ANR	2613	Statement	n_dicts	300:106:13488:13494	350	69	True				
+ANR	2614	Statement	","	300:114:13496:13496	350	70	True				
+ANR	2615	Statement	image	300:116:13498:13502	350	71	True				
+ANR	2616	Statement	","	300:122:13504:13504	350	72	True				
+ANR	2617	Statement	segment_data	300:124:13506:13517	350	73	True				
+ANR	2618	Statement	+	300:137:13519:13519	350	74	True				
+ANR	2619	Statement	offset	300:139:13521:13526	350	75	True				
+ANR	2620	Statement	","	300:146:13528:13528	350	76	True				
+ANR	2621	Statement	segment	300:148:13530:13536	350	77	True				
+ANR	2622	Statement	->	300:156:13538:13539	350	78	True				
+ANR	2623	Statement	data_length	300:159:13541:13551	350	79	True				
+ANR	2624	Statement	-	300:171:13553:13553	350	80	True				
+ANR	2625	Statement	offset	300:173:13555:13560	350	81	True				
+ANR	2626	Statement	","	300:180:13562:13562	350	82	True				
+ANR	2627	Statement	GR_stats	300:182:13564:13571	350	83	True				
+ANR	2628	Statement	","	300:191:13573:13573	350	84	True				
+ANR	2629	Statement	as	300:193:13575:13576	350	85	True				
+ANR	2630	Statement	","	300:196:13578:13578	350	86	True				
+ANR	2631	Statement	ws	300:198:13580:13581	350	87	True				
+ANR	2632	Statement	)	300:201:13583:13583	350	88	True				
+ANR	2633	ExpressionStatement		300:203:13585:13585	350	89	True				
+ANR	2634	IfStatement	if ( code < 0 )		350	90					
+ANR	2635	Condition	code < 0	301:6:13593:13600	350	0	True				
+ANR	2636	RelationalExpression	code < 0		350	0		<			
+ANR	2637	Identifier	code		350	0					
+ANR	2638	PrimaryExpression	0		350	1					
+ANR	2639	CompoundStatement		301:17:13509:13509	350	1					
+ANR	2640	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to decode text region image data"" )"	302:1:13607:13714	350	0	True				
+ANR	2641	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to decode text region image data"" )"		350	0					
+ANR	2642	Callee	jbig2_error		350	0					
+ANR	2643	Identifier	jbig2_error		350	0					
+ANR	2644	ArgumentList	ctx		350	1					
+ANR	2645	Argument	ctx		350	0					
+ANR	2646	Identifier	ctx		350	0					
+ANR	2647	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	2648	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	2649	Argument	segment -> number		350	2					
+ANR	2650	PtrMemberAccess	segment -> number		350	0					
+ANR	2651	Identifier	segment		350	0					
+ANR	2652	Identifier	number		350	1					
+ANR	2653	Argument	"""failed to decode text region image data"""		350	3					
+ANR	2654	PrimaryExpression	"""failed to decode text region image data"""		350	0					
+ANR	2655	GotoStatement	goto cleanup4 ;	303:1:13717:13731	350	1	True				
+ANR	2656	Identifier	cleanup4		350	0					
+ANR	2657	IfStatement	if ( ( segment -> flags & 63 ) == 4 )		350	91					
+ANR	2658	Condition	( segment -> flags & 63 ) == 4	305:6:13742:13771	350	0	True				
+ANR	2659	EqualityExpression	( segment -> flags & 63 ) == 4		350	0		==			
+ANR	2660	BitAndExpression	segment -> flags & 63		350	0		&			
+ANR	2661	PtrMemberAccess	segment -> flags		350	0					
+ANR	2662	Identifier	segment		350	0					
+ANR	2663	Identifier	flags		350	1					
+ANR	2664	PrimaryExpression	63		350	1					
+ANR	2665	PrimaryExpression	4		350	1					
+ANR	2666	CompoundStatement		305:39:13680:13680	350	1					
+ANR	2667	ExpressionStatement	"segment -> result = jbig2_image_clone ( ctx , image )"	306:1:13778:13832	350	0	True				
+ANR	2668	AssignmentExpression	"segment -> result = jbig2_image_clone ( ctx , image )"		350	0		=			
+ANR	2669	PtrMemberAccess	segment -> result		350	0					
+ANR	2670	Identifier	segment		350	0					
+ANR	2671	Identifier	result		350	1					
+ANR	2672	CallExpression	"jbig2_image_clone ( ctx , image )"		350	1					
+ANR	2673	Callee	jbig2_image_clone		350	0					
+ANR	2674	Identifier	jbig2_image_clone		350	0					
+ANR	2675	ArgumentList	ctx		350	1					
+ANR	2676	Argument	ctx		350	0					
+ANR	2677	Identifier	ctx		350	0					
+ANR	2678	Argument	image		350	1					
+ANR	2679	Identifier	image		350	0					
+ANR	2680	ElseStatement	else		350	0					
+ANR	2681	CompoundStatement		308:6:13748:13748	350	0					
+ANR	2682	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , segment -> number , ""composing %dx%d decoded text region onto page at (%d, %d)"" , region_info . width , region_info . height , region_info . x , region_info . y )"	309:1:13846:14052	350	0	True				
+ANR	2683	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , segment -> number , ""composing %dx%d decoded text region onto page at (%d, %d)"" , region_info . width , region_info . height , region_info . x , region_info . y )"		350	0					
+ANR	2684	Callee	jbig2_error		350	0					
+ANR	2685	Identifier	jbig2_error		350	0					
+ANR	2686	ArgumentList	ctx		350	1					
+ANR	2687	Argument	ctx		350	0					
+ANR	2688	Identifier	ctx		350	0					
+ANR	2689	Argument	JBIG2_SEVERITY_DEBUG		350	1					
+ANR	2690	Identifier	JBIG2_SEVERITY_DEBUG		350	0					
+ANR	2691	Argument	segment -> number		350	2					
+ANR	2692	PtrMemberAccess	segment -> number		350	0					
+ANR	2693	Identifier	segment		350	0					
+ANR	2694	Identifier	number		350	1					
+ANR	2695	Argument	"""composing %dx%d decoded text region onto page at (%d, %d)"""		350	3					
+ANR	2696	PrimaryExpression	"""composing %dx%d decoded text region onto page at (%d, %d)"""		350	0					
+ANR	2697	Argument	region_info . width		350	4					
+ANR	2698	MemberAccess	region_info . width		350	0					
+ANR	2699	Identifier	region_info		350	0					
+ANR	2700	Identifier	width		350	1					
+ANR	2701	Argument	region_info . height		350	5					
+ANR	2702	MemberAccess	region_info . height		350	0					
+ANR	2703	Identifier	region_info		350	0					
+ANR	2704	Identifier	height		350	1					
+ANR	2705	Argument	region_info . x		350	6					
+ANR	2706	MemberAccess	region_info . x		350	0					
+ANR	2707	Identifier	region_info		350	0					
+ANR	2708	Identifier	x		350	1					
+ANR	2709	Argument	region_info . y		350	7					
+ANR	2710	MemberAccess	region_info . y		350	0					
+ANR	2711	Identifier	region_info		350	0					
+ANR	2712	Identifier	y		350	1					
+ANR	2713	ExpressionStatement	"jbig2_page_add_result ( ctx , & ctx -> pages [ ctx -> current_page ] , image , region_info . x , region_info . y , region_info . op )"	310:1:14055:14189	350	1	True				
+ANR	2714	CallExpression	"jbig2_page_add_result ( ctx , & ctx -> pages [ ctx -> current_page ] , image , region_info . x , region_info . y , region_info . op )"		350	0					
+ANR	2715	Callee	jbig2_page_add_result		350	0					
+ANR	2716	Identifier	jbig2_page_add_result		350	0					
+ANR	2717	ArgumentList	ctx		350	1					
+ANR	2718	Argument	ctx		350	0					
+ANR	2719	Identifier	ctx		350	0					
+ANR	2720	Argument	& ctx -> pages [ ctx -> current_page ]		350	1					
+ANR	2721	UnaryOperationExpression	& ctx -> pages [ ctx -> current_page ]		350	0					
+ANR	2722	UnaryOperator	&		350	0					
+ANR	2723	ArrayIndexing	ctx -> pages [ ctx -> current_page ]		350	1					
+ANR	2724	PtrMemberAccess	ctx -> pages		350	0					
+ANR	2725	Identifier	ctx		350	0					
+ANR	2726	Identifier	pages		350	1					
+ANR	2727	PtrMemberAccess	ctx -> current_page		350	1					
+ANR	2728	Identifier	ctx		350	0					
+ANR	2729	Identifier	current_page		350	1					
+ANR	2730	Argument	image		350	2					
+ANR	2731	Identifier	image		350	0					
+ANR	2732	Argument	region_info . x		350	3					
+ANR	2733	MemberAccess	region_info . x		350	0					
+ANR	2734	Identifier	region_info		350	0					
+ANR	2735	Identifier	x		350	1					
+ANR	2736	Argument	region_info . y		350	4					
+ANR	2737	MemberAccess	region_info . y		350	0					
+ANR	2738	Identifier	region_info		350	0					
+ANR	2739	Identifier	y		350	1					
+ANR	2740	Argument	region_info . op		350	5					
+ANR	2741	MemberAccess	region_info . op		350	0					
+ANR	2742	Identifier	region_info		350	0					
+ANR	2743	Identifier	op		350	1					
+ANR	2744	Label	cleanup4 :	312:1:14195:14204	350	92	True				
+ANR	2745	Identifier	cleanup4		350	0					
+ANR	2746	IfStatement	if ( ! params . SBHUFF )		350	93					
+ANR	2747	Condition	! params . SBHUFF	312:17:14211:14227	350	0	True				
+ANR	2748	UnaryOperationExpression	! params . SBHUFF		350	0					
+ANR	2749	UnaryOperator	!		350	0					
+ANR	2750	MemberAccess	params . SBHUFF		350	1					
+ANR	2751	Identifier	params		350	0					
+ANR	2752	Identifier	SBHUFF		350	1					
+ANR	2753	CompoundStatement		312:37:14136:14136	350	1					
+ANR	2754	ExpressionStatement	"jbig2_arith_iaid_ctx_free ( ctx , params . IAID )"	313:1:14234:14284	350	0	True				
+ANR	2755	CallExpression	"jbig2_arith_iaid_ctx_free ( ctx , params . IAID )"		350	0					
+ANR	2756	Callee	jbig2_arith_iaid_ctx_free		350	0					
+ANR	2757	Identifier	jbig2_arith_iaid_ctx_free		350	0					
+ANR	2758	ArgumentList	ctx		350	1					
+ANR	2759	Argument	ctx		350	0					
+ANR	2760	Identifier	ctx		350	0					
+ANR	2761	Argument	params . IAID		350	1					
+ANR	2762	MemberAccess	params . IAID		350	0					
+ANR	2763	Identifier	params		350	0					
+ANR	2764	Identifier	IAID		350	1					
+ANR	2765	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IARI )"	314:1:14287:14336	350	1	True				
+ANR	2766	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IARI )"		350	0					
+ANR	2767	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2768	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2769	ArgumentList	ctx		350	1					
+ANR	2770	Argument	ctx		350	0					
+ANR	2771	Identifier	ctx		350	0					
+ANR	2772	Argument	params . IARI		350	1					
+ANR	2773	MemberAccess	params . IARI		350	0					
+ANR	2774	Identifier	params		350	0					
+ANR	2775	Identifier	IARI		350	1					
+ANR	2776	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IARDW )"	315:1:14339:14389	350	2	True				
+ANR	2777	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IARDW )"		350	0					
+ANR	2778	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2779	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2780	ArgumentList	ctx		350	1					
+ANR	2781	Argument	ctx		350	0					
+ANR	2782	Identifier	ctx		350	0					
+ANR	2783	Argument	params . IARDW		350	1					
+ANR	2784	MemberAccess	params . IARDW		350	0					
+ANR	2785	Identifier	params		350	0					
+ANR	2786	Identifier	IARDW		350	1					
+ANR	2787	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IARDH )"	316:1:14392:14442	350	3	True				
+ANR	2788	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IARDH )"		350	0					
+ANR	2789	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2790	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2791	ArgumentList	ctx		350	1					
+ANR	2792	Argument	ctx		350	0					
+ANR	2793	Identifier	ctx		350	0					
+ANR	2794	Argument	params . IARDH		350	1					
+ANR	2795	MemberAccess	params . IARDH		350	0					
+ANR	2796	Identifier	params		350	0					
+ANR	2797	Identifier	IARDH		350	1					
+ANR	2798	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IARDX )"	317:1:14445:14495	350	4	True				
+ANR	2799	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IARDX )"		350	0					
+ANR	2800	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2801	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2802	ArgumentList	ctx		350	1					
+ANR	2803	Argument	ctx		350	0					
+ANR	2804	Identifier	ctx		350	0					
+ANR	2805	Argument	params . IARDX		350	1					
+ANR	2806	MemberAccess	params . IARDX		350	0					
+ANR	2807	Identifier	params		350	0					
+ANR	2808	Identifier	IARDX		350	1					
+ANR	2809	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IARDY )"	318:1:14498:14548	350	5	True				
+ANR	2810	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IARDY )"		350	0					
+ANR	2811	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2812	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2813	ArgumentList	ctx		350	1					
+ANR	2814	Argument	ctx		350	0					
+ANR	2815	Identifier	ctx		350	0					
+ANR	2816	Argument	params . IARDY		350	1					
+ANR	2817	MemberAccess	params . IARDY		350	0					
+ANR	2818	Identifier	params		350	0					
+ANR	2819	Identifier	IARDY		350	1					
+ANR	2820	Label	cleanup3 :	320:1:14554:14563	350	94	True				
+ANR	2821	Identifier	cleanup3		350	0					
+ANR	2822	IfStatement	if ( ! params . SBHUFF )		350	95					
+ANR	2823	Condition	! params . SBHUFF	320:17:14570:14586	350	0	True				
+ANR	2824	UnaryOperationExpression	! params . SBHUFF		350	0					
+ANR	2825	UnaryOperator	!		350	0					
+ANR	2826	MemberAccess	params . SBHUFF		350	1					
+ANR	2827	Identifier	params		350	0					
+ANR	2828	Identifier	SBHUFF		350	1					
+ANR	2829	CompoundStatement		320:37:14495:14495	350	1					
+ANR	2830	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IADT )"	321:1:14593:14642	350	0	True				
+ANR	2831	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IADT )"		350	0					
+ANR	2832	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2833	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2834	ArgumentList	ctx		350	1					
+ANR	2835	Argument	ctx		350	0					
+ANR	2836	Identifier	ctx		350	0					
+ANR	2837	Argument	params . IADT		350	1					
+ANR	2838	MemberAccess	params . IADT		350	0					
+ANR	2839	Identifier	params		350	0					
+ANR	2840	Identifier	IADT		350	1					
+ANR	2841	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IAFS )"	322:1:14645:14694	350	1	True				
+ANR	2842	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IAFS )"		350	0					
+ANR	2843	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2844	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2845	ArgumentList	ctx		350	1					
+ANR	2846	Argument	ctx		350	0					
+ANR	2847	Identifier	ctx		350	0					
+ANR	2848	Argument	params . IAFS		350	1					
+ANR	2849	MemberAccess	params . IAFS		350	0					
+ANR	2850	Identifier	params		350	0					
+ANR	2851	Identifier	IAFS		350	1					
+ANR	2852	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IADS )"	323:1:14697:14746	350	2	True				
+ANR	2853	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IADS )"		350	0					
+ANR	2854	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2855	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2856	ArgumentList	ctx		350	1					
+ANR	2857	Argument	ctx		350	0					
+ANR	2858	Identifier	ctx		350	0					
+ANR	2859	Argument	params . IADS		350	1					
+ANR	2860	MemberAccess	params . IADS		350	0					
+ANR	2861	Identifier	params		350	0					
+ANR	2862	Identifier	IADS		350	1					
+ANR	2863	ExpressionStatement	"jbig2_arith_int_ctx_free ( ctx , params . IAIT )"	324:1:14749:14798	350	3	True				
+ANR	2864	CallExpression	"jbig2_arith_int_ctx_free ( ctx , params . IAIT )"		350	0					
+ANR	2865	Callee	jbig2_arith_int_ctx_free		350	0					
+ANR	2866	Identifier	jbig2_arith_int_ctx_free		350	0					
+ANR	2867	ArgumentList	ctx		350	1					
+ANR	2868	Argument	ctx		350	0					
+ANR	2869	Identifier	ctx		350	0					
+ANR	2870	Argument	params . IAIT		350	1					
+ANR	2871	MemberAccess	params . IAIT		350	0					
+ANR	2872	Identifier	params		350	0					
+ANR	2873	Identifier	IAIT		350	1					
+ANR	2874	ExpressionStatement	"jbig2_free ( ctx -> allocator , as )"	326:1:14804:14841	350	96	True				
+ANR	2875	CallExpression	"jbig2_free ( ctx -> allocator , as )"		350	0					
+ANR	2876	Callee	jbig2_free		350	0					
+ANR	2877	Identifier	jbig2_free		350	0					
+ANR	2878	ArgumentList	ctx -> allocator		350	1					
+ANR	2879	Argument	ctx -> allocator		350	0					
+ANR	2880	PtrMemberAccess	ctx -> allocator		350	0					
+ANR	2881	Identifier	ctx		350	0					
+ANR	2882	Identifier	allocator		350	1					
+ANR	2883	Argument	as		350	1					
+ANR	2884	Identifier	as		350	0					
+ANR	2885	ExpressionStatement	"jbig2_word_stream_buf_free ( ctx , ws )"	327:1:14844:14884	350	97	True				
+ANR	2886	CallExpression	"jbig2_word_stream_buf_free ( ctx , ws )"		350	0					
+ANR	2887	Callee	jbig2_word_stream_buf_free		350	0					
+ANR	2888	Identifier	jbig2_word_stream_buf_free		350	0					
+ANR	2889	ArgumentList	ctx		350	1					
+ANR	2890	Argument	ctx		350	0					
+ANR	2891	Identifier	ctx		350	0					
+ANR	2892	Argument	ws		350	1					
+ANR	2893	Identifier	ws		350	0					
+ANR	2894	Label	cleanup2 :	328:1:14887:14896	350	98	True				
+ANR	2895	Identifier	cleanup2		350	0					
+ANR	2896	ExpressionStatement	"jbig2_free ( ctx -> allocator , GR_stats )"	328:12:14898:14941	350	99	True				
+ANR	2897	CallExpression	"jbig2_free ( ctx -> allocator , GR_stats )"		350	0					
+ANR	2898	Callee	jbig2_free		350	0					
+ANR	2899	Identifier	jbig2_free		350	0					
+ANR	2900	ArgumentList	ctx -> allocator		350	1					
+ANR	2901	Argument	ctx -> allocator		350	0					
+ANR	2902	PtrMemberAccess	ctx -> allocator		350	0					
+ANR	2903	Identifier	ctx		350	0					
+ANR	2904	Identifier	allocator		350	1					
+ANR	2905	Argument	GR_stats		350	1					
+ANR	2906	Identifier	GR_stats		350	0					
+ANR	2907	ExpressionStatement	"jbig2_image_release ( ctx , image )"	329:1:14944:14980	350	100	True				
+ANR	2908	CallExpression	"jbig2_image_release ( ctx , image )"		350	0					
+ANR	2909	Callee	jbig2_image_release		350	0					
+ANR	2910	Identifier	jbig2_image_release		350	0					
+ANR	2911	ArgumentList	ctx		350	1					
+ANR	2912	Argument	ctx		350	0					
+ANR	2913	Identifier	ctx		350	0					
+ANR	2914	Argument	image		350	1					
+ANR	2915	Identifier	image		350	0					
+ANR	2916	Label	cleanup1 :	330:1:14983:14992	350	101	True				
+ANR	2917	Identifier	cleanup1		350	0					
+ANR	2918	IfStatement	if ( params . SBHUFF )		350	102					
+ANR	2919	Condition	params . SBHUFF	330:17:14999:15013	350	0	True				
+ANR	2920	MemberAccess	params . SBHUFF		350	0					
+ANR	2921	Identifier	params		350	0					
+ANR	2922	Identifier	SBHUFF		350	1					
+ANR	2923	CompoundStatement		330:35:14922:14922	350	1					
+ANR	2924	ExpressionStatement	"jbig2_release_huffman_table ( ctx , params . SBHUFFFS )"	331:1:15020:15076	350	0	True				
+ANR	2925	CallExpression	"jbig2_release_huffman_table ( ctx , params . SBHUFFFS )"		350	0					
+ANR	2926	Callee	jbig2_release_huffman_table		350	0					
+ANR	2927	Identifier	jbig2_release_huffman_table		350	0					
+ANR	2928	ArgumentList	ctx		350	1					
+ANR	2929	Argument	ctx		350	0					
+ANR	2930	Identifier	ctx		350	0					
+ANR	2931	Argument	params . SBHUFFFS		350	1					
+ANR	2932	MemberAccess	params . SBHUFFFS		350	0					
+ANR	2933	Identifier	params		350	0					
+ANR	2934	Identifier	SBHUFFFS		350	1					
+ANR	2935	ExpressionStatement	"jbig2_release_huffman_table ( ctx , params . SBHUFFDS )"	332:1:15079:15135	350	1	True				
+ANR	2936	CallExpression	"jbig2_release_huffman_table ( ctx , params . SBHUFFDS )"		350	0					
+ANR	2937	Callee	jbig2_release_huffman_table		350	0					
+ANR	2938	Identifier	jbig2_release_huffman_table		350	0					
+ANR	2939	ArgumentList	ctx		350	1					
+ANR	2940	Argument	ctx		350	0					
+ANR	2941	Identifier	ctx		350	0					
+ANR	2942	Argument	params . SBHUFFDS		350	1					
+ANR	2943	MemberAccess	params . SBHUFFDS		350	0					
+ANR	2944	Identifier	params		350	0					
+ANR	2945	Identifier	SBHUFFDS		350	1					
+ANR	2946	ExpressionStatement	"jbig2_release_huffman_table ( ctx , params . SBHUFFDT )"	333:1:15138:15194	350	2	True				
+ANR	2947	CallExpression	"jbig2_release_huffman_table ( ctx , params . SBHUFFDT )"		350	0					
+ANR	2948	Callee	jbig2_release_huffman_table		350	0					
+ANR	2949	Identifier	jbig2_release_huffman_table		350	0					
+ANR	2950	ArgumentList	ctx		350	1					
+ANR	2951	Argument	ctx		350	0					
+ANR	2952	Identifier	ctx		350	0					
+ANR	2953	Argument	params . SBHUFFDT		350	1					
+ANR	2954	MemberAccess	params . SBHUFFDT		350	0					
+ANR	2955	Identifier	params		350	0					
+ANR	2956	Identifier	SBHUFFDT		350	1					
+ANR	2957	ExpressionStatement	"jbig2_release_huffman_table ( ctx , params . SBHUFFRDX )"	334:1:15197:15254	350	3	True				
+ANR	2958	CallExpression	"jbig2_release_huffman_table ( ctx , params . SBHUFFRDX )"		350	0					
+ANR	2959	Callee	jbig2_release_huffman_table		350	0					
+ANR	2960	Identifier	jbig2_release_huffman_table		350	0					
+ANR	2961	ArgumentList	ctx		350	1					
+ANR	2962	Argument	ctx		350	0					
+ANR	2963	Identifier	ctx		350	0					
+ANR	2964	Argument	params . SBHUFFRDX		350	1					
+ANR	2965	MemberAccess	params . SBHUFFRDX		350	0					
+ANR	2966	Identifier	params		350	0					
+ANR	2967	Identifier	SBHUFFRDX		350	1					
+ANR	2968	ExpressionStatement	"jbig2_release_huffman_table ( ctx , params . SBHUFFRDY )"	335:1:15257:15314	350	4	True				
+ANR	2969	CallExpression	"jbig2_release_huffman_table ( ctx , params . SBHUFFRDY )"		350	0					
+ANR	2970	Callee	jbig2_release_huffman_table		350	0					
+ANR	2971	Identifier	jbig2_release_huffman_table		350	0					
+ANR	2972	ArgumentList	ctx		350	1					
+ANR	2973	Argument	ctx		350	0					
+ANR	2974	Identifier	ctx		350	0					
+ANR	2975	Argument	params . SBHUFFRDY		350	1					
+ANR	2976	MemberAccess	params . SBHUFFRDY		350	0					
+ANR	2977	Identifier	params		350	0					
+ANR	2978	Identifier	SBHUFFRDY		350	1					
+ANR	2979	ExpressionStatement	"jbig2_release_huffman_table ( ctx , params . SBHUFFRDW )"	336:1:15317:15374	350	5	True				
+ANR	2980	CallExpression	"jbig2_release_huffman_table ( ctx , params . SBHUFFRDW )"		350	0					
+ANR	2981	Callee	jbig2_release_huffman_table		350	0					
+ANR	2982	Identifier	jbig2_release_huffman_table		350	0					
+ANR	2983	ArgumentList	ctx		350	1					
+ANR	2984	Argument	ctx		350	0					
+ANR	2985	Identifier	ctx		350	0					
+ANR	2986	Argument	params . SBHUFFRDW		350	1					
+ANR	2987	MemberAccess	params . SBHUFFRDW		350	0					
+ANR	2988	Identifier	params		350	0					
+ANR	2989	Identifier	SBHUFFRDW		350	1					
+ANR	2990	ExpressionStatement	"jbig2_release_huffman_table ( ctx , params . SBHUFFRDH )"	337:1:15377:15434	350	6	True				
+ANR	2991	CallExpression	"jbig2_release_huffman_table ( ctx , params . SBHUFFRDH )"		350	0					
+ANR	2992	Callee	jbig2_release_huffman_table		350	0					
+ANR	2993	Identifier	jbig2_release_huffman_table		350	0					
+ANR	2994	ArgumentList	ctx		350	1					
+ANR	2995	Argument	ctx		350	0					
+ANR	2996	Identifier	ctx		350	0					
+ANR	2997	Argument	params . SBHUFFRDH		350	1					
+ANR	2998	MemberAccess	params . SBHUFFRDH		350	0					
+ANR	2999	Identifier	params		350	0					
+ANR	3000	Identifier	SBHUFFRDH		350	1					
+ANR	3001	ExpressionStatement	"jbig2_release_huffman_table ( ctx , params . SBHUFFRSIZE )"	338:1:15437:15496	350	7	True				
+ANR	3002	CallExpression	"jbig2_release_huffman_table ( ctx , params . SBHUFFRSIZE )"		350	0					
+ANR	3003	Callee	jbig2_release_huffman_table		350	0					
+ANR	3004	Identifier	jbig2_release_huffman_table		350	0					
+ANR	3005	ArgumentList	ctx		350	1					
+ANR	3006	Argument	ctx		350	0					
+ANR	3007	Identifier	ctx		350	0					
+ANR	3008	Argument	params . SBHUFFRSIZE		350	1					
+ANR	3009	MemberAccess	params . SBHUFFRSIZE		350	0					
+ANR	3010	Identifier	params		350	0					
+ANR	3011	Identifier	SBHUFFRSIZE		350	1					
+ANR	3012	ExpressionStatement	"jbig2_free ( ctx -> allocator , dicts )"	340:1:15502:15542	350	103	True				
+ANR	3013	CallExpression	"jbig2_free ( ctx -> allocator , dicts )"		350	0					
+ANR	3014	Callee	jbig2_free		350	0					
+ANR	3015	Identifier	jbig2_free		350	0					
+ANR	3016	ArgumentList	ctx -> allocator		350	1					
+ANR	3017	Argument	ctx -> allocator		350	0					
+ANR	3018	PtrMemberAccess	ctx -> allocator		350	0					
+ANR	3019	Identifier	ctx		350	0					
+ANR	3020	Identifier	allocator		350	1					
+ANR	3021	Argument	dicts		350	1					
+ANR	3022	Identifier	dicts		350	0					
+ANR	3023	ReturnStatement	return code ;	341:1:15545:15557	350	104	True				
+ANR	3024	Identifier	code		350	0					
+ANR	3025	Label	too_short :	342:1:15560:15570	350	105	True				
+ANR	3026	Identifier	too_short		350	0					
+ANR	3027	ReturnStatement	"return jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Segment too short"" ) ;"	342:13:15572:15664	350	106	True				
+ANR	3028	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""Segment too short"" )"		350	0					
+ANR	3029	Callee	jbig2_error		350	0					
+ANR	3030	Identifier	jbig2_error		350	0					
+ANR	3031	ArgumentList	ctx		350	1					
+ANR	3032	Argument	ctx		350	0					
+ANR	3033	Identifier	ctx		350	0					
+ANR	3034	Argument	JBIG2_SEVERITY_FATAL		350	1					
+ANR	3035	Identifier	JBIG2_SEVERITY_FATAL		350	0					
+ANR	3036	Argument	segment -> number		350	2					
+ANR	3037	PtrMemberAccess	segment -> number		350	0					
+ANR	3038	Identifier	segment		350	0					
+ANR	3039	Identifier	number		350	1					
+ANR	3040	Argument	"""Segment too short"""		350	3					
+ANR	3041	PrimaryExpression	"""Segment too short"""		350	0					
+ANR	3042	ReturnType	int		350	1					
+ANR	3043	Identifier	jbig2_text_region		350	2					
+ANR	3044	ParameterList	"Jbig2Ctx * ctx , Jbig2Segment * segment , const byte * segment_data"		350	3					
+ANR	3045	Parameter	Jbig2Ctx * ctx	1:24:24:37	350	0	True				
+ANR	3046	ParameterType	Jbig2Ctx *		350	0					
+ANR	3047	Identifier	ctx		350	1					
+ANR	3048	Parameter	Jbig2Segment * segment	1:41:41:62	350	1	True				
+ANR	3049	ParameterType	Jbig2Segment *		350	0					
+ANR	3050	Identifier	segment		350	1					
+ANR	3051	Parameter	const byte * segment_data	1:66:66:90	350	2	True				
+ANR	3052	ParameterType	const byte *		350	0					
+ANR	3053	Identifier	segment_data		350	1					
+ANR	3054	CFGEntryNode	ENTRY		350		True				
+ANR	3055	CFGExitNode	EXIT		350		True				
+ANR	3056	Symbol	jbig2_sd_list_referred		350						
+ANR	3057	Symbol	* index		350						
+ANR	3058	Symbol	region_info . height		350						
+ANR	3059	Symbol	params . IAIT		350						
+ANR	3060	Symbol	params . REFCORNER		350						
+ANR	3061	Symbol	SBNUMSYMS		350						
+ANR	3062	Symbol	* dicts		350						
+ANR	3063	Symbol	region_info . x		350						
+ANR	3064	Symbol	params . IARI		350						
+ANR	3065	Symbol	jbig2_find_table		350						
+ANR	3066	Symbol	& params		350						
+ANR	3067	Symbol	jbig2_build_huffman_table		350						
+ANR	3068	Symbol	SBSYMCODELEN		350						
+ANR	3069	Symbol	ctx		350						
+ANR	3070	Symbol	index		350						
+ANR	3071	Symbol	params		350						
+ANR	3072	Symbol	as		350						
+ANR	3073	Symbol	params . SBHUFFDT		350						
+ANR	3074	Symbol	* segment		350						
+ANR	3075	Symbol	params . SBHUFFDS		350						
+ANR	3076	Symbol	flags		350						
+ANR	3077	Symbol	jbig2_image_new		350						
+ANR	3078	Symbol	jbig2_image_clone		350						
+ANR	3079	Symbol	params . SBCOMBOP		350						
+ANR	3080	Symbol	& region_info		350						
+ANR	3081	Symbol	* params . sbrat		350						
+ANR	3082	Symbol	jbig2_sd_count_referred		350						
+ANR	3083	Symbol	jbig2_word_stream_buf_new		350						
+ANR	3084	Symbol	& jbig2_huffman_params_O		350						
+ANR	3085	Symbol	& jbig2_huffman_params_N		350						
+ANR	3086	Symbol	& jbig2_huffman_params_M		350						
+ANR	3087	Symbol	& jbig2_huffman_params_L		350						
+ANR	3088	Symbol	& jbig2_huffman_params_K		350						
+ANR	3089	Symbol	* params		350						
+ANR	3090	Symbol	& jbig2_huffman_params_J		350						
+ANR	3091	Symbol	& jbig2_huffman_params_I		350						
+ANR	3092	Symbol	& jbig2_huffman_params_H		350						
+ANR	3093	Symbol	& jbig2_huffman_params_G		350						
+ANR	3094	Symbol	* * dicts		350						
+ANR	3095	Symbol	& jbig2_huffman_params_F		350						
+ANR	3096	Symbol	region_info . op		350						
+ANR	3097	Symbol	dicts [ index ] -> n_symbols		350						
+ANR	3098	Symbol	& jbig2_huffman_params_A		350						
+ANR	3099	Symbol	huffman_flags		350						
+ANR	3100	Symbol	params . SBHUFFRDY		350						
+ANR	3101	Symbol	params . SBHUFFRDX		350						
+ANR	3102	Symbol	params . SBHUFFRDW		350						
+ANR	3103	Symbol	* ctx		350						
+ANR	3104	Symbol	params . SBREFINE		350						
+ANR	3105	Symbol	params . sbrat		350						
+ANR	3106	Symbol	params . IAID		350						
+ANR	3107	Symbol	params . SBHUFFRDH		350						
+ANR	3108	Symbol	params . SBNUMINSTANCES		350						
+ANR	3109	Symbol	JBIG2_SEVERITY_INFO		350						
+ANR	3110	Symbol	params . IARDH		350						
+ANR	3111	Symbol	params . SBDEFPIXEL		350						
+ANR	3112	Symbol	jbig2_get_uint32		350						
+ANR	3113	Symbol	GR_stats		350						
+ANR	3114	Symbol	params . SBHUFFRSIZE		350						
+ANR	3115	Symbol	jbig2_arith_new		350						
+ANR	3116	Symbol	segment		350						
+ANR	3117	Symbol	image		350						
+ANR	3118	Symbol	NULL		350						
+ANR	3119	Symbol	offset		350						
+ANR	3120	Symbol	ctx -> current_page		350						
+ANR	3121	Symbol	ctx -> allocator		350						
+ANR	3122	Symbol	JBIG2_SEVERITY_DEBUG		350						
+ANR	3123	Symbol	params . LOGSBSTRIPS		350						
+ANR	3124	Symbol	params . SBHUFF		350						
+ANR	3125	Symbol	huffman_params		350						
+ANR	3126	Symbol	segment -> flags		350						
+ANR	3127	Symbol	table_index		350						
+ANR	3128	Symbol	params . IAFS		350						
+ANR	3129	Symbol	segment -> result		350						
+ANR	3130	Symbol	region_info		350						
+ANR	3131	Symbol	segment -> data_length		350						
+ANR	3132	Symbol	* offset		350						
+ANR	3133	Symbol	jbig2_get_uint16		350						
+ANR	3134	Symbol	Jbig2ArithCx		350						
+ANR	3135	Symbol	code		350						
+ANR	3136	Symbol	jbig2_arith_int_ctx_new		350						
+ANR	3137	Symbol	JBIG2_SEVERITY_FATAL		350						
+ANR	3138	Symbol	dicts		350						
+ANR	3139	Symbol	n_dicts		350						
+ANR	3140	Symbol	JBIG2_SEVERITY_WARNING		350						
+ANR	3141	Symbol	jbig2_new		350						
+ANR	3142	Symbol	region_info . width		350						
+ANR	3143	Symbol	ws		350						
+ANR	3144	Symbol	* * index		350						
+ANR	3145	Symbol	segment_data		350						
+ANR	3146	Symbol	jbig2_arith_iaid_ctx_new		350						
+ANR	3147	Symbol	params . SBDSOFFSET		350						
+ANR	3148	Symbol	params . TRANSPOSED		350						
+ANR	3149	Symbol	params . SBRTEMPLATE		350						
+ANR	3150	Symbol	region_info . y		350						
+ANR	3151	Symbol	params . IADS		350						
+ANR	3152	Symbol	params . SBSTRIPS		350						
+ANR	3153	Symbol	segment -> number		350						
+ANR	3154	Symbol	stats_size		350						
+ANR	3155	Symbol	params . IARDX		350						
+ANR	3156	Symbol	params . IARDY		350						
+ANR	3157	Symbol	* segment_data		350						
+ANR	3158	Symbol	jbig2_error		350						
+ANR	3159	Symbol	params . IADT		350						
+ANR	3160	Symbol	params . IARDW		350						
+ANR	3161	Symbol	ctx -> pages		350						
+ANR	3162	Symbol	params . SBHUFFFS		350						

@@ -1,0 +1,162 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	5632	File	tmp/7_1.c								
+ANR	5633	Function	jbig2_page_add_result	1:0:0:721							
+ANR	5634	FunctionDef	"jbig2_page_add_result (Jbig2Ctx * ctx , Jbig2Page * page , Jbig2Image * image , int x , int y , Jbig2ComposeOp op)"		5633	0					
+ANR	5635	CompoundStatement		1:121:121:721	5633	0					
+ANR	5636	IfStatement	if ( page -> image == NULL )		5633	0					
+ANR	5637	Condition	page -> image == NULL	2:6:129:149	5633	0	True				
+ANR	5638	EqualityExpression	page -> image == NULL		5633	0		==			
+ANR	5639	PtrMemberAccess	page -> image		5633	0					
+ANR	5640	Identifier	page		5633	0					
+ANR	5641	Identifier	image		5633	1					
+ANR	5642	Identifier	NULL		5633	1					
+ANR	5643	CompoundStatement		2:30:31:31	5633	1					
+ANR	5644	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , - 1 , ""page info possibly missing, no image defined"" )"	3:1:156:256	5633	0	True				
+ANR	5645	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_WARNING , - 1 , ""page info possibly missing, no image defined"" )"		5633	0					
+ANR	5646	Callee	jbig2_error		5633	0					
+ANR	5647	Identifier	jbig2_error		5633	0					
+ANR	5648	ArgumentList	ctx		5633	1					
+ANR	5649	Argument	ctx		5633	0					
+ANR	5650	Identifier	ctx		5633	0					
+ANR	5651	Argument	JBIG2_SEVERITY_WARNING		5633	1					
+ANR	5652	Identifier	JBIG2_SEVERITY_WARNING		5633	0					
+ANR	5653	Argument	- 1		5633	2					
+ANR	5654	UnaryOperationExpression	- 1		5633	0					
+ANR	5655	UnaryOperator	-		5633	0					
+ANR	5656	PrimaryExpression	1		5633	1					
+ANR	5657	Argument	"""page info possibly missing, no image defined"""		5633	3					
+ANR	5658	PrimaryExpression	"""page info possibly missing, no image defined"""		5633	0					
+ANR	5659	ReturnStatement	return 0 ;	4:1:259:268	5633	1	True				
+ANR	5660	PrimaryExpression	0		5633	0					
+ANR	5661	IfStatement	if ( page -> striped )		5633	1					
+ANR	5662	Condition	page -> striped	6:6:279:293	5633	0	True				
+ANR	5663	PtrMemberAccess	page -> striped		5633	0					
+ANR	5664	Identifier	page		5633	0					
+ANR	5665	Identifier	striped		5633	1					
+ANR	5666	CompoundStatement		7:1:178:233	5633	1					
+ANR	5667	IdentifierDeclStatement	int new_height = y + image -> height + page -> end_row ;	7:1:300:355	5633	0	True				
+ANR	5668	IdentifierDecl	new_height = y + image -> height + page -> end_row		5633	0					
+ANR	5669	IdentifierDeclType	int		5633	0					
+ANR	5670	Identifier	new_height		5633	1					
+ANR	5671	AssignmentExpression	new_height = y + image -> height + page -> end_row		5633	2		=			
+ANR	5672	Identifier	new_height		5633	0					
+ANR	5673	AdditiveExpression	y + image -> height + page -> end_row		5633	1		+			
+ANR	5674	Identifier	y		5633	0					
+ANR	5675	AdditiveExpression	image -> height + page -> end_row		5633	1		+			
+ANR	5676	PtrMemberAccess	image -> height		5633	0					
+ANR	5677	Identifier	image		5633	0					
+ANR	5678	Identifier	height		5633	1					
+ANR	5679	PtrMemberAccess	page -> end_row		5633	1					
+ANR	5680	Identifier	page		5633	0					
+ANR	5681	Identifier	end_row		5633	1					
+ANR	5682	IfStatement	if ( page -> image -> height < new_height )		5633	1					
+ANR	5683	Condition	page -> image -> height < new_height	8:6:363:398	5633	0	True				
+ANR	5684	RelationalExpression	page -> image -> height < new_height		5633	0		<			
+ANR	5685	PtrMemberAccess	page -> image -> height		5633	0					
+ANR	5686	PtrMemberAccess	page -> image		5633	0					
+ANR	5687	Identifier	page		5633	0					
+ANR	5688	Identifier	image		5633	1					
+ANR	5689	Identifier	height		5633	1					
+ANR	5690	Identifier	new_height		5633	1					
+ANR	5691	CompoundStatement		8:45:280:280	5633	1					
+ANR	5692	Statement	jbig2_error	9:1:405:415	5633	0	True				
+ANR	5693	Statement	(	9:13:417:417	5633	1	True				
+ANR	5694	Statement	ctx	9:15:419:421	5633	2	True				
+ANR	5695	Statement	","	9:19:423:423	5633	3	True				
+ANR	5696	Statement	JBIG2_SEVERITY_DEBUG	9:21:425:444	5633	4	True				
+ANR	5697	Statement	","	9:42:446:446	5633	5	True				
+ANR	5698	Statement	-	9:44:448:448	5633	6	True				
+ANR	5699	Statement	1	9:46:450:450	5633	7	True				
+ANR	5700	Statement	","	9:48:452:452	5633	8	True				
+ANR	5701	Statement	"""growing page buffer to %d rows """	9:50:454:486	5633	9	True				
+ANR	5702	Statement	"""to accomodate new stripe"""	9:84:488:513	5633	10	True				
+ANR	5703	Statement	","	9:111:515:515	5633	11	True				
+ANR	5704	Statement	new_height	9:113:517:526	5633	12	True				
+ANR	5705	Statement	)	9:124:528:528	5633	13	True				
+ANR	5706	ExpressionStatement		9:126:530:530	5633	14	True				
+ANR	5707	ExpressionStatement	"jbig2_image_resize ( ctx , page -> image , page -> image -> width , new_height )"	10:1:533:614	5633	15	True				
+ANR	5708	CallExpression	"jbig2_image_resize ( ctx , page -> image , page -> image -> width , new_height )"		5633	0					
+ANR	5709	Callee	jbig2_image_resize		5633	0					
+ANR	5710	Identifier	jbig2_image_resize		5633	0					
+ANR	5711	ArgumentList	ctx		5633	1					
+ANR	5712	Argument	ctx		5633	0					
+ANR	5713	Identifier	ctx		5633	0					
+ANR	5714	Argument	page -> image		5633	1					
+ANR	5715	PtrMemberAccess	page -> image		5633	0					
+ANR	5716	Identifier	page		5633	0					
+ANR	5717	Identifier	image		5633	1					
+ANR	5718	Argument	page -> image -> width		5633	2					
+ANR	5719	PtrMemberAccess	page -> image -> width		5633	0					
+ANR	5720	PtrMemberAccess	page -> image		5633	0					
+ANR	5721	Identifier	page		5633	0					
+ANR	5722	Identifier	image		5633	1					
+ANR	5723	Identifier	width		5633	1					
+ANR	5724	Argument	new_height		5633	3					
+ANR	5725	Identifier	new_height		5633	0					
+ANR	5726	ExpressionStatement	"jbig2_image_compose ( ctx , page -> image , image , x , y + page -> end_row , op )"	13:1:623:706	5633	2	True				
+ANR	5727	CallExpression	"jbig2_image_compose ( ctx , page -> image , image , x , y + page -> end_row , op )"		5633	0					
+ANR	5728	Callee	jbig2_image_compose		5633	0					
+ANR	5729	Identifier	jbig2_image_compose		5633	0					
+ANR	5730	ArgumentList	ctx		5633	1					
+ANR	5731	Argument	ctx		5633	0					
+ANR	5732	Identifier	ctx		5633	0					
+ANR	5733	Argument	page -> image		5633	1					
+ANR	5734	PtrMemberAccess	page -> image		5633	0					
+ANR	5735	Identifier	page		5633	0					
+ANR	5736	Identifier	image		5633	1					
+ANR	5737	Argument	image		5633	2					
+ANR	5738	Identifier	image		5633	0					
+ANR	5739	Argument	x		5633	3					
+ANR	5740	Identifier	x		5633	0					
+ANR	5741	Argument	y + page -> end_row		5633	4					
+ANR	5742	AdditiveExpression	y + page -> end_row		5633	0		+			
+ANR	5743	Identifier	y		5633	0					
+ANR	5744	PtrMemberAccess	page -> end_row		5633	1					
+ANR	5745	Identifier	page		5633	0					
+ANR	5746	Identifier	end_row		5633	1					
+ANR	5747	Argument	op		5633	5					
+ANR	5748	Identifier	op		5633	0					
+ANR	5749	ReturnStatement	return 0 ;	14:1:709:718	5633	3	True				
+ANR	5750	PrimaryExpression	0		5633	0					
+ANR	5751	ReturnType	int		5633	1					
+ANR	5752	Identifier	jbig2_page_add_result		5633	2					
+ANR	5753	ParameterList	"Jbig2Ctx * ctx , Jbig2Page * page , Jbig2Image * image , int x , int y , Jbig2ComposeOp op"		5633	3					
+ANR	5754	Parameter	Jbig2Ctx * ctx	1:28:28:41	5633	0	True				
+ANR	5755	ParameterType	Jbig2Ctx *		5633	0					
+ANR	5756	Identifier	ctx		5633	1					
+ANR	5757	Parameter	Jbig2Page * page	1:45:45:60	5633	1	True				
+ANR	5758	ParameterType	Jbig2Page *		5633	0					
+ANR	5759	Identifier	page		5633	1					
+ANR	5760	Parameter	Jbig2Image * image	1:64:64:81	5633	2	True				
+ANR	5761	ParameterType	Jbig2Image *		5633	0					
+ANR	5762	Identifier	image		5633	1					
+ANR	5763	Parameter	int x	1:85:85:89	5633	3	True				
+ANR	5764	ParameterType	int		5633	0					
+ANR	5765	Identifier	x		5633	1					
+ANR	5766	Parameter	int y	1:93:93:97	5633	4	True				
+ANR	5767	ParameterType	int		5633	0					
+ANR	5768	Identifier	y		5633	1					
+ANR	5769	Parameter	Jbig2ComposeOp op	1:101:101:117	5633	5	True				
+ANR	5770	ParameterType	Jbig2ComposeOp		5633	0					
+ANR	5771	Identifier	op		5633	1					
+ANR	5772	CFGEntryNode	ENTRY		5633		True				
+ANR	5773	CFGExitNode	EXIT		5633		True				
+ANR	5774	Symbol	* * page		5633						
+ANR	5775	Symbol	image		5633						
+ANR	5776	Symbol	op		5633						
+ANR	5777	Symbol	NULL		5633						
+ANR	5778	Symbol	new_height		5633						
+ANR	5779	Symbol	ctx		5633						
+ANR	5780	Symbol	* page		5633						
+ANR	5781	Symbol	page -> image		5633						
+ANR	5782	Symbol	page -> image -> width		5633						
+ANR	5783	Symbol	page -> image -> height		5633						
+ANR	5784	Symbol	JBIG2_SEVERITY_WARNING		5633						
+ANR	5785	Symbol	image -> height		5633						
+ANR	5786	Symbol	* page -> image		5633						
+ANR	5787	Symbol	x		5633						
+ANR	5788	Symbol	y		5633						
+ANR	5789	Symbol	page		5633						
+ANR	5790	Symbol	page -> striped		5633						
+ANR	5791	Symbol	page -> end_row		5633						
+ANR	5792	Symbol	* image		5633						

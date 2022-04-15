@@ -1,0 +1,219 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	684	File	tmp/13_1.c								
+ANR	685	Function	jbig2_decode_halftone_mmr	1:0:0:810							
+ANR	686	FunctionDef	"jbig2_decode_halftone_mmr (Jbig2Ctx * ctx , const Jbig2GenericRegionParams * params , const byte * data , size_t size , Jbig2Image * image , size_t * consumed_bytes)"		685	0					
+ANR	687	CompoundStatement		1:172:172:810	685	0					
+ANR	688	IdentifierDeclStatement	Jbig2MmrCtx mmr ;	2:1:175:191	685	0	True				
+ANR	689	IdentifierDecl	mmr		685	0					
+ANR	690	IdentifierDeclType	Jbig2MmrCtx		685	0					
+ANR	691	Identifier	mmr		685	1					
+ANR	692	IdentifierDeclStatement	const int rowstride = image -> stride ;	3:1:194:232	685	1	True				
+ANR	693	IdentifierDecl	rowstride = image -> stride		685	0					
+ANR	694	IdentifierDeclType	const int		685	0					
+ANR	695	Identifier	rowstride		685	1					
+ANR	696	AssignmentExpression	rowstride = image -> stride		685	2		=			
+ANR	697	Identifier	rowstride		685	0					
+ANR	698	PtrMemberAccess	image -> stride		685	1					
+ANR	699	Identifier	image		685	0					
+ANR	700	Identifier	stride		685	1					
+ANR	701	IdentifierDeclStatement	byte * dst = image -> data ;	4:1:235:262	685	2	True				
+ANR	702	IdentifierDecl	* dst = image -> data		685	0					
+ANR	703	IdentifierDeclType	byte *		685	0					
+ANR	704	Identifier	dst		685	1					
+ANR	705	AssignmentExpression	* dst = image -> data		685	2		=			
+ANR	706	Identifier	dst		685	0					
+ANR	707	PtrMemberAccess	image -> data		685	1					
+ANR	708	Identifier	image		685	0					
+ANR	709	Identifier	data		685	1					
+ANR	710	IdentifierDeclStatement	byte * ref = NULL ;	5:1:265:283	685	3	True				
+ANR	711	IdentifierDecl	* ref = NULL		685	0					
+ANR	712	IdentifierDeclType	byte *		685	0					
+ANR	713	Identifier	ref		685	1					
+ANR	714	AssignmentExpression	* ref = NULL		685	2		=			
+ANR	715	Identifier	NULL		685	0					
+ANR	716	Identifier	NULL		685	1					
+ANR	717	IdentifierDeclStatement	int y ;	6:1:286:292	685	4	True				
+ANR	718	IdentifierDecl	y		685	0					
+ANR	719	IdentifierDeclType	int		685	0					
+ANR	720	Identifier	y		685	1					
+ANR	721	IdentifierDeclStatement	int code = 0 ;	7:1:295:308	685	5	True				
+ANR	722	IdentifierDecl	code = 0		685	0					
+ANR	723	IdentifierDeclType	int		685	0					
+ANR	724	Identifier	code		685	1					
+ANR	725	AssignmentExpression	code = 0		685	2		=			
+ANR	726	Identifier	code		685	0					
+ANR	727	PrimaryExpression	0		685	1					
+ANR	728	IdentifierDeclStatement	const uint32_t EOFB = 0x001001 ;	8:1:311:342	685	6	True				
+ANR	729	IdentifierDecl	EOFB = 0x001001		685	0					
+ANR	730	IdentifierDeclType	const uint32_t		685	0					
+ANR	731	Identifier	EOFB		685	1					
+ANR	732	AssignmentExpression	EOFB = 0x001001		685	2		=			
+ANR	733	Identifier	EOFB		685	0					
+ANR	734	PrimaryExpression	0x001001		685	1					
+ANR	735	ExpressionStatement	"jbig2_decode_mmr_init ( & mmr , image -> width , image -> height , data , size )"	9:1:345:426	685	7	True				
+ANR	736	CallExpression	"jbig2_decode_mmr_init ( & mmr , image -> width , image -> height , data , size )"		685	0					
+ANR	737	Callee	jbig2_decode_mmr_init		685	0					
+ANR	738	Identifier	jbig2_decode_mmr_init		685	0					
+ANR	739	ArgumentList	& mmr		685	1					
+ANR	740	Argument	& mmr		685	0					
+ANR	741	UnaryOperationExpression	& mmr		685	0					
+ANR	742	UnaryOperator	&		685	0					
+ANR	743	Identifier	mmr		685	1					
+ANR	744	Argument	image -> width		685	1					
+ANR	745	PtrMemberAccess	image -> width		685	0					
+ANR	746	Identifier	image		685	0					
+ANR	747	Identifier	width		685	1					
+ANR	748	Argument	image -> height		685	2					
+ANR	749	PtrMemberAccess	image -> height		685	0					
+ANR	750	Identifier	image		685	0					
+ANR	751	Identifier	height		685	1					
+ANR	752	Argument	data		685	3					
+ANR	753	Identifier	data		685	0					
+ANR	754	Argument	size		685	4					
+ANR	755	Identifier	size		685	0					
+ANR	756	ForStatement	for ( y = 0 ; y < image -> height ; y ++ )		685	8					
+ANR	757	ForInit	y = 0 ;	10:7:435:441	685	0	True				
+ANR	758	AssignmentExpression	y = 0		685	0		=			
+ANR	759	Identifier	y		685	0					
+ANR	760	PrimaryExpression	0		685	1					
+ANR	761	Condition	y < image -> height	11:1:444:462	685	1	True				
+ANR	762	RelationalExpression	y < image -> height		685	0		<			
+ANR	763	Identifier	y		685	0					
+ANR	764	PtrMemberAccess	image -> height		685	1					
+ANR	765	Identifier	image		685	0					
+ANR	766	Identifier	height		685	1					
+ANR	767	PostIncDecOperationExpression	y ++	12:1:467:470	685	2	True				
+ANR	768	Identifier	y		685	0					
+ANR	769	IncDec	++		685	1					
+ANR	770	CompoundStatement		12:8:301:301	685	3					
+ANR	771	ExpressionStatement	"memset ( dst , 0 , rowstride )"	13:1:477:508	685	0	True				
+ANR	772	CallExpression	"memset ( dst , 0 , rowstride )"		685	0					
+ANR	773	Callee	memset		685	0					
+ANR	774	Identifier	memset		685	0					
+ANR	775	ArgumentList	dst		685	1					
+ANR	776	Argument	dst		685	0					
+ANR	777	Identifier	dst		685	0					
+ANR	778	Argument	0		685	1					
+ANR	779	PrimaryExpression	0		685	0					
+ANR	780	Argument	rowstride		685	2					
+ANR	781	Identifier	rowstride		685	0					
+ANR	782	ExpressionStatement	"code = jbig2_decode_mmr_line ( & mmr , ref , dst )"	14:1:511:562	685	1	True				
+ANR	783	AssignmentExpression	"code = jbig2_decode_mmr_line ( & mmr , ref , dst )"		685	0		=			
+ANR	784	Identifier	code		685	0					
+ANR	785	CallExpression	"jbig2_decode_mmr_line ( & mmr , ref , dst )"		685	1					
+ANR	786	Callee	jbig2_decode_mmr_line		685	0					
+ANR	787	Identifier	jbig2_decode_mmr_line		685	0					
+ANR	788	ArgumentList	& mmr		685	1					
+ANR	789	Argument	& mmr		685	0					
+ANR	790	UnaryOperationExpression	& mmr		685	0					
+ANR	791	UnaryOperator	&		685	0					
+ANR	792	Identifier	mmr		685	1					
+ANR	793	Argument	ref		685	1					
+ANR	794	Identifier	ref		685	0					
+ANR	795	Argument	dst		685	2					
+ANR	796	Identifier	dst		685	0					
+ANR	797	IfStatement	if ( code < 0 )		685	2					
+ANR	798	Condition	code < 0	15:6:570:577	685	0	True				
+ANR	799	RelationalExpression	code < 0		685	0		<			
+ANR	800	Identifier	code		685	0					
+ANR	801	PrimaryExpression	0		685	1					
+ANR	802	ReturnStatement	return code ;	15:17:581:593	685	1	True				
+ANR	803	Identifier	code		685	0					
+ANR	804	ExpressionStatement	ref = dst	16:1:596:606	685	3	True				
+ANR	805	AssignmentExpression	ref = dst		685	0		=			
+ANR	806	Identifier	ref		685	0					
+ANR	807	Identifier	dst		685	1					
+ANR	808	ExpressionStatement	dst += rowstride	17:1:609:626	685	4	True				
+ANR	809	AssignmentExpression	dst += rowstride		685	0		+=			
+ANR	810	Identifier	dst		685	0					
+ANR	811	Identifier	rowstride		685	1					
+ANR	812	IfStatement	if ( mmr . word >> 8 == EOFB )		685	9					
+ANR	813	Condition	mmr . word >> 8 == EOFB	19:6:637:659	685	0	True				
+ANR	814	EqualityExpression	mmr . word >> 8 == EOFB		685	0		==			
+ANR	815	ShiftExpression	mmr . word >> 8		685	0		>>			
+ANR	816	MemberAccess	mmr . word		685	0					
+ANR	817	Identifier	mmr		685	0					
+ANR	818	Identifier	word		685	1					
+ANR	819	PrimaryExpression	8		685	1					
+ANR	820	Identifier	EOFB		685	1					
+ANR	821	CompoundStatement		19:32:490:490	685	1					
+ANR	822	ExpressionStatement	mmr . data_index += 3	20:1:666:688	685	0	True				
+ANR	823	AssignmentExpression	mmr . data_index += 3		685	0		+=			
+ANR	824	MemberAccess	mmr . data_index		685	0					
+ANR	825	Identifier	mmr		685	0					
+ANR	826	Identifier	data_index		685	1					
+ANR	827	PrimaryExpression	3		685	1					
+ANR	828	ExpressionStatement	* consumed_bytes += mmr . data_index + ( mmr . bit_index >> 3 ) + ( mmr . bit_index > 0 ? 1 : 0 )	22:1:694:792	685	10	True				
+ANR	829	AssignmentExpression	* consumed_bytes += mmr . data_index + ( mmr . bit_index >> 3 ) + ( mmr . bit_index > 0 ? 1 : 0 )		685	0		+=			
+ANR	830	UnaryOperationExpression	* consumed_bytes		685	0					
+ANR	831	UnaryOperator	*		685	0					
+ANR	832	Identifier	consumed_bytes		685	1					
+ANR	833	AdditiveExpression	mmr . data_index + ( mmr . bit_index >> 3 ) + ( mmr . bit_index > 0 ? 1 : 0 )		685	1		+			
+ANR	834	MemberAccess	mmr . data_index		685	0					
+ANR	835	Identifier	mmr		685	0					
+ANR	836	Identifier	data_index		685	1					
+ANR	837	AdditiveExpression	( mmr . bit_index >> 3 ) + ( mmr . bit_index > 0 ? 1 : 0 )		685	1		+			
+ANR	838	ShiftExpression	mmr . bit_index >> 3		685	0		>>			
+ANR	839	MemberAccess	mmr . bit_index		685	0					
+ANR	840	Identifier	mmr		685	0					
+ANR	841	Identifier	bit_index		685	1					
+ANR	842	PrimaryExpression	3		685	1					
+ANR	843	ConditionalExpression	mmr . bit_index > 0 ? 1 : 0		685	1					
+ANR	844	Condition	mmr . bit_index > 0		685	0					
+ANR	845	RelationalExpression	mmr . bit_index > 0		685	0		>			
+ANR	846	MemberAccess	mmr . bit_index		685	0					
+ANR	847	Identifier	mmr		685	0					
+ANR	848	Identifier	bit_index		685	1					
+ANR	849	PrimaryExpression	0		685	1					
+ANR	850	PrimaryExpression	1		685	1					
+ANR	851	PrimaryExpression	0		685	2					
+ANR	852	ReturnStatement	return code ;	23:1:795:807	685	11	True				
+ANR	853	Identifier	code		685	0					
+ANR	854	ReturnType	int		685	1					
+ANR	855	Identifier	jbig2_decode_halftone_mmr		685	2					
+ANR	856	ParameterList	"Jbig2Ctx * ctx , const Jbig2GenericRegionParams * params , const byte * data , size_t size , Jbig2Image * image , size_t * consumed_bytes"		685	3					
+ANR	857	Parameter	Jbig2Ctx * ctx	1:32:32:45	685	0	True				
+ANR	858	ParameterType	Jbig2Ctx *		685	0					
+ANR	859	Identifier	ctx		685	1					
+ANR	860	Parameter	const Jbig2GenericRegionParams * params	1:49:49:87	685	1	True				
+ANR	861	ParameterType	const Jbig2GenericRegionParams *		685	0					
+ANR	862	Identifier	params		685	1					
+ANR	863	Parameter	const byte * data	1:91:91:107	685	2	True				
+ANR	864	ParameterType	const byte *		685	0					
+ANR	865	Identifier	data		685	1					
+ANR	866	Parameter	size_t size	1:111:111:121	685	3	True				
+ANR	867	ParameterType	size_t		685	0					
+ANR	868	Identifier	size		685	1					
+ANR	869	Parameter	Jbig2Image * image	1:125:125:142	685	4	True				
+ANR	870	ParameterType	Jbig2Image *		685	0					
+ANR	871	Identifier	image		685	1					
+ANR	872	Parameter	size_t * consumed_bytes	1:146:146:168	685	5	True				
+ANR	873	ParameterType	size_t *		685	0					
+ANR	874	Identifier	consumed_bytes		685	1					
+ANR	875	CFGEntryNode	ENTRY		685		True				
+ANR	876	CFGExitNode	EXIT		685		True				
+ANR	877	Symbol	image -> stride		685						
+ANR	878	Symbol	code		685						
+ANR	879	Symbol	data		685						
+ANR	880	Symbol	dst		685						
+ANR	881	Symbol	rowstride		685						
+ANR	882	Symbol	image -> data		685						
+ANR	883	Symbol	EOFB		685						
+ANR	884	Symbol	mmr . bit_index		685						
+ANR	885	Symbol	consumed_bytes		685						
+ANR	886	Symbol	ref		685						
+ANR	887	Symbol	mmr		685						
+ANR	888	Symbol	mmr . data_index		685						
+ANR	889	Symbol	image		685						
+ANR	890	Symbol	NULL		685						
+ANR	891	Symbol	mmr . word		685						
+ANR	892	Symbol	ctx		685						
+ANR	893	Symbol	jbig2_decode_mmr_line		685						
+ANR	894	Symbol	params		685						
+ANR	895	Symbol	image -> width		685						
+ANR	896	Symbol	size		685						
+ANR	897	Symbol	image -> height		685						
+ANR	898	Symbol	y		685						
+ANR	899	Symbol	* image		685						
+ANR	900	Symbol	& mmr		685						
+ANR	901	Symbol	* consumed_bytes		685						

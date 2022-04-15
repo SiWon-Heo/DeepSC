@@ -1,0 +1,1826 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	2840	File	tmp/17_0.c								
+ANR	2841	Function	dprintf_formatf	1:0:0:6787							
+ANR	2842	FunctionDef	"dprintf_formatf (void * data , int ( * stream ) ( int , FILE * ) , const char * format , va_list ap_save)"		2841	0					
+ANR	2843	CompoundStatement		1:119:119:6787	2841	0					
+ANR	2844	IdentifierDeclStatement	const char * digits = lower_digits ;	2:1:122:157	2841	0	True				
+ANR	2845	IdentifierDecl	* digits = lower_digits		2841	0					
+ANR	2846	IdentifierDeclType	const char *		2841	0					
+ANR	2847	Identifier	digits		2841	1					
+ANR	2848	AssignmentExpression	* digits = lower_digits		2841	2		=			
+ANR	2849	Identifier	lower_digits		2841	0					
+ANR	2850	Identifier	lower_digits		2841	1					
+ANR	2851	IdentifierDeclStatement	char * f ;	3:1:160:169	2841	1	True				
+ANR	2852	IdentifierDecl	* f		2841	0					
+ANR	2853	IdentifierDeclType	char *		2841	0					
+ANR	2854	Identifier	f		2841	1					
+ANR	2855	IdentifierDeclStatement	int done = 0 ;	4:1:172:185	2841	2	True				
+ANR	2856	IdentifierDecl	done = 0		2841	0					
+ANR	2857	IdentifierDeclType	int		2841	0					
+ANR	2858	Identifier	done		2841	1					
+ANR	2859	AssignmentExpression	done = 0		2841	2		=			
+ANR	2860	Identifier	done		2841	0					
+ANR	2861	PrimaryExpression	0		2841	1					
+ANR	2862	IdentifierDeclStatement	long param ;	5:1:188:199	2841	3	True				
+ANR	2863	IdentifierDecl	param		2841	0					
+ANR	2864	IdentifierDeclType	long		2841	0					
+ANR	2865	Identifier	param		2841	1					
+ANR	2866	IdentifierDeclStatement	long param_num = 0 ;	6:1:202:221	2841	4	True				
+ANR	2867	IdentifierDecl	param_num = 0		2841	0					
+ANR	2868	IdentifierDeclType	long		2841	0					
+ANR	2869	Identifier	param_num		2841	1					
+ANR	2870	AssignmentExpression	param_num = 0		2841	2		=			
+ANR	2871	Identifier	param_num		2841	0					
+ANR	2872	PrimaryExpression	0		2841	1					
+ANR	2873	IdentifierDeclStatement	va_stack_t vto [ MAX_PARAMETERS ] ;	7:1:224:258	2841	5	True				
+ANR	2874	IdentifierDecl	vto [ MAX_PARAMETERS ]		2841	0					
+ANR	2875	IdentifierDeclType	va_stack_t [ MAX_PARAMETERS ]		2841	0					
+ANR	2876	Identifier	vto		2841	1					
+ANR	2877	Identifier	MAX_PARAMETERS		2841	2					
+ANR	2878	IdentifierDeclStatement	char * endpos [ MAX_PARAMETERS ] ;	8:1:261:294	2841	6	True				
+ANR	2879	IdentifierDecl	* endpos [ MAX_PARAMETERS ]		2841	0					
+ANR	2880	IdentifierDeclType	char * [ MAX_PARAMETERS ]		2841	0					
+ANR	2881	Identifier	endpos		2841	1					
+ANR	2882	Identifier	MAX_PARAMETERS		2841	2					
+ANR	2883	IdentifierDeclStatement	char * * end ;	9:1:297:310	2841	7	True				
+ANR	2884	IdentifierDecl	* * end		2841	0					
+ANR	2885	IdentifierDeclType	char * *		2841	0					
+ANR	2886	Identifier	end		2841	1					
+ANR	2887	IdentifierDeclStatement	char work [ BUFFSIZE ] ;	10:1:313:336	2841	8	True				
+ANR	2888	IdentifierDecl	work [ BUFFSIZE ]		2841	0					
+ANR	2889	IdentifierDeclType	char [ BUFFSIZE ]		2841	0					
+ANR	2890	Identifier	work		2841	1					
+ANR	2891	Identifier	BUFFSIZE		2841	2					
+ANR	2892	IdentifierDeclStatement	va_stack_t * p ;	11:1:339:354	2841	9	True				
+ANR	2893	IdentifierDecl	* p		2841	0					
+ANR	2894	IdentifierDeclType	va_stack_t *		2841	0					
+ANR	2895	Identifier	p		2841	1					
+ANR	2896	IdentifierDeclStatement	char * workend = & work [ sizeof ( work ) - 2 ] ;	12:1:357:405	2841	10	True				
+ANR	2897	IdentifierDecl	* workend = & work [ sizeof ( work ) - 2 ]		2841	0					
+ANR	2898	IdentifierDeclType	char *		2841	0					
+ANR	2899	Identifier	workend		2841	1					
+ANR	2900	AssignmentExpression	* workend = & work [ sizeof ( work ) - 2 ]		2841	2		=			
+ANR	2901	Identifier	workend		2841	0					
+ANR	2902	UnaryOperationExpression	& work [ sizeof ( work ) - 2 ]		2841	1					
+ANR	2903	UnaryOperator	&		2841	0					
+ANR	2904	ArrayIndexing	work [ sizeof ( work ) - 2 ]		2841	1					
+ANR	2905	Identifier	work		2841	0					
+ANR	2906	AdditiveExpression	sizeof ( work ) - 2		2841	1		-			
+ANR	2907	SizeofExpression	sizeof ( work )		2841	0					
+ANR	2908	Sizeof	sizeof		2841	0					
+ANR	2909	SizeofOperand	work		2841	1					
+ANR	2910	PrimaryExpression	2		2841	1					
+ANR	2911	IfStatement	"if ( dprintf_Pass1 ( format , vto , endpos , ap_save ) )"		2841	11					
+ANR	2912	Condition	"dprintf_Pass1 ( format , vto , endpos , ap_save )"	13:6:413:461	2841	0	True				
+ANR	2913	CallExpression	"dprintf_Pass1 ( format , vto , endpos , ap_save )"		2841	0					
+ANR	2914	Callee	dprintf_Pass1		2841	0					
+ANR	2915	Identifier	dprintf_Pass1		2841	0					
+ANR	2916	ArgumentList	format		2841	1					
+ANR	2917	Argument	format		2841	0					
+ANR	2918	Identifier	format		2841	0					
+ANR	2919	Argument	vto		2841	1					
+ANR	2920	Identifier	vto		2841	0					
+ANR	2921	Argument	endpos		2841	2					
+ANR	2922	Identifier	endpos		2841	0					
+ANR	2923	Argument	ap_save		2841	3					
+ANR	2924	Identifier	ap_save		2841	0					
+ANR	2925	ReturnStatement	return - 1 ;	13:58:465:476	2841	1	True				
+ANR	2926	UnaryOperationExpression	- 1		2841	0					
+ANR	2927	UnaryOperator	-		2841	0					
+ANR	2928	PrimaryExpression	1		2841	1					
+ANR	2929	ExpressionStatement	end = & endpos [ 0 ]	14:1:479:500	2841	12	True				
+ANR	2930	AssignmentExpression	end = & endpos [ 0 ]		2841	0		=			
+ANR	2931	Identifier	end		2841	0					
+ANR	2932	UnaryOperationExpression	& endpos [ 0 ]		2841	1					
+ANR	2933	UnaryOperator	&		2841	0					
+ANR	2934	ArrayIndexing	endpos [ 0 ]		2841	1					
+ANR	2935	Identifier	endpos		2841	0					
+ANR	2936	PrimaryExpression	0		2841	1					
+ANR	2937	ExpressionStatement	f = ( char * ) format	15:1:503:525	2841	13	True				
+ANR	2938	AssignmentExpression	f = ( char * ) format		2841	0		=			
+ANR	2939	Identifier	f		2841	0					
+ANR	2940	CastExpression	( char * ) format		2841	1					
+ANR	2941	CastTarget	char *		2841	0					
+ANR	2942	Identifier	format		2841	1					
+ANR	2943	WhileStatement	while ( * f != '\\0' )		2841	14					
+ANR	2944	Condition	* f != '\\0'	16:9:536:546	2841	0	True				
+ANR	2945	EqualityExpression	* f != '\\0'		2841	0		!=			
+ANR	2946	UnaryOperationExpression	* f		2841	0					
+ANR	2947	UnaryOperator	*		2841	0					
+ANR	2948	Identifier	f		2841	1					
+ANR	2949	PrimaryExpression	'\\0'		2841	1					
+ANR	2950	CompoundStatement		24:1:547:556	2841	1					
+ANR	2951	IdentifierDeclStatement	int is_alt ;	17:1:553:564	2841	0	True				
+ANR	2952	IdentifierDecl	is_alt		2841	0					
+ANR	2953	IdentifierDeclType	int		2841	0					
+ANR	2954	Identifier	is_alt		2841	1					
+ANR	2955	IdentifierDeclStatement	long width ;	18:1:567:578	2841	1	True				
+ANR	2956	IdentifierDecl	width		2841	0					
+ANR	2957	IdentifierDeclType	long		2841	0					
+ANR	2958	Identifier	width		2841	1					
+ANR	2959	IdentifierDeclStatement	long prec ;	19:1:581:591	2841	2	True				
+ANR	2960	IdentifierDecl	prec		2841	0					
+ANR	2961	IdentifierDeclType	long		2841	0					
+ANR	2962	Identifier	prec		2841	1					
+ANR	2963	IdentifierDeclStatement	int is_neg ;	20:1:594:605	2841	3	True				
+ANR	2964	IdentifierDecl	is_neg		2841	0					
+ANR	2965	IdentifierDeclType	int		2841	0					
+ANR	2966	Identifier	is_neg		2841	1					
+ANR	2967	IdentifierDeclStatement	long base ;	21:1:608:618	2841	4	True				
+ANR	2968	IdentifierDecl	base		2841	0					
+ANR	2969	IdentifierDeclType	long		2841	0					
+ANR	2970	Identifier	base		2841	1					
+ANR	2971	IdentifierDeclStatement	mp_uintmax_t num ;	22:1:621:638	2841	5	True				
+ANR	2972	IdentifierDecl	num		2841	0					
+ANR	2973	IdentifierDeclType	mp_uintmax_t		2841	0					
+ANR	2974	Identifier	num		2841	1					
+ANR	2975	IdentifierDeclStatement	mp_intmax_t signed_num ;	23:1:641:664	2841	6	True				
+ANR	2976	IdentifierDecl	signed_num		2841	0					
+ANR	2977	IdentifierDeclType	mp_intmax_t		2841	0					
+ANR	2978	Identifier	signed_num		2841	1					
+ANR	2979	IdentifierDeclStatement	char * w ;	24:1:667:676	2841	7	True				
+ANR	2980	IdentifierDecl	* w		2841	0					
+ANR	2981	IdentifierDeclType	char *		2841	0					
+ANR	2982	Identifier	w		2841	1					
+ANR	2983	IfStatement	if ( * f != '%' )		2841	8					
+ANR	2984	Condition	* f != '%'	25:6:684:693	2841	0	True				
+ANR	2985	EqualityExpression	* f != '%'		2841	0		!=			
+ANR	2986	UnaryOperationExpression	* f		2841	0					
+ANR	2987	UnaryOperator	*		2841	0					
+ANR	2988	Identifier	f		2841	1					
+ANR	2989	PrimaryExpression	'%'		2841	1					
+ANR	2990	CompoundStatement		25:19:577:577	2841	1					
+ANR	2991	DoStatement	do		2841	0					
+ANR	2992	CompoundStatement		26:4:583:583	2841	0					
+ANR	2993	ExpressionStatement	OUTCHAR ( * f )	27:1:706:722	2841	0	True				
+ANR	2994	CallExpression	OUTCHAR ( * f )		2841	0					
+ANR	2995	Callee	OUTCHAR		2841	0					
+ANR	2996	Identifier	OUTCHAR		2841	0					
+ANR	2997	ArgumentList	* f		2841	1					
+ANR	2998	Argument	* f		2841	0					
+ANR	2999	UnaryOperationExpression	* f		2841	0					
+ANR	3000	UnaryOperator	*		2841	0					
+ANR	3001	Identifier	f		2841	1					
+ANR	3002	Condition	* ++ f && ( '%' != * f )	29:9:736:759	2841	1	True				
+ANR	3003	AndExpression	* ++ f && ( '%' != * f )		2841	0		&&			
+ANR	3004	UnaryOperationExpression	* ++ f		2841	0					
+ANR	3005	UnaryOperator	*		2841	0					
+ANR	3006	UnaryExpression	++ f		2841	1					
+ANR	3007	IncDec	++		2841	0					
+ANR	3008	Identifier	f		2841	1					
+ANR	3009	EqualityExpression	'%' != * f		2841	1		!=			
+ANR	3010	PrimaryExpression	'%'		2841	0					
+ANR	3011	UnaryOperationExpression	* f		2841	1					
+ANR	3012	UnaryOperator	*		2841	0					
+ANR	3013	Identifier	f		2841	1					
+ANR	3014	ContinueStatement	continue ;	30:1:766:775	2841	1	True				
+ANR	3015	ExpressionStatement	++ f	32:1:781:786	2841	9	True				
+ANR	3016	UnaryExpression	++ f		2841	0					
+ANR	3017	IncDec	++		2841	0					
+ANR	3018	Identifier	f		2841	1					
+ANR	3019	IfStatement	if ( * f == '%' )		2841	10					
+ANR	3020	Condition	* f == '%'	33:6:794:803	2841	0	True				
+ANR	3021	EqualityExpression	* f == '%'		2841	0		==			
+ANR	3022	UnaryOperationExpression	* f		2841	0					
+ANR	3023	UnaryOperator	*		2841	0					
+ANR	3024	Identifier	f		2841	1					
+ANR	3025	PrimaryExpression	'%'		2841	1					
+ANR	3026	CompoundStatement		33:19:687:687	2841	1					
+ANR	3027	ExpressionStatement	++ f	34:1:810:815	2841	0	True				
+ANR	3028	UnaryExpression	++ f		2841	0					
+ANR	3029	IncDec	++		2841	0					
+ANR	3030	Identifier	f		2841	1					
+ANR	3031	ExpressionStatement	OUTCHAR ( '%' )	35:1:818:834	2841	1	True				
+ANR	3032	CallExpression	OUTCHAR ( '%' )		2841	0					
+ANR	3033	Callee	OUTCHAR		2841	0					
+ANR	3034	Identifier	OUTCHAR		2841	0					
+ANR	3035	ArgumentList	'%'		2841	1					
+ANR	3036	Argument	'%'		2841	0					
+ANR	3037	PrimaryExpression	'%'		2841	0					
+ANR	3038	ContinueStatement	continue ;	36:1:837:846	2841	2	True				
+ANR	3039	ExpressionStatement	"param = dprintf_DollarString ( f , & f )"	38:1:852:893	2841	11	True				
+ANR	3040	AssignmentExpression	"param = dprintf_DollarString ( f , & f )"		2841	0		=			
+ANR	3041	Identifier	param		2841	0					
+ANR	3042	CallExpression	"dprintf_DollarString ( f , & f )"		2841	1					
+ANR	3043	Callee	dprintf_DollarString		2841	0					
+ANR	3044	Identifier	dprintf_DollarString		2841	0					
+ANR	3045	ArgumentList	f		2841	1					
+ANR	3046	Argument	f		2841	0					
+ANR	3047	Identifier	f		2841	0					
+ANR	3048	Argument	& f		2841	1					
+ANR	3049	UnaryOperationExpression	& f		2841	0					
+ANR	3050	UnaryOperator	&		2841	0					
+ANR	3051	Identifier	f		2841	1					
+ANR	3052	IfStatement	if ( ! param )		2841	12					
+ANR	3053	Condition	! param	39:6:901:907	2841	0	True				
+ANR	3054	UnaryOperationExpression	! param		2841	0					
+ANR	3055	UnaryOperator	!		2841	0					
+ANR	3056	Identifier	param		2841	1					
+ANR	3057	ExpressionStatement	param = param_num	39:16:911:929	2841	1	True				
+ANR	3058	AssignmentExpression	param = param_num		2841	0		=			
+ANR	3059	Identifier	param		2841	0					
+ANR	3060	Identifier	param_num		2841	1					
+ANR	3061	ElseStatement	else		2841	0					
+ANR	3062	ExpressionStatement	-- param	40:6:937:946	2841	0	True				
+ANR	3063	UnaryExpression	-- param		2841	0					
+ANR	3064	IncDec	--		2841	0					
+ANR	3065	Identifier	param		2841	1					
+ANR	3066	ExpressionStatement	param_num ++	41:1:949:962	2841	13	True				
+ANR	3067	PostIncDecOperationExpression	param_num ++		2841	0					
+ANR	3068	Identifier	param_num		2841	0					
+ANR	3069	IncDec	++		2841	1					
+ANR	3070	ExpressionStatement	p = & vto [ param ]	42:1:965:985	2841	14	True				
+ANR	3071	AssignmentExpression	p = & vto [ param ]		2841	0		=			
+ANR	3072	Identifier	p		2841	0					
+ANR	3073	UnaryOperationExpression	& vto [ param ]		2841	1					
+ANR	3074	UnaryOperator	&		2841	0					
+ANR	3075	ArrayIndexing	vto [ param ]		2841	1					
+ANR	3076	Identifier	vto		2841	0					
+ANR	3077	Identifier	param		2841	1					
+ANR	3078	IfStatement	if ( p -> flags & FLAGS_WIDTHPARAM )		2841	15					
+ANR	3079	Condition	p -> flags & FLAGS_WIDTHPARAM	43:6:993:1021	2841	0	True				
+ANR	3080	BitAndExpression	p -> flags & FLAGS_WIDTHPARAM		2841	0		&			
+ANR	3081	PtrMemberAccess	p -> flags		2841	0					
+ANR	3082	Identifier	p		2841	0					
+ANR	3083	Identifier	flags		2841	1					
+ANR	3084	Identifier	FLAGS_WIDTHPARAM		2841	1					
+ANR	3085	CompoundStatement		43:38:905:905	2841	1					
+ANR	3086	ExpressionStatement	width = ( long ) vto [ p -> width ] . data . num . as_signed	44:1:1028:1089	2841	0	True				
+ANR	3087	AssignmentExpression	width = ( long ) vto [ p -> width ] . data . num . as_signed		2841	0		=			
+ANR	3088	Identifier	width		2841	0					
+ANR	3089	CastExpression	( long ) vto [ p -> width ] . data . num . as_signed		2841	1					
+ANR	3090	CastTarget	long		2841	0					
+ANR	3091	MemberAccess	vto [ p -> width ] . data . num . as_signed		2841	1					
+ANR	3092	MemberAccess	vto [ p -> width ] . data . num		2841	0					
+ANR	3093	MemberAccess	vto [ p -> width ] . data		2841	0					
+ANR	3094	ArrayIndexing	vto [ p -> width ]		2841	0					
+ANR	3095	Identifier	vto		2841	0					
+ANR	3096	PtrMemberAccess	p -> width		2841	1					
+ANR	3097	Identifier	p		2841	0					
+ANR	3098	Identifier	width		2841	1					
+ANR	3099	Identifier	data		2841	1					
+ANR	3100	Identifier	num		2841	1					
+ANR	3101	Identifier	as_signed		2841	1					
+ANR	3102	ExpressionStatement	param_num ++	45:1:1092:1105	2841	1	True				
+ANR	3103	PostIncDecOperationExpression	param_num ++		2841	0					
+ANR	3104	Identifier	param_num		2841	0					
+ANR	3105	IncDec	++		2841	1					
+ANR	3106	IfStatement	if ( width < 0 )		2841	2					
+ANR	3107	Condition	width < 0	46:6:1113:1121	2841	0	True				
+ANR	3108	RelationalExpression	width < 0		2841	0		<			
+ANR	3109	Identifier	width		2841	0					
+ANR	3110	PrimaryExpression	0		2841	1					
+ANR	3111	CompoundStatement		46:18:1005:1005	2841	1					
+ANR	3112	ExpressionStatement	width = - width	47:1:1128:1144	2841	0	True				
+ANR	3113	AssignmentExpression	width = - width		2841	0		=			
+ANR	3114	Identifier	width		2841	0					
+ANR	3115	UnaryOperationExpression	- width		2841	1					
+ANR	3116	UnaryOperator	-		2841	0					
+ANR	3117	Identifier	width		2841	1					
+ANR	3118	ExpressionStatement	p -> flags |= FLAGS_LEFT	48:1:1147:1172	2841	1	True				
+ANR	3119	AssignmentExpression	p -> flags |= FLAGS_LEFT		2841	0		|=			
+ANR	3120	PtrMemberAccess	p -> flags		2841	0					
+ANR	3121	Identifier	p		2841	0					
+ANR	3122	Identifier	flags		2841	1					
+ANR	3123	Identifier	FLAGS_LEFT		2841	1					
+ANR	3124	ExpressionStatement	p -> flags &= ~ FLAGS_PAD_NIL	49:1:1175:1205	2841	2	True				
+ANR	3125	AssignmentExpression	p -> flags &= ~ FLAGS_PAD_NIL		2841	0		&=			
+ANR	3126	PtrMemberAccess	p -> flags		2841	0					
+ANR	3127	Identifier	p		2841	0					
+ANR	3128	Identifier	flags		2841	1					
+ANR	3129	UnaryOperationExpression	~ FLAGS_PAD_NIL		2841	1					
+ANR	3130	UnaryOperator	~		2841	0					
+ANR	3131	Identifier	FLAGS_PAD_NIL		2841	1					
+ANR	3132	ElseStatement	else		2841	0					
+ANR	3133	ExpressionStatement	width = p -> width	52:6:1219:1238	2841	0	True				
+ANR	3134	AssignmentExpression	width = p -> width		2841	0		=			
+ANR	3135	Identifier	width		2841	0					
+ANR	3136	PtrMemberAccess	p -> width		2841	1					
+ANR	3137	Identifier	p		2841	0					
+ANR	3138	Identifier	width		2841	1					
+ANR	3139	IfStatement	if ( p -> flags & FLAGS_PRECPARAM )		2841	16					
+ANR	3140	Condition	p -> flags & FLAGS_PRECPARAM	53:6:1246:1273	2841	0	True				
+ANR	3141	BitAndExpression	p -> flags & FLAGS_PRECPARAM		2841	0		&			
+ANR	3142	PtrMemberAccess	p -> flags		2841	0					
+ANR	3143	Identifier	p		2841	0					
+ANR	3144	Identifier	flags		2841	1					
+ANR	3145	Identifier	FLAGS_PRECPARAM		2841	1					
+ANR	3146	CompoundStatement		53:37:1157:1157	2841	1					
+ANR	3147	ExpressionStatement	prec = ( long ) vto [ p -> precision ] . data . num . as_signed	54:1:1280:1344	2841	0	True				
+ANR	3148	AssignmentExpression	prec = ( long ) vto [ p -> precision ] . data . num . as_signed		2841	0		=			
+ANR	3149	Identifier	prec		2841	0					
+ANR	3150	CastExpression	( long ) vto [ p -> precision ] . data . num . as_signed		2841	1					
+ANR	3151	CastTarget	long		2841	0					
+ANR	3152	MemberAccess	vto [ p -> precision ] . data . num . as_signed		2841	1					
+ANR	3153	MemberAccess	vto [ p -> precision ] . data . num		2841	0					
+ANR	3154	MemberAccess	vto [ p -> precision ] . data		2841	0					
+ANR	3155	ArrayIndexing	vto [ p -> precision ]		2841	0					
+ANR	3156	Identifier	vto		2841	0					
+ANR	3157	PtrMemberAccess	p -> precision		2841	1					
+ANR	3158	Identifier	p		2841	0					
+ANR	3159	Identifier	precision		2841	1					
+ANR	3160	Identifier	data		2841	1					
+ANR	3161	Identifier	num		2841	1					
+ANR	3162	Identifier	as_signed		2841	1					
+ANR	3163	ExpressionStatement	param_num ++	55:1:1347:1360	2841	1	True				
+ANR	3164	PostIncDecOperationExpression	param_num ++		2841	0					
+ANR	3165	Identifier	param_num		2841	0					
+ANR	3166	IncDec	++		2841	1					
+ANR	3167	IfStatement	if ( prec < 0 )		2841	2					
+ANR	3168	Condition	prec < 0	56:6:1368:1375	2841	0	True				
+ANR	3169	RelationalExpression	prec < 0		2841	0		<			
+ANR	3170	Identifier	prec		2841	0					
+ANR	3171	PrimaryExpression	0		2841	1					
+ANR	3172	ExpressionStatement	prec = - 1	56:17:1379:1390	2841	1	True				
+ANR	3173	AssignmentExpression	prec = - 1		2841	0		=			
+ANR	3174	Identifier	prec		2841	0					
+ANR	3175	UnaryOperationExpression	- 1		2841	1					
+ANR	3176	UnaryOperator	-		2841	0					
+ANR	3177	PrimaryExpression	1		2841	1					
+ANR	3178	ElseStatement	else		2841	0					
+ANR	3179	IfStatement	if ( p -> flags & FLAGS_PREC )		2841	0					
+ANR	3180	Condition	p -> flags & FLAGS_PREC	58:11:1406:1428	2841	0	True				
+ANR	3181	BitAndExpression	p -> flags & FLAGS_PREC		2841	0		&			
+ANR	3182	PtrMemberAccess	p -> flags		2841	0					
+ANR	3183	Identifier	p		2841	0					
+ANR	3184	Identifier	flags		2841	1					
+ANR	3185	Identifier	FLAGS_PREC		2841	1					
+ANR	3186	ExpressionStatement	prec = p -> precision	58:37:1432:1454	2841	1	True				
+ANR	3187	AssignmentExpression	prec = p -> precision		2841	0		=			
+ANR	3188	Identifier	prec		2841	0					
+ANR	3189	PtrMemberAccess	p -> precision		2841	1					
+ANR	3190	Identifier	p		2841	0					
+ANR	3191	Identifier	precision		2841	1					
+ANR	3192	ElseStatement	else		2841	0					
+ANR	3193	ExpressionStatement	prec = - 1	59:6:1462:1473	2841	0	True				
+ANR	3194	AssignmentExpression	prec = - 1		2841	0		=			
+ANR	3195	Identifier	prec		2841	0					
+ANR	3196	UnaryOperationExpression	- 1		2841	1					
+ANR	3197	UnaryOperator	-		2841	0					
+ANR	3198	PrimaryExpression	1		2841	1					
+ANR	3199	ExpressionStatement	is_alt = ( p -> flags & FLAGS_ALT ) ? 1 : 0	60:1:1476:1520	2841	17	True				
+ANR	3200	AssignmentExpression	is_alt = ( p -> flags & FLAGS_ALT ) ? 1 : 0		2841	0		=			
+ANR	3201	Identifier	is_alt		2841	0					
+ANR	3202	ConditionalExpression	( p -> flags & FLAGS_ALT ) ? 1 : 0		2841	1					
+ANR	3203	Condition	p -> flags & FLAGS_ALT		2841	0					
+ANR	3204	BitAndExpression	p -> flags & FLAGS_ALT		2841	0		&			
+ANR	3205	PtrMemberAccess	p -> flags		2841	0					
+ANR	3206	Identifier	p		2841	0					
+ANR	3207	Identifier	flags		2841	1					
+ANR	3208	Identifier	FLAGS_ALT		2841	1					
+ANR	3209	PrimaryExpression	1		2841	1					
+ANR	3210	PrimaryExpression	0		2841	2					
+ANR	3211	SwitchStatement	switch ( p -> type )		2841	18					
+ANR	3212	Condition	p -> type	61:10:1532:1540	2841	0	True				
+ANR	3213	PtrMemberAccess	p -> type		2841	0					
+ANR	3214	Identifier	p		2841	0					
+ANR	3215	Identifier	type		2841	1					
+ANR	3216	CompoundStatement		61:22:1424:1424	2841	1					
+ANR	3217	Label	case FORMAT_INT :	62:1:1547:1563	2841	0	True				
+ANR	3218	Identifier	FORMAT_INT		2841	0					
+ANR	3219	ExpressionStatement	num = p -> data . num . as_unsigned	62:19:1565:1601	2841	1	True				
+ANR	3220	AssignmentExpression	num = p -> data . num . as_unsigned		2841	0		=			
+ANR	3221	Identifier	num		2841	0					
+ANR	3222	MemberAccess	p -> data . num . as_unsigned		2841	1					
+ANR	3223	MemberAccess	p -> data . num		2841	0					
+ANR	3224	PtrMemberAccess	p -> data		2841	0					
+ANR	3225	Identifier	p		2841	0					
+ANR	3226	Identifier	data		2841	1					
+ANR	3227	Identifier	num		2841	1					
+ANR	3228	Identifier	as_unsigned		2841	1					
+ANR	3229	IfStatement	if ( p -> flags & FLAGS_CHAR )		2841	2					
+ANR	3230	Condition	p -> flags & FLAGS_CHAR	63:6:1609:1631	2841	0	True				
+ANR	3231	BitAndExpression	p -> flags & FLAGS_CHAR		2841	0		&			
+ANR	3232	PtrMemberAccess	p -> flags		2841	0					
+ANR	3233	Identifier	p		2841	0					
+ANR	3234	Identifier	flags		2841	1					
+ANR	3235	Identifier	FLAGS_CHAR		2841	1					
+ANR	3236	CompoundStatement		63:32:1515:1515	2841	1					
+ANR	3237	IfStatement	if ( ! ( p -> flags & FLAGS_LEFT ) )		2841	0					
+ANR	3238	Condition	! ( p -> flags & FLAGS_LEFT )	64:6:1643:1671	2841	0	True				
+ANR	3239	UnaryOperationExpression	! ( p -> flags & FLAGS_LEFT )		2841	0					
+ANR	3240	UnaryOperator	!		2841	0					
+ANR	3241	BitAndExpression	p -> flags & FLAGS_LEFT		2841	1		&			
+ANR	3242	PtrMemberAccess	p -> flags		2841	0					
+ANR	3243	Identifier	p		2841	0					
+ANR	3244	Identifier	flags		2841	1					
+ANR	3245	Identifier	FLAGS_LEFT		2841	1					
+ANR	3246	WhileStatement	while ( -- width > 0 )		2841	1					
+ANR	3247	Condition	-- width > 0	64:46:1683:1694	2841	0	True				
+ANR	3248	RelationalExpression	-- width > 0		2841	0		>			
+ANR	3249	UnaryExpression	-- width		2841	0					
+ANR	3250	IncDec	--		2841	0					
+ANR	3251	Identifier	width		2841	1					
+ANR	3252	PrimaryExpression	0		2841	1					
+ANR	3253	ExpressionStatement	OUTCHAR ( ' ' )	64:61:1698:1714	2841	1	True				
+ANR	3254	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	3255	Callee	OUTCHAR		2841	0					
+ANR	3256	Identifier	OUTCHAR		2841	0					
+ANR	3257	ArgumentList	' '		2841	1					
+ANR	3258	Argument	' '		2841	0					
+ANR	3259	PrimaryExpression	' '		2841	0					
+ANR	3260	ExpressionStatement	OUTCHAR ( ( char ) num )	65:1:1717:1742	2841	1	True				
+ANR	3261	CallExpression	OUTCHAR ( ( char ) num )		2841	0					
+ANR	3262	Callee	OUTCHAR		2841	0					
+ANR	3263	Identifier	OUTCHAR		2841	0					
+ANR	3264	ArgumentList	( char ) num		2841	1					
+ANR	3265	Argument	( char ) num		2841	0					
+ANR	3266	CastExpression	( char ) num		2841	0					
+ANR	3267	CastTarget	char		2841	0					
+ANR	3268	Identifier	num		2841	1					
+ANR	3269	IfStatement	if ( p -> flags & FLAGS_LEFT )		2841	2					
+ANR	3270	Condition	p -> flags & FLAGS_LEFT	66:6:1750:1772	2841	0	True				
+ANR	3271	BitAndExpression	p -> flags & FLAGS_LEFT		2841	0		&			
+ANR	3272	PtrMemberAccess	p -> flags		2841	0					
+ANR	3273	Identifier	p		2841	0					
+ANR	3274	Identifier	flags		2841	1					
+ANR	3275	Identifier	FLAGS_LEFT		2841	1					
+ANR	3276	WhileStatement	while ( -- width > 0 )		2841	1					
+ANR	3277	Condition	-- width > 0	66:40:1784:1795	2841	0	True				
+ANR	3278	RelationalExpression	-- width > 0		2841	0		>			
+ANR	3279	UnaryExpression	-- width		2841	0					
+ANR	3280	IncDec	--		2841	0					
+ANR	3281	Identifier	width		2841	1					
+ANR	3282	PrimaryExpression	0		2841	1					
+ANR	3283	ExpressionStatement	OUTCHAR ( ' ' )	66:55:1799:1815	2841	1	True				
+ANR	3284	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	3285	Callee	OUTCHAR		2841	0					
+ANR	3286	Identifier	OUTCHAR		2841	0					
+ANR	3287	ArgumentList	' '		2841	1					
+ANR	3288	Argument	' '		2841	0					
+ANR	3289	PrimaryExpression	' '		2841	0					
+ANR	3290	BreakStatement	break ;	67:1:1818:1824	2841	3	True				
+ANR	3291	IfStatement	if ( p -> flags & FLAGS_OCTAL )		2841	3					
+ANR	3292	Condition	p -> flags & FLAGS_OCTAL	69:6:1835:1858	2841	0	True				
+ANR	3293	BitAndExpression	p -> flags & FLAGS_OCTAL		2841	0		&			
+ANR	3294	PtrMemberAccess	p -> flags		2841	0					
+ANR	3295	Identifier	p		2841	0					
+ANR	3296	Identifier	flags		2841	1					
+ANR	3297	Identifier	FLAGS_OCTAL		2841	1					
+ANR	3298	CompoundStatement		69:33:1742:1742	2841	1					
+ANR	3299	ExpressionStatement	base = 8	70:1:1865:1874	2841	0	True				
+ANR	3300	AssignmentExpression	base = 8		2841	0		=			
+ANR	3301	Identifier	base		2841	0					
+ANR	3302	PrimaryExpression	8		2841	1					
+ANR	3303	GotoStatement	goto unsigned_number ;	71:1:1877:1898	2841	1	True				
+ANR	3304	Identifier	unsigned_number		2841	0					
+ANR	3305	ElseStatement	else		2841	0					
+ANR	3306	IfStatement	if ( p -> flags & FLAGS_HEX )		2841	0					
+ANR	3307	Condition	p -> flags & FLAGS_HEX	73:11:1914:1935	2841	0	True				
+ANR	3308	BitAndExpression	p -> flags & FLAGS_HEX		2841	0		&			
+ANR	3309	PtrMemberAccess	p -> flags		2841	0					
+ANR	3310	Identifier	p		2841	0					
+ANR	3311	Identifier	flags		2841	1					
+ANR	3312	Identifier	FLAGS_HEX		2841	1					
+ANR	3313	CompoundStatement		73:36:1819:1819	2841	1					
+ANR	3314	ExpressionStatement	digits = ( p -> flags & FLAGS_UPPER ) ? upper_digits : lower_digits	74:1:1942:2010	2841	0	True				
+ANR	3315	AssignmentExpression	digits = ( p -> flags & FLAGS_UPPER ) ? upper_digits : lower_digits		2841	0		=			
+ANR	3316	Identifier	digits		2841	0					
+ANR	3317	ConditionalExpression	( p -> flags & FLAGS_UPPER ) ? upper_digits : lower_digits		2841	1					
+ANR	3318	Condition	p -> flags & FLAGS_UPPER		2841	0					
+ANR	3319	BitAndExpression	p -> flags & FLAGS_UPPER		2841	0		&			
+ANR	3320	PtrMemberAccess	p -> flags		2841	0					
+ANR	3321	Identifier	p		2841	0					
+ANR	3322	Identifier	flags		2841	1					
+ANR	3323	Identifier	FLAGS_UPPER		2841	1					
+ANR	3324	Identifier	upper_digits		2841	1					
+ANR	3325	Identifier	lower_digits		2841	2					
+ANR	3326	ExpressionStatement	base = 16	75:1:2013:2023	2841	1	True				
+ANR	3327	AssignmentExpression	base = 16		2841	0		=			
+ANR	3328	Identifier	base		2841	0					
+ANR	3329	PrimaryExpression	16		2841	1					
+ANR	3330	GotoStatement	goto unsigned_number ;	76:1:2026:2047	2841	2	True				
+ANR	3331	Identifier	unsigned_number		2841	0					
+ANR	3332	ElseStatement	else		2841	0					
+ANR	3333	IfStatement	if ( p -> flags & FLAGS_UNSIGNED )		2841	0					
+ANR	3334	Condition	p -> flags & FLAGS_UNSIGNED	78:11:2063:2089	2841	0	True				
+ANR	3335	BitAndExpression	p -> flags & FLAGS_UNSIGNED		2841	0		&			
+ANR	3336	PtrMemberAccess	p -> flags		2841	0					
+ANR	3337	Identifier	p		2841	0					
+ANR	3338	Identifier	flags		2841	1					
+ANR	3339	Identifier	FLAGS_UNSIGNED		2841	1					
+ANR	3340	CompoundStatement		78:41:1973:1973	2841	1					
+ANR	3341	ExpressionStatement	base = 10	79:1:2096:2106	2841	0	True				
+ANR	3342	AssignmentExpression	base = 10		2841	0		=			
+ANR	3343	Identifier	base		2841	0					
+ANR	3344	PrimaryExpression	10		2841	1					
+ANR	3345	GotoStatement	goto unsigned_number ;	80:1:2109:2130	2841	1	True				
+ANR	3346	Identifier	unsigned_number		2841	0					
+ANR	3347	ExpressionStatement	base = 10	82:1:2136:2146	2841	4	True				
+ANR	3348	AssignmentExpression	base = 10		2841	0		=			
+ANR	3349	Identifier	base		2841	0					
+ANR	3350	PrimaryExpression	10		2841	1					
+ANR	3351	ExpressionStatement	is_neg = ( p -> data . num . as_signed < ( mp_intmax_t ) 0 ) ? 1 : 0	83:1:2149:2218	2841	5	True				
+ANR	3352	AssignmentExpression	is_neg = ( p -> data . num . as_signed < ( mp_intmax_t ) 0 ) ? 1 : 0		2841	0		=			
+ANR	3353	Identifier	is_neg		2841	0					
+ANR	3354	ConditionalExpression	( p -> data . num . as_signed < ( mp_intmax_t ) 0 ) ? 1 : 0		2841	1					
+ANR	3355	Condition	p -> data . num . as_signed < ( mp_intmax_t ) 0		2841	0					
+ANR	3356	RelationalExpression	p -> data . num . as_signed < ( mp_intmax_t ) 0		2841	0		<			
+ANR	3357	MemberAccess	p -> data . num . as_signed		2841	0					
+ANR	3358	MemberAccess	p -> data . num		2841	0					
+ANR	3359	PtrMemberAccess	p -> data		2841	0					
+ANR	3360	Identifier	p		2841	0					
+ANR	3361	Identifier	data		2841	1					
+ANR	3362	Identifier	num		2841	1					
+ANR	3363	Identifier	as_signed		2841	1					
+ANR	3364	CastExpression	( mp_intmax_t ) 0		2841	1					
+ANR	3365	CastTarget	mp_intmax_t		2841	0					
+ANR	3366	PrimaryExpression	0		2841	1					
+ANR	3367	PrimaryExpression	1		2841	1					
+ANR	3368	PrimaryExpression	0		2841	2					
+ANR	3369	IfStatement	if ( is_neg )		2841	6					
+ANR	3370	Condition	is_neg	84:6:2226:2231	2841	0	True				
+ANR	3371	Identifier	is_neg		2841	0					
+ANR	3372	CompoundStatement		84:15:2115:2115	2841	1					
+ANR	3373	ExpressionStatement	signed_num = p -> data . num . as_signed + ( mp_intmax_t ) 1	85:1:2238:2299	2841	0	True				
+ANR	3374	AssignmentExpression	signed_num = p -> data . num . as_signed + ( mp_intmax_t ) 1		2841	0		=			
+ANR	3375	Identifier	signed_num		2841	0					
+ANR	3376	AdditiveExpression	p -> data . num . as_signed + ( mp_intmax_t ) 1		2841	1		+			
+ANR	3377	MemberAccess	p -> data . num . as_signed		2841	0					
+ANR	3378	MemberAccess	p -> data . num		2841	0					
+ANR	3379	PtrMemberAccess	p -> data		2841	0					
+ANR	3380	Identifier	p		2841	0					
+ANR	3381	Identifier	data		2841	1					
+ANR	3382	Identifier	num		2841	1					
+ANR	3383	Identifier	as_signed		2841	1					
+ANR	3384	CastExpression	( mp_intmax_t ) 1		2841	1					
+ANR	3385	CastTarget	mp_intmax_t		2841	0					
+ANR	3386	PrimaryExpression	1		2841	1					
+ANR	3387	ExpressionStatement	signed_num = - signed_num	86:1:2302:2328	2841	1	True				
+ANR	3388	AssignmentExpression	signed_num = - signed_num		2841	0		=			
+ANR	3389	Identifier	signed_num		2841	0					
+ANR	3390	UnaryOperationExpression	- signed_num		2841	1					
+ANR	3391	UnaryOperator	-		2841	0					
+ANR	3392	Identifier	signed_num		2841	1					
+ANR	3393	ExpressionStatement	num = ( mp_uintmax_t ) signed_num	87:1:2331:2365	2841	2	True				
+ANR	3394	AssignmentExpression	num = ( mp_uintmax_t ) signed_num		2841	0		=			
+ANR	3395	Identifier	num		2841	0					
+ANR	3396	CastExpression	( mp_uintmax_t ) signed_num		2841	1					
+ANR	3397	CastTarget	mp_uintmax_t		2841	0					
+ANR	3398	Identifier	signed_num		2841	1					
+ANR	3399	ExpressionStatement	num += ( mp_uintmax_t ) 1	88:1:2368:2394	2841	3	True				
+ANR	3400	AssignmentExpression	num += ( mp_uintmax_t ) 1		2841	0		+=			
+ANR	3401	Identifier	num		2841	0					
+ANR	3402	CastExpression	( mp_uintmax_t ) 1		2841	1					
+ANR	3403	CastTarget	mp_uintmax_t		2841	0					
+ANR	3404	PrimaryExpression	1		2841	1					
+ANR	3405	GotoStatement	goto number ;	90:1:2400:2412	2841	7	True				
+ANR	3406	Identifier	number		2841	0					
+ANR	3407	Label	unsigned_number :	91:1:2415:2431	2841	8	True				
+ANR	3408	Identifier	unsigned_number		2841	0					
+ANR	3409	ExpressionStatement	is_neg = 0	91:19:2433:2444	2841	9	True				
+ANR	3410	AssignmentExpression	is_neg = 0		2841	0		=			
+ANR	3411	Identifier	is_neg		2841	0					
+ANR	3412	PrimaryExpression	0		2841	1					
+ANR	3413	Label	number :	92:1:2447:2454	2841	10	True				
+ANR	3414	Identifier	number		2841	0					
+ANR	3415	IfStatement	if ( prec == - 1 )		2841	11					
+ANR	3416	Condition	prec == - 1	92:15:2461:2471	2841	0	True				
+ANR	3417	EqualityExpression	prec == - 1		2841	0		==			
+ANR	3418	Identifier	prec		2841	0					
+ANR	3419	UnaryOperationExpression	- 1		2841	1					
+ANR	3420	UnaryOperator	-		2841	0					
+ANR	3421	PrimaryExpression	1		2841	1					
+ANR	3422	ExpressionStatement	prec = 1	92:29:2475:2484	2841	1	True				
+ANR	3423	AssignmentExpression	prec = 1		2841	0		=			
+ANR	3424	Identifier	prec		2841	0					
+ANR	3425	PrimaryExpression	1		2841	1					
+ANR	3426	ExpressionStatement	w = workend	93:1:2487:2499	2841	12	True				
+ANR	3427	AssignmentExpression	w = workend		2841	0		=			
+ANR	3428	Identifier	w		2841	0					
+ANR	3429	Identifier	workend		2841	1					
+ANR	3430	WhileStatement	while ( num > 0 )		2841	13					
+ANR	3431	Condition	num > 0	94:9:2510:2516	2841	0	True				
+ANR	3432	RelationalExpression	num > 0		2841	0		>			
+ANR	3433	Identifier	num		2841	0					
+ANR	3434	PrimaryExpression	0		2841	1					
+ANR	3435	CompoundStatement		94:19:2400:2400	2841	1					
+ANR	3436	ExpressionStatement	* w -- = digits [ num % base ]	95:1:2523:2554	2841	0	True				
+ANR	3437	AssignmentExpression	* w -- = digits [ num % base ]		2841	0		=			
+ANR	3438	UnaryOperationExpression	* w --		2841	0					
+ANR	3439	UnaryOperator	*		2841	0					
+ANR	3440	PostIncDecOperationExpression	w --		2841	1					
+ANR	3441	Identifier	w		2841	0					
+ANR	3442	IncDec	--		2841	1					
+ANR	3443	ArrayIndexing	digits [ num % base ]		2841	1					
+ANR	3444	Identifier	digits		2841	0					
+ANR	3445	MultiplicativeExpression	num % base		2841	1		%			
+ANR	3446	Identifier	num		2841	0					
+ANR	3447	Identifier	base		2841	1					
+ANR	3448	ExpressionStatement	num /= base	96:1:2557:2569	2841	1	True				
+ANR	3449	AssignmentExpression	num /= base		2841	0		/=			
+ANR	3450	Identifier	num		2841	0					
+ANR	3451	Identifier	base		2841	1					
+ANR	3452	ExpressionStatement	width -= ( long ) ( workend - w )	98:1:2575:2609	2841	14	True				
+ANR	3453	AssignmentExpression	width -= ( long ) ( workend - w )		2841	0		-=			
+ANR	3454	Identifier	width		2841	0					
+ANR	3455	CastExpression	( long ) ( workend - w )		2841	1					
+ANR	3456	CastTarget	long		2841	0					
+ANR	3457	AdditiveExpression	workend - w		2841	1		-			
+ANR	3458	Identifier	workend		2841	0					
+ANR	3459	Identifier	w		2841	1					
+ANR	3460	ExpressionStatement	prec -= ( long ) ( workend - w )	99:1:2612:2645	2841	15	True				
+ANR	3461	AssignmentExpression	prec -= ( long ) ( workend - w )		2841	0		-=			
+ANR	3462	Identifier	prec		2841	0					
+ANR	3463	CastExpression	( long ) ( workend - w )		2841	1					
+ANR	3464	CastTarget	long		2841	0					
+ANR	3465	AdditiveExpression	workend - w		2841	1		-			
+ANR	3466	Identifier	workend		2841	0					
+ANR	3467	Identifier	w		2841	1					
+ANR	3468	IfStatement	if ( is_alt && base == 8 && prec <= 0 )		2841	16					
+ANR	3469	Condition	is_alt && base == 8 && prec <= 0	100:6:2653:2684	2841	0	True				
+ANR	3470	AndExpression	is_alt && base == 8 && prec <= 0		2841	0		&&			
+ANR	3471	Identifier	is_alt		2841	0					
+ANR	3472	AndExpression	base == 8 && prec <= 0		2841	1		&&			
+ANR	3473	EqualityExpression	base == 8		2841	0		==			
+ANR	3474	Identifier	base		2841	0					
+ANR	3475	PrimaryExpression	8		2841	1					
+ANR	3476	RelationalExpression	prec <= 0		2841	1		<=			
+ANR	3477	Identifier	prec		2841	0					
+ANR	3478	PrimaryExpression	0		2841	1					
+ANR	3479	CompoundStatement		100:41:2568:2568	2841	1					
+ANR	3480	ExpressionStatement	* w -- = '0'	101:1:2691:2704	2841	0	True				
+ANR	3481	AssignmentExpression	* w -- = '0'		2841	0		=			
+ANR	3482	UnaryOperationExpression	* w --		2841	0					
+ANR	3483	UnaryOperator	*		2841	0					
+ANR	3484	PostIncDecOperationExpression	w --		2841	1					
+ANR	3485	Identifier	w		2841	0					
+ANR	3486	IncDec	--		2841	1					
+ANR	3487	PrimaryExpression	'0'		2841	1					
+ANR	3488	ExpressionStatement	-- width	102:1:2707:2716	2841	1	True				
+ANR	3489	UnaryExpression	-- width		2841	0					
+ANR	3490	IncDec	--		2841	0					
+ANR	3491	Identifier	width		2841	1					
+ANR	3492	IfStatement	if ( prec > 0 )		2841	17					
+ANR	3493	Condition	prec > 0	104:6:2727:2734	2841	0	True				
+ANR	3494	RelationalExpression	prec > 0		2841	0		>			
+ANR	3495	Identifier	prec		2841	0					
+ANR	3496	PrimaryExpression	0		2841	1					
+ANR	3497	CompoundStatement		104:17:2618:2618	2841	1					
+ANR	3498	ExpressionStatement	width -= prec	105:1:2741:2755	2841	0	True				
+ANR	3499	AssignmentExpression	width -= prec		2841	0		-=			
+ANR	3500	Identifier	width		2841	0					
+ANR	3501	Identifier	prec		2841	1					
+ANR	3502	WhileStatement	while ( prec -- > 0 )		2841	1					
+ANR	3503	Condition	prec -- > 0	106:9:2766:2776	2841	0	True				
+ANR	3504	RelationalExpression	prec -- > 0		2841	0		>			
+ANR	3505	PostIncDecOperationExpression	prec --		2841	0					
+ANR	3506	Identifier	prec		2841	0					
+ANR	3507	IncDec	--		2841	1					
+ANR	3508	PrimaryExpression	0		2841	1					
+ANR	3509	ExpressionStatement	* w -- = '0'	106:23:2780:2793	2841	1	True				
+ANR	3510	AssignmentExpression	* w -- = '0'		2841	0		=			
+ANR	3511	UnaryOperationExpression	* w --		2841	0					
+ANR	3512	UnaryOperator	*		2841	0					
+ANR	3513	PostIncDecOperationExpression	w --		2841	1					
+ANR	3514	Identifier	w		2841	0					
+ANR	3515	IncDec	--		2841	1					
+ANR	3516	PrimaryExpression	'0'		2841	1					
+ANR	3517	IfStatement	if ( is_alt && base == 16 )		2841	18					
+ANR	3518	Condition	is_alt && base == 16	108:6:2804:2823	2841	0	True				
+ANR	3519	AndExpression	is_alt && base == 16		2841	0		&&			
+ANR	3520	Identifier	is_alt		2841	0					
+ANR	3521	EqualityExpression	base == 16		2841	1		==			
+ANR	3522	Identifier	base		2841	0					
+ANR	3523	PrimaryExpression	16		2841	1					
+ANR	3524	ExpressionStatement	width -= 2	108:29:2827:2838	2841	1	True				
+ANR	3525	AssignmentExpression	width -= 2		2841	0		-=			
+ANR	3526	Identifier	width		2841	0					
+ANR	3527	PrimaryExpression	2		2841	1					
+ANR	3528	IfStatement	if ( is_neg || ( p -> flags & FLAGS_SHOWSIGN ) || ( p -> flags & FLAGS_SPACE ) )		2841	19					
+ANR	3529	Condition	is_neg || ( p -> flags & FLAGS_SHOWSIGN ) || ( p -> flags & FLAGS_SPACE )	109:6:2846:2918	2841	0	True				
+ANR	3530	OrExpression	is_neg || ( p -> flags & FLAGS_SHOWSIGN ) || ( p -> flags & FLAGS_SPACE )		2841	0		||			
+ANR	3531	Identifier	is_neg		2841	0					
+ANR	3532	OrExpression	( p -> flags & FLAGS_SHOWSIGN ) || ( p -> flags & FLAGS_SPACE )		2841	1		||			
+ANR	3533	BitAndExpression	p -> flags & FLAGS_SHOWSIGN		2841	0		&			
+ANR	3534	PtrMemberAccess	p -> flags		2841	0					
+ANR	3535	Identifier	p		2841	0					
+ANR	3536	Identifier	flags		2841	1					
+ANR	3537	Identifier	FLAGS_SHOWSIGN		2841	1					
+ANR	3538	BitAndExpression	p -> flags & FLAGS_SPACE		2841	1		&			
+ANR	3539	PtrMemberAccess	p -> flags		2841	0					
+ANR	3540	Identifier	p		2841	0					
+ANR	3541	Identifier	flags		2841	1					
+ANR	3542	Identifier	FLAGS_SPACE		2841	1					
+ANR	3543	ExpressionStatement	-- width	109:82:2922:2931	2841	1	True				
+ANR	3544	UnaryExpression	-- width		2841	0					
+ANR	3545	IncDec	--		2841	0					
+ANR	3546	Identifier	width		2841	1					
+ANR	3547	IfStatement	if ( ! ( p -> flags & FLAGS_LEFT ) && ! ( p -> flags & FLAGS_PAD_NIL ) )		2841	20					
+ANR	3548	Condition	! ( p -> flags & FLAGS_LEFT ) && ! ( p -> flags & FLAGS_PAD_NIL )	110:6:2939:3003	2841	0	True				
+ANR	3549	AndExpression	! ( p -> flags & FLAGS_LEFT ) && ! ( p -> flags & FLAGS_PAD_NIL )		2841	0		&&			
+ANR	3550	UnaryOperationExpression	! ( p -> flags & FLAGS_LEFT )		2841	0					
+ANR	3551	UnaryOperator	!		2841	0					
+ANR	3552	BitAndExpression	p -> flags & FLAGS_LEFT		2841	1		&			
+ANR	3553	PtrMemberAccess	p -> flags		2841	0					
+ANR	3554	Identifier	p		2841	0					
+ANR	3555	Identifier	flags		2841	1					
+ANR	3556	Identifier	FLAGS_LEFT		2841	1					
+ANR	3557	UnaryOperationExpression	! ( p -> flags & FLAGS_PAD_NIL )		2841	1					
+ANR	3558	UnaryOperator	!		2841	0					
+ANR	3559	BitAndExpression	p -> flags & FLAGS_PAD_NIL		2841	1		&			
+ANR	3560	PtrMemberAccess	p -> flags		2841	0					
+ANR	3561	Identifier	p		2841	0					
+ANR	3562	Identifier	flags		2841	1					
+ANR	3563	Identifier	FLAGS_PAD_NIL		2841	1					
+ANR	3564	WhileStatement	while ( width -- > 0 )		2841	1					
+ANR	3565	Condition	width -- > 0	110:82:3015:3026	2841	0	True				
+ANR	3566	RelationalExpression	width -- > 0		2841	0		>			
+ANR	3567	PostIncDecOperationExpression	width --		2841	0					
+ANR	3568	Identifier	width		2841	0					
+ANR	3569	IncDec	--		2841	1					
+ANR	3570	PrimaryExpression	0		2841	1					
+ANR	3571	ExpressionStatement	OUTCHAR ( ' ' )	110:97:3030:3046	2841	1	True				
+ANR	3572	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	3573	Callee	OUTCHAR		2841	0					
+ANR	3574	Identifier	OUTCHAR		2841	0					
+ANR	3575	ArgumentList	' '		2841	1					
+ANR	3576	Argument	' '		2841	0					
+ANR	3577	PrimaryExpression	' '		2841	0					
+ANR	3578	IfStatement	if ( is_neg )		2841	21					
+ANR	3579	Condition	is_neg	111:6:3054:3059	2841	0	True				
+ANR	3580	Identifier	is_neg		2841	0					
+ANR	3581	ExpressionStatement	OUTCHAR ( '-' )	111:15:3063:3079	2841	1	True				
+ANR	3582	CallExpression	OUTCHAR ( '-' )		2841	0					
+ANR	3583	Callee	OUTCHAR		2841	0					
+ANR	3584	Identifier	OUTCHAR		2841	0					
+ANR	3585	ArgumentList	'-'		2841	1					
+ANR	3586	Argument	'-'		2841	0					
+ANR	3587	PrimaryExpression	'-'		2841	0					
+ANR	3588	ElseStatement	else		2841	0					
+ANR	3589	IfStatement	if ( p -> flags & FLAGS_SHOWSIGN )		2841	0					
+ANR	3590	Condition	p -> flags & FLAGS_SHOWSIGN	112:11:3092:3118	2841	0	True				
+ANR	3591	BitAndExpression	p -> flags & FLAGS_SHOWSIGN		2841	0		&			
+ANR	3592	PtrMemberAccess	p -> flags		2841	0					
+ANR	3593	Identifier	p		2841	0					
+ANR	3594	Identifier	flags		2841	1					
+ANR	3595	Identifier	FLAGS_SHOWSIGN		2841	1					
+ANR	3596	ExpressionStatement	OUTCHAR ( '+' )	112:41:3122:3138	2841	1	True				
+ANR	3597	CallExpression	OUTCHAR ( '+' )		2841	0					
+ANR	3598	Callee	OUTCHAR		2841	0					
+ANR	3599	Identifier	OUTCHAR		2841	0					
+ANR	3600	ArgumentList	'+'		2841	1					
+ANR	3601	Argument	'+'		2841	0					
+ANR	3602	PrimaryExpression	'+'		2841	0					
+ANR	3603	ElseStatement	else		2841	0					
+ANR	3604	IfStatement	if ( p -> flags & FLAGS_SPACE )		2841	0					
+ANR	3605	Condition	p -> flags & FLAGS_SPACE	113:11:3151:3174	2841	0	True				
+ANR	3606	BitAndExpression	p -> flags & FLAGS_SPACE		2841	0		&			
+ANR	3607	PtrMemberAccess	p -> flags		2841	0					
+ANR	3608	Identifier	p		2841	0					
+ANR	3609	Identifier	flags		2841	1					
+ANR	3610	Identifier	FLAGS_SPACE		2841	1					
+ANR	3611	ExpressionStatement	OUTCHAR ( ' ' )	113:38:3178:3194	2841	1	True				
+ANR	3612	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	3613	Callee	OUTCHAR		2841	0					
+ANR	3614	Identifier	OUTCHAR		2841	0					
+ANR	3615	ArgumentList	' '		2841	1					
+ANR	3616	Argument	' '		2841	0					
+ANR	3617	PrimaryExpression	' '		2841	0					
+ANR	3618	IfStatement	if ( is_alt && base == 16 )		2841	22					
+ANR	3619	Condition	is_alt && base == 16	114:6:3202:3221	2841	0	True				
+ANR	3620	AndExpression	is_alt && base == 16		2841	0		&&			
+ANR	3621	Identifier	is_alt		2841	0					
+ANR	3622	EqualityExpression	base == 16		2841	1		==			
+ANR	3623	Identifier	base		2841	0					
+ANR	3624	PrimaryExpression	16		2841	1					
+ANR	3625	CompoundStatement		114:29:3105:3105	2841	1					
+ANR	3626	ExpressionStatement	OUTCHAR ( '0' )	115:1:3228:3244	2841	0	True				
+ANR	3627	CallExpression	OUTCHAR ( '0' )		2841	0					
+ANR	3628	Callee	OUTCHAR		2841	0					
+ANR	3629	Identifier	OUTCHAR		2841	0					
+ANR	3630	ArgumentList	'0'		2841	1					
+ANR	3631	Argument	'0'		2841	0					
+ANR	3632	PrimaryExpression	'0'		2841	0					
+ANR	3633	IfStatement	if ( p -> flags & FLAGS_UPPER )		2841	1					
+ANR	3634	Condition	p -> flags & FLAGS_UPPER	116:6:3252:3275	2841	0	True				
+ANR	3635	BitAndExpression	p -> flags & FLAGS_UPPER		2841	0		&			
+ANR	3636	PtrMemberAccess	p -> flags		2841	0					
+ANR	3637	Identifier	p		2841	0					
+ANR	3638	Identifier	flags		2841	1					
+ANR	3639	Identifier	FLAGS_UPPER		2841	1					
+ANR	3640	ExpressionStatement	OUTCHAR ( 'X' )	116:33:3279:3295	2841	1	True				
+ANR	3641	CallExpression	OUTCHAR ( 'X' )		2841	0					
+ANR	3642	Callee	OUTCHAR		2841	0					
+ANR	3643	Identifier	OUTCHAR		2841	0					
+ANR	3644	ArgumentList	'X'		2841	1					
+ANR	3645	Argument	'X'		2841	0					
+ANR	3646	PrimaryExpression	'X'		2841	0					
+ANR	3647	ElseStatement	else		2841	0					
+ANR	3648	ExpressionStatement	OUTCHAR ( 'x' )	117:6:3303:3319	2841	0	True				
+ANR	3649	CallExpression	OUTCHAR ( 'x' )		2841	0					
+ANR	3650	Callee	OUTCHAR		2841	0					
+ANR	3651	Identifier	OUTCHAR		2841	0					
+ANR	3652	ArgumentList	'x'		2841	1					
+ANR	3653	Argument	'x'		2841	0					
+ANR	3654	PrimaryExpression	'x'		2841	0					
+ANR	3655	IfStatement	if ( ! ( p -> flags & FLAGS_LEFT ) && ( p -> flags & FLAGS_PAD_NIL ) )		2841	23					
+ANR	3656	Condition	! ( p -> flags & FLAGS_LEFT ) && ( p -> flags & FLAGS_PAD_NIL )	119:6:3330:3392	2841	0	True				
+ANR	3657	AndExpression	! ( p -> flags & FLAGS_LEFT ) && ( p -> flags & FLAGS_PAD_NIL )		2841	0		&&			
+ANR	3658	UnaryOperationExpression	! ( p -> flags & FLAGS_LEFT )		2841	0					
+ANR	3659	UnaryOperator	!		2841	0					
+ANR	3660	BitAndExpression	p -> flags & FLAGS_LEFT		2841	1		&			
+ANR	3661	PtrMemberAccess	p -> flags		2841	0					
+ANR	3662	Identifier	p		2841	0					
+ANR	3663	Identifier	flags		2841	1					
+ANR	3664	Identifier	FLAGS_LEFT		2841	1					
+ANR	3665	BitAndExpression	p -> flags & FLAGS_PAD_NIL		2841	1		&			
+ANR	3666	PtrMemberAccess	p -> flags		2841	0					
+ANR	3667	Identifier	p		2841	0					
+ANR	3668	Identifier	flags		2841	1					
+ANR	3669	Identifier	FLAGS_PAD_NIL		2841	1					
+ANR	3670	WhileStatement	while ( width -- > 0 )		2841	1					
+ANR	3671	Condition	width -- > 0	119:80:3404:3415	2841	0	True				
+ANR	3672	RelationalExpression	width -- > 0		2841	0		>			
+ANR	3673	PostIncDecOperationExpression	width --		2841	0					
+ANR	3674	Identifier	width		2841	0					
+ANR	3675	IncDec	--		2841	1					
+ANR	3676	PrimaryExpression	0		2841	1					
+ANR	3677	ExpressionStatement	OUTCHAR ( '0' )	119:95:3419:3435	2841	1	True				
+ANR	3678	CallExpression	OUTCHAR ( '0' )		2841	0					
+ANR	3679	Callee	OUTCHAR		2841	0					
+ANR	3680	Identifier	OUTCHAR		2841	0					
+ANR	3681	ArgumentList	'0'		2841	1					
+ANR	3682	Argument	'0'		2841	0					
+ANR	3683	PrimaryExpression	'0'		2841	0					
+ANR	3684	WhileStatement	while ( ++ w <= workend )		2841	24					
+ANR	3685	Condition	++ w <= workend	120:9:3446:3460	2841	0	True				
+ANR	3686	RelationalExpression	++ w <= workend		2841	0		<=			
+ANR	3687	UnaryExpression	++ w		2841	0					
+ANR	3688	IncDec	++		2841	0					
+ANR	3689	Identifier	w		2841	1					
+ANR	3690	Identifier	workend		2841	1					
+ANR	3691	CompoundStatement		120:27:3344:3344	2841	1					
+ANR	3692	ExpressionStatement	OUTCHAR ( * w )	121:1:3467:3483	2841	0	True				
+ANR	3693	CallExpression	OUTCHAR ( * w )		2841	0					
+ANR	3694	Callee	OUTCHAR		2841	0					
+ANR	3695	Identifier	OUTCHAR		2841	0					
+ANR	3696	ArgumentList	* w		2841	1					
+ANR	3697	Argument	* w		2841	0					
+ANR	3698	UnaryOperationExpression	* w		2841	0					
+ANR	3699	UnaryOperator	*		2841	0					
+ANR	3700	Identifier	w		2841	1					
+ANR	3701	IfStatement	if ( p -> flags & FLAGS_LEFT )		2841	25					
+ANR	3702	Condition	p -> flags & FLAGS_LEFT	123:6:3494:3516	2841	0	True				
+ANR	3703	BitAndExpression	p -> flags & FLAGS_LEFT		2841	0		&			
+ANR	3704	PtrMemberAccess	p -> flags		2841	0					
+ANR	3705	Identifier	p		2841	0					
+ANR	3706	Identifier	flags		2841	1					
+ANR	3707	Identifier	FLAGS_LEFT		2841	1					
+ANR	3708	WhileStatement	while ( width -- > 0 )		2841	1					
+ANR	3709	Condition	width -- > 0	123:40:3528:3539	2841	0	True				
+ANR	3710	RelationalExpression	width -- > 0		2841	0		>			
+ANR	3711	PostIncDecOperationExpression	width --		2841	0					
+ANR	3712	Identifier	width		2841	0					
+ANR	3713	IncDec	--		2841	1					
+ANR	3714	PrimaryExpression	0		2841	1					
+ANR	3715	ExpressionStatement	OUTCHAR ( ' ' )	123:55:3543:3559	2841	1	True				
+ANR	3716	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	3717	Callee	OUTCHAR		2841	0					
+ANR	3718	Identifier	OUTCHAR		2841	0					
+ANR	3719	ArgumentList	' '		2841	1					
+ANR	3720	Argument	' '		2841	0					
+ANR	3721	PrimaryExpression	' '		2841	0					
+ANR	3722	BreakStatement	break ;	124:1:3562:3568	2841	26	True				
+ANR	3723	Label	case FORMAT_STRING :	125:1:3571:3590	2841	27	True				
+ANR	3724	Identifier	FORMAT_STRING		2841	0					
+ANR	3725	CompoundStatement		128:1:3535:3546	2841	28					
+ANR	3726	Statement	static	126:1:3595:3600	2841	0	True				
+ANR	3727	IdentifierDeclStatement	"const char null [ ] = ""(nil)"" ;"	126:8:3602:3632	2841	1	True				
+ANR	3728	IdentifierDecl	"null [ ] = ""(nil)"""		2841	0					
+ANR	3729	IdentifierDeclType	const char [ ]		2841	0					
+ANR	3730	Identifier	null		2841	1					
+ANR	3731	AssignmentExpression	"null [ ] = ""(nil)"""		2841	2		=			
+ANR	3732	Identifier	null		2841	0					
+ANR	3733	PrimaryExpression	"""(nil)"""		2841	1					
+ANR	3734	IdentifierDeclStatement	const char * str ;	127:1:3635:3652	2841	2	True				
+ANR	3735	IdentifierDecl	* str		2841	0					
+ANR	3736	IdentifierDeclType	const char *		2841	0					
+ANR	3737	Identifier	str		2841	1					
+ANR	3738	IdentifierDeclStatement	size_t len ;	128:1:3655:3666	2841	3	True				
+ANR	3739	IdentifierDecl	len		2841	0					
+ANR	3740	IdentifierDeclType	size_t		2841	0					
+ANR	3741	Identifier	len		2841	1					
+ANR	3742	ExpressionStatement	str = ( char * ) p -> data . str	129:1:3669:3702	2841	4	True				
+ANR	3743	AssignmentExpression	str = ( char * ) p -> data . str		2841	0		=			
+ANR	3744	Identifier	str		2841	0					
+ANR	3745	CastExpression	( char * ) p -> data . str		2841	1					
+ANR	3746	CastTarget	char *		2841	0					
+ANR	3747	MemberAccess	p -> data . str		2841	1					
+ANR	3748	PtrMemberAccess	p -> data		2841	0					
+ANR	3749	Identifier	p		2841	0					
+ANR	3750	Identifier	data		2841	1					
+ANR	3751	Identifier	str		2841	1					
+ANR	3752	IfStatement	if ( str == NULL )		2841	5					
+ANR	3753	Condition	str == NULL	130:6:3710:3720	2841	0	True				
+ANR	3754	EqualityExpression	str == NULL		2841	0		==			
+ANR	3755	Identifier	str		2841	0					
+ANR	3756	Identifier	NULL		2841	1					
+ANR	3757	CompoundStatement		130:20:3604:3604	2841	1					
+ANR	3758	IfStatement	if ( prec == - 1 || prec >= ( long ) sizeof ( null ) - 1 )		2841	0					
+ANR	3759	Condition	prec == - 1 || prec >= ( long ) sizeof ( null ) - 1	131:6:3732:3782	2841	0	True				
+ANR	3760	OrExpression	prec == - 1 || prec >= ( long ) sizeof ( null ) - 1		2841	0		||			
+ANR	3761	EqualityExpression	prec == - 1		2841	0		==			
+ANR	3762	Identifier	prec		2841	0					
+ANR	3763	UnaryOperationExpression	- 1		2841	1					
+ANR	3764	UnaryOperator	-		2841	0					
+ANR	3765	PrimaryExpression	1		2841	1					
+ANR	3766	RelationalExpression	prec >= ( long ) sizeof ( null ) - 1		2841	1		>=			
+ANR	3767	Identifier	prec		2841	0					
+ANR	3768	AdditiveExpression	( long ) sizeof ( null ) - 1		2841	1		-			
+ANR	3769	CastExpression	( long ) sizeof ( null )		2841	0					
+ANR	3770	CastTarget	long		2841	0					
+ANR	3771	SizeofExpression	sizeof ( null )		2841	1					
+ANR	3772	Sizeof	sizeof		2841	0					
+ANR	3773	SizeofOperand	null		2841	1					
+ANR	3774	PrimaryExpression	1		2841	1					
+ANR	3775	CompoundStatement		131:60:3666:3666	2841	1					
+ANR	3776	ExpressionStatement	str = null	132:1:3789:3800	2841	0	True				
+ANR	3777	AssignmentExpression	str = null		2841	0		=			
+ANR	3778	Identifier	str		2841	0					
+ANR	3779	Identifier	null		2841	1					
+ANR	3780	ExpressionStatement	len = sizeof ( null ) - 1	133:1:3803:3829	2841	1	True				
+ANR	3781	AssignmentExpression	len = sizeof ( null ) - 1		2841	0		=			
+ANR	3782	Identifier	len		2841	0					
+ANR	3783	AdditiveExpression	sizeof ( null ) - 1		2841	1		-			
+ANR	3784	SizeofExpression	sizeof ( null )		2841	0					
+ANR	3785	Sizeof	sizeof		2841	0					
+ANR	3786	SizeofOperand	null		2841	1					
+ANR	3787	PrimaryExpression	1		2841	1					
+ANR	3788	ExpressionStatement	p -> flags &= ( ~ FLAGS_ALT )	134:1:3832:3862	2841	2	True				
+ANR	3789	AssignmentExpression	p -> flags &= ( ~ FLAGS_ALT )		2841	0		&=			
+ANR	3790	PtrMemberAccess	p -> flags		2841	0					
+ANR	3791	Identifier	p		2841	0					
+ANR	3792	Identifier	flags		2841	1					
+ANR	3793	UnaryOperationExpression	~ FLAGS_ALT		2841	1					
+ANR	3794	UnaryOperator	~		2841	0					
+ANR	3795	Identifier	FLAGS_ALT		2841	1					
+ANR	3796	ElseStatement	else		2841	0					
+ANR	3797	CompoundStatement		136:6:3753:3753	2841	0					
+ANR	3798	ExpressionStatement	"str = """""	137:1:3876:3885	2841	0	True				
+ANR	3799	AssignmentExpression	"str = """""		2841	0		=			
+ANR	3800	Identifier	str		2841	0					
+ANR	3801	PrimaryExpression	""""""		2841	1					
+ANR	3802	ExpressionStatement	len = 0	138:1:3888:3896	2841	1	True				
+ANR	3803	AssignmentExpression	len = 0		2841	0		=			
+ANR	3804	Identifier	len		2841	0					
+ANR	3805	PrimaryExpression	0		2841	1					
+ANR	3806	ElseStatement	else		2841	0					
+ANR	3807	IfStatement	if ( prec != - 1 )		2841	0					
+ANR	3808	Condition	prec != - 1	141:11:3915:3925	2841	0	True				
+ANR	3809	EqualityExpression	prec != - 1		2841	0		!=			
+ANR	3810	Identifier	prec		2841	0					
+ANR	3811	UnaryOperationExpression	- 1		2841	1					
+ANR	3812	UnaryOperator	-		2841	0					
+ANR	3813	PrimaryExpression	1		2841	1					
+ANR	3814	ExpressionStatement	len = ( size_t ) prec	141:25:3929:3951	2841	1	True				
+ANR	3815	AssignmentExpression	len = ( size_t ) prec		2841	0		=			
+ANR	3816	Identifier	len		2841	0					
+ANR	3817	CastExpression	( size_t ) prec		2841	1					
+ANR	3818	CastTarget	size_t		2841	0					
+ANR	3819	Identifier	prec		2841	1					
+ANR	3820	ElseStatement	else		2841	0					
+ANR	3821	ExpressionStatement	len = strlen ( str )	142:6:3959:3980	2841	0	True				
+ANR	3822	AssignmentExpression	len = strlen ( str )		2841	0		=			
+ANR	3823	Identifier	len		2841	0					
+ANR	3824	CallExpression	strlen ( str )		2841	1					
+ANR	3825	Callee	strlen		2841	0					
+ANR	3826	Identifier	strlen		2841	0					
+ANR	3827	ArgumentList	str		2841	1					
+ANR	3828	Argument	str		2841	0					
+ANR	3829	Identifier	str		2841	0					
+ANR	3830	ExpressionStatement	width -= ( len > LONG_MAX ) ? LONG_MAX : ( long ) len	143:1:3983:4037	2841	6	True				
+ANR	3831	AssignmentExpression	width -= ( len > LONG_MAX ) ? LONG_MAX : ( long ) len		2841	0		-=			
+ANR	3832	Identifier	width		2841	0					
+ANR	3833	ConditionalExpression	( len > LONG_MAX ) ? LONG_MAX : ( long ) len		2841	1					
+ANR	3834	Condition	len > LONG_MAX		2841	0					
+ANR	3835	RelationalExpression	len > LONG_MAX		2841	0		>			
+ANR	3836	Identifier	len		2841	0					
+ANR	3837	Identifier	LONG_MAX		2841	1					
+ANR	3838	Identifier	LONG_MAX		2841	1					
+ANR	3839	CastExpression	( long ) len		2841	2					
+ANR	3840	CastTarget	long		2841	0					
+ANR	3841	Identifier	len		2841	1					
+ANR	3842	IfStatement	if ( p -> flags & FLAGS_ALT )		2841	7					
+ANR	3843	Condition	p -> flags & FLAGS_ALT	144:6:4045:4066	2841	0	True				
+ANR	3844	BitAndExpression	p -> flags & FLAGS_ALT		2841	0		&			
+ANR	3845	PtrMemberAccess	p -> flags		2841	0					
+ANR	3846	Identifier	p		2841	0					
+ANR	3847	Identifier	flags		2841	1					
+ANR	3848	Identifier	FLAGS_ALT		2841	1					
+ANR	3849	ExpressionStatement	"OUTCHAR ( '""' )"	144:31:4070:4086	2841	1	True				
+ANR	3850	CallExpression	"OUTCHAR ( '""' )"		2841	0					
+ANR	3851	Callee	OUTCHAR		2841	0					
+ANR	3852	Identifier	OUTCHAR		2841	0					
+ANR	3853	ArgumentList	"'""'"		2841	1					
+ANR	3854	Argument	"'""'"		2841	0					
+ANR	3855	PrimaryExpression	"'""'"		2841	0					
+ANR	3856	IfStatement	if ( ! ( p -> flags & FLAGS_LEFT ) )		2841	8					
+ANR	3857	Condition	! ( p -> flags & FLAGS_LEFT )	145:6:4094:4122	2841	0	True				
+ANR	3858	UnaryOperationExpression	! ( p -> flags & FLAGS_LEFT )		2841	0					
+ANR	3859	UnaryOperator	!		2841	0					
+ANR	3860	BitAndExpression	p -> flags & FLAGS_LEFT		2841	1		&			
+ANR	3861	PtrMemberAccess	p -> flags		2841	0					
+ANR	3862	Identifier	p		2841	0					
+ANR	3863	Identifier	flags		2841	1					
+ANR	3864	Identifier	FLAGS_LEFT		2841	1					
+ANR	3865	WhileStatement	while ( width -- > 0 )		2841	1					
+ANR	3866	Condition	width -- > 0	145:46:4134:4145	2841	0	True				
+ANR	3867	RelationalExpression	width -- > 0		2841	0		>			
+ANR	3868	PostIncDecOperationExpression	width --		2841	0					
+ANR	3869	Identifier	width		2841	0					
+ANR	3870	IncDec	--		2841	1					
+ANR	3871	PrimaryExpression	0		2841	1					
+ANR	3872	ExpressionStatement	OUTCHAR ( ' ' )	145:61:4149:4165	2841	1	True				
+ANR	3873	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	3874	Callee	OUTCHAR		2841	0					
+ANR	3875	Identifier	OUTCHAR		2841	0					
+ANR	3876	ArgumentList	' '		2841	1					
+ANR	3877	Argument	' '		2841	0					
+ANR	3878	PrimaryExpression	' '		2841	0					
+ANR	3879	WhileStatement	while ( ( len -- > 0 ) && * str )		2841	9					
+ANR	3880	Condition	( len -- > 0 ) && * str	146:9:4176:4198	2841	0	True				
+ANR	3881	AndExpression	( len -- > 0 ) && * str		2841	0		&&			
+ANR	3882	RelationalExpression	len -- > 0		2841	0		>			
+ANR	3883	PostIncDecOperationExpression	len --		2841	0					
+ANR	3884	Identifier	len		2841	0					
+ANR	3885	IncDec	--		2841	1					
+ANR	3886	PrimaryExpression	0		2841	1					
+ANR	3887	UnaryOperationExpression	* str		2841	1					
+ANR	3888	UnaryOperator	*		2841	0					
+ANR	3889	Identifier	str		2841	1					
+ANR	3890	ExpressionStatement	OUTCHAR ( * str ++ )	146:35:4202:4223	2841	1	True				
+ANR	3891	CallExpression	OUTCHAR ( * str ++ )		2841	0					
+ANR	3892	Callee	OUTCHAR		2841	0					
+ANR	3893	Identifier	OUTCHAR		2841	0					
+ANR	3894	ArgumentList	* str ++		2841	1					
+ANR	3895	Argument	* str ++		2841	0					
+ANR	3896	UnaryOperationExpression	* str ++		2841	0					
+ANR	3897	UnaryOperator	*		2841	0					
+ANR	3898	PostIncDecOperationExpression	str ++		2841	1					
+ANR	3899	Identifier	str		2841	0					
+ANR	3900	IncDec	++		2841	1					
+ANR	3901	IfStatement	if ( p -> flags & FLAGS_LEFT )		2841	10					
+ANR	3902	Condition	p -> flags & FLAGS_LEFT	147:6:4231:4253	2841	0	True				
+ANR	3903	BitAndExpression	p -> flags & FLAGS_LEFT		2841	0		&			
+ANR	3904	PtrMemberAccess	p -> flags		2841	0					
+ANR	3905	Identifier	p		2841	0					
+ANR	3906	Identifier	flags		2841	1					
+ANR	3907	Identifier	FLAGS_LEFT		2841	1					
+ANR	3908	WhileStatement	while ( width -- > 0 )		2841	1					
+ANR	3909	Condition	width -- > 0	147:40:4265:4276	2841	0	True				
+ANR	3910	RelationalExpression	width -- > 0		2841	0		>			
+ANR	3911	PostIncDecOperationExpression	width --		2841	0					
+ANR	3912	Identifier	width		2841	0					
+ANR	3913	IncDec	--		2841	1					
+ANR	3914	PrimaryExpression	0		2841	1					
+ANR	3915	ExpressionStatement	OUTCHAR ( ' ' )	147:55:4280:4296	2841	1	True				
+ANR	3916	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	3917	Callee	OUTCHAR		2841	0					
+ANR	3918	Identifier	OUTCHAR		2841	0					
+ANR	3919	ArgumentList	' '		2841	1					
+ANR	3920	Argument	' '		2841	0					
+ANR	3921	PrimaryExpression	' '		2841	0					
+ANR	3922	IfStatement	if ( p -> flags & FLAGS_ALT )		2841	11					
+ANR	3923	Condition	p -> flags & FLAGS_ALT	148:6:4304:4325	2841	0	True				
+ANR	3924	BitAndExpression	p -> flags & FLAGS_ALT		2841	0		&			
+ANR	3925	PtrMemberAccess	p -> flags		2841	0					
+ANR	3926	Identifier	p		2841	0					
+ANR	3927	Identifier	flags		2841	1					
+ANR	3928	Identifier	FLAGS_ALT		2841	1					
+ANR	3929	ExpressionStatement	"OUTCHAR ( '""' )"	148:31:4329:4345	2841	1	True				
+ANR	3930	CallExpression	"OUTCHAR ( '""' )"		2841	0					
+ANR	3931	Callee	OUTCHAR		2841	0					
+ANR	3932	Identifier	OUTCHAR		2841	0					
+ANR	3933	ArgumentList	"'""'"		2841	1					
+ANR	3934	Argument	"'""'"		2841	0					
+ANR	3935	PrimaryExpression	"'""'"		2841	0					
+ANR	3936	BreakStatement	break ;	150:1:4351:4357	2841	29	True				
+ANR	3937	Label	case FORMAT_PTR :	151:1:4360:4376	2841	30	True				
+ANR	3938	Identifier	FORMAT_PTR		2841	0					
+ANR	3939	CompoundStatement		152:1:4261:4272	2841	31					
+ANR	3940	IdentifierDeclStatement	void * ptr ;	152:1:4381:4392	2841	0	True				
+ANR	3941	IdentifierDecl	* ptr		2841	0					
+ANR	3942	IdentifierDeclType	void *		2841	0					
+ANR	3943	Identifier	ptr		2841	1					
+ANR	3944	ExpressionStatement	ptr = ( void * ) p -> data . ptr	153:1:4395:4428	2841	1	True				
+ANR	3945	AssignmentExpression	ptr = ( void * ) p -> data . ptr		2841	0		=			
+ANR	3946	Identifier	ptr		2841	0					
+ANR	3947	CastExpression	( void * ) p -> data . ptr		2841	1					
+ANR	3948	CastTarget	void *		2841	0					
+ANR	3949	MemberAccess	p -> data . ptr		2841	1					
+ANR	3950	PtrMemberAccess	p -> data		2841	0					
+ANR	3951	Identifier	p		2841	0					
+ANR	3952	Identifier	data		2841	1					
+ANR	3953	Identifier	ptr		2841	1					
+ANR	3954	IfStatement	if ( ptr != NULL )		2841	2					
+ANR	3955	Condition	ptr != NULL	154:6:4436:4446	2841	0	True				
+ANR	3956	EqualityExpression	ptr != NULL		2841	0		!=			
+ANR	3957	Identifier	ptr		2841	0					
+ANR	3958	Identifier	NULL		2841	1					
+ANR	3959	CompoundStatement		154:20:4330:4330	2841	1					
+ANR	3960	ExpressionStatement	base = 16	155:1:4453:4463	2841	0	True				
+ANR	3961	AssignmentExpression	base = 16		2841	0		=			
+ANR	3962	Identifier	base		2841	0					
+ANR	3963	PrimaryExpression	16		2841	1					
+ANR	3964	ExpressionStatement	digits = ( p -> flags & FLAGS_UPPER ) ? upper_digits : lower_digits	156:1:4466:4534	2841	1	True				
+ANR	3965	AssignmentExpression	digits = ( p -> flags & FLAGS_UPPER ) ? upper_digits : lower_digits		2841	0		=			
+ANR	3966	Identifier	digits		2841	0					
+ANR	3967	ConditionalExpression	( p -> flags & FLAGS_UPPER ) ? upper_digits : lower_digits		2841	1					
+ANR	3968	Condition	p -> flags & FLAGS_UPPER		2841	0					
+ANR	3969	BitAndExpression	p -> flags & FLAGS_UPPER		2841	0		&			
+ANR	3970	PtrMemberAccess	p -> flags		2841	0					
+ANR	3971	Identifier	p		2841	0					
+ANR	3972	Identifier	flags		2841	1					
+ANR	3973	Identifier	FLAGS_UPPER		2841	1					
+ANR	3974	Identifier	upper_digits		2841	1					
+ANR	3975	Identifier	lower_digits		2841	2					
+ANR	3976	ExpressionStatement	is_alt = 1	157:1:4537:4548	2841	2	True				
+ANR	3977	AssignmentExpression	is_alt = 1		2841	0		=			
+ANR	3978	Identifier	is_alt		2841	0					
+ANR	3979	PrimaryExpression	1		2841	1					
+ANR	3980	ExpressionStatement	num = ( size_t ) ptr	158:1:4551:4572	2841	3	True				
+ANR	3981	AssignmentExpression	num = ( size_t ) ptr		2841	0		=			
+ANR	3982	Identifier	num		2841	0					
+ANR	3983	CastExpression	( size_t ) ptr		2841	1					
+ANR	3984	CastTarget	size_t		2841	0					
+ANR	3985	Identifier	ptr		2841	1					
+ANR	3986	ExpressionStatement	is_neg = 0	159:1:4575:4586	2841	4	True				
+ANR	3987	AssignmentExpression	is_neg = 0		2841	0		=			
+ANR	3988	Identifier	is_neg		2841	0					
+ANR	3989	PrimaryExpression	0		2841	1					
+ANR	3990	GotoStatement	goto number ;	160:1:4589:4601	2841	5	True				
+ANR	3991	Identifier	number		2841	0					
+ANR	3992	ElseStatement	else		2841	0					
+ANR	3993	CompoundStatement		164:1:4537:4556	2841	0					
+ANR	3994	Statement	static	163:1:4615:4620	2841	0	True				
+ANR	3995	IdentifierDeclStatement	"const char strnil [ ] = ""(nil)"" ;"	163:8:4622:4654	2841	1	True				
+ANR	3996	IdentifierDecl	"strnil [ ] = ""(nil)"""		2841	0					
+ANR	3997	IdentifierDeclType	const char [ ]		2841	0					
+ANR	3998	Identifier	strnil		2841	1					
+ANR	3999	AssignmentExpression	"strnil [ ] = ""(nil)"""		2841	2		=			
+ANR	4000	Identifier	strnil		2841	0					
+ANR	4001	PrimaryExpression	"""(nil)"""		2841	1					
+ANR	4002	IdentifierDeclStatement	const char * point ;	164:1:4657:4676	2841	2	True				
+ANR	4003	IdentifierDecl	* point		2841	0					
+ANR	4004	IdentifierDeclType	const char *		2841	0					
+ANR	4005	Identifier	point		2841	1					
+ANR	4006	ExpressionStatement	width -= ( long ) ( sizeof ( strnil ) - 1 )	165:1:4679:4723	2841	3	True				
+ANR	4007	AssignmentExpression	width -= ( long ) ( sizeof ( strnil ) - 1 )		2841	0		-=			
+ANR	4008	Identifier	width		2841	0					
+ANR	4009	CastExpression	( long ) ( sizeof ( strnil ) - 1 )		2841	1					
+ANR	4010	CastTarget	long		2841	0					
+ANR	4011	AdditiveExpression	sizeof ( strnil ) - 1		2841	1		-			
+ANR	4012	SizeofExpression	sizeof ( strnil )		2841	0					
+ANR	4013	Sizeof	sizeof		2841	0					
+ANR	4014	SizeofOperand	strnil		2841	1					
+ANR	4015	PrimaryExpression	1		2841	1					
+ANR	4016	IfStatement	if ( p -> flags & FLAGS_LEFT )		2841	4					
+ANR	4017	Condition	p -> flags & FLAGS_LEFT	166:6:4731:4753	2841	0	True				
+ANR	4018	BitAndExpression	p -> flags & FLAGS_LEFT		2841	0		&			
+ANR	4019	PtrMemberAccess	p -> flags		2841	0					
+ANR	4020	Identifier	p		2841	0					
+ANR	4021	Identifier	flags		2841	1					
+ANR	4022	Identifier	FLAGS_LEFT		2841	1					
+ANR	4023	WhileStatement	while ( width -- > 0 )		2841	1					
+ANR	4024	Condition	width -- > 0	166:40:4765:4776	2841	0	True				
+ANR	4025	RelationalExpression	width -- > 0		2841	0		>			
+ANR	4026	PostIncDecOperationExpression	width --		2841	0					
+ANR	4027	Identifier	width		2841	0					
+ANR	4028	IncDec	--		2841	1					
+ANR	4029	PrimaryExpression	0		2841	1					
+ANR	4030	ExpressionStatement	OUTCHAR ( ' ' )	166:55:4780:4796	2841	1	True				
+ANR	4031	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	4032	Callee	OUTCHAR		2841	0					
+ANR	4033	Identifier	OUTCHAR		2841	0					
+ANR	4034	ArgumentList	' '		2841	1					
+ANR	4035	Argument	' '		2841	0					
+ANR	4036	PrimaryExpression	' '		2841	0					
+ANR	4037	ForStatement	for ( point = strnil ; * point != '\\0' ; ++ point )		2841	5					
+ANR	4038	ForInit	point = strnil ;	167:7:4805:4820	2841	0	True				
+ANR	4039	AssignmentExpression	point = strnil		2841	0		=			
+ANR	4040	Identifier	point		2841	0					
+ANR	4041	Identifier	strnil		2841	1					
+ANR	4042	Condition	* point != '\\0'	168:1:4823:4837	2841	1	True				
+ANR	4043	EqualityExpression	* point != '\\0'		2841	0		!=			
+ANR	4044	UnaryOperationExpression	* point		2841	0					
+ANR	4045	UnaryOperator	*		2841	0					
+ANR	4046	Identifier	point		2841	1					
+ANR	4047	PrimaryExpression	'\\0'		2841	1					
+ANR	4048	UnaryExpression	++ point	169:1:4842:4849	2841	2	True				
+ANR	4049	IncDec	++		2841	0					
+ANR	4050	Identifier	point		2841	1					
+ANR	4051	ExpressionStatement	OUTCHAR ( * point )	169:12:4853:4873	2841	3	True				
+ANR	4052	CallExpression	OUTCHAR ( * point )		2841	0					
+ANR	4053	Callee	OUTCHAR		2841	0					
+ANR	4054	Identifier	OUTCHAR		2841	0					
+ANR	4055	ArgumentList	* point		2841	1					
+ANR	4056	Argument	* point		2841	0					
+ANR	4057	UnaryOperationExpression	* point		2841	0					
+ANR	4058	UnaryOperator	*		2841	0					
+ANR	4059	Identifier	point		2841	1					
+ANR	4060	IfStatement	if ( ! ( p -> flags & FLAGS_LEFT ) )		2841	6					
+ANR	4061	Condition	! ( p -> flags & FLAGS_LEFT )	170:6:4881:4909	2841	0	True				
+ANR	4062	UnaryOperationExpression	! ( p -> flags & FLAGS_LEFT )		2841	0					
+ANR	4063	UnaryOperator	!		2841	0					
+ANR	4064	BitAndExpression	p -> flags & FLAGS_LEFT		2841	1		&			
+ANR	4065	PtrMemberAccess	p -> flags		2841	0					
+ANR	4066	Identifier	p		2841	0					
+ANR	4067	Identifier	flags		2841	1					
+ANR	4068	Identifier	FLAGS_LEFT		2841	1					
+ANR	4069	WhileStatement	while ( width -- > 0 )		2841	1					
+ANR	4070	Condition	width -- > 0	170:46:4921:4932	2841	0	True				
+ANR	4071	RelationalExpression	width -- > 0		2841	0		>			
+ANR	4072	PostIncDecOperationExpression	width --		2841	0					
+ANR	4073	Identifier	width		2841	0					
+ANR	4074	IncDec	--		2841	1					
+ANR	4075	PrimaryExpression	0		2841	1					
+ANR	4076	ExpressionStatement	OUTCHAR ( ' ' )	170:61:4936:4952	2841	1	True				
+ANR	4077	CallExpression	OUTCHAR ( ' ' )		2841	0					
+ANR	4078	Callee	OUTCHAR		2841	0					
+ANR	4079	Identifier	OUTCHAR		2841	0					
+ANR	4080	ArgumentList	' '		2841	1					
+ANR	4081	Argument	' '		2841	0					
+ANR	4082	PrimaryExpression	' '		2841	0					
+ANR	4083	BreakStatement	break ;	173:1:4961:4967	2841	32	True				
+ANR	4084	Label	case FORMAT_DOUBLE :	174:1:4970:4989	2841	33	True				
+ANR	4085	Identifier	FORMAT_DOUBLE		2841	0					
+ANR	4086	CompoundStatement		178:1:5001:5009	2841	34					
+ANR	4087	IdentifierDeclStatement	"char formatbuf [ 32 ] = ""%"" ;"	175:1:4994:5022	2841	0	True				
+ANR	4088	IdentifierDecl	"formatbuf [ 32 ] = ""%"""		2841	0					
+ANR	4089	IdentifierDeclType	char [ 32 ]		2841	0					
+ANR	4090	Identifier	formatbuf		2841	1					
+ANR	4091	PrimaryExpression	32		2841	2					
+ANR	4092	AssignmentExpression	"formatbuf [ 32 ] = ""%"""		2841	3		=			
+ANR	4093	Identifier	formatbuf		2841	0					
+ANR	4094	PrimaryExpression	"""%"""		2841	1					
+ANR	4095	IdentifierDeclStatement	char * fptr = & formatbuf [ 1 ] ;	176:1:5025:5057	2841	1	True				
+ANR	4096	IdentifierDecl	* fptr = & formatbuf [ 1 ]		2841	0					
+ANR	4097	IdentifierDeclType	char *		2841	0					
+ANR	4098	Identifier	fptr		2841	1					
+ANR	4099	AssignmentExpression	* fptr = & formatbuf [ 1 ]		2841	2		=			
+ANR	4100	Identifier	fptr		2841	0					
+ANR	4101	UnaryOperationExpression	& formatbuf [ 1 ]		2841	1					
+ANR	4102	UnaryOperator	&		2841	0					
+ANR	4103	ArrayIndexing	formatbuf [ 1 ]		2841	1					
+ANR	4104	Identifier	formatbuf		2841	0					
+ANR	4105	PrimaryExpression	1		2841	1					
+ANR	4106	IdentifierDeclStatement	size_t left = sizeof ( formatbuf ) - strlen ( formatbuf ) ;	177:1:5060:5118	2841	2	True				
+ANR	4107	IdentifierDecl	left = sizeof ( formatbuf ) - strlen ( formatbuf )		2841	0					
+ANR	4108	IdentifierDeclType	size_t		2841	0					
+ANR	4109	Identifier	left		2841	1					
+ANR	4110	AssignmentExpression	left = sizeof ( formatbuf ) - strlen ( formatbuf )		2841	2		=			
+ANR	4111	Identifier	left		2841	0					
+ANR	4112	AdditiveExpression	sizeof ( formatbuf ) - strlen ( formatbuf )		2841	1		-			
+ANR	4113	SizeofExpression	sizeof ( formatbuf )		2841	0					
+ANR	4114	Sizeof	sizeof		2841	0					
+ANR	4115	SizeofOperand	formatbuf		2841	1					
+ANR	4116	CallExpression	strlen ( formatbuf )		2841	1					
+ANR	4117	Callee	strlen		2841	0					
+ANR	4118	Identifier	strlen		2841	0					
+ANR	4119	ArgumentList	formatbuf		2841	1					
+ANR	4120	Argument	formatbuf		2841	0					
+ANR	4121	Identifier	formatbuf		2841	0					
+ANR	4122	IdentifierDeclStatement	int len ;	178:1:5121:5129	2841	3	True				
+ANR	4123	IdentifierDecl	len		2841	0					
+ANR	4124	IdentifierDeclType	int		2841	0					
+ANR	4125	Identifier	len		2841	1					
+ANR	4126	ExpressionStatement	width = - 1	179:1:5132:5144	2841	4	True				
+ANR	4127	AssignmentExpression	width = - 1		2841	0		=			
+ANR	4128	Identifier	width		2841	0					
+ANR	4129	UnaryOperationExpression	- 1		2841	1					
+ANR	4130	UnaryOperator	-		2841	0					
+ANR	4131	PrimaryExpression	1		2841	1					
+ANR	4132	IfStatement	if ( p -> flags & FLAGS_WIDTH )		2841	5					
+ANR	4133	Condition	p -> flags & FLAGS_WIDTH	180:6:5152:5175	2841	0	True				
+ANR	4134	BitAndExpression	p -> flags & FLAGS_WIDTH		2841	0		&			
+ANR	4135	PtrMemberAccess	p -> flags		2841	0					
+ANR	4136	Identifier	p		2841	0					
+ANR	4137	Identifier	flags		2841	1					
+ANR	4138	Identifier	FLAGS_WIDTH		2841	1					
+ANR	4139	ExpressionStatement	width = p -> width	180:33:5179:5198	2841	1	True				
+ANR	4140	AssignmentExpression	width = p -> width		2841	0		=			
+ANR	4141	Identifier	width		2841	0					
+ANR	4142	PtrMemberAccess	p -> width		2841	1					
+ANR	4143	Identifier	p		2841	0					
+ANR	4144	Identifier	width		2841	1					
+ANR	4145	ElseStatement	else		2841	0					
+ANR	4146	IfStatement	if ( p -> flags & FLAGS_WIDTHPARAM )		2841	0					
+ANR	4147	Condition	p -> flags & FLAGS_WIDTHPARAM	181:11:5211:5239	2841	0	True				
+ANR	4148	BitAndExpression	p -> flags & FLAGS_WIDTHPARAM		2841	0		&			
+ANR	4149	PtrMemberAccess	p -> flags		2841	0					
+ANR	4150	Identifier	p		2841	0					
+ANR	4151	Identifier	flags		2841	1					
+ANR	4152	Identifier	FLAGS_WIDTHPARAM		2841	1					
+ANR	4153	ExpressionStatement	width = ( long ) vto [ p -> width ] . data . num . as_signed	181:43:5243:5304	2841	1	True				
+ANR	4154	AssignmentExpression	width = ( long ) vto [ p -> width ] . data . num . as_signed		2841	0		=			
+ANR	4155	Identifier	width		2841	0					
+ANR	4156	CastExpression	( long ) vto [ p -> width ] . data . num . as_signed		2841	1					
+ANR	4157	CastTarget	long		2841	0					
+ANR	4158	MemberAccess	vto [ p -> width ] . data . num . as_signed		2841	1					
+ANR	4159	MemberAccess	vto [ p -> width ] . data . num		2841	0					
+ANR	4160	MemberAccess	vto [ p -> width ] . data		2841	0					
+ANR	4161	ArrayIndexing	vto [ p -> width ]		2841	0					
+ANR	4162	Identifier	vto		2841	0					
+ANR	4163	PtrMemberAccess	p -> width		2841	1					
+ANR	4164	Identifier	p		2841	0					
+ANR	4165	Identifier	width		2841	1					
+ANR	4166	Identifier	data		2841	1					
+ANR	4167	Identifier	num		2841	1					
+ANR	4168	Identifier	as_signed		2841	1					
+ANR	4169	ExpressionStatement	prec = - 1	182:1:5307:5318	2841	6	True				
+ANR	4170	AssignmentExpression	prec = - 1		2841	0		=			
+ANR	4171	Identifier	prec		2841	0					
+ANR	4172	UnaryOperationExpression	- 1		2841	1					
+ANR	4173	UnaryOperator	-		2841	0					
+ANR	4174	PrimaryExpression	1		2841	1					
+ANR	4175	IfStatement	if ( p -> flags & FLAGS_PREC )		2841	7					
+ANR	4176	Condition	p -> flags & FLAGS_PREC	183:6:5326:5348	2841	0	True				
+ANR	4177	BitAndExpression	p -> flags & FLAGS_PREC		2841	0		&			
+ANR	4178	PtrMemberAccess	p -> flags		2841	0					
+ANR	4179	Identifier	p		2841	0					
+ANR	4180	Identifier	flags		2841	1					
+ANR	4181	Identifier	FLAGS_PREC		2841	1					
+ANR	4182	ExpressionStatement	prec = p -> precision	183:32:5352:5374	2841	1	True				
+ANR	4183	AssignmentExpression	prec = p -> precision		2841	0		=			
+ANR	4184	Identifier	prec		2841	0					
+ANR	4185	PtrMemberAccess	p -> precision		2841	1					
+ANR	4186	Identifier	p		2841	0					
+ANR	4187	Identifier	precision		2841	1					
+ANR	4188	ElseStatement	else		2841	0					
+ANR	4189	IfStatement	if ( p -> flags & FLAGS_PRECPARAM )		2841	0					
+ANR	4190	Condition	p -> flags & FLAGS_PRECPARAM	184:11:5387:5414	2841	0	True				
+ANR	4191	BitAndExpression	p -> flags & FLAGS_PRECPARAM		2841	0		&			
+ANR	4192	PtrMemberAccess	p -> flags		2841	0					
+ANR	4193	Identifier	p		2841	0					
+ANR	4194	Identifier	flags		2841	1					
+ANR	4195	Identifier	FLAGS_PRECPARAM		2841	1					
+ANR	4196	ExpressionStatement	prec = ( long ) vto [ p -> precision ] . data . num . as_signed	184:42:5418:5482	2841	1	True				
+ANR	4197	AssignmentExpression	prec = ( long ) vto [ p -> precision ] . data . num . as_signed		2841	0		=			
+ANR	4198	Identifier	prec		2841	0					
+ANR	4199	CastExpression	( long ) vto [ p -> precision ] . data . num . as_signed		2841	1					
+ANR	4200	CastTarget	long		2841	0					
+ANR	4201	MemberAccess	vto [ p -> precision ] . data . num . as_signed		2841	1					
+ANR	4202	MemberAccess	vto [ p -> precision ] . data . num		2841	0					
+ANR	4203	MemberAccess	vto [ p -> precision ] . data		2841	0					
+ANR	4204	ArrayIndexing	vto [ p -> precision ]		2841	0					
+ANR	4205	Identifier	vto		2841	0					
+ANR	4206	PtrMemberAccess	p -> precision		2841	1					
+ANR	4207	Identifier	p		2841	0					
+ANR	4208	Identifier	precision		2841	1					
+ANR	4209	Identifier	data		2841	1					
+ANR	4210	Identifier	num		2841	1					
+ANR	4211	Identifier	as_signed		2841	1					
+ANR	4212	IfStatement	if ( p -> flags & FLAGS_LEFT )		2841	8					
+ANR	4213	Condition	p -> flags & FLAGS_LEFT	185:6:5490:5512	2841	0	True				
+ANR	4214	BitAndExpression	p -> flags & FLAGS_LEFT		2841	0		&			
+ANR	4215	PtrMemberAccess	p -> flags		2841	0					
+ANR	4216	Identifier	p		2841	0					
+ANR	4217	Identifier	flags		2841	1					
+ANR	4218	Identifier	FLAGS_LEFT		2841	1					
+ANR	4219	ExpressionStatement	* fptr ++ = '-'	185:32:5516:5532	2841	1	True				
+ANR	4220	AssignmentExpression	* fptr ++ = '-'		2841	0		=			
+ANR	4221	UnaryOperationExpression	* fptr ++		2841	0					
+ANR	4222	UnaryOperator	*		2841	0					
+ANR	4223	PostIncDecOperationExpression	fptr ++		2841	1					
+ANR	4224	Identifier	fptr		2841	0					
+ANR	4225	IncDec	++		2841	1					
+ANR	4226	PrimaryExpression	'-'		2841	1					
+ANR	4227	IfStatement	if ( p -> flags & FLAGS_SHOWSIGN )		2841	9					
+ANR	4228	Condition	p -> flags & FLAGS_SHOWSIGN	186:6:5540:5566	2841	0	True				
+ANR	4229	BitAndExpression	p -> flags & FLAGS_SHOWSIGN		2841	0		&			
+ANR	4230	PtrMemberAccess	p -> flags		2841	0					
+ANR	4231	Identifier	p		2841	0					
+ANR	4232	Identifier	flags		2841	1					
+ANR	4233	Identifier	FLAGS_SHOWSIGN		2841	1					
+ANR	4234	ExpressionStatement	* fptr ++ = '+'	186:36:5570:5586	2841	1	True				
+ANR	4235	AssignmentExpression	* fptr ++ = '+'		2841	0		=			
+ANR	4236	UnaryOperationExpression	* fptr ++		2841	0					
+ANR	4237	UnaryOperator	*		2841	0					
+ANR	4238	PostIncDecOperationExpression	fptr ++		2841	1					
+ANR	4239	Identifier	fptr		2841	0					
+ANR	4240	IncDec	++		2841	1					
+ANR	4241	PrimaryExpression	'+'		2841	1					
+ANR	4242	IfStatement	if ( p -> flags & FLAGS_SPACE )		2841	10					
+ANR	4243	Condition	p -> flags & FLAGS_SPACE	187:6:5594:5617	2841	0	True				
+ANR	4244	BitAndExpression	p -> flags & FLAGS_SPACE		2841	0		&			
+ANR	4245	PtrMemberAccess	p -> flags		2841	0					
+ANR	4246	Identifier	p		2841	0					
+ANR	4247	Identifier	flags		2841	1					
+ANR	4248	Identifier	FLAGS_SPACE		2841	1					
+ANR	4249	ExpressionStatement	* fptr ++ = ' '	187:33:5621:5637	2841	1	True				
+ANR	4250	AssignmentExpression	* fptr ++ = ' '		2841	0		=			
+ANR	4251	UnaryOperationExpression	* fptr ++		2841	0					
+ANR	4252	UnaryOperator	*		2841	0					
+ANR	4253	PostIncDecOperationExpression	fptr ++		2841	1					
+ANR	4254	Identifier	fptr		2841	0					
+ANR	4255	IncDec	++		2841	1					
+ANR	4256	PrimaryExpression	' '		2841	1					
+ANR	4257	IfStatement	if ( p -> flags & FLAGS_ALT )		2841	11					
+ANR	4258	Condition	p -> flags & FLAGS_ALT	188:6:5645:5666	2841	0	True				
+ANR	4259	BitAndExpression	p -> flags & FLAGS_ALT		2841	0		&			
+ANR	4260	PtrMemberAccess	p -> flags		2841	0					
+ANR	4261	Identifier	p		2841	0					
+ANR	4262	Identifier	flags		2841	1					
+ANR	4263	Identifier	FLAGS_ALT		2841	1					
+ANR	4264	ExpressionStatement	* fptr ++ = '#'	188:31:5670:5686	2841	1	True				
+ANR	4265	AssignmentExpression	* fptr ++ = '#'		2841	0		=			
+ANR	4266	UnaryOperationExpression	* fptr ++		2841	0					
+ANR	4267	UnaryOperator	*		2841	0					
+ANR	4268	PostIncDecOperationExpression	fptr ++		2841	1					
+ANR	4269	Identifier	fptr		2841	0					
+ANR	4270	IncDec	++		2841	1					
+ANR	4271	PrimaryExpression	'#'		2841	1					
+ANR	4272	ExpressionStatement	* fptr = 0	189:1:5689:5700	2841	12	True				
+ANR	4273	AssignmentExpression	* fptr = 0		2841	0		=			
+ANR	4274	UnaryOperationExpression	* fptr		2841	0					
+ANR	4275	UnaryOperator	*		2841	0					
+ANR	4276	Identifier	fptr		2841	1					
+ANR	4277	PrimaryExpression	0		2841	1					
+ANR	4278	IfStatement	if ( width >= 0 )		2841	13					
+ANR	4279	Condition	width >= 0	190:6:5708:5717	2841	0	True				
+ANR	4280	RelationalExpression	width >= 0		2841	0		>=			
+ANR	4281	Identifier	width		2841	0					
+ANR	4282	PrimaryExpression	0		2841	1					
+ANR	4283	CompoundStatement		190:19:5601:5601	2841	1					
+ANR	4284	ExpressionStatement	"len = curl_msnprintf ( fptr , left , ""%ld"" , width )"	191:1:5724:5777	2841	0	True				
+ANR	4285	AssignmentExpression	"len = curl_msnprintf ( fptr , left , ""%ld"" , width )"		2841	0		=			
+ANR	4286	Identifier	len		2841	0					
+ANR	4287	CallExpression	"curl_msnprintf ( fptr , left , ""%ld"" , width )"		2841	1					
+ANR	4288	Callee	curl_msnprintf		2841	0					
+ANR	4289	Identifier	curl_msnprintf		2841	0					
+ANR	4290	ArgumentList	fptr		2841	1					
+ANR	4291	Argument	fptr		2841	0					
+ANR	4292	Identifier	fptr		2841	0					
+ANR	4293	Argument	left		2841	1					
+ANR	4294	Identifier	left		2841	0					
+ANR	4295	Argument	"""%ld"""		2841	2					
+ANR	4296	PrimaryExpression	"""%ld"""		2841	0					
+ANR	4297	Argument	width		2841	3					
+ANR	4298	Identifier	width		2841	0					
+ANR	4299	ExpressionStatement	fptr += len	192:1:5780:5792	2841	1	True				
+ANR	4300	AssignmentExpression	fptr += len		2841	0		+=			
+ANR	4301	Identifier	fptr		2841	0					
+ANR	4302	Identifier	len		2841	1					
+ANR	4303	ExpressionStatement	left -= len	193:1:5795:5807	2841	2	True				
+ANR	4304	AssignmentExpression	left -= len		2841	0		-=			
+ANR	4305	Identifier	left		2841	0					
+ANR	4306	Identifier	len		2841	1					
+ANR	4307	IfStatement	if ( prec >= 0 )		2841	14					
+ANR	4308	Condition	prec >= 0	195:6:5818:5826	2841	0	True				
+ANR	4309	RelationalExpression	prec >= 0		2841	0		>=			
+ANR	4310	Identifier	prec		2841	0					
+ANR	4311	PrimaryExpression	0		2841	1					
+ANR	4312	CompoundStatement		195:18:5710:5710	2841	1					
+ANR	4313	ExpressionStatement	"len = curl_msnprintf ( fptr , left , "".%ld"" , prec )"	196:1:5833:5886	2841	0	True				
+ANR	4314	AssignmentExpression	"len = curl_msnprintf ( fptr , left , "".%ld"" , prec )"		2841	0		=			
+ANR	4315	Identifier	len		2841	0					
+ANR	4316	CallExpression	"curl_msnprintf ( fptr , left , "".%ld"" , prec )"		2841	1					
+ANR	4317	Callee	curl_msnprintf		2841	0					
+ANR	4318	Identifier	curl_msnprintf		2841	0					
+ANR	4319	ArgumentList	fptr		2841	1					
+ANR	4320	Argument	fptr		2841	0					
+ANR	4321	Identifier	fptr		2841	0					
+ANR	4322	Argument	left		2841	1					
+ANR	4323	Identifier	left		2841	0					
+ANR	4324	Argument	""".%ld"""		2841	2					
+ANR	4325	PrimaryExpression	""".%ld"""		2841	0					
+ANR	4326	Argument	prec		2841	3					
+ANR	4327	Identifier	prec		2841	0					
+ANR	4328	ExpressionStatement	fptr += len	197:1:5889:5901	2841	1	True				
+ANR	4329	AssignmentExpression	fptr += len		2841	0		+=			
+ANR	4330	Identifier	fptr		2841	0					
+ANR	4331	Identifier	len		2841	1					
+ANR	4332	IfStatement	if ( p -> flags & FLAGS_LONG )		2841	15					
+ANR	4333	Condition	p -> flags & FLAGS_LONG	199:6:5912:5934	2841	0	True				
+ANR	4334	BitAndExpression	p -> flags & FLAGS_LONG		2841	0		&			
+ANR	4335	PtrMemberAccess	p -> flags		2841	0					
+ANR	4336	Identifier	p		2841	0					
+ANR	4337	Identifier	flags		2841	1					
+ANR	4338	Identifier	FLAGS_LONG		2841	1					
+ANR	4339	ExpressionStatement	* fptr ++ = 'l'	199:32:5938:5954	2841	1	True				
+ANR	4340	AssignmentExpression	* fptr ++ = 'l'		2841	0		=			
+ANR	4341	UnaryOperationExpression	* fptr ++		2841	0					
+ANR	4342	UnaryOperator	*		2841	0					
+ANR	4343	PostIncDecOperationExpression	fptr ++		2841	1					
+ANR	4344	Identifier	fptr		2841	0					
+ANR	4345	IncDec	++		2841	1					
+ANR	4346	PrimaryExpression	'l'		2841	1					
+ANR	4347	IfStatement	if ( p -> flags & FLAGS_FLOATE )		2841	16					
+ANR	4348	Condition	p -> flags & FLAGS_FLOATE	200:6:5962:5986	2841	0	True				
+ANR	4349	BitAndExpression	p -> flags & FLAGS_FLOATE		2841	0		&			
+ANR	4350	PtrMemberAccess	p -> flags		2841	0					
+ANR	4351	Identifier	p		2841	0					
+ANR	4352	Identifier	flags		2841	1					
+ANR	4353	Identifier	FLAGS_FLOATE		2841	1					
+ANR	4354	ExpressionStatement	* fptr ++ = ( char ) ( ( p -> flags & FLAGS_UPPER ) ? 'E' : 'e' )	200:34:5990:6056	2841	1	True				
+ANR	4355	AssignmentExpression	* fptr ++ = ( char ) ( ( p -> flags & FLAGS_UPPER ) ? 'E' : 'e' )		2841	0		=			
+ANR	4356	UnaryOperationExpression	* fptr ++		2841	0					
+ANR	4357	UnaryOperator	*		2841	0					
+ANR	4358	PostIncDecOperationExpression	fptr ++		2841	1					
+ANR	4359	Identifier	fptr		2841	0					
+ANR	4360	IncDec	++		2841	1					
+ANR	4361	CastExpression	( char ) ( ( p -> flags & FLAGS_UPPER ) ? 'E' : 'e' )		2841	1					
+ANR	4362	CastTarget	char		2841	0					
+ANR	4363	ConditionalExpression	( p -> flags & FLAGS_UPPER ) ? 'E' : 'e'		2841	1					
+ANR	4364	Condition	p -> flags & FLAGS_UPPER		2841	0					
+ANR	4365	BitAndExpression	p -> flags & FLAGS_UPPER		2841	0		&			
+ANR	4366	PtrMemberAccess	p -> flags		2841	0					
+ANR	4367	Identifier	p		2841	0					
+ANR	4368	Identifier	flags		2841	1					
+ANR	4369	Identifier	FLAGS_UPPER		2841	1					
+ANR	4370	PrimaryExpression	'E'		2841	1					
+ANR	4371	PrimaryExpression	'e'		2841	2					
+ANR	4372	ElseStatement	else		2841	0					
+ANR	4373	IfStatement	if ( p -> flags & FLAGS_FLOATG )		2841	0					
+ANR	4374	Condition	p -> flags & FLAGS_FLOATG	201:11:6069:6093	2841	0	True				
+ANR	4375	BitAndExpression	p -> flags & FLAGS_FLOATG		2841	0		&			
+ANR	4376	PtrMemberAccess	p -> flags		2841	0					
+ANR	4377	Identifier	p		2841	0					
+ANR	4378	Identifier	flags		2841	1					
+ANR	4379	Identifier	FLAGS_FLOATG		2841	1					
+ANR	4380	ExpressionStatement	* fptr ++ = ( char ) ( ( p -> flags & FLAGS_UPPER ) ? 'G' : 'g' )	201:39:6097:6163	2841	1	True				
+ANR	4381	AssignmentExpression	* fptr ++ = ( char ) ( ( p -> flags & FLAGS_UPPER ) ? 'G' : 'g' )		2841	0		=			
+ANR	4382	UnaryOperationExpression	* fptr ++		2841	0					
+ANR	4383	UnaryOperator	*		2841	0					
+ANR	4384	PostIncDecOperationExpression	fptr ++		2841	1					
+ANR	4385	Identifier	fptr		2841	0					
+ANR	4386	IncDec	++		2841	1					
+ANR	4387	CastExpression	( char ) ( ( p -> flags & FLAGS_UPPER ) ? 'G' : 'g' )		2841	1					
+ANR	4388	CastTarget	char		2841	0					
+ANR	4389	ConditionalExpression	( p -> flags & FLAGS_UPPER ) ? 'G' : 'g'		2841	1					
+ANR	4390	Condition	p -> flags & FLAGS_UPPER		2841	0					
+ANR	4391	BitAndExpression	p -> flags & FLAGS_UPPER		2841	0		&			
+ANR	4392	PtrMemberAccess	p -> flags		2841	0					
+ANR	4393	Identifier	p		2841	0					
+ANR	4394	Identifier	flags		2841	1					
+ANR	4395	Identifier	FLAGS_UPPER		2841	1					
+ANR	4396	PrimaryExpression	'G'		2841	1					
+ANR	4397	PrimaryExpression	'g'		2841	2					
+ANR	4398	ElseStatement	else		2841	0					
+ANR	4399	ExpressionStatement	* fptr ++ = 'f'	202:6:6171:6187	2841	0	True				
+ANR	4400	AssignmentExpression	* fptr ++ = 'f'		2841	0		=			
+ANR	4401	UnaryOperationExpression	* fptr ++		2841	0					
+ANR	4402	UnaryOperator	*		2841	0					
+ANR	4403	PostIncDecOperationExpression	fptr ++		2841	1					
+ANR	4404	Identifier	fptr		2841	0					
+ANR	4405	IncDec	++		2841	1					
+ANR	4406	PrimaryExpression	'f'		2841	1					
+ANR	4407	ExpressionStatement	* fptr = 0	203:1:6190:6201	2841	17	True				
+ANR	4408	AssignmentExpression	* fptr = 0		2841	0		=			
+ANR	4409	UnaryOperationExpression	* fptr		2841	0					
+ANR	4410	UnaryOperator	*		2841	0					
+ANR	4411	Identifier	fptr		2841	1					
+ANR	4412	PrimaryExpression	0		2841	1					
+ANR	4413	ExpressionStatement	"( sprintf ) ( work , formatbuf , p -> data . dnum )"	204:1:6204:6256	2841	18	True				
+ANR	4414	CastExpression	"( sprintf ) ( work , formatbuf , p -> data . dnum )"		2841	0					
+ANR	4415	CastTarget	sprintf		2841	0					
+ANR	4416	Expression	"work , formatbuf , p -> data . dnum"		2841	1					
+ANR	4417	Identifier	work		2841	0					
+ANR	4418	Expression	"formatbuf , p -> data . dnum"		2841	1					
+ANR	4419	Identifier	formatbuf		2841	0					
+ANR	4420	MemberAccess	p -> data . dnum		2841	1					
+ANR	4421	PtrMemberAccess	p -> data		2841	0					
+ANR	4422	Identifier	p		2841	0					
+ANR	4423	Identifier	data		2841	1					
+ANR	4424	Identifier	dnum		2841	1					
+ANR	4425	ForStatement	for ( fptr = work ; * fptr ; fptr ++ )		2841	19					
+ANR	4426	ForInit	fptr = work ;	205:7:6265:6277	2841	0	True				
+ANR	4427	AssignmentExpression	fptr = work		2841	0		=			
+ANR	4428	Identifier	fptr		2841	0					
+ANR	4429	Identifier	work		2841	1					
+ANR	4430	Condition	* fptr	206:1:6280:6285	2841	1	True				
+ANR	4431	UnaryOperationExpression	* fptr		2841	0					
+ANR	4432	UnaryOperator	*		2841	0					
+ANR	4433	Identifier	fptr		2841	1					
+ANR	4434	PostIncDecOperationExpression	fptr ++	207:1:6290:6296	2841	2	True				
+ANR	4435	Identifier	fptr		2841	0					
+ANR	4436	IncDec	++		2841	1					
+ANR	4437	ExpressionStatement	OUTCHAR ( * fptr )	207:11:6300:6319	2841	3	True				
+ANR	4438	CallExpression	OUTCHAR ( * fptr )		2841	0					
+ANR	4439	Callee	OUTCHAR		2841	0					
+ANR	4440	Identifier	OUTCHAR		2841	0					
+ANR	4441	ArgumentList	* fptr		2841	1					
+ANR	4442	Argument	* fptr		2841	0					
+ANR	4443	UnaryOperationExpression	* fptr		2841	0					
+ANR	4444	UnaryOperator	*		2841	0					
+ANR	4445	Identifier	fptr		2841	1					
+ANR	4446	BreakStatement	break ;	209:1:6325:6331	2841	35	True				
+ANR	4447	Label	case FORMAT_INTPTR :	210:1:6334:6353	2841	36	True				
+ANR	4448	Identifier	FORMAT_INTPTR		2841	0					
+ANR	4449	Statement	ifdef	210:24:6357:6361	2841	37	True				
+ANR	4450	Statement	HAVE_LONG_LONG_TYPE	210:30:6363:6381	2841	38	True				
+ANR	4451	IfStatement	if ( p -> flags & FLAGS_LONGLONG )		2841	39					
+ANR	4452	Condition	p -> flags & FLAGS_LONGLONG	210:55:6388:6414	2841	0	True				
+ANR	4453	BitAndExpression	p -> flags & FLAGS_LONGLONG		2841	0		&			
+ANR	4454	PtrMemberAccess	p -> flags		2841	0					
+ANR	4455	Identifier	p		2841	0					
+ANR	4456	Identifier	flags		2841	1					
+ANR	4457	Identifier	FLAGS_LONGLONG		2841	1					
+ANR	4458	ExpressionStatement	* ( LONG_LONG_TYPE * ) p -> data . ptr = ( LONG_LONG_TYPE ) done	210:85:6418:6483	2841	1	True				
+ANR	4459	AssignmentExpression	* ( LONG_LONG_TYPE * ) p -> data . ptr = ( LONG_LONG_TYPE ) done		2841	0		=			
+ANR	4460	UnaryOperationExpression	* ( LONG_LONG_TYPE * ) p -> data . ptr		2841	0					
+ANR	4461	UnaryOperator	*		2841	0					
+ANR	4462	CastExpression	( LONG_LONG_TYPE * ) p -> data . ptr		2841	1					
+ANR	4463	CastTarget	LONG_LONG_TYPE *		2841	0					
+ANR	4464	MemberAccess	p -> data . ptr		2841	1					
+ANR	4465	PtrMemberAccess	p -> data		2841	0					
+ANR	4466	Identifier	p		2841	0					
+ANR	4467	Identifier	data		2841	1					
+ANR	4468	Identifier	ptr		2841	1					
+ANR	4469	CastExpression	( LONG_LONG_TYPE ) done		2841	1					
+ANR	4470	CastTarget	LONG_LONG_TYPE		2841	0					
+ANR	4471	Identifier	done		2841	1					
+ANR	4472	ElseStatement	else		2841	0					
+ANR	4473	Statement	endif	211:8:6493:6497	2841	0	True				
+ANR	4474	IfStatement	if ( p -> flags & FLAGS_LONG )		2841	40					
+ANR	4475	Condition	p -> flags & FLAGS_LONG	211:19:6504:6526	2841	0	True				
+ANR	4476	BitAndExpression	p -> flags & FLAGS_LONG		2841	0		&			
+ANR	4477	PtrMemberAccess	p -> flags		2841	0					
+ANR	4478	Identifier	p		2841	0					
+ANR	4479	Identifier	flags		2841	1					
+ANR	4480	Identifier	FLAGS_LONG		2841	1					
+ANR	4481	ExpressionStatement	* ( long * ) p -> data . ptr = ( long ) done	211:45:6530:6575	2841	1	True				
+ANR	4482	AssignmentExpression	* ( long * ) p -> data . ptr = ( long ) done		2841	0		=			
+ANR	4483	UnaryOperationExpression	* ( long * ) p -> data . ptr		2841	0					
+ANR	4484	UnaryOperator	*		2841	0					
+ANR	4485	CastExpression	( long * ) p -> data . ptr		2841	1					
+ANR	4486	CastTarget	long *		2841	0					
+ANR	4487	MemberAccess	p -> data . ptr		2841	1					
+ANR	4488	PtrMemberAccess	p -> data		2841	0					
+ANR	4489	Identifier	p		2841	0					
+ANR	4490	Identifier	data		2841	1					
+ANR	4491	Identifier	ptr		2841	1					
+ANR	4492	CastExpression	( long ) done		2841	1					
+ANR	4493	CastTarget	long		2841	0					
+ANR	4494	Identifier	done		2841	1					
+ANR	4495	ElseStatement	else		2841	0					
+ANR	4496	IfStatement	if ( ! ( p -> flags & FLAGS_SHORT ) )		2841	0					
+ANR	4497	Condition	! ( p -> flags & FLAGS_SHORT )	212:11:6588:6617	2841	0	True				
+ANR	4498	UnaryOperationExpression	! ( p -> flags & FLAGS_SHORT )		2841	0					
+ANR	4499	UnaryOperator	!		2841	0					
+ANR	4500	BitAndExpression	p -> flags & FLAGS_SHORT		2841	1		&			
+ANR	4501	PtrMemberAccess	p -> flags		2841	0					
+ANR	4502	Identifier	p		2841	0					
+ANR	4503	Identifier	flags		2841	1					
+ANR	4504	Identifier	FLAGS_SHORT		2841	1					
+ANR	4505	ExpressionStatement	* ( int * ) p -> data . ptr = ( int ) done	212:44:6621:6664	2841	1	True				
+ANR	4506	AssignmentExpression	* ( int * ) p -> data . ptr = ( int ) done		2841	0		=			
+ANR	4507	UnaryOperationExpression	* ( int * ) p -> data . ptr		2841	0					
+ANR	4508	UnaryOperator	*		2841	0					
+ANR	4509	CastExpression	( int * ) p -> data . ptr		2841	1					
+ANR	4510	CastTarget	int *		2841	0					
+ANR	4511	MemberAccess	p -> data . ptr		2841	1					
+ANR	4512	PtrMemberAccess	p -> data		2841	0					
+ANR	4513	Identifier	p		2841	0					
+ANR	4514	Identifier	data		2841	1					
+ANR	4515	Identifier	ptr		2841	1					
+ANR	4516	CastExpression	( int ) done		2841	1					
+ANR	4517	CastTarget	int		2841	0					
+ANR	4518	Identifier	done		2841	1					
+ANR	4519	ElseStatement	else		2841	0					
+ANR	4520	ExpressionStatement	* ( short * ) p -> data . ptr = ( short ) done	213:6:6672:6719	2841	0	True				
+ANR	4521	AssignmentExpression	* ( short * ) p -> data . ptr = ( short ) done		2841	0		=			
+ANR	4522	UnaryOperationExpression	* ( short * ) p -> data . ptr		2841	0					
+ANR	4523	UnaryOperator	*		2841	0					
+ANR	4524	CastExpression	( short * ) p -> data . ptr		2841	1					
+ANR	4525	CastTarget	short *		2841	0					
+ANR	4526	MemberAccess	p -> data . ptr		2841	1					
+ANR	4527	PtrMemberAccess	p -> data		2841	0					
+ANR	4528	Identifier	p		2841	0					
+ANR	4529	Identifier	data		2841	1					
+ANR	4530	Identifier	ptr		2841	1					
+ANR	4531	CastExpression	( short ) done		2841	1					
+ANR	4532	CastTarget	short		2841	0					
+ANR	4533	Identifier	done		2841	1					
+ANR	4534	BreakStatement	break ;	214:1:6722:6728	2841	41	True				
+ANR	4535	Label	default :	215:1:6731:6739	2841	42	True				
+ANR	4536	Identifier	default		2841	0					
+ANR	4537	BreakStatement	break ;	215:11:6741:6747	2841	43	True				
+ANR	4538	ExpressionStatement	f = * end ++	217:1:6753:6766	2841	19	True				
+ANR	4539	AssignmentExpression	f = * end ++		2841	0		=			
+ANR	4540	Identifier	f		2841	0					
+ANR	4541	UnaryOperationExpression	* end ++		2841	1					
+ANR	4542	UnaryOperator	*		2841	0					
+ANR	4543	PostIncDecOperationExpression	end ++		2841	1					
+ANR	4544	Identifier	end		2841	0					
+ANR	4545	IncDec	++		2841	1					
+ANR	4546	ReturnStatement	return done ;	219:1:6772:6784	2841	15	True				
+ANR	4547	Identifier	done		2841	0					
+ANR	4548	ReturnType	static int		2841	1					
+ANR	4549	Identifier	dprintf_formatf		2841	2					
+ANR	4550	ParameterList	"void * data , int ( * stream ) ( int , FILE * ) , const char * format , va_list ap_save"		2841	3					
+ANR	4551	Parameter	void * data	1:29:29:39	2841	0	True				
+ANR	4552	ParameterType	void *		2841	0					
+ANR	4553	Identifier	data		2841	1					
+ANR	4554	Parameter	"int ( * stream ) ( int , FILE * )"	1:43:43:75	2841	1	True				
+ANR	4555	ParameterType	"(( int , FILE * ) int) *"		2841	0					
+ANR	4556	Identifier	stream		2841	1					
+ANR	4557	Parameter	const char * format	1:79:79:97	2841	2	True				
+ANR	4558	ParameterType	const char *		2841	0					
+ANR	4559	Identifier	format		2841	1					
+ANR	4560	Parameter	va_list ap_save	1:101:101:115	2841	3	True				
+ANR	4561	ParameterType	va_list		2841	0					
+ANR	4562	Identifier	ap_save		2841	1					
+ANR	4563	CFGEntryNode	ENTRY		2841		True				
+ANR	4564	CFGExitNode	EXIT		2841		True				
+ANR	4565	Symbol	* w		2841						
+ANR	4566	Symbol	FLAGS_WIDTHPARAM		2841						
+ANR	4567	Symbol	endpos		2841						
+ANR	4568	Symbol	* fptr ++		2841						
+ANR	4569	Symbol	prec		2841						
+ANR	4570	Symbol	len		2841						
+ANR	4571	Symbol	FLAGS_UPPER		2841						
+ANR	4572	Symbol	LONG_MAX		2841						
+ANR	4573	Symbol	p -> width		2841						
+ANR	4574	Symbol	FLAGS_WIDTH		2841						
+ANR	4575	Symbol	p -> data . str		2841						
+ANR	4576	Symbol	* vto		2841						
+ANR	4577	Symbol	FLAGS_SHORT		2841						
+ANR	4578	Symbol	p -> data . num . as_signed		2841						
+ANR	4579	Symbol	work		2841						
+ANR	4580	Symbol	* ( long * ) p -> data . ptr		2841						
+ANR	4581	Symbol	str		2841						
+ANR	4582	Symbol	FLAGS_FLOATE		2841						
+ANR	4583	Symbol	vto [ p -> precision ] . data . num		2841						
+ANR	4584	Symbol	FLAGS_FLOATG		2841						
+ANR	4585	Symbol	* ( short * ) p -> data . ptr		2841						
+ANR	4586	Symbol	left		2841						
+ANR	4587	Symbol	* end ++		2841						
+ANR	4588	Symbol	FLAGS_OCTAL		2841						
+ANR	4589	Symbol	FLAGS_UNSIGNED		2841						
+ANR	4590	Symbol	FLAGS_LONG		2841						
+ANR	4591	Symbol	* ( int * ) p -> data . ptr		2841						
+ANR	4592	Symbol	vto [ p -> precision ] . data . num . as_signed		2841						
+ANR	4593	Symbol	p -> data		2841						
+ANR	4594	Symbol	ap_save		2841						
+ANR	4595	Symbol	FLAGS_PRECPARAM		2841						
+ANR	4596	Symbol	FLAGS_CHAR		2841						
+ANR	4597	Symbol	p -> precision		2841						
+ANR	4598	Symbol	stream		2841						
+ANR	4599	Symbol	is_neg		2841						
+ANR	4600	Symbol	p -> data . ptr		2841						
+ANR	4601	Symbol	* * p		2841						
+ANR	4602	Symbol	FLAGS_ALT		2841						
+ANR	4603	Symbol	* str		2841						
+ANR	4604	Symbol	* ++ f		2841						
+ANR	4605	Symbol	* fptr		2841						
+ANR	4606	Symbol	f		2841						
+ANR	4607	Symbol	vto		2841						
+ANR	4608	Symbol	p		2841						
+ANR	4609	Symbol	lower_digits		2841						
+ANR	4610	Symbol	w		2841						
+ANR	4611	Symbol	width		2841						
+ANR	4612	Symbol	p -> flags		2841						
+ANR	4613	Symbol	digits		2841						
+ANR	4614	Symbol	signed_num		2841						
+ANR	4615	Symbol	data		2841						
+ANR	4616	Symbol	FLAGS_LONGLONG		2841						
+ANR	4617	Symbol	num		2841						
+ANR	4618	Symbol	dprintf_DollarString		2841						
+ANR	4619	Symbol	upper_digits		2841						
+ANR	4620	Symbol	strlen		2841						
+ANR	4621	Symbol	vto [ p -> precision ] . data		2841						
+ANR	4622	Symbol	* p -> data		2841						
+ANR	4623	Symbol	strnil		2841						
+ANR	4624	Symbol	FLAGS_PREC		2841						
+ANR	4625	Symbol	* base		2841						
+ANR	4626	Symbol	NULL		2841						
+ANR	4627	Symbol	* p -> data . ptr		2841						
+ANR	4628	Symbol	dprintf_Pass1		2841						
+ANR	4629	Symbol	* point		2841						
+ANR	4630	Symbol	format		2841						
+ANR	4631	Symbol	FLAGS_SPACE		2841						
+ANR	4632	Symbol	done		2841						
+ANR	4633	Symbol	param_num		2841						
+ANR	4634	Symbol	FLAGS_LEFT		2841						
+ANR	4635	Symbol	null		2841						
+ANR	4636	Symbol	is_alt		2841						
+ANR	4637	Symbol	* w --		2841						
+ANR	4638	Symbol	* p -> precision		2841						
+ANR	4639	Symbol	workend		2841						
+ANR	4640	Symbol	curl_msnprintf		2841						
+ANR	4641	Symbol	FLAGS_PAD_NIL		2841						
+ANR	4642	Symbol	FLAGS_HEX		2841						
+ANR	4643	Symbol	* digits		2841						
+ANR	4644	Symbol	p -> type		2841						
+ANR	4645	Symbol	point		2841						
+ANR	4646	Symbol	p -> data . num		2841						
+ANR	4647	Symbol	param		2841						
+ANR	4648	Symbol	FLAGS_SHOWSIGN		2841						
+ANR	4649	Symbol	end		2841						
+ANR	4650	Symbol	vto [ p -> width ] . data . num		2841						
+ANR	4651	Symbol	p -> data . num . as_unsigned		2841						
+ANR	4652	Symbol	* p -> width		2841						
+ANR	4653	Symbol	formatbuf		2841						
+ANR	4654	Symbol	* str ++		2841						
+ANR	4655	Symbol	* ( LONG_LONG_TYPE * ) p -> data . ptr		2841						
+ANR	4656	Symbol	& f		2841						
+ANR	4657	Symbol	vto [ p -> width ] . data . num . as_signed		2841						
+ANR	4658	Symbol	ptr		2841						
+ANR	4659	Symbol	* f		2841						
+ANR	4660	Symbol	vto [ p -> width ] . data		2841						
+ANR	4661	Symbol	* num		2841						
+ANR	4662	Symbol	fptr		2841						
+ANR	4663	Symbol	* p		2841						
+ANR	4664	Symbol	base		2841						

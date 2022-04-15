@@ -1,0 +1,85 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	3178	File	tmp/3_1.c								
+ANR	3179	DeclStmt									
+ANR	3180	Decl							uint32_t	uint32_t	NINSTANCES
+ANR	3181	DeclStmt									
+ANR	3182	Decl							uint32_t	uint32_t	ID
+ANR	3183	DeclStmt									
+ANR	3184	Decl							int32_t	int32_t	STRIPT
+ANR	3185	DeclStmt									
+ANR	3186	Decl							int32_t	int32_t	FIRSTS
+ANR	3187	DeclStmt									
+ANR	3188	Decl							int32_t	int32_t	DT
+ANR	3189	DeclStmt									
+ANR	3190	Decl							int32_t	int32_t	DFS
+ANR	3191	DeclStmt									
+ANR	3192	Decl							int32_t	int32_t	IDS
+ANR	3193	DeclStmt									
+ANR	3194	Decl							int32_t	int32_t	CURS
+ANR	3195	DeclStmt									
+ANR	3196	Decl							int32_t	int32_t	CURT
+ANR	3197	DeclStmt									
+ANR	3198	Decl							int	int	S
+ANR	3199	Decl							int	int	T
+ANR	3200	DeclStmt									
+ANR	3201	Decl							int	int	x
+ANR	3202	Decl							int	int	y
+ANR	3203	DeclStmt									
+ANR	3204	Decl							bool	bool	first_symbol
+ANR	3205	DeclStmt									
+ANR	3206	Decl							uint32_t	uint32_t	index
+ANR	3207	Decl							uint32_t	uint32_t	SBNUMSYMS
+ANR	3208	DeclStmt									
+ANR	3209	Decl							Jbig2Image	Jbig2Image *	IB
+ANR	3210	DeclStmt									
+ANR	3211	Decl							Jbig2HuffmanState	Jbig2HuffmanState *	hs
+ANR	3212	DeclStmt									
+ANR	3213	Decl							Jbig2HuffmanTable	Jbig2HuffmanTable *	SBSYMCODES
+ANR	3214	DeclStmt									
+ANR	3215	Decl							int	int	code
+ANR	3216	DeclStmt									
+ANR	3217	Decl							int	int	RI
+ANR	3218	DeclStmt									
+ANR	3219	Decl							Jbig2HuffmanTable	Jbig2HuffmanTable *	runcodes
+ANR	3220	DeclStmt									
+ANR	3221	Decl							Jbig2HuffmanParams	Jbig2HuffmanParams	runcodeparams
+ANR	3222	DeclStmt									
+ANR	3223	Decl							Jbig2HuffmanLine	Jbig2HuffmanLine [ 35 ]	runcodelengths
+ANR	3224	DeclStmt									
+ANR	3225	Decl							Jbig2HuffmanLine	Jbig2HuffmanLine *	symcodelengths
+ANR	3226	DeclStmt									
+ANR	3227	Decl							Jbig2HuffmanParams	Jbig2HuffmanParams	symcodeparams
+ANR	3228	DeclStmt									
+ANR	3229	Decl							int	int	err
+ANR	3230	Decl							int	int	len
+ANR	3231	Decl							int	int	range
+ANR	3232	Decl							int	int	r
+ANR	3233	DeclStmt									
+ANR	3234	Decl							uint32_t	uint32_t	id
+ANR	3235	DeclStmt									
+ANR	3236	Decl							Jbig2RefinementRegionParams	Jbig2RefinementRegionParams	rparams
+ANR	3237	DeclStmt									
+ANR	3238	Decl							Jbig2Image	Jbig2Image *	IBO
+ANR	3239	DeclStmt									
+ANR	3240	Decl							int32_t	int32_t	RDW
+ANR	3241	Decl							int32_t	int32_t	RDH
+ANR	3242	Decl							int32_t	int32_t	RDX
+ANR	3243	Decl							int32_t	int32_t	RDY
+ANR	3244	DeclStmt									
+ANR	3245	Decl							Jbig2Image	Jbig2Image *	refimage
+ANR	3246	DeclStmt									
+ANR	3247	Decl							int	int	BMSIZE
+ANR	3248	DeclStmt									
+ANR	3249	Decl							int	int	code1
+ANR	3250	DeclStmt									
+ANR	3251	Decl							int	int	code2
+ANR	3252	DeclStmt									
+ANR	3253	Decl							int	int	code3
+ANR	3254	DeclStmt									
+ANR	3255	Decl							int	int	code4
+ANR	3256	DeclStmt									
+ANR	3257	Decl							int	int	code5
+ANR	3258	DeclStmt									
+ANR	3259	Decl							ifdef JBIG2_DEBUG	ifdef JBIG2_DEBUG	jbig2_error
+ANR	3260	DeclStmt									
+ANR	3261	Decl							endif	endif	code

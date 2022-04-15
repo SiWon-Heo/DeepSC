@@ -1,0 +1,4 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	233	File	tmp/10_0.c								
+ANR	234	DeclStmt									
+ANR	235	Decl							extern rtype gnu_dev_ name proto __THROW	extern rtype gnu_dev_ name proto __THROW	__attribute_const__

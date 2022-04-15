@@ -1,0 +1,79 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	2249	File	tmp/16_0.c								
+ANR	2250	Function	dprintf_DollarString	1:0:0:268							
+ANR	2251	FunctionDef	"dprintf_DollarString (char * input , char * * end)"		2250	0					
+ANR	2252	CompoundStatement		1:65:65:268	2250	0					
+ANR	2253	IdentifierDeclStatement	int number = 0 ;	2:1:68:83	2250	0	True				
+ANR	2254	IdentifierDecl	number = 0		2250	0					
+ANR	2255	IdentifierDeclType	int		2250	0					
+ANR	2256	Identifier	number		2250	1					
+ANR	2257	AssignmentExpression	number = 0		2250	2		=			
+ANR	2258	Identifier	number		2250	0					
+ANR	2259	PrimaryExpression	0		2250	1					
+ANR	2260	WhileStatement	while ( ISDIGIT ( * input ) )		2250	1					
+ANR	2261	Condition	ISDIGIT ( * input )	3:9:94:112	2250	0	True				
+ANR	2262	CallExpression	ISDIGIT ( * input )		2250	0					
+ANR	2263	Callee	ISDIGIT		2250	0					
+ANR	2264	Identifier	ISDIGIT		2250	0					
+ANR	2265	ArgumentList	* input		2250	1					
+ANR	2266	Argument	* input		2250	0					
+ANR	2267	UnaryOperationExpression	* input		2250	0					
+ANR	2268	UnaryOperator	*		2250	0					
+ANR	2269	Identifier	input		2250	1					
+ANR	2270	CompoundStatement		3:31:50:50	2250	1					
+ANR	2271	ExpressionStatement	number *= 10	4:1:119:132	2250	0	True				
+ANR	2272	AssignmentExpression	number *= 10		2250	0		*=			
+ANR	2273	Identifier	number		2250	0					
+ANR	2274	PrimaryExpression	10		2250	1					
+ANR	2275	ExpressionStatement	number += * input - '0'	5:1:135:159	2250	1	True				
+ANR	2276	AssignmentExpression	number += * input - '0'		2250	0		+=			
+ANR	2277	Identifier	number		2250	0					
+ANR	2278	AdditiveExpression	* input - '0'		2250	1		-			
+ANR	2279	UnaryOperationExpression	* input		2250	0					
+ANR	2280	UnaryOperator	*		2250	0					
+ANR	2281	Identifier	input		2250	1					
+ANR	2282	PrimaryExpression	'0'		2250	1					
+ANR	2283	ExpressionStatement	input ++	6:1:162:171	2250	2	True				
+ANR	2284	PostIncDecOperationExpression	input ++		2250	0					
+ANR	2285	Identifier	input		2250	0					
+ANR	2286	IncDec	++		2250	1					
+ANR	2287	IfStatement	if ( number && ( '$' == * input ++ ) )		2250	2					
+ANR	2288	Condition	number && ( '$' == * input ++ )	8:6:182:212	2250	0	True				
+ANR	2289	AndExpression	number && ( '$' == * input ++ )		2250	0		&&			
+ANR	2290	Identifier	number		2250	0					
+ANR	2291	EqualityExpression	'$' == * input ++		2250	1		==			
+ANR	2292	PrimaryExpression	'$'		2250	0					
+ANR	2293	UnaryOperationExpression	* input ++		2250	1					
+ANR	2294	UnaryOperator	*		2250	0					
+ANR	2295	PostIncDecOperationExpression	input ++		2250	1					
+ANR	2296	Identifier	input		2250	0					
+ANR	2297	IncDec	++		2250	1					
+ANR	2298	CompoundStatement		8:40:150:150	2250	1					
+ANR	2299	ExpressionStatement	* end = input	9:1:219:233	2250	0	True				
+ANR	2300	AssignmentExpression	* end = input		2250	0		=			
+ANR	2301	UnaryOperationExpression	* end		2250	0					
+ANR	2302	UnaryOperator	*		2250	0					
+ANR	2303	Identifier	end		2250	1					
+ANR	2304	Identifier	input		2250	1					
+ANR	2305	ReturnStatement	return number ;	10:1:236:250	2250	1	True				
+ANR	2306	Identifier	number		2250	0					
+ANR	2307	ReturnStatement	return 0 ;	12:1:256:265	2250	3	True				
+ANR	2308	PrimaryExpression	0		2250	0					
+ANR	2309	ReturnType	static long		2250	1					
+ANR	2310	Identifier	dprintf_DollarString		2250	2					
+ANR	2311	ParameterList	"char * input , char * * end"		2250	3					
+ANR	2312	Parameter	char * input	1:35:35:46	2250	0	True				
+ANR	2313	ParameterType	char *		2250	0					
+ANR	2314	Identifier	input		2250	1					
+ANR	2315	Parameter	char * * end	1:50:50:61	2250	1	True				
+ANR	2316	ParameterType	char * *		2250	0					
+ANR	2317	Identifier	end		2250	1					
+ANR	2318	CFGEntryNode	ENTRY		2250		True				
+ANR	2319	CFGExitNode	EXIT		2250		True				
+ANR	2320	Symbol	input		2250						
+ANR	2321	Symbol	number		2250						
+ANR	2322	Symbol	* input ++		2250						
+ANR	2323	Symbol	* input		2250						
+ANR	2324	Symbol	end		2250						
+ANR	2325	Symbol	ISDIGIT		2250						
+ANR	2326	Symbol	* end		2250						

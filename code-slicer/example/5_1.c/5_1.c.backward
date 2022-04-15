@@ -1,0 +1,1 @@
+int jbig2_decode_halftone_region ( Jbig2Ctx * ctx , Jbig2Segment * segment , Jbig2HalftoneRegionParams * params , const byte * data , const size_t size , Jbig2Image * image , Jbig2ArithCx * GB_stats ) {

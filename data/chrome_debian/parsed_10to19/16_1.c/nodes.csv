@@ -1,0 +1,514 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	2327	File	tmp/16_1.c								
+ANR	2328	Function	jbig2_parse_segment_header	1:0:0:2804							
+ANR	2329	FunctionDef	"jbig2_parse_segment_header (Jbig2Ctx * ctx , uint8_t * buf , size_t buf_size , size_t * p_header_size)"		2328	0					
+ANR	2330	CompoundStatement		1:120:120:2804	2328	0					
+ANR	2331	IdentifierDeclStatement	Jbig2Segment * result ;	2:1:123:145	2328	0	True				
+ANR	2332	IdentifierDecl	* result		2328	0					
+ANR	2333	IdentifierDeclType	Jbig2Segment *		2328	0					
+ANR	2334	Identifier	result		2328	1					
+ANR	2335	IdentifierDeclStatement	uint8_t rtscarf ;	3:1:148:164	2328	1	True				
+ANR	2336	IdentifierDecl	rtscarf		2328	0					
+ANR	2337	IdentifierDeclType	uint8_t		2328	0					
+ANR	2338	Identifier	rtscarf		2328	1					
+ANR	2339	IdentifierDeclStatement	uint32_t rtscarf_long ;	4:1:167:189	2328	2	True				
+ANR	2340	IdentifierDecl	rtscarf_long		2328	0					
+ANR	2341	IdentifierDeclType	uint32_t		2328	0					
+ANR	2342	Identifier	rtscarf_long		2328	1					
+ANR	2343	IdentifierDeclStatement	uint32_t * referred_to_segments ;	5:1:192:224	2328	3	True				
+ANR	2344	IdentifierDecl	* referred_to_segments		2328	0					
+ANR	2345	IdentifierDeclType	uint32_t *		2328	0					
+ANR	2346	Identifier	referred_to_segments		2328	1					
+ANR	2347	IdentifierDeclStatement	int referred_to_segment_count ;	6:1:227:257	2328	4	True				
+ANR	2348	IdentifierDecl	referred_to_segment_count		2328	0					
+ANR	2349	IdentifierDeclType	int		2328	0					
+ANR	2350	Identifier	referred_to_segment_count		2328	1					
+ANR	2351	IdentifierDeclStatement	int referred_to_segment_size ;	7:1:260:289	2328	5	True				
+ANR	2352	IdentifierDecl	referred_to_segment_size		2328	0					
+ANR	2353	IdentifierDeclType	int		2328	0					
+ANR	2354	Identifier	referred_to_segment_size		2328	1					
+ANR	2355	IdentifierDeclStatement	int pa_size ;	8:1:292:304	2328	6	True				
+ANR	2356	IdentifierDecl	pa_size		2328	0					
+ANR	2357	IdentifierDeclType	int		2328	0					
+ANR	2358	Identifier	pa_size		2328	1					
+ANR	2359	IdentifierDeclStatement	int offset ;	9:1:307:318	2328	7	True				
+ANR	2360	IdentifierDecl	offset		2328	0					
+ANR	2361	IdentifierDeclType	int		2328	0					
+ANR	2362	Identifier	offset		2328	1					
+ANR	2363	IfStatement	if ( buf_size < 11 )		2328	8					
+ANR	2364	Condition	buf_size < 11	10:6:326:338	2328	0	True				
+ANR	2365	RelationalExpression	buf_size < 11		2328	0		<			
+ANR	2366	Identifier	buf_size		2328	0					
+ANR	2367	PrimaryExpression	11		2328	1					
+ANR	2368	ReturnStatement	return NULL ;	10:22:342:354	2328	1	True				
+ANR	2369	Identifier	NULL		2328	0					
+ANR	2370	ExpressionStatement	"result = jbig2_new ( ctx , Jbig2Segment , 1 )"	11:1:357:403	2328	9	True				
+ANR	2371	AssignmentExpression	"result = jbig2_new ( ctx , Jbig2Segment , 1 )"		2328	0		=			
+ANR	2372	Identifier	result		2328	0					
+ANR	2373	CallExpression	"jbig2_new ( ctx , Jbig2Segment , 1 )"		2328	1					
+ANR	2374	Callee	jbig2_new		2328	0					
+ANR	2375	Identifier	jbig2_new		2328	0					
+ANR	2376	ArgumentList	ctx		2328	1					
+ANR	2377	Argument	ctx		2328	0					
+ANR	2378	Identifier	ctx		2328	0					
+ANR	2379	Argument	Jbig2Segment		2328	1					
+ANR	2380	Identifier	Jbig2Segment		2328	0					
+ANR	2381	Argument	1		2328	2					
+ANR	2382	PrimaryExpression	1		2328	0					
+ANR	2383	IfStatement	if ( result == NULL )		2328	10					
+ANR	2384	Condition	result == NULL	12:6:411:424	2328	0	True				
+ANR	2385	EqualityExpression	result == NULL		2328	0		==			
+ANR	2386	Identifier	result		2328	0					
+ANR	2387	Identifier	NULL		2328	1					
+ANR	2388	CompoundStatement		12:23:307:307	2328	1					
+ANR	2389	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , - 1 , ""failed to allocate segment in jbig2_parse_segment_header"" )"	13:1:431:541	2328	0	True				
+ANR	2390	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , - 1 , ""failed to allocate segment in jbig2_parse_segment_header"" )"		2328	0					
+ANR	2391	Callee	jbig2_error		2328	0					
+ANR	2392	Identifier	jbig2_error		2328	0					
+ANR	2393	ArgumentList	ctx		2328	1					
+ANR	2394	Argument	ctx		2328	0					
+ANR	2395	Identifier	ctx		2328	0					
+ANR	2396	Argument	JBIG2_SEVERITY_FATAL		2328	1					
+ANR	2397	Identifier	JBIG2_SEVERITY_FATAL		2328	0					
+ANR	2398	Argument	- 1		2328	2					
+ANR	2399	UnaryOperationExpression	- 1		2328	0					
+ANR	2400	UnaryOperator	-		2328	0					
+ANR	2401	PrimaryExpression	1		2328	1					
+ANR	2402	Argument	"""failed to allocate segment in jbig2_parse_segment_header"""		2328	3					
+ANR	2403	PrimaryExpression	"""failed to allocate segment in jbig2_parse_segment_header"""		2328	0					
+ANR	2404	ReturnStatement	return result ;	14:1:544:558	2328	1	True				
+ANR	2405	Identifier	result		2328	0					
+ANR	2406	ExpressionStatement	result -> number = jbig2_get_uint32 ( buf )	16:1:564:608	2328	11	True				
+ANR	2407	AssignmentExpression	result -> number = jbig2_get_uint32 ( buf )		2328	0		=			
+ANR	2408	PtrMemberAccess	result -> number		2328	0					
+ANR	2409	Identifier	result		2328	0					
+ANR	2410	Identifier	number		2328	1					
+ANR	2411	CallExpression	jbig2_get_uint32 ( buf )		2328	1					
+ANR	2412	Callee	jbig2_get_uint32		2328	0					
+ANR	2413	Identifier	jbig2_get_uint32		2328	0					
+ANR	2414	ArgumentList	buf		2328	1					
+ANR	2415	Argument	buf		2328	0					
+ANR	2416	Identifier	buf		2328	0					
+ANR	2417	ExpressionStatement	result -> flags = buf [ 4 ]	17:1:611:639	2328	12	True				
+ANR	2418	AssignmentExpression	result -> flags = buf [ 4 ]		2328	0		=			
+ANR	2419	PtrMemberAccess	result -> flags		2328	0					
+ANR	2420	Identifier	result		2328	0					
+ANR	2421	Identifier	flags		2328	1					
+ANR	2422	ArrayIndexing	buf [ 4 ]		2328	1					
+ANR	2423	Identifier	buf		2328	0					
+ANR	2424	PrimaryExpression	4		2328	1					
+ANR	2425	ExpressionStatement	rtscarf = buf [ 5 ]	18:1:642:662	2328	13	True				
+ANR	2426	AssignmentExpression	rtscarf = buf [ 5 ]		2328	0		=			
+ANR	2427	Identifier	rtscarf		2328	0					
+ANR	2428	ArrayIndexing	buf [ 5 ]		2328	1					
+ANR	2429	Identifier	buf		2328	0					
+ANR	2430	PrimaryExpression	5		2328	1					
+ANR	2431	IfStatement	if ( ( rtscarf & 0xe0 ) == 0xe0 )		2328	14					
+ANR	2432	Condition	( rtscarf & 0xe0 ) == 0xe0	19:6:670:695	2328	0	True				
+ANR	2433	EqualityExpression	( rtscarf & 0xe0 ) == 0xe0		2328	0		==			
+ANR	2434	BitAndExpression	rtscarf & 0xe0		2328	0		&			
+ANR	2435	Identifier	rtscarf		2328	0					
+ANR	2436	PrimaryExpression	0xe0		2328	1					
+ANR	2437	PrimaryExpression	0xe0		2328	1					
+ANR	2438	CompoundStatement		19:35:578:578	2328	1					
+ANR	2439	ExpressionStatement	rtscarf_long = jbig2_get_uint32 ( buf + 5 )	20:1:702:746	2328	0	True				
+ANR	2440	AssignmentExpression	rtscarf_long = jbig2_get_uint32 ( buf + 5 )		2328	0		=			
+ANR	2441	Identifier	rtscarf_long		2328	0					
+ANR	2442	CallExpression	jbig2_get_uint32 ( buf + 5 )		2328	1					
+ANR	2443	Callee	jbig2_get_uint32		2328	0					
+ANR	2444	Identifier	jbig2_get_uint32		2328	0					
+ANR	2445	ArgumentList	buf + 5		2328	1					
+ANR	2446	Argument	buf + 5		2328	0					
+ANR	2447	AdditiveExpression	buf + 5		2328	0		+			
+ANR	2448	Identifier	buf		2328	0					
+ANR	2449	PrimaryExpression	5		2328	1					
+ANR	2450	ExpressionStatement	referred_to_segment_count = rtscarf_long & 0x1fffffff	21:1:749:803	2328	1	True				
+ANR	2451	AssignmentExpression	referred_to_segment_count = rtscarf_long & 0x1fffffff		2328	0		=			
+ANR	2452	Identifier	referred_to_segment_count		2328	0					
+ANR	2453	BitAndExpression	rtscarf_long & 0x1fffffff		2328	1		&			
+ANR	2454	Identifier	rtscarf_long		2328	0					
+ANR	2455	PrimaryExpression	0x1fffffff		2328	1					
+ANR	2456	ExpressionStatement	offset = 5 + 4 + ( referred_to_segment_count + 1 ) / 8	22:1:806:861	2328	2	True				
+ANR	2457	AssignmentExpression	offset = 5 + 4 + ( referred_to_segment_count + 1 ) / 8		2328	0		=			
+ANR	2458	Identifier	offset		2328	0					
+ANR	2459	AdditiveExpression	5 + 4 + ( referred_to_segment_count + 1 ) / 8		2328	1		+			
+ANR	2460	PrimaryExpression	5		2328	0					
+ANR	2461	AdditiveExpression	4 + ( referred_to_segment_count + 1 ) / 8		2328	1		+			
+ANR	2462	PrimaryExpression	4		2328	0					
+ANR	2463	MultiplicativeExpression	( referred_to_segment_count + 1 ) / 8		2328	1		/			
+ANR	2464	AdditiveExpression	referred_to_segment_count + 1		2328	0		+			
+ANR	2465	Identifier	referred_to_segment_count		2328	0					
+ANR	2466	PrimaryExpression	1		2328	1					
+ANR	2467	PrimaryExpression	8		2328	1					
+ANR	2468	ElseStatement	else		2328	0					
+ANR	2469	CompoundStatement		24:6:751:751	2328	0					
+ANR	2470	ExpressionStatement	referred_to_segment_count = ( rtscarf >> 5 )	25:1:875:920	2328	0	True				
+ANR	2471	AssignmentExpression	referred_to_segment_count = ( rtscarf >> 5 )		2328	0		=			
+ANR	2472	Identifier	referred_to_segment_count		2328	0					
+ANR	2473	ShiftExpression	rtscarf >> 5		2328	1		>>			
+ANR	2474	Identifier	rtscarf		2328	0					
+ANR	2475	PrimaryExpression	5		2328	1					
+ANR	2476	ExpressionStatement	offset = 5 + 1	26:1:923:938	2328	1	True				
+ANR	2477	AssignmentExpression	offset = 5 + 1		2328	0		=			
+ANR	2478	Identifier	offset		2328	0					
+ANR	2479	AdditiveExpression	5 + 1		2328	1		+			
+ANR	2480	PrimaryExpression	5		2328	0					
+ANR	2481	PrimaryExpression	1		2328	1					
+ANR	2482	ExpressionStatement	result -> referred_to_segment_count = referred_to_segment_count	28:1:944:1008	2328	15	True				
+ANR	2483	AssignmentExpression	result -> referred_to_segment_count = referred_to_segment_count		2328	0		=			
+ANR	2484	PtrMemberAccess	result -> referred_to_segment_count		2328	0					
+ANR	2485	Identifier	result		2328	0					
+ANR	2486	Identifier	referred_to_segment_count		2328	1					
+ANR	2487	Identifier	referred_to_segment_count		2328	1					
+ANR	2488	ExpressionStatement	referred_to_segment_size = result -> number <= 256 ? 1 : result -> number <= 65536 ? 2 : 4	29:1:1011:1102	2328	16	True				
+ANR	2489	AssignmentExpression	referred_to_segment_size = result -> number <= 256 ? 1 : result -> number <= 65536 ? 2 : 4		2328	0		=			
+ANR	2490	Identifier	referred_to_segment_size		2328	0					
+ANR	2491	ConditionalExpression	result -> number <= 256 ? 1 : result -> number <= 65536 ? 2 : 4		2328	1					
+ANR	2492	Condition	result -> number <= 256		2328	0					
+ANR	2493	RelationalExpression	result -> number <= 256		2328	0		<=			
+ANR	2494	PtrMemberAccess	result -> number		2328	0					
+ANR	2495	Identifier	result		2328	0					
+ANR	2496	Identifier	number		2328	1					
+ANR	2497	PrimaryExpression	256		2328	1					
+ANR	2498	PrimaryExpression	1		2328	1					
+ANR	2499	ConditionalExpression	result -> number <= 65536 ? 2 : 4		2328	2					
+ANR	2500	Condition	result -> number <= 65536		2328	0					
+ANR	2501	RelationalExpression	result -> number <= 65536		2328	0		<=			
+ANR	2502	PtrMemberAccess	result -> number		2328	0					
+ANR	2503	Identifier	result		2328	0					
+ANR	2504	Identifier	number		2328	1					
+ANR	2505	PrimaryExpression	65536		2328	1					
+ANR	2506	PrimaryExpression	2		2328	1					
+ANR	2507	PrimaryExpression	4		2328	2					
+ANR	2508	ExpressionStatement	pa_size = result -> flags & 0x40 ? 4 : 1	30:1:1105:1146	2328	17	True				
+ANR	2509	AssignmentExpression	pa_size = result -> flags & 0x40 ? 4 : 1		2328	0		=			
+ANR	2510	Identifier	pa_size		2328	0					
+ANR	2511	ConditionalExpression	result -> flags & 0x40 ? 4 : 1		2328	1					
+ANR	2512	Condition	result -> flags & 0x40		2328	0					
+ANR	2513	BitAndExpression	result -> flags & 0x40		2328	0		&			
+ANR	2514	PtrMemberAccess	result -> flags		2328	0					
+ANR	2515	Identifier	result		2328	0					
+ANR	2516	Identifier	flags		2328	1					
+ANR	2517	PrimaryExpression	0x40		2328	1					
+ANR	2518	PrimaryExpression	4		2328	1					
+ANR	2519	PrimaryExpression	1		2328	2					
+ANR	2520	IfStatement	if ( offset + referred_to_segment_count * referred_to_segment_size + pa_size + 4 > buf_size )		2328	18					
+ANR	2521	Condition	offset + referred_to_segment_count * referred_to_segment_size + pa_size + 4 > buf_size	31:6:1154:1239	2328	0	True				
+ANR	2522	RelationalExpression	offset + referred_to_segment_count * referred_to_segment_size + pa_size + 4 > buf_size		2328	0		>			
+ANR	2523	AdditiveExpression	offset + referred_to_segment_count * referred_to_segment_size + pa_size + 4		2328	0		+			
+ANR	2524	Identifier	offset		2328	0					
+ANR	2525	AdditiveExpression	referred_to_segment_count * referred_to_segment_size + pa_size + 4		2328	1		+			
+ANR	2526	MultiplicativeExpression	referred_to_segment_count * referred_to_segment_size		2328	0		*			
+ANR	2527	Identifier	referred_to_segment_count		2328	0					
+ANR	2528	Identifier	referred_to_segment_size		2328	1					
+ANR	2529	AdditiveExpression	pa_size + 4		2328	1		+			
+ANR	2530	Identifier	pa_size		2328	0					
+ANR	2531	PrimaryExpression	4		2328	1					
+ANR	2532	Identifier	buf_size		2328	1					
+ANR	2533	CompoundStatement		31:95:1122:1122	2328	1					
+ANR	2534	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , result -> number , ""jbig2_parse_segment_header() called with insufficient data"" , - 1 )"	32:1:1246:1377	2328	0	True				
+ANR	2535	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , result -> number , ""jbig2_parse_segment_header() called with insufficient data"" , - 1 )"		2328	0					
+ANR	2536	Callee	jbig2_error		2328	0					
+ANR	2537	Identifier	jbig2_error		2328	0					
+ANR	2538	ArgumentList	ctx		2328	1					
+ANR	2539	Argument	ctx		2328	0					
+ANR	2540	Identifier	ctx		2328	0					
+ANR	2541	Argument	JBIG2_SEVERITY_DEBUG		2328	1					
+ANR	2542	Identifier	JBIG2_SEVERITY_DEBUG		2328	0					
+ANR	2543	Argument	result -> number		2328	2					
+ANR	2544	PtrMemberAccess	result -> number		2328	0					
+ANR	2545	Identifier	result		2328	0					
+ANR	2546	Identifier	number		2328	1					
+ANR	2547	Argument	"""jbig2_parse_segment_header() called with insufficient data"""		2328	3					
+ANR	2548	PrimaryExpression	"""jbig2_parse_segment_header() called with insufficient data"""		2328	0					
+ANR	2549	Argument	- 1		2328	4					
+ANR	2550	UnaryOperationExpression	- 1		2328	0					
+ANR	2551	UnaryOperator	-		2328	0					
+ANR	2552	PrimaryExpression	1		2328	1					
+ANR	2553	ExpressionStatement	"jbig2_free ( ctx -> allocator , result )"	33:1:1380:1421	2328	1	True				
+ANR	2554	CallExpression	"jbig2_free ( ctx -> allocator , result )"		2328	0					
+ANR	2555	Callee	jbig2_free		2328	0					
+ANR	2556	Identifier	jbig2_free		2328	0					
+ANR	2557	ArgumentList	ctx -> allocator		2328	1					
+ANR	2558	Argument	ctx -> allocator		2328	0					
+ANR	2559	PtrMemberAccess	ctx -> allocator		2328	0					
+ANR	2560	Identifier	ctx		2328	0					
+ANR	2561	Identifier	allocator		2328	1					
+ANR	2562	Argument	result		2328	1					
+ANR	2563	Identifier	result		2328	0					
+ANR	2564	ReturnStatement	return NULL ;	34:1:1424:1436	2328	2	True				
+ANR	2565	Identifier	NULL		2328	0					
+ANR	2566	IfStatement	if ( referred_to_segment_count )		2328	19					
+ANR	2567	Condition	referred_to_segment_count	36:6:1447:1471	2328	0	True				
+ANR	2568	Identifier	referred_to_segment_count		2328	0					
+ANR	2569	CompoundStatement		37:1:1357:1363	2328	1					
+ANR	2570	IdentifierDeclStatement	int i ;	37:1:1478:1484	2328	0	True				
+ANR	2571	IdentifierDecl	i		2328	0					
+ANR	2572	IdentifierDeclType	int		2328	0					
+ANR	2573	Identifier	i		2328	1					
+ANR	2574	ExpressionStatement	"referred_to_segments = jbig2_new ( ctx , uint32_t , referred_to_segment_count * referred_to_segment_size )"	38:1:1487:1594	2328	1	True				
+ANR	2575	AssignmentExpression	"referred_to_segments = jbig2_new ( ctx , uint32_t , referred_to_segment_count * referred_to_segment_size )"		2328	0		=			
+ANR	2576	Identifier	referred_to_segments		2328	0					
+ANR	2577	CallExpression	"jbig2_new ( ctx , uint32_t , referred_to_segment_count * referred_to_segment_size )"		2328	1					
+ANR	2578	Callee	jbig2_new		2328	0					
+ANR	2579	Identifier	jbig2_new		2328	0					
+ANR	2580	ArgumentList	ctx		2328	1					
+ANR	2581	Argument	ctx		2328	0					
+ANR	2582	Identifier	ctx		2328	0					
+ANR	2583	Argument	uint32_t		2328	1					
+ANR	2584	Identifier	uint32_t		2328	0					
+ANR	2585	Argument	referred_to_segment_count * referred_to_segment_size		2328	2					
+ANR	2586	MultiplicativeExpression	referred_to_segment_count * referred_to_segment_size		2328	0		*			
+ANR	2587	Identifier	referred_to_segment_count		2328	0					
+ANR	2588	Identifier	referred_to_segment_size		2328	1					
+ANR	2589	IfStatement	if ( referred_to_segments == NULL )		2328	2					
+ANR	2590	Condition	referred_to_segments == NULL	39:6:1602:1629	2328	0	True				
+ANR	2591	EqualityExpression	referred_to_segments == NULL		2328	0		==			
+ANR	2592	Identifier	referred_to_segments		2328	0					
+ANR	2593	Identifier	NULL		2328	1					
+ANR	2594	CompoundStatement		39:37:1512:1512	2328	1					
+ANR	2595	Statement	jbig2_error	40:1:1636:1646	2328	0	True				
+ANR	2596	Statement	(	40:13:1648:1648	2328	1	True				
+ANR	2597	Statement	ctx	40:15:1650:1652	2328	2	True				
+ANR	2598	Statement	","	40:19:1654:1654	2328	3	True				
+ANR	2599	Statement	JBIG2_SEVERITY_FATAL	40:21:1656:1675	2328	4	True				
+ANR	2600	Statement	","	40:42:1677:1677	2328	5	True				
+ANR	2601	Statement	-	40:44:1679:1679	2328	6	True				
+ANR	2602	Statement	1	40:46:1681:1681	2328	7	True				
+ANR	2603	Statement	","	40:48:1683:1683	2328	8	True				
+ANR	2604	Statement	"""could not allocate referred_to_segments """	40:50:1685:1726	2328	9	True				
+ANR	2605	Statement	"""in jbig2_parse_segment_header"""	40:93:1728:1758	2328	10	True				
+ANR	2606	Statement	)	40:125:1760:1760	2328	11	True				
+ANR	2607	ExpressionStatement		40:127:1762:1762	2328	12	True				
+ANR	2608	ReturnStatement	return NULL ;	41:1:1765:1777	2328	13	True				
+ANR	2609	Identifier	NULL		2328	0					
+ANR	2610	ForStatement	for ( i = 0 ; i < referred_to_segment_count ; i ++ )		2328	3					
+ANR	2611	ForInit	i = 0 ;	43:7:1789:1795	2328	0	True				
+ANR	2612	AssignmentExpression	i = 0		2328	0		=			
+ANR	2613	Identifier	i		2328	0					
+ANR	2614	PrimaryExpression	0		2328	1					
+ANR	2615	Condition	i < referred_to_segment_count	44:1:1798:1826	2328	1	True				
+ANR	2616	RelationalExpression	i < referred_to_segment_count		2328	0		<			
+ANR	2617	Identifier	i		2328	0					
+ANR	2618	Identifier	referred_to_segment_count		2328	1					
+ANR	2619	PostIncDecOperationExpression	i ++	45:1:1831:1834	2328	2	True				
+ANR	2620	Identifier	i		2328	0					
+ANR	2621	IncDec	++		2328	1					
+ANR	2622	CompoundStatement		45:8:1717:1717	2328	3					
+ANR	2623	ExpressionStatement	referred_to_segments [ i ] = ( referred_to_segment_size == 1 ) ? buf [ offset ] : ( referred_to_segment_size == 2 ) ? jbig2_get_uint16 ( buf + offset ) : jbig2_get_uint32 ( buf + offset )	46:1:1841:2029	2328	0	True				
+ANR	2624	AssignmentExpression	referred_to_segments [ i ] = ( referred_to_segment_size == 1 ) ? buf [ offset ] : ( referred_to_segment_size == 2 ) ? jbig2_get_uint16 ( buf + offset ) : jbig2_get_uint32 ( buf + offset )		2328	0		=			
+ANR	2625	ArrayIndexing	referred_to_segments [ i ]		2328	0					
+ANR	2626	Identifier	referred_to_segments		2328	0					
+ANR	2627	Identifier	i		2328	1					
+ANR	2628	ConditionalExpression	( referred_to_segment_size == 1 ) ? buf [ offset ] : ( referred_to_segment_size == 2 ) ? jbig2_get_uint16 ( buf + offset ) : jbig2_get_uint32 ( buf + offset )		2328	1					
+ANR	2629	Condition	referred_to_segment_size == 1		2328	0					
+ANR	2630	EqualityExpression	referred_to_segment_size == 1		2328	0		==			
+ANR	2631	Identifier	referred_to_segment_size		2328	0					
+ANR	2632	PrimaryExpression	1		2328	1					
+ANR	2633	ArrayIndexing	buf [ offset ]		2328	1					
+ANR	2634	Identifier	buf		2328	0					
+ANR	2635	Identifier	offset		2328	1					
+ANR	2636	ConditionalExpression	( referred_to_segment_size == 2 ) ? jbig2_get_uint16 ( buf + offset ) : jbig2_get_uint32 ( buf + offset )		2328	2					
+ANR	2637	Condition	referred_to_segment_size == 2		2328	0					
+ANR	2638	EqualityExpression	referred_to_segment_size == 2		2328	0		==			
+ANR	2639	Identifier	referred_to_segment_size		2328	0					
+ANR	2640	PrimaryExpression	2		2328	1					
+ANR	2641	CallExpression	jbig2_get_uint16 ( buf + offset )		2328	1					
+ANR	2642	Callee	jbig2_get_uint16		2328	0					
+ANR	2643	Identifier	jbig2_get_uint16		2328	0					
+ANR	2644	ArgumentList	buf + offset		2328	1					
+ANR	2645	Argument	buf + offset		2328	0					
+ANR	2646	AdditiveExpression	buf + offset		2328	0		+			
+ANR	2647	Identifier	buf		2328	0					
+ANR	2648	Identifier	offset		2328	1					
+ANR	2649	CallExpression	jbig2_get_uint32 ( buf + offset )		2328	2					
+ANR	2650	Callee	jbig2_get_uint32		2328	0					
+ANR	2651	Identifier	jbig2_get_uint32		2328	0					
+ANR	2652	ArgumentList	buf + offset		2328	1					
+ANR	2653	Argument	buf + offset		2328	0					
+ANR	2654	AdditiveExpression	buf + offset		2328	0		+			
+ANR	2655	Identifier	buf		2328	0					
+ANR	2656	Identifier	offset		2328	1					
+ANR	2657	ExpressionStatement	offset += referred_to_segment_size	47:1:2032:2067	2328	1	True				
+ANR	2658	AssignmentExpression	offset += referred_to_segment_size		2328	0		+=			
+ANR	2659	Identifier	offset		2328	0					
+ANR	2660	Identifier	referred_to_segment_size		2328	1					
+ANR	2661	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , result -> number , ""segment %d refers to segment %d"" , result -> number , referred_to_segments [ i ] )"	48:1:2070:2216	2328	2	True				
+ANR	2662	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , result -> number , ""segment %d refers to segment %d"" , result -> number , referred_to_segments [ i ] )"		2328	0					
+ANR	2663	Callee	jbig2_error		2328	0					
+ANR	2664	Identifier	jbig2_error		2328	0					
+ANR	2665	ArgumentList	ctx		2328	1					
+ANR	2666	Argument	ctx		2328	0					
+ANR	2667	Identifier	ctx		2328	0					
+ANR	2668	Argument	JBIG2_SEVERITY_DEBUG		2328	1					
+ANR	2669	Identifier	JBIG2_SEVERITY_DEBUG		2328	0					
+ANR	2670	Argument	result -> number		2328	2					
+ANR	2671	PtrMemberAccess	result -> number		2328	0					
+ANR	2672	Identifier	result		2328	0					
+ANR	2673	Identifier	number		2328	1					
+ANR	2674	Argument	"""segment %d refers to segment %d"""		2328	3					
+ANR	2675	PrimaryExpression	"""segment %d refers to segment %d"""		2328	0					
+ANR	2676	Argument	result -> number		2328	4					
+ANR	2677	PtrMemberAccess	result -> number		2328	0					
+ANR	2678	Identifier	result		2328	0					
+ANR	2679	Identifier	number		2328	1					
+ANR	2680	Argument	referred_to_segments [ i ]		2328	5					
+ANR	2681	ArrayIndexing	referred_to_segments [ i ]		2328	0					
+ANR	2682	Identifier	referred_to_segments		2328	0					
+ANR	2683	Identifier	i		2328	1					
+ANR	2684	ExpressionStatement	result -> referred_to_segments = referred_to_segments	50:1:2222:2276	2328	4	True				
+ANR	2685	AssignmentExpression	result -> referred_to_segments = referred_to_segments		2328	0		=			
+ANR	2686	PtrMemberAccess	result -> referred_to_segments		2328	0					
+ANR	2687	Identifier	result		2328	0					
+ANR	2688	Identifier	referred_to_segments		2328	1					
+ANR	2689	Identifier	referred_to_segments		2328	1					
+ANR	2690	ElseStatement	else		2328	0					
+ANR	2691	CompoundStatement		52:6:2166:2166	2328	0					
+ANR	2692	ExpressionStatement	result -> referred_to_segments = NULL	53:1:2290:2328	2328	0	True				
+ANR	2693	AssignmentExpression	result -> referred_to_segments = NULL		2328	0		=			
+ANR	2694	PtrMemberAccess	result -> referred_to_segments		2328	0					
+ANR	2695	Identifier	result		2328	0					
+ANR	2696	Identifier	referred_to_segments		2328	1					
+ANR	2697	Identifier	NULL		2328	1					
+ANR	2698	IfStatement	if ( result -> flags & 0x40 )		2328	20					
+ANR	2699	Condition	result -> flags & 0x40	55:6:2339:2360	2328	0	True				
+ANR	2700	BitAndExpression	result -> flags & 0x40		2328	0		&			
+ANR	2701	PtrMemberAccess	result -> flags		2328	0					
+ANR	2702	Identifier	result		2328	0					
+ANR	2703	Identifier	flags		2328	1					
+ANR	2704	PrimaryExpression	0x40		2328	1					
+ANR	2705	CompoundStatement		55:31:2243:2243	2328	1					
+ANR	2706	ExpressionStatement	result -> page_association = jbig2_get_uint32 ( buf + offset )	56:1:2367:2430	2328	0	True				
+ANR	2707	AssignmentExpression	result -> page_association = jbig2_get_uint32 ( buf + offset )		2328	0		=			
+ANR	2708	PtrMemberAccess	result -> page_association		2328	0					
+ANR	2709	Identifier	result		2328	0					
+ANR	2710	Identifier	page_association		2328	1					
+ANR	2711	CallExpression	jbig2_get_uint32 ( buf + offset )		2328	1					
+ANR	2712	Callee	jbig2_get_uint32		2328	0					
+ANR	2713	Identifier	jbig2_get_uint32		2328	0					
+ANR	2714	ArgumentList	buf + offset		2328	1					
+ANR	2715	Argument	buf + offset		2328	0					
+ANR	2716	AdditiveExpression	buf + offset		2328	0		+			
+ANR	2717	Identifier	buf		2328	0					
+ANR	2718	Identifier	offset		2328	1					
+ANR	2719	ExpressionStatement	offset += 4	57:1:2433:2445	2328	1	True				
+ANR	2720	AssignmentExpression	offset += 4		2328	0		+=			
+ANR	2721	Identifier	offset		2328	0					
+ANR	2722	PrimaryExpression	4		2328	1					
+ANR	2723	ElseStatement	else		2328	0					
+ANR	2724	CompoundStatement		59:6:2335:2335	2328	0					
+ANR	2725	ExpressionStatement	result -> page_association = buf [ offset ++ ]	60:1:2459:2506	2328	0	True				
+ANR	2726	AssignmentExpression	result -> page_association = buf [ offset ++ ]		2328	0		=			
+ANR	2727	PtrMemberAccess	result -> page_association		2328	0					
+ANR	2728	Identifier	result		2328	0					
+ANR	2729	Identifier	page_association		2328	1					
+ANR	2730	ArrayIndexing	buf [ offset ++ ]		2328	1					
+ANR	2731	Identifier	buf		2328	0					
+ANR	2732	PostIncDecOperationExpression	offset ++		2328	1					
+ANR	2733	Identifier	offset		2328	0					
+ANR	2734	IncDec	++		2328	1					
+ANR	2735	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , result -> number , ""segment %d is associated with page %d"" , result -> number , result -> page_association )"	62:1:2512:2664	2328	21	True				
+ANR	2736	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_DEBUG , result -> number , ""segment %d is associated with page %d"" , result -> number , result -> page_association )"		2328	0					
+ANR	2737	Callee	jbig2_error		2328	0					
+ANR	2738	Identifier	jbig2_error		2328	0					
+ANR	2739	ArgumentList	ctx		2328	1					
+ANR	2740	Argument	ctx		2328	0					
+ANR	2741	Identifier	ctx		2328	0					
+ANR	2742	Argument	JBIG2_SEVERITY_DEBUG		2328	1					
+ANR	2743	Identifier	JBIG2_SEVERITY_DEBUG		2328	0					
+ANR	2744	Argument	result -> number		2328	2					
+ANR	2745	PtrMemberAccess	result -> number		2328	0					
+ANR	2746	Identifier	result		2328	0					
+ANR	2747	Identifier	number		2328	1					
+ANR	2748	Argument	"""segment %d is associated with page %d"""		2328	3					
+ANR	2749	PrimaryExpression	"""segment %d is associated with page %d"""		2328	0					
+ANR	2750	Argument	result -> number		2328	4					
+ANR	2751	PtrMemberAccess	result -> number		2328	0					
+ANR	2752	Identifier	result		2328	0					
+ANR	2753	Identifier	number		2328	1					
+ANR	2754	Argument	result -> page_association		2328	5					
+ANR	2755	PtrMemberAccess	result -> page_association		2328	0					
+ANR	2756	Identifier	result		2328	0					
+ANR	2757	Identifier	page_association		2328	1					
+ANR	2758	ExpressionStatement	result -> data_length = jbig2_get_uint32 ( buf + offset )	63:1:2667:2725	2328	22	True				
+ANR	2759	AssignmentExpression	result -> data_length = jbig2_get_uint32 ( buf + offset )		2328	0		=			
+ANR	2760	PtrMemberAccess	result -> data_length		2328	0					
+ANR	2761	Identifier	result		2328	0					
+ANR	2762	Identifier	data_length		2328	1					
+ANR	2763	CallExpression	jbig2_get_uint32 ( buf + offset )		2328	1					
+ANR	2764	Callee	jbig2_get_uint32		2328	0					
+ANR	2765	Identifier	jbig2_get_uint32		2328	0					
+ANR	2766	ArgumentList	buf + offset		2328	1					
+ANR	2767	Argument	buf + offset		2328	0					
+ANR	2768	AdditiveExpression	buf + offset		2328	0		+			
+ANR	2769	Identifier	buf		2328	0					
+ANR	2770	Identifier	offset		2328	1					
+ANR	2771	ExpressionStatement	* p_header_size = offset + 4	64:1:2728:2757	2328	23	True				
+ANR	2772	AssignmentExpression	* p_header_size = offset + 4		2328	0		=			
+ANR	2773	UnaryOperationExpression	* p_header_size		2328	0					
+ANR	2774	UnaryOperator	*		2328	0					
+ANR	2775	Identifier	p_header_size		2328	1					
+ANR	2776	AdditiveExpression	offset + 4		2328	1		+			
+ANR	2777	Identifier	offset		2328	0					
+ANR	2778	PrimaryExpression	4		2328	1					
+ANR	2779	ExpressionStatement	result -> result = NULL	65:1:2760:2784	2328	24	True				
+ANR	2780	AssignmentExpression	result -> result = NULL		2328	0		=			
+ANR	2781	PtrMemberAccess	result -> result		2328	0					
+ANR	2782	Identifier	result		2328	0					
+ANR	2783	Identifier	result		2328	1					
+ANR	2784	Identifier	NULL		2328	1					
+ANR	2785	ReturnStatement	return result ;	66:1:2787:2801	2328	25	True				
+ANR	2786	Identifier	result		2328	0					
+ANR	2787	ReturnType	Jbig2Segment *		2328	1					
+ANR	2788	Identifier	jbig2_parse_segment_header		2328	2					
+ANR	2789	ParameterList	"Jbig2Ctx * ctx , uint8_t * buf , size_t buf_size , size_t * p_header_size"		2328	3					
+ANR	2790	Parameter	Jbig2Ctx * ctx	1:44:44:57	2328	0	True				
+ANR	2791	ParameterType	Jbig2Ctx *		2328	0					
+ANR	2792	Identifier	ctx		2328	1					
+ANR	2793	Parameter	uint8_t * buf	1:61:61:73	2328	1	True				
+ANR	2794	ParameterType	uint8_t *		2328	0					
+ANR	2795	Identifier	buf		2328	1					
+ANR	2796	Parameter	size_t buf_size	1:77:77:91	2328	2	True				
+ANR	2797	ParameterType	size_t		2328	0					
+ANR	2798	Identifier	buf_size		2328	1					
+ANR	2799	Parameter	size_t * p_header_size	1:95:95:116	2328	3	True				
+ANR	2800	ParameterType	size_t *		2328	0					
+ANR	2801	Identifier	p_header_size		2328	1					
+ANR	2802	CFGEntryNode	ENTRY		2328		True				
+ANR	2803	CFGExitNode	EXIT		2328		True				
+ANR	2804	Symbol	jbig2_get_uint16		2328						
+ANR	2805	Symbol	referred_to_segment_count		2328						
+ANR	2806	Symbol	result -> result		2328						
+ANR	2807	Symbol	JBIG2_SEVERITY_FATAL		2328						
+ANR	2808	Symbol	result -> data_length		2328						
+ANR	2809	Symbol	result -> referred_to_segment_count		2328						
+ANR	2810	Symbol	jbig2_get_uint32		2328						
+ANR	2811	Symbol	result		2328						
+ANR	2812	Symbol	jbig2_new		2328						
+ANR	2813	Symbol	* result		2328						
+ANR	2814	Symbol	referred_to_segment_size		2328						
+ANR	2815	Symbol	result -> referred_to_segments		2328						
+ANR	2816	Symbol	result -> page_association		2328						
+ANR	2817	Symbol	* buf		2328						
+ANR	2818	Symbol	* p_header_size		2328						
+ANR	2819	Symbol	NULL		2328						
+ANR	2820	Symbol	offset		2328						
+ANR	2821	Symbol	ctx -> allocator		2328						
+ANR	2822	Symbol	ctx		2328						
+ANR	2823	Symbol	buf_size		2328						
+ANR	2824	Symbol	JBIG2_SEVERITY_DEBUG		2328						
+ANR	2825	Symbol	i		2328						
+ANR	2826	Symbol	uint32_t		2328						
+ANR	2827	Symbol	result -> flags		2328						
+ANR	2828	Symbol	* ctx		2328						
+ANR	2829	Symbol	result -> number		2328						
+ANR	2830	Symbol	Jbig2Segment		2328						
+ANR	2831	Symbol	buf		2328						
+ANR	2832	Symbol	* i		2328						
+ANR	2833	Symbol	p_header_size		2328						
+ANR	2834	Symbol	referred_to_segments		2328						
+ANR	2835	Symbol	rtscarf		2328						
+ANR	2836	Symbol	* offset		2328						
+ANR	2837	Symbol	rtscarf_long		2328						
+ANR	2838	Symbol	* referred_to_segments		2328						
+ANR	2839	Symbol	pa_size		2328						

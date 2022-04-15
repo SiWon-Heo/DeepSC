@@ -1,0 +1,37 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	902	File	tmp/14_0.c								
+ANR	903	Function	curl_mvfprintf	1:0:0:146							
+ANR	904	FunctionDef	"curl_mvfprintf (FILE * whereto , const char * format , va_list ap_save)"		903	0					
+ANR	905	CompoundStatement		1:78:78:146	903	0					
+ANR	906	ReturnStatement	"return dprintf_formatf ( whereto , fputc , format , ap_save ) ;"	2:1:81:143	903	0	True				
+ANR	907	CallExpression	"dprintf_formatf ( whereto , fputc , format , ap_save )"		903	0					
+ANR	908	Callee	dprintf_formatf		903	0					
+ANR	909	Identifier	dprintf_formatf		903	0					
+ANR	910	ArgumentList	whereto		903	1					
+ANR	911	Argument	whereto		903	0					
+ANR	912	Identifier	whereto		903	0					
+ANR	913	Argument	fputc		903	1					
+ANR	914	Identifier	fputc		903	0					
+ANR	915	Argument	format		903	2					
+ANR	916	Identifier	format		903	0					
+ANR	917	Argument	ap_save		903	3					
+ANR	918	Identifier	ap_save		903	0					
+ANR	919	ReturnType	int		903	1					
+ANR	920	Identifier	curl_mvfprintf		903	2					
+ANR	921	ParameterList	"FILE * whereto , const char * format , va_list ap_save"		903	3					
+ANR	922	Parameter	FILE * whereto	1:21:21:34	903	0	True				
+ANR	923	ParameterType	FILE *		903	0					
+ANR	924	Identifier	whereto		903	1					
+ANR	925	Parameter	const char * format	1:38:38:56	903	1	True				
+ANR	926	ParameterType	const char *		903	0					
+ANR	927	Identifier	format		903	1					
+ANR	928	Parameter	va_list ap_save	1:60:60:74	903	2	True				
+ANR	929	ParameterType	va_list		903	0					
+ANR	930	Identifier	ap_save		903	1					
+ANR	931	CFGEntryNode	ENTRY		903		True				
+ANR	932	CFGExitNode	EXIT		903		True				
+ANR	933	Symbol	whereto		903						
+ANR	934	Symbol	ap_save		903						
+ANR	935	Symbol	format		903						
+ANR	936	Symbol	fputc		903						
+ANR	937	Symbol	dprintf_formatf		903						

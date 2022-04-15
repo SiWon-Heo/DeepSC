@@ -1,0 +1,1 @@
+static int jbig2_word_stream_buf_get_next_word ( Jbig2WordStream * self , int offset , uint32_t * word ) {

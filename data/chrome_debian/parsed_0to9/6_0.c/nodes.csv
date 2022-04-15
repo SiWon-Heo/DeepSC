@@ -1,0 +1,121 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4481	File	tmp/6_0.c								
+ANR	4482	Function	curl_mvsnprintf	1:0:0:442							
+ANR	4483	FunctionDef	"curl_mvsnprintf (char * buffer , size_t maxlength , const char * format , va_list ap_save)"		4482	0					
+ANR	4484	CompoundStatement		1:97:97:442	4482	0					
+ANR	4485	IdentifierDeclStatement	int retcode ;	2:1:100:112	4482	0	True				
+ANR	4486	IdentifierDecl	retcode		4482	0					
+ANR	4487	IdentifierDeclType	int		4482	0					
+ANR	4488	Identifier	retcode		4482	1					
+ANR	4489	IdentifierDeclStatement	struct nsprintf info ;	3:1:115:136	4482	1	True				
+ANR	4490	IdentifierDecl	info		4482	0					
+ANR	4491	IdentifierDeclType	struct nsprintf		4482	0					
+ANR	4492	Identifier	info		4482	1					
+ANR	4493	ExpressionStatement	info . buffer = buffer	4:1:139:162	4482	2	True				
+ANR	4494	AssignmentExpression	info . buffer = buffer		4482	0		=			
+ANR	4495	MemberAccess	info . buffer		4482	0					
+ANR	4496	Identifier	info		4482	0					
+ANR	4497	Identifier	buffer		4482	1					
+ANR	4498	Identifier	buffer		4482	1					
+ANR	4499	ExpressionStatement	info . length = 0	5:1:165:183	4482	3	True				
+ANR	4500	AssignmentExpression	info . length = 0		4482	0		=			
+ANR	4501	MemberAccess	info . length		4482	0					
+ANR	4502	Identifier	info		4482	0					
+ANR	4503	Identifier	length		4482	1					
+ANR	4504	PrimaryExpression	0		4482	1					
+ANR	4505	ExpressionStatement	info . max = maxlength	6:1:186:209	4482	4	True				
+ANR	4506	AssignmentExpression	info . max = maxlength		4482	0		=			
+ANR	4507	MemberAccess	info . max		4482	0					
+ANR	4508	Identifier	info		4482	0					
+ANR	4509	Identifier	max		4482	1					
+ANR	4510	Identifier	maxlength		4482	1					
+ANR	4511	ExpressionStatement	"retcode = dprintf_formatf ( & info , addbyter , format , ap_save )"	7:1:212:279	4482	5	True				
+ANR	4512	AssignmentExpression	"retcode = dprintf_formatf ( & info , addbyter , format , ap_save )"		4482	0		=			
+ANR	4513	Identifier	retcode		4482	0					
+ANR	4514	CallExpression	"dprintf_formatf ( & info , addbyter , format , ap_save )"		4482	1					
+ANR	4515	Callee	dprintf_formatf		4482	0					
+ANR	4516	Identifier	dprintf_formatf		4482	0					
+ANR	4517	ArgumentList	& info		4482	1					
+ANR	4518	Argument	& info		4482	0					
+ANR	4519	UnaryOperationExpression	& info		4482	0					
+ANR	4520	UnaryOperator	&		4482	0					
+ANR	4521	Identifier	info		4482	1					
+ANR	4522	Argument	addbyter		4482	1					
+ANR	4523	Identifier	addbyter		4482	0					
+ANR	4524	Argument	format		4482	2					
+ANR	4525	Identifier	format		4482	0					
+ANR	4526	Argument	ap_save		4482	3					
+ANR	4527	Identifier	ap_save		4482	0					
+ANR	4528	IfStatement	if ( ( retcode != - 1 ) && info . max )		4482	6					
+ANR	4529	Condition	( retcode != - 1 ) && info . max	8:6:287:318	4482	0	True				
+ANR	4530	AndExpression	( retcode != - 1 ) && info . max		4482	0		&&			
+ANR	4531	EqualityExpression	retcode != - 1		4482	0		!=			
+ANR	4532	Identifier	retcode		4482	0					
+ANR	4533	UnaryOperationExpression	- 1		4482	1					
+ANR	4534	UnaryOperator	-		4482	0					
+ANR	4535	PrimaryExpression	1		4482	1					
+ANR	4536	MemberAccess	info . max		4482	1					
+ANR	4537	Identifier	info		4482	0					
+ANR	4538	Identifier	max		4482	1					
+ANR	4539	CompoundStatement		8:41:224:224	4482	1					
+ANR	4540	IfStatement	if ( info . max == info . length )		4482	0					
+ANR	4541	Condition	info . max == info . length	9:6:330:356	4482	0	True				
+ANR	4542	EqualityExpression	info . max == info . length		4482	0		==			
+ANR	4543	MemberAccess	info . max		4482	0					
+ANR	4544	Identifier	info		4482	0					
+ANR	4545	Identifier	max		4482	1					
+ANR	4546	MemberAccess	info . length		4482	1					
+ANR	4547	Identifier	info		4482	0					
+ANR	4548	Identifier	length		4482	1					
+ANR	4549	ExpressionStatement	info . buffer [ - 1 ] = 0	9:36:360:386	4482	1	True				
+ANR	4550	AssignmentExpression	info . buffer [ - 1 ] = 0		4482	0		=			
+ANR	4551	ArrayIndexing	info . buffer [ - 1 ]		4482	0					
+ANR	4552	MemberAccess	info . buffer		4482	0					
+ANR	4553	Identifier	info		4482	0					
+ANR	4554	Identifier	buffer		4482	1					
+ANR	4555	UnaryOperationExpression	- 1		4482	1					
+ANR	4556	UnaryOperator	-		4482	0					
+ANR	4557	PrimaryExpression	1		4482	1					
+ANR	4558	PrimaryExpression	0		4482	1					
+ANR	4559	ElseStatement	else		4482	0					
+ANR	4560	ExpressionStatement	info . buffer [ 0 ] = 0	10:6:394:418	4482	0	True				
+ANR	4561	AssignmentExpression	info . buffer [ 0 ] = 0		4482	0		=			
+ANR	4562	ArrayIndexing	info . buffer [ 0 ]		4482	0					
+ANR	4563	MemberAccess	info . buffer		4482	0					
+ANR	4564	Identifier	info		4482	0					
+ANR	4565	Identifier	buffer		4482	1					
+ANR	4566	PrimaryExpression	0		4482	1					
+ANR	4567	PrimaryExpression	0		4482	1					
+ANR	4568	ReturnStatement	return retcode ;	12:1:424:439	4482	7	True				
+ANR	4569	Identifier	retcode		4482	0					
+ANR	4570	ReturnType	int		4482	1					
+ANR	4571	Identifier	curl_mvsnprintf		4482	2					
+ANR	4572	ParameterList	"char * buffer , size_t maxlength , const char * format , va_list ap_save"		4482	3					
+ANR	4573	Parameter	char * buffer	1:22:22:34	4482	0	True				
+ANR	4574	ParameterType	char *		4482	0					
+ANR	4575	Identifier	buffer		4482	1					
+ANR	4576	Parameter	size_t maxlength	1:38:38:53	4482	1	True				
+ANR	4577	ParameterType	size_t		4482	0					
+ANR	4578	Identifier	maxlength		4482	1					
+ANR	4579	Parameter	const char * format	1:57:57:75	4482	2	True				
+ANR	4580	ParameterType	const char *		4482	0					
+ANR	4581	Identifier	format		4482	1					
+ANR	4582	Parameter	va_list ap_save	1:79:79:93	4482	3	True				
+ANR	4583	ParameterType	va_list		4482	0					
+ANR	4584	Identifier	ap_save		4482	1					
+ANR	4585	CFGEntryNode	ENTRY		4482		True				
+ANR	4586	CFGExitNode	EXIT		4482		True				
+ANR	4587	Symbol	& info		4482						
+ANR	4588	Symbol	maxlength		4482						
+ANR	4589	Symbol	ap_save		4482						
+ANR	4590	Symbol	info . max		4482						
+ANR	4591	Symbol	* info . buffer		4482						
+ANR	4592	Symbol	format		4482						
+ANR	4593	Symbol	info . length		4482						
+ANR	4594	Symbol	addbyter		4482						
+ANR	4595	Symbol	info . buffer		4482						
+ANR	4596	Symbol	buffer		4482						
+ANR	4597	Symbol	* info		4482						
+ANR	4598	Symbol	retcode		4482						
+ANR	4599	Symbol	info		4482						
+ANR	4600	Symbol	dprintf_formatf		4482						

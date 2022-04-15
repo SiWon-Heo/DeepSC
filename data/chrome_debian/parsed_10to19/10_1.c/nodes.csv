@@ -1,0 +1,136 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	236	File	tmp/10_1.c								
+ANR	237	Function	jbig2_set_bits	1:0:0:352							
+ANR	238	FunctionDef	"jbig2_set_bits (byte * line , int x0 , int x1)"		237	0					
+ANR	239	CompoundStatement		1:61:61:352	237	0					
+ANR	240	IdentifierDeclStatement	"int a0 , a1 , b0 , b1 , a ;"	2:1:64:90	237	0	True				
+ANR	241	IdentifierDecl	a0		237	0					
+ANR	242	IdentifierDeclType	int		237	0					
+ANR	243	Identifier	a0		237	1					
+ANR	244	IdentifierDecl	a1		237	1					
+ANR	245	IdentifierDeclType	int		237	0					
+ANR	246	Identifier	a1		237	1					
+ANR	247	IdentifierDecl	b0		237	2					
+ANR	248	IdentifierDeclType	int		237	0					
+ANR	249	Identifier	b0		237	1					
+ANR	250	IdentifierDecl	b1		237	3					
+ANR	251	IdentifierDeclType	int		237	0					
+ANR	252	Identifier	b1		237	1					
+ANR	253	IdentifierDecl	a		237	4					
+ANR	254	IdentifierDeclType	int		237	0					
+ANR	255	Identifier	a		237	1					
+ANR	256	ExpressionStatement	a0 = x0 >> 3	3:1:93:106	237	1	True				
+ANR	257	AssignmentExpression	a0 = x0 >> 3		237	0		=			
+ANR	258	Identifier	a0		237	0					
+ANR	259	ShiftExpression	x0 >> 3		237	1		>>			
+ANR	260	Identifier	x0		237	0					
+ANR	261	PrimaryExpression	3		237	1					
+ANR	262	ExpressionStatement	a1 = x1 >> 3	4:1:109:122	237	2	True				
+ANR	263	AssignmentExpression	a1 = x1 >> 3		237	0		=			
+ANR	264	Identifier	a1		237	0					
+ANR	265	ShiftExpression	x1 >> 3		237	1		>>			
+ANR	266	Identifier	x1		237	0					
+ANR	267	PrimaryExpression	3		237	1					
+ANR	268	ExpressionStatement	b0 = x0 & 7	5:1:125:137	237	3	True				
+ANR	269	AssignmentExpression	b0 = x0 & 7		237	0		=			
+ANR	270	Identifier	b0		237	0					
+ANR	271	BitAndExpression	x0 & 7		237	1		&			
+ANR	272	Identifier	x0		237	0					
+ANR	273	PrimaryExpression	7		237	1					
+ANR	274	ExpressionStatement	b1 = x1 & 7	6:1:140:152	237	4	True				
+ANR	275	AssignmentExpression	b1 = x1 & 7		237	0		=			
+ANR	276	Identifier	b1		237	0					
+ANR	277	BitAndExpression	x1 & 7		237	1		&			
+ANR	278	Identifier	x1		237	0					
+ANR	279	PrimaryExpression	7		237	1					
+ANR	280	IfStatement	if ( a0 == a1 )		237	5					
+ANR	281	Condition	a0 == a1	7:6:160:167	237	0	True				
+ANR	282	EqualityExpression	a0 == a1		237	0		==			
+ANR	283	Identifier	a0		237	0					
+ANR	284	Identifier	a1		237	1					
+ANR	285	CompoundStatement		7:17:109:109	237	1					
+ANR	286	ExpressionStatement	line [ a0 ] |= lm [ b0 ] & rm [ b1 ]	8:1:174:211	237	0	True				
+ANR	287	AssignmentExpression	line [ a0 ] |= lm [ b0 ] & rm [ b1 ]		237	0		|=			
+ANR	288	ArrayIndexing	line [ a0 ]		237	0					
+ANR	289	Identifier	line		237	0					
+ANR	290	Identifier	a0		237	1					
+ANR	291	BitAndExpression	lm [ b0 ] & rm [ b1 ]		237	1		&			
+ANR	292	ArrayIndexing	lm [ b0 ]		237	0					
+ANR	293	Identifier	lm		237	0					
+ANR	294	Identifier	b0		237	1					
+ANR	295	ArrayIndexing	rm [ b1 ]		237	1					
+ANR	296	Identifier	rm		237	0					
+ANR	297	Identifier	b1		237	1					
+ANR	298	ElseStatement	else		237	0					
+ANR	299	CompoundStatement		10:6:160:160	237	0					
+ANR	300	ExpressionStatement	line [ a0 ] |= lm [ b0 ]	11:1:225:250	237	0	True				
+ANR	301	AssignmentExpression	line [ a0 ] |= lm [ b0 ]		237	0		|=			
+ANR	302	ArrayIndexing	line [ a0 ]		237	0					
+ANR	303	Identifier	line		237	0					
+ANR	304	Identifier	a0		237	1					
+ANR	305	ArrayIndexing	lm [ b0 ]		237	1					
+ANR	306	Identifier	lm		237	0					
+ANR	307	Identifier	b0		237	1					
+ANR	308	ForStatement	for ( a = a0 + 1 ; a < a1 ; a ++ )		237	1					
+ANR	309	ForInit	a = a0 + 1 ;	12:7:259:270	237	0	True				
+ANR	310	AssignmentExpression	a = a0 + 1		237	0		=			
+ANR	311	Identifier	a		237	0					
+ANR	312	AdditiveExpression	a0 + 1		237	1		+			
+ANR	313	Identifier	a0		237	0					
+ANR	314	PrimaryExpression	1		237	1					
+ANR	315	Condition	a < a1	13:1:273:278	237	1	True				
+ANR	316	RelationalExpression	a < a1		237	0		<			
+ANR	317	Identifier	a		237	0					
+ANR	318	Identifier	a1		237	1					
+ANR	319	PostIncDecOperationExpression	a ++	14:1:283:286	237	2	True				
+ANR	320	Identifier	a		237	0					
+ANR	321	IncDec	++		237	1					
+ANR	322	ExpressionStatement	line [ a ] = 0xFF	14:8:290:308	237	3	True				
+ANR	323	AssignmentExpression	line [ a ] = 0xFF		237	0		=			
+ANR	324	ArrayIndexing	line [ a ]		237	0					
+ANR	325	Identifier	line		237	0					
+ANR	326	Identifier	a		237	1					
+ANR	327	PrimaryExpression	0xFF		237	1					
+ANR	328	IfStatement	if ( b1 )		237	2					
+ANR	329	Condition	b1	15:6:316:317	237	0	True				
+ANR	330	Identifier	b1		237	0					
+ANR	331	ExpressionStatement	line [ a1 ] |= rm [ b1 ]	15:11:321:346	237	1	True				
+ANR	332	AssignmentExpression	line [ a1 ] |= rm [ b1 ]		237	0		|=			
+ANR	333	ArrayIndexing	line [ a1 ]		237	0					
+ANR	334	Identifier	line		237	0					
+ANR	335	Identifier	a1		237	1					
+ANR	336	ArrayIndexing	rm [ b1 ]		237	1					
+ANR	337	Identifier	rm		237	0					
+ANR	338	Identifier	b1		237	1					
+ANR	339	ReturnType	static void		237	1					
+ANR	340	Identifier	jbig2_set_bits		237	2					
+ANR	341	ParameterList	"byte * line , int x0 , int x1"		237	3					
+ANR	342	Parameter	byte * line	1:29:29:39	237	0	True				
+ANR	343	ParameterType	byte *		237	0					
+ANR	344	Identifier	line		237	1					
+ANR	345	Parameter	int x0	1:43:43:48	237	1	True				
+ANR	346	ParameterType	int		237	0					
+ANR	347	Identifier	x0		237	1					
+ANR	348	Parameter	int x1	1:52:52:57	237	2	True				
+ANR	349	ParameterType	int		237	0					
+ANR	350	Identifier	x1		237	1					
+ANR	351	CFGEntryNode	ENTRY		237		True				
+ANR	352	CFGExitNode	EXIT		237		True				
+ANR	353	Symbol	a		237						
+ANR	354	Symbol	lm		237						
+ANR	355	Symbol	* rm		237						
+ANR	356	Symbol	* lm		237						
+ANR	357	Symbol	line		237						
+ANR	358	Symbol	* line		237						
+ANR	359	Symbol	* a		237						
+ANR	360	Symbol	b0		237						
+ANR	361	Symbol	b1		237						
+ANR	362	Symbol	a0		237						
+ANR	363	Symbol	a1		237						
+ANR	364	Symbol	* a1		237						
+ANR	365	Symbol	* a0		237						
+ANR	366	Symbol	* b1		237						
+ANR	367	Symbol	* b0		237						
+ANR	368	Symbol	x0		237						
+ANR	369	Symbol	x1		237						
+ANR	370	Symbol	rm		237						

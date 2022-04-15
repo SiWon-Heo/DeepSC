@@ -1,0 +1,60 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	290	File	tmp/2_0.c								
+ANR	291	Function	curl_mprintf	1:0:0:224							
+ANR	292	FunctionDef	curl_mprintf (const char * format)		291	0					
+ANR	293	CompoundStatement		1:47:47:224	291	0					
+ANR	294	IdentifierDeclStatement	int retcode ;	2:1:50:62	291	0	True				
+ANR	295	IdentifierDecl	retcode		291	0					
+ANR	296	IdentifierDeclType	int		291	0					
+ANR	297	Identifier	retcode		291	1					
+ANR	298	IdentifierDeclStatement	va_list ap_save ;	3:1:65:81	291	1	True				
+ANR	299	IdentifierDecl	ap_save		291	0					
+ANR	300	IdentifierDeclType	va_list		291	0					
+ANR	301	Identifier	ap_save		291	1					
+ANR	302	ExpressionStatement	"va_start ( ap_save , format )"	4:1:84:114	291	2	True				
+ANR	303	CallExpression	"va_start ( ap_save , format )"		291	0					
+ANR	304	Callee	va_start		291	0					
+ANR	305	Identifier	va_start		291	0					
+ANR	306	ArgumentList	ap_save		291	1					
+ANR	307	Argument	ap_save		291	0					
+ANR	308	Identifier	ap_save		291	0					
+ANR	309	Argument	format		291	1					
+ANR	310	Identifier	format		291	0					
+ANR	311	ExpressionStatement	"retcode = dprintf_formatf ( stdout , fputc , format , ap_save )"	5:1:117:181	291	3	True				
+ANR	312	AssignmentExpression	"retcode = dprintf_formatf ( stdout , fputc , format , ap_save )"		291	0		=			
+ANR	313	Identifier	retcode		291	0					
+ANR	314	CallExpression	"dprintf_formatf ( stdout , fputc , format , ap_save )"		291	1					
+ANR	315	Callee	dprintf_formatf		291	0					
+ANR	316	Identifier	dprintf_formatf		291	0					
+ANR	317	ArgumentList	stdout		291	1					
+ANR	318	Argument	stdout		291	0					
+ANR	319	Identifier	stdout		291	0					
+ANR	320	Argument	fputc		291	1					
+ANR	321	Identifier	fputc		291	0					
+ANR	322	Argument	format		291	2					
+ANR	323	Identifier	format		291	0					
+ANR	324	Argument	ap_save		291	3					
+ANR	325	Identifier	ap_save		291	0					
+ANR	326	ExpressionStatement	va_end ( ap_save )	6:1:184:203	291	4	True				
+ANR	327	CallExpression	va_end ( ap_save )		291	0					
+ANR	328	Callee	va_end		291	0					
+ANR	329	Identifier	va_end		291	0					
+ANR	330	ArgumentList	ap_save		291	1					
+ANR	331	Argument	ap_save		291	0					
+ANR	332	Identifier	ap_save		291	0					
+ANR	333	ReturnStatement	return retcode ;	7:1:206:221	291	5	True				
+ANR	334	Identifier	retcode		291	0					
+ANR	335	ReturnType	int		291	1					
+ANR	336	Identifier	curl_mprintf		291	2					
+ANR	337	ParameterList	const char * format		291	3					
+ANR	338	Parameter	const char * format	1:19:19:37	291	0	True				
+ANR	339	ParameterType	const char *		291	0					
+ANR	340	Identifier	format		291	1					
+ANR	341	CFGEntryNode	ENTRY		291		True				
+ANR	342	CFGExitNode	EXIT		291		True				
+ANR	343	Symbol	stdout		291						
+ANR	344	Symbol	ap_save		291						
+ANR	345	Symbol	format		291						
+ANR	346	Symbol	fputc		291						
+ANR	347	Symbol	retcode		291						
+ANR	348	Symbol	dprintf_formatf		291						

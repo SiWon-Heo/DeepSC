@@ -1,0 +1,56 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	536	File	tmp/12_0.c								
+ANR	537	Function	storebuffer	1:0:0:198							
+ANR	538	FunctionDef	"storebuffer (int output , FILE * data)"		537	0					
+ANR	539	CompoundStatement		1:52:52:198	537	0					
+ANR	540	IdentifierDeclStatement	char * * buffer = ( char * * ) data ;	2:1:55:91	537	0	True				
+ANR	541	IdentifierDecl	* * buffer = ( char * * ) data		537	0					
+ANR	542	IdentifierDeclType	char * *		537	0					
+ANR	543	Identifier	buffer		537	1					
+ANR	544	AssignmentExpression	* * buffer = ( char * * ) data		537	2		=			
+ANR	545	Identifier	buffer		537	0					
+ANR	546	CastExpression	( char * * ) data		537	1					
+ANR	547	CastTarget	char * *		537	0					
+ANR	548	Identifier	data		537	1					
+ANR	549	IdentifierDeclStatement	unsigned char outc = ( unsigned char ) output ;	3:1:94:140	537	1	True				
+ANR	550	IdentifierDecl	outc = ( unsigned char ) output		537	0					
+ANR	551	IdentifierDeclType	unsigned char		537	0					
+ANR	552	Identifier	outc		537	1					
+ANR	553	AssignmentExpression	outc = ( unsigned char ) output		537	2		=			
+ANR	554	Identifier	outc		537	0					
+ANR	555	CastExpression	( unsigned char ) output		537	1					
+ANR	556	CastTarget	unsigned char		537	0					
+ANR	557	Identifier	output		537	1					
+ANR	558	ExpressionStatement	* * buffer = outc	4:1:143:161	537	2	True				
+ANR	559	AssignmentExpression	* * buffer = outc		537	0		=			
+ANR	560	UnaryOperationExpression	* * buffer		537	0					
+ANR	561	UnaryOperator	*		537	0					
+ANR	562	UnaryOperationExpression	* buffer		537	1					
+ANR	563	UnaryOperator	*		537	0					
+ANR	564	Identifier	buffer		537	1					
+ANR	565	Identifier	outc		537	1					
+ANR	566	ExpressionStatement	( * buffer ) ++	5:1:164:180	537	3	True				
+ANR	567	PostIncDecOperationExpression	( * buffer ) ++		537	0					
+ANR	568	UnaryOperationExpression	* buffer		537	0					
+ANR	569	UnaryOperator	*		537	0					
+ANR	570	Identifier	buffer		537	1					
+ANR	571	IncDec	++		537	1					
+ANR	572	ReturnStatement	return outc ;	6:1:183:195	537	4	True				
+ANR	573	Identifier	outc		537	0					
+ANR	574	ReturnType	static int		537	1					
+ANR	575	Identifier	storebuffer		537	2					
+ANR	576	ParameterList	"int output , FILE * data"		537	3					
+ANR	577	Parameter	int output	1:25:25:34	537	0	True				
+ANR	578	ParameterType	int		537	0					
+ANR	579	Identifier	output		537	1					
+ANR	580	Parameter	FILE * data	1:38:38:48	537	1	True				
+ANR	581	ParameterType	FILE *		537	0					
+ANR	582	Identifier	data		537	1					
+ANR	583	CFGEntryNode	ENTRY		537		True				
+ANR	584	CFGExitNode	EXIT		537		True				
+ANR	585	Symbol	output		537						
+ANR	586	Symbol	outc		537						
+ANR	587	Symbol	* buffer		537						
+ANR	588	Symbol	* * buffer		537						
+ANR	589	Symbol	data		537						
+ANR	590	Symbol	buffer		537						

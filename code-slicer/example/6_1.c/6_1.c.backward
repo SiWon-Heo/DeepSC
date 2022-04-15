@@ -1,0 +1,1 @@
+uint8_t * * jbig2_decode_gray_scale_image ( Jbig2Ctx * ctx , Jbig2Segment * segment , const byte * data , const size_t size , bool GSMMR , uint32_t GSW , uint32_t GSH , uint32_t GSBPP , bool GSUSESKIP , Jbig2Image * GSKIP , int GSTEMPLATE , Jbig2ArithCx * GB_stats ) {

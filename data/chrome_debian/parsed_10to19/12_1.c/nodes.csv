@@ -1,0 +1,79 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	591	File	tmp/12_1.c								
+ANR	592	Function	jbig2_find_changing_element_of_color	1:0:0:291							
+ANR	593	FunctionDef	"jbig2_find_changing_element_of_color (const byte * line , int x , int w , int color)"		592	0					
+ANR	594	CompoundStatement		1:98:98:291	592	0					
+ANR	595	IfStatement	if ( line == 0 )		592	0					
+ANR	596	Condition	line == 0	2:6:106:114	592	0	True				
+ANR	597	EqualityExpression	line == 0		592	0		==			
+ANR	598	Identifier	line		592	0					
+ANR	599	PrimaryExpression	0		592	1					
+ANR	600	ReturnStatement	return w ;	2:18:118:127	592	1	True				
+ANR	601	Identifier	w		592	0					
+ANR	602	ExpressionStatement	"x = jbig2_find_changing_element ( line , x , w )"	3:1:130:179	592	1	True				
+ANR	603	AssignmentExpression	"x = jbig2_find_changing_element ( line , x , w )"		592	0		=			
+ANR	604	Identifier	x		592	0					
+ANR	605	CallExpression	"jbig2_find_changing_element ( line , x , w )"		592	1					
+ANR	606	Callee	jbig2_find_changing_element		592	0					
+ANR	607	Identifier	jbig2_find_changing_element		592	0					
+ANR	608	ArgumentList	line		592	1					
+ANR	609	Argument	line		592	0					
+ANR	610	Identifier	line		592	0					
+ANR	611	Argument	x		592	1					
+ANR	612	Identifier	x		592	0					
+ANR	613	Argument	w		592	2					
+ANR	614	Identifier	w		592	0					
+ANR	615	IfStatement	"if ( x < w && getbit ( line , x ) != color )"		592	2					
+ANR	616	Condition	"x < w && getbit ( line , x ) != color"	4:6:187:223	592	0	True				
+ANR	617	AndExpression	"x < w && getbit ( line , x ) != color"		592	0		&&			
+ANR	618	RelationalExpression	x < w		592	0		<			
+ANR	619	Identifier	x		592	0					
+ANR	620	Identifier	w		592	1					
+ANR	621	EqualityExpression	"getbit ( line , x ) != color"		592	1		!=			
+ANR	622	CallExpression	"getbit ( line , x )"		592	0					
+ANR	623	Callee	getbit		592	0					
+ANR	624	Identifier	getbit		592	0					
+ANR	625	ArgumentList	line		592	1					
+ANR	626	Argument	line		592	0					
+ANR	627	Identifier	line		592	0					
+ANR	628	Argument	x		592	1					
+ANR	629	Identifier	x		592	0					
+ANR	630	Identifier	color		592	1					
+ANR	631	ExpressionStatement	"x = jbig2_find_changing_element ( line , x , w )"	4:46:227:276	592	1	True				
+ANR	632	AssignmentExpression	"x = jbig2_find_changing_element ( line , x , w )"		592	0		=			
+ANR	633	Identifier	x		592	0					
+ANR	634	CallExpression	"jbig2_find_changing_element ( line , x , w )"		592	1					
+ANR	635	Callee	jbig2_find_changing_element		592	0					
+ANR	636	Identifier	jbig2_find_changing_element		592	0					
+ANR	637	ArgumentList	line		592	1					
+ANR	638	Argument	line		592	0					
+ANR	639	Identifier	line		592	0					
+ANR	640	Argument	x		592	1					
+ANR	641	Identifier	x		592	0					
+ANR	642	Argument	w		592	2					
+ANR	643	Identifier	w		592	0					
+ANR	644	ReturnStatement	return x ;	5:1:279:288	592	3	True				
+ANR	645	Identifier	x		592	0					
+ANR	646	ReturnType	static int		592	1					
+ANR	647	Identifier	jbig2_find_changing_element_of_color		592	2					
+ANR	648	ParameterList	"const byte * line , int x , int w , int color"		592	3					
+ANR	649	Parameter	const byte * line	1:50:50:66	592	0	True				
+ANR	650	ParameterType	const byte *		592	0					
+ANR	651	Identifier	line		592	1					
+ANR	652	Parameter	int x	1:70:70:74	592	1	True				
+ANR	653	ParameterType	int		592	0					
+ANR	654	Identifier	x		592	1					
+ANR	655	Parameter	int w	1:78:78:82	592	2	True				
+ANR	656	ParameterType	int		592	0					
+ANR	657	Identifier	w		592	1					
+ANR	658	Parameter	int color	1:86:86:94	592	3	True				
+ANR	659	ParameterType	int		592	0					
+ANR	660	Identifier	color		592	1					
+ANR	661	CFGEntryNode	ENTRY		592		True				
+ANR	662	CFGExitNode	EXIT		592		True				
+ANR	663	Symbol	color		592						
+ANR	664	Symbol	line		592						
+ANR	665	Symbol	w		592						
+ANR	666	Symbol	x		592						
+ANR	667	Symbol	jbig2_find_changing_element		592						
+ANR	668	Symbol	getbit		592						

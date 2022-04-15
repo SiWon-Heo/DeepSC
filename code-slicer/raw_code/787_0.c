@@ -1,0 +1,4 @@
+static int zisofs_free ( struct archive_write * a ) {
+ ( void ) a ;
+ return ( ARCHIVE_OK ) ;
+ }

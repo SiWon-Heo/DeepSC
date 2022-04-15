@@ -1,0 +1,137 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	1	File	tmp/1_0.c								
+ANR	2	Function	curl_mvaprintf	1:0:0:486							
+ANR	3	FunctionDef	"curl_mvaprintf (const char * format , va_list ap_save)"		2	0					
+ANR	4	CompoundStatement		1:64:64:486	2	0					
+ANR	5	IdentifierDeclStatement	int retcode ;	2:1:67:79	2	0	True				
+ANR	6	IdentifierDecl	retcode		2	0					
+ANR	7	IdentifierDeclType	int		2	0					
+ANR	8	Identifier	retcode		2	1					
+ANR	9	IdentifierDeclStatement	struct asprintf info ;	3:1:82:103	2	1	True				
+ANR	10	IdentifierDecl	info		2	0					
+ANR	11	IdentifierDeclType	struct asprintf		2	0					
+ANR	12	Identifier	info		2	1					
+ANR	13	ExpressionStatement	info . buffer = NULL	4:1:106:127	2	2	True				
+ANR	14	AssignmentExpression	info . buffer = NULL		2	0		=			
+ANR	15	MemberAccess	info . buffer		2	0					
+ANR	16	Identifier	info		2	0					
+ANR	17	Identifier	buffer		2	1					
+ANR	18	Identifier	NULL		2	1					
+ANR	19	ExpressionStatement	info . len = 0	5:1:130:145	2	3	True				
+ANR	20	AssignmentExpression	info . len = 0		2	0		=			
+ANR	21	MemberAccess	info . len		2	0					
+ANR	22	Identifier	info		2	0					
+ANR	23	Identifier	len		2	1					
+ANR	24	PrimaryExpression	0		2	1					
+ANR	25	ExpressionStatement	info . alloc = 0	6:1:148:165	2	4	True				
+ANR	26	AssignmentExpression	info . alloc = 0		2	0		=			
+ANR	27	MemberAccess	info . alloc		2	0					
+ANR	28	Identifier	info		2	0					
+ANR	29	Identifier	alloc		2	1					
+ANR	30	PrimaryExpression	0		2	1					
+ANR	31	ExpressionStatement	info . fail = 0	7:1:168:184	2	5	True				
+ANR	32	AssignmentExpression	info . fail = 0		2	0		=			
+ANR	33	MemberAccess	info . fail		2	0					
+ANR	34	Identifier	info		2	0					
+ANR	35	Identifier	fail		2	1					
+ANR	36	PrimaryExpression	0		2	1					
+ANR	37	ExpressionStatement	"retcode = dprintf_formatf ( & info , alloc_addbyter , format , ap_save )"	8:1:187:260	2	6	True				
+ANR	38	AssignmentExpression	"retcode = dprintf_formatf ( & info , alloc_addbyter , format , ap_save )"		2	0		=			
+ANR	39	Identifier	retcode		2	0					
+ANR	40	CallExpression	"dprintf_formatf ( & info , alloc_addbyter , format , ap_save )"		2	1					
+ANR	41	Callee	dprintf_formatf		2	0					
+ANR	42	Identifier	dprintf_formatf		2	0					
+ANR	43	ArgumentList	& info		2	1					
+ANR	44	Argument	& info		2	0					
+ANR	45	UnaryOperationExpression	& info		2	0					
+ANR	46	UnaryOperator	&		2	0					
+ANR	47	Identifier	info		2	1					
+ANR	48	Argument	alloc_addbyter		2	1					
+ANR	49	Identifier	alloc_addbyter		2	0					
+ANR	50	Argument	format		2	2					
+ANR	51	Identifier	format		2	0					
+ANR	52	Argument	ap_save		2	3					
+ANR	53	Identifier	ap_save		2	0					
+ANR	54	IfStatement	if ( ( - 1 == retcode ) || info . fail )		2	7					
+ANR	55	Condition	( - 1 == retcode ) || info . fail	9:6:268:300	2	0	True				
+ANR	56	OrExpression	( - 1 == retcode ) || info . fail		2	0		||			
+ANR	57	EqualityExpression	- 1 == retcode		2	0		==			
+ANR	58	UnaryOperationExpression	- 1		2	0					
+ANR	59	UnaryOperator	-		2	0					
+ANR	60	PrimaryExpression	1		2	1					
+ANR	61	Identifier	retcode		2	1					
+ANR	62	MemberAccess	info . fail		2	1					
+ANR	63	Identifier	info		2	0					
+ANR	64	Identifier	fail		2	1					
+ANR	65	CompoundStatement		9:42:239:239	2	1					
+ANR	66	IfStatement	if ( info . alloc )		2	0					
+ANR	67	Condition	info . alloc	10:6:312:323	2	0	True				
+ANR	68	MemberAccess	info . alloc		2	0					
+ANR	69	Identifier	info		2	0					
+ANR	70	Identifier	alloc		2	1					
+ANR	71	ExpressionStatement	free ( info . buffer )	10:21:327:350	2	1	True				
+ANR	72	CallExpression	free ( info . buffer )		2	0					
+ANR	73	Callee	free		2	0					
+ANR	74	Identifier	free		2	0					
+ANR	75	ArgumentList	info . buffer		2	1					
+ANR	76	Argument	info . buffer		2	0					
+ANR	77	MemberAccess	info . buffer		2	0					
+ANR	78	Identifier	info		2	0					
+ANR	79	Identifier	buffer		2	1					
+ANR	80	ReturnStatement	return NULL ;	11:1:353:365	2	1	True				
+ANR	81	Identifier	NULL		2	0					
+ANR	82	IfStatement	if ( info . alloc )		2	8					
+ANR	83	Condition	info . alloc	13:6:376:387	2	0	True				
+ANR	84	MemberAccess	info . alloc		2	0					
+ANR	85	Identifier	info		2	0					
+ANR	86	Identifier	alloc		2	1					
+ANR	87	CompoundStatement		13:21:326:326	2	1					
+ANR	88	ExpressionStatement	info . buffer [ info . len ] = 0	14:1:394:427	2	0	True				
+ANR	89	AssignmentExpression	info . buffer [ info . len ] = 0		2	0		=			
+ANR	90	ArrayIndexing	info . buffer [ info . len ]		2	0					
+ANR	91	MemberAccess	info . buffer		2	0					
+ANR	92	Identifier	info		2	0					
+ANR	93	Identifier	buffer		2	1					
+ANR	94	MemberAccess	info . len		2	1					
+ANR	95	Identifier	info		2	0					
+ANR	96	Identifier	len		2	1					
+ANR	97	PrimaryExpression	0		2	1					
+ANR	98	ReturnStatement	return info . buffer ;	15:1:430:451	2	1	True				
+ANR	99	MemberAccess	info . buffer		2	0					
+ANR	100	Identifier	info		2	0					
+ANR	101	Identifier	buffer		2	1					
+ANR	102	ElseStatement	else		2	0					
+ANR	103	ReturnStatement	"return strdup ( """" ) ;"	17:6:462:483	2	0	True				
+ANR	104	CallExpression	"strdup ( """" )"		2	0					
+ANR	105	Callee	strdup		2	0					
+ANR	106	Identifier	strdup		2	0					
+ANR	107	ArgumentList	""""""		2	1					
+ANR	108	Argument	""""""		2	0					
+ANR	109	PrimaryExpression	""""""		2	0					
+ANR	110	ReturnType	char *		2	1					
+ANR	111	Identifier	curl_mvaprintf		2	2					
+ANR	112	ParameterList	"const char * format , va_list ap_save"		2	3					
+ANR	113	Parameter	const char * format	1:24:24:42	2	0	True				
+ANR	114	ParameterType	const char *		2	0					
+ANR	115	Identifier	format		2	1					
+ANR	116	Parameter	va_list ap_save	1:46:46:60	2	1	True				
+ANR	117	ParameterType	va_list		2	0					
+ANR	118	Identifier	ap_save		2	1					
+ANR	119	CFGEntryNode	ENTRY		2		True				
+ANR	120	CFGExitNode	EXIT		2		True				
+ANR	121	Symbol	NULL		2						
+ANR	122	Symbol	& info		2						
+ANR	123	Symbol	ap_save		2						
+ANR	124	Symbol	* info . len		2						
+ANR	125	Symbol	* info . buffer		2						
+ANR	126	Symbol	format		2						
+ANR	127	Symbol	info . alloc		2						
+ANR	128	Symbol	alloc_addbyter		2						
+ANR	129	Symbol	info . buffer		2						
+ANR	130	Symbol	info . len		2						
+ANR	131	Symbol	info . fail		2						
+ANR	132	Symbol	* info		2						
+ANR	133	Symbol	strdup		2						
+ANR	134	Symbol	retcode		2						
+ANR	135	Symbol	info		2						
+ANR	136	Symbol	dprintf_formatf		2						

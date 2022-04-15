@@ -1,0 +1,16 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	669	File	tmp/13_0.c								
+ANR	670	Function	__uint32_identity	1:0:0:81							
+ANR	671	FunctionDef	__uint32_identity (__uint32_t __x)		670	0					
+ANR	672	CompoundStatement		1:64:64:81	670	0					
+ANR	673	ReturnStatement	return __x ;	2:1:67:78	670	0	True				
+ANR	674	Identifier	__x		670	0					
+ANR	675	ReturnType	static __inline __uint32_t		670	1					
+ANR	676	Identifier	__uint32_identity		670	2					
+ANR	677	ParameterList	__uint32_t __x		670	3					
+ANR	678	Parameter	__uint32_t __x	1:47:47:60	670	0	True				
+ANR	679	ParameterType	__uint32_t		670	0					
+ANR	680	Identifier	__x		670	1					
+ANR	681	CFGEntryNode	ENTRY		670		True				
+ANR	682	CFGExitNode	EXIT		670		True				
+ANR	683	Symbol	__x		670						

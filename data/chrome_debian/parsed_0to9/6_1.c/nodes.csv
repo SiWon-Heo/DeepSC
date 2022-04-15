@@ -1,0 +1,960 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	4601	File	tmp/6_1.c								
+ANR	4602	Function	jbig2_decode_gray_scale_image	1:0:0:4045							
+ANR	4603	FunctionDef	"jbig2_decode_gray_scale_image (Jbig2Ctx * ctx , Jbig2Segment * segment , const byte * data , const size_t size , bool GSMMR , uint32_t GSW , uint32_t GSH , uint32_t GSBPP , bool GSUSESKIP , Jbig2Image * GSKIP , int GSTEMPLATE , Jbig2ArithCx * GB_stats)"		4602	0					
+ANR	4604	CompoundStatement		1:267:267:4045	4602	0					
+ANR	4605	IdentifierDeclStatement	uint8_t * * GSVALS = NULL ;	2:1:270:296	4602	0	True				
+ANR	4606	IdentifierDecl	* * GSVALS = NULL		4602	0					
+ANR	4607	IdentifierDeclType	uint8_t * *		4602	0					
+ANR	4608	Identifier	GSVALS		4602	1					
+ANR	4609	AssignmentExpression	* * GSVALS = NULL		4602	2		=			
+ANR	4610	Identifier	NULL		4602	0					
+ANR	4611	Identifier	NULL		4602	1					
+ANR	4612	IdentifierDeclStatement	size_t consumed_bytes = 0 ;	3:1:299:325	4602	1	True				
+ANR	4613	IdentifierDecl	consumed_bytes = 0		4602	0					
+ANR	4614	IdentifierDeclType	size_t		4602	0					
+ANR	4615	Identifier	consumed_bytes		4602	1					
+ANR	4616	AssignmentExpression	consumed_bytes = 0		4602	2		=			
+ANR	4617	Identifier	consumed_bytes		4602	0					
+ANR	4618	PrimaryExpression	0		4602	1					
+ANR	4619	IdentifierDeclStatement	"int i , j , code , stride ;"	4:1:328:354	4602	2	True				
+ANR	4620	IdentifierDecl	i		4602	0					
+ANR	4621	IdentifierDeclType	int		4602	0					
+ANR	4622	Identifier	i		4602	1					
+ANR	4623	IdentifierDecl	j		4602	1					
+ANR	4624	IdentifierDeclType	int		4602	0					
+ANR	4625	Identifier	j		4602	1					
+ANR	4626	IdentifierDecl	code		4602	2					
+ANR	4627	IdentifierDeclType	int		4602	0					
+ANR	4628	Identifier	code		4602	1					
+ANR	4629	IdentifierDecl	stride		4602	3					
+ANR	4630	IdentifierDeclType	int		4602	0					
+ANR	4631	Identifier	stride		4602	1					
+ANR	4632	IdentifierDeclStatement	"int x , y ;"	5:1:357:367	4602	3	True				
+ANR	4633	IdentifierDecl	x		4602	0					
+ANR	4634	IdentifierDeclType	int		4602	0					
+ANR	4635	Identifier	x		4602	1					
+ANR	4636	IdentifierDecl	y		4602	1					
+ANR	4637	IdentifierDeclType	int		4602	0					
+ANR	4638	Identifier	y		4602	1					
+ANR	4639	IdentifierDeclStatement	Jbig2Image * * GSPLANES ;	6:1:370:394	4602	4	True				
+ANR	4640	IdentifierDecl	* * GSPLANES		4602	0					
+ANR	4641	IdentifierDeclType	Jbig2Image * *		4602	0					
+ANR	4642	Identifier	GSPLANES		4602	1					
+ANR	4643	IdentifierDeclStatement	Jbig2GenericRegionParams rparams ;	7:1:397:430	4602	5	True				
+ANR	4644	IdentifierDecl	rparams		4602	0					
+ANR	4645	IdentifierDeclType	Jbig2GenericRegionParams		4602	0					
+ANR	4646	Identifier	rparams		4602	1					
+ANR	4647	IdentifierDeclStatement	Jbig2WordStream * ws = NULL ;	8:1:433:461	4602	6	True				
+ANR	4648	IdentifierDecl	* ws = NULL		4602	0					
+ANR	4649	IdentifierDeclType	Jbig2WordStream *		4602	0					
+ANR	4650	Identifier	ws		4602	1					
+ANR	4651	AssignmentExpression	* ws = NULL		4602	2		=			
+ANR	4652	Identifier	NULL		4602	0					
+ANR	4653	Identifier	NULL		4602	1					
+ANR	4654	IdentifierDeclStatement	Jbig2ArithState * as = NULL ;	9:1:464:492	4602	7	True				
+ANR	4655	IdentifierDecl	* as = NULL		4602	0					
+ANR	4656	IdentifierDeclType	Jbig2ArithState *		4602	0					
+ANR	4657	Identifier	as		4602	1					
+ANR	4658	AssignmentExpression	* as = NULL		4602	2		=			
+ANR	4659	Identifier	NULL		4602	0					
+ANR	4660	Identifier	NULL		4602	1					
+ANR	4661	Statement	GSPLANES	10:1:495:502	4602	8	True				
+ANR	4662	Statement	=	10:10:504:504	4602	9	True				
+ANR	4663	Statement	jbig2_new	10:12:506:514	4602	10	True				
+ANR	4664	Statement	(	10:22:516:516	4602	11	True				
+ANR	4665	Statement	ctx	10:24:518:520	4602	12	True				
+ANR	4666	Statement	","	10:28:522:522	4602	13	True				
+ANR	4667	Statement	Jbig2Image	10:30:524:533	4602	14	True				
+ANR	4668	Statement	*	10:41:535:535	4602	15	True				
+ANR	4669	Statement	","	10:43:537:537	4602	16	True				
+ANR	4670	Statement	GSBPP	10:45:539:543	4602	17	True				
+ANR	4671	Statement	)	10:51:545:545	4602	18	True				
+ANR	4672	ExpressionStatement		10:53:547:547	4602	19	True				
+ANR	4673	IfStatement	if ( GSPLANES == NULL )		4602	20					
+ANR	4674	Condition	GSPLANES == NULL	11:6:555:570	4602	0	True				
+ANR	4675	EqualityExpression	GSPLANES == NULL		4602	0		==			
+ANR	4676	Identifier	GSPLANES		4602	0					
+ANR	4677	Identifier	NULL		4602	1					
+ANR	4678	CompoundStatement		11:25:306:306	4602	1					
+ANR	4679	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate %d bytes for GSPLANES"" , GSBPP )"	12:1:577:693	4602	0	True				
+ANR	4680	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate %d bytes for GSPLANES"" , GSBPP )"		4602	0					
+ANR	4681	Callee	jbig2_error		4602	0					
+ANR	4682	Identifier	jbig2_error		4602	0					
+ANR	4683	ArgumentList	ctx		4602	1					
+ANR	4684	Argument	ctx		4602	0					
+ANR	4685	Identifier	ctx		4602	0					
+ANR	4686	Argument	JBIG2_SEVERITY_FATAL		4602	1					
+ANR	4687	Identifier	JBIG2_SEVERITY_FATAL		4602	0					
+ANR	4688	Argument	segment -> number		4602	2					
+ANR	4689	PtrMemberAccess	segment -> number		4602	0					
+ANR	4690	Identifier	segment		4602	0					
+ANR	4691	Identifier	number		4602	1					
+ANR	4692	Argument	"""failed to allocate %d bytes for GSPLANES"""		4602	3					
+ANR	4693	PrimaryExpression	"""failed to allocate %d bytes for GSPLANES"""		4602	0					
+ANR	4694	Argument	GSBPP		4602	4					
+ANR	4695	Identifier	GSBPP		4602	0					
+ANR	4696	ReturnStatement	return NULL ;	13:1:696:708	4602	1	True				
+ANR	4697	Identifier	NULL		4602	0					
+ANR	4698	ForStatement	for ( i = 0 ; i < GSBPP ; ++ i )		4602	21					
+ANR	4699	ForInit	i = 0 ;	15:7:720:726	4602	0	True				
+ANR	4700	AssignmentExpression	i = 0		4602	0		=			
+ANR	4701	Identifier	i		4602	0					
+ANR	4702	PrimaryExpression	0		4602	1					
+ANR	4703	Condition	i < GSBPP	16:1:729:737	4602	1	True				
+ANR	4704	RelationalExpression	i < GSBPP		4602	0		<			
+ANR	4705	Identifier	i		4602	0					
+ANR	4706	Identifier	GSBPP		4602	1					
+ANR	4707	UnaryExpression	++ i	17:1:742:745	4602	2	True				
+ANR	4708	IncDec	++		4602	0					
+ANR	4709	Identifier	i		4602	1					
+ANR	4710	CompoundStatement		17:8:481:481	4602	3					
+ANR	4711	ExpressionStatement	"GSPLANES [ i ] = jbig2_image_new ( ctx , GSW , GSH )"	18:1:752:805	4602	0	True				
+ANR	4712	AssignmentExpression	"GSPLANES [ i ] = jbig2_image_new ( ctx , GSW , GSH )"		4602	0		=			
+ANR	4713	ArrayIndexing	GSPLANES [ i ]		4602	0					
+ANR	4714	Identifier	GSPLANES		4602	0					
+ANR	4715	Identifier	i		4602	1					
+ANR	4716	CallExpression	"jbig2_image_new ( ctx , GSW , GSH )"		4602	1					
+ANR	4717	Callee	jbig2_image_new		4602	0					
+ANR	4718	Identifier	jbig2_image_new		4602	0					
+ANR	4719	ArgumentList	ctx		4602	1					
+ANR	4720	Argument	ctx		4602	0					
+ANR	4721	Identifier	ctx		4602	0					
+ANR	4722	Argument	GSW		4602	1					
+ANR	4723	Identifier	GSW		4602	0					
+ANR	4724	Argument	GSH		4602	2					
+ANR	4725	Identifier	GSH		4602	0					
+ANR	4726	IfStatement	if ( GSPLANES [ i ] == NULL )		4602	1					
+ANR	4727	Condition	GSPLANES [ i ] == NULL	19:6:813:834	4602	0	True				
+ANR	4728	EqualityExpression	GSPLANES [ i ] == NULL		4602	0		==			
+ANR	4729	ArrayIndexing	GSPLANES [ i ]		4602	0					
+ANR	4730	Identifier	GSPLANES		4602	0					
+ANR	4731	Identifier	i		4602	1					
+ANR	4732	Identifier	NULL		4602	1					
+ANR	4733	CompoundStatement		19:31:570:570	4602	1					
+ANR	4734	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate %dx%d image for GSPLANES"" , GSW , GSH )"	20:1:841:964	4602	0	True				
+ANR	4735	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate %dx%d image for GSPLANES"" , GSW , GSH )"		4602	0					
+ANR	4736	Callee	jbig2_error		4602	0					
+ANR	4737	Identifier	jbig2_error		4602	0					
+ANR	4738	ArgumentList	ctx		4602	1					
+ANR	4739	Argument	ctx		4602	0					
+ANR	4740	Identifier	ctx		4602	0					
+ANR	4741	Argument	JBIG2_SEVERITY_FATAL		4602	1					
+ANR	4742	Identifier	JBIG2_SEVERITY_FATAL		4602	0					
+ANR	4743	Argument	segment -> number		4602	2					
+ANR	4744	PtrMemberAccess	segment -> number		4602	0					
+ANR	4745	Identifier	segment		4602	0					
+ANR	4746	Identifier	number		4602	1					
+ANR	4747	Argument	"""failed to allocate %dx%d image for GSPLANES"""		4602	3					
+ANR	4748	PrimaryExpression	"""failed to allocate %dx%d image for GSPLANES"""		4602	0					
+ANR	4749	Argument	GSW		4602	4					
+ANR	4750	Identifier	GSW		4602	0					
+ANR	4751	Argument	GSH		4602	5					
+ANR	4752	Identifier	GSH		4602	0					
+ANR	4753	ForStatement	for ( j = i - 1 ; j >= 0 ; -- j )		4602	1					
+ANR	4754	ForInit	j = i - 1 ;	21:7:973:983	4602	0	True				
+ANR	4755	AssignmentExpression	j = i - 1		4602	0		=			
+ANR	4756	Identifier	j		4602	0					
+ANR	4757	AdditiveExpression	i - 1		4602	1		-			
+ANR	4758	Identifier	i		4602	0					
+ANR	4759	PrimaryExpression	1		4602	1					
+ANR	4760	Condition	j >= 0	22:1:986:991	4602	1	True				
+ANR	4761	RelationalExpression	j >= 0		4602	0		>=			
+ANR	4762	Identifier	j		4602	0					
+ANR	4763	PrimaryExpression	0		4602	1					
+ANR	4764	UnaryExpression	-- j	23:1:996:999	4602	2	True				
+ANR	4765	IncDec	--		4602	0					
+ANR	4766	Identifier	j		4602	1					
+ANR	4767	CompoundStatement		23:8:735:735	4602	3					
+ANR	4768	ExpressionStatement	"jbig2_image_release ( ctx , GSPLANES [ j ] )"	24:1:1006:1051	4602	0	True				
+ANR	4769	CallExpression	"jbig2_image_release ( ctx , GSPLANES [ j ] )"		4602	0					
+ANR	4770	Callee	jbig2_image_release		4602	0					
+ANR	4771	Identifier	jbig2_image_release		4602	0					
+ANR	4772	ArgumentList	ctx		4602	1					
+ANR	4773	Argument	ctx		4602	0					
+ANR	4774	Identifier	ctx		4602	0					
+ANR	4775	Argument	GSPLANES [ j ]		4602	1					
+ANR	4776	ArrayIndexing	GSPLANES [ j ]		4602	0					
+ANR	4777	Identifier	GSPLANES		4602	0					
+ANR	4778	Identifier	j		4602	1					
+ANR	4779	ExpressionStatement	"jbig2_free ( ctx -> allocator , GSPLANES )"	26:1:1057:1100	4602	2	True				
+ANR	4780	CallExpression	"jbig2_free ( ctx -> allocator , GSPLANES )"		4602	0					
+ANR	4781	Callee	jbig2_free		4602	0					
+ANR	4782	Identifier	jbig2_free		4602	0					
+ANR	4783	ArgumentList	ctx -> allocator		4602	1					
+ANR	4784	Argument	ctx -> allocator		4602	0					
+ANR	4785	PtrMemberAccess	ctx -> allocator		4602	0					
+ANR	4786	Identifier	ctx		4602	0					
+ANR	4787	Identifier	allocator		4602	1					
+ANR	4788	Argument	GSPLANES		4602	1					
+ANR	4789	Identifier	GSPLANES		4602	0					
+ANR	4790	ReturnStatement	return NULL ;	27:1:1103:1115	4602	3	True				
+ANR	4791	Identifier	NULL		4602	0					
+ANR	4792	ExpressionStatement	rparams . MMR = GSMMR	30:1:1124:1146	4602	22	True				
+ANR	4793	AssignmentExpression	rparams . MMR = GSMMR		4602	0		=			
+ANR	4794	MemberAccess	rparams . MMR		4602	0					
+ANR	4795	Identifier	rparams		4602	0					
+ANR	4796	Identifier	MMR		4602	1					
+ANR	4797	Identifier	GSMMR		4602	1					
+ANR	4798	ExpressionStatement	rparams . GBTEMPLATE = GSTEMPLATE	31:1:1149:1183	4602	23	True				
+ANR	4799	AssignmentExpression	rparams . GBTEMPLATE = GSTEMPLATE		4602	0		=			
+ANR	4800	MemberAccess	rparams . GBTEMPLATE		4602	0					
+ANR	4801	Identifier	rparams		4602	0					
+ANR	4802	Identifier	GBTEMPLATE		4602	1					
+ANR	4803	Identifier	GSTEMPLATE		4602	1					
+ANR	4804	ExpressionStatement	rparams . TPGDON = 0	32:1:1186:1207	4602	24	True				
+ANR	4805	AssignmentExpression	rparams . TPGDON = 0		4602	0		=			
+ANR	4806	MemberAccess	rparams . TPGDON		4602	0					
+ANR	4807	Identifier	rparams		4602	0					
+ANR	4808	Identifier	TPGDON		4602	1					
+ANR	4809	PrimaryExpression	0		4602	1					
+ANR	4810	ExpressionStatement	rparams . USESKIP = GSUSESKIP	33:1:1210:1240	4602	25	True				
+ANR	4811	AssignmentExpression	rparams . USESKIP = GSUSESKIP		4602	0		=			
+ANR	4812	MemberAccess	rparams . USESKIP		4602	0					
+ANR	4813	Identifier	rparams		4602	0					
+ANR	4814	Identifier	USESKIP		4602	1					
+ANR	4815	Identifier	GSUSESKIP		4602	1					
+ANR	4816	ExpressionStatement	rparams . gbat [ 0 ] = ( GSTEMPLATE <= 1 ? 3 : 2 )	34:1:1243:1294	4602	26	True				
+ANR	4817	AssignmentExpression	rparams . gbat [ 0 ] = ( GSTEMPLATE <= 1 ? 3 : 2 )		4602	0		=			
+ANR	4818	ArrayIndexing	rparams . gbat [ 0 ]		4602	0					
+ANR	4819	MemberAccess	rparams . gbat		4602	0					
+ANR	4820	Identifier	rparams		4602	0					
+ANR	4821	Identifier	gbat		4602	1					
+ANR	4822	PrimaryExpression	0		4602	1					
+ANR	4823	ConditionalExpression	GSTEMPLATE <= 1 ? 3 : 2		4602	1					
+ANR	4824	Condition	GSTEMPLATE <= 1		4602	0					
+ANR	4825	RelationalExpression	GSTEMPLATE <= 1		4602	0		<=			
+ANR	4826	Identifier	GSTEMPLATE		4602	0					
+ANR	4827	PrimaryExpression	1		4602	1					
+ANR	4828	PrimaryExpression	3		4602	1					
+ANR	4829	PrimaryExpression	2		4602	2					
+ANR	4830	ExpressionStatement	rparams . gbat [ 1 ] = - 1	35:1:1297:1324	4602	27	True				
+ANR	4831	AssignmentExpression	rparams . gbat [ 1 ] = - 1		4602	0		=			
+ANR	4832	ArrayIndexing	rparams . gbat [ 1 ]		4602	0					
+ANR	4833	MemberAccess	rparams . gbat		4602	0					
+ANR	4834	Identifier	rparams		4602	0					
+ANR	4835	Identifier	gbat		4602	1					
+ANR	4836	PrimaryExpression	1		4602	1					
+ANR	4837	UnaryOperationExpression	- 1		4602	1					
+ANR	4838	UnaryOperator	-		4602	0					
+ANR	4839	PrimaryExpression	1		4602	1					
+ANR	4840	ExpressionStatement	rparams . gbat [ 2 ] = - 3	36:1:1327:1354	4602	28	True				
+ANR	4841	AssignmentExpression	rparams . gbat [ 2 ] = - 3		4602	0		=			
+ANR	4842	ArrayIndexing	rparams . gbat [ 2 ]		4602	0					
+ANR	4843	MemberAccess	rparams . gbat		4602	0					
+ANR	4844	Identifier	rparams		4602	0					
+ANR	4845	Identifier	gbat		4602	1					
+ANR	4846	PrimaryExpression	2		4602	1					
+ANR	4847	UnaryOperationExpression	- 3		4602	1					
+ANR	4848	UnaryOperator	-		4602	0					
+ANR	4849	PrimaryExpression	3		4602	1					
+ANR	4850	ExpressionStatement	rparams . gbat [ 3 ] = - 1	37:1:1357:1384	4602	29	True				
+ANR	4851	AssignmentExpression	rparams . gbat [ 3 ] = - 1		4602	0		=			
+ANR	4852	ArrayIndexing	rparams . gbat [ 3 ]		4602	0					
+ANR	4853	MemberAccess	rparams . gbat		4602	0					
+ANR	4854	Identifier	rparams		4602	0					
+ANR	4855	Identifier	gbat		4602	1					
+ANR	4856	PrimaryExpression	3		4602	1					
+ANR	4857	UnaryOperationExpression	- 1		4602	1					
+ANR	4858	UnaryOperator	-		4602	0					
+ANR	4859	PrimaryExpression	1		4602	1					
+ANR	4860	ExpressionStatement	rparams . gbat [ 4 ] = 2	38:1:1387:1412	4602	30	True				
+ANR	4861	AssignmentExpression	rparams . gbat [ 4 ] = 2		4602	0		=			
+ANR	4862	ArrayIndexing	rparams . gbat [ 4 ]		4602	0					
+ANR	4863	MemberAccess	rparams . gbat		4602	0					
+ANR	4864	Identifier	rparams		4602	0					
+ANR	4865	Identifier	gbat		4602	1					
+ANR	4866	PrimaryExpression	4		4602	1					
+ANR	4867	PrimaryExpression	2		4602	1					
+ANR	4868	ExpressionStatement	rparams . gbat [ 5 ] = - 2	39:1:1415:1442	4602	31	True				
+ANR	4869	AssignmentExpression	rparams . gbat [ 5 ] = - 2		4602	0		=			
+ANR	4870	ArrayIndexing	rparams . gbat [ 5 ]		4602	0					
+ANR	4871	MemberAccess	rparams . gbat		4602	0					
+ANR	4872	Identifier	rparams		4602	0					
+ANR	4873	Identifier	gbat		4602	1					
+ANR	4874	PrimaryExpression	5		4602	1					
+ANR	4875	UnaryOperationExpression	- 2		4602	1					
+ANR	4876	UnaryOperator	-		4602	0					
+ANR	4877	PrimaryExpression	2		4602	1					
+ANR	4878	ExpressionStatement	rparams . gbat [ 6 ] = - 2	40:1:1445:1472	4602	32	True				
+ANR	4879	AssignmentExpression	rparams . gbat [ 6 ] = - 2		4602	0		=			
+ANR	4880	ArrayIndexing	rparams . gbat [ 6 ]		4602	0					
+ANR	4881	MemberAccess	rparams . gbat		4602	0					
+ANR	4882	Identifier	rparams		4602	0					
+ANR	4883	Identifier	gbat		4602	1					
+ANR	4884	PrimaryExpression	6		4602	1					
+ANR	4885	UnaryOperationExpression	- 2		4602	1					
+ANR	4886	UnaryOperator	-		4602	0					
+ANR	4887	PrimaryExpression	2		4602	1					
+ANR	4888	ExpressionStatement	rparams . gbat [ 7 ] = - 2	41:1:1475:1502	4602	33	True				
+ANR	4889	AssignmentExpression	rparams . gbat [ 7 ] = - 2		4602	0		=			
+ANR	4890	ArrayIndexing	rparams . gbat [ 7 ]		4602	0					
+ANR	4891	MemberAccess	rparams . gbat		4602	0					
+ANR	4892	Identifier	rparams		4602	0					
+ANR	4893	Identifier	gbat		4602	1					
+ANR	4894	PrimaryExpression	7		4602	1					
+ANR	4895	UnaryOperationExpression	- 2		4602	1					
+ANR	4896	UnaryOperator	-		4602	0					
+ANR	4897	PrimaryExpression	2		4602	1					
+ANR	4898	IfStatement	if ( GSMMR )		4602	34					
+ANR	4899	Condition	GSMMR	42:6:1510:1514	4602	0	True				
+ANR	4900	Identifier	GSMMR		4602	0					
+ANR	4901	CompoundStatement		42:14:1250:1250	4602	1					
+ANR	4902	ExpressionStatement	"code = jbig2_decode_halftone_mmr ( ctx , & rparams , data , size , GSPLANES [ GSBPP - 1 ] , & consumed_bytes )"	43:1:1521:1632	4602	0	True				
+ANR	4903	AssignmentExpression	"code = jbig2_decode_halftone_mmr ( ctx , & rparams , data , size , GSPLANES [ GSBPP - 1 ] , & consumed_bytes )"		4602	0		=			
+ANR	4904	Identifier	code		4602	0					
+ANR	4905	CallExpression	"jbig2_decode_halftone_mmr ( ctx , & rparams , data , size , GSPLANES [ GSBPP - 1 ] , & consumed_bytes )"		4602	1					
+ANR	4906	Callee	jbig2_decode_halftone_mmr		4602	0					
+ANR	4907	Identifier	jbig2_decode_halftone_mmr		4602	0					
+ANR	4908	ArgumentList	ctx		4602	1					
+ANR	4909	Argument	ctx		4602	0					
+ANR	4910	Identifier	ctx		4602	0					
+ANR	4911	Argument	& rparams		4602	1					
+ANR	4912	UnaryOperationExpression	& rparams		4602	0					
+ANR	4913	UnaryOperator	&		4602	0					
+ANR	4914	Identifier	rparams		4602	1					
+ANR	4915	Argument	data		4602	2					
+ANR	4916	Identifier	data		4602	0					
+ANR	4917	Argument	size		4602	3					
+ANR	4918	Identifier	size		4602	0					
+ANR	4919	Argument	GSPLANES [ GSBPP - 1 ]		4602	4					
+ANR	4920	ArrayIndexing	GSPLANES [ GSBPP - 1 ]		4602	0					
+ANR	4921	Identifier	GSPLANES		4602	0					
+ANR	4922	AdditiveExpression	GSBPP - 1		4602	1		-			
+ANR	4923	Identifier	GSBPP		4602	0					
+ANR	4924	PrimaryExpression	1		4602	1					
+ANR	4925	Argument	& consumed_bytes		4602	5					
+ANR	4926	UnaryOperationExpression	& consumed_bytes		4602	0					
+ANR	4927	UnaryOperator	&		4602	0					
+ANR	4928	Identifier	consumed_bytes		4602	1					
+ANR	4929	ElseStatement	else		4602	0					
+ANR	4930	CompoundStatement		45:6:1375:1375	4602	0					
+ANR	4931	ExpressionStatement	"ws = jbig2_word_stream_buf_new ( ctx , data , size )"	46:1:1646:1699	4602	0	True				
+ANR	4932	AssignmentExpression	"ws = jbig2_word_stream_buf_new ( ctx , data , size )"		4602	0		=			
+ANR	4933	Identifier	ws		4602	0					
+ANR	4934	CallExpression	"jbig2_word_stream_buf_new ( ctx , data , size )"		4602	1					
+ANR	4935	Callee	jbig2_word_stream_buf_new		4602	0					
+ANR	4936	Identifier	jbig2_word_stream_buf_new		4602	0					
+ANR	4937	ArgumentList	ctx		4602	1					
+ANR	4938	Argument	ctx		4602	0					
+ANR	4939	Identifier	ctx		4602	0					
+ANR	4940	Argument	data		4602	1					
+ANR	4941	Identifier	data		4602	0					
+ANR	4942	Argument	size		4602	2					
+ANR	4943	Identifier	size		4602	0					
+ANR	4944	IfStatement	if ( ws == NULL )		4602	1					
+ANR	4945	Condition	ws == NULL	47:6:1707:1716	4602	0	True				
+ANR	4946	EqualityExpression	ws == NULL		4602	0		==			
+ANR	4947	Identifier	ws		4602	0					
+ANR	4948	Identifier	NULL		4602	1					
+ANR	4949	CompoundStatement		47:19:1452:1452	4602	1					
+ANR	4950	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate ws in jbig2_decode_gray_scale_image"" )"	48:1:1723:1845	4602	0	True				
+ANR	4951	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate ws in jbig2_decode_gray_scale_image"" )"		4602	0					
+ANR	4952	Callee	jbig2_error		4602	0					
+ANR	4953	Identifier	jbig2_error		4602	0					
+ANR	4954	ArgumentList	ctx		4602	1					
+ANR	4955	Argument	ctx		4602	0					
+ANR	4956	Identifier	ctx		4602	0					
+ANR	4957	Argument	JBIG2_SEVERITY_FATAL		4602	1					
+ANR	4958	Identifier	JBIG2_SEVERITY_FATAL		4602	0					
+ANR	4959	Argument	segment -> number		4602	2					
+ANR	4960	PtrMemberAccess	segment -> number		4602	0					
+ANR	4961	Identifier	segment		4602	0					
+ANR	4962	Identifier	number		4602	1					
+ANR	4963	Argument	"""failed to allocate ws in jbig2_decode_gray_scale_image"""		4602	3					
+ANR	4964	PrimaryExpression	"""failed to allocate ws in jbig2_decode_gray_scale_image"""		4602	0					
+ANR	4965	GotoStatement	goto cleanup ;	49:1:1848:1861	4602	1	True				
+ANR	4966	Identifier	cleanup		4602	0					
+ANR	4967	ExpressionStatement	"as = jbig2_arith_new ( ctx , ws )"	51:1:1867:1901	4602	2	True				
+ANR	4968	AssignmentExpression	"as = jbig2_arith_new ( ctx , ws )"		4602	0		=			
+ANR	4969	Identifier	as		4602	0					
+ANR	4970	CallExpression	"jbig2_arith_new ( ctx , ws )"		4602	1					
+ANR	4971	Callee	jbig2_arith_new		4602	0					
+ANR	4972	Identifier	jbig2_arith_new		4602	0					
+ANR	4973	ArgumentList	ctx		4602	1					
+ANR	4974	Argument	ctx		4602	0					
+ANR	4975	Identifier	ctx		4602	0					
+ANR	4976	Argument	ws		4602	1					
+ANR	4977	Identifier	ws		4602	0					
+ANR	4978	IfStatement	if ( as == NULL )		4602	3					
+ANR	4979	Condition	as == NULL	52:6:1909:1918	4602	0	True				
+ANR	4980	EqualityExpression	as == NULL		4602	0		==			
+ANR	4981	Identifier	as		4602	0					
+ANR	4982	Identifier	NULL		4602	1					
+ANR	4983	CompoundStatement		52:19:1654:1654	4602	1					
+ANR	4984	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate as in jbig2_decode_gray_scale_image"" )"	53:1:1925:2047	4602	0	True				
+ANR	4985	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate as in jbig2_decode_gray_scale_image"" )"		4602	0					
+ANR	4986	Callee	jbig2_error		4602	0					
+ANR	4987	Identifier	jbig2_error		4602	0					
+ANR	4988	ArgumentList	ctx		4602	1					
+ANR	4989	Argument	ctx		4602	0					
+ANR	4990	Identifier	ctx		4602	0					
+ANR	4991	Argument	JBIG2_SEVERITY_FATAL		4602	1					
+ANR	4992	Identifier	JBIG2_SEVERITY_FATAL		4602	0					
+ANR	4993	Argument	segment -> number		4602	2					
+ANR	4994	PtrMemberAccess	segment -> number		4602	0					
+ANR	4995	Identifier	segment		4602	0					
+ANR	4996	Identifier	number		4602	1					
+ANR	4997	Argument	"""failed to allocate as in jbig2_decode_gray_scale_image"""		4602	3					
+ANR	4998	PrimaryExpression	"""failed to allocate as in jbig2_decode_gray_scale_image"""		4602	0					
+ANR	4999	GotoStatement	goto cleanup ;	54:1:2050:2063	4602	1	True				
+ANR	5000	Identifier	cleanup		4602	0					
+ANR	5001	ExpressionStatement	"code = jbig2_decode_generic_region ( ctx , segment , & rparams , as , GSPLANES [ GSBPP - 1 ] , GB_stats )"	56:1:2069:2175	4602	4	True				
+ANR	5002	AssignmentExpression	"code = jbig2_decode_generic_region ( ctx , segment , & rparams , as , GSPLANES [ GSBPP - 1 ] , GB_stats )"		4602	0		=			
+ANR	5003	Identifier	code		4602	0					
+ANR	5004	CallExpression	"jbig2_decode_generic_region ( ctx , segment , & rparams , as , GSPLANES [ GSBPP - 1 ] , GB_stats )"		4602	1					
+ANR	5005	Callee	jbig2_decode_generic_region		4602	0					
+ANR	5006	Identifier	jbig2_decode_generic_region		4602	0					
+ANR	5007	ArgumentList	ctx		4602	1					
+ANR	5008	Argument	ctx		4602	0					
+ANR	5009	Identifier	ctx		4602	0					
+ANR	5010	Argument	segment		4602	1					
+ANR	5011	Identifier	segment		4602	0					
+ANR	5012	Argument	& rparams		4602	2					
+ANR	5013	UnaryOperationExpression	& rparams		4602	0					
+ANR	5014	UnaryOperator	&		4602	0					
+ANR	5015	Identifier	rparams		4602	1					
+ANR	5016	Argument	as		4602	3					
+ANR	5017	Identifier	as		4602	0					
+ANR	5018	Argument	GSPLANES [ GSBPP - 1 ]		4602	4					
+ANR	5019	ArrayIndexing	GSPLANES [ GSBPP - 1 ]		4602	0					
+ANR	5020	Identifier	GSPLANES		4602	0					
+ANR	5021	AdditiveExpression	GSBPP - 1		4602	1		-			
+ANR	5022	Identifier	GSBPP		4602	0					
+ANR	5023	PrimaryExpression	1		4602	1					
+ANR	5024	Argument	GB_stats		4602	5					
+ANR	5025	Identifier	GB_stats		4602	0					
+ANR	5026	IfStatement	if ( code != 0 )		4602	35					
+ANR	5027	Condition	code != 0	58:6:2186:2194	4602	0	True				
+ANR	5028	EqualityExpression	code != 0		4602	0		!=			
+ANR	5029	Identifier	code		4602	0					
+ANR	5030	PrimaryExpression	0		4602	1					
+ANR	5031	CompoundStatement		58:18:1930:1930	4602	1					
+ANR	5032	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""error decoding GSPLANES for halftone image"" )"	59:1:2201:2311	4602	0	True				
+ANR	5033	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""error decoding GSPLANES for halftone image"" )"		4602	0					
+ANR	5034	Callee	jbig2_error		4602	0					
+ANR	5035	Identifier	jbig2_error		4602	0					
+ANR	5036	ArgumentList	ctx		4602	1					
+ANR	5037	Argument	ctx		4602	0					
+ANR	5038	Identifier	ctx		4602	0					
+ANR	5039	Argument	JBIG2_SEVERITY_FATAL		4602	1					
+ANR	5040	Identifier	JBIG2_SEVERITY_FATAL		4602	0					
+ANR	5041	Argument	segment -> number		4602	2					
+ANR	5042	PtrMemberAccess	segment -> number		4602	0					
+ANR	5043	Identifier	segment		4602	0					
+ANR	5044	Identifier	number		4602	1					
+ANR	5045	Argument	"""error decoding GSPLANES for halftone image"""		4602	3					
+ANR	5046	PrimaryExpression	"""error decoding GSPLANES for halftone image"""		4602	0					
+ANR	5047	GotoStatement	goto cleanup ;	60:1:2314:2327	4602	1	True				
+ANR	5048	Identifier	cleanup		4602	0					
+ANR	5049	ExpressionStatement	j = GSBPP - 2	62:1:2333:2347	4602	36	True				
+ANR	5050	AssignmentExpression	j = GSBPP - 2		4602	0		=			
+ANR	5051	Identifier	j		4602	0					
+ANR	5052	AdditiveExpression	GSBPP - 2		4602	1		-			
+ANR	5053	Identifier	GSBPP		4602	0					
+ANR	5054	PrimaryExpression	2		4602	1					
+ANR	5055	WhileStatement	while ( j >= 0 )		4602	37					
+ANR	5056	Condition	j >= 0	63:9:2358:2363	4602	0	True				
+ANR	5057	RelationalExpression	j >= 0		4602	0		>=			
+ANR	5058	Identifier	j		4602	0					
+ANR	5059	PrimaryExpression	0		4602	1					
+ANR	5060	CompoundStatement		63:18:2099:2099	4602	1					
+ANR	5061	IfStatement	if ( GSMMR )		4602	0					
+ANR	5062	Condition	GSMMR	64:6:2375:2379	4602	0	True				
+ANR	5063	Identifier	GSMMR		4602	0					
+ANR	5064	CompoundStatement		64:14:2115:2115	4602	1					
+ANR	5065	ExpressionStatement	"code = jbig2_decode_halftone_mmr ( ctx , & rparams , data + consumed_bytes , size - consumed_bytes , GSPLANES [ j ] , & consumed_bytes )"	65:1:2386:2523	4602	0	True				
+ANR	5066	AssignmentExpression	"code = jbig2_decode_halftone_mmr ( ctx , & rparams , data + consumed_bytes , size - consumed_bytes , GSPLANES [ j ] , & consumed_bytes )"		4602	0		=			
+ANR	5067	Identifier	code		4602	0					
+ANR	5068	CallExpression	"jbig2_decode_halftone_mmr ( ctx , & rparams , data + consumed_bytes , size - consumed_bytes , GSPLANES [ j ] , & consumed_bytes )"		4602	1					
+ANR	5069	Callee	jbig2_decode_halftone_mmr		4602	0					
+ANR	5070	Identifier	jbig2_decode_halftone_mmr		4602	0					
+ANR	5071	ArgumentList	ctx		4602	1					
+ANR	5072	Argument	ctx		4602	0					
+ANR	5073	Identifier	ctx		4602	0					
+ANR	5074	Argument	& rparams		4602	1					
+ANR	5075	UnaryOperationExpression	& rparams		4602	0					
+ANR	5076	UnaryOperator	&		4602	0					
+ANR	5077	Identifier	rparams		4602	1					
+ANR	5078	Argument	data + consumed_bytes		4602	2					
+ANR	5079	AdditiveExpression	data + consumed_bytes		4602	0		+			
+ANR	5080	Identifier	data		4602	0					
+ANR	5081	Identifier	consumed_bytes		4602	1					
+ANR	5082	Argument	size - consumed_bytes		4602	3					
+ANR	5083	AdditiveExpression	size - consumed_bytes		4602	0		-			
+ANR	5084	Identifier	size		4602	0					
+ANR	5085	Identifier	consumed_bytes		4602	1					
+ANR	5086	Argument	GSPLANES [ j ]		4602	4					
+ANR	5087	ArrayIndexing	GSPLANES [ j ]		4602	0					
+ANR	5088	Identifier	GSPLANES		4602	0					
+ANR	5089	Identifier	j		4602	1					
+ANR	5090	Argument	& consumed_bytes		4602	5					
+ANR	5091	UnaryOperationExpression	& consumed_bytes		4602	0					
+ANR	5092	UnaryOperator	&		4602	0					
+ANR	5093	Identifier	consumed_bytes		4602	1					
+ANR	5094	ElseStatement	else		4602	0					
+ANR	5095	CompoundStatement		67:6:2266:2266	4602	0					
+ANR	5096	ExpressionStatement	"code = jbig2_decode_generic_region ( ctx , segment , & rparams , as , GSPLANES [ j ] , GB_stats )"	68:1:2537:2635	4602	0	True				
+ANR	5097	AssignmentExpression	"code = jbig2_decode_generic_region ( ctx , segment , & rparams , as , GSPLANES [ j ] , GB_stats )"		4602	0		=			
+ANR	5098	Identifier	code		4602	0					
+ANR	5099	CallExpression	"jbig2_decode_generic_region ( ctx , segment , & rparams , as , GSPLANES [ j ] , GB_stats )"		4602	1					
+ANR	5100	Callee	jbig2_decode_generic_region		4602	0					
+ANR	5101	Identifier	jbig2_decode_generic_region		4602	0					
+ANR	5102	ArgumentList	ctx		4602	1					
+ANR	5103	Argument	ctx		4602	0					
+ANR	5104	Identifier	ctx		4602	0					
+ANR	5105	Argument	segment		4602	1					
+ANR	5106	Identifier	segment		4602	0					
+ANR	5107	Argument	& rparams		4602	2					
+ANR	5108	UnaryOperationExpression	& rparams		4602	0					
+ANR	5109	UnaryOperator	&		4602	0					
+ANR	5110	Identifier	rparams		4602	1					
+ANR	5111	Argument	as		4602	3					
+ANR	5112	Identifier	as		4602	0					
+ANR	5113	Argument	GSPLANES [ j ]		4602	4					
+ANR	5114	ArrayIndexing	GSPLANES [ j ]		4602	0					
+ANR	5115	Identifier	GSPLANES		4602	0					
+ANR	5116	Identifier	j		4602	1					
+ANR	5117	Argument	GB_stats		4602	5					
+ANR	5118	Identifier	GB_stats		4602	0					
+ANR	5119	IfStatement	if ( code != 0 )		4602	1					
+ANR	5120	Condition	code != 0	70:6:2646:2654	4602	0	True				
+ANR	5121	EqualityExpression	code != 0		4602	0		!=			
+ANR	5122	Identifier	code		4602	0					
+ANR	5123	PrimaryExpression	0		4602	1					
+ANR	5124	CompoundStatement		70:18:2390:2390	4602	1					
+ANR	5125	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""error decoding GSPLANES for halftone image"" )"	71:1:2661:2771	4602	0	True				
+ANR	5126	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""error decoding GSPLANES for halftone image"" )"		4602	0					
+ANR	5127	Callee	jbig2_error		4602	0					
+ANR	5128	Identifier	jbig2_error		4602	0					
+ANR	5129	ArgumentList	ctx		4602	1					
+ANR	5130	Argument	ctx		4602	0					
+ANR	5131	Identifier	ctx		4602	0					
+ANR	5132	Argument	JBIG2_SEVERITY_FATAL		4602	1					
+ANR	5133	Identifier	JBIG2_SEVERITY_FATAL		4602	0					
+ANR	5134	Argument	segment -> number		4602	2					
+ANR	5135	PtrMemberAccess	segment -> number		4602	0					
+ANR	5136	Identifier	segment		4602	0					
+ANR	5137	Identifier	number		4602	1					
+ANR	5138	Argument	"""error decoding GSPLANES for halftone image"""		4602	3					
+ANR	5139	PrimaryExpression	"""error decoding GSPLANES for halftone image"""		4602	0					
+ANR	5140	GotoStatement	goto cleanup ;	72:1:2774:2787	4602	1	True				
+ANR	5141	Identifier	cleanup		4602	0					
+ANR	5142	ExpressionStatement	stride = GSPLANES [ 0 ] -> stride	74:1:2793:2827	4602	2	True				
+ANR	5143	AssignmentExpression	stride = GSPLANES [ 0 ] -> stride		4602	0		=			
+ANR	5144	Identifier	stride		4602	0					
+ANR	5145	PtrMemberAccess	GSPLANES [ 0 ] -> stride		4602	1					
+ANR	5146	ArrayIndexing	GSPLANES [ 0 ]		4602	0					
+ANR	5147	Identifier	GSPLANES		4602	0					
+ANR	5148	PrimaryExpression	0		4602	1					
+ANR	5149	Identifier	stride		4602	1					
+ANR	5150	ForStatement	for ( i = 0 ; i < stride * GSH ; ++ i )		4602	3					
+ANR	5151	ForInit	i = 0 ;	75:7:2836:2842	4602	0	True				
+ANR	5152	AssignmentExpression	i = 0		4602	0		=			
+ANR	5153	Identifier	i		4602	0					
+ANR	5154	PrimaryExpression	0		4602	1					
+ANR	5155	Condition	i < stride * GSH	76:1:2845:2860	4602	1	True				
+ANR	5156	RelationalExpression	i < stride * GSH		4602	0		<			
+ANR	5157	Identifier	i		4602	0					
+ANR	5158	MultiplicativeExpression	stride * GSH		4602	1		*			
+ANR	5159	Identifier	stride		4602	0					
+ANR	5160	Identifier	GSH		4602	1					
+ANR	5161	UnaryExpression	++ i	77:1:2865:2868	4602	2	True				
+ANR	5162	IncDec	++		4602	0					
+ANR	5163	Identifier	i		4602	1					
+ANR	5164	ExpressionStatement	GSPLANES [ j ] -> data [ i ] ^= GSPLANES [ j + 1 ] -> data [ i ]	77:8:2872:2937	4602	3	True				
+ANR	5165	AssignmentExpression	GSPLANES [ j ] -> data [ i ] ^= GSPLANES [ j + 1 ] -> data [ i ]		4602	0		^=			
+ANR	5166	ArrayIndexing	GSPLANES [ j ] -> data [ i ]		4602	0					
+ANR	5167	PtrMemberAccess	GSPLANES [ j ] -> data		4602	0					
+ANR	5168	ArrayIndexing	GSPLANES [ j ]		4602	0					
+ANR	5169	Identifier	GSPLANES		4602	0					
+ANR	5170	Identifier	j		4602	1					
+ANR	5171	Identifier	data		4602	1					
+ANR	5172	Identifier	i		4602	1					
+ANR	5173	ArrayIndexing	GSPLANES [ j + 1 ] -> data [ i ]		4602	1					
+ANR	5174	PtrMemberAccess	GSPLANES [ j + 1 ] -> data		4602	0					
+ANR	5175	ArrayIndexing	GSPLANES [ j + 1 ]		4602	0					
+ANR	5176	Identifier	GSPLANES		4602	0					
+ANR	5177	AdditiveExpression	j + 1		4602	1		+			
+ANR	5178	Identifier	j		4602	0					
+ANR	5179	PrimaryExpression	1		4602	1					
+ANR	5180	Identifier	data		4602	1					
+ANR	5181	Identifier	i		4602	1					
+ANR	5182	ExpressionStatement	-- j	78:1:2940:2945	4602	4	True				
+ANR	5183	UnaryExpression	-- j		4602	0					
+ANR	5184	IncDec	--		4602	0					
+ANR	5185	Identifier	j		4602	1					
+ANR	5186	Statement	GSVALS	80:1:2951:2956	4602	38	True				
+ANR	5187	Statement	=	80:8:2958:2958	4602	39	True				
+ANR	5188	Statement	jbig2_new	80:10:2960:2968	4602	40	True				
+ANR	5189	Statement	(	80:20:2970:2970	4602	41	True				
+ANR	5190	Statement	ctx	80:22:2972:2974	4602	42	True				
+ANR	5191	Statement	","	80:26:2976:2976	4602	43	True				
+ANR	5192	Statement	uint8_t	80:28:2978:2984	4602	44	True				
+ANR	5193	Statement	*	80:36:2986:2986	4602	45	True				
+ANR	5194	Statement	","	80:38:2988:2988	4602	46	True				
+ANR	5195	Statement	GSW	80:40:2990:2992	4602	47	True				
+ANR	5196	Statement	)	80:44:2994:2994	4602	48	True				
+ANR	5197	ExpressionStatement		80:46:2996:2996	4602	49	True				
+ANR	5198	IfStatement	if ( GSVALS == NULL )		4602	50					
+ANR	5199	Condition	GSVALS == NULL	81:6:3004:3017	4602	0	True				
+ANR	5200	EqualityExpression	GSVALS == NULL		4602	0		==			
+ANR	5201	Identifier	GSVALS		4602	0					
+ANR	5202	Identifier	NULL		4602	1					
+ANR	5203	CompoundStatement		81:23:2753:2753	4602	1					
+ANR	5204	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate GSVALS: %d bytes"" , GSW )"	82:1:3024:3133	4602	0	True				
+ANR	5205	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate GSVALS: %d bytes"" , GSW )"		4602	0					
+ANR	5206	Callee	jbig2_error		4602	0					
+ANR	5207	Identifier	jbig2_error		4602	0					
+ANR	5208	ArgumentList	ctx		4602	1					
+ANR	5209	Argument	ctx		4602	0					
+ANR	5210	Identifier	ctx		4602	0					
+ANR	5211	Argument	JBIG2_SEVERITY_FATAL		4602	1					
+ANR	5212	Identifier	JBIG2_SEVERITY_FATAL		4602	0					
+ANR	5213	Argument	segment -> number		4602	2					
+ANR	5214	PtrMemberAccess	segment -> number		4602	0					
+ANR	5215	Identifier	segment		4602	0					
+ANR	5216	Identifier	number		4602	1					
+ANR	5217	Argument	"""failed to allocate GSVALS: %d bytes"""		4602	3					
+ANR	5218	PrimaryExpression	"""failed to allocate GSVALS: %d bytes"""		4602	0					
+ANR	5219	Argument	GSW		4602	4					
+ANR	5220	Identifier	GSW		4602	0					
+ANR	5221	GotoStatement	goto cleanup ;	83:1:3136:3149	4602	1	True				
+ANR	5222	Identifier	cleanup		4602	0					
+ANR	5223	ForStatement	for ( i = 0 ; i < GSW ; ++ i )		4602	51					
+ANR	5224	ForInit	i = 0 ;	85:7:3161:3167	4602	0	True				
+ANR	5225	AssignmentExpression	i = 0		4602	0		=			
+ANR	5226	Identifier	i		4602	0					
+ANR	5227	PrimaryExpression	0		4602	1					
+ANR	5228	Condition	i < GSW	86:1:3170:3176	4602	1	True				
+ANR	5229	RelationalExpression	i < GSW		4602	0		<			
+ANR	5230	Identifier	i		4602	0					
+ANR	5231	Identifier	GSW		4602	1					
+ANR	5232	UnaryExpression	++ i	87:1:3181:3184	4602	2	True				
+ANR	5233	IncDec	++		4602	0					
+ANR	5234	Identifier	i		4602	1					
+ANR	5235	CompoundStatement		87:8:2920:2920	4602	3					
+ANR	5236	ExpressionStatement	"GSVALS [ i ] = jbig2_new ( ctx , uint8_t , GSH )"	88:1:3191:3240	4602	0	True				
+ANR	5237	AssignmentExpression	"GSVALS [ i ] = jbig2_new ( ctx , uint8_t , GSH )"		4602	0		=			
+ANR	5238	ArrayIndexing	GSVALS [ i ]		4602	0					
+ANR	5239	Identifier	GSVALS		4602	0					
+ANR	5240	Identifier	i		4602	1					
+ANR	5241	CallExpression	"jbig2_new ( ctx , uint8_t , GSH )"		4602	1					
+ANR	5242	Callee	jbig2_new		4602	0					
+ANR	5243	Identifier	jbig2_new		4602	0					
+ANR	5244	ArgumentList	ctx		4602	1					
+ANR	5245	Argument	ctx		4602	0					
+ANR	5246	Identifier	ctx		4602	0					
+ANR	5247	Argument	uint8_t		4602	1					
+ANR	5248	Identifier	uint8_t		4602	0					
+ANR	5249	Argument	GSH		4602	2					
+ANR	5250	Identifier	GSH		4602	0					
+ANR	5251	IfStatement	if ( GSVALS [ i ] == NULL )		4602	1					
+ANR	5252	Condition	GSVALS [ i ] == NULL	89:6:3248:3267	4602	0	True				
+ANR	5253	EqualityExpression	GSVALS [ i ] == NULL		4602	0		==			
+ANR	5254	ArrayIndexing	GSVALS [ i ]		4602	0					
+ANR	5255	Identifier	GSVALS		4602	0					
+ANR	5256	Identifier	i		4602	1					
+ANR	5257	Identifier	NULL		4602	1					
+ANR	5258	CompoundStatement		89:29:3003:3003	4602	1					
+ANR	5259	ExpressionStatement	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate GSVALS: %d bytes"" , GSH * GSW )"	90:1:3274:3389	4602	0	True				
+ANR	5260	CallExpression	"jbig2_error ( ctx , JBIG2_SEVERITY_FATAL , segment -> number , ""failed to allocate GSVALS: %d bytes"" , GSH * GSW )"		4602	0					
+ANR	5261	Callee	jbig2_error		4602	0					
+ANR	5262	Identifier	jbig2_error		4602	0					
+ANR	5263	ArgumentList	ctx		4602	1					
+ANR	5264	Argument	ctx		4602	0					
+ANR	5265	Identifier	ctx		4602	0					
+ANR	5266	Argument	JBIG2_SEVERITY_FATAL		4602	1					
+ANR	5267	Identifier	JBIG2_SEVERITY_FATAL		4602	0					
+ANR	5268	Argument	segment -> number		4602	2					
+ANR	5269	PtrMemberAccess	segment -> number		4602	0					
+ANR	5270	Identifier	segment		4602	0					
+ANR	5271	Identifier	number		4602	1					
+ANR	5272	Argument	"""failed to allocate GSVALS: %d bytes"""		4602	3					
+ANR	5273	PrimaryExpression	"""failed to allocate GSVALS: %d bytes"""		4602	0					
+ANR	5274	Argument	GSH * GSW		4602	4					
+ANR	5275	MultiplicativeExpression	GSH * GSW		4602	0		*			
+ANR	5276	Identifier	GSH		4602	0					
+ANR	5277	Identifier	GSW		4602	1					
+ANR	5278	ForStatement	for ( j = i - 1 ; j >= 0 ; -- j )		4602	1					
+ANR	5279	ForInit	j = i - 1 ;	91:7:3398:3408	4602	0	True				
+ANR	5280	AssignmentExpression	j = i - 1		4602	0		=			
+ANR	5281	Identifier	j		4602	0					
+ANR	5282	AdditiveExpression	i - 1		4602	1		-			
+ANR	5283	Identifier	i		4602	0					
+ANR	5284	PrimaryExpression	1		4602	1					
+ANR	5285	Condition	j >= 0	92:1:3411:3416	4602	1	True				
+ANR	5286	RelationalExpression	j >= 0		4602	0		>=			
+ANR	5287	Identifier	j		4602	0					
+ANR	5288	PrimaryExpression	0		4602	1					
+ANR	5289	UnaryExpression	-- j	93:1:3421:3424	4602	2	True				
+ANR	5290	IncDec	--		4602	0					
+ANR	5291	Identifier	j		4602	1					
+ANR	5292	CompoundStatement		93:8:3160:3160	4602	3					
+ANR	5293	ExpressionStatement	"jbig2_free ( ctx -> allocator , GSVALS [ j ] )"	94:1:3431:3478	4602	0	True				
+ANR	5294	CallExpression	"jbig2_free ( ctx -> allocator , GSVALS [ j ] )"		4602	0					
+ANR	5295	Callee	jbig2_free		4602	0					
+ANR	5296	Identifier	jbig2_free		4602	0					
+ANR	5297	ArgumentList	ctx -> allocator		4602	1					
+ANR	5298	Argument	ctx -> allocator		4602	0					
+ANR	5299	PtrMemberAccess	ctx -> allocator		4602	0					
+ANR	5300	Identifier	ctx		4602	0					
+ANR	5301	Identifier	allocator		4602	1					
+ANR	5302	Argument	GSVALS [ j ]		4602	1					
+ANR	5303	ArrayIndexing	GSVALS [ j ]		4602	0					
+ANR	5304	Identifier	GSVALS		4602	0					
+ANR	5305	Identifier	j		4602	1					
+ANR	5306	ExpressionStatement	"jbig2_free ( ctx -> allocator , GSVALS )"	96:1:3484:3525	4602	2	True				
+ANR	5307	CallExpression	"jbig2_free ( ctx -> allocator , GSVALS )"		4602	0					
+ANR	5308	Callee	jbig2_free		4602	0					
+ANR	5309	Identifier	jbig2_free		4602	0					
+ANR	5310	ArgumentList	ctx -> allocator		4602	1					
+ANR	5311	Argument	ctx -> allocator		4602	0					
+ANR	5312	PtrMemberAccess	ctx -> allocator		4602	0					
+ANR	5313	Identifier	ctx		4602	0					
+ANR	5314	Identifier	allocator		4602	1					
+ANR	5315	Argument	GSVALS		4602	1					
+ANR	5316	Identifier	GSVALS		4602	0					
+ANR	5317	ExpressionStatement	GSVALS = NULL	97:1:3528:3542	4602	3	True				
+ANR	5318	AssignmentExpression	GSVALS = NULL		4602	0		=			
+ANR	5319	Identifier	GSVALS		4602	0					
+ANR	5320	Identifier	NULL		4602	1					
+ANR	5321	GotoStatement	goto cleanup ;	98:1:3545:3558	4602	4	True				
+ANR	5322	Identifier	cleanup		4602	0					
+ANR	5323	ForStatement	for ( x = 0 ; x < GSW ; ++ x )		4602	52					
+ANR	5324	ForInit	x = 0 ;	101:7:3573:3579	4602	0	True				
+ANR	5325	AssignmentExpression	x = 0		4602	0		=			
+ANR	5326	Identifier	x		4602	0					
+ANR	5327	PrimaryExpression	0		4602	1					
+ANR	5328	Condition	x < GSW	102:1:3582:3588	4602	1	True				
+ANR	5329	RelationalExpression	x < GSW		4602	0		<			
+ANR	5330	Identifier	x		4602	0					
+ANR	5331	Identifier	GSW		4602	1					
+ANR	5332	UnaryExpression	++ x	103:1:3593:3596	4602	2	True				
+ANR	5333	IncDec	++		4602	0					
+ANR	5334	Identifier	x		4602	1					
+ANR	5335	CompoundStatement		103:8:3332:3332	4602	3					
+ANR	5336	ForStatement	for ( y = 0 ; y < GSH ; ++ y )		4602	0					
+ANR	5337	ForInit	y = 0 ;	104:7:3609:3615	4602	0	True				
+ANR	5338	AssignmentExpression	y = 0		4602	0		=			
+ANR	5339	Identifier	y		4602	0					
+ANR	5340	PrimaryExpression	0		4602	1					
+ANR	5341	Condition	y < GSH	105:1:3618:3624	4602	1	True				
+ANR	5342	RelationalExpression	y < GSH		4602	0		<			
+ANR	5343	Identifier	y		4602	0					
+ANR	5344	Identifier	GSH		4602	1					
+ANR	5345	UnaryExpression	++ y	106:1:3629:3632	4602	2	True				
+ANR	5346	IncDec	++		4602	0					
+ANR	5347	Identifier	y		4602	1					
+ANR	5348	CompoundStatement		106:8:3368:3368	4602	3					
+ANR	5349	ExpressionStatement	GSVALS [ x ] [ y ] = 0	107:1:3639:3662	4602	0	True				
+ANR	5350	AssignmentExpression	GSVALS [ x ] [ y ] = 0		4602	0		=			
+ANR	5351	ArrayIndexing	GSVALS [ x ] [ y ]		4602	0					
+ANR	5352	ArrayIndexing	GSVALS [ x ]		4602	0					
+ANR	5353	Identifier	GSVALS		4602	0					
+ANR	5354	Identifier	x		4602	1					
+ANR	5355	Identifier	y		4602	1					
+ANR	5356	PrimaryExpression	0		4602	1					
+ANR	5357	ForStatement	for ( j = 0 ; j < GSBPP ; ++ j )		4602	1					
+ANR	5358	ForInit	j = 0 ;	108:7:3671:3677	4602	0	True				
+ANR	5359	AssignmentExpression	j = 0		4602	0		=			
+ANR	5360	Identifier	j		4602	0					
+ANR	5361	PrimaryExpression	0		4602	1					
+ANR	5362	Condition	j < GSBPP	109:1:3680:3688	4602	1	True				
+ANR	5363	RelationalExpression	j < GSBPP		4602	0		<			
+ANR	5364	Identifier	j		4602	0					
+ANR	5365	Identifier	GSBPP		4602	1					
+ANR	5366	UnaryExpression	++ j	110:1:3693:3696	4602	2	True				
+ANR	5367	IncDec	++		4602	0					
+ANR	5368	Identifier	j		4602	1					
+ANR	5369	ExpressionStatement	"GSVALS [ x ] [ y ] += jbig2_image_get_pixel ( GSPLANES [ j ] , x , y ) << j"	110:8:3700:3776	4602	3	True				
+ANR	5370	AssignmentExpression	"GSVALS [ x ] [ y ] += jbig2_image_get_pixel ( GSPLANES [ j ] , x , y ) << j"		4602	0		+=			
+ANR	5371	ArrayIndexing	GSVALS [ x ] [ y ]		4602	0					
+ANR	5372	ArrayIndexing	GSVALS [ x ]		4602	0					
+ANR	5373	Identifier	GSVALS		4602	0					
+ANR	5374	Identifier	x		4602	1					
+ANR	5375	Identifier	y		4602	1					
+ANR	5376	ShiftExpression	"jbig2_image_get_pixel ( GSPLANES [ j ] , x , y ) << j"		4602	1		<<			
+ANR	5377	CallExpression	"jbig2_image_get_pixel ( GSPLANES [ j ] , x , y )"		4602	0					
+ANR	5378	Callee	jbig2_image_get_pixel		4602	0					
+ANR	5379	Identifier	jbig2_image_get_pixel		4602	0					
+ANR	5380	ArgumentList	GSPLANES [ j ]		4602	1					
+ANR	5381	Argument	GSPLANES [ j ]		4602	0					
+ANR	5382	ArrayIndexing	GSPLANES [ j ]		4602	0					
+ANR	5383	Identifier	GSPLANES		4602	0					
+ANR	5384	Identifier	j		4602	1					
+ANR	5385	Argument	x		4602	1					
+ANR	5386	Identifier	x		4602	0					
+ANR	5387	Argument	y		4602	2					
+ANR	5388	Identifier	y		4602	0					
+ANR	5389	Identifier	j		4602	1					
+ANR	5390	Label	cleanup :	113:1:3785:3793	4602	53	True				
+ANR	5391	Identifier	cleanup		4602	0					
+ANR	5392	IfStatement	if ( ! GSMMR )		4602	54					
+ANR	5393	Condition	! GSMMR	113:16:3800:3806	4602	0	True				
+ANR	5394	UnaryOperationExpression	! GSMMR		4602	0					
+ANR	5395	UnaryOperator	!		4602	0					
+ANR	5396	Identifier	GSMMR		4602	1					
+ANR	5397	CompoundStatement		113:26:3542:3542	4602	1					
+ANR	5398	ExpressionStatement	"jbig2_free ( ctx -> allocator , as )"	114:1:3813:3850	4602	0	True				
+ANR	5399	CallExpression	"jbig2_free ( ctx -> allocator , as )"		4602	0					
+ANR	5400	Callee	jbig2_free		4602	0					
+ANR	5401	Identifier	jbig2_free		4602	0					
+ANR	5402	ArgumentList	ctx -> allocator		4602	1					
+ANR	5403	Argument	ctx -> allocator		4602	0					
+ANR	5404	PtrMemberAccess	ctx -> allocator		4602	0					
+ANR	5405	Identifier	ctx		4602	0					
+ANR	5406	Identifier	allocator		4602	1					
+ANR	5407	Argument	as		4602	1					
+ANR	5408	Identifier	as		4602	0					
+ANR	5409	ExpressionStatement	"jbig2_word_stream_buf_free ( ctx , ws )"	115:1:3853:3893	4602	1	True				
+ANR	5410	CallExpression	"jbig2_word_stream_buf_free ( ctx , ws )"		4602	0					
+ANR	5411	Callee	jbig2_word_stream_buf_free		4602	0					
+ANR	5412	Identifier	jbig2_word_stream_buf_free		4602	0					
+ANR	5413	ArgumentList	ctx		4602	1					
+ANR	5414	Argument	ctx		4602	0					
+ANR	5415	Identifier	ctx		4602	0					
+ANR	5416	Argument	ws		4602	1					
+ANR	5417	Identifier	ws		4602	0					
+ANR	5418	ForStatement	for ( i = 0 ; i < GSBPP ; ++ i )		4602	55					
+ANR	5419	ForInit	i = 0 ;	117:7:3905:3911	4602	0	True				
+ANR	5420	AssignmentExpression	i = 0		4602	0		=			
+ANR	5421	Identifier	i		4602	0					
+ANR	5422	PrimaryExpression	0		4602	1					
+ANR	5423	Condition	i < GSBPP	118:1:3914:3922	4602	1	True				
+ANR	5424	RelationalExpression	i < GSBPP		4602	0		<			
+ANR	5425	Identifier	i		4602	0					
+ANR	5426	Identifier	GSBPP		4602	1					
+ANR	5427	UnaryExpression	++ i	119:1:3927:3930	4602	2	True				
+ANR	5428	IncDec	++		4602	0					
+ANR	5429	Identifier	i		4602	1					
+ANR	5430	ExpressionStatement	"jbig2_image_release ( ctx , GSPLANES [ i ] )"	119:8:3934:3979	4602	3	True				
+ANR	5431	CallExpression	"jbig2_image_release ( ctx , GSPLANES [ i ] )"		4602	0					
+ANR	5432	Callee	jbig2_image_release		4602	0					
+ANR	5433	Identifier	jbig2_image_release		4602	0					
+ANR	5434	ArgumentList	ctx		4602	1					
+ANR	5435	Argument	ctx		4602	0					
+ANR	5436	Identifier	ctx		4602	0					
+ANR	5437	Argument	GSPLANES [ i ]		4602	1					
+ANR	5438	ArrayIndexing	GSPLANES [ i ]		4602	0					
+ANR	5439	Identifier	GSPLANES		4602	0					
+ANR	5440	Identifier	i		4602	1					
+ANR	5441	ExpressionStatement	"jbig2_free ( ctx -> allocator , GSPLANES )"	120:1:3982:4025	4602	56	True				
+ANR	5442	CallExpression	"jbig2_free ( ctx -> allocator , GSPLANES )"		4602	0					
+ANR	5443	Callee	jbig2_free		4602	0					
+ANR	5444	Identifier	jbig2_free		4602	0					
+ANR	5445	ArgumentList	ctx -> allocator		4602	1					
+ANR	5446	Argument	ctx -> allocator		4602	0					
+ANR	5447	PtrMemberAccess	ctx -> allocator		4602	0					
+ANR	5448	Identifier	ctx		4602	0					
+ANR	5449	Identifier	allocator		4602	1					
+ANR	5450	Argument	GSPLANES		4602	1					
+ANR	5451	Identifier	GSPLANES		4602	0					
+ANR	5452	ReturnStatement	return GSVALS ;	121:1:4028:4042	4602	57	True				
+ANR	5453	Identifier	GSVALS		4602	0					
+ANR	5454	ReturnType	uint8_t * *		4602	1					
+ANR	5455	Identifier	jbig2_decode_gray_scale_image		4602	2					
+ANR	5456	ParameterList	"Jbig2Ctx * ctx , Jbig2Segment * segment , const byte * data , const size_t size , bool GSMMR , uint32_t GSW , uint32_t GSH , uint32_t GSBPP , bool GSUSESKIP , Jbig2Image * GSKIP , int GSTEMPLATE , Jbig2ArithCx * GB_stats"		4602	3					
+ANR	5457	Parameter	Jbig2Ctx * ctx	1:44:44:57	4602	0	True				
+ANR	5458	ParameterType	Jbig2Ctx *		4602	0					
+ANR	5459	Identifier	ctx		4602	1					
+ANR	5460	Parameter	Jbig2Segment * segment	1:61:61:82	4602	1	True				
+ANR	5461	ParameterType	Jbig2Segment *		4602	0					
+ANR	5462	Identifier	segment		4602	1					
+ANR	5463	Parameter	const byte * data	1:86:86:102	4602	2	True				
+ANR	5464	ParameterType	const byte *		4602	0					
+ANR	5465	Identifier	data		4602	1					
+ANR	5466	Parameter	const size_t size	1:106:106:122	4602	3	True				
+ANR	5467	ParameterType	const size_t		4602	0					
+ANR	5468	Identifier	size		4602	1					
+ANR	5469	Parameter	bool GSMMR	1:126:126:135	4602	4	True				
+ANR	5470	ParameterType	bool		4602	0					
+ANR	5471	Identifier	GSMMR		4602	1					
+ANR	5472	Parameter	uint32_t GSW	1:139:139:150	4602	5	True				
+ANR	5473	ParameterType	uint32_t		4602	0					
+ANR	5474	Identifier	GSW		4602	1					
+ANR	5475	Parameter	uint32_t GSH	1:154:154:165	4602	6	True				
+ANR	5476	ParameterType	uint32_t		4602	0					
+ANR	5477	Identifier	GSH		4602	1					
+ANR	5478	Parameter	uint32_t GSBPP	1:169:169:182	4602	7	True				
+ANR	5479	ParameterType	uint32_t		4602	0					
+ANR	5480	Identifier	GSBPP		4602	1					
+ANR	5481	Parameter	bool GSUSESKIP	1:186:186:199	4602	8	True				
+ANR	5482	ParameterType	bool		4602	0					
+ANR	5483	Identifier	GSUSESKIP		4602	1					
+ANR	5484	Parameter	Jbig2Image * GSKIP	1:203:203:220	4602	9	True				
+ANR	5485	ParameterType	Jbig2Image *		4602	0					
+ANR	5486	Identifier	GSKIP		4602	1					
+ANR	5487	Parameter	int GSTEMPLATE	1:224:224:237	4602	10	True				
+ANR	5488	ParameterType	int		4602	0					
+ANR	5489	Identifier	GSTEMPLATE		4602	1					
+ANR	5490	Parameter	Jbig2ArithCx * GB_stats	1:241:241:263	4602	11	True				
+ANR	5491	ParameterType	Jbig2ArithCx *		4602	0					
+ANR	5492	Identifier	GB_stats		4602	1					
+ANR	5493	CFGEntryNode	ENTRY		4602		True				
+ANR	5494	CFGExitNode	EXIT		4602		True				
+ANR	5495	Symbol	& rparams		4602						
+ANR	5496	Symbol	* x		4602						
+ANR	5497	Symbol	* y		4602						
+ANR	5498	Symbol	data		4602						
+ANR	5499	Symbol	jbig2_image_get_pixel		4602						
+ANR	5500	Symbol	GSTEMPLATE		4602						
+ANR	5501	Symbol	stride		4602						
+ANR	5502	Symbol	consumed_bytes		4602						
+ANR	5503	Symbol	rparams . GBTEMPLATE		4602						
+ANR	5504	Symbol	* GSVALS		4602						
+ANR	5505	Symbol	* GSBPP		4602						
+ANR	5506	Symbol	* rparams		4602						
+ANR	5507	Symbol	jbig2_arith_new		4602						
+ANR	5508	Symbol	segment		4602						
+ANR	5509	Symbol	GSPLANES [ j + 1 ] -> data		4602						
+ANR	5510	Symbol	* * j		4602						
+ANR	5511	Symbol	NULL		4602						
+ANR	5512	Symbol	ctx -> allocator		4602						
+ANR	5513	Symbol	ctx		4602						
+ANR	5514	Symbol	* * * GSPLANES		4602						
+ANR	5515	Symbol	jbig2_decode_halftone_mmr		4602						
+ANR	5516	Symbol	GSPLANES [ j ] -> data		4602						
+ANR	5517	Symbol	* rparams . gbat		4602						
+ANR	5518	Symbol	as		4602						
+ANR	5519	Symbol	size		4602						
+ANR	5520	Symbol	* * * j		4602						
+ANR	5521	Symbol	* segment		4602						
+ANR	5522	Symbol	uint8_t		4602						
+ANR	5523	Symbol	* GSPLANES		4602						
+ANR	5524	Symbol	rparams . gbat		4602						
+ANR	5525	Symbol	GSVALS		4602						
+ANR	5526	Symbol	code		4602						
+ANR	5527	Symbol	rparams . MMR		4602						
+ANR	5528	Symbol	rparams . USESKIP		4602						
+ANR	5529	Symbol	jbig2_image_new		4602						
+ANR	5530	Symbol	GSMMR		4602						
+ANR	5531	Symbol	GSKIP		4602						
+ANR	5532	Symbol	rparams		4602						
+ANR	5533	Symbol	JBIG2_SEVERITY_FATAL		4602						
+ANR	5534	Symbol	GB_stats		4602						
+ANR	5535	Symbol	jbig2_decode_generic_region		4602						
+ANR	5536	Symbol	* * GSPLANES		4602						
+ANR	5537	Symbol	* * x		4602						
+ANR	5538	Symbol	GSPLANES [ 0 ] -> stride		4602						
+ANR	5539	Symbol	jbig2_new		4602						
+ANR	5540	Symbol	GSBPP		4602						
+ANR	5541	Symbol	jbig2_word_stream_buf_new		4602						
+ANR	5542	Symbol	ws		4602						
+ANR	5543	Symbol	GSH		4602						
+ANR	5544	Symbol	& consumed_bytes		4602						
+ANR	5545	Symbol	i		4602						
+ANR	5546	Symbol	GSPLANES		4602						
+ANR	5547	Symbol	GSW		4602						
+ANR	5548	Symbol	j		4602						
+ANR	5549	Symbol	* ctx		4602						
+ANR	5550	Symbol	* GSPLANES [ j ] -> data		4602						
+ANR	5551	Symbol	segment -> number		4602						
+ANR	5552	Symbol	* i		4602						
+ANR	5553	Symbol	* j		4602						
+ANR	5554	Symbol	x		4602						
+ANR	5555	Symbol	GSUSESKIP		4602						
+ANR	5556	Symbol	y		4602						
+ANR	5557	Symbol	rparams . TPGDON		4602						
+ANR	5558	Symbol	* * GSVALS		4602						
+ANR	5559	Symbol	* GSPLANES [ j + 1 ] -> data		4602						

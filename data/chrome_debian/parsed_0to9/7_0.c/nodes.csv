@@ -1,0 +1,73 @@
+command	key	type	code	location	functionId	childNum	isCFGNode	operator	baseType	completeType	identifier
+ANR	5560	File	tmp/7_0.c								
+ANR	5561	Function	curl_msprintf	1:0:0:265							
+ANR	5562	FunctionDef	"curl_msprintf (char * buffer , const char * format)"		5561	0					
+ANR	5563	CompoundStatement		1:64:64:265	5561	0					
+ANR	5564	IdentifierDeclStatement	va_list ap_save ;	2:1:67:83	5561	0	True				
+ANR	5565	IdentifierDecl	ap_save		5561	0					
+ANR	5566	IdentifierDeclType	va_list		5561	0					
+ANR	5567	Identifier	ap_save		5561	1					
+ANR	5568	IdentifierDeclStatement	int retcode ;	3:1:86:98	5561	1	True				
+ANR	5569	IdentifierDecl	retcode		5561	0					
+ANR	5570	IdentifierDeclType	int		5561	0					
+ANR	5571	Identifier	retcode		5561	1					
+ANR	5572	ExpressionStatement	"va_start ( ap_save , format )"	4:1:101:131	5561	2	True				
+ANR	5573	CallExpression	"va_start ( ap_save , format )"		5561	0					
+ANR	5574	Callee	va_start		5561	0					
+ANR	5575	Identifier	va_start		5561	0					
+ANR	5576	ArgumentList	ap_save		5561	1					
+ANR	5577	Argument	ap_save		5561	0					
+ANR	5578	Identifier	ap_save		5561	0					
+ANR	5579	Argument	format		5561	1					
+ANR	5580	Identifier	format		5561	0					
+ANR	5581	ExpressionStatement	"retcode = dprintf_formatf ( & buffer , storebuffer , format , ap_save )"	5:1:134:206	5561	3	True				
+ANR	5582	AssignmentExpression	"retcode = dprintf_formatf ( & buffer , storebuffer , format , ap_save )"		5561	0		=			
+ANR	5583	Identifier	retcode		5561	0					
+ANR	5584	CallExpression	"dprintf_formatf ( & buffer , storebuffer , format , ap_save )"		5561	1					
+ANR	5585	Callee	dprintf_formatf		5561	0					
+ANR	5586	Identifier	dprintf_formatf		5561	0					
+ANR	5587	ArgumentList	& buffer		5561	1					
+ANR	5588	Argument	& buffer		5561	0					
+ANR	5589	UnaryOperationExpression	& buffer		5561	0					
+ANR	5590	UnaryOperator	&		5561	0					
+ANR	5591	Identifier	buffer		5561	1					
+ANR	5592	Argument	storebuffer		5561	1					
+ANR	5593	Identifier	storebuffer		5561	0					
+ANR	5594	Argument	format		5561	2					
+ANR	5595	Identifier	format		5561	0					
+ANR	5596	Argument	ap_save		5561	3					
+ANR	5597	Identifier	ap_save		5561	0					
+ANR	5598	ExpressionStatement	va_end ( ap_save )	6:1:209:228	5561	4	True				
+ANR	5599	CallExpression	va_end ( ap_save )		5561	0					
+ANR	5600	Callee	va_end		5561	0					
+ANR	5601	Identifier	va_end		5561	0					
+ANR	5602	ArgumentList	ap_save		5561	1					
+ANR	5603	Argument	ap_save		5561	0					
+ANR	5604	Identifier	ap_save		5561	0					
+ANR	5605	ExpressionStatement	* buffer = 0	7:1:231:244	5561	5	True				
+ANR	5606	AssignmentExpression	* buffer = 0		5561	0		=			
+ANR	5607	UnaryOperationExpression	* buffer		5561	0					
+ANR	5608	UnaryOperator	*		5561	0					
+ANR	5609	Identifier	buffer		5561	1					
+ANR	5610	PrimaryExpression	0		5561	1					
+ANR	5611	ReturnStatement	return retcode ;	8:1:247:262	5561	6	True				
+ANR	5612	Identifier	retcode		5561	0					
+ANR	5613	ReturnType	int		5561	1					
+ANR	5614	Identifier	curl_msprintf		5561	2					
+ANR	5615	ParameterList	"char * buffer , const char * format"		5561	3					
+ANR	5616	Parameter	char * buffer	1:20:20:32	5561	0	True				
+ANR	5617	ParameterType	char *		5561	0					
+ANR	5618	Identifier	buffer		5561	1					
+ANR	5619	Parameter	const char * format	1:36:36:54	5561	1	True				
+ANR	5620	ParameterType	const char *		5561	0					
+ANR	5621	Identifier	format		5561	1					
+ANR	5622	CFGEntryNode	ENTRY		5561		True				
+ANR	5623	CFGExitNode	EXIT		5561		True				
+ANR	5624	Symbol	* buffer		5561						
+ANR	5625	Symbol	& buffer		5561						
+ANR	5626	Symbol	ap_save		5561						
+ANR	5627	Symbol	storebuffer		5561						
+ANR	5628	Symbol	format		5561						
+ANR	5629	Symbol	buffer		5561						
+ANR	5630	Symbol	retcode		5561						
+ANR	5631	Symbol	dprintf_formatf		5561						
