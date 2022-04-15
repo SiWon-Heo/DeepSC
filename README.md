@@ -1,15 +1,11 @@
 # DeepSC
 Vulnerability detection with GNN
 
-First, copy this repository
-
-“git clone ssgit.skku.edu/calvin0420/my_gnn.git“
-
 ## Code Parse
 
 Put your source code to code-slicer/raw_code (*only supports C)
 
-“../multi-slicer.sh”
+   ../multi-slicer.sh
 
 each of your source code will then be parsed into node.csv & edge.csv, and automatically stored into data/parsed/[codeNo._Vul].c
 if the source code is a vulnerable one, then name Vul 1, else 0. (e.g. 173_1.c)
