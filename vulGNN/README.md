@@ -1,4 +1,4 @@
-# DeepSC
+# vulGNN
 Vulnerability detection with GNN
 
 ## Code Parse
