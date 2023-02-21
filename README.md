@@ -1,3 +1,2 @@
 # DeepSC
-
-Improving Side-channel Analysis with Fuzzing
+IITP High-Potential Individuals Global training Program
